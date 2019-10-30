@@ -1,0 +1,4 @@
+local AeonBROST2ADVBATTLESHIPproj = import('/mods/MCP/lua/MCPprojectiles.lua').AeonBROST2ADVBATTLESHIPproj
+BROST2ADVBATTLESHIPproj = Class(AeonBROST2ADVBATTLESHIPproj) {}
+
+TypeClass = BROST2ADVBATTLESHIPproj

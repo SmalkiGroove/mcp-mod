@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'AeonT2EXTH_polytrails_emit',
+	Lifetime = -1.00,
+    TrailLength = 1.4,
+    Size = 0.1,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 260,
+	RampTexture = [[/mods/MCP/textures/AeonT2EXTH_polytrails.dds]],
+	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
+}

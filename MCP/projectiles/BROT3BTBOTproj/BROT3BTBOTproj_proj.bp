@@ -1,0 +1,53 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'UEF_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'AEON',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+    },
+    Display = {
+        CameraFollowsProjectile = true,
+        StrategicIconSize = 1,
+        UniformScale = 0.1,
+    },
+    General = {
+        Category = 'Artillery',
+        Faction = 'AEON',
+        TechLevel = 1,
+        Weapon = 'Fragmentation Artillery',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 15,
+        DestroyOnWater = true,
+        InitialSpeed = 15,
+        LifeTime = 30,
+        MaxSpeed = 25,
+        MaxZigZag = 10,
+        RotationalVelocity = 10,
+        RotationalVelocityRange = 20,
+        DetonateBelowHeight = 6,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 80,
+	ZigZagFrequency = 8,
+    },
+}

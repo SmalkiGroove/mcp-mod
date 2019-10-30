@@ -1,0 +1,13 @@
+name = "Mixed Combat Pack"
+uid = "b117ef40-2b6b-4596-96c5-0e8887ac0807"
+version = 1
+copyright = "FAF Community"
+description = "This mod adds unique units and buildings at all levels (land, air, sea). Built from best mods around (BrewLAN, TotalMayhem, Blackops, Wyvern...)"
+author = "CSI"
+icon = "/mods/MCP/icons/modicon.dds"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
+special_thanks = "Uveso, Balthassar"
+conflicts = {}

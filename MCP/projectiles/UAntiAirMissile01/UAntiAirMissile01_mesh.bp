@@ -1,0 +1,10 @@
+MeshBlueprint {
+    LODs = {
+        {
+            MeshName = '/mods/MCP/projectiles/UAntiAirMissile01/UAntiAirMissile01_lod0.scm',
+            AlbedoName = '/mods/MCP/projectiles/UAntiAirMissile01/UAntiAirMissile01_albedo.dds',
+            ShaderName = 'TMeshAlpha',
+            LODCutoff = 150,
+        },
+    },
+}

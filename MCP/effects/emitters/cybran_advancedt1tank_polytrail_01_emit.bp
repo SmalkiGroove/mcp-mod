@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'cybran_advancedt1tank_polytrail_01_emit',
+	Lifetime = -1.00,
+    TrailLength = 1,
+    Size = 0.03,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 460,
+	RampTexture = [[/mods/MCP/textures/cybran_advancedt1tank_polytrail_01.dds]],
+	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
+}

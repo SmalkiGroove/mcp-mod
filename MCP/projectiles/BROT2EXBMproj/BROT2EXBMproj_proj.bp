@@ -1,0 +1,66 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BRNT1BTIMPACTEXPLODE1',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BRNT1BTIMPACTEXPLODE1',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'AEON',
+        'PROJECTILE',
+        'DIRECTFIRE',
+    },
+    Display = {
+        Mesh = {
+            LODs = {
+                {
+                    AlbedoName = '/projectiles/AAAZealotMissile01/AAAZealotMissile01_albedo.dds',
+                    MeshName = '/projectiles/AAAZealotMissile01/AAAZealotMissile01_lod0.scm',
+                    ShaderName = 'TMeshGlow',
+                },
+            },
+        },
+        ImpactEffects = {
+
+            # ##Type = 'Small01',
+            Type = 'Medium03',
+        },
+        StrategicIconSize = 2,
+        UniformScale = 0.025,
+    },
+    General = {
+        Category = 'Direct Fire',
+        Faction = 'Aeon',
+        TechLevel = 1,
+        Weapon = 'Ionized Plasma Gatling Cannon',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 15,
+        DestroyOnWater = false,
+        InitialSpeed = 0.5,
+        LifeTime = 30,
+        MaxSpeed = 31,
+        MaxZigZag = 10,
+        RotationalVelocity = 10,
+        RotationalVelocityRange = 20,
+        TrackTarget = true,
+        TurnRate = 110,
+        UseGravity = true,
+        VelocityAlign = true,
+	ZigZagFrequency = 13,
+    },
+}

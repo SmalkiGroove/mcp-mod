@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'LightLaserPolyTrail_polytrail_01_emit',
+	Lifetime = -1.00,
+    TrailLength = 0.5,
+    Size = 0.07,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 260,
+	RampTexture = [[/mods/MCP/textures/LightLaserPolyTrail_polytrail_01.dds]],
+	RepeatTexture = [[/textures/particles/ramp_white_29.dds]],
+}

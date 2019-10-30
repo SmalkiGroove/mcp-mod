@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'yellowlaser_polytrail_01_emit',
+	Lifetime = -1.00,
+    TrailLength = 1,
+    Size = 0.1,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 260,
+	RampTexture = [[/mods/MCP/textures/yellowlaser_munition_01.dds]],
+	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
+}

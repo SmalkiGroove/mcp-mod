@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'BRMT3ADVBTBOT_polytrails_emit',
+	Lifetime = -1.00,
+    TrailLength = 0.4,
+    Size = 0.07,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 460,
+	RampTexture = [[/mods/MCP/textures/BRMT3ADVBTBOT_polytrails.dds]],
+	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
+}

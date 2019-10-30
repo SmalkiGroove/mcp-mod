@@ -1,0 +1,72 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BIGEXPLOSIONSFX',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BIGEXPLOSIONSFX',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_CYBRAN',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'UEF',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+        'TACTICAL',
+        'MISSILE',
+        'NOSPLASHDAMAGE',
+    },
+    Defense = {
+        Health = 2,
+        MaxHealth = 2,
+    },
+    Display = {
+        CameraFollowTimeout = 2,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Type = 'Medium01',
+        },
+        MeshBlueprint = '/projectiles/tifmissilecruise01/tifmissilecruise01_mesh.bp',
+        StrategicIconSize = 2,
+        UniformScale = 0.24,
+    },
+    General = {
+        Category = 'Missile',
+        EntityCategory = {
+            'UEF',
+            'PROJECTILE',
+            'INDIRECTFIRE',
+            'TACTICAL',
+            'MISSILE',
+            'NOSPLASHDAMAGE',
+        },
+        Faction = 'UEF',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 20,
+        DestroyOnWater = true,
+        InitialSpeed = 0.5,
+        LifeTime = 30,
+        MaxSpeed = 41,
+        MaxZigZag = 20,
+        RotationalVelocity = 20,
+        RotationalVelocityRange = 30,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 40,
+        UseGravity = true,
+        VelocityAlign = true,
+	ZigZagFrequency = 63,
+    },
+}

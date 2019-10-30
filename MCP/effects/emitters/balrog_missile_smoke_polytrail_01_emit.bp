@@ -1,0 +1,13 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'serpentine_missile_trail',
+	Lifetime = -8.00, 
+    TrailLength = 5, 
+    Size = 0.6, 
+    SortOrder = 2.0, 
+    BlendMode = 0, #Orginal = 0
+    TextureRepeatRate = 0.06,
+    LODCutoff = 160,
+	RepeatTexture = [[/mods/MCP/textures/fiery_trail_repeat_02.dds]],
+	RampTexture = [[/mods/MCP/textures/ramp_test_01.dds]],
+}
+
