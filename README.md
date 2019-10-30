@@ -4,7 +4,7 @@
 
 - Install git : https://git-scm.com/download/win
 - Open the git bash at the location where you want to get the files
-- `git clone `
+- `git clone https://github.com/SmalkiGroove/mcp-mod.git`
 - Copy the MCP folder in Documents\My Games\Gas Powered Games\Supreme Commander Forged Alliance\mods
 
 ## Update to the latest version
@@ -54,7 +54,9 @@ Each faction has the following items, buildable by there tier respective field e
 
 Along with the T2 airstaging platfrms from the base game, there are T1 stations for 1 unit at a time that can b built almost anywhere for cheap, and tech 3 advanced stations that can be built on water with additional features :
 
-UEF: engi stations, flak anti-air, shield dome, torpedo defense
-Cybran: stealth field, torpedoes
-Aeon:
-Seraphim: 
+UEF: engi stations, flak anti-air, shield dome, torpedo defense  
+Cybran: stealth field, torpedoes  
+Aeon: ...  
+Seraphim: ... 
+
+[WIP]
