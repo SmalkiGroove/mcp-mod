@@ -38,11 +38,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 5,
-            Level2 = 10,
-            Level3 = 15,
-            Level4 = 20,
-            Level5 = 25,
+            Level1 = 10,
+            Level2 = 15,
+            Level3 = 20,
+            Level4 = 25,
+            Level5 = 30,
         },
     },
     BuildIconSortPriority = 102,
@@ -69,15 +69,15 @@ UnitBlueprint {
     },
     Defense = {
         AirThreatLevel = 0,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
         Health = 30000,
         MaxHealth = 30000,
-        RegenRate = 0,
+        RegenRate = 5,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = '<LOC MCPU2LXT_desc>Heavy Battle Tank',
+    Description = 'Advanced Siege Tank',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -131,9 +131,9 @@ UnitBlueprint {
         UniformScale = 0.24,
     },
     Economy = {
-        BuildCostEnergy = 30000,
-		BuildCostMass = 1380,
-        BuildTime = 2300,
+        BuildCostEnergy = 75000,
+		BuildCostMass = 8900,
+        BuildTime = 8000,
     },
     General = {
         Category = 'Direct Fire',
@@ -154,15 +154,15 @@ UnitBlueprint {
         },
         FactionName = 'UEF',
         Icon = 'amph',
-        TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC MCPU2LXT_name>Fortress Prototype E500M',
+        TechLevel = 'RULEUTL_Advanced',
+        UnitName = 'Fortress Prototype E500M',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MCPU2LXT_help>Heavy Battle Experimental.',
+        HelpText = 'Advanced Siege Experimental.',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.85,
@@ -212,11 +212,11 @@ UnitBlueprint {
         TransportClass = 4,
     },
     Veteran = {
-        Level1 = 100,
-        Level2 = 200,
-        Level3 = 300,
-        Level4 = 400,
-        Level5 = 500,
+        Level1 = 40,
+        Level2 = 80,
+        Level3 = 120,
+        Level4 = 160,
+        Level5 = 200,
     },
     Weapon = {
         {
