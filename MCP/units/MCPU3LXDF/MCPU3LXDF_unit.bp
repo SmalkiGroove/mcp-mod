@@ -83,11 +83,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 15,
-            Level2 = 30,
-            Level3 = 45,
-            Level4 = 60,
-            Level5 = 75,
+            Level1 = 16,
+            Level2 = 24,
+            Level3 = 32,
+            Level4 = 40,
+            Level5 = 48,
         },
     },
     BuildIconSortPriority = 102,
@@ -116,11 +116,11 @@ UnitBlueprint {
         EconomyThreatLevel = 0,
         Health = 60000,
         MaxHealth = 60000,
-        RegenRate = 10,
+        RegenRate = 8,
         SubThreatLevel = 20,
         SurfaceThreatLevel = 160,
     },
-    Description = '<LOC MCPU3LXDF_desc>Deployable Fortress',
+    Description = 'Advanced Deployable Fortress',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -207,9 +207,9 @@ UnitBlueprint {
         UniformScale = 0.20,
     },
     Economy = {
-        BuildCostEnergy = 98500,
-        BuildCostMass = 6600,
-        BuildTime = 5450,
+        BuildCostEnergy = 100000,
+        BuildCostMass = 15000,
+        BuildTime = 12000,
     },
     General = {
         Category = 'Experimental',
@@ -232,7 +232,7 @@ UnitBlueprint {
         ConstructionBar = true,
         FactionName = 'UEF',
         Icon = 'amph',
-        TechLevel = 'RULEUTL_Experimental',
+        TechLevel = 'RULEUTL_Advanced',
         ToggleCaps = {
             RULEUTC_WeaponToggle = true,
         },
@@ -244,7 +244,7 @@ UnitBlueprint {
         WaterVisionRadius = 32,
     },
     Interface = {
-        HelpText = '<LOC MCPU3LXDF_help>Deployable Fortress',
+        HelpText = 'Advanced Deployable Fortress',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 4.35,
@@ -299,11 +299,11 @@ UnitBlueprint {
         TransportClass = 10,
     },
     Veteran = {
-        Level1 = 25,
-        Level2 = 50,
-        Level3 = 75,
-        Level4 = 100,
-        Level5 = 125,
+        Level1 = 50,
+        Level2 = 100,
+        Level3 = 150,
+        Level4 = 200,
+        Level5 = 250,
     },
     Weapon = {
 ################### ANTI AIR AVANT DROIT  ##########

@@ -48,11 +48,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 10,
-            Level2 = 20,
-            Level3 = 30,
+            Level1 = 16,
+            Level2 = 24,
+            Level3 = 32,
             Level4 = 40,
-            Level5 = 50,
+            Level5 = 48,
         },
     },
     BuildIconSortPriority = 102,
@@ -82,16 +82,16 @@ UnitBlueprint {
     CollisionOffsetY = 0,
     Defense = {
         AirThreatLevel = 16,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
 		AntiMissile = {
             AttachBone = 'Head',
             Radius = 5,
             RedirectRateOfFire = 1,
         },
         EconomyThreatLevel = 0,
-        Health = 60000,
-        MaxHealth = 60000,
-        RegenRate = 100,
+        Health = 36000,
+        MaxHealth = 36000,
+        RegenRate = 8,
 		Shield = {
             ImpactEffects = 'CybranShieldHit01',
             ImpactMesh = '/effects/entities/ShieldSection01/ShieldSection01b_mesh',
@@ -99,7 +99,7 @@ UnitBlueprint {
             MeshZ = '/effects/entities/Shield01/Shield01z_mesh',
             RegenAssistMult = 60,
             ShieldEnergyDrainRechargeTime = 5,
-            ShieldMaxHealth = 15000,
+            ShieldMaxHealth = 3000,
             ShieldRechargeTime = 18,
             ShieldRegenRate = 100,
             ShieldRegenStartTime = 1,
@@ -109,7 +109,7 @@ UnitBlueprint {
         SubThreatLevel = 40,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Spider Bot',
+    Description = 'Advanced Siege Bot',
     Display = {
 	   Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -236,10 +236,10 @@ UnitBlueprint {
         UniformScale = 0.07,
     },
     Economy = {
-        BuildCostEnergy = 100,
-        BuildCostMass = 10,
-        BuildTime = 1000,
-		MaintenanceConsumptionPerSecondEnergy = 250,
+        BuildCostEnergy = 133000,
+        BuildCostMass = 13300,
+        BuildTime = 12000,
+		MaintenanceConsumptionPerSecondEnergy = 100,
     },
     General = {
         Category = 'Experimental',
@@ -266,7 +266,7 @@ UnitBlueprint {
                 helpText = 'toggle_shield_dome',
             },
         },
-        TechLevel = 'RULEUTL_Secret',
+        TechLevel = 'RULEUTL_Advanced',
         UnitName = 'Storm Strider',
 		ToggleCaps = {
             RULEUTC_ShieldToggle = true,
@@ -279,7 +279,7 @@ UnitBlueprint {
         WaterVisionRadius = 32,
     },
     Interface = {
-        HelpText = 'Spider Bot',
+        HelpText = 'Advanced Spider Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 3.25,
@@ -330,7 +330,6 @@ UnitBlueprint {
         Level4 = 200,
         Level5 = 250,
     },
-	
 	Weapon = {
         {
             AboveWaterFireOnly = true,

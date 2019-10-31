@@ -29,11 +29,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 1,
-            Level2 = 2,
-            Level3 = 3,
-            Level4 = 4,
-            Level5 = 5,
+            Level1 = 16,
+            Level2 = 24,
+            Level3 = 32,
+            Level4 = 40,
+            Level5 = 48,
         },
     },
     BuildIconSortPriority = 102,
@@ -62,15 +62,15 @@ UnitBlueprint {
     },
     Defense = {
         AirThreatLevel = 0,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
         Health = 50000,
         MaxHealth = 50000,
-        RegenRate = 0,
+        RegenRate = 8,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = '<LOC MCPA3LXTT_desc>Experimental Tractor Tank',
+    Description = 'Advanced Tractor Tank',
     Display = {
         Abilities = {
             '<LOC ability_hover>Hover',
@@ -144,12 +144,9 @@ UnitBlueprint {
         UniformScale = 0.40,
     },
     Economy = {
-        BuildCostEnergy = 98500,
-        BuildCostMass = 6600,
-        BuildTime = 5450,
-        TeleportEnergyMod = 0.15,
-        TeleportMassMod = 1,
-        TeleportTimeMod = 0.01,
+        BuildCostEnergy = 180000,
+        BuildCostMass = 9999,
+        BuildTime = 12000,
     },
     General = {
         Category = 'Direct Fire',
@@ -170,7 +167,7 @@ UnitBlueprint {
         },
         FactionName = 'Aeon',
         Icon = 'amph',
-        TechLevel = 'RULEUTL_Secret',
+        TechLevel = 'RULEUTL_Advanced',
         UnitName = 'Thelxinaeonus',
         UnitWeight = 1,
     },
@@ -178,7 +175,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MCPA3LXTT_help>Experimental Tractor Tank',
+        HelpText = 'Advanced Tractor Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.5,
@@ -224,11 +221,11 @@ UnitBlueprint {
 	StrategicIconName = 'icon_land3_generic',
     StrategicIconSortPriority = 135,
     Veteran = {
-        Level1 = 30,
-        Level2 = 60,
-        Level3 = 90,
-        Level4 = 120,
-        Level5 = 150,
+        Level1 = 50,
+        Level2 = 100,
+        Level3 = 150,
+        Level4 = 200,
+        Level5 = 250,
     },
     Weapon = {
         {
