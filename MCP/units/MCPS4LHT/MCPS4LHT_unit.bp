@@ -42,11 +42,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 15,
+            Level1 = 20,
             Level2 = 30,
-            Level3 = 45,
-            Level4 = 60,
-            Level5 = 75,
+            Level3 = 40,
+            Level4 = 50,
+            Level5 = 60,
         },
     },
     BuildIconSortPriority = 30,
@@ -75,13 +75,13 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 52000,
-        MaxHealth = 52000,
-        RegenRate = 50,
+        Health = 49000,
+        MaxHealth = 49000,
+        RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
     },
-    Description = '<LOC MCPS4LHT_desc>Experimental Hover Tank',
+    Description = 'Experimental Hover Tank',
     Display = {
         Abilities = {
             '<LOC ability_hover>Hover',
@@ -240,9 +240,9 @@ UnitBlueprint {
         },
     },
     Economy = {
-        BuildCostEnergy = 156000,
-        BuildCostMass = 15600,
-        BuildTime = 11700,
+        BuildCostEnergy = 250000,
+        BuildCostMass = 19600,
+        BuildTime = 25000,
         BuildRate = 30,
     },
     General = {
@@ -286,7 +286,7 @@ UnitBlueprint {
         VisionRadius = 50,
     },
     Interface = {
-        HelpText = '<LOC MCPS4LHT_help>Experimental Hover Tank',
+        HelpText = 'Experimental Hover Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.3,
@@ -337,13 +337,13 @@ UnitBlueprint {
     Transport = {
         TransportClass = 4,
     },
-    Veteran = {
-        Level1 = 25,
-        Level2 = 50,
-        Level3 = 75,
-        Level4 = 100,
-        Level5 = 125,
-    },
+    Veteran = { 
+        Level1 = 50, 
+        Level2 = 100, 
+        Level3 = 150, 
+        Level4 = 200, 
+        Level5 = 250, 
+    }, 
     Weapon = {
         {
             AboveWaterFireOnly = true,
@@ -812,9 +812,9 @@ UnitBlueprint {
         },
         {
             AboveWaterTargetsOnly = true,
-            Damage = 10000,
+            Damage = 12000,
             DamageFriendly = true,
-            DamageRadius = 8,
+            DamageRadius = 12,
             DamageType = 'Normal',
             DisplayName = 'Collossus Death',
             DummyWeapon = true,

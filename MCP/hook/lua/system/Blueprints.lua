@@ -9,7 +9,6 @@ function ModBlueprints(all_blueprints)
     --MCPGlobalCategoryAdditions(all_blueprints.Unit)
     --HeavyWallBuildList(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
-    RoundGalacticCollosusHealth(all_blueprints.Unit)
 end
 
 --------------------------------------------------------------------------------
@@ -38,7 +37,7 @@ function MCPCategoryChanges(all_bps)
     local Units = {
         xeb0104 = {'DRAGBUILD', r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Engi station
         xeb0204 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Engi station
-        xeb0104 = {'BUILTBYTIER1ENGINEER', 'DRAGBUILD', 'TECH1', r = {'TECH2', 'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Engi station
+        xrb0104 = {'BUILTBYTIER1ENGINEER', 'DRAGBUILD', 'TECH1', r = {'TECH2', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Engi station
         xrb0204 = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'DRAGBUILD'},-- Cybran T2.5 Engi station
         xrb0304 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', 'TECH3', r = 'TECH2'},-- Cybran T3 Engi station
 
@@ -395,16 +394,6 @@ function UpgradeableVanilla(all_bps)
         end
     end
 end
-
---------------------------------------------------------------------------------
--- My OCD GC health change change
---------------------------------------------------------------------------------
-
-function RoundGalacticCollosusHealth(all_bps)
-    if all_bps['ual0401'].Defense.Health == 99999 then all_bps['ual0401'].Defense.Health = 100000 end
-    if all_bps['ual0401'].Defense.MaxHealth == 99999 then all_bps['ual0401'].Defense.MaxHealth = 100000 end
-end
-
 
 
 end

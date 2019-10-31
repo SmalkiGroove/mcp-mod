@@ -28,11 +28,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 5,
-            Level2 = 10,
-            Level3 = 15,
-            Level4 = 20,
-            Level5 = 25,
+            Level1 = 20,
+            Level2 = 30,
+            Level3 = 40,
+            Level4 = 50,
+            Level5 = 60,
         },
     },
     BuildIconSortPriority = 18,
@@ -64,13 +64,13 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 48000,
-        MaxHealth = 48000,
-        RegenRate = 20,
+        Health = 46000,
+        MaxHealth = 46000,
+        RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
     },
-    Description = '<LOC MCPA4LHT_desc>Experimental Hover Tank',
+    Description = 'Experimental Hover Tank',
     Display = {
         Abilities = {
             '<LOC ability_hover>Hover',
@@ -166,14 +166,14 @@ UnitBlueprint {
         FactionName = 'Aeon',
         Icon = 'amph',
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC MCPA4LHT_name>Genesis',
+        UnitName = 'Genesis',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 50,
     },
     Interface = {
-        HelpText = '<LOC MCPA4LHT_help>Experimental Hover Tank',
+        HelpText = 'Experimental Hover Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.8,
@@ -220,13 +220,13 @@ UnitBlueprint {
     CollisionOffsetZ = -1,
     StrategicIconName = 'icon_experimental_generic',
     StrategicIconSortPriority = 145,
-    Veteran = {
-        Level1 = 32,
-        Level2 = 64,
-        Level3 = 96,
-        Level4 = 128,
-        Level5 = 160,
-    },
+    Veteran = { 
+        Level1 = 50, 
+        Level2 = 100, 
+        Level3 = 150, 
+        Level4 = 200, 
+        Level5 = 250, 
+    }, 
     Weapon = {
         {
             AboveWaterTargetsOnly = true,
