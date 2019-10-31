@@ -202,8 +202,14 @@ function MCPCategoryChanges(all_bps)
         xsb4203 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T2 Stealth field
         xsb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Seraphim T3 Nuke Silo
         xsb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Seraphim T3 Anti Nuke
+
+        uab5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Aeon Air Staging
+        ueb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- UEF Air Staging
+        urb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Cybran Air Staging
+        xsb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Seraphim Air Staging
     }
     local buildcats = {
+        'BUILTBYCOMMANDER',
         'BUILTBYTIER1ENGINEER',
         'BUILTBYTIER1COMMANDER',
         'BUILTBYTIER1FIELD',
