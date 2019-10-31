@@ -33,11 +33,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 3,
-            Level2 = 6,
-            Level3 = 9,
-            Level4 = 12,
-            Level5 = 15,
+            Level1 = 12,
+            Level2 = 19,
+            Level3 = 26,
+            Level4 = 33,
+            Level5 = 40,
         },
     },
     BuildIconSortPriority = 101,
@@ -66,13 +66,13 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 1171,
-        Health = 25000,
-        MaxHealth = 25000,
-        RegenRate = 0,
+        Health = 44000,
+        MaxHealth = 44000,
+        RegenRate = 5,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = 'Experimental QuadBot',
+    Description = 'Advanced QuadBot',
     Display = {
          Abilities = {
              'QuadBot',
@@ -142,9 +142,9 @@ UnitBlueprint {
         UniformScale = 0.035,
     },
     Economy = {
-        BuildCostEnergy = 98500,
-        BuildCostMass = 6600,
-        BuildTime = 5450,
+        BuildCostEnergy = 120000,
+        BuildCostMass = 14000,
+        BuildTime = 10800,
     },
     General = {
         Category = 'Direct Fire',
@@ -166,7 +166,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'land',
         SelectionPriority = 1,
-        TechLevel = 'RULEUTL_Experimental',
+        TechLevel = 'RULEUTL_Advanced',
         UnitName = 'Whouhamoua',
         UnitWeight = 1,
     },
@@ -174,7 +174,7 @@ UnitBlueprint {
         VisionRadius = 28,
     },
     Interface = {
-        HelpText = 'Experimental QuadBot',
+        HelpText = 'Advanced QuadBot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.9,
@@ -214,11 +214,11 @@ UnitBlueprint {
     StrategicIconName = 'icon_bot3_generic',
     StrategicIconSortPriority = 175,
     Veteran = {
-        Level1 = 30,
-        Level2 = 60,
-        Level3 = 90,
-        Level4 = 120,
-        Level5 = 150,
+        Level1 = 45,
+        Level2 = 90,
+        Level3 = 135,
+        Level4 = 180,
+        Level5 = 225,
     },
     Weapon = {
         {   
