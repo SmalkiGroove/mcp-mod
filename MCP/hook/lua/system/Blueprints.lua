@@ -9,6 +9,7 @@ function ModBlueprints(all_blueprints)
     --MCPGlobalCategoryAdditions(all_blueprints.Unit)
     --HeavyWallBuildList(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
+    StrategicIcons(all_blueprints.Unit)
 end
 
 --------------------------------------------------------------------------------
@@ -400,6 +401,30 @@ function UpgradeableVanilla(all_bps)
         end
     end
 end
+
+
+--------------------------------------------------------------------------------
+-- Specifying units which icon has to be changed
+--------------------------------------------------------------------------------
+
+function StrategicIcons(all_bps)
+    local IconChanges = {
+        uab5202 = 'icon_structure2_air',-- Aeon Air Staging
+        ueb5202 = 'icon_structure2_air',-- UEF Air Staging
+        urb5202 = 'icon_structure2_air',-- Cybran Air Staging
+        xsb5202 = 'icon_structure2_air',-- Seraphim Air Staging
+        xrb0104 = 'icon_structure1_engineer',-- Cybran T1 Engi Station
+        xrb0304 = 'icon_structure3_engineer',-- Cybran T3 Engi Station
+        uaa0310 = 'icon_experimental_antiair',-- Aeon T4 UFO
+        xea0002 = 'icon_experimental_antiair',-- UEF T4 Satellite
+        ura0401 = 'icon_experimental_antiair',-- Cybran T4 Gunship
+        xsa0402 = 'icon_experimental_antiair',-- Seraphim T4 Bomber
+    }
+    for unitid, icon in IconChanges do
+        all_bps[unitid].StrategicIconName = icon
+    end
+end
+
 
 
 end
