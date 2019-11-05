@@ -38,7 +38,7 @@ function MCPCategoryChanges(all_bps)
     local Units = {
         xeb0104 = {'DRAGBUILD', r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Engi station
         xeb0204 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Engi station
-        xrb0104 = {'BUILTBYTIER1ENGINEER', 'DRAGBUILD', 'TECH1', r = {'TECH2', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Engi station
+        xrb0104 = {'BUILTBYTIER1ENGINEER', 'DRAGBUILD', 'TECH1', r = {'TECH2', 'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Engi station
         xrb0204 = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'DRAGBUILD'},-- Cybran T2.5 Engi station
         xrb0304 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', 'TECH3', r = 'TECH2'},-- Cybran T3 Engi station
 
@@ -89,10 +89,10 @@ function MCPCategoryChanges(all_bps)
         xab1401 = {'SORTECONOMY', r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T4 Resource Generator
         xab2307 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = 'BUILTBYTIER3ENGINEER'}, -- Aeon T4 Rapidfire Arti
         ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T4 Arti
-        xeb2402 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- UEF T4 Satellite
+        xeb2402 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- UEF T4 Satellite
         uel0401 = {NoBuild = true, },  -- UEF T4 Mobile Factory
         ues0401 = {'BUILTBYTIER3FIELD'}, -- UEF T4 Aircraft Carrier
-        url0401 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Rapidfire Arti
+        url0401 = {'SORTSTRATEGIC', 'BUILTBYTIER3FIELD'}, -- Cybran T4 Rapidfire Arti
         url0402 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Spiderbot
         xrl0403 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Megabot
         ura0401 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Gunship
@@ -415,10 +415,6 @@ function StrategicIcons(all_bps)
         xsb5202 = 'icon_structure2_air',-- Seraphim Air Staging
         xrb0104 = 'icon_structure1_engineer',-- Cybran T1 Engi Station
         xrb0304 = 'icon_structure3_engineer',-- Cybran T3 Engi Station
-        uaa0310 = 'icon_experimental_antiair',-- Aeon T4 UFO
-        xea0002 = 'icon_experimental_antiair',-- UEF T4 Satellite
-        ura0401 = 'icon_experimental_antiair',-- Cybran T4 Gunship
-        xsa0402 = 'icon_experimental_antiair',-- Seraphim T4 Bomber
     }
     for unitid, icon in IconChanges do
         all_bps[unitid].StrategicIconName = icon
