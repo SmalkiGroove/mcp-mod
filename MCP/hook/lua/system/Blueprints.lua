@@ -91,7 +91,7 @@ function MCPCategoryChanges(all_bps)
         ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T4 Arti
         xeb2402 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- UEF T4 Satellite
         uel0401 = {NoBuild = true, },  -- UEF T4 Mobile Factory
-        ues0401 = {'BUILTBYTIER3FIELD'}, -- UEF T4 Aircraft Carrier
+        ues0401 = {'TECH3', 'BUILTBYTIER3FACTORY', r = {'EXPERIMENTAL', 'NEEDMOBILEBUILD' ,'BUILTBYTIER3COMMANDER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T4 Aircraft Carrier
         url0401 = {'SORTSTRATEGIC', 'BUILTBYTIER3FIELD'}, -- Cybran T4 Rapidfire Arti
         url0402 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Spiderbot
         xrl0403 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Megabot
@@ -415,6 +415,7 @@ function StrategicIcons(all_bps)
         xsb5202 = 'icon_structure2_air',-- Seraphim Air Staging
         xrb0104 = 'icon_structure1_engineer',-- Cybran T1 Engi Station
         xrb0304 = 'icon_structure3_engineer',-- Cybran T3 Engi Station
+        ues0401 = 'icon_ship3_generic'
     }
     for unitid, icon in IconChanges do
         all_bps[unitid].StrategicIconName = icon
