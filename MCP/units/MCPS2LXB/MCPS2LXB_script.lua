@@ -19,6 +19,28 @@ MCPS2LXB = Class( SWalkingLandUnit ) {
 		SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer) 
 	end,
 
+	CreatTheEffects = function(self)
+		local army =  self:GetArmy()
+		for k, v in EffectTemplate['SDFSinnutheWeaponFXTrails01'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff01', army, v):ScaleEmitter(0.55))
+		end
+		for k, v in EffectTemplate['SDFSinnutheWeaponFXTrails01'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff02', army, v):ScaleEmitter(0.35))
+		end
+		for k, v in EffectTemplate['OthuyAmbientEmanation'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff03', army, v):ScaleEmitter(0.11))
+		end
+		for k, v in EffectTemplate['OthuyAmbientEmanation'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff04', army, v):ScaleEmitter(0.11))
+		end
+		for k, v in EffectTemplate['OthuyAmbientEmanation'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff05', army, v):ScaleEmitter(0.13))
+		end
+		for k, v in EffectTemplate['OthuyAmbientEmanation'] do
+			self.Trash:Add(CreateAttachedEmitter(self, 'eff06', army, v):ScaleEmitter(0.13))
+		end
+	end,
+
 	OnKilled = function(self, instigator, damagetype, overkillRatio)
 		SWalkingLandUnit.OnKilled(self, instigator, damagetype, overkillRatio)
 		self:CreatTheEffectsDeath()  
@@ -27,7 +49,7 @@ MCPS2LXB = Class( SWalkingLandUnit ) {
 	CreatTheEffectsDeath = function(self)
 		local army =  self:GetArmy()
 		for k, v in EffectTemplate['SDFExperimentalPhasonProjHit01'] do
-			self.Trash:Add(CreateAttachedEmitter(self, 'MCPS2LXB', army, v):ScaleEmitter(2.3))
+			self.Trash:Add(CreateAttachedEmitter(self, 'BRPT2EXBOT', army, v):ScaleEmitter(2.3))
 		end
 	end,
 }

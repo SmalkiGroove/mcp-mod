@@ -109,7 +109,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC bsa0004_desc>Heavy Defense Drone',
+    Description = 'Heavy Defense Drone',
     Display = {
         Mesh = {
             IconFadeInZoom = 175,
@@ -158,7 +158,7 @@ UnitBlueprint {
         VisionRadius = 15,
     },
     Interface = {
-        HelpText = '<LOC bsa0004_help>Defense Drone',
+        HelpText = 'Defense Drone',
     },
     LifeBarRender = false,
     Physics = {

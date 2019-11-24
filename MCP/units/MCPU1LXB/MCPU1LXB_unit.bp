@@ -59,7 +59,7 @@ UnitBlueprint {
             Level1 = 4,
             Level2 = 7,
             Level3 = 10,
-            Level4 = 13
+            Level4 = 13,
             Level5 = 16,
         },
     },

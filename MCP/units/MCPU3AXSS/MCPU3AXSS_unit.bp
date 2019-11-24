@@ -66,11 +66,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 1,
-            Level2 = 2,
-            Level3 = 3,
-            Level4 = 4,
-            Level5 = 5,
+            Level1 = 15,
+            Level2 = 20,
+            Level3 = 25,
+            Level4 = 30,
+            Level5 = 35,
         },
     },
     BuildIconSortPriority = 103,
@@ -99,7 +99,7 @@ UnitBlueprint {
     },
     Defense = {
 		AirThreatLevel = 50,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
         Health = 44000,
         MaxHealth = 44000,
@@ -107,7 +107,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 300,
     },
-    Description = 'Experimental Spaceship',
+    Description = 'Spaceship',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -132,7 +132,7 @@ UnitBlueprint {
     Economy = {
        BuildCostEnergy = 105000,
 		BuildCostMass = 11200,
-        BuildTime = 8600,	
+        BuildTime = 8600,
     },
     General = {
         Category = 'Gunship',
@@ -159,11 +159,11 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 52,
-        WaterVisionRadius = 55,
+        VisionRadius = 65,
+        WaterVisionRadius = 45,
     },
     Interface = {
-        HelpText = 'Experimental Spaceship',
+        HelpText = 'Spaceship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 5.75,
@@ -187,7 +187,7 @@ UnitBlueprint {
         MeshExtentsY = 4,
         MeshExtentsZ = 14,
         MinSpeedPercent = 0,
-		StandUpright = true, 
+		StandUpright = true,
         MotionType = 'RULEUMT_Air',
     },
     SelectionSizeX = 2,
@@ -204,11 +204,11 @@ UnitBlueprint {
         TransportClass = 10,
     },
     Veteran = {
-        Level1 = 20,
-        Level2 = 30,
-        Level3 = 40,
-        Level4 = 50,
-        Level5 = 60,
+        Level1 = 25,
+        Level2 = 50,
+        Level3 = 75,
+        Level4 = 100,
+        Level5 = 125,
     },
 	Weapon = {
 			{
@@ -220,8 +220,7 @@ UnitBlueprint {
                 },
             },
 			AutoInitiateAttackCommand = true,
-            BallisticArc = 'RULEUBA_None',
-			CannotAttackGround = true,
+            BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 2500,
             DamageRadius = 3,
@@ -262,6 +261,7 @@ UnitBlueprint {
             TargetCheckInterval = 1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
+                'STRUCTURE',
                 'SPECIALLOWPRI',
                 'ALLUNITS',
             },
@@ -308,7 +308,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -377,7 +377,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -446,7 +446,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -515,7 +515,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -584,7 +584,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -653,7 +653,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 55,
+            MuzzleVelocity = 60,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -991,9 +991,9 @@ UnitBlueprint {
             WeaponUnpacks = false,
         },			
         {
-            Damage = 5000,
+            Damage = 7500,
             DamageFriendly = true,
-            DamageRadius = 6,
+            DamageRadius = 8,
             DamageType = 'Normal',
             DisplayName = 'Air Crash',
             DummyWeapon = true,

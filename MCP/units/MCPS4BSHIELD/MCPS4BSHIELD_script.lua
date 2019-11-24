@@ -1,8 +1,6 @@
 local SShieldStructureUnit = import('/lua/seraphimunits.lua').SShieldStructureUnit
 local LDNo = 6
 local sdNo = 12
-local LDBP = __blueprints.MCPS4BSHIELD_large
-local sdBP = __blueprints.MCPS4BSHIELD_small
 
 MCPS4BSHIELD = Class(SShieldStructureUnit) {
 
@@ -16,7 +14,6 @@ MCPS4BSHIELD = Class(SShieldStructureUnit) {
 
     OnStopBeingBuilt = function(self,builder,layer)
         SShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldEnabled = function(self)
@@ -51,11 +48,10 @@ MCPS4BSHIELD = Class(SShieldStructureUnit) {
                 end
             end
         end
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldDisabled = function(self)
-        local maxShieldhealth = LDNo * LDBP.Defense.Shield.ShieldMaxHealth + sdNo * sdBP.Defense.Shield.ShieldMaxHealth + self:GetBlueprint().Defense.Shield.ShieldMaxHealth
+        local maxShieldhealth = LDNo * 24000 + sdNo * 12000 + self:GetBlueprint().Defense.Shield.ShieldMaxHealth
         local Shieldhealth = 0
         for i, drone in self.ShieldDroneBag do
             Shieldhealth = Shieldhealth + drone.MyShield:GetHealth()
