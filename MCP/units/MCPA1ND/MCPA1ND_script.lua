@@ -6,7 +6,7 @@ local AANDepthChargeBombWeapon = AeonWeapons.AANDepthChargeBombWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 
 
-MCPA2NEF = Class(ASeaUnit) {
+MCPA1ND = Class(ASeaUnit) {
 
     Weapons = {
         MainGun = Class(ADFQuantumAutogunWeapon) {},
@@ -17,4 +17,4 @@ MCPA2NEF = Class(ASeaUnit) {
     },
 }
 
-TypeClass = MCPA2NEF
+TypeClass = MCPA1ND

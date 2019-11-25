@@ -79,7 +79,7 @@ UnitBlueprint {
         SubThreatLevel = 10,
         SurfaceThreatLevel = 30,
     },
-    Description = '<LOC MCPC2NBC_desc>Battlecruiser',
+    Description = 'Frigate',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -258,7 +258,7 @@ UnitBlueprint {
         FactionName = 'Cybran',
         Icon = 'amph',
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC XRS0304_name>Aries Class',
+        UnitName = 'Aries Class',
         UnitWeight = 1,
     },
     Intel = {
@@ -269,7 +269,7 @@ UnitBlueprint {
         WaterVisionRadius = 32,
     },
     Interface = {
-        HelpText = '<LOC MCPC2NBC_help>Battlecruiser',
+        HelpText = 'Attack Frigate',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.4,

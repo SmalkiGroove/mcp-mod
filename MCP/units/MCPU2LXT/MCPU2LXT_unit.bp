@@ -162,7 +162,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = 'Advanced Siege Experimental.',
+        HelpText = 'Advanced Siege Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.85,

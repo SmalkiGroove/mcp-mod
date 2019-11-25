@@ -7,7 +7,7 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local AAMWillOWisp = AeonWeapons.AAMWillOWisp
 local AAASonicPulseBatteryWeapon = import('/lua/aeonweapons.lua').AAASonicPulseBatteryWeapon
 
-MCPA3ND = Class(ASeaUnit) {
+MCPA2NBC = Class(ASeaUnit) {
 
     Weapons = {
         TopTurret = Class(ADFCannonQuantumWeapon) {},
@@ -58,4 +58,4 @@ MCPA3ND = Class(ASeaUnit) {
 
 }
 
-TypeClass = MCPA3ND
+TypeClass = MCPA2NBC

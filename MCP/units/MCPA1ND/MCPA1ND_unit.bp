@@ -42,12 +42,13 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
+        'BUILTBYTIER1FACTORY',
         'BUILTBYTIER2FACTORY',
         'BUILTBYTIER3FACTORY',
         'AEON',
         'MOBILE',
         'NAVAL',
-        'TECH2',
+        'TECH1',
         'ANTINAVY',
         'INTELLIGENCE',
         'RADAR',
@@ -71,7 +72,7 @@ UnitBlueprint {
         SubThreatLevel = 4,
         SurfaceThreatLevel = 10,
     },
-    Description = '<LOC MCPA2NEF_desc>Advanced Attack Frigate',
+    Description = 'Light Destroyer',
     Display = {
         Abilities = {
             '<LOC ability_depthcharge>Depth Charges',
@@ -80,15 +81,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MCPA2NEF/MCPA2NEF_adeath01.sca',
+                Animation = '/mods/MCP/units/MCPA1ND/MCPA1ND_adeath01.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MCPA2NEF/MCPA2NEF_adeath02.sca',
+                Animation = '/mods/MCP/units/MCPA1ND/MCPA1ND_adeath02.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MCPA2NEF/MCPA2NEF_adeath03.sca',
+                Animation = '/mods/MCP/units/MCPA1ND/MCPA1ND_adeath03.sca',
                 Weight = 100,
             },
         },
@@ -112,10 +113,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MCPA2NEF_lod1_albedo.dds',
+                    AlbedoName = 'MCPA1ND_lod1_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MCPA2NEF_lod1_specteam.dds',
+                    SpecularName = 'MCPA1ND_lod1_specteam.dds',
                 },
             },
         },
@@ -165,7 +166,7 @@ UnitBlueprint {
         FactionName = 'Aeon',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MCPA2NEF_name>Veil Class',
+        UnitName = 'Veil Class',
         UnitWeight = 1,
     },
     Intel = {
@@ -175,7 +176,7 @@ UnitBlueprint {
         WaterVisionRadius = 32,
     },
     Interface = {
-        HelpText = '<LOC MCPA2NEF_help>Advanced Attack Frigate',
+        HelpText = 'Light Destroyer',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.75,
@@ -212,7 +213,7 @@ UnitBlueprint {
     SizeX = 0.6,
     SizeY = 1.1,
     SizeZ = 4.3,
-    StrategicIconName = 'icon_ship2_directfire',
+    StrategicIconName = 'icon_ship1_directfire',
     StrategicIconSortPriority = 165,
     Veteran = {
         Level1 = 8,
