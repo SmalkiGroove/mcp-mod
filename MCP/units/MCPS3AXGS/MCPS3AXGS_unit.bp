@@ -204,84 +204,6 @@ UnitBlueprint {
     },
     Weapon = {
         {
-            Audio = {
-                BarrelLoop = Sound {
-                    Bank = 'UAS',
-                    Cue = 'UAS_Turret_Lrg_Loop',
-                    LodCutoff = 'WeaponBig_LodCutoff',
-                },
-                BarrelStart = Sound {
-                    Bank = 'UAS',
-                    Cue = 'UAS_Turret_Lrg_Start',
-                    LodCutoff = 'WeaponBig_LodCutoff',
-                },
-                Fire = Sound {
-                    Bank = 'XSS_Weapon',
-                    Cue = 'XSS0302_Quarnon_Cannon',
-                    LodCutoff = 'WeaponBig_LodCutoff',
-                },
-            },
-            BallisticArc = 'RULEUBA_None',
-            CannotAttackGround = true,
-            CollideFriendly = false,
-            Damage = 500,
-            DamageType = 'Normal',
-            DisplayName = 'Heavy Quarnon Cannon',
-            FireTargetLayerCapsTable = {
-                Air = 'Land|Water|Seabed',
-            },
-            FiringTolerance = 1,
-            Label = 'AntiVaisseaux',
-            MaxRadius = 70,
-            MuzzleSalvoDelay = 0,
-            MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
-            ProjectileId = '/mods/MCP/projectiles/DefenceLourdeOrbitalSeraphFixtek1/DefenceLourdeOrbitalSeraphFixtek1_proj.bp',
-            ProjectilesPerOnFire = 1,
-            RackBones = {
-                {
-                    MuzzleBones = {
-                        'AntiVaisseaux01',
-						'AntiVaisseaux02',
-                    },
-                    RackBone = 'AntiVaisseaux01',
-                },
-            },
-             RackFireTogether = false,
-            RackRecoilDistance = 0,
-            RackReloadTimeout = 1,
-            RackSalvoChargeTime = 0,
-            RackSalvoReloadTime = 0,
-            RackSalvoSize = 1,
-            RackSlavedToTurret = false,
-            RangeCategory = 'UWRC_IndirectFire',
-            RateOfFire = 0.18,
-			RenderFireClock = true,
-            TargetCheckInterval = 1,
-            TargetPriorities = {
-                'SPECIALHIGHPRI',
-                'SPECIALLOWPRI',
-                'ALLUNITS',
-            },
-            TargetRestrictDisallow = 'UNTARGETABLE',
-			TrackingRadius = 1.30,
-            TurretBoneDualMuzzle = 'AntiVaisseaux01',
-            TurretBoneDualPitch = 'AntiVaisseaux01',
-            TurretBoneMuzzle = 'AntiVaisseaux02',
-            TurretBonePitch = 'AntiVaisseaux02',
-			TurretBoneYaw = 'AntiVaisseaux01',
-            TurretDualManipulators = true,
-            TurretPitch = 0,
-            TurretPitchRange =  10,
-            TurretPitchSpeed = 6,
-            TurretYaw = 0,
-            TurretYawRange = 180,
-            TurretYawSpeed = 6,
-            Turreted = true,
-            UseFiringSolutionInsteadOfAimBone = true,
-            WeaponCategory = 'Direct Fire',
-        },
-        {
             --AboveWaterTargetsOnly = true,
             Audio = {
                 BeamLoop = Sound {
@@ -404,7 +326,7 @@ UnitBlueprint {
             RackBones = {
                 {
                     MuzzleBones = {
-                        'TirLourd02',
+                        'TirLourd01',
                     },
                     RackBone = 'XSS01',
                 },
@@ -429,9 +351,9 @@ UnitBlueprint {
             },
             TargetRestrictDisallow = 'UNTARGETABLE',
             TrackingRadius = 1.15,
-            TurretBoneMuzzle = 'TirLourd02',
-            TurretBonePitch = 'TirLourd02',
-            TurretBoneYaw = 'TirLourd02',
+            TurretBoneMuzzle = 'TirLourd01',
+            TurretBonePitch = 'TirLourd01',
+            TurretBoneYaw = 'TirLourd01',
             TurretDualManipulators = false,
             TurretPitch = 0,
             TurretPitchRange = 80,
@@ -490,7 +412,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 2.2,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -566,7 +488,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 2.2,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -642,7 +564,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 2.2,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -718,7 +640,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 2.2,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -794,7 +716,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 2.2,
             TargetCheckInterval = 0.1,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
