@@ -86,7 +86,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 75,
     },
-    Description = 'Advanced Assault Bot',
+    Description = 'Experimental Assault Bot',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -217,7 +217,7 @@ UnitBlueprint {
         RadarRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Assault Bot',
+        HelpText = 'Experimental Assault Bot',
     },
     LifeBarHeight = 0.15,
     LifeBarOffset = 1.75,

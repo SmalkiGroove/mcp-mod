@@ -5,7 +5,6 @@ local SANHeavyCavitationTorpedo = SeraphimWeapons.SANHeavyCavitationTorpedo
 
 MCPS1NXDC = Class(SSeaUnit) {
     Weapons = {
-        AAMissile = Class(SLaanseMissileWeapon) {},
         Torpedo = Class(SANHeavyCavitationTorpedo) {},
         Missile = Class(SLaanseMissileWeapon) {},
         },
@@ -263,7 +262,7 @@ NotifyOfDroneDeath = function(self)
 
         ### Check to see if the player has enough mass / energy
         ### And that the production is enabled.
-        if self:GetScriptBit('RULEUTC_ProductionToggle') == false and mass >= 250 and energy >= 5000 then 
+        if self:GetScriptBit('RULEUTC_ProductionToggle') == false and mass >= 250 and energy >= 1000 then 
 
             ###Remove the resources and spawn a single drone
             self:GetAIBrain():TakeResource('Mass',550) 

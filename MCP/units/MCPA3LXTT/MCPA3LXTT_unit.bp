@@ -70,7 +70,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = 'Advanced Tractor Tank',
+    Description = 'Experimental Tractor Tank',
     Display = {
         Abilities = {
             '<LOC ability_hover>Hover',
@@ -175,7 +175,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = 'Advanced Tractor Tank',
+        HelpText = 'Experimental Tractor Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.5,

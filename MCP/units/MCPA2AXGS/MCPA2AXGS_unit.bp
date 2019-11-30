@@ -115,7 +115,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 50,
     },
-    Description = 'Advanced AA Gunship',
+    Description = 'Experimental AA Gunship',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -207,7 +207,7 @@ UnitBlueprint {
         RadarRadius = 42,
     },
     Interface = {
-        HelpText = 'Advanced AA Gunship',
+        HelpText = 'Experimental AA Gunship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.75,

@@ -72,7 +72,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = 'Advanced QuadBot',
+    Description = 'Experimental QuadBot',
     Display = {
          Abilities = {
              'QuadBot',
@@ -174,7 +174,7 @@ UnitBlueprint {
         VisionRadius = 28,
     },
     Interface = {
-        HelpText = 'Advanced QuadBot',
+        HelpText = 'Experimental QuadBot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.9,

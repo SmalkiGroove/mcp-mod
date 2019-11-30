@@ -82,7 +82,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 18,
     },
-    Description = 'Advanced Battle Tank',
+    Description = 'Experimental Battle Tank',
     Display = {
 		Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -167,7 +167,7 @@ UnitBlueprint {
         SonarRadius = 60,
     },
     Interface = {
-        HelpText = 'Advanced Battle Tank',
+        HelpText = 'Experimental Battle Tank',
     },
     LifeBarHeight = 0.15,
     LifeBarOffset = 2.5,

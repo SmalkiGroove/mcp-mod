@@ -85,7 +85,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 75,
     },
-    Description = 'Advanced Siege Walker',
+    Description = 'Experimental Siege Walker',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -261,7 +261,7 @@ UnitBlueprint {
         RadarRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Siege Walker',
+        HelpText = 'Experimental Siege Walker',
     },
     LifeBarHeight = 0.15,
     LifeBarOffset = 1.75,

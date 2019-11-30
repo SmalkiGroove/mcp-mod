@@ -93,7 +93,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Advanced Combat Bot',
+    Description = 'Experimental Combat Bot',
     Display = {
         Abilities = {
             '<LOC ability_omni>Omni Sensor',
@@ -219,7 +219,7 @@ UnitBlueprint {
         VisionRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Combat Bot',
+        HelpText = 'Experimental Combat Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.56,

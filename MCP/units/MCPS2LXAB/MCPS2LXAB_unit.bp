@@ -85,7 +85,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 75,
     },
-    Description = 'Advanced Battle Bot',
+    Description = 'Experimental Battle Bot',
     Display = {
         Abilities = {
             'Massive',
@@ -215,7 +215,7 @@ UnitBlueprint {
         RadarRadius = 70,
     },
     Interface = {
-        HelpText = 'Advanced Battle Bot',
+        HelpText = 'Experimental Battle Bot',
     },
     LifeBarHeight = 0.15,
     LifeBarOffset = 1.15,

@@ -98,7 +98,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 300,
     },
-    Description = 'Advanced Mech',
+    Description = 'Experimental Mech',
     Display = {
         Abilities = {
             '<LOC ability_radar>Radar',
@@ -203,7 +203,7 @@ UnitBlueprint {
         VisionRadius = 42,
     },
     Interface = {
-        HelpText = 'Advanced Mech',
+        HelpText = 'Experimental Mech',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.35,

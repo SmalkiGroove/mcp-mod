@@ -82,7 +82,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 18,
     },
-    Description = 'Advanced Assault Tank',
+    Description = 'Experimental Assault Tank',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -193,7 +193,7 @@ UnitBlueprint {
         VisionRadius = 22,
     },
     Interface = {
-        HelpText = 'Advanced Assault Tank',
+        HelpText = 'Experimental Assault Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.55,

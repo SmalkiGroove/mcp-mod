@@ -109,7 +109,7 @@ UnitBlueprint {
         SubThreatLevel = 40,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Advanced Siege Bot',
+    Description = 'Experimental Siege Bot',
     Display = {
 	   Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -279,7 +279,7 @@ UnitBlueprint {
         WaterVisionRadius = 32,
     },
     Interface = {
-        HelpText = 'Advanced Spider Bot',
+        HelpText = 'Experimental Spider Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 3.25,

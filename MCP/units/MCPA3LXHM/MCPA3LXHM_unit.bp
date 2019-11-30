@@ -189,7 +189,7 @@ UnitBlueprint {
         WaterVisionRadius = 25,
     },
     Interface = {
-        HelpText = 'Advanced Assault Mech',
+        HelpText = 'Experimental Assault Mech',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.55,

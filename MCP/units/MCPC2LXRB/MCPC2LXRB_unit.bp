@@ -91,7 +91,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Advanced Riot Bot',
+    Description = 'Experimental Riot Bot',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -305,7 +305,7 @@ UnitBlueprint {
         VisionRadius = 35,
     },
     Interface = {
-        HelpText = 'Advanced Riot Bot',
+        HelpText = 'Experimental Riot Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.46,

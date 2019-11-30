@@ -83,7 +83,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Advanced Battle Mech',
+    Description = 'Experimental Battle Mech',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -178,7 +178,7 @@ UnitBlueprint {
         VisionRadius = 45,
     },
     Interface = {
-        HelpText = 'Advanced Battle Mech',
+        HelpText = 'Experimental Battle Mech',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.50,

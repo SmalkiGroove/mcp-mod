@@ -184,7 +184,7 @@ UnitBlueprint {
         WaterVisionRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Support Battleship',
+        HelpText = 'Experimental Support Battleship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 5.8,

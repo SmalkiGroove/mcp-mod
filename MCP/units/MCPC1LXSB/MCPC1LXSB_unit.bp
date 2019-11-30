@@ -94,7 +94,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
     },
-    Description = 'Advanced Beatle Bot',
+    Description = 'Experimental Beatle Bot',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -311,7 +311,7 @@ UnitBlueprint {
         RadarRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Beatle Bot',
+        HelpText = 'Experimental Beatle Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.16,

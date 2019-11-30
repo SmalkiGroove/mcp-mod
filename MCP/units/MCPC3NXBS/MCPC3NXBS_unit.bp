@@ -157,9 +157,9 @@ UnitBlueprint {
         UniformScale = 0.15,
     },
     Economy = {
-        BuildCostEnergy = 1000,
-        BuildCostMass = 10,
-        BuildTime = 10,
+        BuildCostEnergy = 160000,
+        BuildCostMass = 20000,
+        BuildTime = 20000,
     },
     General = {
         Category = 'Ship',

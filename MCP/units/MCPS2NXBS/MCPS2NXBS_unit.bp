@@ -54,7 +54,6 @@ UnitBlueprint {
         'TECH2',
         'DIRECTFIRE',
         'ANTIMISSILE',
-		'SHIELD',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'BATTLESHIP',
@@ -74,20 +73,6 @@ UnitBlueprint {
         EconomyThreatLevel = 0,
         Health = 49000,
         MaxHealth = 49000,
-		Shield = {
-            ImpactEffects = 'SeraphimShieldHit01',
-            ImpactMesh = '/effects/entities/ShieldSection01/ShieldSection01_mesh',
-            Mesh = '/effects/entities/SeraphimShield01/SeraphimShield01_mesh',
-            MeshZ = '/effects/entities/Shield01/Shield01z_mesh',
-            RegenAssistMult = 60,
-            ShieldEnergyDrainRechargeTime = 5,
-            ShieldMaxHealth = 13000,
-            ShieldRechargeTime = 17,
-            ShieldRegenRate = 153,
-            ShieldRegenStartTime = 1,
-            ShieldSize = 15,
-            ShieldVerticalOffset = -1,
-        },
         RegenRate = 15,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
@@ -101,7 +86,6 @@ UnitBlueprint {
             '<LOC ability_tacmissiledef>Tactical Missile Defense',
 			'<LOC ability_torpedo>Torpedoes',
 			'<LOC ability_torpedodef>Torpedo Defense',
-			'<LOC ability_shielddome>Shield Dome',
         },
         AnimationDeath = {
             {
@@ -170,10 +154,9 @@ UnitBlueprint {
         UniformScale = 0.065,
     },
     Economy = {
-        BuildCostEnergy = 1000,
-        BuildCostMass = 10,
-        BuildTime = 10,
-		MaintenanceConsumptionPerSecondEnergy = 250,
+        BuildCostEnergy = 100000,
+        BuildCostMass = 10000,
+        BuildTime = 10000,
     },
     General = {
         Category = 'Experimental',
@@ -198,16 +181,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Secret',
-		OrderOverrides = {
-            RULEUTC_ShieldToggle = {
-                bitmapId = 'shield-dome',
-                helpText = 'toggle_shield_dome',
-            },
-        },
         UnitName = 'Eechibumas',
-		ToggleCaps = {
-            RULEUTC_ShieldToggle = true,
-        },
         UnitWeight = 1,
     },
     Intel = {

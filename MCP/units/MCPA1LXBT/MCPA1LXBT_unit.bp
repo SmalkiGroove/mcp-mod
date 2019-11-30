@@ -94,7 +94,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 3,
     },
-    Description = 'Advanced Tank',
+    Description = 'Experimental Tank',
     Display = {
         Abilities = {
             '<LOC ability_radar>Radar',
@@ -191,7 +191,7 @@ UnitBlueprint {
         RadarRadius = 50,
     },
     Interface = {
-        HelpText = 'Advanced Tank',
+        HelpText = 'Experimental Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.0,

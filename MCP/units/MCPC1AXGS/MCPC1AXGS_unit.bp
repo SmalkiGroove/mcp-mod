@@ -110,7 +110,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 50,
     },
-    Description = 'Advanced Gunship',
+    Description = 'Experimental Gunship',
     Display = {
 		Abilities = {
 			'Groundattack',
@@ -188,7 +188,7 @@ UnitBlueprint {
         VisionRadius = 35,
     },
     Interface = {
-        HelpText = 'Advanced Gunship',
+        HelpText = 'Experimental Gunship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.35,

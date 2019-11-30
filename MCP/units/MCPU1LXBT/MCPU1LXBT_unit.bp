@@ -74,7 +74,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = 'Advanced Battle Tank',
+    Description = 'Experimental Battle Tank',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -198,7 +198,7 @@ UnitBlueprint {
         RadarRadius = 40,
     },
     Interface = {
-        HelpText = 'Advanced Battle Tank',
+        HelpText = 'Experimental Battle Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.55,
