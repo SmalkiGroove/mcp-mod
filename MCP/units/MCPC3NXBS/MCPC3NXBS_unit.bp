@@ -47,7 +47,7 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 103,
     Categories = {
-        'PRODUCTEXPANSION',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FACTORY',
         'CYBRAN',

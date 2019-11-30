@@ -49,7 +49,7 @@ UnitBlueprint {
     }, 
     BuildIconSortPriority = 30, 
     Categories = {
-        'PRODUCTSC1',
+        'PRODUCTMCP',
         'ANTIAIR',  
         'BUILTBYTIER3FIELD',       
         'BUILTBYTIER3COMMANDER', 

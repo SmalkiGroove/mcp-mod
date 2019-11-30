@@ -58,7 +58,7 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 160,
     Categories = {
-        'PRODUCTBREWLANSHIELDS',
+        'PRODUCTMCP',
         --'SELECTABLE',
         'SERAPHIM',
         --'MOBILE',

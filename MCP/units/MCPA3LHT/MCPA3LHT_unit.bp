@@ -39,7 +39,7 @@ UnitBlueprint {
     CollisionOffsetZ = 0.3,
     CollisionOffsetY = -0.3,
     Categories = {
-        'PRODUCTSC1',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FACTORY',
         'AEON',

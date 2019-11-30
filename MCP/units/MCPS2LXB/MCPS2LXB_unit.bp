@@ -55,7 +55,7 @@ UnitBlueprint {
         },
     },
     Categories = {
-        'PRODUCTFA',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER2FIELD',
         'BUILTBYTIER3FIELD',

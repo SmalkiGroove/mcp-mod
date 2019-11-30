@@ -28,7 +28,7 @@ UnitBlueprint {
     BuildIconSortPriority = 210,
     CollisionOffsetY = -0.7,
     Categories = {
-        'PRODUCTSC1',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3COMMANDER',

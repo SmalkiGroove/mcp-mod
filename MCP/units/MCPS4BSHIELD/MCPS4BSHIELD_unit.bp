@@ -42,7 +42,7 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 160,
     Categories = {
-        'PRODUCTBREWLANSHIELDS',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FIELD',
         'BUILTBYTIER3COMMANDER',

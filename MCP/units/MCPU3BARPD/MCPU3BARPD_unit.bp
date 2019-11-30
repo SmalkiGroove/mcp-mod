@@ -34,7 +34,7 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 115,
     Categories = {
-        'PRODUCTSC1',
+        'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3COMMANDER',
         'BUILTBYTIER3FIELD',

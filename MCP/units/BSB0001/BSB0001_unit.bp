@@ -9,7 +9,7 @@ UnitBlueprint {
     BuildIconSortPriority = 130,
     CollisionOffsetY = -1,
     Categories = {
-        'PRODUCTSC1',
+        'PRODUCTMCP',
         'UNTARGETABLE',
         'DRONE',
         'SERAPHIM',
