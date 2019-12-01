@@ -95,7 +95,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 60,
     },
-    Description = 'Tactical Submarine',
+    Description = 'Attack Submarine',
     Display = {
         Abilities = {
             '<LOC ability_sonar>Sonar',
@@ -262,7 +262,7 @@ UnitBlueprint {
         WaterVisionRadius = 45,
     },
     Interface = {
-        HelpText = 'Tactical Submarine',
+        HelpText = 'Attack Submarine',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.5,
@@ -333,7 +333,7 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'CruiseMissiles',
-            MaxRadius = 105,
+            MaxRadius = 85,
             MinRadius = 15,
             MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 1,

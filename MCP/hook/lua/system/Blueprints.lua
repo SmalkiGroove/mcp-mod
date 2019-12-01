@@ -208,6 +208,10 @@ function MCPCategoryChanges(all_bps)
         ueb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- UEF Air Staging
         urb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Cybran Air Staging
         xsb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Seraphim Air Staging
+
+        ues0304 = {NoBuild = true, },  -- UEF T3 Strategic submarine
+        urs0304 = {NoBuild = true, },  -- Cybran T3 Strategic submarine
+        uas0304 = {NoBuild = true, },  -- Aeon T3 Strategic submarine
     }
     local buildcats = {
         'BUILTBYCOMMANDER',
