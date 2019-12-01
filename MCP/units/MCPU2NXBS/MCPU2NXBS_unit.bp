@@ -44,12 +44,11 @@ UnitBlueprint {
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
-        'BUILTBYTIER2FACTORY',
         'BUILTBYTIER3FACTORY',
         'UEF',
         'MOBILE',
         'NAVAL',
-        'TECH2',
+        'TECH3',
         'DIRECTFIRE',
         'ANTIMISSILE',
         'VISIBLETORECON',
@@ -68,8 +67,8 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 50000,
-        MaxHealth = 50000,
+        Health = 60000,
+        MaxHealth = 60000,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
@@ -85,15 +84,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MCPU2NXBS/MCPU2NXBS_ADeath01.sca',
+                Animation = '/mods/MCP/units/MCPU3NXBS/MCPU3NXBS_ADeath01.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MCPU2NXBS/MCPU2NXBS_A001.sca',
+                Animation = '/mods/MCP/units/MCPU3NXBS/MCPU3NXBS_A001.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MCPU2NXBS/MCPU2NXBS_ADeath02.sca',
+                Animation = '/mods/MCP/units/MCPU3NXBS/MCPU3NXBS_ADeath02.sca',
                 Weight = 100,
             },
         },
@@ -153,9 +152,9 @@ UnitBlueprint {
         UniformScale = 0.13,
     },
     Economy = {
-        BuildCostEnergy = 100000,
-        BuildCostMass = 10000,
-        BuildTime = 10000,
+        BuildCostEnergy = 160000,
+        BuildCostMass = 20000,
+        BuildTime = 20000,
     },
     General = {
         Category = 'Ship',
@@ -229,7 +228,7 @@ UnitBlueprint {
     SizeX = 2.8,
     SizeY = 2.8,
     SizeZ = 13.25,
-    StrategicIconName = 'icon_ship2_generic',
+    StrategicIconName = 'icon_ship3_generic',
     StrategicIconSortPriority = 145,
     Veteran = {
         Level1 = 32,

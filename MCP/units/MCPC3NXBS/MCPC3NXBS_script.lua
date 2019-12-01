@@ -4,7 +4,7 @@ local CAAAutocannon = CybranWeaponsFile.CAAAutocannon
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
 local CANNaniteTorpedoWeapon = CybranWeaponsFile.CANNaniteTorpedoWeapon
 local CDFElectronBolterWeapon = CybranWeaponsFile.CDFElectronBolterWeapon
-local BPPPlasmaPPCProj = import('/mods/MCP/lua/MCPweapons.lua').BPPPlasmaPPCProj
+local BPPPlasmaPPCProj = import('/mods/MCP/lua/MCPWeapons.lua').BPPPlasmaPPCProj
 local CAAMissileNaniteWeapon = CybranWeaponsFile.CAAMissileNaniteWeapon
 
 MCPC3NXBS = Class(CSeaUnit) {
