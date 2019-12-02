@@ -80,7 +80,7 @@ UnitBlueprint {
         SubThreatLevel = 21,
         SurfaceThreatLevel = 45,
     },
-    Description = 'Battleship',
+    Description = 'Experimental Battleship',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -200,7 +200,7 @@ UnitBlueprint {
         WaterVisionRadius = 30,
     },
     Interface = {
-        HelpText = 'Battleship',
+        HelpText = 'Experimental Battleship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 3.75,
