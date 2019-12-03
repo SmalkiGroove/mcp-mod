@@ -72,10 +72,10 @@ UnitBlueprint {
     CollisionOffsetY = -0.375,
     Defense = {
         AirThreatLevel = 8,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 11500,
-        MaxHealth = 11500,
+        Health = 16500,
+        MaxHealth = 16500,
         RegenRate = 0,
         SubThreatLevel = 21,
         SurfaceThreatLevel = 45,
@@ -162,9 +162,9 @@ UnitBlueprint {
         UniformScale = 0.12,
     },
     Economy = {
-        BuildCostEnergy = 20000,
-        BuildCostMass = 3650,
-        BuildTime = 8500,
+        BuildCostEnergy = 26000,
+        BuildCostMass = 5000,
+        BuildTime = 5600,
     },
     Footprint = {
         SizeX = 2,

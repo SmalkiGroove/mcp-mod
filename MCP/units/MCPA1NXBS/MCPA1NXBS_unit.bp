@@ -67,10 +67,10 @@ UnitBlueprint {
     CollisionOffsetY = -0.4,
     Defense = {
         AirThreatLevel = 14,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 12750,
-        MaxHealth = 12750,
+        Health = 17500,
+        MaxHealth = 17500,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 45,
@@ -127,9 +127,9 @@ UnitBlueprint {
         UniformScale = 0.10,
     },
     Economy = {
-        BuildCostEnergy = 15000,
-        BuildCostMass = 2900,
-        BuildTime = 6300,
+        BuildCostEnergy = 25500,
+        BuildCostMass = 5100,
+        BuildTime = 5550,
     },
     Footprint = {
         SizeX = 2,
@@ -161,8 +161,8 @@ UnitBlueprint {
     },
     Intel = {
         RadarRadius = 50,
-        VisionRadius = 35,
-        WaterVisionRadius = 35,
+        VisionRadius = 40,
+        WaterVisionRadius = 30,
     },
     Interface = {
         HelpText = 'Experimental Battleship',

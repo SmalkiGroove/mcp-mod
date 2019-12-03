@@ -61,10 +61,10 @@ UnitBlueprint {
     CollisionOffsetY = -0.3,
     Defense = {
         AirThreatLevel = 32,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 16000,
-        MaxHealth = 16000,
+        Health = 17000,
+        MaxHealth = 17000,
         RegenRate = 0,
         SubThreatLevel = 32,
         SurfaceThreatLevel = 112,
@@ -146,10 +146,10 @@ UnitBlueprint {
         UniformScale = 0.03,
     },
     Economy = {
-        BuildCostEnergy = 84050,
-        BuildCostMass = 7770,
-        BuildRate = 150,
-        BuildTime = 16020,
+        BuildCostEnergy = 29000,
+        BuildCostMass = 4900,
+        BuildRate = 100,
+        BuildTime = 5800,
     },
     Footprint = {
         SizeX = 4,
@@ -183,10 +183,10 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 70,
-        SonarRadius = 70,
+        RadarRadius = 65,
+        SonarRadius = 55,
         VisionRadius = 45,
-        WaterVisionRadius = 40,
+        WaterVisionRadius = 30,
     },
     Interface = {
         HelpText = 'Experimental Drone Carrier',

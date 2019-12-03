@@ -73,10 +73,10 @@ UnitBlueprint {
     CollisionOffsetY = -0.375,
     Defense = {
         AirThreatLevel = 19,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 26000,
-        MaxHealth = 26000,
+        Health = 16000,
+        MaxHealth = 16000,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 29,
@@ -86,7 +86,6 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
             '<LOC ability_radar>Radar',
-            '<LOC ability_sonar>Sonar',
         },
         AnimationDeath = {
             {
@@ -151,9 +150,9 @@ UnitBlueprint {
         UniformScale = 0.10,
     },
     Economy = {
-        BuildCostEnergy = 74000,
-        BuildCostMass = 9100,
-        BuildTime = 11500,
+        BuildCostEnergy = 32000,
+        BuildCostMass = 4800,
+        BuildTime = 5700,
     },
     Footprint = {
         SizeX = 2,
@@ -183,9 +182,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 120,
-        SonarRadius = 60,
-        VisionRadius = 40,
+        RadarRadius = 75,
+        VisionRadius = 35,
         WaterVisionRadius = 25,
     },
     Interface = {
