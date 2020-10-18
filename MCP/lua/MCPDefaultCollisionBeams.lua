@@ -12,7 +12,7 @@ HawkCollisionBeam = Class(CollisionBeam) {
     FxImpactUnderWater = EffectTemplate.DefaultProjectileUnderWaterImpact,
     FxImpactAirUnit = EffectTemplate.DefaultProjectileAirUnitImpact,
     FxImpactProp = {},
-    FxImpactShield = {},    
+    FxImpactShield = {},
     FxImpactNone = {},
 }
 
@@ -927,4 +927,55 @@ TMMizuraBlueLaserBeam = Class(SCCollisionBeam) {
     FxBeamEndPointScale = 0.07,
     SplatTexture = 'czar_mark01_albedo',
     ScorchSplatDropTime = 0.25,
+}
+
+ColossusLaserCollisionBeam = Class(HawkCollisionBeam) {
+    TerrainImpactType = 'LargeBeam01',
+    TerrainImpactScale = 0.5,
+    FxBeamStartPoint = MCPEffectTemplate.AColossusLaserMuzzle01,
+    FxBeam = {'/mods/MCP/effects/emitters/Colossus_laser_beam_01_emit.bp'},
+    FxBeamStartPointScale = 0.3,
+    FxBeamEndPoint = MCPEffectTemplate.AColossusLaserImpact01,
+    FxBeamEndPointScale = 0.7,
+    SplatTexture = 'czar_mark01_albedo',
+    ScorchSplatDropTime = 0.25,
+
+    OnImpact = function(self, impactType, targetEntity)
+        if impactType == 'Terrain' and not impactType == 'Water' then
+            if self.Scorching == nil then
+                self.Scorching = self:ForkThread(self.ScorchThread)
+            end
+        elseif not impactType == 'Unit' then
+            KillThread(self.Scorching)
+            self.Scorching = nil
+        end
+        CollisionBeam.OnImpact(self, impactType, targetEntity)
+    end,
+
+    OnDisable = function(self)
+        CollisionBeam.OnDisable(self)
+        KillThread(self.Scorching)
+        self.Scorching = nil
+    end,
+
+    ScorchThread = function(self)
+        local army = self:GetArmy()
+        local size = 1.4 + (Random() * 1.4)
+        local CurrentPosition = self:GetPosition(1)
+        local LastPosition = Vector(0,0,0)
+        local skipCount = 1
+        while true do
+            if Util.GetDistanceBetweenTwoVectors(CurrentPosition, LastPosition) > 0.25 or skipCount > 100 then
+                CreateSplat(CurrentPosition, Util.GetRandomFloat(0,3*math.pi), self.SplatTexture, size, size, 100, 100, army)
+                LastPosition = CurrentPosition
+                skipCount = 1
+            else
+                skipCount = skipCount + self.ScorchSplatDropTime
+            end
+
+            WaitSeconds(self.ScorchSplatDropTime)
+            size = 1.2 + (Random() * 1.4)
+            CurrentPosition = self:GetPosition(1)
+        end
+    end,
 }

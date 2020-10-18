@@ -82,7 +82,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FACTORY',
-        'BUILTBYEXPERIMENTALSUB',
         'AEON',
         'MOBILE',
         'NAVAL',
@@ -276,10 +275,9 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 150,
-        SonarRadius = 250,
-        VisionRadius = 100,
-        WaterVisionRadius = 100,
+        SonarRadius = 60,
+        VisionRadius = 48,
+        WaterVisionRadius = 48,
     },
     Interface = {
         HelpText = 'Submersible Destroyer',

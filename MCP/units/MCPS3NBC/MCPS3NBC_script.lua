@@ -33,7 +33,7 @@ MCPS3NBC = Class(SSeaUnit) {
         local army =  self:GetArmy()
         if self.AmbientEffects then
             for k, v in EffectTemplate[self.AmbientEffects] do
-                CreateAttachedEmitter(self, 'Orb', army, v):ScaleEmitter(2)
+                CreateAttachedEmitter(self, 'Orb', army, v):ScaleEmitter(1.8)
             end
         end
     end,

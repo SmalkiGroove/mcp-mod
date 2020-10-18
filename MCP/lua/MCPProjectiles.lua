@@ -2837,3 +2837,14 @@ SHeavyQuarnonOrbitalCannon = Class(MultiPolyTrailProjectile) {
 	FxTrailScale = 5,
 	FxAirUnitHitScale = 5,
 }
+
+TFragmentationGrenadeMK02 = Class(EmitterProjectile) {
+    FxImpactUnit = MCPEffectTemplate.THeavyFragmentationGrenadeHitMK,
+    FxImpactLand = MCPEffectTemplate.THeavyFragmentationGrenadeHitMK,
+    FxImpactWater = MCPEffectTemplate.THeavyFragmentationGrenadeHitMK,
+    FxImpactNone = MCPEffectTemplate.THeavyFragmentationGrenadeHitMK,
+    FxImpactProp = MCPEffectTemplate.THeavyFragmentationGrenadeHitMK,
+    FxImpactUnderWater = {},
+    FxTrails= EffectTemplate.THeavyFragmentationGrenadeFxTrails,
+    #PolyTrail= EffectTemplate.THeavyFragmentationGrenadePolyTrail,
+}

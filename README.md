@@ -52,11 +52,32 @@ Each faction has the following items, buildable by there tier respective field e
 
 ## Tech 1, 2 and 3 air staging
 
-Along with the T2 airstaging platfrms from the base game, there are T1 stations for 1 unit at a time that can b built almost anywhere for cheap, and tech 3 advanced stations that can be built on water with additional features :
+Along with the T2 airstaging platforms from the base game, there are T1 stations for 1 unit at a time that can be built almost anywhere for cheap, and tech 3 advanced stations that can be built on water with additional features :
 
-UEF: engi stations, flak anti-air, shield dome, torpedo defense  
-Cybran: stealth field, torpedoes  
-Aeon: ...  
-Seraphim: ... 
+UEF: engi stations, flak anti-air, shield dome, torpedo defense...  
+Cybran: stealth field, torpedoes...  
+Aeon: AA missiles, torpedoes...  
+Seraphim: torpedoes, torpedo defense, drones...  
+
+## Additionnal land units
+
+(Except engineers and experimentals)
+
+### UEF
+
+__T1 deployable tank__ : better damage and range than the medium tank, but needs to be immobilized. Low damages when moving.  
+__T3 surgical shooter__ : TODO
+
+### Aeon
+
+__T1 medium tank__ : regular tech 1 tank, as powerful as UEF or Seraphim ones from vanilla.  
+__T2 walker__ : assault unit with good range but not very tanky.  
+__T3 heavy tank__ : heavy hover tank with nice fire power.
+
+### Cybran
+
+__T1 support mech__ : light mech with good range to assist assault units.  
+__T3 missile launcher__ : anti-building scarab that fires missile salvos.  
+__T3 assassin bot__ : sniper bot with better fire rate.
 
 [WIP]

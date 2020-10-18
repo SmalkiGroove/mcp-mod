@@ -9,6 +9,18 @@ WeaponSteam02 = {
 
 UnitHitShrapnel01 = {EmtBpPath .. 'destruction_unit_hit_shrapnel_01_emit.bp',}
 
+AColossusLaserImpact01 = {
+    EmtBpPathAlt .. 'phason_laser_end_01_emit.bp',
+    EmtBpPathAlt .. 'phason_laser_end_02_emit.bp', 
+    EmtBpPathAlt .. 'Nuclear_Laser_ring_02_emit.bp',
+}
+
+AColossusLaserMuzzle01 = {
+    EmtBpPathAlt .. 'phason_laser_muzzle_01_emit.bp',
+    EmtBpPathAlt .. 'phason_laser_muzzle_02_emit.bp',
+    EmtBpPathAlt .. 'microwave_laser_charge_02_emit.bp',    
+}
+
 Aeon_MirvHit = {
     EmtBpPathAlt .. 'aeon_mirv_hit_03_emit.bp', -- fast ring
     EmtBpPathAlt .. 'aeon_mirv_hit_04_emit.bp', -- plasma
@@ -2122,4 +2134,15 @@ AeonGraniteHit01 = {
     EmtBpPathAlt .. 'aeongranite_06_emit.bp',
     EmtBpPathAlt .. 'aeongranite_07_emit.bp',
     EmtBpPathAlt .. 'aeongranite_08_emit.bp',
+}
+
+THeavyFragmentationGrenadeHitMK = {
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_01_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_02_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_03_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_04_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_05_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_06_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_07_emit.bp',
+    EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_08_emit.bp',
 }

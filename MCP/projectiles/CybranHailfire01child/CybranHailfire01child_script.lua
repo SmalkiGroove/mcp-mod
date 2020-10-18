@@ -1,6 +1,6 @@
 -- UEF Small Yield Nuclear Bomb
 
-local CybranHailfire01Projectile = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsProjectiles.lua').CybranHailfire01ChildProjectile
+local CybranHailfire01Projectile = import('/mods/MCP/lua/MCPProjectiles.lua').CybranHailfire01ChildProjectile
 
 CybranHailfire01child = Class(CybranHailfire01Projectile) {
    OnCreate = function(self)

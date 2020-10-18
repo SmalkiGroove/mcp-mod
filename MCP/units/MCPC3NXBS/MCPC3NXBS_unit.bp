@@ -45,7 +45,7 @@ UnitBlueprint {
             Level5 = 50,
         },
     },
-    BuildIconSortPriority = 103,
+    BuildIconSortPriority = 999,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -265,7 +265,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_HighArc',
             CollideFriendly = false,
-            Damage = 2222
+            Damage = 2222,
             DamageRadius = 5,
             DamageType = 'Normal',
             DisplayName = 'Shadow Artillery',
