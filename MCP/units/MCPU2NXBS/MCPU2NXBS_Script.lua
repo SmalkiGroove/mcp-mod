@@ -5,7 +5,7 @@ local TAMPhalanxWeapon = TerranWeaponFile.TAMPhalanxWeapon
 local TSAMLauncher = TerranWeaponFile.TSAMLauncher
 local TANTorpedoAngler = TerranWeaponFile.TANTorpedoAngler
 
-MCPU3NXBS = Class(TSeaUnit) {
+MCPU2NXBS = Class(TSeaUnit) {
 
  Weapons = {
         RightPhalanxGun01 = Class(TAMPhalanxWeapon) {
@@ -41,4 +41,4 @@ MCPU3NXBS = Class(TSeaUnit) {
 
 }
 
-TypeClass = MCPU3NXBS
+TypeClass = MCPU2NXBS
