@@ -206,7 +206,7 @@ UnitBlueprint {
             BeamLifetime = 0.2,
             CollideFriendly = false,
             ContinuousBeam = true,
-            Damage = 46,
+            Damage = 40,
             DamageFriendly = false,
             DamageType = 'Normal',
             DamageRadius = 0.5,
