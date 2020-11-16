@@ -73,14 +73,11 @@ UnitBlueprint {
     },
     CollisionOffsetY = -0.25,
     Defense = {
-        AirThreatLevel = 0,
         ArmorType = 'Structure',
-        EconomyThreatLevel = 6,
+        EconomyThreatLevel = 40,
         Health = 1250,
         MaxHealth = 1250,
         RegenRate = 0,
-        SubThreatLevel = 0,
-        SurfaceThreatLevel = 0,
     },
     Description = '<LOC MCPS2BES_desc>Engineering Station',
     Display = {
@@ -109,8 +106,6 @@ UnitBlueprint {
                 },
             },
         },
-        PlaceholderMeshName = 'UXB0015',
-        SpawnRandomRotation = true,
         Tarmacs = {
             {
                 Albedo = 'Tarmacs/Tar6x_seraphim_01_albedo',
@@ -118,12 +113,7 @@ UnitBlueprint {
                 FadeOut = 150,
                 Length = 6.4,
                 Normal = 'Tarmacs/Tar6x_seraphim_01_normals',
-                Orientations = {
-                    0,
-                    90,
-                    180,
-                    270,
-                },
+                Orientations = {0, 90, 180, 270},
                 RemoveWhenDead = false,
                 Width = 6.4,
             },
@@ -135,10 +125,9 @@ UnitBlueprint {
         BuildCostMass = 240,
         BuildRate = 25,
         BuildTime = 1200,
-        BuildableCategory = {
-            'MCPS3BES',
-        },
+        BuildableCategory = {'MCPS3BES'},
         MaxBuildDistance = 20,
+        RebuildBonusIds = {'MCPS2BES'},
     },
     Footprint = {
         SizeX = 1,

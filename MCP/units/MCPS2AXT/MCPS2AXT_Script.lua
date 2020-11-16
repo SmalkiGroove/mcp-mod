@@ -15,7 +15,11 @@ MCPS2AXT= Class(SAirUnit) {
         AARight = Class(SAAShleoCannonWeapon) {},
     },
 
-    # Override air destruction effects so we can do something custom here
+    OnStopBeingBuilt = function(self,builder,layer)
+        SAirUnit.OnStopBeingBuilt(self, builder, layer)
+        self:AddCommandCap('RULEUCC_Teleport')
+    end,
+
     CreateUnitAirDestructionEffects = function( self, scale )
         self:ForkThread(self.AirDestructionEffectsThread, self )
     end,

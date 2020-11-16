@@ -9,5 +9,5 @@ selectable = true
 enabled = true
 exclusive = false
 ui_only = false
-special_thanks = "Uveso, Balthassar"
+special_thanks = "Uveso, Balthazar"
 conflicts = {}

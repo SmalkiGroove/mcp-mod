@@ -6,7 +6,6 @@ function ModBlueprints(all_blueprints)
     OldModBlueprints(all_blueprints)
     MCPBuildableAdds(all_blueprints.Unit)
     MCPCategoryChanges(all_blueprints.Unit)
-    --MCPGlobalCategoryAdditions(all_blueprints.Unit)
     --HeavyWallBuildList(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
     StrategicIcons(all_blueprints.Unit)
@@ -36,153 +35,364 @@ end
 
 function MCPCategoryChanges(all_bps)
     local Units = {
-        xeb0104 = {'DRAGBUILD', r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Engi station
-        xeb0204 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Engi station
-        xrb0104 = {'BUILTBYTIER1ENGINEER', 'DRAGBUILD', 'TECH1', r = {'TECH2', 'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Engi station
-        xrb0204 = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'DRAGBUILD'},-- Cybran T2.5 Engi station
-        xrb0304 = {'BUILTBYTIER3ENGINEER','DRAGBUILD', 'TECH3', r = 'TECH2'},-- Cybran T3 Engi station
+        xeb0104 = { -- UEF T2 Engi station
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xeb0204 = { -- UEF T3 Engi station
+            'CQUEMOV', 'DRAGBUILD', 'BUILTBYTIER3ENGINEER'
+        },
+        xrb0104 = { -- Cybran T1 Engi station
+            'BUILTBYTIER1ENGINEER', 'TECH1',
+            r = {'TECH2', 'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xrb0204 = { -- Cybran T2 Engi station
+            'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER',
+        },
+        xrb0304 = { -- Cybran T3 Engi station
+            'BUILTBYTIER3ENGINEER', 'TECH3',
+            r = 'TECH2'
+        },
 
-        uab1102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T1 Hydrocarbon
-        uab1104 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T2 Mass fab
-        uab1105 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T1 Energy storage
-        uab1106 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T1 Mass storage
-        uab1201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T2 Power generator
-        uab1202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Aeon T2 Mass extractor
-        uab1301 = {r = 'BUILTBYTIER3COMANDER'}, -- Aeon T3 Power generator
-        uab1302 = {r = 'BUILTBYTIER3COMANDER'}, -- Aeon T3 Mass extractor
-        uab1303 = {r = 'BUILTBYTIER3COMANDER'}, -- Aeon T3 Mass fabricator
+        uab1102 = { -- Aeon T1 Hydrocarbon
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab1104 = { -- Aeon T2 Mass fab
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab1105 = { -- Aeon T1 Energy storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab1106 = { -- Aeon T1 Mass storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab1303 = { -- Aeon T3 Mass fabricator
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        ueb1102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T1 Hydrocarbon
-        ueb1104 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T2 Mass fab
-        ueb1105 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T1 Energy storage
-        ueb1106 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T1 Mass storage
-        ueb1201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T2 Power generator
-        ueb1202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- UEF T2 Mass extractor
-        ueb1301 = {r = 'BUILTBYTIER3COMANDER'}, -- UEF T3 Power generator
-        ueb1302 = {r = 'BUILTBYTIER3COMANDER'}, -- UEF T3 Mass extractor
-        ueb1303 = {r = 'BUILTBYTIER3COMANDER'}, -- UEF T3 Mass fabricator
+        ueb1102 = { -- UEF T1 Hydrocarbon
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb1104 = { -- UEF T2 Mass fab
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb1105 = { -- UEF T1 Energy storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb1106 = { -- UEF T1 Mass storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb1303 = { -- UEF T3 Mass fabricator
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        urb1102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T1 Hydrocarbon
-        urb1104 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T2 Mass fab
-        urb1105 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T1 Energy storage
-        urb1106 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T1 Mass storage
-        urb1201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T2 Power generator
-        urb1202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Cybran T2 Mass extractor
-        urb1301 = {r = 'BUILTBYTIER3COMANDER'}, -- Cybran T3 Power generator
-        urb1302 = {r = 'BUILTBYTIER3COMANDER'}, -- Cybran T3 Mass extractor
-        urb1303 = {r = 'BUILTBYTIER3COMANDER'}, -- Cybran T3 Mass fabricator
+        urb1102 = { -- Cybran T1 Hydrocarbon
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb1104 = { -- Cybran T2 Mass fab
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb1105 = { -- Cybran T1 Energy storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb1106 = { -- Cybran T1 Mass storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb1303 = { -- Cybran T3 Mass fabricator
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        xsb1102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T1 Hydrocarbon
-        xsb1104 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T2 Mass fab
-        xsb1105 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T1 Energy storage
-        xsb1106 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T1 Mass storage
-        xsb1201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T2 Power generator
-        xsb1202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMANDER'}}, -- Seraphim T2 Mass extractor
-        xsb1301 = {r = 'BUILTBYTIER3COMANDER'}, -- Seraphim T3 Power generator
-        xsb1302 = {r = 'BUILTBYTIER3COMANDER'}, -- Seraphim T3 Mass extractor
-        xsb1303 = {r = 'BUILTBYTIER3COMANDER'}, -- Seraphim T3 Mass fabricator
+        xsb1102 = { -- Seraphim T1 Hydrocarbon
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb1104 = { -- Seraphim T2 Mass fab
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb1105 = { -- Seraphim T1 Energy storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb1106 = { -- Seraphim T1 Mass storage
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb1303 = { -- Seraphim T3 Mass fabricator
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
 
         uaa0310 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 UFO
         ual0401 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 Colossus
         uas0401 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 Battleship
-        xab1401 = {'SORTECONOMY', r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T4 Resource Generator
-        xab2307 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = 'BUILTBYTIER3ENGINEER'}, -- Aeon T4 Rapidfire Arti
-        ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T4 Arti
-        xeb2402 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- UEF T4 Satellite
-        uel0401 = {NoBuild = true, },  -- UEF T4 Mobile Factory
-        ues0401 = {'BUILTBYTIER3FIELD'}, -- UEF T4 Aircraft Carrier
-        url0401 = {'SORTSTRATEGIC', 'BUILTBYTIER3FIELD'}, -- Cybran T4 Rapidfire Arti
+        xab1401 = {NoBuild = true}, -- Aeon T4 Resource Generator
+        xab2307 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Aeon T4 Rapidfire Arti
+        ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- UEF T4 Arti
+        xeb2402 = {NoBuild = true}, -- UEF T4 Satellite
+        uel0401 = {NoBuild = true},  -- UEF T4 Mobile Factory
+        ues0401 = {NoBuild = true}, -- UEF T4 Aircraft Carrier
+        url0401 = {NoBuild = true}, -- Cybran T4 Rapidfire Arti
         url0402 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Spiderbot
         xrl0403 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Megabot
         ura0401 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Gunship
         xsa0402 = {'BUILTBYTIER3FIELD'}, -- Seraphim T4 Bomber
         xsb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Seraphim T4 Nuke
         xsl0401 = {'BUILTBYTIER3FIELD'}, -- Seraphim T4 Bot
-        
-        uab2101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T1 PD
-        uab2104 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T1 AAT
-        uab2108 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T2 TML
-        uab2109 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T1 Torpedo launcher
-        uab2204 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T2 AAT
-        uab2205 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T2 Torpedo launcher
-        uab2301 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T2 PD
-        uab2302 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Aeon T3 Heavy Arti
-        uab2303 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T2 Arti
-        uab2304 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Aeon T3 AAT
-        uab4201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Aeon T2 TMD
-        uab4202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Aeon T2 Shield
-        uab4301 = {'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Aeon T3 Shield
-        uab5101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Aeon T1 Wall
-
-        ueb2101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T1 PD
-        ueb2104 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T1 AAT
-        ueb2108 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T2 TML
-        ueb2109 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T1 Torpedo launcher
-        ueb2204 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T2 AAT
-        ueb2205 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T2 Torpedo launcher
-        ueb2301 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T2 PD
-        ueb2302 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T3 Heavy Arti
-        ueb2303 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T2 Arti
-        ueb2304 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T3 AAT
-        ueb4201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- UEF T2 TMD
-        ueb4202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- UEF T2 Shield
-        ueb4301 = {'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- UEF T3 Shield
-        ueb5101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- UEF T1 Wall
-        xeb2306 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- UEF T3 PD
-
-        urb2101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T1 PD
-        urb2104 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T1 AAT
-        urb2108 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T2 TML
-        urb2109 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T1 Torpedo launcher
-        urb2204 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T2 AAT
-        urb2205 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T2 Torpedo launcher
-        urb2301 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T2 PD
-        urb2302 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Cybran T3 Heavy Arti
-        urb2303 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T2 Arti
-        urb2304 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Cybran T3 AAT
-        urb4201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Cybran T2 TMD
-        urb4202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Cybran T2 Shield
-        ueb4207 = {'BUILTBYTIER3FIELD', 'SORTECONOMY', 'TECH3', r = {'BUILTBYTIER3ENGINEER', 'SORTDEFENSE', 'TECH2'}}, -- Cybran T3 Shield
-        xrb2308 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Cybran T3 Torpedo launcher
-        urb5101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Cybran T1 Wall
-
-        xsb2101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T1 PD
-        xsb2104 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T1 AAT
-        xsb2108 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T2 TML
-        xsb2109 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T1 Torpedo launcher
-        xsb2204 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T2 AAT
-        xsb2205 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T2 Torpedo launcher
-        xsb2301 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T2 PD
-        xsb2302 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Seraphim T3 Heavy Arti
-        xsb2303 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T2 Arti
-        xsb2304 = {'BUILTBYTIER3FIELD', r = 'BUILTBYTIER3ENGINEER'}, -- Seraphim T3 AAT
-        xsb4201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Seraphim T2 TMD
-        xsb4202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Seraphim T2 Shield
-        xsb4301 = {'BUILTBYTIER3FIELD', 'SORTECONOMY', r = {'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}}, -- Seraphim T3 Shield
-        xsb5101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}}, -- Seraphim T1 Wall
 
 
-        uab3101 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Aeon T1 Radar
-        uab3102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Aeon T1 Sonar
-        uab3104 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Radar
-        uab3201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Aeon T2 Radar
-        uab3202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Aeon T2 Sonar
-        uab4203 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Aeon T2 Stealth field
+        uab2101 = { -- Aeon T1 PD
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2104 = { -- Aeon T1 AAT
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2108 = { -- Aeon T2 TML
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2109 = { -- Aeon T1 Torpedo launcher
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2204 = { -- Aeon T2 AAT
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2205 = { -- Aeon T2 Torpedo launcher
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2301 = { -- Aeon T2 PD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2302 = { -- Aeon T3 Heavy Arti
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        uab2303 = { -- Aeon T2 Arti
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        uab2304 = { -- Aeon T3 AAT
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        uab4201 = { -- Aeon T2 TMD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
+        },
+        uab4202 = { -- Aeon T2 Shield
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        uab4301 = { -- Aeon T3 Shield
+            'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        uab5101 = { -- Aeon T1 Wall
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+
+        ueb2101 = { -- UEF T1 PD
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2104 = { -- UEF T1 AAT
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2108 = { -- UEF T2 TML
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2109 = { -- UEF T1 Torpedo launcher
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2204 = { -- UEF T2 AAT
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2205 = { -- UEF T2 Torpedo launcher
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2301 = { -- UEF T2 PD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2302 = { -- UEF T3 Heavy Arti
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        ueb2303 = { -- UEF T2 Arti
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        ueb2304 = { -- UEF T3 AAT
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        ueb4201 = { -- UEF T2 TMD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
+        },
+        ueb4202 = { -- UEF T2 Shield
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        ueb4301 = { -- UEF T3 Shield
+            'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        ueb5101 = { -- UEF T1 Wall
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xeb2306 = { -- UEF T3 PD
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+
+        urb2101 = { -- Cybran T1 PD
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2104 = { -- Cybran T1 AAT
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2108 = { -- Cybran T2 TML
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2109 = { -- Cybran T1 Torpedo launcher
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2204 = { -- Cybran T2 AAT
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2205 = { -- Cybran T2 Torpedo launcher
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2301 = { -- Cybran T2 PD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2302 = { -- Cybran T3 Heavy Arti
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        urb2303 = { -- Cybran T2 Arti
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        urb2304 = { -- Cybran T3 AAT
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        urb4201 = { -- Cybran T2 TMD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
+        },
+        urb4202 = { -- Cybran T2 Shield
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        ueb4207 = { -- Cybran T3 Shield
+            'BUILTBYTIER3FIELD', 'SORTECONOMY', 'TECH3',
+            r = {'SORTDEFENSE', 'TECH2'}
+        },
+        xrb2308 = { -- Cybran T3 Torpedo launcher
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        urb5101 = { -- Cybran T1 Wall
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+
+        xsb2101 = { -- Seraphim T1 PD
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2104 = { -- Seraphim T1 AAT
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2108 = { -- Seraphim T2 TML
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2109 = { -- Seraphim T1 Torpedo launcher
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2204 = { -- Seraphim T2 AAT
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2205 = { -- Seraphim T2 Torpedo launcher
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2301 = { -- Seraphim T2 PD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2302 = { -- Seraphim T3 Heavy Arti
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        xsb2303 = { -- Seraphim T2 Arti
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+        xsb2304 = { -- Seraphim T3 AAT
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3ENGINEER'
+        },
+        xsb4201 = { -- Seraphim T2 TMD
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTSTRATEGIC',
+            r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
+        },
+        xsb4202 = { -- Seraphim T2 Shield
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        xsb4301 = { -- Seraphim T3 Shield
+            'BUILTBYTIER3FIELD', 'SORTECONOMY',
+            r = {'SORTDEFENSE'}
+        },
+        xsb5101 = { -- Seraphim T1 Wall
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
+        },
+
+
+        uab3101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T1 Radar
+        uab3102 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T1 Sonar
+        uab3104 = {'BUILTBYTIER3FIELD'}, -- Aeon T3 Radar
+        uab3201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Radar
+        uab3202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Sonar
+        uab4203 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Stealth field
         uab2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Nuke Silo
         uab4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Aeon T3 Anti Nuke
-        uas0305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Sonar
+        uas0305 = {'BUILTBYTIER3FIELD'}, -- Aeon T3 Sonar
         xab3301 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Optics
 
-        ueb3101 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T1 Radar
-        ueb3102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T1 Sonar
-        ueb3104 = {r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Radar
-        ueb3201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Radar
-        ueb3202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Sonar
-        ueb4203 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- UEF T2 Stealth field
+        ueb3101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T1 Radar
+        ueb3102 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T1 Sonar
+        ueb3104 = {'BUILTBYTIER3FIELD'}, -- UEF T3 Radar
+        ueb3201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Radar
+        ueb3202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Sonar
+        ueb4203 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Stealth field
         ueb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Nuke Silo
         ueb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- UEF T3 Anti Nuke
-        ues0305 = {r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Sonar
+        ues0305 = {'BUILTBYTIER3FIELD'}, -- UEF T3 Sonar
 
         urb3101 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T1 Radar
         urb3102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T1 Sonar
@@ -204,10 +414,22 @@ function MCPCategoryChanges(all_bps)
         xsb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Seraphim T3 Nuke Silo
         xsb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Seraphim T3 Anti Nuke
 
-        uab5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Aeon Air Staging
-        ueb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- UEF Air Staging
-        urb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Cybran Air Staging
-        xsb5202 = {'DRAGBUILD', 'TECH2', r = {'BUILTBYCOMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}}, -- Seraphim Air Staging
+        uab5202 = { -- Aeon Air Staging
+            'TECH2',
+            r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
+        },
+        ueb5202 = { -- UEF Air Staging
+            'TECH2',
+            r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
+        },
+        urb5202 = { -- Cybran Air Staging
+            'TECH2',
+            r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
+        },
+        xsb5202 = { -- Seraphim Air Staging
+            'TECH2',
+            r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
+        },
 
         ues0304 = {NoBuild = true, },  -- UEF T3 Strategic submarine
         urs0304 = {NoBuild = true, },  -- Cybran T3 Strategic submarine
@@ -224,7 +446,6 @@ function MCPCategoryChanges(all_bps)
         'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3COMMANDER',
         'BUILTBYTIER3FIELD',
-        'BUILTBYHEAVYWALL',
     }
     for k, v in Units do
         --Make sure the unit exists, and has its table
@@ -246,85 +467,6 @@ function MCPCategoryChanges(all_bps)
             else
                 for i in buildcats do
                     table.removeByValue(all_bps[k].Categories, buildcats[i])
-                end
-            end
-        end
-    end
-end
-
---------------------------------------------------------------------------------
--- Global category additions
---------------------------------------------------------------------------------
-
-function MCPGlobalCategoryAdditions(all_bps)
-    local Cats = {
-        'DRAGBUILD',
-    }
-    for id, bp in all_bps do
-        if bp.Categories then
-            for i, cat in Cats do
-                if not table.find(bp.Categories, cat) then
-                    table.insert(bp.Categories, cat)
-                end
-            end
-        end
-    end
-end
-
---------------------------------------------------------------------------------
--- Propperly choosing what should be buildable by the heavy walls.
---------------------------------------------------------------------------------
-
-function HeavyWallBuildList(all_bps)
-    for id, bp in all_bps do
-        --Check its not hard coded to be buildable, then check it meets the standard requirements.
-        if bp.Categories then
-            if not table.find(bp.Categories, 'BUILTBYHEAVYWALL')
-            and table.find(bp.Categories, 'STRUCTURE')
-            then
-                if table.find(bp.Categories, 'BUILTBYTIER1FIELD')
-                or table.find(bp.Categories, 'BUILTBYTIER2FIELD')
-                or table.find(bp.Categories, 'BUILTBYTIER3FIELD')
-                then
-                    if table.find(bp.Categories, 'DEFENSE') or table.find(bp.Categories, 'INDIRECTFIRE') then
-                        --Check it wouldn't overlap badly with the wall
-                        local fits = { X = false, Z = false,}
-                        local correct = { X = false, Z = false,}
-
-                        if bp.Footprint.SizeX == 3 and bp.Physics.SkirtSizeX == 3 or bp.Footprint.SizeX == 3 and bp.Physics.SkirtSizeX == 0 then
-                            correct.X = true
-                            fits.X = true
-                        elseif bp.Physics.SkirtSizeX < 3 and bp.Footprint.SizeX < 3 then
-                            fits.X = true
-                        end
-
-                        if bp.Footprint.SizeZ == 3 and bp.Physics.SkirtSizeZ == 3 or bp.Footprint.SizeZ == 3 and bp.Physics.SkirtSizeZ == 0 then
-                            correct.Z = true
-                            fits.Z = true
-                        elseif bp.Physics.SkirtSizeZ < 3 and bp.Footprint.SizeZ < 3 then
-                            fits.Z = true
-                        end
-
-                        if fits.X and fits.Z then
-                            table.insert(bp.Categories, 'BUILTBYHEAVYWALL')
-                            --This is to prevent it from having the same footprint as the wall
-                            --and from it removing all the path blocking of the wall if it dies or gets removed.
-                            --It will still remove the blocking from the center of the wall, but that's acceptable.
-
-                            --This will also make it so those turrets will no longer block pathing whilst adjacent
-                            --But that is probably fine.
-                            if correct.X then
-                                bp.Footprint.SizeX = 1
-                                bp.Physics.SkirtOffsetX = -1
-                                bp.Physics.SkirtSizeX = 3
-                            end
-                            if correct.Z then
-                                bp.Footprint.SizeZ = 1
-                                bp.Physics.SkirtOffsetZ = -1
-                                bp.Physics.SkirtSizeZ = 3
-                            end
-                        end
-                    end
                 end
             end
         end

@@ -3,7 +3,6 @@ UnitBlueprint {
         GuardReturnRadius = 100,
         GuardScanRadius = 80,
     },
-	ModIconName = 'wbp',
     Air = {
         AutoLandTime = 1,
         BankFactor = 2,
@@ -290,8 +289,8 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Shleo AA AutoGun',
             FireTargetLayerCapsTable = {
-                Air = 'Air|Land|Water|Seabed',
-                Land = 'Air|Land|Water|Seabed',
+                Air = 'Air|Land|Water',
+                Land = 'Air|Land|Water',
             },
             FiringTolerance = 0,
             Label = 'ShleoAAGun01',

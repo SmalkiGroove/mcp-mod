@@ -2146,3 +2146,9 @@ THeavyFragmentationGrenadeHitMK = {
     EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_07_emit.bp',
     EmtBpPathAlt .. 'terran_fragmentation_grenade_hit_MK_08_emit.bp',
 }
+
+DefaultProjectileWaterImpact = {
+    EmtBpPathAlt .. 'destruction_water_splash_wash_01_emit.bp',
+    EmtBpPathAlt .. 'destruction_water_splash_ripples_01_emit.bp',
+    EmtBpPathAlt .. 'destruction_water_splash_plume_01_emit.bp',
+}
