@@ -11,9 +11,6 @@ local CDFParticleCannonWeapon = WeaponsFile.CDFParticleCannonWeapon
 MCPC2LXRB = Class(CWalkingLandUnit) {
 
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-            FxMuzzleFlashScale = 0.0,
-        },
         MainGun = Class(CDFParticleCannonWeapon) {},
         ParticleGun1 = Class(CDFProtonCannonWeapon) {},
         ParticleGun2 = Class(CDFProtonCannonWeapon) {},
@@ -39,20 +36,10 @@ MCPC2LXRB = Class(CWalkingLandUnit) {
         self.Trash:Add(CreateRotator(self, 'Object14', 'z', nil, 690, 0, 0))
         self.Trash:Add(CreateRotator(self, 'Object13', 'z', nil, -690, 0, 0))
         self:CreatTheEffects()
-        self.SetAIAutoattackWeapon(self)
     end,
 
     OnDetachedFromTransport = function(self, transport, bone)
         CWalkingLandUnit.OnDetachedFromTransport(self, transport, bone)
-        self.SetAIAutoattackWeapon(self)
-    end,
-
-    SetAIAutoattackWeapon = function(self)
-        if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-            self:SetWeaponEnabledByLabel('autoattack', false)
-        else
-            self:SetWeaponEnabledByLabel('autoattack', true)
-        end
     end,
 
 

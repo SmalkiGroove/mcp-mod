@@ -6,9 +6,6 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 
 MCPS2LXB = Class( SWalkingLandUnit ) {
 	Weapons = {
-		autoattack = Class(SAAOlarisCannonWeapon) {
-			FxMuzzleFlashScale = 0.0, 
-		},
 		RightAAGun = Class(SAAOlarisCannonWeapon) {
 		},
 		MainTurret = Class(SDFThauCannon) {

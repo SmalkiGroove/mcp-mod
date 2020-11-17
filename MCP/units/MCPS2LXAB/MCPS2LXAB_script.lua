@@ -6,9 +6,6 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 
 MCPS2LXAB = Class( SWalkingLandUnit ) {
 	Weapons = {
-		autoattack = Class(SDFOhCannon) {
-			FxMuzzleFlashScale = 0.0, 
-		},
 		MainGun = Class(SDFOhCannon) {
 			FxMuzzleFlashScale = 2.0, 
 		},
@@ -19,12 +16,7 @@ MCPS2LXAB = Class( SWalkingLandUnit ) {
 
 	OnStopBeingBuilt = function(self,builder,layer)
 		SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-		self:CreatTheEffects()   
-		if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-			self:SetWeaponEnabledByLabel('autoattack', false)
-		else
-			self:SetWeaponEnabledByLabel('autoattack', true)
-		end      
+		self:CreatTheEffects() 
 	end,
 
 	CreatTheEffects = function(self)

@@ -10,9 +10,6 @@ local fxutil = import('/lua/effectutilities.lua')
 
 MCPA2AXGS = Class(AAirUnit) {
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         MainGun1 = Class(ADFQuantumAutogunWeapon) {},
         MainGun2 = Class(ADFQuantumAutogunWeapon) {},
         MainGun3 = Class(ADFQuantumAutogunWeapon) {},
@@ -35,12 +32,6 @@ OnStopBeingBuilt = function(self,builder,layer)
         AAirUnit.OnStopBeingBuilt(self,builder,layer)
         self.Trash:Add(CreateRotator(self, 'Object09', 'y', nil, -750, 0, 0))
         self.Trash:Add(CreateRotator(self, 'Object10', 'y', nil, 750, 0, 0))
-
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
     end,
 
 

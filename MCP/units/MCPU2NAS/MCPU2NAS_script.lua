@@ -20,9 +20,6 @@ MCPU2NAS = Class(TSeaUnit) {
 			            FxMuzzleFlashScale = 4.0, 
             FxMuzzleFlash = EffectTemplate.TFlakCannonMuzzleFlash01,
 },
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-    },
         FrontTurret04 = Class(TDFGaussCannonWeapon) {
 			            FxMuzzleFlashScale = 4.0, 
             FxMuzzleFlash = EffectTemplate.TFlakCannonMuzzleFlash01,

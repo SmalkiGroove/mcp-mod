@@ -12,9 +12,6 @@ MCPU1LXB = Class(TWalkingLandUnit) {
         rocket = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 0.4,
         },
-        autoattack = Class(TDFGaussCannonWeapon) {
-            FxMuzzleFlashScale = 0.0,
-        },
         DeathWeapon = Class(SCUDeathWeapon) {},
         smallerguns = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 4.4,
@@ -28,20 +25,10 @@ MCPU1LXB = Class(TWalkingLandUnit) {
     
     OnStopBeingBuilt = function(self,builder,layer)
         TWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-        self.SetAIAutoattackWeapon(self)
     end,
 
     OnDetachedFromTransport = function(self, transport, bone)
         TWalkingLandUnit.OnDetachedFromTransport(self, transport, bone)
-        self.SetAIAutoattackWeapon(self)
-    end,
-
-    SetAIAutoattackWeapon = function(self)
-        if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-            self:SetWeaponEnabledByLabel('autoattack', false)
-        else
-            self:SetWeaponEnabledByLabel('autoattack', true)
-        end
     end,
 
 }

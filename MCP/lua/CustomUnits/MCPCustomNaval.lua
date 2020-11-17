@@ -45,7 +45,7 @@ UnitList = {
 
     T3SeaBattleship = {
         UEF =       {'mcpu3nxas', 30},
-        Aeon =      {'mcpa3nxsb', 30},
+        Aeon =      {'mcpa3nxbs', 30},
         Cybran =    {'mcpc3nxbs', 30},
         Seraphim =  {'mcps3nxc', 30},
     },

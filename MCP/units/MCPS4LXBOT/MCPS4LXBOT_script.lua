@@ -1,7 +1,6 @@
 local SWalkingLandUnit = import('/lua/seraphimunits.lua').SWalkingLandUnit
 local SeraphimWeapons = import('/lua/seraphimweapons.lua')
 local WeaponsFile = import('/mods/MCP/lua/MCPWeapons.lua')
-local SAAOlarisCannonWeapon = SeraphimWeapons.SAAOlarisCannonWeapon
 local SDFAireauWeapon = SeraphimWeapons.SDFAireauWeapon
 local SDFUltraChromaticBeamGenerator = SeraphimWeapons.SDFUltraChromaticBeamGenerator02
 local TMCSpiderLaserweapon = WeaponsFile.TMCSpiderLaserweapon
@@ -18,9 +17,6 @@ MCPS4LXBOT = Class( SWalkingLandUnit ) {
     },
 
     Weapons = {
-        autoattack = Class(SAAOlarisCannonWeapon) {
-            FxMuzzleFlashScale = 0.0, 
-        },
         frontmg1 = Class(SDFAireauWeapon) {
         },
         topgun = Class(SDFSinnuntheWeapon){
@@ -37,12 +33,7 @@ MCPS4LXBOT = Class( SWalkingLandUnit ) {
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
-        SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-        if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-            self:SetWeaponEnabledByLabel('autoattack', false)
-        else
-            self:SetWeaponEnabledByLabel('autoattack', true)
-        end      
+        SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer) 
     end,
 
     OnKilled = function(self, instigator, damagetype, overkillRatio)

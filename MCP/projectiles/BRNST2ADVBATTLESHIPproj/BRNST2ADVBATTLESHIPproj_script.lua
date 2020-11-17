@@ -1,0 +1,4 @@
+local UefBRNST2ADVBATTLESHIPproj = import('/mods/MCP/lua/MCPProjectiles.lua').UefBRNST2ADVBATTLESHIPproj
+BRNST2ADVBATTLESHIPproj = Class(UefBRNST2ADVBATTLESHIPproj) {}
+
+TypeClass = BRNST2ADVBATTLESHIPproj

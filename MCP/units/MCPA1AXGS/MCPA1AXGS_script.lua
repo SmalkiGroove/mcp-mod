@@ -8,9 +8,6 @@ local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
 MCPA1AXGS = Class(AAirUnit) {
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         rocket1 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 0.1,
 	},
@@ -35,15 +32,7 @@ MCPA1AXGS = Class(AAirUnit) {
 
 OnStopBeingBuilt = function(self,builder,layer)
         AAirUnit.OnStopBeingBuilt(self,builder,layer)
-
               self:CreatTheEffects()
-
-
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
     end,
 
 CreatTheEffects = function(self)

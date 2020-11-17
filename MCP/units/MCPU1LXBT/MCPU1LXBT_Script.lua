@@ -23,20 +23,11 @@ MCPU1LXBT = Class(TLandUnit) {
         smallgun04 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 1.0,
 	},
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         MissileRack01 = Class(TSAMLauncher) {
 	},
     },
 OnStopBeingBuilt = function(self,builder,layer)
-        TLandUnit.OnStopBeingBuilt(self,builder,layer)
-      
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
+        TLandUnit.OnStopBeingBuilt(self,builder,layer) 
     end,
 
 OnKilled = function(self, instigator, damagetype, overkillRatio)

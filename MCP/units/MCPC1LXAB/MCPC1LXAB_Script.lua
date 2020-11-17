@@ -23,18 +23,9 @@ MCPC1LXAB = Class(CWalkingLandUnit) {
 	},
         MainGun = Class(CDFHeavyMicrowaveLaserGeneratorCom) {
 	},
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
     },
 OnStopBeingBuilt = function(self,builder,layer)
-        CWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-      
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
+        CWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)  
     end,
 
 OnKilled = function(self, instigator, damagetype, overkillRatio)

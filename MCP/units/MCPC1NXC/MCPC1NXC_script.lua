@@ -1,9 +1,7 @@
 local CSeaUnit = import('/lua/cybranunits.lua').CSeaUnit
 local CybranWeaponsFile = import('/lua/cybranweapons.lua')
-local WeaponFile = import('/lua/terranweapons.lua')
 local CAAAutocannon = CybranWeaponsFile.CAAAutocannon
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
-local TDFGaussCannonWeapon = WeaponFile.TDFGaussCannonWeapon
 local CIFMissileLoaWeapon = CybranWeaponsFile.CIFMissileLoaWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 
@@ -33,9 +31,6 @@ MCPC1NXC = Class(CSeaUnit) {
         AAGun3 = Class(CAAAutocannon) {},
         AAGun4 = Class(CAAAutocannon) {},
         AAGun5 = Class(CAAAutocannon) {},
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
- 	   },
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
@@ -43,12 +38,6 @@ MCPC1NXC = Class(CSeaUnit) {
         self.Trash:Add(CreateRotator(self, 'Cybran_Radar', 'y', nil, 90, 0, 0))
 
         CSeaUnit.OnStopBeingBuilt(self,builder,layer)
-      
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
     end,
 }
 

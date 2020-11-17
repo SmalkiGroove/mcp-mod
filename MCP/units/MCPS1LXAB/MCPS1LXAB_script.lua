@@ -1,6 +1,5 @@
 local SWalkingLandUnit = import('/lua/seraphimunits.lua').SWalkingLandUnit
 local SeraphimWeapons = import('/lua/seraphimweapons.lua')
-local SAAOlarisCannonWeapon = SeraphimWeapons.SAAOlarisCannonWeapon
 local SDFThauCannon = SeraphimWeapons.SDFThauCannon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local SAAOlarisCannonWeapon = import('/lua/seraphimweapons.lua').SAAOlarisCannonWeapon
@@ -8,9 +7,6 @@ local SDFChronotronCannonWeapon = SeraphimWeapons.SDFChronotronCannonWeapon
 
 MCPS1LXAB = Class( SWalkingLandUnit ) {
 	Weapons = {
-		autoattack = Class(SAAOlarisCannonWeapon) {
-			FxMuzzleFlashScale = 0.0, 
-		},
 		AAGun = Class(SAAOlarisCannonWeapon) {
 		},
 		MainTurret = Class(SDFThauCannon) {
@@ -22,11 +18,6 @@ MCPS1LXAB = Class( SWalkingLandUnit ) {
 	OnStopBeingBuilt = function(self,builder,layer)
 		SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
 		self:CreatTheEffects()
-		if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-			self:SetWeaponEnabledByLabel('autoattack', false)
-		else
-			self:SetWeaponEnabledByLabel('autoattack', true)
-		end      
 	end,
 
 	CreatTheEffects = function(self)

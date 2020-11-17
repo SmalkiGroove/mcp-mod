@@ -23,9 +23,6 @@ MCPU2LXM = Class(TWalkingLandUnit) {
             FxMuzzleFlash = MCPEffectTemplate.BRNT2EXLMmuzzle,
             FxMuzzleFlashScale = 8.05,
         },
-        autoattack = Class(TDFGaussCannonWeapon) {
-            FxMuzzleFlashScale = 0.0,
-        },
         DeathWeapon = Class(SCUDeathWeapon) {},
         smallerguns = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 4.4,
@@ -35,22 +32,12 @@ MCPU2LXM = Class(TWalkingLandUnit) {
 
     OnStopBeingBuilt = function(self,builder,layer)
         TWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-        self.SetAIAutoattackWeapon(self)
     end,
 
     OnDetachedFromTransport = function(self, transport, bone)
         TWalkingLandUnit.OnDetachedFromTransport(self, transport, bone)
-        self.SetAIAutoattackWeapon(self)
     end,
 
-    SetAIAutoattackWeapon = function(self)
-        if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-            self:SetWeaponEnabledByLabel('autoattack', false)
-        else
-            self:SetWeaponEnabledByLabel('autoattack', true)
-        end
-    end,
-    
 }
 
 TypeClass = MCPU2LXM

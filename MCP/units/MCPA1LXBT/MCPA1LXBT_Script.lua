@@ -4,16 +4,11 @@ local SWeapons = import ('/lua/seraphimweapons.lua')
 local TDFGaussCannonWeapon = WeaponsFile.TDFLandGaussCannonWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
-local WeaponsFileAutoAttack = import('/lua/terranweapons.lua')
-local AutoAttackWeapon = WeaponsFileAutoAttack.TDFLandGaussCannonWeapon
 local SDFChronotronCannonWeapon = SWeapons.SDFChronotronCannonWeapon
 
 MCPA1LXBT = Class(TLandUnit) {
 
     Weapons = {
-        autoattack = Class(AutoAttackWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         MainGun = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 1.7,
             FxMuzzleFlash = EffectTemplate.ASerpFlash01,
@@ -48,13 +43,7 @@ MCPA1LXBT = Class(TLandUnit) {
 	},
     },
 OnStopBeingBuilt = function(self,builder,layer)
-        TLandUnit.OnStopBeingBuilt(self,builder,layer)
-      
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
+        TLandUnit.OnStopBeingBuilt(self,builder,layer)  
     end,
 
 OnKilled = function(self, instigator, damagetype, overkillRatio)

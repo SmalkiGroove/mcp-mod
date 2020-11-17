@@ -1,18 +1,13 @@
 local AAirUnit = import('/lua/aeonunits.lua').AAirUnit
-local WeaponsFile = import('/lua/terranweapons.lua')
 local CybranWeaponsFile = import('/lua/cybranweapons.lua')
 local CAAMissileNaniteWeapon = CybranWeaponsFile.CAAMissileNaniteWeapon
 local CDFHeavyMicrowaveLaserGeneratorCom = CybranWeaponsFile.CDFHeavyMicrowaveLaserGeneratorCom
-local TDFGaussCannonWeapon = WeaponsFile.TDFLandGaussCannonWeapon
 local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 local util = import('/lua/utilities.lua')
 local fxutil = import('/lua/effectutilities.lua')
 
 MCPC2AXGS = Class(AAirUnit) {
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         MainGun = Class(CDFHeavyMicrowaveLaserGeneratorCom) {
 	},
         MainGun2 = Class(CDFHeavyMicrowaveLaserGeneratorCom) {
@@ -34,13 +29,6 @@ MCPC2AXGS = Class(AAirUnit) {
 
 OnStopBeingBuilt = function(self,builder,layer)
         AAirUnit.OnStopBeingBuilt(self,builder,layer)
-
-
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
     end,
 
 

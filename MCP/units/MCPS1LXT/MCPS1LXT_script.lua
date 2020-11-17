@@ -1,8 +1,6 @@
 local SWalkingLandUnit = import('/lua/seraphimunits.lua').SWalkingLandUnit
 local SeraphimWeapons = import('/lua/seraphimweapons.lua')
 local SDFHeavyQuarnonCannon = SeraphimWeapons.SDFHeavyQuarnonCannon
-local WeaponsFileAutoAttack = import('/lua/terranweapons.lua')
-local AutoAttackWeapon = WeaponsFileAutoAttack.TDFLandGaussCannonWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
@@ -12,29 +10,16 @@ MCPS1LXT = Class(SWalkingLandUnit) {
         BackTurret = Class(SDFHeavyQuarnonCannon) {
             FxMuzzleFlashScale = 2.0,
         },
-        autoattack = Class(AutoAttackWeapon) {
-            FxMuzzleFlashScale = 0.0,
-        },
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
         SWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
         self:CreatTheEffects()
         self.Trash:Add(CreateRotator(self, 'Object05', 'y', nil, 350, 0, 0))
-        self.SetAIAutoattackWeapon(self)
     end,
 
     OnDetachedFromTransport = function(self, transport, bone)
         SWalkingLandUnit.OnDetachedFromTransport(self, transport, bone)
-        self.SetAIAutoattackWeapon(self)
-    end,
-
-    SetAIAutoattackWeapon = function(self)
-        if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-            self:SetWeaponEnabledByLabel('autoattack', false)
-        else
-            self:SetWeaponEnabledByLabel('autoattack', true)
-        end
     end,
 
     CreatTheEffects = function(self)

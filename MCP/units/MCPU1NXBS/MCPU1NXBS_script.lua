@@ -43,21 +43,12 @@ MCPU1NXBS = Class(TSeaUnit) {
         FrontTurret02b = Class(TAALinkedRailgun) {},
         Torpedo01 = Class(TANTorpedoAngler) {},
         AntiTorpedo = Class(TIFSmartCharge) {},
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-    },
     },
     OnStopBeingBuilt = function(self,builder,layer)
         TSeaUnit.OnStopBeingBuilt(self,builder,layer)
         self.Trash:Add(CreateRotator(self, 'Spinner02', 'y', nil, 90, 0, 0))
 
-        TSeaUnit.OnStopBeingBuilt(self,builder,layer)
-      
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
+        TSeaUnit.OnStopBeingBuilt(self,builder,layer)  
     end,
 }
 

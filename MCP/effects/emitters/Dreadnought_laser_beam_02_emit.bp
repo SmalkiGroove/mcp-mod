@@ -1,0 +1,13 @@
+BeamBlueprint {
+    Lifetime = 10,
+    TextureName = '/mods/MCP/textures/beam_phason_01.dds',
+    Thickness = 0.5,
+    StartColor = {x = 0, y = 0, z = 255,w=0.1},
+    EndColor = {x = 0, y = 0, z = 255,w=0.1},
+    Blendmode = 4.0,
+    RepeatRate = 0.02,
+    Length = 1000,
+    UShift = 0.0,
+    VShift = -0.5,
+    LODCutoff = 400,
+}

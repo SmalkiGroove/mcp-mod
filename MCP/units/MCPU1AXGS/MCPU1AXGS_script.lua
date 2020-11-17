@@ -8,9 +8,6 @@ local fxutil = import('/lua/effectutilities.lua')
 
 MCPU1AXGS = Class(AAirUnit) {
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         mediumgauss1 = Class(TDFGaussCannonWeapon) {
 			            FxMuzzleFlashScale = 1.0, 
 	},
@@ -42,11 +39,6 @@ MCPU1AXGS = Class(AAirUnit) {
         AAirUnit.OnStopBeingBuilt(self,builder,layer)
         self.Trash:Add(CreateRotator(self, 'Object13', 'y', nil, -750, 0, 0))
         self:CreatTheEffects()
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
     end,
 
     OnMotionHorzEventChange = function(self, new, old )

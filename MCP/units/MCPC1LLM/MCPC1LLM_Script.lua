@@ -19,12 +19,10 @@ MCPC1LLM = Class(CWalkingLandUnit) {
     
     OnStopBeingBuilt = function(self,builder,layer)
         CWalkingLandUnit.OnStopBeingBuilt(self,builder,layer)
-        self.SetAIAutoattackWeapon(self)
     end,
 
     OnDetachedFromTransport = function(self, transport, bone)
         CWalkingLandUnit.OnDetachedFromTransport(self, transport, bone)
-        self.SetAIAutoattackWeapon(self)
     end,
     
 }

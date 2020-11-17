@@ -10,9 +10,6 @@ local fxutil = import('/lua/effectutilities.lua')
 
 MCPC1AXGS = Class(AAirUnit) {
     Weapons = {
-        autoattack = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 0.0, 
-	},
         gun01 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlashScale = 0.22,
             FxMuzzleFlash = EffectTemplate.CArtilleryFlash01,
@@ -43,15 +40,7 @@ MCPC1AXGS = Class(AAirUnit) {
 
 OnStopBeingBuilt = function(self,builder,layer)
         AAirUnit.OnStopBeingBuilt(self,builder,layer)
-
-              self:CreatTheEffects()
-
-
-      if self:GetAIBrain().BrainType == 'Human' and IsUnit(self) then
-         self:SetWeaponEnabledByLabel('autoattack', false)
-      else
-         self:SetWeaponEnabledByLabel('autoattack', true)
-      end      
+              self:CreatTheEffects()  
     end,
 
 
