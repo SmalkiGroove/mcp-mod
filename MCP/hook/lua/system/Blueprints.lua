@@ -431,21 +431,29 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
         },
 
-        ues0304 = {NoBuild = true, },  -- UEF T3 Strategic submarine
-        urs0304 = {NoBuild = true, },  -- Cybran T3 Strategic submarine
-        uas0304 = {NoBuild = true, },  -- Aeon T3 Strategic submarine
+        ues0304 = {NoBuild = true},  -- UEF T3 Strategic submarine
+        urs0304 = {NoBuild = true},  -- Cybran T3 Strategic submarine
+        uas0304 = {NoBuild = true},  -- Aeon T3 Strategic submarine
+
+        daa0206 = {NoBuild = true},  -- Aeon T2 guided missile
     }
     local buildcats = {
         'BUILTBYCOMMANDER',
         'BUILTBYTIER1ENGINEER',
         'BUILTBYTIER1COMMANDER',
         'BUILTBYTIER1FIELD',
+        'BUILTBYTIER1FACTORY',
         'BUILTBYTIER2ENGINEER',
         'BUILTBYTIER2COMMANDER',
         'BUILTBYTIER2FIELD',
+        'BUILTBYTIER2FACTORY',
         'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3COMMANDER',
         'BUILTBYTIER3FIELD',
+        'BUILTBYTIER3FACTORY',
+        'TRANSPORTBUILTBYTIER1FACTORY',
+        'TRANSPORTBUILTBYTIER2FACTORY',
+        'TRANSPORTBUILTBYTIER3FACTORY',
     }
     for k, v in Units do
         --Make sure the unit exists, and has its table
