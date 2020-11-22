@@ -79,8 +79,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 5,
-        Health = 17000,
-        MaxHealth = 17000,
+        Health = 24000,
+        MaxHealth = 24000,
         RegenRate = 3,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 75,
@@ -182,9 +182,9 @@ UnitBlueprint {
         UniformScale = 0.2,
     },
     Economy = {
-        BuildCostEnergy = 85000,
-        BuildCostMass = 7500,
-        BuildTime = 6800,
+        BuildCostEnergy = 77000,
+        BuildCostMass = 7000,
+        BuildTime = 8000,
     },
     
     General = {
@@ -211,8 +211,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 47,
-        RadarRadius = 70,
+        VisionRadius = 44,
+        RadarRadius = 45,
     },
     Interface = {
         HelpText = 'Experimental Battle Bot',
@@ -292,7 +292,7 @@ UnitBlueprint {
             FiringTolerance = 2,
             FiringRandomness = 0.3,
             Label = 'MainGun',
-            MaxRadius = 40,
+            MaxRadius = 38,
             MuzzleSalvoDelay = 0.05,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 35,
@@ -366,8 +366,7 @@ UnitBlueprint {
             FiringTolerance = 2,
             FiringRandomness = 0.35,
             Label = 'MainGun2',
-            MaxRadius = 40,
-            MinRadius = 0,
+            MaxRadius = 38,
             MuzzleChargeDelay = 0.25,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

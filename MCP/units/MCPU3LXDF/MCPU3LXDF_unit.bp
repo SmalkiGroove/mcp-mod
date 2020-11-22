@@ -114,8 +114,8 @@ UnitBlueprint {
         AirThreatLevel = 8,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 60000,
-        MaxHealth = 60000,
+        Health = 45000,
+        MaxHealth = 45000,
         RegenRate = 8,
         SubThreatLevel = 20,
         SurfaceThreatLevel = 160,
@@ -124,9 +124,7 @@ UnitBlueprint {
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
-			'<LOC ability_antiland>Anti-Land',
-             '<LOC ability_deploys>Deploys',
-			 '<LOC ability_amphibious>Amphibious',
+             '<LOC ability_deployable>Deployable',
         },
 		AnimationTransform = '/mods/MCP/units/MCPU3LXDF/MCPU3LXDF_aactivate.sca',
         IdleEffects = {
@@ -207,9 +205,9 @@ UnitBlueprint {
         UniformScale = 0.20,
     },
     Economy = {
-        BuildCostEnergy = 100000,
-        BuildCostMass = 15000,
-        BuildTime = 12000,
+        BuildCostEnergy = 169000,
+        BuildCostMass = 16200,
+        BuildTime = 18000,
     },
     General = {
         Category = 'Experimental',
@@ -231,7 +229,7 @@ UnitBlueprint {
         },
         ConstructionBar = true,
         FactionName = 'UEF',
-        Icon = 'amph',
+        Icon = 'land',
         TechLevel = 'RULEUTL_Advanced',
         ToggleCaps = {
             RULEUTC_WeaponToggle = true,
@@ -241,7 +239,6 @@ UnitBlueprint {
     },
     Intel = {
         VisionRadius = 32,
-        WaterVisionRadius = 32,
     },
     Interface = {
         HelpText = 'Experimental Deployable Fortress',
@@ -272,7 +269,7 @@ UnitBlueprint {
         MeshExtentsY = 2,
         MeshExtentsZ = 7,
         MinSpeedPercent = 0,
-        MotionType = 'RULEUMT_Amphibious',
+        MotionType = 'RULEUMT_Land',
         RotateBodyWhileMoving = true,
         RotateOnSpotThreshold = 0.5,
         SkirtOffsetX = -0,
@@ -654,7 +651,8 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'PlasmaCannon01',
-            MaxRadius = 88,
+            MaxRadius = 80,
+            MinRadius = 10,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 38,

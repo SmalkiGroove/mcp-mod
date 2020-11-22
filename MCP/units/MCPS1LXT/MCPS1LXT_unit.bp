@@ -65,8 +65,8 @@ UnitBlueprint {
         AirThreatLevel = 0.33,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 14000,
-        MaxHealth = 14000,
+        Health = 16000,
+        MaxHealth = 16000,
         RegenRate = 2,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -74,7 +74,6 @@ UnitBlueprint {
     Description = 'Experimental Siege Tank',
     Display = {
         Abilities = {
-            '<LOC ability_amphibious>Amphibious',
             '<LOC ability_radar>Radar',
         },
         Mesh = {
@@ -168,9 +167,9 @@ UnitBlueprint {
         UniformScale = 0.17,
     },
     Economy = {
-        BuildCostEnergy = 30000,
-        BuildCostMass = 3500,
-        BuildTime = 4000,
+        BuildCostEnergy = 37750,
+        BuildCostMass = 3800,
+        BuildTime = 6000,
     },
     General = {
         Category = 'Direct Fire',
@@ -190,14 +189,14 @@ UnitBlueprint {
             RULEUCC_Transport = false,
         },
         FactionName = 'Seraphim',
-        Icon = 'amph',
+        Icon = 'land',
         TechLevel = 'RULEUTL_Advanced',
         UnitName = 'Yath-Us',
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 30,
-        RadarRadius = 45,
+        VisionRadius = 26,
+        RadarRadius = 46,
     },
     Interface = {
         HelpText = 'Experimental Siege Tank',
@@ -225,7 +224,7 @@ UnitBlueprint {
         MeshExtentsY = 1.3,
         MeshExtentsZ = 2.2,
         MinSpeedPercent = 0,
-        MotionType = 'RULEUMT_Amphibious',
+        MotionType = 'RULEUMT_Land',
         RotateOnSpot = false,
         RotateOnSpotThreshold = 0.1,
         SkirtOffsetX = -0.5,
@@ -289,7 +288,7 @@ UnitBlueprint {
             FiringRandomness = 0.15,
             FiringTolerance = 2,
             Label = 'BackTurret',
-            MaxRadius = 55,
+            MaxRadius = 49,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

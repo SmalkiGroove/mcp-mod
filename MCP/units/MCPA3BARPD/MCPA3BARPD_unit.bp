@@ -104,9 +104,12 @@ UnitBlueprint {
         UniformScale = 0.04,
     },
     Economy = {
-        BuildCostEnergy = 54000*.55,
-        BuildCostMass = 9000*.3333334,
-        BuildTime = 18000*.15,
+        BuildCostEnergy = 50000,
+        BuildCostMass = 6000,
+        BuildTime = 6000,
+        RebuildBonusId = {
+            'MCPA3BARPD',
+        },
     },
     Footprint = {
         SizeX = 2,
@@ -227,7 +230,8 @@ UnitBlueprint {
             FiringRandomness = 0.3,
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 145,
+            MaxRadius = 150,
+            MinRadius = 30,
             MuzzleChargeDelay = 2.5,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

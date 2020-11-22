@@ -89,8 +89,8 @@ UnitBlueprint {
 		AirThreatLevel = 50,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 35000,
-        MaxHealth = 35000,
+        Health = 37500,
+        MaxHealth = 37500,
         RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 300,
@@ -121,9 +121,9 @@ UnitBlueprint {
         UniformScale = 0.12,
     },
     Economy = {
-       BuildCostEnergy = 105000,
-		BuildCostMass = 11200,
-        BuildTime = 8600,	
+       BuildCostEnergy = 223000,
+		BuildCostMass = 20500,
+        BuildTime = 25000,	
     },
     General = {
         Category = 'Gunship',

@@ -81,14 +81,13 @@ UnitBlueprint {
         'OVERLAYDEFENSE',
         'NEEDMOBILEBUILD',
         'DRAGBUILD',
-        'OVERLAYOMNI',
     },
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 24000,
-        MaxHealth = 24000,
+        Health = 27500,
+        MaxHealth = 27500,
         RegenRate = 3,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 330,
@@ -96,7 +95,6 @@ UnitBlueprint {
     Description = 'Experimental Combat Bot',
     Display = {
         Abilities = {
-            '<LOC ability_omni>Omni Sensor',
             '<LOC ability_amphibious>Amphibious',
             '<LOC ability_massive>Massive',
             '<LOC ability_deathaoe>Volatile',
@@ -187,9 +185,9 @@ UnitBlueprint {
         UniformScale = 0.07,
     },
     Economy = {
-        BuildCostEnergy = 62000,
-        BuildCostMass = 8600,
-        BuildTime = 6800,
+        BuildCostEnergy = 78250,
+        BuildCostMass = 7600,
+        BuildTime = 8000,
     },
     General = {
         Category = 'Direct Fire',
@@ -215,8 +213,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        OmniRadius = 45,
-        VisionRadius = 50,
+        VisionRadius = 40,
     },
     Interface = {
         HelpText = 'Experimental Combat Bot',
@@ -291,7 +288,7 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 40,
+            MaxRadius = 37,
             MuzzleSalvoDelay = 0.05,
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 55,
@@ -388,8 +385,8 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'rockets',
-            MaxRadius = 60,
-            MinRadius = 10,
+            MaxRadius = 42,
+            MinRadius = 12,
             MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 14,
             MuzzleVelocity = 5,

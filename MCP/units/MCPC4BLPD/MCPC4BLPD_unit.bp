@@ -39,8 +39,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 70,
-        Health = 25000,
-        MaxHealth = 25000,
+        Health = 36666,
+        MaxHealth = 36666,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -83,9 +83,12 @@ UnitBlueprint {
         UniformScale = 0.040,
     },
     Economy = {
-        BuildCostEnergy = 640000,
-        BuildCostMass = 12500,
-        BuildTime = 20000,
+        BuildCostEnergy = 525000,
+        BuildCostMass = 48875,
+        BuildTime = 66000,
+        RebuildBonusIds = {
+            'MCPC4BLPD',
+        },
     },
     Footprint = {
         SizeX = 5,
@@ -117,8 +120,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 20,
-        OmniRadius = 95,
+        VisionRadius = 35,
+        OmniRadius = 75,
     },
     Interface = {
         HelpText = 'Experimental Point Defense',
@@ -198,7 +201,7 @@ UnitBlueprint {
             },
             FiringTolerance = 0.5,
             Label = 'MainGun',
-            MaxRadius = 99,
+            MaxRadius = 77,
             MinRadius = 13,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

@@ -74,9 +74,9 @@ UnitBlueprint {
         AirThreatLevel = 14,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 80000,
-        MaxHealth = 80000,
-        RegenRate = 0,
+        Health = 66500,
+        MaxHealth = 66500,
+        RegenRate = 1,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 45,
     },
@@ -133,9 +133,9 @@ UnitBlueprint {
         UniformScale = 0.03,
     },
     Economy = {
-        BuildCostEnergy = 58000,
-        BuildCostMass = 4800,
-        BuildTime = 6500,
+        BuildCostEnergy = 122000,
+        BuildCostMass = 15750,
+        BuildTime = 48000,
     },
     Footprint = {
         SizeX = 2,
@@ -245,7 +245,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -329,7 +329,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -413,7 +413,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -497,7 +497,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -581,7 +581,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -666,7 +666,7 @@ UnitBlueprint {
             Damage = 350,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -751,7 +751,7 @@ UnitBlueprint {
             Damage = 450,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed|Air',
             },
@@ -922,7 +922,7 @@ UnitBlueprint {
             Damage = 450,
             DamageRadius = 3,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed',
             },
@@ -1002,7 +1002,7 @@ UnitBlueprint {
             Damage = 450,
             DamageRadius = 3,
             DamageType = 'Normal',
-            DisplayName = 'Quantum Cannon',
+            DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed',
             },

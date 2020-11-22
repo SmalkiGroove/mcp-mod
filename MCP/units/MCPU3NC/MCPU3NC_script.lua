@@ -26,7 +26,7 @@ MCPU3NC = Class(TSeaUnit) {
 
     OnScriptBitSet = function(self, bit)
         TSeaUnit.OnScriptBitSet(self, bit)
-        if bit == 1 then
+        if bit == 0 then
             self:SetWeaponEnabledByLabel('AAFlakFore', true)
             self:SetWeaponEnabledByLabel('TMDFore', false)
             self:GetWeaponManipulatorByLabel('AAFlakFore'):SetHeadingPitch(self:GetWeaponManipulatorByLabel('TMDFore'):GetHeadingPitch())

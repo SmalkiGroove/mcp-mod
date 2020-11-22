@@ -50,8 +50,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 6,
-        Health = 2150,
-        MaxHealth = 2150,
+        Health = 1725,
+        MaxHealth = 1725,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 31,
@@ -95,9 +95,9 @@ UnitBlueprint {
         UniformScale = 0.085,
     },
     Economy = {
-        BuildCostEnergy = 8300,
-        BuildCostMass = 690,
-        BuildTime = 700,
+        BuildCostEnergy = 12600,
+        BuildCostMass = 900,
+        BuildTime = 1250,
         RebuildBonusIds = {
             'MCPC1BLPD',
         },
@@ -169,7 +169,7 @@ UnitBlueprint {
     SizeX = 0.6,
     SizeY = 1.1,
     SizeZ = 0.6,
-    StrategicIconName = 'icon_structure1_antiair',
+    StrategicIconName = 'icon_structure1_directfire',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 12,
@@ -219,7 +219,7 @@ UnitBlueprint {
             FiringRandomness = 0,
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 30,
+            MaxRadius = 28,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             RackBones = {

@@ -98,9 +98,9 @@ UnitBlueprint {
         UniformScale = 0.08,
     },
     Economy = {
-        BuildCostEnergy = 68600,
-        BuildCostMass = 4700,
-        BuildTime = 4560,
+        BuildCostEnergy = 124000,
+        BuildCostMass = 9800,
+        BuildTime = 10000,
         RebuildBonusIds = {
             'MCPC2BXPD',
         },
@@ -206,8 +206,8 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 71,
-            MinRadius = 11,
+            MaxRadius = 73,
+            MinRadius = 17,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 150,

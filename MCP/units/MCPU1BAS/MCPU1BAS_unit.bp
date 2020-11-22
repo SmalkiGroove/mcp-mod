@@ -104,9 +104,12 @@ UnitBlueprint {
         UniformScale = 0.1875,
     },
     Economy = {
-        BuildCostEnergy = 1050,
-        BuildCostMass = 90,
-        BuildTime = 175,
+        BuildCostEnergy = 600,
+        BuildCostMass = 50,
+        BuildTime = 200,
+        RebuildBonusIds = {
+            'MCPU1BAS',
+        },
     },
     General = {
         Category = 'Strategic',

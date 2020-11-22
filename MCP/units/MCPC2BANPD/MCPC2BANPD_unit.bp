@@ -52,8 +52,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 6,
-        Health = 8000,
-        MaxHealth = 8000,
+        Health = 6625,
+        MaxHealth = 6625,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 18,
@@ -81,9 +81,12 @@ UnitBlueprint {
         UniformScale = 0.5,
     },
     Economy = {
-        BuildCostEnergy = 20000,
-        BuildCostMass = 2200,
+        BuildCostEnergy = 34000,
+        BuildCostMass = 2825,
         BuildTime = 3000,
+        RebuildBonusIds = {
+            'MCPC2BANPD',
+        },
     },
     Footprint = {
         SizeX = 3,
@@ -216,7 +219,7 @@ UnitBlueprint {
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
-            RangeCategory = 'UWRC_DirectFire',
+            RangeCategory = 'UWRC_AntiNavy',
             RateOfFire = 0.5,
             TargetCheckInterval = 0.25,
             TargetPriorities = {

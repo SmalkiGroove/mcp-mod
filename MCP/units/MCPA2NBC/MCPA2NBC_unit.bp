@@ -72,8 +72,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 12000,
-        MaxHealth = 12000,
+        Health = 7000,
+        MaxHealth = 7000,
         RegenRate = 0,
         SubThreatLevel = 20,
         SurfaceThreatLevel = 30,
@@ -81,7 +81,6 @@ UnitBlueprint {
     Description = 'Battlecruiser',
     Display = {
         Abilities = {
-            '<LOC ability_omni>Omni Sensor',
             '<LOC ability_torpedo>Torpedoes',
             '<LOC ability_torpedodef>Torpedo Defense',
             '<LOC ability_sonar>Sonar',
@@ -148,9 +147,9 @@ UnitBlueprint {
         UniformScale = 0.13,
     },
     Economy = {
-        BuildCostEnergy = 30000,
-        BuildCostMass = 3000,
-        BuildTime = 14400,
+        BuildCostEnergy = 16000,
+        BuildCostMass = 1920,
+        BuildTime = 9000,
     },
     Footprint = {
         SizeX = 2,
@@ -188,9 +187,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        OmniRadius = 30,
-        RadarRadius = 100,
-        SonarRadius = 100,
+        RadarRadius = 60,
+        SonarRadius = 50,
         VisionRadius = 32,
         WaterVisionRadius = 32,
     },

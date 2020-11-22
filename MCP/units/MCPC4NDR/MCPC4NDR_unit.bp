@@ -89,8 +89,8 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 80000,
-        MaxHealth = 80000,
+        Health = 128000,
+        MaxHealth = 128000,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
@@ -186,9 +186,9 @@ UnitBlueprint {
         UniformScale = 0.18,
     },
     Economy = {
-        BuildCostEnergy = 768000,
-        BuildCostMass = 28800,
-        BuildTime = 28800,
+        BuildCostEnergy = 571000,
+        BuildCostMass = 51700,
+        BuildTime = 80000,
     },
     Footprint = {
         SizeX = 8,
@@ -221,7 +221,7 @@ UnitBlueprint {
             },
         },
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC mcpc4ndr_name>SeaDragon MKII Class',
+        UnitName = '<LOC mcpc4ndr_name>SeaDragon Class',
         UnitWeight = 1,
     },
     Intel = {

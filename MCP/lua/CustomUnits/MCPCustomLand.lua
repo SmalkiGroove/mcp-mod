@@ -68,7 +68,7 @@ UnitList = {
 
     T1LandDFBot = {
         Cybran =    {'mcpc1llm', 60},
-        Seraphim =  {'mcps1lbb', 80},
+        Seraphim =  {'mcps1lab', 80},
     },
 
     T1LandDFTank = {

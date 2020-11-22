@@ -101,10 +101,11 @@ UnitBlueprint {
         BuildCostMass = 7200,
         BuildTime = 5400,
         MaintenanceConsumptionPerSecondEnergy = 1000,
+        RebuildBonusId = {
+            'MCPA3BAS',
+        },
         BuildRate = 90,
         BuildableCategory = {
-            'BUILTBYTIER3FACTORY AEON MOBILE CONSTRUCTION',
-            'BUILTBYTIER3FACTORY AEON STRUCTURE AIR',
             'BUILTBYTIER3FACTORY AEON MOBILE AIR',
         },
     },

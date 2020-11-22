@@ -88,9 +88,12 @@ UnitBlueprint {
         UniformScale = 0.10,
     },
     Economy = {
-        BuildCostEnergy = 18000,
-        BuildCostMass = 1550,
-        BuildTime = 1550,
+        BuildCostEnergy = 19200,
+        BuildCostMass = 1920,
+        BuildTime = 2000,
+        RebuildBonusId = {
+            'MCPA3BPD',
+        },
     },
     General = {
         Category = 'Defense',

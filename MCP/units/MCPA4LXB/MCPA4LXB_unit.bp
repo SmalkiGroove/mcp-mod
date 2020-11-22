@@ -83,7 +83,7 @@ UnitBlueprint {
             ImpactMesh = '/effects/entities/ShieldSection01/ShieldSection01_mesh',
             Mesh = '/effects/entities/AeonShield01/AeonShield01_mesh',
             MeshZ = '/effects/entities/Shield01/Shield01z_mesh',
-            RegenAssistMult = 260,
+            RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 10,
             ShieldMaxHealth = 30000,
             ShieldRechargeTime = 60,
@@ -100,7 +100,6 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
             '<LOC ability_massive>Massive',
-            '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
             '<LOC ability_shielddome>Shield Dome',
         },
@@ -188,9 +187,9 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 1000000,
-        BuildCostMass = 230000,
-        BuildTime = 150500,
+        BuildCostEnergy = 3000000,
+        BuildCostMass = 250000,
+        BuildTime = 135000,
         MaintenanceConsumptionPerSecondEnergy = 1000,
     },
     General = {
@@ -226,7 +225,6 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        OmniRadius = 70,
         VisionRadius = 70,
         WaterVisionRadius = 50,
     },

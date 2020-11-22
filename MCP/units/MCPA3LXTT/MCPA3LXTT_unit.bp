@@ -144,9 +144,9 @@ UnitBlueprint {
         UniformScale = 0.40,
     },
     Economy = {
-        BuildCostEnergy = 180000,
-        BuildCostMass = 9999,
-        BuildTime = 12000,
+        BuildCostEnergy = 175000,
+        BuildCostMass = 17000,
+        BuildTime = 18000,
     },
     General = {
         Category = 'Direct Fire',
@@ -254,8 +254,8 @@ UnitBlueprint {
             --HeadingArcCenter = -35,
             --HeadingArcRange = 35,
             Label = 'ArmTractor01',
-            MaxRadius = 28,
-            MinRadius = 4,
+            MaxRadius = 30,
+            MinRadius = 5,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

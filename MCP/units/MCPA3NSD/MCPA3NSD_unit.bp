@@ -99,8 +99,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 35000,
-        MaxHealth = 35000,
+        Health = 20000,
+        MaxHealth = 20000,
         RegenRate = 0,
         SubThreatLevel = 81,
         SurfaceThreatLevel = 300,
@@ -244,9 +244,9 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 72000,
-        BuildCostMass = 11500,
-        BuildTime = 12000,
+        BuildCostEnergy = 49000,
+        BuildCostMass = 6900,
+        BuildTime = 22000,
     },
     General = {
         Category = 'Ship',

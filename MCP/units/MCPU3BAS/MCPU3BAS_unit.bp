@@ -137,6 +137,9 @@ UnitBlueprint {
         BuildTime = 5400,
         BuildRate = 40,
         MaintenanceConsumptionPerSecondEnergy = 1000,
+        RebuildBonusIds = {
+            'MCPU3BAS',
+        },
     },
     Footprint = {
         MinWaterDepth = 2,

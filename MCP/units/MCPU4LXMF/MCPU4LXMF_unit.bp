@@ -68,7 +68,7 @@ UnitBlueprint {
         EconomyThreatLevel = 0,
         Health = 600000,
         MaxHealth = 600000,
-        RegenRate = 0,
+        RegenRate = 15,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 500,
     },
@@ -216,9 +216,9 @@ UnitBlueprint {
         UniformScale = 0.113,
     },
     Economy = {
-        BuildCostEnergy = 2800000,
-        BuildCostMass = 320000,
-        BuildTime = 120000,
+        BuildCostEnergy = 2750000,
+        BuildCostMass = 275000,
+        BuildTime = 150000,
     },
     General = {
         Category = 'Direct Fire',

@@ -117,9 +117,9 @@ UnitBlueprint {
         UniformScale = 0.05,
     },
     Economy = {
-        BuildCostEnergy = 1050,
-        BuildCostMass = 90,
-        BuildTime = 175,
+        BuildCostEnergy = 600,
+        BuildCostMass = 50,
+        BuildTime = 200,
     },
     General = {
         Category = 'Strategic',

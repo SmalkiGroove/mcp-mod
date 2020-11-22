@@ -76,8 +76,8 @@ UnitBlueprint {
         AirThreatLevel = 42,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 27850,
-        MaxHealth = 27850,
+        Health = 30000,
+        MaxHealth = 30000,
         RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 85,
@@ -89,7 +89,7 @@ UnitBlueprint {
             '<LOC ability_radar>Radar',
             '<LOC ability_sonar>Sonar',
             '<LOC ability_tacmissiledef>Tactical Missile Defense',
-            'Tactical Missiles',
+            --'Tactical Missiles',
         },
         AnimationDeath = {
             {
@@ -163,9 +163,9 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 100000,
-        BuildCostMass = 10000,
-        BuildTime = 10000,
+        BuildCostEnergy = 85000,
+        BuildCostMass = 9750,
+        BuildTime = 24000,
     },
     Footprint = {
         SizeX = 2,

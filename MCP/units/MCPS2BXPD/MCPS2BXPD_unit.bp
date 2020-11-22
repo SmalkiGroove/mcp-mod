@@ -103,9 +103,9 @@ UnitBlueprint {
         UniformScale = 0.09,
     },
     Economy = {
-        BuildCostEnergy = 70000,
-        BuildCostMass = 4600,
-        BuildTime = 4560,
+        BuildCostEnergy = 130000,
+        BuildCostMass = 9750,
+        BuildTime = 10000,
         RebuildBonusIds = {
             'MCPS2BXPD',
         },
@@ -223,8 +223,8 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'BackTurret',
-            MaxRadius = 73,
-            MinRadius = 13,
+            MaxRadius = 72,
+            MinRadius = 12,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

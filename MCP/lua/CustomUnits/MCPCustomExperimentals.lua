@@ -1,9 +1,9 @@
 UnitList = {
 
     T4SeaExperimental1 = {
-        UEF =       {'bes0402', 70},
-        Cybran =    {'brs0402', 70},
-        Seraphim =  {'bss0401', 70},
+        UEF =       {'mcpu4ndr', 100},
+        Cybran =    {'mcpc4ndr', 100},
+        Seraphim =  {'mcps4ndr', 100},
     },
 
     T4Artillery = {

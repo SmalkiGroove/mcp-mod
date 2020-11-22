@@ -116,9 +116,9 @@ UnitBlueprint {
         UniformScale = 0.05,
     },
     Economy = {
-        BuildCostEnergy = 400,
-        BuildCostMass = 50,
-        BuildTime = 300,
+        BuildCostEnergy = 275,
+        BuildCostMass = 55,
+        BuildTime = 275,
         TeleportEnergyMod = 0.15,
         TeleportMassMod = 1,
         TeleportTimeMod = 0.01,
@@ -250,7 +250,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2.25,
+            RateOfFire = 2,
             TargetCheckInterval = 0.5,
             TargetPriorities = {
                 'SPECIALHIGHPRI',

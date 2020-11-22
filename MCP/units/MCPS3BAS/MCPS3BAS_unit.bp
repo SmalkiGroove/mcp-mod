@@ -129,6 +129,9 @@ UnitBlueprint {
         BuildCostMass = 8640,
         BuildTime = 5400,
         MaintenanceConsumptionPerSecondEnergy = 1500,
+        RebuildBonusIds = {
+            'MCPS3BAS',
+        },
     },
     Footprint = {
         MinWaterDepth = 2,

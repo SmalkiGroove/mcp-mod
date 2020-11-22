@@ -77,8 +77,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 410000,
-        MaxHealth = 410000,
+        Health = 470000,
+        MaxHealth = 470000,
         RegenRate = 50,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 630,
@@ -268,9 +268,9 @@ UnitBlueprint {
         UniformScale = 0.09,
     },
     Economy = {
-        BuildCostEnergy = 4700000,
-        BuildCostMass = 290000,
-        BuildTime = 100000,
+        BuildCostEnergy = 2675000,
+        BuildCostMass = 270000,
+        BuildTime = 145000,
     },
     Footprint = {
         SizeX = 5,
@@ -297,7 +297,7 @@ UnitBlueprint {
         FactionName = 'Cybran',
         Icon = 'amph',
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = 'Avalanche mk.2',
+        UnitName = 'Avalanche',
         UnitWeight = 1,
     },
     Intel = {

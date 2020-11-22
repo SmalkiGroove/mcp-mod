@@ -97,9 +97,9 @@ UnitBlueprint {
         UniformScale = 0.045,
     },
     Economy = {
-        BuildCostEnergy = 50000,
-        BuildCostMass = 6200,
-        BuildTime = 6000,
+        BuildCostEnergy = 149000,
+        BuildCostMass = 18500,
+        BuildTime = 16000,
         RebuildBonusId = {
             'MCPU3BHPD',
         },
@@ -171,7 +171,7 @@ UnitBlueprint {
     SizeX = 1.2,
     SizeY = 1.1,
     SizeZ = 1.2,
-    StrategicIconName = 'icon_structure3_directfire',
+    StrategicIconName = 'icon_structure3_land',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 40,
@@ -225,8 +225,8 @@ UnitBlueprint {
             FiringTolerance = 2,
             FiringRandomness = 0.25,
             Label = 'Gauss01',
-            MaxRadius = 95,
-            MinRadius = 15,
+            MaxRadius = 80,
+            MinRadius = 10,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,

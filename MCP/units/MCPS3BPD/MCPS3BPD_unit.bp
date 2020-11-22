@@ -112,9 +112,12 @@ UnitBlueprint {
         UniformScale = 0.06,
     },
     Economy = {
-        BuildCostEnergy = 16000,
-        BuildCostMass = 1800,
-        BuildTime = 1500,
+        BuildCostEnergy = 17800,
+        BuildCostMass = 2000,
+        BuildTime = 2000,
+        RebuildBonusIds = {
+            'MCPS3BPD',
+        },
     },
     Footprint = {
         SizeX = 1,

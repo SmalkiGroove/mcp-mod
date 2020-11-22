@@ -42,7 +42,6 @@ UnitBlueprint {
         'UEF',
         'STRUCTURE',
         'DEFENSE',
-        'SUBMERSIBLE',
 		'NEEDMOBILEBUILD',
         'TECH2',
         'ANTINAVY',
@@ -59,8 +58,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 6,
-        Health = 9800,
-        MaxHealth = 9800,
+        Health = 7000,
+        MaxHealth = 7000,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 18,
@@ -69,7 +68,6 @@ UnitBlueprint {
     Display = {
         Abilities = {
             '<LOC ability_aquatic>Aquatic',
-            '<LOC ability_submersible>Submersible',
             '<LOC ability_personalstealth>Personal Stealth',
         },
 		AnimationSurfaceBis = '/Mods/MCP/units/MCPU2BANPD/MCPU2BANPDaopen01.sca',
@@ -139,9 +137,12 @@ UnitBlueprint {
         UniformScale = 0.30,
     },
     Economy = {
-        BuildCostEnergy = 18800,
-        BuildCostMass = 2250,
+        BuildCostEnergy = 33000,
+        BuildCostMass = 3000,
         BuildTime = 3000,
+        RebuildBonusIds = {
+            'MCPU2BANPD',
+        },
     },
     Footprint = {
         SizeX = 3,
@@ -155,7 +156,6 @@ UnitBlueprint {
             RULEUCC_CallTransport = false,
             RULEUCC_Capture = false,
             RULEUCC_Guard = false,
-			RULEUCC_Dive = true,
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
@@ -289,7 +289,7 @@ UnitBlueprint {
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
-            RangeCategory = 'UWRC_DirectFire',
+            RangeCategory = 'UWRC_AntiNavy',
             RateOfFire = 0.35,
             TargetCheckInterval = 0.5,
             TargetPriorities = {

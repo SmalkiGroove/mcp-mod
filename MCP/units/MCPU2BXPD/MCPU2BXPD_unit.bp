@@ -93,9 +93,9 @@ UnitBlueprint {
         UniformScale = 0.5,
     },
     Economy = {
-        BuildCostEnergy = 69000,
-        BuildCostMass = 4800,
-        BuildTime = 4560,
+        BuildCostEnergy = 120000,
+        BuildCostMass = 10500,
+        BuildTime = 10000,
         RebuildBonusIds = {
             'MCPU2BXPD',
         },
@@ -208,8 +208,8 @@ UnitBlueprint {
             FiringTolerance = 2,
             FiringRandomness = 0,
             Label = 'Gauss01',
-            MaxRadius = 75,
-            MinRadius = 15,
+            MaxRadius = 74,
+            MinRadius = 14,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 70,

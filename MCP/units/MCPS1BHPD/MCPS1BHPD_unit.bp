@@ -97,9 +97,9 @@ UnitBlueprint {
         UniformScale = 0.015,
     },
     Economy = {
-        BuildCostEnergy = 3700,
-        BuildCostMass = 590,
-        BuildTime = 600,
+        BuildCostEnergy = 6880,
+        BuildCostMass = 750,
+        BuildTime = 1000,
         RebuildBonusId = {
             'MCPS1BHPD',
         },
@@ -173,7 +173,7 @@ UnitBlueprint {
     SizeX = 1.0,
     SizeY = 1.1,
     SizeZ = 1.0,
-    StrategicIconName = 'icon_structure1_directfire',
+    StrategicIconName = 'icon_structure1_land',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 5,

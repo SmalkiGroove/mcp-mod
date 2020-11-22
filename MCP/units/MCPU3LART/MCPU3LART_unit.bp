@@ -55,17 +55,14 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 2200,
-        MaxHealth = 2200,
+        Health = 1300,
+        MaxHealth = 1300,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 22,
     },
-    Description = 'Artillery Support Bot',
+    Description = 'Sniper Bot',
     Display = {
-        Abilities = {
-            '<LOC ability_directfire>Directfire',
-        },
         AnimationDeath = {
             {
                 Animation = '/mods/MCP/units/MCPU3LART/MCPU3LART_ADeath.sca',
@@ -118,9 +115,9 @@ UnitBlueprint {
         UniformScale = 0.085,
     },
     Economy = {
-        BuildCostEnergy = 6000,
-        BuildCostMass = 400,
-        BuildTime = 3000,
+        BuildCostEnergy = 9000,
+        BuildCostMass = 900,
+        BuildTime = 4500,
         TeleportEnergyMod = 0.15,
         TeleportMassMod = 1,
         TeleportTimeMod = 0.01,
@@ -152,7 +149,7 @@ UnitBlueprint {
         VisionRadius = 26,
     },
     Interface = {
-        HelpText = 'Artillery Support Bot',
+        HelpText = 'Sniper Bot',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.55,
@@ -304,7 +301,7 @@ UnitBlueprint {
             FiringTolerance = 2,
             Label = 'GaussCannons',
             LeadTarget = true,
-            MaxRadius = 20,
+            MaxRadius = 22,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,

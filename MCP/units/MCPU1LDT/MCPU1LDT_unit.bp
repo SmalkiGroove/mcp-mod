@@ -63,10 +63,10 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = '<LOC MCPU1LDT_desc> Deployable Tank',   
+    Description = '<LOC MCPU1LDT_desc>Deployable Tank',   
     Display = {
         Abilities = {
-            '<LOC ability_deployable>Deployable Tank',
+            '<LOC ability_deployable>Deployable',
         },
 		AnimationActivate = '/Mods/MCP/units/MCPU1LDT/MCPU1LDT_aactivate.sca',
         Mesh = {
@@ -121,9 +121,9 @@ UnitBlueprint {
         UniformScale = 0.07,
     },
     Economy = {
-        BuildCostEnergy = 356,
-        BuildCostMass = 70,
-        BuildTime = 100,
+        BuildCostEnergy = 260,
+        BuildCostMass = 60,
+        BuildTime = 300,
         TeleportEnergyMod = 0.15,
         TeleportMassMod = 1,
         TeleportTimeMod = 0.01,
@@ -155,7 +155,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 20,
+        VisionRadius = 16,
     },
     Interface = {
         HelpText = '<LOC MCPU1LDT_help>Deployable Tank',
@@ -226,8 +226,8 @@ UnitBlueprint {
             },
             FiringTolerance = 1,
             Label = 'MainGun',
-            MaxRadius = 27,
-			MinRadius = 7,
+            MaxRadius = 26,
+			MinRadius = 4,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 32,
@@ -297,7 +297,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 7,
+            Damage = 6,
             DamageType = 'Normal',
             DisplayName = 'Tom Cat Machinegun',
             HeadingArcCenter = -90,
@@ -372,7 +372,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 7,
+            Damage = 6,
             DamageType = 'Normal',
             DisplayName = 'Tom Cat Machinegun',
             HeadingArcCenter = 90,

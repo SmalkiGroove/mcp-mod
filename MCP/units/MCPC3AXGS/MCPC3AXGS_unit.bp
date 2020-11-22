@@ -149,9 +149,9 @@ UnitBlueprint {
         UniformScale = 1.05,
     },
     Economy = {
-       BuildCostEnergy = 105000,
-		BuildCostMass = 11200,
-        BuildTime = 8600,
+       BuildCostEnergy = 221000,
+		BuildCostMass = 21000,
+        BuildTime = 25000,
     },
     General = {
         Category = 'Fighter',

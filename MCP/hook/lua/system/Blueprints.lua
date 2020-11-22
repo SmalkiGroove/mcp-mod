@@ -53,6 +53,8 @@ function MCPCategoryChanges(all_bps)
             r = 'TECH2'
         },
 
+        ----------------------------------------------------------------------------------------------
+
         uab1102 = { -- Aeon T1 Hydrocarbon
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
@@ -117,6 +119,7 @@ function MCPCategoryChanges(all_bps)
             r = 'BUILTBYTIER3COMMANDER'
         },
 
+        ---------------------------------------------------------------------------------------------
 
         uaa0310 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 UFO
         ual0401 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 Colossus
@@ -135,6 +138,7 @@ function MCPCategoryChanges(all_bps)
         xsb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Seraphim T4 Nuke
         xsl0401 = {'BUILTBYTIER3FIELD'}, -- Seraphim T4 Bot
 
+        ----------------------------------------------------------------------------------------------
 
         uab2101 = { -- Aeon T1 PD
             'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
@@ -372,47 +376,155 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYTIER1ENGINEER', 'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER'}
         },
 
+        -------------------------------------------------------------------------------------------------------
 
-        uab3101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T1 Radar
-        uab3102 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T1 Sonar
-        uab3104 = {'BUILTBYTIER3FIELD'}, -- Aeon T3 Radar
-        uab3201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Radar
-        uab3202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Sonar
-        uab4203 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- Aeon T2 Stealth field
-        uab2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Nuke Silo
-        uab4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Aeon T3 Anti Nuke
-        uas0305 = {'BUILTBYTIER3FIELD'}, -- Aeon T3 Sonar
-        xab3301 = {r = 'BUILTBYTIER3COMMANDER'}, -- Aeon T3 Optics
+        uab3101 = { -- Aeon T1 Radar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab3102 = { -- Aeon T1 Sonar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab3104 = { -- Aeon T3 Radar
+            'BUILTBYTIER3FIELD', 'BUILTBYTIER3ENGINEER',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        uab3201 = { -- Aeon T2 Radar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab3202 = { -- Aeon T2 Sonar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab4203 = { -- Aeon T2 Stealth field
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        uab2305 = { -- Aeon T3 Nuke Silo
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        uab4302 = { -- Aeon T3 Anti Nuke
+            'SORTSTRATEGIC',
+            r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}
+        },
+        uas0305 = { -- Aeon T3 Sonar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        xab3301 = { -- Aeon T3 Optics
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        ueb3101 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T1 Radar
-        ueb3102 = {'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T1 Sonar
-        ueb3104 = {'BUILTBYTIER3FIELD'}, -- UEF T3 Radar
-        ueb3201 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Radar
-        ueb3202 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Sonar
-        ueb4203 = {'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'}, -- UEF T2 Stealth field
-        ueb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- UEF T3 Nuke Silo
-        ueb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- UEF T3 Anti Nuke
-        ues0305 = {'BUILTBYTIER3FIELD'}, -- UEF T3 Sonar
+        ueb3101 = { -- UEF T1 Radar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb3102 = { -- UEF T1 Sonar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb3104 = { -- UEF T3 Radar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        ueb3201 = { -- UEF T2 Radar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb3202 = { -- UEF T2 Sonar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb4203 = { -- UEF T2 Stealth field
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        ueb2305 = { -- UEF T3 Nuke Silo
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        ueb4302 = { -- UEF T3 Anti Nuke
+            'SORTSTRATEGIC',
+            r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}
+        },
+        ues0305 = { -- UEF T3 Sonar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        urb3101 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T1 Radar
-        urb3102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T1 Sonar
-        urb3104 = {r = 'BUILTBYTIER3COMMANDER'}, -- Cybran T3 Radar
-        urb3201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Radar
-        urb3202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Sonar
-        urb4203 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Cybran T2 Stealth field
-        urb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Cybran T3 Nuke Silo
-        urb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Cybran T3 Anti Nuke
-        xrb3301 = {r = 'BUILTBYTIER3COMMANDER'}, -- Cybran T3 Perimeter Monitoring
-        urs0305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Cybran T3 Sonar
+        urb3101 = { -- Cybran T1 Radar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb3102 = { -- Cybran T1 Sonar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb3104 = { -- Cybran T3 Radar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        urb3201 = { -- Cybran T2 Radar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb3202 = { -- Cybran T2 Sonar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb4203 = { -- Cybran T2 Stealth field
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        urb2305 = { -- Cybran T3 Nuke Silo
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        urb4302 = { -- Cybran T3 Anti Nuke
+            'SORTSTRATEGIC',
+            r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}
+        },
+        xrb3301 = { -- Cybran T3 Perimeter Monitoring
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        urs0305 = { -- Cybran T3 Sonar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
 
-        xsb3101 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T1 Radar
-        xsb3102 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T1 Sonar
-        xsb3104 = {r = 'BUILTBYTIER3COMMANDER'}, -- Seraphim T3 Radar
-        xsb3201 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T2 Radar
-        xsb3202 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T2 Sonar
-        xsb4203 = {r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}}, -- Seraphim T2 Stealth field
-        xsb2305 = {r = 'BUILTBYTIER3COMMANDER'}, -- Seraphim T3 Nuke Silo
-        xsb4302 = {'SORTSTRATEGIC', r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}}, -- Seraphim T3 Anti Nuke
+        xsb3101 = { -- Seraphim T1 Radar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb3102 = { -- Seraphim T1 Sonar
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb3104 = { -- Seraphim T3 Radar
+            'BUILTBYTIER3FIELD',
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        xsb3201 = { -- Seraphim T2 Radar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb3202 = { -- Seraphim T2 Sonar
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb4203 = { -- Seraphim T2 Stealth field
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
+            r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
+        },
+        xsb2305 = { -- Seraphim T3 Nuke Silo
+            r = 'BUILTBYTIER3COMMANDER'
+        },
+        xsb4302 = { -- Seraphim T3 Anti Nuke
+            'SORTSTRATEGIC',
+            r = {'BUILTBYTIER3COMMANDER', 'SORTDEFENSE'}
+        },
+
+        --------------------------------------------------------------------------------------------------------------
 
         uab5202 = { -- Aeon Air Staging
             'TECH2',
