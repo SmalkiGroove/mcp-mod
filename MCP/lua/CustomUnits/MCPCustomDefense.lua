@@ -32,13 +32,7 @@ UnitList = {
         Seraphim =	{'mcps3baas', 20},
     },
 
-    T3GroundDefense = {
-        Cybran =	{'mcpc3bpd', 70},
-        Aeon =	    {'mcpa3bpd', 70},
-        Seraphim =	{'mcps3bpd', 70},
-    },
-
-    T3Artillery = {
+    T2Artillery = {
         Aeon = 		{'mcpa3barpd', 15},
         Seraphim =	{'mcps3barpd', 15},
         Cybran =	{'mcpc3barpd', 15},

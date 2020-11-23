@@ -8,6 +8,9 @@ UnitList = {
     },
 
     T2SubKiller = {
+        Aeon =      {'mcpa3nsd', 20},
+        Cybran =    {'mcpc3nsub', 40},
+        UEF =       {'mcpu3nsub', 40},
         Seraphim =  {'mcps2nss', 40},
     },
 

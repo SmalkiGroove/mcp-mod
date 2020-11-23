@@ -1,9 +1,7 @@
 local SAirUnit = import('/lua/seraphimunits.lua').SAirUnit
 local SAALosaareAutoCannonWeapon = import('/lua/seraphimweapons.lua').SAALosaareAutoCannonWeaponAirUnit
 local SANHeavyCavitationTorpedo = import('/lua/seraphimweapons.lua').SANHeavyCavitationTorpedo
-local EffectTemplate = import('/lua/EffectTemplates.lua')
 local EffectUtil = import('/lua/EffectUtilities.lua')
-local util = import('/lua/utilities.lua')
 
 BSA0001 = Class(SAirUnit) {
     Weapons = {

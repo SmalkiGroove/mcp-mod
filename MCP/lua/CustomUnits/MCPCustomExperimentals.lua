@@ -14,9 +14,9 @@ UnitList = {
     },
 
     T4LandExperimental1 = {
-        UEF =       {'mcpu4lxw', 90},
-        Aeon =      {'mcpa4lht', 90},
-        Seraphim =  {'mcps4lht', 90},
+        UEF =       {'mcpu4lxw', 80},
+        Aeon =      {'mcpa4lht', 80},
+        Seraphim =  {'mcps4lht', 80},
     },
 
     T4LandExperimental2 = {

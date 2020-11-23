@@ -1,10 +1,10 @@
 UnitList = {
     
     T1SeaFrigate = {
-        UEF =       {'mcpu1nxbs', 20},
-        Aeon =      {'mcpa1nxbs', 20},
-        Cybran =    {'mcpc1nxc', 20},
-        Seraphim =  {'mcps1nxdc', 20},
+        UEF =       {'mcpu1nxbs', 15},
+        Aeon =      {'mcpa1nxbs', 15},
+        Cybran =    {'mcpc1nxc', 15},
+        Seraphim =  {'mcps1nxdc', 15},
     },
 
     T2SeaDestroyer = {
@@ -15,9 +15,9 @@ UnitList = {
     },
     
     T3SeaBattleship = {
-        UEF =       {'mcpu3nxbs', 25},
-        Aeon =      {'mcpa3nxbs', 25},
-        Cybran =    {'mcpc3nxbs', 25},
-        Seraphim =  {'mcps3nxc', 25},
+        UEF =       {'mcpu3nxbs', 15},
+        Aeon =      {'mcpa3nxbs', 15},
+        Cybran =    {'mcpc3nxbs', 15},
+        Seraphim =  {'mcps3nxc', 15},
     },
 }

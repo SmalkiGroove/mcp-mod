@@ -8,16 +8,23 @@ UnitList = {
     },
 
     T2GroundDefense = {
-        UEF =       {'mcpu2bxpd', 20},
-        Cybran =	{'mcpc2bxpd', 20},
-        Seraphim =	{'mcps2bxpd', 20},
-        Aeon =		{'mcpa2bxpd', 20},
+        UEF =       {'mcpu2bxpd', 10},
+        Cybran =	{'mcpc2bxpd', 10},
+        Seraphim =	{'mcps2bxpd', 10},
+        Aeon =		{'mcpa2bxpd', 10},
     },
 
-    T3GroundDefense = {
+    T2StrategicMissile = {
         Cybran =	{'mcpc3bhpd', 30},
         Aeon =	    {'mcpa3bhpd', 30},
         UEF =	    {'mcpu3bhpd', 30},
+    },
+
+    T3StrategicMissile = {
+        Aeon = 		{'mcpa4bpd', 15},
+        Seraphim =	{'mcps4bspd', 15},
+        Cybran =	{'mcpc4blpd', 15},
+        UEF =		{'mcpu4bpd', 15},
     },
 
     T3LandArtillery = {
