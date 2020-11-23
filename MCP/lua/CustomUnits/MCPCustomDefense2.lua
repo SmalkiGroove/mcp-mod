@@ -7,13 +7,6 @@ UnitList = {
         UEF =		{'mcpu1brfa', 20},
     },
 
-    T2ShieldDefense = {
-        UEF =       {'mcpu1bshield', 80},
-        Cybran =    {'mcpu1bshield', 80},
-        Aeon =      {'mcpu1bshield', 80},
-        Seraphim =  {'mcpu1bshield', 80},
-    },
-
     T2GroundDefense = {
         UEF =       {'mcpu2bxpd', 20},
         Cybran =	{'mcpc2bxpd', 20},

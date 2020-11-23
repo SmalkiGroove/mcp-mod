@@ -1,31 +1,31 @@
 UnitList = {
 
-    T2Resource = {
-        UEF =		{'mcpu2bwme', 40},
-        Cybran =	{'mcpc2bwme', 40},
-        Aeon =		{'mcpa2bwme', 40},
-        Seraphim =	{'mcps2bwme', 40},
+    T2MassCreation = {
+        UEF =		{'mcpu2bwme', 50},
+        Cybran =	{'mcpc2bwme', 50},
+        Aeon =		{'mcpa2bwme', 50},
+        Seraphim =	{'mcps2bwme', 50},
     },
 
     T2EnergyProduction = {
-        UEF =		{'mcpu2bwhydro', 80},
-        Cybran =	{'mcpc2bwhydro', 80},
-        Aeon =		{'mcpa2bwhydro', 80},
-        Seraphim =	{'mcps2bwhydro', 80},
+        UEF =		{'mcpu2bwhydro', 50},
+        Cybran =	{'mcpc2bwhydro', 50},
+        Aeon =		{'mcpa2bwhydro', 50},
+        Seraphim =	{'mcps2bwhydro', 50},
     },
 
     T3EnergyProduction = {
-        UEF =		{'mcpu3bwhydro', 80},
-        Cybran =	{'mcpc3bwhydro', 80},
-        Aeon =		{'mcpa3bwhydro', 80},
-        Seraphim =	{'mcps3bwhydro', 80},
+        UEF =		{'mcpu3bwhydro', 50},
+        Cybran =	{'mcpc3bwhydro', 50},
+        Aeon =		{'mcpa3bwhydro', 50},
+        Seraphim =	{'mcps3bwhydro', 50},
     },
 
-    T3Resource = {
-        UEF =		{'mcpu3bwme', 40},
-        Cybran =	{'mcpc3bwme', 40},
-        Aeon =		{'mcpa3bwme', 40},
-        Seraphim =	{'mcps3bwme', 40},
+    T3MassCreation = {
+        UEF =		{'mcpu3bwme', 50},
+        Cybran =	{'mcpc3bwme', 50},
+        Aeon =		{'mcpa3bwme', 50},
+        Seraphim =	{'mcps3bwme', 50},
     },
     
 }
