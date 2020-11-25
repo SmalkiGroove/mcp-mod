@@ -8,10 +8,10 @@ UnitList = {
     },
 
     T1AirBomber = {
-        UEF =       {'mcpu1axgs', 10},
-        Cybran =    {'mcpc1axgs', 10},
-        Aeon =      {'mcpa1axgs', 10},
-        Seraphim =  {'mcps1axgs', 10},
+        UEF =       {'mcpu1axgs', 20},
+        Cybran =    {'mcpc1axgs', 20},
+        Aeon =      {'mcpa1axgs', 20},
+        Seraphim =  {'mcps1axgs', 20},
     },
 
     T1Gunship = {
@@ -21,9 +21,16 @@ UnitList = {
     },
 
     T2AirGunship = {
-        UEF =       {'mcpu2axgs', 10},
-        Cybran =    {'mcpc2axgs', 10},
-        Aeon =      {'mcpa2axgs', 10},
+        UEF =       {'mcpu2axgs', 20},
+        Cybran =    {'mcpc2axgs', 20},
+        Aeon =      {'mcpa2axgs', 20},
+    },
+
+    T2TorpedoBomber = {
+        UEF =       {'mcpu1axgs', 10},
+        Cybran =    {'mcpc1axgs', 10},
+        Aeon =      {'mcpa1axgs', 10},
+        Seraphim =  {'mcps1axgs', 10},
     },
 
     T2AirTransport = {
@@ -35,6 +42,12 @@ UnitList = {
         Cybran =    {'mcpc2af', 20},
         Aeon =      {'xaa0202', 20},
         Seraphim =  {'mcps2acf', 20},
+    },
+
+    T3AirBomber = {
+        UEF =       {'mcpu2axgs', 15},
+        Cybran =    {'mcpc2axgs', 15},
+        Aeon =      {'mcpa2axgs', 15},
     },
 
     T3AirGunship = {
@@ -52,5 +65,13 @@ UnitList = {
         Cybran =    {'mcpc3axgs', 40},
         Aeon =      {'mcpa3axgs', 40},
         Seraphim =  {'mcps3axgs', 40},
+    },
+
+    T4SatelliteExperimental = {
+        UEF =       {'mcpu4aff', 100},
+    },
+
+    T3AADefense = {
+        UEF =       {'mcpu4aff', 5},
     },
 }

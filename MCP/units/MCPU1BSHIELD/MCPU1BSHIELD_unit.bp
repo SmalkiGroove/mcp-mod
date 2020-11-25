@@ -32,7 +32,7 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
-    BuildIconSortPriority = 100,
+    BuildIconSortPriority = 10,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -53,7 +53,7 @@ UnitBlueprint {
         'VISIBLETORECON',
         'RECLAIMABLE',
         'OVERLAYDEFENSE',
-        'SORTECONOMY',
+        'SORTDEFENSE',
     },
     CollisionOffsetY = -0.25,
     Defense = {

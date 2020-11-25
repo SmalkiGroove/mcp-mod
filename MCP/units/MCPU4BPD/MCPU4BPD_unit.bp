@@ -295,7 +295,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.5,
+            RateOfFire = 0.35,
             TargetCheckInterval = 0.25,
             TargetPriorities = {
                 'EXPERIMENTAL',
@@ -414,7 +414,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.5,
+            RateOfFire = 0.35,
             TargetCheckInterval = 0.25,
             TargetPriorities = {
                 'EXPERIMENTAL',
@@ -533,7 +533,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.5,
+            RateOfFire = 0.35,
             TargetCheckInterval = 0.25,
             TargetPriorities = {
                 'EXPERIMENTAL',
@@ -652,7 +652,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.5,
+            RateOfFire = 0.35,
             TargetCheckInterval = 0.25,
             TargetPriorities = {
                 'EXPERIMENTAL',

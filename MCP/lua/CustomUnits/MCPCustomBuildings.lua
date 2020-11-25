@@ -27,5 +27,9 @@ UnitList = {
         Aeon =		{'mcpa3bwme', 50},
         Seraphim =	{'mcps3bwme', 50},
     },
-    
+
+    T2EngineerSupport = {
+        Aeon =      {'mcpa3bes', 100},
+        Seraphim =  {'mcps2bes', 100},
+    },
 }

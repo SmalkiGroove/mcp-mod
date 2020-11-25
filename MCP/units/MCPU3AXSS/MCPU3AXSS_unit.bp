@@ -235,7 +235,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -304,7 +304,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -373,7 +373,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -442,7 +442,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -511,7 +511,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
@@ -580,7 +580,7 @@ UnitBlueprint {
             MaxRadius = 44,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 60,
+            MuzzleVelocity = 80,
             ProjectileId = '/projectiles/TDFRiot02/TDFRiot02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {

@@ -76,6 +76,7 @@ UnitBlueprint {
         'OVERLAYDEFENSE',
         'OVERLAYDIRECTFIRE',
         'OVERLAYINDIRECTFIRE',
+        'SORTINTEL',
     },
     Defense = {
         AirThreatLevel = 16,

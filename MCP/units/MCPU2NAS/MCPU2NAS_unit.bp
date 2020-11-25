@@ -280,7 +280,7 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed',
             },
-            FiringRandomness = 1.5,
+            FiringRandomness = 1,
             FiringTolerance = 1,
             Label = 'FrontTurret02',
             MaxRadius = 120,
@@ -361,7 +361,7 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed',
             },
-            FiringRandomness = 1.5,
+            FiringRandomness = 1,
             FiringTolerance = 1,
             Label = 'FrontTurret03',
             MaxRadius = 120,
@@ -442,7 +442,7 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Water = 'Land|Water|Seabed',
             },
-            FiringRandomness = 1.5,
+            FiringRandomness = 1,
             FiringTolerance = 1,
             Label = 'FrontTurret04',
             MaxRadius = 120,
@@ -526,7 +526,7 @@ UnitBlueprint {
             FiringRandomness = 0.8,
             FiringTolerance = 1,
             Label = 'FrontTurret01',
-            MaxRadius = 44,
+            MaxRadius = 60,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 32,

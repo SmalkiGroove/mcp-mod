@@ -649,7 +649,7 @@ UnitBlueprint {
                 Seabed = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
             },
-            FiringTolerance = 2,
+            FiringTolerance = 1,
             Label = 'PlasmaCannon01',
             MaxRadius = 80,
             MinRadius = 10,
