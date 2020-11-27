@@ -69,7 +69,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 45,
     },
-    Description = '<LOC MCPS3NBC_desc>Battleruiser',
+    Description = '<LOC MCPS3NBC_desc>Battlecruiser',
     Display = {
         Abilities = {
             '<LOC ability_omni>Omni Sensor',
@@ -179,7 +179,7 @@ UnitBlueprint {
         WaterVisionRadius = 35,
     },
     Interface = {
-        HelpText = '<LOC MCPS3NBC_help>Battleruiser',
+        HelpText = '<LOC MCPS3NBC_help>Battlecruiser',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2,

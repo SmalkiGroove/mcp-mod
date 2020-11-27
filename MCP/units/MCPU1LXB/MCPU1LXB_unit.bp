@@ -263,9 +263,9 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 75,
+            Damage = 100,
             DamageFriendly = false,
-            DamageRadius = 0,
+            DamageRadius = 1,
             DamageType = 'Normal',
             DisplayName = 'Ginsu Pulse Beam',
             FireTargetLayerCapsTable = {

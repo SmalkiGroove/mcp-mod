@@ -38,7 +38,7 @@ UnitBlueprint {
             Level5 = 150,
         },
     },
-    BuildIconSortPriority = 999,
+    BuildIconSortPriority = 100,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -61,6 +61,7 @@ UnitBlueprint {
         'COUNTERINTELLIGENCE',
         'NEEDMOBILEBUILD',
         'DRAGBUILD',
+        'SORTCONSTRUCTION',
     },
     Defense = {
         AirThreatLevel = 0,

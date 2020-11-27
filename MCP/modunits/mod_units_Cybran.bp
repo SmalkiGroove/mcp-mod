@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+-- Buildings
+--------------------------------------------------------------------------------
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xrb0304",		--Hive 3 
+    Economy = {
+        BuildCostEnergy = 1600*4,
+        BuildCostMass = 240*4,
+        HalfPriceUpgradeFromID = 'xrb0204',
+        UpgradeFromCostDiscount = .25,
+        RebuildBonusIds = {
+            'xrb0304',
+        },
+    },
+}
+
+--------------------------------------------------------------------------------
+-- Units
+--------------------------------------------------------------------------------
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="url0101",		--Mole
+    Intel = {
+        OmniRadius = 2,			--Added
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="xra0105",      --Jester
+    Economy = {
+        BuildCostEnergy = 3300,
+        BuildCostMass = 170,
+        BuildTime = 1000,
+    },
+}

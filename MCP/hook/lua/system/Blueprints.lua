@@ -6,7 +6,6 @@ function ModBlueprints(all_blueprints)
     OldModBlueprints(all_blueprints)
     MCPBuildableAdds(all_blueprints.Unit)
     MCPCategoryChanges(all_blueprints.Unit)
-    --HeavyWallBuildList(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
     StrategicIcons(all_blueprints.Unit)
 end
@@ -121,9 +120,8 @@ function MCPCategoryChanges(all_bps)
 
         ---------------------------------------------------------------------------------------------
 
-        uaa0310 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 UFO
-        ual0401 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 Colossus
-        uas0401 = {'BUILTBYTIER3FIELD'}, -- Aeon T4 Battleship
+        uaa0310 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Aeon T4 UFO
+        ual0401 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Aeon T4 Colossus
         xab1401 = {NoBuild = true}, -- Aeon T4 Resource Generator
         xab2307 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Aeon T4 Rapidfire Arti
         ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- UEF T4 Arti
@@ -131,12 +129,12 @@ function MCPCategoryChanges(all_bps)
         uel0401 = {NoBuild = true},  -- UEF T4 Mobile Factory
         ues0401 = {NoBuild = true}, -- UEF T4 Aircraft Carrier
         url0401 = {NoBuild = true}, -- Cybran T4 Rapidfire Arti
-        url0402 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Spiderbot
-        xrl0403 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Megabot
-        ura0401 = {'BUILTBYTIER3FIELD'}, -- Cybran T4 Gunship
-        xsa0402 = {'BUILTBYTIER3FIELD'}, -- Seraphim T4 Bomber
+        url0402 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Cybran T4 Spiderbot
+        xrl0403 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Cybran T4 Megabot
+        ura0401 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Cybran T4 Gunship
+        xsa0402 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Seraphim T4 Bomber
         xsb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Seraphim T4 Nuke
-        xsl0401 = {'BUILTBYTIER3FIELD'}, -- Seraphim T4 Bot
+        xsl0401 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Seraphim T4 Bot
 
         ----------------------------------------------------------------------------------------------
 
@@ -185,12 +183,10 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
         },
         uab4202 = { -- Aeon T2 Shield
-            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
         },
         uab4301 = { -- Aeon T3 Shield
-            'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER3FIELD',
         },
         uab5101 = { -- Aeon T1 Wall
             'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
@@ -242,12 +238,10 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
         },
         ueb4202 = { -- UEF T2 Shield
-            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
         },
         ueb4301 = { -- UEF T3 Shield
-            'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER3FIELD',
         },
         ueb5101 = { -- UEF T1 Wall
             'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
@@ -303,12 +297,11 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
         },
         urb4202 = { -- Cybran T2 Shield
-            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
         },
         ueb4207 = { -- Cybran T3 Shield
-            'BUILTBYTIER3FIELD', 'SORTECONOMY', 'TECH3',
-            r = {'SORTDEFENSE', 'TECH2'}
+            'BUILTBYTIER3FIELD', 'TECH3',
+            r = {'TECH2'}
         },
         xrb2308 = { -- Cybran T3 Torpedo launcher
             'BUILTBYTIER3FIELD',
@@ -364,12 +357,10 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYTIER2ENGINEER', 'BUILTBYTIER3ENGINEER', 'SORTDEFENSE'}
         },
         xsb4202 = { -- Seraphim T2 Shield
-            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
         },
         xsb4301 = { -- Seraphim T3 Shield
-            'BUILTBYTIER3FIELD', 'SORTECONOMY',
-            r = {'SORTDEFENSE'}
+            'BUILTBYTIER3FIELD',
         },
         xsb5101 = { -- Seraphim T1 Wall
             'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
@@ -543,30 +534,30 @@ function MCPCategoryChanges(all_bps)
             r = {'BUILTBYCOMMANDER', 'BUILTBYTIER2COMMANDER','BUILTBYTIER3COMMANDER', 'BUILTBYTIER1ENGINEER', 'TECH1'}
         },
 
+        uab0304 = {
+            'SORTCONSTRUCTION',
+            r = {'SORTSTRATEGIC'}
+        },
+        ueb0304 = {
+            'SORTCONSTRUCTION',
+            r = {'SORTSTRATEGIC'}
+        },
+        urb0304 = {
+            'SORTCONSTRUCTION',
+            r = {'SORTSTRATEGIC'}
+        },
+        xsb0304 = {
+            'SORTCONSTRUCTION',
+            r = {'SORTSTRATEGIC'}
+        },
+
         ues0304 = {NoBuild = true},  -- UEF T3 Strategic submarine
         urs0304 = {NoBuild = true},  -- Cybran T3 Strategic submarine
         uas0304 = {NoBuild = true},  -- Aeon T3 Strategic submarine
 
         daa0206 = {NoBuild = true},  -- Aeon T2 guided missile
     }
-    local buildcats = {
-        'BUILTBYCOMMANDER',
-        'BUILTBYTIER1ENGINEER',
-        'BUILTBYTIER1COMMANDER',
-        'BUILTBYTIER1FIELD',
-        'BUILTBYTIER1FACTORY',
-        'BUILTBYTIER2ENGINEER',
-        'BUILTBYTIER2COMMANDER',
-        'BUILTBYTIER2FIELD',
-        'BUILTBYTIER2FACTORY',
-        'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER3COMMANDER',
-        'BUILTBYTIER3FIELD',
-        'BUILTBYTIER3FACTORY',
-        'TRANSPORTBUILTBYTIER1FACTORY',
-        'TRANSPORTBUILTBYTIER2FACTORY',
-        'TRANSPORTBUILTBYTIER3FACTORY',
-    }
+
     for k, v in Units do
         --Make sure the unit exists, and has its table
         if all_bps[k] and all_bps[k].Categories then
@@ -585,8 +576,10 @@ function MCPCategoryChanges(all_bps)
                     end
                 end
             else
-                for i in buildcats do
-                    table.removeByValue(all_bps[k].Categories, buildcats[i])
+                for i, cat in all_bps[k].Categories do
+                    if string.find(cat, 'BUILTBY') then
+                        all_bps[k].Categories[i] = nil
+                    end
                 end
             end
         end
@@ -599,7 +592,7 @@ end
 
 function UpgradeableVanilla(all_bps)
     local VanillasToUpgrade = {
-        uab4202 = 'uab4301',--FromAeon T2 shield
+        uab4202 = 'uab4301',--From Aeon T2 shield
         urb1301 = 'mcpc3bcpg',--To Cloakable Generator
         urb1302 = 'mcpc3bcme',--To Cloakable Extractor
         urb1303 = 'mcpc3bcmf',--To Cloakable Fabricator

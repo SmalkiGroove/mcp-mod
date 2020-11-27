@@ -46,7 +46,7 @@ UnitBlueprint {
             Level5 = 215,
         },
     },
-    BuildIconSortPriority = 999,
+    BuildIconSortPriority = 100,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -69,6 +69,7 @@ UnitBlueprint {
         'OVERLAYOMNI',
         'SNIPEMODE',
         'LOWSELECTPRIO',
+        'SORTCONSTRUCTION',
     },
     CollisionOffsetY = 0.3,
     Defense = {

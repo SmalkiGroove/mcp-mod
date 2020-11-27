@@ -62,7 +62,7 @@ UnitBlueprint {
             Level5 = 95,
         },
     },
-    BuildIconSortPriority = 10,
+    BuildIconSortPriority = 50,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -93,6 +93,7 @@ UnitBlueprint {
         'BUBBLESHIELDSPILLOVERCHECK',
         'SNIPEMODE',
         'LOWSELECTPRIO',
+        'SORTCONSTRUCTION',
     },
     CollisionOffsetZ = 0,
     CollisionOffsetY = 0.7,

@@ -149,7 +149,7 @@ UnitBlueprint {
         'OVERLAYINDIRECTFIRE',
         'OVERLAYMISC',
         'OVERLAYRADAR',
-        'SORTINTEL',
+        'SORTECONOMY',
     },
     CollisionOffsetY = -2,
     CollisionOffsetZ = 3.7,

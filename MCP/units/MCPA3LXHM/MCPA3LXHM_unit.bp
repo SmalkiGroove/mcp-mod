@@ -85,7 +85,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 500,
     },
-    Description = 'Advcanced Assault Mech',
+    Description = 'Experimental Assault Mech',
     Display = {
         Abilities = {
             '<LOC ability_amphibious>Amphibious',
@@ -252,10 +252,10 @@ UnitBlueprint {
             AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 600,
+            Damage = 300,
             DamageRadius = 3,
             DamageType = 'Normal',
-            DisplayName = 'Gauss Cannon',
+            DisplayName = 'Quantum Cannon',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
@@ -337,10 +337,10 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 150,
+            Damage = 90,
             DamageRadius = 0,
             DamageType = 'Normal',
-            DisplayName = 'Gauss Cannon',
+            DisplayName = 'Quantum Autoguns',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
@@ -435,10 +435,10 @@ UnitBlueprint {
             CameraShakeMin = 0,
             CameraShakeRadius = 50,
             CollideFriendly = false,
-            Damage = 500,
+            Damage = 10,
             DamageRadius = 27,
             DamageType = 'Normal',
-            DisplayName = 'Gauss Cannon',
+            DisplayName = 'EMP Charge',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',

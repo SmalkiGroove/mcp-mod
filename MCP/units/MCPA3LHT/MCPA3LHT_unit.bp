@@ -85,7 +85,7 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'bal0310',
+                            'BAL0310',
                         },
                         Offset = {
                             0,
@@ -103,13 +103,13 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'bal0310',
+                            'BAL0310',
                         },
                         Type = 'GroundKickup01',
                     },
                     {
                         Bones = {
-                            'bal0310',
+                            'BAL0310',
                         },
                         Offset = {
                             0,
@@ -125,14 +125,14 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'bal0310',
+                            'BAL0310',
                         },
                         Scale = 1.5,
                         Type = 'BackWake',
                     },
                     {
                         Bones = {
-                            'bal0310',
+                            'BAL0310',
                         },
                         Offset = {
                             0,

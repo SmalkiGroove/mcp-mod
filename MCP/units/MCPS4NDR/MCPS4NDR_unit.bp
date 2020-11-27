@@ -45,7 +45,7 @@ UnitBlueprint {
             Level5 = 25,
         },
     },
-    BuildIconSortPriority = 20,
+    BuildIconSortPriority = 50,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -69,6 +69,7 @@ UnitBlueprint {
         'OVERLAYSONAR',
         'OVERLAYRADAR',
         'OVERLAYDEFENSE',
+        'SORTECONOMY',
     },
     CollisionOffsetY = -1,
     CollisionOffsetZ = -1.2,

@@ -47,7 +47,7 @@ UnitBlueprint {
             Level5 = 60,
         },
     }, 
-    BuildIconSortPriority = 30, 
+    BuildIconSortPriority = 10, 
     Categories = {
         'PRODUCTMCP',
         'ANTIAIR',  
@@ -67,7 +67,8 @@ UnitBlueprint {
         'TECH4',
         'UEF',          
         'VISIBLETORECON', 
-        'VOLATILE',                      
+        'VOLATILE',      
+        'SORTCONSTRUCTION',                
     }, 
     Defense = { 
         AirThreatLevel = 10, 

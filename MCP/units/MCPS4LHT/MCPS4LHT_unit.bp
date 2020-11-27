@@ -49,7 +49,7 @@ UnitBlueprint {
             Level5 = 60,
         },
     },
-    BuildIconSortPriority = 30,
+    BuildIconSortPriority = 10,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -69,6 +69,7 @@ UnitBlueprint {
         'RECLAIMABLE',
         'DRAGBUILD',
         'OVERLAYDIRECTFIRE',
+        'SORTCONSTRUCTION',
     },
     CollisionOffsetY = -1,
     Defense = {

@@ -284,7 +284,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 140,
+            Damage = 170,
             DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Chronotron Cannon',
@@ -376,7 +376,7 @@ UnitBlueprint {
             MaxRadius = 37,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 20,
+            MuzzleVelocity = 30,
             ProjectileId = '/projectiles/SAAOlarisAAArtillery02/SAAOlarisAAArtillery02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             RackBones = {

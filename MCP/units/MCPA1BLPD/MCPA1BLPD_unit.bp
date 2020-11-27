@@ -25,7 +25,7 @@ UnitBlueprint {
             Level5 = 10,
         },
     },
-    BuildIconSortPriority = 122,
+    BuildIconSortPriority = 112,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -206,7 +206,7 @@ UnitBlueprint {
             BeamLifetime = 0.2,
             CollideFriendly = false,
             ContinuousBeam = true,
-            Damage = 40,
+            Damage = 22,
             DamageFriendly = false,
             DamageType = 'Normal',
             DamageRadius = 0.5,
@@ -250,7 +250,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 2,
+            RateOfFire = 1.6,
             ReTargetOnMiss = true,
             TargetCheckInterval = 0.5,
             TargetPriorities = {

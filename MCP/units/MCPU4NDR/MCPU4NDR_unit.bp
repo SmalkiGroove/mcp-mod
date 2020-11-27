@@ -51,7 +51,7 @@ UnitBlueprint {
             Level5 = 25,
         },
     },
-    BuildIconSortPriority = 20,
+    BuildIconSortPriority = 50,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -76,11 +76,11 @@ UnitBlueprint {
         'OVERLAYDEFENSE',
         'OVERLAYDIRECTFIRE',
         'OVERLAYINDIRECTFIRE',
-        'SORTINTEL',
+        'SORTECONOMY',
     },
     Defense = {
         AirThreatLevel = 16,
-        ArmorType = 'Normal',
+        ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
         Health = 140000,
         MaxHealth = 140000,

@@ -63,7 +63,7 @@ UnitBlueprint {
             Level5 = 30,
         },
     },
-	BuildIconSortPriority = 999,
+	BuildIconSortPriority = 50,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -81,6 +81,7 @@ UnitBlueprint {
         'RECLAIMABLE',
         'BOT',
         'OVERLAYDIRECTFIRE',
+        'SORTCONSTRUCTION',
     },
     Defense = {
         AirThreatLevel = 0,

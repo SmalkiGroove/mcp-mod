@@ -53,7 +53,7 @@ UnitBlueprint {
             Level5 = 500,
         },
     },
-    BuildIconSortPriority = 999,
+    BuildIconSortPriority = 100,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -72,6 +72,7 @@ UnitBlueprint {
         'OVERLAYDIRECTFIRE',
         'OVERLAYDEFENSE',
         'OVERLAYOMNI',
+        'SORTCONSTRUCTION',
     },
     Defense = {
         AirThreatLevel = 0,

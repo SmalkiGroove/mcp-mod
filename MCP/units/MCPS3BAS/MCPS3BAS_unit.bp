@@ -41,7 +41,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER3COMMANDER',
         'SERAPHIM',
         'STRUCTURE',
         'STRATEGIC',

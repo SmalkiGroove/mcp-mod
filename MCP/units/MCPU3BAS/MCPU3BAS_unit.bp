@@ -45,7 +45,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER3COMMANDER',
         'UEF',
         'NAVAL',
         'STRUCTURE',
