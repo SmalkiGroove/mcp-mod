@@ -3,7 +3,6 @@ local CybranWeaponsFile = import('/lua/cybranweapons.lua')
 local CIFArtilleryWeapon = CybranWeaponsFile.CIFArtilleryWeapon
 local CAAAutocannon = CybranWeaponsFile.CAAAutocannon
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
-local CANNaniteTorpedoWeapon = CybranWeaponsFile.CANNaniteTorpedoWeapon
 
 MCPC1NXAS = Class(CSeaUnit) {
     DestructionTicks = 200,
@@ -25,8 +24,7 @@ MCPC1NXAS = Class(CSeaUnit) {
 		ProtonCannonUpgrade01 = Class(CDFProtonCannonWeapon) {},
 		ProtonCannonUpgrade02 = Class(CDFProtonCannonWeapon) {},
 		Upgrade03AAGun = Class(CAAAutocannon) {},
-		Upgrade04AAGun = Class(CAAAutocannon) {},
-		Torpedo01 = Class(CANNaniteTorpedoWeapon) {},			
+		Upgrade04AAGun = Class(CAAAutocannon) {},		
     },
 
 

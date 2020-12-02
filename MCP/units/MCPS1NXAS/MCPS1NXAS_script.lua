@@ -7,13 +7,10 @@ local SDFUltraChromaticBeamGenerator = import('/lua/seraphimweapons.lua').SDFUlt
 MCPS1NXAS = Class(SSeaUnit) {
     Weapons = {
         MainGun = Class(SIFZthuthaamArtilleryCannon) {},
-	 	###UPGRADE01
 		UpgradeAntiAir01 = Class(SWeapon.SAAShleoCannonWeapon){},
 		UpgradeAntiAir02 = Class(SWeapon.SAAShleoCannonWeapon){},
-		####UPGRADE 03
 		AntiNavyUpgradeGun01 = Class(SWeapon.SDFShriekerCannon){},
 		AntiNavyUpgradeGun02 = Class(SWeapon.SDFShriekerCannon){},
-		####UPGRADE 04
 		LaserGun01 = Class(SDFUltraChromaticBeamGenerator) {},
     },
 	

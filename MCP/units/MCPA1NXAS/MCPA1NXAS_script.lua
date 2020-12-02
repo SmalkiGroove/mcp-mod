@@ -18,13 +18,13 @@ MCPA1NXAS = Class( ASeaUnit ) {
 		Torpedo01 = Class(AANChronoTorpedoWeapon) {},
 		ArtyUpgrade = Class(AIFArtilleryMiasmaShellWeapon) {},
     },
-	
+
    OnCreate = function(self)
 		ASeaUnit.OnCreate(self)
 		self:HideBone('Origine04_01', true)
 		self:HideBone('Turret_Center_Barrel01', true)
 		self:HideBone('Turret_Center_Barrel02', true)
-    end,	
+    end,
 	
 }
 

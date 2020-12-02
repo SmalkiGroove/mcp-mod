@@ -61,7 +61,6 @@ UnitBlueprint {
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
-            '<LOC ability_aquatic>Aquatic',
         },
         Mesh = {
             IconFadeInZoom = 130,
@@ -122,10 +121,10 @@ UnitBlueprint {
             RULEUCC_Transport = false,
         },
         FactionName = 'UEF',
-        Icon = 'amph',
+        Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Basic',
-        UnitName = 'Mayor mk.2',
+        UnitName = 'Mayor',
         UnitWeight = 1,
     },
     Intel = {
@@ -145,7 +144,7 @@ UnitBlueprint {
             LAYER_Orbit = false,
             LAYER_Seabed = false,
             LAYER_Sub = false,
-            LAYER_Water = true,
+            LAYER_Water = false,
         },
         DragCoefficient = 0.2,
         FlattenSkirt = true,

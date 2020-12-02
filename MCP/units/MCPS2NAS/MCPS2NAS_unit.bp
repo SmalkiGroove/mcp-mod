@@ -38,7 +38,7 @@ UnitBlueprint {
             Level5 = 10,
         },
     },
-    BuildIconSortPriority = 30,
+    BuildIconSortPriority = 35,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -232,7 +232,7 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Water= 'Land|Water',
             },
-            FiringRandomness = 1.75,
+            FiringRandomness = 0.75,
             FiringTolerance = 2,
             Label = 'FrontGun01',
             MaxRadius = 120,
@@ -306,7 +306,7 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Water= 'Land|Water',
             },
-            FiringRandomness = 1.75,
+            FiringRandomness = 0.75,
             FiringTolerance = 2,
             Label = 'FrontGun02',
             MaxRadius = 120,
