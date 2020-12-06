@@ -85,7 +85,7 @@ UnitBlueprint {
         BuildCostEnergy = 55000,
         BuildCostMass = 3900,
         BuildTime = 5500,
-        HalfPriceUpgradeFromID = 'MCPA2BWHYDRO',
+        HalfPriceUpgradeFromID = 'mab1208',
         ProductionPerSecondEnergy = 2000,
         RebuildBonusIds = {
             'MAB1308',
@@ -117,7 +117,7 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Advanced',
         UnitWeight = 1,
         UnitName = 'Estelar',
-        UpgradesFrom = 'MCPA2BWHYDRO',
+        UpgradesFrom = 'mab1208',
     },
     Interface = {
         HelpText = '<LOC MAB1308_help>Hydroelectric Power Generator',

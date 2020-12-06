@@ -88,12 +88,12 @@ UnitBlueprint {
         BuildTime = 2600,
         BuildRate = 15,
         BuildableCategory = {
-            'MCPU3BWHYDRO',
+            'MEB1308',
         },
         ProductionPerSecondEnergy = 500,
         RebuildBonusIds = {
             'MEB1208',
-            'MCPU3BWHYDRO',
+            'MEB1308',
         },
     },
     Footprint = {
@@ -122,7 +122,7 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'HPG X100',
         UnitWeight = 1,
-        UpgradesTo = 'MCPU3BWHYDRO',
+        UpgradesTo = 'MEB1308',
     },
     Interface = {
         HelpText = '<LOC MEB1208_help>Hydroelectric Power Generator',

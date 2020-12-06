@@ -93,7 +93,7 @@ UnitBlueprint {
         ProductionPerSecondEnergy = 3000,
         RebuildBonusIds = {
             'ueb1102',
-            'mcpu2bhydro',
+            'meb1204',
             'meb1304',
         },
     },
@@ -124,7 +124,7 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = '<LOC meb1304_name>HCPP - X3000',
         UnitWeight = 1,
-        UpgradesFrom = 'mcpu2bhydro',
+        UpgradesFrom = 'meb1204',
     },
     Interface = {
         HelpText = '<LOC meb1304_help>Hydrocarbon Power Plant',

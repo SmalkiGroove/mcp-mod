@@ -103,12 +103,12 @@ UnitBlueprint {
         BuildTime = 3750,
         BuildRate = 15,
         BuildableCategory = {
-            'mcpa3bhydro',
+            'mab1304',
         },
         ProductionPerSecondEnergy = 750,
         RebuildBonusIds = {
             'mab1204',
-            'mcpa3bhydro',
+            'mab1304',
         },
     },
     Footprint = {
@@ -140,7 +140,7 @@ UnitBlueprint {
         UnitName = '<LOC mab1204_name>HC-2',
         UnitWeight = 1,
         UpgradesFrom = 'uab1102',
-        UpgradesTo = 'mcpa3bhydro',
+        UpgradesTo = 'mab1304',
     },
     Interface = {
         HelpText = '<LOC mab1204_help>Hydrocarbon Power Plant',

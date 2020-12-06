@@ -19,7 +19,7 @@ function MCPBuildableAdds(all_bps)
         xel0209 = {'BUILTBYTIER2FIELD UEF',},
     }
     for unitid, buildcat in units_buildcats do
-        if all_bps[unitid] and all_bps[unitid].Economy.BuildableCategory then   --Xtreme Wars crash fix here. They removed the Fatboys ability to build.
+        if all_bps[unitid] and all_bps[unitid].Economy.BuildableCategory then
             all_bps[unitid].Economy.BuildableCategory = {}
             for i in buildcat do
                 table.insert(all_bps[unitid].Economy.BuildableCategory, buildcat[i])
@@ -578,7 +578,7 @@ function MCPCategoryChanges(all_bps)
             else
                 for i, cat in all_bps[k].Categories do
                     if string.find(cat, 'BUILTBY') then
-                        all_bps[k].Categories[i] = nil
+                        all_bps[k].Categories[i] = 'NOBUILD'
                     end
                 end
             end
@@ -593,9 +593,9 @@ end
 function UpgradeableVanilla(all_bps)
     local VanillasToUpgrade = {
         uab4202 = 'uab4301',--From Aeon T2 shield
-        urb1301 = 'mcpc3bcpg',--To Cloakable Generator
-        urb1302 = 'mcpc3bcme',--To Cloakable Extractor
-        urb1303 = 'mcpc3bcmf',--To Cloakable Fabricator
+        urb1301 = 'mrb1305',--To Cloakable Generator
+        urb1302 = 'mrb1306',--To Cloakable Extractor
+        urb1303 = 'mrb1307',--To Cloakable Fabricator
         ueb1301 = 'meb1305',--To engineering Generator
         ueb1302 = 'meb1306',--To engineering Extractor
         ueb1303 = 'meb1307',--To engineering Fabricator
@@ -607,7 +607,7 @@ function UpgradeableVanilla(all_bps)
         xsb1303 = 'mcps3bamf',--To Armored Fabricator
         uab1102 = 'mab1204',--Hydrocarbon Aeon
         ueb1102 = 'meb1204',--Hydrocarbon UEF
-        urb1102 = 'mcpc2bhydro',--Hydrocarbon Cybran
+        urb1102 = 'mrb1204',--Hydrocarbon Cybran
         xsb1102 = 'mcps2bhydro',--Hydrocarbon Seraphim
     }
     for unitid, upgradeid in VanillasToUpgrade do
@@ -634,13 +634,13 @@ function UpgradeableVanilla(all_bps)
     end
     local UpgradesFromBase = {
         -- Base        Max
-        urb1103 = 'mcpc3bcme',--To Cloakable Extractor
+        urb1103 = 'mrb1306',--To Cloakable Extractor
         ueb1103 = 'meb1306',--To engineering Extractor
         uab1103 = 'mab1306',--To shielded Extractor
         xsb1103 = 'mcps3bame',--To Armored Extractor
         uab1102 = 'mab1304',--To T3 Hydrocarbon
         ueb1102 = 'meb1304',--To T3 Hydrocarbon
-        urb1102 = 'mcpc3bhydro',--To T3 Hydrocarbon
+        urb1102 = 'mrb1304',--To T3 Hydrocarbon
         xsb1102 = 'mcps3bhydro',--To T3 Hydrocarbon
     }
     --This could potentially loop forever if someone broke the upgrade chain elsewhere

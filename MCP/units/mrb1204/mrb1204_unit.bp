@@ -2,23 +2,23 @@ UnitBlueprint {
     Adjacency = 'HydrocarbonAdjacencyBuffs',
     Audio = {
         ActiveLoop = Sound {
-            Bank = 'UEB',
-            Cue = 'UEB1102_Active',
+            Bank = 'URB',
+            Cue = 'URB1102_Active',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Destroyed = Sound {
-            Bank = 'UELDestroy',
-            Cue = 'UEB_Destroy_Huge',
+            Bank = 'URLDestroy',
+            Cue = 'URB_Destroy_Huge',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DoneBeingBuilt = Sound {
-            Bank = 'UEB',
-            Cue = 'UEB1102_Activate',
+            Bank = 'URB',
+            Cue = 'URB1102_Activate',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         UISelection = Sound {
             Bank = 'Interface',
-            Cue = 'UEF_Select_Resource',
+            Cue = 'Cybran_Select_Resource',
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
@@ -28,7 +28,7 @@ UnitBlueprint {
         'SELECTABLE',
         'BUILTBYTIER2ENGINEER',
         'BUILTBYTIER3ENGINEER',
-        'UEF',
+        'CYBRAN',
         'STRUCTURE',
         'ECONOMIC',
         'TECH2',
@@ -40,7 +40,7 @@ UnitBlueprint {
         'SHOWQUEUE',
         'SORTECONOMY',
     },
-    CollisionOffsetY = 0,
+    CollisionOffsetY = -0.25,
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
@@ -51,7 +51,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC meb1204_desc>Hydrocarbon Power Plant',
+    Description = '<LOC mrb1204_desc>Hydrocarbon Power Plant',
     Display = {
         Abilities = {
             '<LOC ability_deathaoe>Volatile',
@@ -63,7 +63,7 @@ UnitBlueprint {
             LODs = {
                 {
                     LODCutoff = 300,
-                    ShaderName = 'Unit',
+                    ShaderName = 'Insect',
                 },
             },
         },
@@ -71,11 +71,11 @@ UnitBlueprint {
         SpawnRandomRotation = true,
         Tarmacs = {
             {
-                Albedo = 'Tarmacs/Tar8x_01_albedo',
+                Albedo = 'Tarmacs/Tar8x_cybran_01_albedo',
                 DeathLifetime = 300,
                 FadeOut = 150,
                 Length = 12.8,
-                Normal = 'Tarmacs/Tar8x_01_normals',
+                Normal = 'Tarmacs/Tar8x_cybran_01_normals',
                 Orientations = {
                     0,
                     90,
@@ -86,7 +86,7 @@ UnitBlueprint {
                 Width = 12.8,
             },
         },
-        UniformScale = 0.5,
+        UniformScale = 0.45,
     },
     Economy = {
         AdjacentStructureEnergyMod = -4,
@@ -95,12 +95,12 @@ UnitBlueprint {
         BuildTime = 3750,
         BuildRate = 15,
         BuildableCategory = {
-            'meb1304',
+            'mrb1304',
         },
         ProductionPerSecondEnergy = 750,
         RebuildBonusIds = {
-            'meb1204',
-            'meb1304',
+            'mrb1204',
+            'mrb1304',
         },
     },
     Footprint = {
@@ -125,21 +125,21 @@ UnitBlueprint {
             RULEUCC_Stop = false,
             RULEUCC_Transport = false,
         },
-        FactionName = 'UEF',
+        FactionName = 'Cybran',
         Icon = 'amph',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC meb1204_name>HCPP - X2000',
+        UnitName = '<LOC mrb1204_name>HC-3',
         UnitWeight = 1,
-        UpgradesFrom = 'ueb1102',
-        UpgradesTo = 'meb1304',
+        UpgradesFrom = 'urb1102',
+        UpgradesTo = 'mrb1304',
     },
     Interface = {
-        HelpText = '<LOC meb1204_help>Hydrocarbon Power Plant',
+        HelpText = '<LOC mrb1204_help>Hydrocarbon Power Plant',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.2,
-    LifeBarSize = 3,
+    LifeBarSize = 2.5,
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -154,9 +154,6 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         FlattenSkirt = true,
         MaxSteerForce = 0,
-        MeshExtentsX = 3.25,
-        MeshExtentsY = 1.5,
-        MeshExtentsZ = 3.25,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
         SkirtOffsetX = -1.5,
@@ -165,12 +162,12 @@ UnitBlueprint {
         SkirtSizeZ = 6,
         TurnRate = 0,
     },
-    SelectionSizeX = 1.9,
-    SelectionSizeZ = 1.9,
-    SelectionThickness = 0.36,
-    SizeX = 2.5,
-    SizeY = 1.3,
-    SizeZ = 2.5,
+    SelectionSizeX = 1.8,
+    SelectionSizeZ = 1.6,
+    SelectionThickness = 0.39,
+    SizeX = 2,
+    SizeY = 1.5,
+    SizeZ = 2,
     StrategicIconName = 'icon_structure2_energy',
     StrategicIconSortPriority = 250,
     Weapon = {

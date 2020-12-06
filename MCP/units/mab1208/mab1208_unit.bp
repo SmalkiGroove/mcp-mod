@@ -107,11 +107,11 @@ UnitBlueprint {
         ProductionPerSecondEnergy = 500,
         BuildRate = 15,
         BuildableCategory = {
-            'MCPA3BWHYDRO',
+            'mab1308',
         },
         RebuildBonusIds = {
             'MAB1208',
-            'MCPA3BWHYDRO',
+            'mab1308',
         },
     },
     Footprint = {
@@ -140,7 +140,7 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'Galssop',
         UnitWeight = 1,
-        UpgradesTo = 'MCPA3BWHYDRO',
+        UpgradesTo = 'mab1308',
     },
     Interface = {
         HelpText = '<LOC MAB1208_help>Hydroelectric Power Generator',
