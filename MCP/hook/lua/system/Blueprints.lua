@@ -602,13 +602,13 @@ function UpgradeableVanilla(all_bps)
         uab1301 = 'mab1305',--To shielded Generator
         uab1302 = 'mab1306',--To shielded Extractor
         uab1303 = 'mab1307',--To shielded Fabricator
-        xsb1301 = 'mcps3bapg',--To Armored Generator
-        xsb1302 = 'mcps3bame',--To Armored Extractor
-        xsb1303 = 'mcps3bamf',--To Armored Fabricator
+        xsb1301 = 'msb1305',--To Armored Generator
+        xsb1302 = 'msb1306',--To Armored Extractor
+        xsb1303 = 'msb1307',--To Armored Fabricator
         uab1102 = 'mab1204',--Hydrocarbon Aeon
         ueb1102 = 'meb1204',--Hydrocarbon UEF
         urb1102 = 'mrb1204',--Hydrocarbon Cybran
-        xsb1102 = 'mcps2bhydro',--Hydrocarbon Seraphim
+        xsb1102 = 'msb1204',--Hydrocarbon Seraphim
     }
     for unitid, upgradeid in VanillasToUpgrade do
         if all_bps[unitid] and all_bps[upgradeid] then
@@ -637,11 +637,11 @@ function UpgradeableVanilla(all_bps)
         urb1103 = 'mrb1306',--To Cloakable Extractor
         ueb1103 = 'meb1306',--To engineering Extractor
         uab1103 = 'mab1306',--To shielded Extractor
-        xsb1103 = 'mcps3bame',--To Armored Extractor
+        xsb1103 = 'msb1306',--To Armored Extractor
         uab1102 = 'mab1304',--To T3 Hydrocarbon
         ueb1102 = 'meb1304',--To T3 Hydrocarbon
         urb1102 = 'mrb1304',--To T3 Hydrocarbon
-        xsb1102 = 'mcps3bhydro',--To T3 Hydrocarbon
+        xsb1102 = 'msb1304',--To T3 Hydrocarbon
     }
     --This could potentially loop forever if someone broke the upgrade chain elsewhere
     for unitid, upgradeid in UpgradesFromBase do
