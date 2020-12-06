@@ -4,11 +4,11 @@ UnitList = {
         Aeon =		{'mab2107', 20},
         Cybran =	{'mcpc1brfa', 20},
         Seraphim =	{'mcps1bla', 20},
-        UEF =		{'mcpu1brfa', 20},
+        UEF =		{'meb2107', 20},
     },
 
     T2GroundDefense = {
-        UEF =       {'mcpu2bxpd', 10},
+        UEF =       {'meb2203', 10},
         Cybran =	{'mcpc2bxpd', 10},
         Seraphim =	{'mcps2bxpd', 10},
         Aeon =		{'mab2203', 10},
@@ -17,7 +17,7 @@ UnitList = {
     T2StrategicMissile = {
         Cybran =	{'mcpc3bhpd', 30},
         Aeon =	    {'mab2307', 30},
-        UEF =	    {'mcpu3bhpd', 30},
+        UEF =	    {'meb2307', 30},
     },
 
     T3StrategicMissile = {
@@ -31,6 +31,6 @@ UnitList = {
         Aeon = 		{'mab2309', 15},
         Seraphim =	{'mcps3barpd', 15},
         Cybran =	{'mcpc3barpd', 15},
-        UEF =		{'mcpu3barpd', 15},
+        UEF =		{'meb2309', 15},
     },
 }

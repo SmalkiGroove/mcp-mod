@@ -1,7 +1,7 @@
 UnitList = {
 
     T2AADefense = {
-        UEF =       {'mcpu2bxpd', 5},
+        UEF =       {'meb2203', 5},
         Cybran =	{'mcpc2bxpd', 5},
         Seraphim =	{'mcps2bxpd', 5},
         Aeon =		{'mab2203', 5},

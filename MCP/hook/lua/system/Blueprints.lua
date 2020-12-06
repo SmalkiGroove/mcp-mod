@@ -596,9 +596,9 @@ function UpgradeableVanilla(all_bps)
         urb1301 = 'mcpc3bcpg',--To Cloakable Generator
         urb1302 = 'mcpc3bcme',--To Cloakable Extractor
         urb1303 = 'mcpc3bcmf',--To Cloakable Fabricator
-        ueb1301 = 'mcpu3bepg',--To engineering Generator
-        ueb1302 = 'mcpu3beme',--To engineering Extractor
-        ueb1303 = 'mcpu3bemf',--To engineering Fabricator
+        ueb1301 = 'meb1305',--To engineering Generator
+        ueb1302 = 'meb1306',--To engineering Extractor
+        ueb1303 = 'meb1307',--To engineering Fabricator
         uab1301 = 'mab1305',--To shielded Generator
         uab1302 = 'mab1306',--To shielded Extractor
         uab1303 = 'mab1307',--To shielded Fabricator
@@ -606,7 +606,7 @@ function UpgradeableVanilla(all_bps)
         xsb1302 = 'mcps3bame',--To Armored Extractor
         xsb1303 = 'mcps3bamf',--To Armored Fabricator
         uab1102 = 'mab1204',--Hydrocarbon Aeon
-        ueb1102 = 'mcpu2bhydro',--Hydrocarbon UEF
+        ueb1102 = 'meb1204',--Hydrocarbon UEF
         urb1102 = 'mcpc2bhydro',--Hydrocarbon Cybran
         xsb1102 = 'mcps2bhydro',--Hydrocarbon Seraphim
     }
@@ -635,11 +635,11 @@ function UpgradeableVanilla(all_bps)
     local UpgradesFromBase = {
         -- Base        Max
         urb1103 = 'mcpc3bcme',--To Cloakable Extractor
-        ueb1103 = 'mcpu3beme',--To engineering Extractor
+        ueb1103 = 'meb1306',--To engineering Extractor
         uab1103 = 'mab1306',--To shielded Extractor
         xsb1103 = 'mcps3bame',--To Armored Extractor
         uab1102 = 'mab1304',--To T3 Hydrocarbon
-        ueb1102 = 'mcpu3bhydro',--To T3 Hydrocarbon
+        ueb1102 = 'meb1304',--To T3 Hydrocarbon
         urb1102 = 'mcpc3bhydro',--To T3 Hydrocarbon
         xsb1102 = 'mcps3bhydro',--To T3 Hydrocarbon
     }
