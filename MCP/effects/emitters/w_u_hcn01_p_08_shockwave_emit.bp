@@ -7,8 +7,8 @@ EmitterBlueprint {
 	AlignRotation = true,
 	LODCutoff = 830.00,
 	EmitIfVisible = false,
-	Texture = [[/mods/MCP/textures/rn_0031_44.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0039_blue.dds]],
+	Texture = [[/mods/MCP/textures/particles/rn_0031_44.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0039_blue.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

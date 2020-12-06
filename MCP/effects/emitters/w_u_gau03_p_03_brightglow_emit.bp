@@ -6,9 +6,9 @@ EmitterBlueprint {
 	LocalVelocity = true,
 	LODCutoff = 300.00,
 	SortOrder = 15.00,
-	Texture = [[/mods/MCP/textures/glow.dds]],
-	RampTexture = [[/mods/MCP/textures/ramp_yellow_blue_01.dds]],
-	DistortionMapTexture = [[/mods/MCP/textures/di_0005_55.dds]],
+	Texture = [[/mods/MCP/textures/particles/glow.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ramp_yellow_blue_01.dds]],
+	DistortionMapTexture = [[/mods/MCP/textures/particles/di_0005_55.dds]],
 	EmitRateCurve = {
 		XRange = 10.0000,
 		Keys = {

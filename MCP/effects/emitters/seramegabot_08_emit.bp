@@ -23,7 +23,7 @@ EmitterBlueprint {
 	LowFidelity = true,
 	MedFidelity = true,
 	HighFidelity = true,
-	Texture = [[/mods/MCP/textures/seramegabotglow.dds]],
+	Texture = [[/mods/MCP/textures/particles/seramegabotglow.dds]],
 	RampTexture = [[/textures/particles/ramp_blue_08.dds]],
 	XDirectionCurve = {
 		XRange = 1.00,

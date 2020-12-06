@@ -72,6 +72,7 @@ UnitBlueprint {
         'MOBILE',
         'LAND',
         'TECH2',
+        'TECHEXP',
         'DIRECTFIRE',
         'BOT',
         'VISIBLETORECON',

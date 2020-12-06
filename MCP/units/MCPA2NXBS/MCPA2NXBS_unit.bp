@@ -50,6 +50,7 @@ UnitBlueprint {
         'MOBILE',
         'NAVAL',
         'TECH2',
+        'TECHEXP',
         'ANTIAIR',
         'ANTIMISSILE',
         'VISIBLETORECON',

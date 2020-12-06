@@ -9,8 +9,8 @@ EmitterBlueprint {
 	TextureStripcount = 2.00,
 	SortOrder = 5.00,
 	LowFidelity = false,
-	Texture = [[/mods/MCP/textures/di_0002_34.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0065_whitefast_mod.dds]],
+	Texture = [[/mods/MCP/textures/particles/di_0002_34.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0065_whitefast_mod.dds]],
 	EmitRateCurve = {
 		XRange = 9.0000,
 		Keys = {

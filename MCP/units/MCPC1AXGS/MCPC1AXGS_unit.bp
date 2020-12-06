@@ -93,6 +93,7 @@ UnitBlueprint {
         'MOBILE',
         'AIR',
         'TECH1',
+        'TECHEXP',
         'GROUNDATTACK',
         'VISIBLETORECON',
         'RECLAIMABLE',

@@ -6,7 +6,7 @@ UnitList = {
     },
 
     T4LandExperimental2 = {
-        UEF =       {'mcpu4lxf', 20},
+        UEF =       {'mcpu4lxt', 20},
         Cybran =    {'mcpc4lxb', 20},
         Aeon =      {'mcpa4lxb', 20},
         Seraphim =  {'mcps4lxab', 20},

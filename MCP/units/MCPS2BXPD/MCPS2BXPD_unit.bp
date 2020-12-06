@@ -42,6 +42,7 @@ UnitBlueprint {
         'STRUCTURE',
         'DEFENSE',
         'TECH2',
+        'TECHEXP',
         'DIRECTFIRE',
         'DRAGBUILD',
         'SIZE16',

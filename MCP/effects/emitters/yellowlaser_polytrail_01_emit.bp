@@ -7,6 +7,6 @@ TrailEmitterBlueprint {
     BlendMode = 3,
     TextureRepeatRate = 1,
     LODCutoff = 260,
-	RampTexture = [[/mods/MCP/textures/yellowlaser_munition_01.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/yellowlaser_munition_01.dds]],
 	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
 }

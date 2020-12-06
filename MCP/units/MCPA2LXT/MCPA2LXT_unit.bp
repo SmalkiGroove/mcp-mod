@@ -59,6 +59,7 @@ UnitBlueprint {
         'MOBILE',
         'LAND',
         'TECH2',
+        'TECHEXP',
 		'NEEDMOBILEBUILD',
         'DIRECTFIRE',
         'VISIBLETORECON',

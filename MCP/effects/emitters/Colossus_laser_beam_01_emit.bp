@@ -1,6 +1,6 @@
 BeamBlueprint {
     Lifetime = 10,
-    TextureName = '/mods/MCP/textures/beam_phason_02.dds',
+    TextureName = '/mods/MCP/textures/particles/beam_phason_02.dds',
     Thickness = 0.35,
     StartColor = {x = 155, y = 155, z = 0,w=0.01},
     EndColor = {x = 155, y = 155, z = 0,w=0.02},

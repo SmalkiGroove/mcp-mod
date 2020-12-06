@@ -7,7 +7,13 @@ UnitList = {
         Aeon =		{'mcpa2bxpd', 5},
     },
 
-    T2GroundDefense = {
+    -- T2GroundDefense = {
+    --     Cybran =	{'mcpc3bpd', 90},
+    --     Aeon =	    {'mcpa3bpd', 90},
+    --     Seraphim =	{'mcps3bpd', 90},
+    -- },
+
+    T3GroundDefense = {
         Cybran =	{'mcpc3bpd', 90},
         Aeon =	    {'mcpa3bpd', 90},
         Seraphim =	{'mcps3bpd', 90},

@@ -1,6 +1,6 @@
 BeamBlueprint {
     Lifetime = 10,
-    TextureName = '/mods/MCP/textures/battlespider_laser.dds',
+    TextureName = '/mods/MCP/textures/particles/battlespider_laser.dds',
     Thickness = 0.6,
     StartColor = {x=1,y=1,z=1,w=0.2}, # R,G,B,A
     EndColor = {x=1,y=1,z=1,w=0.2}, # R,G,B,A

@@ -47,6 +47,7 @@ UnitBlueprint {
         'LAND',
         'DIRECTFIRE',
         'TECH3',
+        'TECHEXP',
         'NEEDMOBILEBUILD',
         'VISIBLETORECON',
         'RECLAIMABLE',

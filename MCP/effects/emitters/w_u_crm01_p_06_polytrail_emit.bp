@@ -7,7 +7,7 @@ TrailEmitterBlueprint {
     BlendMode = 3,
     TextureRepeatRate = 0.5,
     LODCutoff = 300,
-	RepeatTexture = [[/mods/MCP/textures/beam_exhaust_01.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0095_red.dds]],
+	RepeatTexture = [[/mods/MCP/textures/particles/beam_exhaust_01.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0095_red.dds]],
 }
 

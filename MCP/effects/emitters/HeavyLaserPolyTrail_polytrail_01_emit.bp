@@ -7,6 +7,6 @@ TrailEmitterBlueprint {
     BlendMode = 4,
     TextureRepeatRate = 1,
     LODCutoff = 260,
-	RampTexture = [[/mods/MCP/textures/HeavyLaserPolyTrail_polytrail_01.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/HeavyLaserPolyTrail_polytrail_01.dds]],
 	RepeatTexture = [[/textures/particles/ramp_white_29.dds]],
 }

@@ -6,8 +6,8 @@ EmitterBlueprint {
 	LODCutoff = 830.00,
 	InterpolateEmission = false,
 	SortOrder = 3.00,
-	Texture = [[/mods/MCP/textures/gl_0001_33.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0051_pinkorange.dds]],
+	Texture = [[/mods/MCP/textures/particles/gl_0001_33.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0051_pinkorange.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

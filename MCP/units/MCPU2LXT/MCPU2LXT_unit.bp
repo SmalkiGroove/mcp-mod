@@ -58,6 +58,7 @@ UnitBlueprint {
         'UEF',
         'MOBILE',
 		'TECH2',
+        'TECHEXP',
         'LAND',
         'DIRECTFIRE',
         'NEEDMOBILEBUILD',

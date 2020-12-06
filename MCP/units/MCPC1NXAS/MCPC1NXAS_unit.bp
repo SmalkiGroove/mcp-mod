@@ -22,19 +22,9 @@ UnitBlueprint {
             Cue = 'URS0103_Move_Loop',
             LodCutoff = 'UnitMove_LodCutoff',
         },
-		AmbientMoveLand = Sound {
-            Bank = 'URS',
-            Cue = 'URS0201_Move_Land_Loop',
-            LodCutoff = 'UnitMove_LodCutoff',
-        },
         AmbientMoveWater = Sound {
             Bank = 'URS',
             Cue = 'URS0201_Move_Loop',
-            LodCutoff = 'UnitMove_LodCutoff',
-        },
-        AmphibiousFloatingKilledOnLand = Sound {
-            Bank = 'URLDestroy',
-            Cue = 'URS0201_DEATH_ON_LAND',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Killed = Sound {
@@ -101,7 +91,6 @@ UnitBlueprint {
     Description = 'Artillery Ship',
     Display = {
         Abilities = {
-            '<LOC ability_amphibious>Amphibious',
             '<LOC ability_aa>Anti-Air',
         },
 		AnimationDeath = {
@@ -112,17 +101,7 @@ UnitBlueprint {
                 Weight = 100,
             },
         },
-		AnimationTransform = '/mods/MCP/units/MCPC1NXAS/MCPC1NXAS_Atransform02.sca',
-        AnimationWalk = '/mods/MCP/units/MCPC1NXAS/MCPC1NXAS_Awalk.sca',
         AnimationWalkRate = 1.3,
-        LandAnimationDeath = {
-            {
-                Animation = '/mods/MCP/units/MCPC1NXAS/MCPC1NXAS_aLandDeath.sca',
-				AnimationRateMax = 0.5,
-                AnimationRateMin = 0.3,
-                Weight = 100,
-            },
-        },
 
         IdleEffects = {
             Water = {
@@ -132,18 +111,6 @@ UnitBlueprint {
                             'URS0104',
                         },
                         Type = 'SeaIdle01',
-                    },
-                },
-            },
-        },
-		LayerChangeEffects = {
-            WaterLand = {
-                Effects = {
-                    {
-                        Bones = {
-                            'URS0104',
-                        },
-                        Type = 'Surface01',
                     },
                 },
             },
@@ -161,42 +128,6 @@ UnitBlueprint {
             },
         },
         MovementEffects = {
-			Land = {
-                Footfall = {
-                    Bones = {
-                        {
-                            FootBone = 'Exhaust_Leg_01',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                        {
-                            FootBone = 'Exhaust_Leg_02',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                        {
-                            FootBone = 'Exhaust_Leg_03',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                        {
-                            FootBone = 'Exhaust_Leg_04',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                        {
-                            FootBone = 'Exhaust_Leg_05',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                        {
-                            FootBone = 'Exhaust_Leg_06',
-                            Scale = 0.58,
-                            Type = 'FootFall01',
-                        },
-                    },
-                },
-            },
             Water = {
                 Effects = {
                     {
@@ -250,7 +181,7 @@ UnitBlueprint {
             RULEUCC_Transport = false,
         },
         FactionName = 'Cybran',
-        Icon = 'amph',
+        Icon = 'sea',
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'Locust Swarm',
         UnitWeight = 1,
@@ -266,7 +197,6 @@ UnitBlueprint {
     LifeBarOffset = 1.8,
     LifeBarSize = 1.25,
     Physics = {
-        AltMotionType = 'RULEUMT_Water',
         BackUpDistance = 5,
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -277,21 +207,15 @@ UnitBlueprint {
             LAYER_Sub = false,
             LAYER_Water = true,
         },
-		Upgrade01SpeedMultiplier = 1.30,
-		Upgrade02SpeedMultiplier = 1.60,
-		
         CatchUpAcc = 10,
         DragCoefficient = 0.2,
-        LandSpeedMultiplier = 0.5,
-        LayerChangeOffsetHeight = -1,
-        LayerTransitionDuration = 4,
         MaxAcceleration = 4,
         MaxBrake = 4,
         MaxSpeed = 4,
         MaxSpeedReverse = 4,
         MaxSteerForce = 4,
         MinSpeedPercent = 0,
-        MotionType = 'RULEUMT_AmphibiousFloating',
+        MotionType = 'RULEUMT_Water',
         TurnRadius = 15,
         TurnRate = 50,
     },
@@ -301,7 +225,7 @@ UnitBlueprint {
     SizeX = 1.5,
     SizeY = 1.3,
     SizeZ = 5.4,
-    StrategicIconName = 'icon_ship1_missile',
+    StrategicIconName = 'icon_ship1_artillery',
     StrategicIconSortPriority = 165,
     Veteran = {
         Level1 = 1,

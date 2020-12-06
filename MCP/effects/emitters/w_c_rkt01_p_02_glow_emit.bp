@@ -5,8 +5,8 @@ EmitterBlueprint {
 	Blendmode = 3.00,
 	LODCutoff = 300.00,
 	SortOrder = -2.00,
-	Texture = [[/mods/MCP/textures/glow_03.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0133_lightpurple.dds]],
+	Texture = [[/mods/MCP/textures/particles/glow_03.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0133_lightpurple.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

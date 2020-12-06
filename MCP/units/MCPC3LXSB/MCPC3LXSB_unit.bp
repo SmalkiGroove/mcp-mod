@@ -66,6 +66,7 @@ UnitBlueprint {
         'MOBILE',
         'LAND',
         'TECH3',
+        'TECHEXP',
         'DIRECTFIRE',
         'ANTIAIR',
 		'SHIELD',

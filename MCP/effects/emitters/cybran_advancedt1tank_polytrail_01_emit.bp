@@ -7,6 +7,6 @@ TrailEmitterBlueprint {
     BlendMode = 3,
     TextureRepeatRate = 1,
     LODCutoff = 460,
-	RampTexture = [[/mods/MCP/textures/cybran_advancedt1tank_polytrail_01.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/cybran_advancedt1tank_polytrail_01.dds]],
 	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
 }

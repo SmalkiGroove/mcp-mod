@@ -76,6 +76,7 @@ UnitBlueprint {
         'AIR',
         'HIGHALTAIR',
         'TECH3',
+        'TECHEXP',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'TARGETCHASER',

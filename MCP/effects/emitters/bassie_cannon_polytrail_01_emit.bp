@@ -8,6 +8,6 @@ TrailEmitterBlueprint {
     TextureRepeatRate = 1,
     LODCutoff = 160,
     RepeatTexture = [[/textures/particles/trail_white_02.dds]],
-    RampTexture = [[/mods/MCP/textures/BLUEramp_trail_12.dds]],
+    RampTexture = [[/mods/MCP/textures/particles/BLUEramp_trail_12.dds]],
 }
 

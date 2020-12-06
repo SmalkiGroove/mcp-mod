@@ -166,7 +166,7 @@ UnitBlueprint {
     SizeX = 0.5,
     SizeY = 1.7,
     SizeZ = 0.5,
-    StrategicIconName = 'icon_structure1_directfire',
+    StrategicIconName = 'icon_structure1_antiartillery',
     StrategicIconSortPriority = 195,
     Veteran = {
         Level1 = 12,

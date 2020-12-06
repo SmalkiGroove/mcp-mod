@@ -87,7 +87,7 @@ UnitBlueprint {
         },
     },
     Footprint = {
-        MinWaterDepth = 5,		
+        MinWaterDepth = 5,
     },	
     General = {
         Category = 'Economy',

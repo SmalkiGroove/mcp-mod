@@ -1,7 +1,7 @@
 UnitList = {
 
     T1SeaFrigate = {
-        Cybran =    {'mcpc1nbc', 35},
+        Cybran =    {'mcpc1nbc', 25},
     },
 
     T1SeaAntiAir = {

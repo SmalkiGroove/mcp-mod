@@ -58,6 +58,7 @@ UnitBlueprint {
         'MOBILE',
         'NAVAL',
         'TECH1',
+        'TECHEXP',
         'ANTISUB',
         'DIRECTFIRE',
         'VISIBLETORECON',

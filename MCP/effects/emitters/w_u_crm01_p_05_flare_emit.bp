@@ -7,8 +7,8 @@ EmitterBlueprint {
 	LODCutoff = -300,
 	SnapToWaterline = true,
 	InterpolateEmission = false,
-	Texture = [[/mods/MCP/textures/glow.dds]],
-	RampTexture = [[/mods/MCP/textures/ramp_white_orange_01.dds]],
+	Texture = [[/mods/MCP/textures/particles/glow.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ramp_white_orange_01.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

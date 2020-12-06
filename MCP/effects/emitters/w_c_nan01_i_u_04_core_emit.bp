@@ -7,9 +7,9 @@ EmitterBlueprint {
 	InterpolateEmission = false,
 	SortOrder = 1.00,
 	LowFidelity = false,
-	Texture = [[/mods/MCP/textures/quantum_plasma_ring01.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0095_red.dds]],
-	DistortionMapTexture = [[/mods/MCP/textures/di_0009_55.dds]],
+	Texture = [[/mods/MCP/textures/particles/quantum_plasma_ring01.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0095_red.dds]],
+	DistortionMapTexture = [[/mods/MCP/textures/particles/di_0009_55.dds]],
 	EmitRateCurve = {
 		XRange = 2.0000,
 		Keys = {

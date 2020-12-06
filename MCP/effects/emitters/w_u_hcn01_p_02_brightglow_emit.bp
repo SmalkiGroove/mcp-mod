@@ -8,9 +8,9 @@ EmitterBlueprint {
 	LODCutoff = 830.00,
 	ParticleResistance = true,
 	SortOrder = 1.00,
-	Texture = [[/mods/MCP/textures/rb_0003_33.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0039_blue.dds]],
-	DistortionMapTexture = [[/mods/MCP/textures/di_0009_55.dds]],
+	Texture = [[/mods/MCP/textures/particles/rb_0003_33.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0039_blue.dds]],
+	DistortionMapTexture = [[/mods/MCP/textures/particles/di_0009_55.dds]],
 	EmitRateCurve = {
 		XRange = 8.0000,
 		Keys = {

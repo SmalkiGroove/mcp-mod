@@ -23,8 +23,8 @@ EmitterBlueprint {
 	LowFidelity = true,
 	MedFidelity = true,
 	HighFidelity = true,
-	Texture = [[/mods/MCP/textures/fire_cloud_add_02.dds]],
-	RampTexture = [[/mods/MCP/textures/ramp_fire_09.dds]],
+	Texture = [[/mods/MCP/textures/particles/fire_cloud_add_02.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ramp_fire_09.dds]],
 	XDirectionCurve = {
 		XRange = 5.00,
 		Keys = {

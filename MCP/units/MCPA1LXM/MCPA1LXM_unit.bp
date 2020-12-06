@@ -65,6 +65,7 @@ UnitBlueprint {
         'DRAGBUILD',
         'LAND',
         'TECH1',
+        'TECHEXP',
         'DIRECTFIRE',
         'VISIBLETORECON',
         'RECLAIMABLE',

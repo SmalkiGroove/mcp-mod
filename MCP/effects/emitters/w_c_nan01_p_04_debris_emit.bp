@@ -8,9 +8,9 @@ EmitterBlueprint {
 	EmitIfVisible = false,
 	SortOrder = -1.00,
 	LowFidelity = false,
-	Texture = [[/mods/MCP/textures/aeon_plasma03.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0133_lightpurple.dds]],
-	DistortionMapTexture = [[/mods/MCP/textures/di_0009_55.dds]],
+	Texture = [[/mods/MCP/textures/particles/aeon_plasma03.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0133_lightpurple.dds]],
+	DistortionMapTexture = [[/mods/MCP/textures/particles/di_0009_55.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

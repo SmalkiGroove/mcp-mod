@@ -115,6 +115,7 @@ UnitBlueprint {
         'MOBILE',
         'AIR',
         'TECH2',
+        'TECHEXP',
         'TRANSPORTATION',
         'VISIBLETORECON',
         'CANTRANSPORTCOMMANDER',

@@ -7,8 +7,8 @@ EmitterBlueprint {
 	LODCutoff = 830.00,
 	EmitIfVisible = false,
 	LowFidelity = false,
-	Texture = [[/mods/MCP/textures/rn_0046_55.dds]],
-	RampTexture = [[/mods/MCP/textures/ra_0065_whitefast_mod.dds]],
+	Texture = [[/mods/MCP/textures/particles/rn_0046_55.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ra_0065_whitefast_mod.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

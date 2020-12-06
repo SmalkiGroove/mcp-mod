@@ -87,6 +87,7 @@ UnitBlueprint {
         'DRAGBUILD',
         'HIGHALTAIR',
         'TECH3',
+        'TECHEXP',
         'VISIBLETORECON',
         'RECLAIMABLE',
 		'SPACESHIPS',

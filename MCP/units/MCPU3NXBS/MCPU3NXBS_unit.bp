@@ -57,6 +57,7 @@ UnitBlueprint {
         'UEF',
         'NAVAL',
         'TECH3',
+        'TECHEXP',
         'ANTIAIR',
         'VISIBLETORECON',
         'RECLAIMABLE',

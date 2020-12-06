@@ -7,9 +7,9 @@ EmitterBlueprint {
 	LODCutoff = 830.00,
 	EmitIfVisible = false,
 	SortOrder = -1.00,
-	Texture = [[/mods/MCP/textures/aeon_plasma03.dds]],
-	RampTexture = [[/mods/MCP/textures/ramp_red_14.dds]],
-	DistortionMapTexture = [[/mods/MCP/textures/di_0004_44.dds]],
+	Texture = [[/mods/MCP/textures/particles/aeon_plasma03.dds]],
+	RampTexture = [[/mods/MCP/textures/particles/ramp_red_14.dds]],
+	DistortionMapTexture = [[/mods/MCP/textures/particles/di_0004_44.dds]],
 	EmitRateCurve = {
 		XRange = 11.0000,
 		Keys = {
