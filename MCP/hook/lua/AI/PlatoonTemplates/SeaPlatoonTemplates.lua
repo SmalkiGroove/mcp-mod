@@ -4,16 +4,16 @@ PlatoonTemplate {
     Name = 'T1X Naval',
     FactionSquads = {
         UEF = {
-            { 'mcpu1nxbs', 1, 1, 'attack', 'none' }
+            { 'mes1101', 1, 1, 'attack', 'none' }
         },
         Aeon = {
-            { 'mcpa1nxbs', 1, 1, 'attack', 'none' }
+            { 'mas1101', 1, 1, 'attack', 'none' }
         },
         Cybran = {
-            { 'mcpc1nxc', 1, 1, 'attack', 'none' }
+            { 'mrs1101', 1, 1, 'attack', 'none' }
         },
         Seraphim = {
-            { 'mcps1nxdc', 1, 1, 'attack', 'none' }
+            { 'mss1101', 1, 1, 'attack', 'none' }
         },
     },
 }
@@ -21,16 +21,16 @@ PlatoonTemplate {
     Name = 'T2X Naval',
     FactionSquads = {
         UEF = {
-            { 'mcpu2nxbs', 1, 1, 'attack', 'none' }
+            { 'mes1201', 1, 1, 'attack', 'none' }
         },
         Aeon = {
-            { 'mcpa2nxbs', 1, 1, 'attack', 'none' }
+            { 'mas1201', 1, 1, 'attack', 'none' }
         },
         Cybran = {
-            { 'mcpc2nxbc', 1, 1, 'attack', 'none' }
+            { 'mrs1201', 1, 1, 'attack', 'none' }
         },
         Seraphim = {
-            { 'mcps2nxd', 1, 1, 'attack', 'none' }
+            { 'mss1201', 1, 1, 'attack', 'none' }
         },
     },
 }
@@ -38,16 +38,16 @@ PlatoonTemplate {
     Name = 'T3X Naval',
     FactionSquads = {
         UEF = {
-            { 'mcpu3nxbs', 1, 1, 'attack', 'none' }
+            { 'mes1301', 1, 1, 'attack', 'none' }
         },
         Aeon = {
-            { 'mcpa3nxbs', 1, 1, 'attack', 'none' }
+            { 'mas1301', 1, 1, 'attack', 'none' }
         },
         Cybran = {
-            { 'mcpc3nxbs', 1, 1, 'attack', 'none' }
+            { 'mrs1301', 1, 1, 'attack', 'none' }
         },
         Seraphim = {
-            { 'mcps3nxc', 1, 1, 'attack', 'none' }
+            { 'mss1301', 1, 1, 'attack', 'none' }
         },
     },
 }
