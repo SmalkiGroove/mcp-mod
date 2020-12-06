@@ -2,8 +2,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "uab0001"      # <-- Write the current name of the unit you want to rename here
-unit_replace_name = "mab1001"      # <-- Write the new name you want for this unit here
+unit_current_name = "mcpa3bspg"      # <-- Write the current name of the unit you want to rename here
+unit_replace_name = "mab1305"      # <-- Write the new name you want for this unit here
 
 # Renaming functions
 # ------------------
@@ -13,7 +13,7 @@ modpath = os.path.dirname(os.path.abspath(__file__))
 def replace_in_file(filepath, fromstr, tostr):
     file_ext = os.path.splitext(filepath)[1]
     if file_ext not in ['.lua', '.bp']:
-        print("/!\ Cannot read file with extension " + file_ext)
+        # print("/!\ Cannot read file with extension " + file_ext)
         return
     file_r = open(filepath, 'r')
     content = file_r.read()
