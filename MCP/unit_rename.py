@@ -11,8 +11,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "mcps3nbc" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
-unit_replace_name = "mss0307" # <-- Write the new name (IN LOWERCASE) you want for this unit here
+unit_current_name = "mcps3ags" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
+unit_replace_name = "msa0305" # <-- Write the new name (IN LOWERCASE) you want for this unit here
 
 # Variables definitions
 # ---------------------

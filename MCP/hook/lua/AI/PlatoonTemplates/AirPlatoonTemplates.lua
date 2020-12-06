@@ -4,16 +4,16 @@ PlatoonTemplate {
     Name = 'T1X Gunship',
     FactionSquads = {
         UEF = {
-            { 'mcpu1axgs', 1, 1, 'attack', 'none' }
+            { 'mea1101', 1, 1, 'attack', 'none' }
         },
         Aeon = {
-            { 'mcpa1axgs', 1, 1, 'attack', 'none' }
+            { 'maa1101', 1, 1, 'attack', 'none' }
         },
         Cybran = {
-            { 'mcpc1axgs', 1, 1, 'attack', 'none' }
+            { 'mra1101', 1, 1, 'attack', 'none' }
         },
         Seraphim = {
-            { 'mcps1axgs', 1, 1, 'attack', 'none' }
+            { 'msa1101', 1, 1, 'attack', 'none' }
         },
     },
 }
@@ -21,16 +21,16 @@ PlatoonTemplate {
     Name = 'T2X Gunship',
     FactionSquads = {
         UEF = {
-            { 'mcpu2axgs', 1, 1, 'attack', 'none' }
+            { 'mea1201', 1, 1, 'attack', 'none' }
         },
         Aeon = {
-            { 'mcpa2axgs', 1, 1, 'attack', 'none' }
+            { 'maa1201', 1, 1, 'attack', 'none' }
         },
         Cybran = {
-            { 'mcpc2axgs', 1, 1, 'attack', 'none' }
+            { 'mra1201', 1, 1, 'attack', 'none' }
         },
         -- Seraphim = {
-        --     { 'mcps2axt', 1, 1, 'attack', 'none' }
+        --     { 'msa1201', 1, 1, 'attack', 'none' }
         -- },
     },
 }
