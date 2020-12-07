@@ -11,8 +11,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "mcps3ags" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
-unit_replace_name = "msa0305" # <-- Write the new name (IN LOWERCASE) you want for this unit here
+unit_current_name = "mcpa1lxm" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
+unit_replace_name = "mal1101" # <-- Write the new name (IN LOWERCASE) you want for this unit here
 
 # Variables definitions
 # ---------------------
@@ -48,7 +48,7 @@ def rename_icon(currentname, targetname):
     iconspath = os.path.join(modpath, units_icons_relative_path)
     icons = os.listdir(iconspath)
     for icon in icons:
-        if icon.lower().startswith(currentname):
+        if icon.lower() == "{}_icon.dds".format(currentname):
             target = targetname + "_icon.dds"
             print("Rename icon {} to {}".format(icon, target))
             os.rename(os.path.join(iconspath, icon), os.path.join(iconspath, target))
@@ -77,7 +77,7 @@ def rename_unit(currentname, targetname):
     files = os.listdir(unitpath)
     for f in files:
         filepath = os.path.join(unitpath, f)
-        targetpath = os.path.join(unitpath, f.replace(currentname.upper(), targetname))
+        targetpath = os.path.join(unitpath, f.lower().replace(currentname, targetname))
         replace_in_file(filepath, currentname, targetname)
         print("Rename file {} to {}".format(filepath, targetpath))
         os.rename(filepath, targetpath)

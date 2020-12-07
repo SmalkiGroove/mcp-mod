@@ -1,27 +1,27 @@
 UnitList = {
 
     T4SeaExperimental1 = {
-        UEF =       {'mcpu4ndr', 100},
-        Cybran =    {'mcpc4ndr', 100},
-        Seraphim =  {'mcps4ndr', 100},
+        UEF =       {'mes1401', 100},
+        Cybran =    {'mrs1401', 100},
+        Seraphim =  {'mss1401', 100},
     },
 
     T4Artillery = {
-        UEF =       {'mcpu4bpd', 60},
-        Cybran =    {'mcpc4blpd', 60},
-        Aeon =      {'mcpa4bpd', 60},
-        Seraphim =  {'mcps4bspd', 60},
+        UEF =       {'meb2403', 60},
+        Cybran =    {'mrb2403', 60},
+        Aeon =      {'mab2403', 60},
+        Seraphim =  {'msb2403', 60},
     },
 
     T4LandExperimental1 = {
-        UEF =       {'mcpu4lxw', 80},
-        Aeon =      {'mcpa4lht', 80},
-        Seraphim =  {'mcps4lht', 80},
+        UEF =       {'mel1401', 80},
+        Aeon =      {'mal1401', 80},
+        Seraphim =  {'msl1401', 80},
     },
 
     T4LandExperimental2 = {
-        UEF =       {'mcpu4lxmf', 60},
+        UEF =       {'mel1404', 60},
         Aeon =      {'mcpa4lxhf', 60},
-        Seraphim =  {'mcps4lxbot', 60},
+        Seraphim =  {'msl1403', 60},
     },
 }

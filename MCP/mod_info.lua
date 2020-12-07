@@ -1,8 +1,9 @@
 name = "Mixed Combat Pack"
 uid = "b117ef40-2b6b-4596-96c5-0e8887ac0807"
+url = "https://github.com/SmalkiGroove/mcp-mod"
 version = 1
-copyright = "FAF Community"
-description = "This mod adds unique units and buildings at all levels (land, air, sea). Built from best mods around (BrewLAN, TotalMayhem, Blackops, Marlo's, Wyvern...)"
+copyright = "FAF Community - I've done no unit model myself"
+description = "Most complete unit pack (long download!). Full AI support and balanced."
 author = "CSI"
 icon = "/mods/MCP/mod_icon.dds"
 selectable = true

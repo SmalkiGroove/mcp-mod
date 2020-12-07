@@ -6,16 +6,16 @@ table.insert(BuildingTemplates[3], { 'T1XGunship', 'mra1101'} ) -- Cybran
 table.insert(BuildingTemplates[4], { 'T1XGunship', 'msa1101'} ) -- Seraphim
 
 -- T1X Siege
-table.insert(BuildingTemplates[1], { 'T1XSiege', 'mcpu1lxbt'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T1XSiege', 'mcpa1lxbt'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T1XSiege', 'mcpc1lxsb'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T1XSiege', 'mcps1lxt'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T1XSiege', 'mel1101t'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T1XSiege', 'mal1102'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T1XSiege', 'mrl1102'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T1XSiege', 'msl1102'} ) -- Seraphim
 
 -- T1X Assault
-table.insert(BuildingTemplates[1], { 'T1XAssault', 'mcpu1lxb'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T1XAssault', 'mcpa1lxm'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T1XAssault', 'mcpc1lxab'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T1XAssault', 'mcps1lxab'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T1XAssault', 'mel1101'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T1XAssault', 'mal1101'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T1XAssault', 'mrl1101'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T1XAssault', 'msl1101'} ) -- Seraphim
 
 -- T1X Naval
 table.insert(BuildingTemplates[1], { 'T1XShip', 'mes1101'} ) -- UEF
@@ -32,16 +32,16 @@ table.insert(BuildingTemplates[3], { 'T2XGunship', 'mra1201'} ) -- Cybran
 --table.insert(BuildingTemplates[4], { 'T2XGunship', 'msa1201'} ) -- Seraphim
 
 -- T2X Siege
-table.insert(BuildingTemplates[1], { 'T2XSiege', 'mcpu2lxt'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T2XSiege', 'mcpa2lxt'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T2XSiege', 'mcpc2lxrb'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T2XSiege', 'mcps2lxb'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T2XSiege', 'mel1202'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T2XSiege', 'mal1202'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T2XSiege', 'mrl1202'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T2XSiege', 'msl1202'} ) -- Seraphim
 
 -- T2X Assault
-table.insert(BuildingTemplates[1], { 'T2XAssault', 'mcpu2lxm'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T2XAssault', 'mcpa2lxm'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T2XAssault', 'mcpc2lxbm'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T2XAssault', 'mcps2lxab'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T2XAssault', 'mel1201'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T2XAssault', 'mal1201'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T2XAssault', 'mrl1201'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T2XAssault', 'msl1201'} ) -- Seraphim
 
 -- T2X Naval
 table.insert(BuildingTemplates[1], { 'T2XShip', 'mes1201'} ) -- UEF
@@ -58,16 +58,16 @@ table.insert(BuildingTemplates[3], { 'T3XGunship', 'mra1301'} ) -- Cybran
 table.insert(BuildingTemplates[4], { 'T3XGunship', 'msa1301'} ) -- Seraphim
 
 -- T3X Siege
-table.insert(BuildingTemplates[1], { 'T3XSiege', 'mcpu3lxdf'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T3XSiege', 'mcpa3lxtt'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T3XSiege', 'mcpc3lxsb'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T3XSiege', 'mcps3lxt'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T3XSiege', 'mel1302'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T3XSiege', 'mal1302'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T3XSiege', 'mrl1302'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T3XSiege', 'msl1302'} ) -- Seraphim
 
 -- T3X Assault
-table.insert(BuildingTemplates[1], { 'T3XAssault', 'mcpu3lxm'} ) -- UEF
-table.insert(BuildingTemplates[2], { 'T3XAssault', 'mcpa3lxhm'} ) -- Aeon
-table.insert(BuildingTemplates[3], { 'T3XAssault', 'mcpc3lxam'} ) -- Cybran
-table.insert(BuildingTemplates[4], { 'T3XAssault', 'mcps3lxqb'} ) -- Seraphim
+table.insert(BuildingTemplates[1], { 'T3XAssault', 'mel1301'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T3XAssault', 'mal1301'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T3XAssault', 'mrl1301'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T3XAssault', 'msl1301'} ) -- Seraphim
 
 -- T3X Naval
 table.insert(BuildingTemplates[1], { 'T3XShip', 'mes1301'} ) -- UEF

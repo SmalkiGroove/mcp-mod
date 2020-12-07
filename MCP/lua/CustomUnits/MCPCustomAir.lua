@@ -31,6 +31,6 @@ UnitList = {
     },
 
     T4SatelliteExperimental = {
-        UEF =       {'mcpu4aff', 100},
+        UEF =       {'mea1401', 100},
     },
 }
