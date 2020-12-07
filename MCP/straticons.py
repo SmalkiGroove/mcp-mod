@@ -10,10 +10,10 @@ expand_strategic_icons = False
 # ----------
 data = [
     # T1 Poly PD
-    ['meb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    ['mrb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    ['mab2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    ['msb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
+    # ['meb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
+    # ['mrb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
+    # ['mab2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
+    # ['msb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
     # T1 Heavy PD
     ['meb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
     ['mrb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
@@ -50,7 +50,7 @@ data = [
     ['mas0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
     ['mss0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
     # Drones
-    ['bsa0004', 'icon_fighter1_directfire', 'icon_fighter1_bomb'],
+    ['msl1401a', 'icon_fighter1_directfire', 'icon_fighter1_bomb'],
     ['mss1101a', 'icon_fighter1_directfire', 'icon_fighter1_antinavy'],
 ]
 
@@ -70,6 +70,8 @@ def replace_in_file(filepath, fromstr, tostr):
         file_w = open(filepath, 'w')
         file_w.write(content)
         file_w.close()
+    else:
+        print("String {} not found in {}".format(fromstr, filepath))
 
 # Main script
 # -----------
@@ -83,6 +85,6 @@ for d in data:
     target_straticon_name = d[2] if expand_strategic_icons else d[1]
     unit_file_path = os.path.join(modpath, "units/{}/{}_unit.bp".format(unit_name, unit_name))
     print("Replace '{}' by '{}' in file {}".format(current_straticon_name, target_straticon_name, unit_file_path))
-    # replace_in_file(unit_file_path, current_straticon_name, target_straticon_name)
+    replace_in_file(unit_file_path, current_straticon_name, target_straticon_name)
 
 print("Done !")
