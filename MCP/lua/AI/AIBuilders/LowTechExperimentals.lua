@@ -12,7 +12,7 @@ BuilderGroup {
 -- Land Assault T1
     Builder {
         BuilderName = 'T1XASSAULT',
-        PlatoonTemplate = 'T1EngineerBuilder',
+        PlatoonTemplate = 'EngineerBuilder',
         Priority = 10000,
         InstanceCount = 1,
         BuilderConditions = {
@@ -40,7 +40,7 @@ BuilderGroup {
 -- Land Siege T1
     Builder {
         BuilderName = 'T1XSIEGE',
-        PlatoonTemplate = 'T1EngineerBuilder',
+        PlatoonTemplate = 'EngineerBuilder',
         Priority = 10100,
         InstanceCount = 1,
         BuilderConditions = {
@@ -211,7 +211,7 @@ BuilderGroup {
 -- Assister T1
     Builder {
         BuilderName = 'T1XASSIST',
-        PlatoonTemplate = 'T1EngineerAssist',
+        PlatoonTemplate = 'EngineerAssist',
         Priority = 990,
         InstanceCount = 5,
         BuilderConditions = {
@@ -355,7 +355,7 @@ BuilderGroup {
 
     Builder {
         BuilderName = 'T1XASSISTFACTORY',
-        PlatoonTemplate = 'T1EngineerAssist',
+        PlatoonTemplate = 'EngineerAssist',
         Priority = 990,
         InstanceCount = 2,
         BuilderConditions = {
