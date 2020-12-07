@@ -101,7 +101,6 @@ UnitBlueprint {
         'AIR',
         'CONSTRUCTION',
         'PATROLHELPER',
-        'ENGINEER',
         'REPAIR',
         'RECLAIM',
         'TECH1',

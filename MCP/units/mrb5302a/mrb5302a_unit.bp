@@ -71,7 +71,6 @@ UnitBlueprint {
         'CONSTRUCTION',
         'VISIBLETORECON',
         'TECH3',
-        'ENGINEER',
         'RECLAIMABLE',
         'STATIONASSISTPOD',
         'REPAIR',

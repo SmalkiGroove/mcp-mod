@@ -12,14 +12,15 @@ BuilderGroup {
 -- Land Assault T1
     Builder {
         BuilderName = 'T1XASSAULT',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T1EngineerBuilder',
         Priority = 10000,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 4.0, 200.0 } },
+            { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH1 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH1 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -39,15 +40,16 @@ BuilderGroup {
 -- Land Siege T1
     Builder {
         BuilderName = 'T1XSIEGE',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T1EngineerBuilder',
         Priority = 10100,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
-            { EBC, 'GreaterThanEconIncome', { 4.0, 200.0 } },
+            { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH1 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH1 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -67,14 +69,15 @@ BuilderGroup {
 -- Land Assault T2
     Builder {
         BuilderName = 'T2XASSAULT',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T2EngineerBuilder',
         Priority = 10200,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 5.0, 300.0 } },
+            { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH2 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH2 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -94,15 +97,16 @@ BuilderGroup {
 -- Land Siege T2
     Builder {
         BuilderName = 'T2XSIEGE',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T2EngineerBuilder',
         Priority = 10300,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
-            { EBC, 'GreaterThanEconIncome', { 5.0, 300.0 } },
+            { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH2 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH2 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -122,14 +126,15 @@ BuilderGroup {
 -- Land Assault T3
     Builder {
         BuilderName = 'T3XASSAULT',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T3EngineerBuilder',
         Priority = 10400,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 6.0, 400.0 } },
+            { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH3 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH3 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -149,15 +154,16 @@ BuilderGroup {
 -- Land Siege T3
     Builder {
         BuilderName = 'T3XSIEGE',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T3EngineerBuilder',
         Priority = 10500,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
-            { EBC, 'GreaterThanEconIncome', { 6.0, 400.0 } },
+            { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 2, categories.ENGINEER * categories.TECH3 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECH3 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.LAND * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.LAND * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -177,14 +183,15 @@ BuilderGroup {
 -- Spaceship T3
     Builder {
         BuilderName = 'T3XGUNSHIP',
-        PlatoonTemplate = 'EngineerBuilder',
+        PlatoonTemplate = 'T3EngineerBuilder',
         Priority = 9999,
         InstanceCount = 5,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 7.0, 500.0 } },
+            { EBC, 'GreaterThanEconIncome', { 6.0, 500.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 3, categories.ENGINEER * categories.TECH3 }},
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECH3 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.TECH3 * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Any',
@@ -200,13 +207,79 @@ BuilderGroup {
             }
         }
     },
+
+-- Assister T1
+    Builder {
+        BuilderName = 'T1XASSIST',
+        PlatoonTemplate = 'T1EngineerAssist',
+        Priority = 990,
+        InstanceCount = 5,
+        BuilderConditions = {
+            { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE'},
+                Time = 60,
+            },
+        }
+    },
+
+-- Assister T2
+    Builder {
+        BuilderName = 'T2XASSIST',
+        PlatoonTemplate = 'T2EngineerAssist',
+        Priority = 980,
+        InstanceCount = 5,
+        BuilderConditions = {
+            { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE'},
+                Time = 60,
+            },
+        }
+    },
+
+-- Assister T3
+    Builder {
+        BuilderName = 'T3XASSIST',
+        PlatoonTemplate = 'T3EngineerAssist',
+        Priority = 970,
+        InstanceCount = 5,
+        BuilderConditions = {
+            { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE'},
+                Time = 60,
+            },
+        }
+    },
 }
 
 
 
 
 BuilderGroup {
-    BuilderGroupName = 'FACTORYEXP Builder', -- BuilderGroupName, initalized from AIBaseTemplates in "\lua\AI\AIBaseTemplates\"
+    BuilderGroupName = 'FACTORYEXP Builder',
     BuildersType = 'FactoryBuilder',
 
     Builder {
@@ -214,9 +287,10 @@ BuilderGroup {
         PlatoonTemplate = 'T1X Gunship',
         Priority = 9900,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 4.0, 200.0 } },
+            { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECH1 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Air',
@@ -227,9 +301,10 @@ BuilderGroup {
         PlatoonTemplate = 'T2X Gunship',
         Priority = 9950,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 5.0, 300.0 } },
+            { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECH2 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Air',
@@ -241,9 +316,10 @@ BuilderGroup {
         PlatoonTemplate = 'T1X Naval',
         Priority = 9100,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 4.0, 200.0 } },
+            { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECH1 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Sea',
@@ -254,9 +330,10 @@ BuilderGroup {
         PlatoonTemplate = 'T2X Naval',
         Priority = 9200,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 5.0, 300.0 } },
+            { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECH2 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Sea',
@@ -267,12 +344,76 @@ BuilderGroup {
         PlatoonTemplate = 'T3X Naval',
         Priority = 9300,
         BuilderConditions = {
-            { EBC, 'GreaterThanEconIncome', { 6.0, 400.0 } },
+            { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECH3 * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
         BuilderType = 'Sea',
+    },
+
+    Builder {
+        BuilderName = 'T1XASSISTFACTORY',
+        PlatoonTemplate = 'T1EngineerAssist',
+        Priority = 990,
+        InstanceCount = 2,
+        BuilderConditions = {
+            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
+                Time = 60,
+            },
+        }
+    },
+
+    Builder {
+        BuilderName = 'T2XASSISTFACTORY',
+        PlatoonTemplate = 'T2EngineerAssist',
+        Priority = 980,
+        InstanceCount = 2,
+        BuilderConditions = {
+            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
+                Time = 60,
+            },
+        }
+    },
+
+    Builder {
+        BuilderName = 'T3XASSISTFACTORY',
+        PlatoonTemplate = 'T3EngineerAssist',
+        Priority = 970,
+        InstanceCount = 2,
+        BuilderConditions = {
+            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
+            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Assist = {
+                AssistLocation = 'LocationType',
+                AssisteeType = 'Engineer',
+                AssistRange = 80,
+                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
+                Time = 60,
+            },
+        }
     },
 }
 

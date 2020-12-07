@@ -59,7 +59,6 @@ UnitBlueprint {
         'NEEDMOBILEBUILD',
         'DRAGBUILD',
         'VISIBLETORECON',
-        'ENGINEER',
         'RECLAIMABLE',
         'STATIONASSISTPOD',
         'REPAIR',

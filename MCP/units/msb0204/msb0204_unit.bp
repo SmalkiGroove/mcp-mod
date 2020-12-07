@@ -59,7 +59,6 @@ UnitBlueprint {
         'TECH2',
         'DRAGBUILD',
         'VISIBLETORECON',
-        'ENGINEER',
         'RECLAIMABLE',
         'STATIONASSISTPOD',
         'REPAIR',
