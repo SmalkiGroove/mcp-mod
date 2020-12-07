@@ -1,22 +1,22 @@
 
 -- Cybran
-Description['mcpc1lfe'] = "Tech 1 field engineer. Can build military structures."
-Description['mcpc2lfe'] = "Tech 2 field engineer. Can build military structures."
-Description['mcpc3lfe'] = "Tech 3 field engineer. Can build military structures."
+Description['mrl0110'] = "Tech 1 field engineer. Can build military structures."
+Description['mrl0210'] = "Tech 2 field engineer. Can build military structures."
+Description['mrl0310'] = "Tech 3 field engineer. Can build military structures."
 
 -- UEF
-Description['mcpu1lfe'] = "Tech 1 field engineer. Can build military structures."
-Description['mcpu3lfe'] = "Tech 3 field engineer. Can build military structures."
+Description['mel0110'] = "Tech 1 field engineer. Can build military structures."
+Description['mel0310'] = "Tech 3 field engineer. Can build military structures."
 
 -- Aeon
-Description['mcpa1lfe'] = "Tech 1 field engineer. Can build military structures."
-Description['mcpa2lfe'] = "Tech 2 field engineer. Can build military structures."
-Description['mcpa3lfe'] = "Tech 3 field engineer. Can build military structures."
+Description['mal0110'] = "Tech 1 field engineer. Can build military structures."
+Description['mal0210'] = "Tech 2 field engineer. Can build military structures."
+Description['mal0310'] = "Tech 3 field engineer. Can build military structures."
 
 -- Seraphim
-Description['mcps1lfe'] = "Tech 1 field engineer. Can build military structures."
-Description['mcps2lfe'] = "Tech 2 field engineer. Can build military structures."
-Description['mcps3lfe'] = "Tech 3 field engineer. Can build military structures."
+Description['msl0110'] = "Tech 1 field engineer. Can build military structures."
+Description['msl0210'] = "Tech 2 field engineer. Can build military structures."
+Description['msl0310'] = "Tech 3 field engineer. Can build military structures."
 
 -- Upgrades
 Description['uel0001-hues'] = "Replaces the Tech 3 Engineering Suite. Allows the ACU to contruct Experimental class units and further increases the ACU's build speed and maximum health."

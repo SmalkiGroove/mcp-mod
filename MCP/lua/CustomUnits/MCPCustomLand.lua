@@ -4,24 +4,24 @@ UnitList = {
     --------------------------------------------------------------------------------
 
     T1BuildEngineer = {
-        UEF =       {'mcpu1lfe', 20},
-        Aeon =      {'mcpa1lfe', 20},
-        Cybran =    {'mcpc1lfe', 20},
-        Seraphim =  {'mcps1lfe', 20},
+        UEF =       {'mel0110', 20},
+        Aeon =      {'mal0110', 20},
+        Cybran =    {'mrl0110', 20},
+        Seraphim =  {'msl0110', 20},
     },
 
     T2BuildEngineer = {
         UEF =       {'xel0209', 20},
-        Aeon =      {'mcpa2lfe', 20},
-        Cybran =    {'mcpc2lfe', 20},
-        Seraphim =  {'mcps2lfe', 20},
+        Aeon =      {'mal0210', 20},
+        Cybran =    {'mrl0210', 20},
+        Seraphim =  {'msl0210', 20},
     },
 
     T3BuildEngineer = {
-        UEF =       {'mcpu3lfe', 20},
-        Aeon =      {'mcpa3lfe', 20},
-        Cybran =    {'mcpc3lfe', 20},
-        Seraphim =  {'mcps3lfe', 20},
+        UEF =       {'mel0310', 20},
+        Aeon =      {'mal0310', 20},
+        Cybran =    {'mrl0310', 20},
+        Seraphim =  {'msl0310', 20},
     },
 
     --------------------------------------------------------------------------------
@@ -29,25 +29,25 @@ UnitList = {
     --------------------------------------------------------------------------------
 
     T3LandBot = {
-        Seraphim =  {'mcps3lsb', 90},
+        Seraphim =  {'msl0302', 90},
     },
 
     T3ArmoredAssault = {
-        Aeon =      {'mcpa3lht', 90},
+        Aeon =      {'mal0306', 90},
     },
 
     T3ArmoredAssaultSorian = {
-        Aeon =      {'mcpa3lht', 90},
+        Aeon =      {'mal0306', 90},
     },
 
     T3SniperBots = {
-        Cybran =    {'mcpc3lsb', 90},
-        UEF =       {'mcpu3lart', 90},
+        Cybran =    {'mrl0308', 90},
+        UEF =       {'mel0308', 90},
     },
 
     T3LandArtillery = {
-        Cybran =    {'mcpc3lmb', 90},
-        Seraphim =   {'mcps3lsr', 90},
+        Cybran =    {'mrl0307', 90},
+        Seraphim =   {'msl0306', 90},
     },
 
     --------------------------------------------------------------------------------
@@ -55,11 +55,11 @@ UnitList = {
     --------------------------------------------------------------------------------
 
     T2LandDFBot = {
-        Aeon =      {'mcpa2lrb', 70},
+        Aeon =      {'mal0204', 70},
     },
 
     T2LandDFTank = {
-        Seraphim =  {'mcps2lrt', 40},
+        Seraphim =  {'msl0204', 40},
     },
 
     --------------------------------------------------------------------------------
@@ -67,13 +67,13 @@ UnitList = {
     --------------------------------------------------------------------------------
 
     T1LandDFBot = {
-        Seraphim =  {'mcps1lab', 80},
+        Seraphim =  {'msl0102', 80},
     },
 
     T1LandDFTank = {
-        -- UEF =       {'mcpu1ldt', 50}, Deplyable not handled by AI
-        Aeon =      {'mcpa1lmt', 80},
-        Cybran =    {'mcpc1llm', 50},
+        -- UEF =       {'mel0102', 50}, Deplyable not handled by AI
+        Aeon =      {'mal0102', 80},
+        Cybran =    {'mrl0102', 50},
     },
 
     --------------------------------------------------------------------------------

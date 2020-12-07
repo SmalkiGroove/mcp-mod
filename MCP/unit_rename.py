@@ -11,8 +11,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "mcpa1lxm" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
-unit_replace_name = "mal1101" # <-- Write the new name (IN LOWERCASE) you want for this unit here
+unit_current_name = "msb4401_large" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
+unit_replace_name = "msb4401a" # <-- Write the new name (IN LOWERCASE) you want for this unit here
 
 # Variables definitions
 # ---------------------
@@ -108,7 +108,7 @@ rename_lua(unit_current_name, unit_replace_name)
 print("> Search in hook...")
 rename_hook(unit_current_name, unit_replace_name)
 print("> Search in units...")
-rename_unit(unit_current_name, unit_replace_name)
+# rename_unit(unit_current_name, unit_replace_name)
 print("> Search in blueprints...")
 rename_refs(unit_current_name, unit_replace_name)
 

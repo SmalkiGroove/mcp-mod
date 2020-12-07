@@ -24,7 +24,7 @@ MSB4401 = Class(SShieldStructureUnit) {
             table.insert( self.ShieldEffectsBag, CreateAttachedEmitter( self, 0, army, v ) )
         end
         local drones, radius
-        for setI, set in {{LDNo, 22, 'MSB4401_large'},{sdNo, 38, 'MSB4401_small'}} do
+        for setI, set in {{LDNo, 22, 'msb4401a'},{sdNo, 38, 'msb4401b'}} do
             drones = set[1]
             radius = set[2]
             local patrolnodes = 18
