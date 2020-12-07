@@ -1,7 +1,7 @@
 local TAirUnit = import('/lua/terranunits.lua').TAirUnit
 local VizMarker = import('/lua/sim/VizMarker.lua').VizMarker
 
-SEA0002 = Class(TAirUnit) {
+MEB3301A = Class(TAirUnit) {
     DestroyNoFallRandomChance = 0,
 
     HideBones = { 'Shell01', 'Shell02', 'Shell03', 'Shell04' },
@@ -103,4 +103,4 @@ SEA0002 = Class(TAirUnit) {
     end,
 }
 
-TypeClass = SEA0002
+TypeClass = MEB3301A

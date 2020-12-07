@@ -26,11 +26,11 @@ ProjectileBlueprint {
         Mesh = {
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MCPU2AF/MCPU2AF_Albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mea0201/mea0201_Albedo.dds',
                     LODCutoff = 150,
-                    MeshName = '/mods/MCP/units/MCPU2AF/MCPU2AFMISSILE_LOD0.scm',
-					NormalsName = '/mods/MCP/units/MCPU2AF/MCPU2AF_NormalsTS.DDS',
-					SpecularName = '/mods/MCP/units/MCPU2AF/MCPU2AF_SpecTeam.dds',
+                    MeshName = '/mods/MCP/units/mea0201/mea0201MISSILE_LOD0.scm',
+					NormalsName = '/mods/MCP/units/mea0201/mea0201_NormalsTS.DDS',
+					SpecularName = '/mods/MCP/units/mea0201/mea0201_SpecTeam.dds',
                     ShaderName = 'TMeshAlpha',
                 },
             },

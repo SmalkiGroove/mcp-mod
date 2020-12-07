@@ -51,7 +51,7 @@ data = [
     ['mss0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
     # Drones
     ['bsa0004', 'icon_fighter1_directfire', 'icon_fighter1_bomb'],
-    ['tcas0201', 'icon_fighter1_directfire', 'icon_fighter1_antinavy'],
+    ['mss1101a', 'icon_fighter1_directfire', 'icon_fighter1_antinavy'],
 ]
 
 # Renaming functions

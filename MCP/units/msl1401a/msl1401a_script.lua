@@ -4,7 +4,7 @@ local TDFGoliathShoulderBeam = WeaponsFile.TDFGoliathShoulderBeam
 local TIFArtilleryWeapon = import('/lua/terranweapons.lua').TIFArtilleryWeapon
 local YenzothaExperimentalLaser02 = WeaponsFile.YenzothaExperimentalLaser02
 
-BSA0004 = Class(SAirUnit) {
+MSL1401A = Class(SAirUnit) {
 
     Weapons = {
         EyeWeapon01 = Class(YenzothaExperimentalLaser02) {},
@@ -126,4 +126,4 @@ BSA0004 = Class(SAirUnit) {
     
 }
 
-TypeClass = BSA0004
+TypeClass = MSL1401A

@@ -123,10 +123,10 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC baa0001_desc>Defense Drone',
+    Description = '<LOC uas0401a_desc>Defense Drone',
     Display = {
-    AnimationLand = '/mods/MCP/units/BAA0001/BAA0001_AClose01.sca',
-    AnimationTakeOff = '/mods/MCP/units/BAA0001/BAA0001_AOpen.sca',
+    AnimationLand = '/mods/MCP/units/UAS0401A/UAS0401A_AClose01.sca',
+    AnimationTakeOff = '/mods/MCP/units/UAS0401A/UAS0401A_AOpen.sca',
         Mesh = {
             IconFadeInZoom = 175,
             LODs = {
@@ -175,7 +175,7 @@ UnitBlueprint {
         VisionRadius = 15,
     },
     Interface = {
-        HelpText = '<LOC baa0001_help>Defense Drone',
+        HelpText = '<LOC uas0401a_help>Defense Drone',
     },
     LifeBarRender = false,
     Physics = {

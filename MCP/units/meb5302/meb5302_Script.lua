@@ -76,7 +76,7 @@ MEB5302 = Class(TAirStagingPlatformUnit) {
             local position = self:GetPosition('Station_01')
 
             -- Creates our drone in the left launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnitHPR('beb0005', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
+            local drone = CreateUnitHPR('meb5302a', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
             drone:AttachTo(self, 'Station_01')
             -- Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -96,7 +96,7 @@ MEB5302 = Class(TAirStagingPlatformUnit) {
             local position = self:GetPosition('Station_02')
 
             -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnitHPR('beb0005', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
+            local drone = CreateUnitHPR('meb5302a', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
             drone:AttachTo(self, 'Station_02')
             
             -- Adds the newly created drone to the parent carriers drone table
@@ -117,7 +117,7 @@ MEB5302 = Class(TAirStagingPlatformUnit) {
             local position = self:GetPosition('Station_03')
         
             -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnitHPR('beb0005', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
+            local drone = CreateUnitHPR('meb5302a', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
             drone:AttachTo(self, 'Station_03')
             
             -- Adds the newly created drone to the parent carriers drone table
@@ -138,7 +138,7 @@ MEB5302 = Class(TAirStagingPlatformUnit) {
             local position = self:GetPosition('Station_04')
     
             -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnitHPR('beb0005', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
+            local drone = CreateUnitHPR('meb5302a', self:GetArmy(), position.x, position.y, position.z, 0, 0, 0)
             drone:AttachTo(self, 'Station_04')
             
             -- Adds the newly created drone to the parent carriers drone table

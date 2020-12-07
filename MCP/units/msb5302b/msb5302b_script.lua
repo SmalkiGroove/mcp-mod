@@ -1,7 +1,7 @@
 local SConstructionUnit = import('/lua/seraphimunits.lua').SConstructionUnit
 local EffectUtil = import('/lua/EffectUtilities.lua')
 
-BSA0002 = Class(SConstructionUnit) {
+MSB5302B = Class(SConstructionUnit) {
     Parent = nil,
     ExhaustLaunch01 = '/effects/emitters/seraphim_inaino_launch_01_emit.bp',
     ExhaustLaunch02 = '/effects/emitters/seraphim_inaino_launch_02_emit.bp',
@@ -153,4 +153,4 @@ BSA0002 = Class(SConstructionUnit) {
     end,
 }
 
-TypeClass = BSA0002
+TypeClass = MSB5302B

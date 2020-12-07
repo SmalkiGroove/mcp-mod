@@ -94,9 +94,9 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC brb0004_desc>Drone Station',
+    Description = '<LOC mrb5302a_desc>Drone Station',
     Display = {
-        AnimationOpen = '/mods/MCP/units/brb0004/brb0004_Aopen.sca',
+        AnimationOpen = '/mods/MCP/units/mrb5302a/mrb5302a_Aopen.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -178,7 +178,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC brb0004_name>Winker',
+        UnitName = '<LOC mrb5302a_name>Winker',
         UnitWeight = 1,
     },
     Intel = {

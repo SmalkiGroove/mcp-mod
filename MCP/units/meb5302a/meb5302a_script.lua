@@ -1,6 +1,6 @@
 local TPodTowerUnit = import('/lua/terranunits.lua').TPodTowerUnit
 
-BEB0005 = Class(TPodTowerUnit) {
+MEB5302A = Class(TPodTowerUnit) {
     OnStopBeingBuilt = function(self,builder,layer)
         TPodTowerUnit.OnStopBeingBuilt(self,builder,layer)
         if not self.OpenAnim then
@@ -21,4 +21,4 @@ BEB0005 = Class(TPodTowerUnit) {
     end,
 }
 
-TypeClass = BEB0005
+TypeClass = MEB5302A

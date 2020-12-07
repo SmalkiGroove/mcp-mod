@@ -6,7 +6,7 @@ local ADFCannonOblivionWeapon = WeaponsFile.ADFCannonOblivionWeapon02
 local AANDepthChargeBombWeapon = WeaponsFile.AANDepthChargeBombWeapon
 local ADFQuantumAutogunWeapon = WeaponsFile.ADFQuantumAutogunWeapon
 
-BAA0001 = Class(AirDroneUnit) {
+UAS0401A = Class(AirDroneUnit) {
 
     Weapons = {
         MainGun = Class(import('/lua/aeonweapons.lua').ADFCannonOblivionWeapon) {
@@ -45,4 +45,4 @@ BAA0001 = Class(AirDroneUnit) {
 
 }
 
-TypeClass = BAA0001
+TypeClass = UAS0401A

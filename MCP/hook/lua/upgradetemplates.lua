@@ -63,16 +63,16 @@ table.insert(StructureUpgradeTemplates[2], {'uab1302', 'mab1306'}) -- Mass Extra
 table.insert(StructureUpgradeTemplates[2], {'uab1303', 'mab1307'}) -- Mass Fabricator TECH3. Upgrade with small shield dome.
 table.insert(StructureUpgradeTemplates[2], {'mab1208', 'mab1308'}) -- Water Power Plant. Upgrade from TECH2 to TECH3
 -- recycler structure upgrades
-table.insert(StructureUpgradeTemplates[3], {'urb1102', 'mcpc2bhydro'}) -- Hydrocarbon Power Plant. Upgrade from TECH1 to TECH2
-table.insert(StructureUpgradeTemplates[3], {'mcpc2bhydro', 'mcpc3bhydro'}) -- Hydrocarbon Power Plant. Upgrade from TECH2 to TECH3
-table.insert(StructureUpgradeTemplates[3], {'urb1301', 'mcpc3bcpg'}) -- Power Generator TECH3. Upgrade with Cloaking feature.
-table.insert(StructureUpgradeTemplates[3], {'urb1302', 'mcpc3bcme'}) -- Mass Extractor TECH3. Upgrade with Cloaking feature.
-table.insert(StructureUpgradeTemplates[3], {'urb1303', 'mcpc3bcmf'}) -- Mass Fabricator TECH3. Upgrade with Cloaking feature.
-table.insert(StructureUpgradeTemplates[3], {'mcpc2bwhydro', 'mcpc3bwhydro'}) -- Water Power Plant. Upgrade from TECH2 to TECH3
+table.insert(StructureUpgradeTemplates[3], {'urb1102', 'mrb1204'}) -- Hydrocarbon Power Plant. Upgrade from TECH1 to TECH2
+table.insert(StructureUpgradeTemplates[3], {'mrb1204', 'mrb1304'}) -- Hydrocarbon Power Plant. Upgrade from TECH2 to TECH3
+table.insert(StructureUpgradeTemplates[3], {'urb1301', 'mrb1305'}) -- Power Generator TECH3. Upgrade with Cloaking feature.
+table.insert(StructureUpgradeTemplates[3], {'urb1302', 'mrb1306'}) -- Mass Extractor TECH3. Upgrade with Cloaking feature.
+table.insert(StructureUpgradeTemplates[3], {'urb1303', 'mrb1307'}) -- Mass Fabricator TECH3. Upgrade with Cloaking feature.
+table.insert(StructureUpgradeTemplates[3], {'mrb1208', 'mrb1308'}) -- Water Power Plant. Upgrade from TECH2 to TECH3
 -- seraphim structure upgrades
-table.insert(StructureUpgradeTemplates[4], {'xsb1102', 'mcps2bhydro'}) -- Hydrocarbon Power Plant. Upgrade from TECH1 to TECH2
-table.insert(StructureUpgradeTemplates[4], {'mcps2bhydro', 'mcps3bhydro'}) -- Hydrocarbon Power Plant. Upgrade from TECH2 to TECH3
-table.insert(StructureUpgradeTemplates[4], {'xsb1301', 'mcps3bapg'}) -- Power Generator TECH3. Upgrade with great tankiness.
-table.insert(StructureUpgradeTemplates[4], {'xsb1302', 'mcps3bame'}) -- Mass Extractor TECH3. Upgrade with great tankiness.
-table.insert(StructureUpgradeTemplates[4], {'xsb1303', 'mcps3bamf'}) -- Mass Fabricator TECH3. Upgrade with great tankiness.
-table.insert(StructureUpgradeTemplates[4], {'mcps2bwhydro', 'mcps3bwhydro'}) -- Water Power Plant. Upgrade from TECH2 to TECH3
+table.insert(StructureUpgradeTemplates[4], {'xsb1102', 'msb1204'}) -- Hydrocarbon Power Plant. Upgrade from TECH1 to TECH2
+table.insert(StructureUpgradeTemplates[4], {'msb1204', 'msb1304'}) -- Hydrocarbon Power Plant. Upgrade from TECH2 to TECH3
+table.insert(StructureUpgradeTemplates[4], {'xsb1301', 'msb1305'}) -- Power Generator TECH3. Upgrade with great tankiness.
+table.insert(StructureUpgradeTemplates[4], {'xsb1302', 'msb1306'}) -- Mass Extractor TECH3. Upgrade with great tankiness.
+table.insert(StructureUpgradeTemplates[4], {'xsb1303', 'msb1307'}) -- Mass Fabricator TECH3. Upgrade with great tankiness.
+table.insert(StructureUpgradeTemplates[4], {'msb1208', 'msb1308'}) -- Water Power Plant. Upgrade from TECH2 to TECH3

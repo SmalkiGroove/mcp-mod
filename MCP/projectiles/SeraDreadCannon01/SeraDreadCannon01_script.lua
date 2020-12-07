@@ -18,7 +18,7 @@ SDFSinnuntheWeapon01 = Class(SDFSinnuntheWeaponProjectile) {
     OnImpact = function(self, targetType, targetEntity)
         SDFSinnuntheWeaponProjectile.OnImpact(self, targetType, targetEntity)
         local position = self:GetPosition()
-        local spiritUnit = CreateUnitHPR('BSL0404', self:GetArmy(), position[1], position[2], position[3], 0, 0, 0)
+        local spiritUnit = CreateUnitHPR('mss1401a', self:GetArmy(), position[1], position[2], position[3], 0, 0, 0)
         
         -- Create effects for spawning of energy being
         for k, v in self.SpawnEffects do

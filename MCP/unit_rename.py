@@ -11,8 +11,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "msb4401_large" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
-unit_replace_name = "msb4401a" # <-- Write the new name (IN LOWERCASE) you want for this unit here
+unit_current_name = "tcas0201" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
+unit_replace_name = "mss1101a" # <-- Write the new name (IN LOWERCASE) you want for this unit here
 
 # Variables definitions
 # ---------------------
@@ -63,9 +63,9 @@ def rename_lua(currentname, targetname):
             filepath = os.path.join(root, f)
             replace_in_file(filepath, currentname, targetname)
 
-# DOC : replace all occurences of 'currentname' by 'targetname' in all files in the mod /hook/lua folder.
+# DOC : replace all occurences of 'currentname' by 'targetname' in all files in the mod /hook folder.
 def rename_hook(currentname, targetname):
-    hookpath = os.path.join(modpath, "hook/lua")
+    hookpath = os.path.join(modpath, "hook")
     for root, dirs, files in os.walk(hookpath):
         for f in files:
             filepath = os.path.join(root, f)
@@ -91,8 +91,10 @@ def rename_refs(currentname, targetname):
     for u in units:
         if u.lower() == targetname:
             continue
-        filepath = os.path.join(unitspath, "{}/{}_unit.bp".format(u,u))
-        replace_in_file(filepath, currentname, targetname)
+        bpfilepath = os.path.join(unitspath, "{}/{}_unit.bp".format(u,u))
+        replace_in_file(bpfilepath, currentname, targetname)
+        scriptfilepath = os.path.join(unitspath, "{}/{}_script.lua".format(u,u))
+        replace_in_file(scriptfilepath, currentname, targetname)
 
 # Main script
 # -----------
@@ -108,7 +110,7 @@ rename_lua(unit_current_name, unit_replace_name)
 print("> Search in hook...")
 rename_hook(unit_current_name, unit_replace_name)
 print("> Search in units...")
-# rename_unit(unit_current_name, unit_replace_name)
+rename_unit(unit_current_name, unit_replace_name)
 print("> Search in blueprints...")
 rename_refs(unit_current_name, unit_replace_name)
 

@@ -114,7 +114,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC bsa0001_desc>Ground Attack/Anti-Air Drone',
+    Description = '<LOC msb5302a_desc>Ground Attack/Anti-Air Drone',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -203,14 +203,14 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'air',
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC BSA0001_name>Atha Ia Thu',
+        UnitName = '<LOC MSB5302A_name>Atha Ia Thu',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 25,
     },
     Interface = {
-        HelpText = '<LOC BSA0001_help>Ground Attack/Anti-Air Drone',
+        HelpText = '<LOC MSB5302A_help>Ground Attack/Anti-Air Drone',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.3,

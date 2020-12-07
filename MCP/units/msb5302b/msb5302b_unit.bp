@@ -119,7 +119,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 6,
     },
-    Description = '<LOC bsa0002_desc>Repair Drone',
+    Description = '<LOC msb5302b_desc>Repair Drone',
     Display = {
         Abilities = {
             '<LOC ability_engineeringsuite>Engineering Suite',
@@ -215,7 +215,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'air',
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC bsa0002_name>Winker',
+        UnitName = '<LOC msb5302b_name>Winker',
         UnitWeight = 1,
     },
     Intel = {

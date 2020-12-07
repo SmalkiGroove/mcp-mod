@@ -163,7 +163,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch01')
 
                 -- Creates our drone in the left launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0001', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.DroneTable, drone)
@@ -186,7 +186,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch02')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0001', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.DroneTable, drone)
@@ -209,7 +209,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch03')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0001', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.DroneTable, drone)
@@ -232,7 +232,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch04')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0001', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.DroneTable, drone)
@@ -267,7 +267,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch01')
 
                 -- Creates our drone in the left launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302b', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.RepairDroneTable, drone)
@@ -289,7 +289,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch02')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302b', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.RepairDroneTable, drone)
@@ -311,7 +311,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch03')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302b', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 table.insert (self.RepairDroneTable, drone)
@@ -333,7 +333,7 @@ MSB5302 = Class(SAirStagingPlatformUnit) {
                 local location = self:GetPosition('Drone_Launch04')
 
                 -- Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-                local drone = CreateUnit('bsa0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+                local drone = CreateUnit('msb5302b', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 
                 -- Adds the newly created drone to the parent carriers drone table
                 --Mithy: These drones should not be in the DroneTable, as this is used for issuing attack orders

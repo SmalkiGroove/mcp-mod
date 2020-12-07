@@ -3,7 +3,7 @@ local SAALosaareAutoCannonWeapon = import('/lua/seraphimweapons.lua').SAALosaare
 local SANHeavyCavitationTorpedo = import('/lua/seraphimweapons.lua').SANHeavyCavitationTorpedo
 local EffectUtil = import('/lua/EffectUtilities.lua')
 
-BSA0001 = Class(SAirUnit) {
+MSB5302A = Class(SAirUnit) {
     Weapons = {
         AutoCannon1 = Class(SAALosaareAutoCannonWeapon) {},
         Bomb = Class(SANHeavyCavitationTorpedo) {},
@@ -279,4 +279,4 @@ BSA0001 = Class(SAirUnit) {
     end,
 }
 
-TypeClass = BSA0001
+TypeClass = MSB5302A

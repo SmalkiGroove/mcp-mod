@@ -260,27 +260,27 @@ UnitBlueprint {
     DroneData = {
         Drone1 = {
             Attachpoint = 'AttachSpecial01',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
         Drone2 = {
             Attachpoint = 'AttachSpecial02',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
         Drone3 = {
             Attachpoint = 'AttachSpecial03',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
         Drone4 = {
             Attachpoint = 'AttachSpecial04',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
         Drone5 = {
             Attachpoint = 'AttachSpecial05',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
         Drone6 = {
             Attachpoint = 'AttachSpecial06',
-            UnitID = 'BAA0001',
+            UnitID = 'UAS0401A',
         },
     },
     Economy = {

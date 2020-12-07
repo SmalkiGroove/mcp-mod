@@ -7,7 +7,7 @@ local fxutil = import('/lua/effectutilities.lua')
 local EffectUtils = import('/lua/effectutilities.lua')
 local Effects = import('/lua/effecttemplates.lua')
 
-MCPA3AXGS = Class(CAirUnit) {
+MRA1301 = Class(CAirUnit) {
 	DestroyNoFallRandomChance = 1.1,
 
     Weapons = {
@@ -356,4 +356,4 @@ MCPA3AXGS = Class(CAirUnit) {
 	
 }
 
-TypeClass = MCPA3AXGS
+TypeClass = MRA1301

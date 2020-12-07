@@ -4,7 +4,7 @@ local SeraphimWeapons = import('/lua/seraphimweapons.lua')
 local SDFPhasicAutoGunWeapon = SeraphimWeapons.SDFPhasicAutoGunWeapon
 local SANHeavyCavitationTorpedo = SeraphimWeapons.SANHeavyCavitationTorpedo
 
-tcas0201 = Class(SAirUnit) {
+mss1101a = Class(SAirUnit) {
     Weapons = {
         Missile = Class(SDFPhasicAutoGunWeapon) {},
         AAMissile = Class(SDFPhasicAutoGunWeapon) {},
@@ -121,4 +121,4 @@ tcas0201 = Class(SAirUnit) {
     end,
 }
 
-TypeClass = tcas0201
+TypeClass = mss1101a

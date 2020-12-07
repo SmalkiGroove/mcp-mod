@@ -64,7 +64,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone07')
 
             ### Creates our drone in the left launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -88,7 +88,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone08')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -112,7 +112,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone01')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -136,7 +136,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone06')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -160,7 +160,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone02')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -184,7 +184,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone04')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -208,7 +208,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone03')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)
@@ -232,7 +232,7 @@ SpawnDrone = function(self)
             local location = self:GetPosition('Drone05')
 
             ### Creates our drone in the right launch bay and directs the unit to face the same direction as its parent unit
-            local drone = CreateUnit('tcas0201', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
+            local drone = CreateUnit('mss1101a', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 
             ### Adds the newly created drone to the parent carriers drone table
             table.insert (self.DroneTable, drone)

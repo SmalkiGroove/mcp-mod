@@ -32,11 +32,11 @@ ProjectileBlueprint {
         Mesh = {
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MCPC1LXAB/MCPC1LXAB_Albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mrl1101/mrl1101_Albedo.dds',
                     LODCutoff = 150,
-                    MeshName = '/mods/MCP/units/MCPC1LXAB/MCPC1LXABMISSILE_LOD0.scm',
-					NormalsName = '/mods/MCP/units/MCPC1LXAB/MCPC1LXAB_NormalsTS.DDS',
-					SpecularName = '/mods/MCP/units/MCPC1LXAB/MCPC1LXAB_SpecTeam.dds',
+                    MeshName = '/mods/MCP/units/mrl1101/mrl1101MISSILE_LOD0.scm',
+					NormalsName = '/mods/MCP/units/mrl1101/mrl1101_NormalsTS.DDS',
+					SpecularName = '/mods/MCP/units/mrl1101/mrl1101_SpecTeam.dds',
                     ShaderName = 'Insect',
                 },
             },

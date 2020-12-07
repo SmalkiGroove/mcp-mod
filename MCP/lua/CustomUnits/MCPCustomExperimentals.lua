@@ -20,8 +20,8 @@ UnitList = {
     },
 
     T4LandExperimental2 = {
-        UEF =       {'mel1404', 60},
-        Aeon =      {'mcpa4lxhf', 60},
+        UEF =       {'mel1403', 60},
+        Aeon =      {'mal1403', 60},
         Seraphim =  {'msl1403', 60},
     },
 }
