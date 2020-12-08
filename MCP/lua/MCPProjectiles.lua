@@ -2876,3 +2876,22 @@ TArtilleryAntiMatterProjectile05 = Class(SinglePolyTrailProjectile) {
         EmitterProjectile.OnImpact(self, targetType, targetEntity)
     end,
 }
+
+CybBRMT3ADVBTBOTproj = Class(MultiPolyTrailProjectile) {
+
+	PolyTrails  = {
+        '/mods/MCP/effects/emitters/BRMT3ADVBTBOT_polytrails_emit.bp',
+		'/effects/emitters/disintegrator_polytrail_02_emit.bp',
+		'/effects/emitters/disintegrator_polytrail_03_emit.bp',
+		'/effects/emitters/default_polytrail_03_emit.bp',
+	},
+    FxImpactUnit = MCPEffectTemplate.CybranT3AdvancedBattleBotHit01,
+    FxUnitHitScale = 1.25,
+    FxImpactProp = MCPEffectTemplate.CybranT3AdvancedBattleBotHit01,
+    FxPropHitScale = 1.25,
+    FxImpactLand = MCPEffectTemplate.CybranT3AdvancedBattleBotHit01,
+    FxLandHitScale = 1.25,
+    FxTrailOffset = 0,
+    PolyTrailOffset = {0,0,0,0},
+    FxImpactUnderWater = {},
+}
