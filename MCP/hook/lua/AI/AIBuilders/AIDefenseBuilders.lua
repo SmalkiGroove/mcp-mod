@@ -7,7 +7,7 @@ BuilderGroup {
     BuildersType = 'EngineerBuilder',
     Builder {
         BuilderName = 'T3 Base D Engineer AA',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 900,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 10, 'DEFENSE TECH3 ANTIAIR STRUCTURE'}},
@@ -15,7 +15,7 @@ BuilderGroup {
             {IBC, 'BrainNotLowPowerMode', {}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.8, 1.1}},
             {UCBC, 'LocationEngineersBuildingLess', {'LocationType', 1, 'DEFENSE TECH3 ANTIAIR STRUCTURE'} },
-            {UCBC, 'UnitCapCheckLess', {.9} },
+            {UCBC, 'UnitCapCheckLess', {0.9} },
         },
         BuilderType = 'Any',
         BuilderData = {
@@ -35,15 +35,15 @@ BuilderGroup {
     },
     Builder {
         BuilderName = 'T3 Base D Engineer PD',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 900,
         BuilderConditions = {
             {UCBC, 'HaveGreaterThanUnitsWithCategory', {0, categories.ENERGYPRODUCTION * categories.TECH3} },
-            {UCBC, 'UnitsLessAtLocation', {'LocationType', 2, 'DEFENSE TECH3 DIRECTFIRE'}},
+            {UCBC, 'UnitsLessAtLocation', {'LocationType', 10, 'DEFENSE TECH3 DIRECTFIRE'}},
             {IBC, 'BrainNotLowPowerMode', {}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
             {UCBC, 'LocationEngineersBuildingLess', {'LocationType', 1, 'DEFENSE'} },
-            {UCBC, 'UnitCapCheckLess', {.9} },
+            {UCBC, 'UnitCapCheckLess', {0.9} },
         },
         BuilderType = 'Any',
         BuilderData = {
@@ -59,7 +59,7 @@ BuilderGroup {
     },
     Builder {
         BuilderName = 'T3TMLEngineer',
-        PlatoonTemplate = 'T2EngineerBuilder',
+        PlatoonTemplate = 'T2EcoEngineerBuilder',
         Priority = 900,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 2, categories.TACTICALMISSILEPLATFORM}},
@@ -85,7 +85,7 @@ BuilderGroup {
     BuildersType = 'EngineerBuilder',
     Builder {
         BuilderName = 'T3 Defensive Point Engineer',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 850,
         InstanceCount = 1,
         BuilderConditions = {
@@ -122,7 +122,7 @@ BuilderGroup {
     BuildersType = 'EngineerBuilder',
     Builder {
         BuilderName = 'T3 Defensive Point Engineer High Pri',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 930,
         InstanceCount = 1,
         BuilderConditions = {
@@ -159,7 +159,7 @@ BuilderGroup {
     BuildersType = 'EngineerBuilder',
     Builder {
         BuilderName = 'T3 Base D Engineer AA - Light',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 925,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 2, 'DEFENSE TECH3 ANTIAIR'}},
@@ -181,7 +181,7 @@ BuilderGroup {
     },
     Builder {
         BuilderName = 'T3 Base D Engineer PD - Light',
-        PlatoonTemplate = 'T3EngineerBuilder',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
         Priority = 875,
         BuilderConditions = {
             {UCBC, 'HaveLessThanUnitsWithCategory', {2, 'DEFENSE TECH3 DIRECTFIRE'}},
