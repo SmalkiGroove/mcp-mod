@@ -1,6 +1,5 @@
 EmtBpPath = '/effects/emitters/'
 EmtBpPathAlt = '/mods/MCP/effects/emitters/'
-EmitterTempEmtBpPath = '/effects/emitters/temp/'
 TableCat = import('/lua/utilities.lua').TableCat
 
 WeaponSteam02 = {
@@ -2151,4 +2150,46 @@ DefaultProjectileWaterImpact = {
     EmtBpPathAlt .. 'destruction_water_splash_wash_01_emit.bp',
     EmtBpPathAlt .. 'destruction_water_splash_ripples_01_emit.bp',
     EmtBpPathAlt .. 'destruction_water_splash_plume_01_emit.bp',
+}
+
+CybranT3AdvancedBattleBotHit01 = {
+	EmtBpPathAlt .. 'cybran_t2beetle_01_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_02_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_01_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_02_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_03_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_04_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_05_emit.bp',
+	EmtBpPathAlt .. 'tm_kamibomb_hit_05_emit.bp', ## Red glow
+	EmtBpPathAlt .. 'tmcybrant2battletankhit_07_emit.bp', ## black dots on ground
+	EmtBpPathAlt .. 'bm2rockethit_06_emit.bp', ## ring
+	EmtBpPathAlt .. 'hvyproton_cannon_hit_02_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_10_emit.bp', ## Exploding flames
+    EmtBpPathAlt .. 'tmcybrant3battletankhit_distort_emit.bp',
+	EmtBpPathAlt .. 'bm2rockethit_07_emit.bp', ## Ring effect
+	EmtBpPathAlt .. 'tm_kamibomb_hit_08_emit.bp', ## White inner ring
+	EmtBpPathAlt .. 'bm2rockethit_08_emit.bp', ## Yellow Afterglow
+	EmtBpPathAlt .. 'bm2rockethit_09_emit.bp', ## Red glow explosion with smoke
+    EmtBpPathAlt .. 'bm2rockethit_11_emit.bp', ## Cool exploding flames!!!
+    EmtBpPathAlt .. 'bm2rockethit_12_emit.bp', ## white glow
+	EmtBpPathAlt .. 'ueft2experimental_missile_11_emit.bp',
+	EmtBpPathAlt .. 'ueft2experimental_missile_12_emit.bp',
+    EmtBpPathAlt .. 'tmcybrant2battletankhit_distort_emit.bp',
+    EmtBpPathAlt .. 'tmcybrant2battletankhit_01_emit.bp', ## Exploding flames
+    EmtBpPath .. 'antimatter_hit_07_emit.bp',	##	base dark 
+}
+
+CybranT3AdvancedBattleBotDeath01 = {
+	EmtBpPathAlt .. 'cybran_t2beetle_01_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_02_emit.bp',
+    EmtBpPathAlt .. 'quantum_hit_flash_03_emit.bp',
+    EmtBpPathAlt .. 'quantum_hit_flash_04_emit.bp',
+    EmtBpPathAlt .. 'quantum_hit_flash_05_emit.bp',
+    EmtBpPathAlt .. 'quantum_hit_flash_06_emit.bp',
+    EmtBpPathAlt .. 'quantum_hit_flash_07_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_03_emit.bp',
+	EmtBpPathAlt .. 'ueft2experimental_missile_11_emit.bp',
+	EmtBpPathAlt .. 'ueft2experimental_missile_12_emit.bp',
+    EmtBpPath .. 'antimatter_hit_09_emit.bp',	##	base smoke
+    EmtBpPath .. 'antimatter_hit_07_emit.bp',	##	base dark 
 }
