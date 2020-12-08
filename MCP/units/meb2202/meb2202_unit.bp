@@ -35,6 +35,7 @@ UnitBlueprint {
         'BUILTBYTIER3COMMANDER',
         'UEF',
         'STRUCTURE',
+        'HEAVYDEFENSE',
         'DEFENSE',
         'TECH2',
         'DIRECTFIRE',

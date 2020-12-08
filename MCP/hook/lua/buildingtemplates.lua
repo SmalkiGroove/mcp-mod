@@ -44,3 +44,36 @@ table.insert(BuildingTemplates[1], { 'T3XAssault', 'mel1301'} ) -- UEF
 table.insert(BuildingTemplates[2], { 'T3XAssault', 'mal1301'} ) -- Aeon
 table.insert(BuildingTemplates[3], { 'T3XAssault', 'mrl1301'} ) -- Cybran
 table.insert(BuildingTemplates[4], { 'T3XAssault', 'msl1301'} ) -- Seraphim
+
+
+
+-- T1 Poly Point Defense
+table.insert(BuildingTemplates[1], { 'T1PolyDefense', 'meb2103'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T1PolyDefense', 'mab2103'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T1PolyDefense', 'mrb2103'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T1PolyDefense', 'msb2103'} ) -- Seraphim
+
+-- T2X Point Defense
+table.insert(BuildingTemplates[1], { 'T2ExpDefense', 'meb2203'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T2ExpDefense', 'mab2203'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T2ExpDefense', 'mrb2203'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T2ExpDefense', 'msb2203'} ) -- Seraphim
+
+
+-- T1 Heavy Point Defense
+table.insert(BuildingTemplates[1], { 'T1HeavyDefense', 'meb2102'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T1HeavyDefense', 'mab2102'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T1HeavyDefense', 'mrb2102'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T1HeavyDefense', 'msb2102'} ) -- Seraphim
+
+-- T2 Heavy Point Defense
+table.insert(BuildingTemplates[1], { 'T2HeavyDefense', 'meb2202'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T2HeavyDefense', 'mab2202'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T2HeavyDefense', 'mrb2202'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T2HeavyDefense', 'msb2202'} ) -- Seraphim
+
+-- T3 Heavy Point Defense
+table.insert(BuildingTemplates[1], { 'T3HeavyDefense', 'meb2307'} ) -- UEF
+table.insert(BuildingTemplates[2], { 'T3HeavyDefense', 'mab2307'} ) -- Aeon
+table.insert(BuildingTemplates[3], { 'T3HeavyDefense', 'mrb2307'} ) -- Cybran
+table.insert(BuildingTemplates[4], { 'T3HeavyDefense', 'msb2307'} ) -- Seraphim

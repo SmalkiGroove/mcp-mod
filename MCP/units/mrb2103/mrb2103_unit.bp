@@ -38,6 +38,7 @@ UnitBlueprint {
         'DEFENSE',
         'TECH1',
         'DIRECTFIRE',
+        'ANTIAIR',
         'DRAGBUILD',
         'SIZE4',
         'VISIBLETORECON',

@@ -36,6 +36,7 @@ UnitBlueprint {
         'CYBRAN',
         'STRUCTURE',
         'DEFENSE',
+        'HEAVYDEFENSE',
         'TECH2',
         'DIRECTFIRE',
         'DRAGBUILD',

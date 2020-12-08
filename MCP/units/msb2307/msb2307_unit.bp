@@ -39,6 +39,7 @@ UnitBlueprint {
         'SERAPHIM',
         'STRUCTURE',
         'DEFENSE',
+        'HEAVYDEFENSE',
         'TECH3',
         'ANTIAIR',
         'DRAGBUILD',

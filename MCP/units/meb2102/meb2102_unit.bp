@@ -36,6 +36,7 @@ UnitBlueprint {
         'UEF',
         'STRUCTURE',
         'DEFENSE',
+        'HEAVYDEFENSE',
         'TECH1',
         'DIRECTFIRE',
         'DRAGBUILD',

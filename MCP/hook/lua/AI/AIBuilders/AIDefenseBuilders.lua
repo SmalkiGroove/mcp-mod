@@ -93,7 +93,7 @@ BuilderGroup {
             {UCBC, 'DefensivePointNeedsStructure', {'LocationType', 150, 'DEFENSE TECH3 DIRECTFIRE', 20, 2, 0, 1, 2, 'AntiSurface'} },
             {IBC, 'BrainNotLowPowerMode', {}},
             {UCBC, 'LocationEngineersBuildingLess', {'LocationType', 2, 'DEFENSE'} },
-            {UCBC, 'UnitCapCheckLess', {.75} },
+            {UCBC, 'UnitCapCheckLess', {0.75} },
         },
         BuilderType = 'Any',
         BuilderData = {
@@ -130,7 +130,7 @@ BuilderGroup {
             {UCBC, 'DefensivePointNeedsStructure', {'LocationType', 150, 'DEFENSE TECH3 DIRECTFIRE', 20, 2, 0, 1, 2, 'AntiSurface'} },
             {IBC, 'BrainNotLowPowerMode', {}},
             {UCBC, 'LocationEngineersBuildingLess', {'LocationType', 2, 'DEFENSE'} },
-            {UCBC, 'UnitCapCheckLess', {.8} },
+            {UCBC, 'UnitCapCheckLess', {0.8} },
         },
         BuilderType = 'Any',
         BuilderData = {
@@ -165,7 +165,7 @@ BuilderGroup {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 2, 'DEFENSE TECH3 ANTIAIR'}},
             {IBC, 'BrainNotLowPowerMode', {}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
-            {UCBC, 'UnitCapCheckLess', {.8} },
+            {UCBC, 'UnitCapCheckLess', {0.8} },
         },
         BuilderType = 'Any',
         BuilderData = {
@@ -187,7 +187,7 @@ BuilderGroup {
             {UCBC, 'HaveLessThanUnitsWithCategory', {2, 'DEFENSE TECH3 DIRECTFIRE'}},
             {IBC, 'BrainNotLowPowerMode', {}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
-            {UCBC, 'UnitCapCheckLess', {.8} },
+            {UCBC, 'UnitCapCheckLess', {0.8} },
         },
         BuilderType = 'Any',
         BuilderData = {
