@@ -41,6 +41,7 @@ UnitBlueprint {
         'ENERGYPRODUCTION',
         'SIZE12',
 		'DRAGBUILD',
+        'SHOWQUEUE',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'SORTECONOMY',
@@ -57,13 +58,13 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1208_desc>Hydroelectric Power Generator',
+    Description = '<LOC meb1208_desc>Hydroelectric Power Generator',
     Display = {
 		Abilities = {
-            'Naval',
+            '<LOC ability_aquatic>Aquatic',
             '<LOC ability_upgradable>Upgradeable',
         },
-        AnimationOpen = '/mods/MCP/units/MEB1208/MEB1208_Apump.sca',
+        AnimationOpen = '/mods/MCP/units/meb1208/meb1208_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -88,12 +89,12 @@ UnitBlueprint {
         BuildTime = 2600,
         BuildRate = 15,
         BuildableCategory = {
-            'MEB1308',
+            'meb1308',
         },
         ProductionPerSecondEnergy = 500,
         RebuildBonusIds = {
-            'MEB1208',
-            'MEB1308',
+            'meb1208',
+            'meb1308',
         },
     },
     Footprint = {
@@ -110,6 +111,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -122,10 +124,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'HPG X100',
         UnitWeight = 1,
-        UpgradesTo = 'MEB1308',
+        UpgradesTo = 'meb1308',
     },
     Interface = {
-        HelpText = '<LOC MEB1208_help>Hydroelectric Power Generator',
+        HelpText = '<LOC meb1208_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

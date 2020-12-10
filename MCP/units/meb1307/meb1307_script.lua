@@ -1,4 +1,4 @@
-local TEngineeringResourceStructureUnit = import(import( '/lua/game.lua' ).Path() .. '/lua/MCPunits.lua').TEngineeringResourceStructureUnit  
+local TEngineeringResourceStructureUnit = import('/lua/terranunits.lua').TEngineeringResourceStructureUnit
 
 MEB1307 = Class(TEngineeringResourceStructureUnit) {
 

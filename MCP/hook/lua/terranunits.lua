@@ -1,4 +1,5 @@
 local ConstructionStructureUnit = DefaultUnitsFile.ConstructionStructureUnit
+local util = import('utilities.lua')
 
 TConstructionStructureUnit = Class(ConstructionStructureUnit) {
     CreateBuildEffects = function( self, unitBeingBuilt, order )

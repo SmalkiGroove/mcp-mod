@@ -96,7 +96,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1306_desc>Engineering Mass Extractor',
+    Description = '<LOC meb1306_desc>Engineering Mass Extractor',
     Display = {
         Abilities = {        
             '<LOC ability_engineeringsuite>Engineering Suite',
@@ -151,9 +151,10 @@ UnitBlueprint {
         BuildTime = 2875*1.25,
         BuildRate = 15,                             
         BuildableCategory = {
-            'BUILTBYTIER1ENGINEER DEFENSE DIRECTFIRE UEF',
-            'BUILTBYTIER1ENGINEER DEFENSE ANTIAIR UEF', 
-            'BUILTBYTIER1ENGINEER DEFENSE ANTINAVY UEF',
+            'BUILTBYTIER1FIELD DEFENSE DIRECTFIRE UEF',
+            'BUILTBYTIER1FIELD DEFENSE ANTIAIR UEF', 
+            'BUILTBYTIER1FIELD DEFENSE ANTINAVY UEF',
+            'BUILTBYTIER1ENGINEER DEFENSE SHIELD UEF',
             'BUILTBYTIER1ENGINEER MASSSTORAGE UEF',
         },
         HalfPriceUpgradeFromID = 'ueb1302',
@@ -183,7 +184,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
-            RULEUCC_Pause = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = true,
             RULEUCC_Repair = true,
             RULEUCC_RetaliateToggle = false,
@@ -197,7 +198,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC MEB1306_name>Mass Pump 3E',
+        UnitName = '<LOC meb1306_name>Mass Pump 3E',
         UnitWeight = 1,
         UpgradesFrom = 'ueb1302',
     },
@@ -205,7 +206,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MEB1306_help>Engineering Mass Extractor',
+        HelpText = '<LOC meb1306_help>Engineering Mass Extractor',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

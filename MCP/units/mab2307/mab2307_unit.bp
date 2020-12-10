@@ -34,6 +34,7 @@ UnitBlueprint {
         'AEON',
         'STRUCTURE',
         'DEFENSE',
+        'HEAVYDEFENSE',
         'TECH3',
         'ANTIAIR',
         'DIRECTFIRE',

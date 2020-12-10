@@ -56,7 +56,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1308_desc>Hydroelectric Power Generator',
+    Description = '<LOC meb1308_desc>Hydroelectric Power Generator',
     Display = {
         Abilities = {
             'Naval',
@@ -83,10 +83,10 @@ UnitBlueprint {
         BuildCostEnergy = 55000,
         BuildCostMass = 3900,
         BuildTime = 5500,
-        HalfPriceUpgradeFromID = 'MEB1208',
+        HalfPriceUpgradeFromID = 'meb1208',
         ProductionPerSecondEnergy = 2000,
         RebuildBonusIds = {
-            'MEB1308',
+            'meb1308',
         },
     },
     Footprint = {
@@ -115,10 +115,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Advanced',
         UnitName = 'HPG X200',
         UnitWeight = 1,
-        UpgradesFrom = 'MEB1208',
+        UpgradesFrom = 'meb1208',
     },
     Interface = {
-        HelpText = '<LOC MEB1308_help>Hydroelectric Power Generator',
+        HelpText = '<LOC meb1308_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

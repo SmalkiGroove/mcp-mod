@@ -3,26 +3,26 @@ UnitList = {
     -- Field Engineers
     --------------------------------------------------------------------------------
 
-    T1BuildEngineer = {
-        UEF =       {'mel0110', 20},
-        Aeon =      {'mal0110', 20},
-        Cybran =    {'mrl0110', 20},
-        Seraphim =  {'msl0110', 20},
-    },
+    -- T1BuildEngineer = {
+    --     UEF =       {'mel0110', 20},
+    --     Aeon =      {'mal0110', 20},
+    --     Cybran =    {'mrl0110', 20},
+    --     Seraphim =  {'msl0110', 20},
+    -- },
 
-    T2BuildEngineer = {
-        UEF =       {'xel0209', 20},
-        Aeon =      {'mal0210', 20},
-        Cybran =    {'mrl0210', 20},
-        Seraphim =  {'msl0210', 20},
-    },
+    -- T2BuildEngineer = {
+    --     UEF =       {'xel0209', 20},
+    --     Aeon =      {'mal0210', 20},
+    --     Cybran =    {'mrl0210', 20},
+    --     Seraphim =  {'msl0210', 20},
+    -- },
 
-    T3BuildEngineer = {
-        UEF =       {'mel0310', 20},
-        Aeon =      {'mal0310', 20},
-        Cybran =    {'mrl0310', 20},
-        Seraphim =  {'msl0310', 20},
-    },
+    -- T3BuildEngineer = {
+    --     UEF =       {'mel0310', 20},
+    --     Aeon =      {'mal0310', 20},
+    --     Cybran =    {'mrl0310', 20},
+    --     Seraphim =  {'msl0310', 20},
+    -- },
 
     --------------------------------------------------------------------------------
     -- T3 Land units

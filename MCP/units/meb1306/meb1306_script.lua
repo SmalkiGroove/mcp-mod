@@ -1,4 +1,4 @@
-local TEngineeringResourceStructureUnit = import(import( '/lua/game.lua' ).Path() .. '/lua/MCPunits.lua').TEngineeringResourceStructureUnit  
+local TEngineeringResourceStructureUnit = import('/lua/terranunits.lua').TEngineeringResourceStructureUnit
 
 MEB1306 = Class(TEngineeringResourceStructureUnit) {
     
@@ -30,8 +30,8 @@ MEB1306 = Class(TEngineeringResourceStructureUnit) {
         TEngineeringResourceStructureUnit.OnProductionUnpaused(self)
         if not self.AnimationManipulator then return end
         self.AnimationManipulator:SetRate(1)
-    end, 
-      
+    end,
+
     OnStopBeingBuilt = function(self,builder,layer)
         TEngineeringResourceStructureUnit.OnStopBeingBuilt(self,builder,layer)
         self:SetMaintenanceConsumptionActive()

@@ -303,7 +303,7 @@ UnitBlueprint {
     SizeX = 0.7*.8,
     SizeY = 1*.8,
     SizeZ = 0.7*.8,
-    StrategicIconName = 'icon_land1_engineer',
+    StrategicIconName = 'icon_bot1_engineer',
     StrategicIconSortPriority = 95,
     Transport = {
         TransportClass = 1,
