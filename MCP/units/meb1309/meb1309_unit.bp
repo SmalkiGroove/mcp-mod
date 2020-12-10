@@ -53,9 +53,9 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1309_desc>Naval Mass Rig',
+    Description = '<LOC meb1309_desc>Naval Mass Rig',
     Display = {
-	AnimationOpen = '/mods/MCP/units/MEB1309/MEB1309_Apump.sca',
+	AnimationOpen = '/mods/MCP/units/meb1309/meb1309_Apump.sca',
 		Abilities = {
             'Naval',
         },
@@ -82,7 +82,7 @@ UnitBlueprint {
         MaintenanceConsumptionPerSecondEnergy = 260,
         ProductionPerSecondMass = 20,
         RebuildBonusIds = {
-            'MEB1309',
+            'meb1309',
         },
     },
     Footprint = {
@@ -117,7 +117,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MEB1309_help>Naval Mass Rig',
+        HelpText = '<LOC meb1309_help>Naval Mass Rig',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.3,

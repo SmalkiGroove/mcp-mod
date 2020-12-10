@@ -64,7 +64,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB1308_desc>Hydroelectric Power Generator',
+    Description = '<LOC msb1308_desc>Hydroelectric Power Generator',
     Display = {
 		Abilities = {
             'Naval',
@@ -92,10 +92,10 @@ UnitBlueprint {
         BuildCostEnergy = 55000,
         BuildCostMass = 3900,
         BuildTime = 5500,
-        HalfPriceUpgradeFromID = 'MSB1208',
+        HalfPriceUpgradeFromID = 'msb1208',
         ProductionPerSecondEnergy = 2000,
         RebuildBonusIds = {
-            'MSB1308',
+            'msb1308',
         },
     },
     Footprint = {
@@ -124,10 +124,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Advanced',
         UnitName = 'Luhorn',
         UnitWeight = 1,
-        UpgradesFrom = 'MSB1208',
+        UpgradesFrom = 'msb1208',
     },
     Interface = {
-        HelpText = '<LOC MSB1308_help>Hydroelectric Power Generator',
+        HelpText = '<LOC msb1308_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.6,

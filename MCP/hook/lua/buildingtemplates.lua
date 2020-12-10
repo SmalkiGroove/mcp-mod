@@ -1,6 +1,6 @@
 
 -- T1X Siege
-table.insert(BuildingTemplates[1], { 'T1XSiege', 'mel1101t'} ) -- UEF
+table.insert(BuildingTemplates[1], { 'T1XSiege', 'mel1102'} ) -- UEF
 table.insert(BuildingTemplates[2], { 'T1XSiege', 'mal1102'} ) -- Aeon
 table.insert(BuildingTemplates[3], { 'T1XSiege', 'mrl1102'} ) -- Cybran
 table.insert(BuildingTemplates[4], { 'T1XSiege', 'msl1102'} ) -- Seraphim

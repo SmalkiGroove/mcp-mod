@@ -18,21 +18,21 @@ PlatoonTemplate {
     Name = 'T3PowerGenUpgrade',
     Plan = 'UnitUpgradeAI',
     GlobalSquads = {
-        {categories.STRUCTURE * categories.ENERGYPRODUCTION * categories.TECH3 - categories.HYDROCARBON - categories.NAVAL, 1, 1, 'support', 'None'},
+        {categories.STRUCTURE * categories.ENERGYPRODUCTION * categories.TECH3 - categories.HYDROCARBON - categories.NAVAL - categories.PRODUCTMCP, 1, 1, 'support', 'None'},
     }
 }
 PlatoonTemplate {
     Name = 'T3MassExtUpgrade',
     Plan = 'UnitUpgradeAI',
     GlobalSquads = {
-        {categories.STRUCTURE * categories.MASSEXTRACTION * categories.TECH3 - categories.NAVAL, 1, 1, 'support', 'None'},
+        {categories.STRUCTURE * categories.MASSEXTRACTION * categories.TECH3 - categories.NAVAL - categories.PRODUCTMCP, 1, 1, 'support', 'None'},
     }
 }
 PlatoonTemplate {
     Name = 'T3MassFabUpgrade',
     Plan = 'UnitUpgradeAI',
     GlobalSquads = {
-        {categories.STRUCTURE * categories.MASSFABRICATION * categories.TECH3 - categories.NAVAL, 1, 1, 'support', 'None'},
+        {categories.STRUCTURE * categories.MASSFABRICATION * categories.TECH3 - categories.NAVAL - categories.PRODUCTMCP, 1, 1, 'support', 'None'},
     }
 }
 

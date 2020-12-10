@@ -43,6 +43,7 @@ UnitBlueprint {
         'ENERGYPRODUCTION',
         'SIZE12',
 		'DRAGBUILD',
+        'SHOWQUEUE',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'SORTECONOMY',
@@ -59,11 +60,11 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB1208_desc>Hydroelectric Power Generator',
+    Description = '<LOC mab1208_desc>Hydroelectric Power Generator',
     Display = {
         Abilities = {
             '<LOC ability_upgradable>Upgradeable',
-            'Naval',
+            '<LOC ability_aquatic>Aquatic',
         },
         Mesh = {
             IconFadeInZoom = 130,
@@ -110,7 +111,7 @@ UnitBlueprint {
             'mab1308',
         },
         RebuildBonusIds = {
-            'MAB1208',
+            'mab1208',
             'mab1308',
         },
     },
@@ -128,6 +129,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -143,7 +145,7 @@ UnitBlueprint {
         UpgradesTo = 'mab1308',
     },
     Interface = {
-        HelpText = '<LOC MAB1208_help>Hydroelectric Power Generator',
+        HelpText = '<LOC mab1208_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

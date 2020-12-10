@@ -41,7 +41,7 @@ BuilderGroup {
         PlatoonTemplate = 'T3PowerGenUpgrade',
         Priority = 75,
         BuilderConditions = {
-            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 4, categories.STRUCTURE * categories.ENERGYPRODUCTION * categories.TECH3 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 4, categories.STRUCTURE * categories.ENERGYPRODUCTION * categories.TECH3 - categories.PRODUCTMCP } },
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.STRUCTURE * categories.ENERGYPRODUCTION * categories.TECH3 } },
             { EBC, 'GreaterThanEconIncome', { 3, 60 } },
             { EBC, 'GreaterThanEconTrend', { 0.0, 0.0 } },
@@ -54,7 +54,7 @@ BuilderGroup {
         PlatoonTemplate = 'T3MassExtUpgrade',
         Priority = 100,
         BuilderConditions = {
-            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 5, categories.STRUCTURE * categories.MASSEXTRACTION * categories.TECH3 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 5, categories.STRUCTURE * categories.MASSEXTRACTION * categories.TECH3 - categories.PRODUCTMCP } },
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.STRUCTURE * categories.MASSEXTRACTION * categories.TECH3 } },
             { EBC, 'GreaterThanEconIncome', { 3, 60 } },
             { EBC, 'GreaterThanEconTrend', { 0.0, 0.0 } },
@@ -67,7 +67,7 @@ BuilderGroup {
         PlatoonTemplate = 'T3MassFabUpgrade',
         Priority = 50,
         BuilderConditions = {
-            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 3, categories.STRUCTURE * categories.MASSFABRICATION * categories.TECH3 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 3, categories.STRUCTURE * categories.MASSFABRICATION * categories.TECH3 - categories.PRODUCTMCP } },
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.STRUCTURE * categories.MASSFABRICATION * categories.TECH3 } },
             { EBC, 'GreaterThanEconIncome', { 3, 60 } },
             { EBC, 'GreaterThanEconTrend', { 0.0, 0.0 } },

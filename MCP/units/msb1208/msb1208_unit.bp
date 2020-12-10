@@ -49,6 +49,7 @@ UnitBlueprint {
         'ENERGYPRODUCTION',
         'SIZE12',
 		'DRAGBUILD',
+        'SHOWQUEUE',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'SORTECONOMY',
@@ -65,10 +66,10 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB1208_desc>Hydroelectric Power Generator',
+    Description = '<LOC msb1208_desc>Hydroelectric Power Generator',
     Display = {
         Abilities = {
-            'Naval',
+            '<LOC ability_aquatic>Aquatic',
             '<LOC ability_upgradable>Upgradeable',
         },
         Mesh = {
@@ -97,12 +98,12 @@ UnitBlueprint {
         BuildTime = 2600,
         BuildRate = 15,
         BuildableCategory = {
-            'MSB1308',
+            'msb1308',
         },
         ProductionPerSecondEnergy = 500,
         RebuildBonusIds = {
-            'MSB1208',
-            'MSB1308',
+            'msb1208',
+            'msb1308',
         },
     },
     Footprint = {
@@ -119,6 +120,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -131,10 +133,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'Eruya-leatoh',
         UnitWeight = 1,
-        UpgradesTo = 'MSB1308',
+        UpgradesTo = 'msb1308',
     },
     Interface = {
-        HelpText = '<LOC MSB1208_help>Hydroelectric Power Generator',
+        HelpText = '<LOC msb1208_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.2,

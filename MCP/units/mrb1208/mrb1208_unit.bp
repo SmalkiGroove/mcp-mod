@@ -40,6 +40,7 @@ UnitBlueprint {
         'ENERGYPRODUCTION',
         'HYDROCARBON',
 		'DRAGBUILD',
+        'SHOWQUEUE',
         'SIZE12',
         'VISIBLETORECON',
         'RECLAIMABLE',
@@ -57,13 +58,13 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MRB1208_desc>Hydroelectric Power Generator',
+    Description = '<LOC mrb1208_desc>Hydroelectric Power Generator',
     Display = {
 	Abilities = {
-            'Naval',
+            '<LOC ability_aquatic>Aquatic',
             '<LOC ability_upgradable>Upgradeable',
         },
-	AnimationOpen = '/mods/MCP/units/MRB1208/MRB1208_Apump.sca',
+	AnimationOpen = '/mods/MCP/units/mrb1208/mrb1208_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -87,12 +88,12 @@ UnitBlueprint {
         BuildTime = 2600,
         BuildRate = 15,
         BuildableCategory = {
-            'MRB1308',
+            'mrb1308',
         },
         ProductionPerSecondEnergy = 500,
         RebuildBonusIds = {
-            'MRB1208',
-            'MRB1308',
+            'mrb1208',
+            'mrb1308',
         },
     },
     Footprint = {
@@ -109,6 +110,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -121,10 +123,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Basic',
         UnitName = 'Meteli',
         UnitWeight = 1,
-        UpgradesTo = 'MRB1308',
+        UpgradesTo = 'mrb1308',
     },
     Interface = {
-        HelpText = '<LOC MRB1208_help>Hydroelectric Power Generator',
+        HelpText = '<LOC mrb1208_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

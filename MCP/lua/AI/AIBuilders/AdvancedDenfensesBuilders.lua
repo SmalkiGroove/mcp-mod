@@ -10,8 +10,9 @@ BuilderGroup {
 
     Builder {
         BuilderName = 'T1HEAVYPD',
-        PlatoonTemplate = 'T1FieldEngineerBuilder',
-        Priority = 800,
+        PlatoonTemplate = 'FieldEngineerBuilder',
+        Priority = 1000,
+        InstanceCount = 2,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 7, 'DEFENSE HEAVYDEFENSE TECH1 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
@@ -35,8 +36,9 @@ BuilderGroup {
 
     Builder {
         BuilderName = 'T2HEAVYPD',
-        PlatoonTemplate = 'T2FieldEngineerBuilder',
-        Priority = 900,
+        PlatoonTemplate = 'T2T3FieldEngineerBuilder',
+        Priority = 1010,
+        InstanceCount = 2,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 5, 'DEFENSE HEAVYDEFENSE TECH2 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
@@ -61,7 +63,8 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3HEAVYPD',
         PlatoonTemplate = 'T3FieldEngineerBuilder',
-        Priority = 900,
+        Priority = 1020,
+        InstanceCount = 2,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 3, 'DEFENSE HEAVYDEFENSE TECH3 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
@@ -91,8 +94,9 @@ BuilderGroup {
 
     Builder {
         BuilderName = 'T1POLYPD',
-        PlatoonTemplate = 'T1FieldEngineerBuilder',
-        Priority = 900,
+        PlatoonTemplate = 'FieldEngineerBuilder',
+        Priority = 1030,
+        InstanceCount = 2,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 20, 'DEFENSE TECH1 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
@@ -116,8 +120,9 @@ BuilderGroup {
 
     Builder {
         BuilderName = 'T2EXPPD',
-        PlatoonTemplate = 'T2FieldEngineerBuilder',
-        Priority = 900,
+        PlatoonTemplate = 'T2T3FieldEngineerBuilder',
+        Priority = 1040,
+        InstanceCount = 2,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 4, 'DEFENSE EXPTECH TECH2 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},

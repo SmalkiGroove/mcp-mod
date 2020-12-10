@@ -56,12 +56,12 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MRB1308_desc>Hydroelectric Power Generator',
+    Description = '<LOC mrb1308_desc>Hydroelectric Power Generator',
     Display = {
 		Abilities = {
             'Naval',
         },
-	AnimationOpen = '/mods/MCP/units/MRB1308/MRB1308_Apump.sca',
+	AnimationOpen = '/mods/MCP/units/mrb1308/mrb1308_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -83,10 +83,10 @@ UnitBlueprint {
         BuildCostEnergy = 55000,
         BuildCostMass = 3900,
         BuildTime = 5500,
-        HalfPriceUpgradeFromID = 'MRB1208', 
+        HalfPriceUpgradeFromID = 'mrb1208', 
         ProductionPerSecondEnergy = 2000,
         RebuildBonusIds = {
-            'MRB1308',
+            'mrb1308',
         },
     },
     Footprint = {
@@ -115,10 +115,10 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Advanced',
         UnitWeight = 1,
         UnitName = 'Ailuin',
-        UpgradesFrom = 'MRB1208',
+        UpgradesFrom = 'mrb1208',
     },
     Interface = {
-        HelpText = '<LOC MRB1308_help>Hydroelectric Power Generator',
+        HelpText = '<LOC mrb1308_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

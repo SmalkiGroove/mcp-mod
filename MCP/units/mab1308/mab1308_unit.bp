@@ -58,7 +58,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB1308_desc>Hydroelectric Power Generator',
+    Description = '<LOC mab1308_desc>Hydroelectric Power Generator',
     Display = {
         Abilities = {
             'Naval',
@@ -88,7 +88,7 @@ UnitBlueprint {
         HalfPriceUpgradeFromID = 'mab1208',
         ProductionPerSecondEnergy = 2000,
         RebuildBonusIds = {
-            'MAB1308',
+            'mab1308',
         },
     },
     Footprint = {
@@ -120,7 +120,7 @@ UnitBlueprint {
         UpgradesFrom = 'mab1208',
     },
     Interface = {
-        HelpText = '<LOC MAB1308_help>Hydroelectric Power Generator',
+        HelpText = '<LOC mab1308_help>Hydroelectric Power Generator',
     },
     LifeBarHeight = 0.095,
     LifeBarOffset = 1.6,

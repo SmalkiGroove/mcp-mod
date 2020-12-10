@@ -98,7 +98,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1307_desc>Engineering Mass Fabricator',
+    Description = '<LOC meb1307_desc>Engineering Mass Fabricator',
     Display = {
         Abilities = {        
             '<LOC ability_engineeringsuite>Engineering Suite',
@@ -178,9 +178,10 @@ UnitBlueprint {
         BuildTime = 3750*1.25,  
         BuildRate = 15,                             
         BuildableCategory = {
-            'BUILTBYTIER1ENGINEER DEFENSE DIRECTFIRE UEF',
-            'BUILTBYTIER1ENGINEER DEFENSE ANTIAIR UEF', 
-            'BUILTBYTIER1ENGINEER DEFENSE ANTINAVY UEF',  
+            'BUILTBYTIER1FIELD DEFENSE DIRECTFIRE UEF',
+            'BUILTBYTIER1FIELD DEFENSE ANTIAIR UEF', 
+            'BUILTBYTIER1FIELD DEFENSE ANTINAVY UEF',
+            'BUILTBYTIER1ENGINEER DEFENSE SHIELD UEF',
             'BUILTBYTIER1ENGINEER MASSSTORAGE UEF',
         },
         HalfPriceUpgradeFromID = 'ueb1303',
@@ -217,7 +218,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
-            RULEUCC_Pause = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = true,
             RULEUCC_Repair = true,
             RULEUCC_RetaliateToggle = false,
@@ -238,7 +239,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MEB1307_dec>Engineering Mass Fabricator',
+        HelpText = '<LOC meb1307_dec>Engineering Mass Fabricator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.95,

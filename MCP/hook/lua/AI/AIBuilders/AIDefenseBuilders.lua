@@ -1185,7 +1185,7 @@ BuilderGroup {
         },
         BuilderType = 'Any',
         BuilderData = {
-            NumAssistees = 2,
+            NumAssistees = 1,
             Construction = {
                 AdjacencyCategory = 'ENERGYPRODUCTION EXPERIMENTAL, ENERGYPRODUCTION TECH3, FACTORY TECH3, FACTORY TECH2, ENERGYPRODUCTION TECH2, FACTORY',
                 AdjacencyDistance = 60,
@@ -1242,7 +1242,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1 Wall Builder',
         PlatoonTemplate = 'FieldEngineerBuilder',
-        Priority = 100,
+        Priority = 0,
         BuilderType = 'Any',
         BuilderConditions = {
             { UCBC, 'HaveAreaWithUnitsFewWalls', { 'LocationType', 100, 5, 'STRUCTURE - WALL', false, false, false } },

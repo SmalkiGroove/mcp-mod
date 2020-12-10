@@ -108,7 +108,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB1305_desc>Engineering Power Generator',
+    Description = '<LOC meb1305_desc>Engineering Power Generator',
     Display = {
         Abilities = {
             '<LOC ability_engineeringsuite>Engineering Suite',
@@ -225,9 +225,10 @@ UnitBlueprint {
         BuildRate = 15,
         BuildTime = 5400*1.25,      
         BuildableCategory = {
-            'BUILTBYTIER1ENGINEER DEFENSE DIRECTFIRE UEF',
-            'BUILTBYTIER1ENGINEER DEFENSE ANTIAIR UEF', 
-            'BUILTBYTIER1ENGINEER DEFENSE ANTINAVY UEF',
+            'BUILTBYTIER1FIELD DEFENSE DIRECTFIRE UEF',
+            'BUILTBYTIER1FIELD DEFENSE ANTIAIR UEF', 
+            'BUILTBYTIER1FIELD DEFENSE ANTINAVY UEF',
+            'BUILTBYTIER1ENGINEER DEFENSE SHIELD UEF',
             'BUILTBYTIER1ENGINEER ENERGYSTORAGE UEF',
         },  
         HalfPriceUpgradeFromID = 'ueb1301',
@@ -281,6 +282,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+            RULEUCC_Pause = true,
             RULEUCC_Reclaim = true,
             RULEUCC_Repair = true,
             RULEUCC_RetaliateToggle = false,
@@ -300,7 +302,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC MEB1305_name>Von Mayer Reactor',
+        UnitName = '<LOC meb1305_name>Von Mayer Reactor',
         UnitWeight = 1,
         UpgradesFrom = 'ueb1301',
     },
@@ -308,7 +310,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MEB1305_desc>Engineering Power Generator',
+        HelpText = '<LOC meb1305_desc>Engineering Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.2,

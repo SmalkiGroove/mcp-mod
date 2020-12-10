@@ -13,7 +13,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1XASSAULT',
         PlatoonTemplate = 'EngineerBuilder',
-        Priority = 10000,
+        Priority = 850,
         InstanceCount = 1,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
@@ -41,7 +41,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1XSIEGE',
         PlatoonTemplate = 'EngineerBuilder',
-        Priority = 10100,
+        Priority = 855,
         InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
@@ -69,8 +69,8 @@ BuilderGroup {
 -- Land Assault T2
     Builder {
         BuilderName = 'T2XASSAULT',
-        PlatoonTemplate = 'T2EngineerBuilder',
-        Priority = 10200,
+        PlatoonTemplate = 'T2T3EngineerBuilder',
+        Priority = 860,
         InstanceCount = 1,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
@@ -97,8 +97,8 @@ BuilderGroup {
 -- Land Siege T2
     Builder {
         BuilderName = 'T2XSIEGE',
-        PlatoonTemplate = 'T2EngineerBuilder',
-        Priority = 10300,
+        PlatoonTemplate = 'T2T3EngineerBuilder',
+        Priority = 865,
         InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
@@ -127,7 +127,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3XASSAULT',
         PlatoonTemplate = 'T3EngineerBuilder',
-        Priority = 10400,
+        Priority = 870,
         InstanceCount = 1,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
@@ -155,7 +155,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3XSIEGE',
         PlatoonTemplate = 'T3EngineerBuilder',
-        Priority = 10500,
+        Priority = 875,
         InstanceCount = 1,
         BuilderConditions = {
             { MIBC, 'CanPathToCurrentEnemy', { true } },
@@ -184,13 +184,13 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3XGUNSHIP',
         PlatoonTemplate = 'T3EngineerBuilder',
-        Priority = 9999,
+        Priority = 880,
         InstanceCount = 5,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 6.0, 500.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
             { UCBC, 'PoolGreaterAtLocation', { 'LocationType', 3, categories.ENGINEER * categories.TECH3 }},
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.TECH3 * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -212,7 +212,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1XASSIST',
         PlatoonTemplate = 'EngineerAssist',
-        Priority = 990,
+        Priority = 800,
         InstanceCount = 5,
         BuilderConditions = {
             { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
@@ -233,8 +233,8 @@ BuilderGroup {
 -- Assister T2
     Builder {
         BuilderName = 'T2XASSIST',
-        PlatoonTemplate = 'T2EngineerAssist',
-        Priority = 980,
+        PlatoonTemplate = 'T2T3EngineerAssist',
+        Priority = 800,
         InstanceCount = 5,
         BuilderConditions = {
             { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
@@ -256,7 +256,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3XASSIST',
         PlatoonTemplate = 'T3EngineerAssist',
-        Priority = 970,
+        Priority = 800,
         InstanceCount = 5,
         BuilderConditions = {
             { UCBC, 'LocationEngineersBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE}},
@@ -285,11 +285,11 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1XGUNSHIP',
         PlatoonTemplate = 'T1X Gunship',
-        Priority = 9900,
+        Priority = 860,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -299,11 +299,11 @@ BuilderGroup {
     Builder {
         BuilderName = 'T2XGUNSHIP',
         PlatoonTemplate = 'T2X Gunship',
-        Priority = 9950,
+        Priority = 870,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 5, categories.MOBILE * categories.AIR * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -314,11 +314,11 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1XSHIP',
         PlatoonTemplate = 'T1X Naval',
-        Priority = 9100,
+        Priority = 830,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -328,11 +328,11 @@ BuilderGroup {
     Builder {
         BuilderName = 'T2XSHIP',
         PlatoonTemplate = 'T2X Naval',
-        Priority = 9200,
+        Priority = 840,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -342,11 +342,11 @@ BuilderGroup {
     Builder {
         BuilderName = 'T3XSHIP',
         PlatoonTemplate = 'T3X Naval',
-        Priority = 9300,
+        Priority = 850,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
