@@ -20,12 +20,12 @@ UnitList = {
     --     UEF =	    {'meb2307', 30},
     -- },
 
-    T3StrategicMissile = {
-        Aeon = 		{'mab2403', 15},
-        Seraphim =	{'msb2403', 15},
-        Cybran =	{'mrb2403', 15},
-        UEF =		{'meb2403', 15},
-    },
+    -- T3StrategicMissile = {
+    --     Aeon = 		{'mab2403', 15},
+    --     Seraphim =	{'msb2403', 15},
+    --     Cybran =	{'mrb2403', 15},
+    --     UEF =		{'meb2403', 15},
+    -- },
 
     T3LandArtillery = {
         Aeon = 		{'mab2309', 15},

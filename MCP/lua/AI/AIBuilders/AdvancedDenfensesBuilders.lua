@@ -11,7 +11,7 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1HEAVYPD',
         PlatoonTemplate = 'T1FieldEngineerBuilder',
-        Priority = 900,
+        Priority = 800,
         BuilderConditions = {
             {UCBC, 'UnitsLessAtLocation', {'LocationType', 7, 'DEFENSE HEAVYDEFENSE TECH1 STRUCTURE'}},
             {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},

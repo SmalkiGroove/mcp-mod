@@ -352,69 +352,6 @@ BuilderGroup {
         },
         BuilderType = 'Sea',
     },
-
-    Builder {
-        BuilderName = 'T1XASSISTFACTORY',
-        PlatoonTemplate = 'EngineerAssist',
-        Priority = 990,
-        InstanceCount = 2,
-        BuilderConditions = {
-            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
-            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
-        },
-        BuilderType = 'Any',
-        BuilderData = {
-            Assist = {
-                AssistLocation = 'LocationType',
-                AssisteeType = 'Engineer',
-                AssistRange = 80,
-                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
-                Time = 60,
-            },
-        }
-    },
-
-    Builder {
-        BuilderName = 'T2XASSISTFACTORY',
-        PlatoonTemplate = 'T2EngineerAssist',
-        Priority = 980,
-        InstanceCount = 2,
-        BuilderConditions = {
-            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
-            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
-        },
-        BuilderType = 'Any',
-        BuilderData = {
-            Assist = {
-                AssistLocation = 'LocationType',
-                AssisteeType = 'Engineer',
-                AssistRange = 80,
-                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
-                Time = 60,
-            },
-        }
-    },
-
-    Builder {
-        BuilderName = 'T3XASSISTFACTORY',
-        PlatoonTemplate = 'T3EngineerAssist',
-        Priority = 970,
-        InstanceCount = 2,
-        BuilderConditions = {
-            { UCBC, 'LocationFactoriesBuildingGreater', { 'LocationType', 0, categories.TECHEXP * categories.MOBILE * categories.NAVAL}},
-            { EBC, 'GreaterThanEconEfficiencyOverTime', { 0.9, 1.2} },
-        },
-        BuilderType = 'Any',
-        BuilderData = {
-            Assist = {
-                AssistLocation = 'LocationType',
-                AssisteeType = 'Engineer',
-                AssistRange = 80,
-                BeingBuiltCategories = {'TECHEXP MOBILE NAVAL'},
-                Time = 60,
-            },
-        }
-    },
 }
 
 

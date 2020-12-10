@@ -102,8 +102,8 @@ UnitBlueprint {
     },
     Defense = {
         ArmorType = 'Light',
-        Health = 470,
-        MaxHealth = 470,
+        Health = 310,
+        MaxHealth = 310,
         SurfaceThreatLevel = 1,
     },
     Description = 'Light Gunship',

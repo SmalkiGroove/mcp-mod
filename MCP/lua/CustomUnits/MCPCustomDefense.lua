@@ -21,12 +21,12 @@ UnitList = {
     --     Aeon =		{'mab2202', 33},
     -- },
 
-    T2NavalDefense = {
-        UEF =		{'meb4205', 50},
-        Cybran =	{'mrb4205', 50},
-        Aeon =		{'mab4205', 50},
-        Seraphim =	{'msb4205', 50},
-    },
+    -- T2NavalDefense = {
+    --     UEF =		{'meb4205', 50},
+    --     Cybran =	{'mrb4205', 50},
+    --     Aeon =		{'mab4205', 50},
+    --     Seraphim =	{'msb4205', 50},
+    -- },
 
     -- T3AADefense = {
     --     Seraphim =	{'msb2307', 20},
