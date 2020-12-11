@@ -98,7 +98,7 @@ MSB2403 = Class(SShieldStructureUnit) {
                 local location = self:GetPosition('Spinner')
 
                 -- Creates our lambdaEmitter over the platform with a ranomly generated Orientation
-                local lambdaEmitter = CreateUnit('bsb0001', self:GetArmy(), location[1], location[2], location[3], platOrient[1], platOrient[2], platOrient[3], platOrient[4], 'Land') 
+                local lambdaEmitter = CreateUnit('msb2403a', self:GetArmy(), location[1], location[2], location[3], platOrient[1], platOrient[2], platOrient[3], platOrient[4], 'Land') 
 
                 -- Adds the newly created lambdaEmitter to the parent platforms lambdaEmitter table
                 table.insert (self.lambdaEmitterTable, lambdaEmitter)

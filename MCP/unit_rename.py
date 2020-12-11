@@ -11,8 +11,8 @@ import os
 
 # Unit to rename
 # --------------
-unit_current_name = "zexp666lol" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
-unit_replace_name = "zel0405" # <-- Write the new name (IN LOWERCASE) you want for this unit here
+unit_current_name = "bsb0001" # <-- Write the current name (IN LOWERCASE) of the unit you want to rename here
+unit_replace_name = "msb2403a" # <-- Write the new name (IN LOWERCASE) you want for this unit here
 
 # Variables definitions
 # ---------------------

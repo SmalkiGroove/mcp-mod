@@ -1181,7 +1181,7 @@ BuilderGroup {
             { IBC, 'BrainNotLowPowerMode', {} },
             { EBC, 'GreaterThanEconEfficiency', { 0.8, 1.4 } },
             { UCBC, 'LocationEngineersBuildingLess', { 'LocationType', 1, 'SHIELD' } },
-            { UCBC, 'UnitCapCheckLess', { 0.8 } },
+            { UCBC, 'UnitCapCheckLess', { 0.9 } },
         },
         BuilderType = 'Any',
         BuilderData = {

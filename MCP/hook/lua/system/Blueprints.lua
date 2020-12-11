@@ -578,7 +578,7 @@ function MCPCategoryChanges(all_bps)
             else
                 for i, cat in all_bps[k].Categories do
                     if string.find(cat, 'BUILTBY') then
-                        all_bps[k].Categories[i] = 'NOBUILD'
+                        all_bps[k].Categories[i] = 'NOT' .. cat
                     end
                 end
             end
@@ -668,12 +668,15 @@ end
 
 function StrategicIcons(all_bps)
     local IconChanges = {
+        xel0209 = 'icon_bot2_engineer',--UEF T2 Field Engi
         uab5202 = 'icon_structure2_air',-- Aeon Air Staging
         ueb5202 = 'icon_structure2_air',-- UEF Air Staging
         urb5202 = 'icon_structure2_air',-- Cybran Air Staging
         xsb5202 = 'icon_structure2_air',-- Seraphim Air Staging
         xrb0104 = 'icon_structure1_engineer',-- Cybran T1 Engi Station
         xrb0304 = 'icon_structure3_engineer',-- Cybran T3 Engi Station
+        urb4206 = 'icon_structure3_shield',--Cybran T3a Shield
+        urb4207 = 'icon_structure3_shield',--Cybran T3b Shield
     }
     for unitid, icon in IconChanges do
         all_bps[unitid].StrategicIconName = icon

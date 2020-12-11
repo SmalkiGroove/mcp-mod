@@ -1,7 +1,7 @@
 local SShieldLandUnit = import('/lua/seraphimunits.lua').SShieldLandUnit
 local SeraLambdaFieldDestroyer = import('/mods/MCP/lua/MCPDefaultAntiProjectile.lua').SeraLambdaFieldDestroyer
 
-BSB0001 = Class(SShieldLandUnit) {
+MSB2403A = Class(SShieldLandUnit) {
     -- Sets up parent call backs between drone and parent
     Parent = nil,
 
@@ -59,4 +59,4 @@ BSB0001 = Class(SShieldLandUnit) {
     end,
 }
 
-TypeClass = BSB0001
+TypeClass = MSB2403A
