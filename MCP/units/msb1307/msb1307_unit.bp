@@ -54,7 +54,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB1307_desc>Armored Mass Fabricator',
+    Description = '<LOC msb1307_desc>Armored Mass Fabricator',
     Display = {
         Abilities = {
             '<LOC ability_deathaoe>Volatile',
@@ -200,7 +200,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MSB1307_help>Armored Mass Fabricator',
+        HelpText = '<LOC msb1307_help>Armored Mass Fabricator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.6,

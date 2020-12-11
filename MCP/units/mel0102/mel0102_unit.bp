@@ -63,12 +63,12 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
-    Description = '<LOC MEL0102_desc>Deployable Tank',   
+    Description = '<LOC mel0102_desc>Deployable Tank',   
     Display = {
         Abilities = {
             '<LOC ability_deployable>Deployable',
         },
-		AnimationActivate = '/Mods/MCP/units/MEL0102/MEL0102_aactivate.sca',
+		AnimationActivate = '/Mods/MCP/units/mel0102/mel0102_aactivate.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -78,10 +78,10 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
                 {
-                    AlbedoName = 'MEL0102_lod1_albedo.dds',
+                    AlbedoName = 'mel0102_lod1_albedo.dds',
                     LODCutoff = 315,
                     ShaderName = 'Unit',
-                    SpecularName = 'MEL0102_lod1_specteam.dds',
+                    SpecularName = 'mel0102_lod1_specteam.dds',
                 },
             },
         },
@@ -151,14 +151,14 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_WeaponToggle = true,
         },
-        UnitName = '<LOC MEL0102_name>SD-MA12 Bunker',
+        UnitName = '<LOC mel0102_name>SD-MA12 Bunker',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 16,
     },
     Interface = {
-        HelpText = '<LOC MEL0102_help>Deployable Tank',
+        HelpText = '<LOC mel0102_help>Deployable Tank',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

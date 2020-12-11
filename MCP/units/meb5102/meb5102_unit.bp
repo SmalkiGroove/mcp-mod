@@ -61,7 +61,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB5102>Air Staging Facility',
+    Description = '<LOC meb5102>Air Staging Facility',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -108,7 +108,7 @@ UnitBlueprint {
         BuildCostMass = 50,
         BuildTime = 200,
         RebuildBonusIds = {
-            'MEB5102',
+            'meb5102',
         },
     },
     General = {
@@ -138,11 +138,11 @@ UnitBlueprint {
         },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Basic',
-        UnitName = '<LOC MEB5102_name>Resupply',
+        UnitName = '<LOC meb5102_name>Resupply',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MEB5102>Air Staging Facility',
+        HelpText = '<LOC meb5102>Air Staging Facility',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = .8,

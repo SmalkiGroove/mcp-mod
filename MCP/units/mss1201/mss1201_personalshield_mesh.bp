@@ -2,7 +2,7 @@ MeshBlueprint {
     IconFadeInZoom = 130,
     LODs = {
         {
-            MeshName = '/mods/MCP/units/MSS1201/MSS1201_lod0.scm',
+            MeshName = '/mods/MCP/units/mss1201/mss1201_lod0.scm',
             AlbedoName = '/units/xsl0001/xsl0001_albedo.dds',
             NormalsName = '/units/xsl0001/xsl0001_normalsTS.dds',
             SpecularName = '/units/xsl0001/xsl0001_specteam.dds',

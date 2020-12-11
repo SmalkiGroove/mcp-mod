@@ -84,13 +84,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAS1101/MAS1101_death.sca',
+                Animation = '/mods/MCP/units/mas1101/mas1101_death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
             },
             {
-                Animation = '/mods/MCP/units/MAS1101/MAS1101_death2.sca',
+                Animation = '/mods/MCP/units/mas1101/mas1101_death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
@@ -118,7 +118,7 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MAS1101/AeonTexture_albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mas1101/AeonTexture_albedo.dds',
                     LODCutoff = 540,
                     ShaderName = 'Aeon',
                 },

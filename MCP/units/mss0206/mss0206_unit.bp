@@ -69,7 +69,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 65,
     },
-    Description = '<LOC MSS0206_desc>Bombardment Ship',
+    Description = '<LOC mss0206_desc>Bombardment Ship',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -77,19 +77,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSS0206/MSS0206_adeath01.sca',
+                Animation = '/mods/MCP/units/mss0206/mss0206_adeath01.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.2,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS0206/MSS0206_adeath02.sca',
+                Animation = '/mods/MCP/units/mss0206/mss0206_adeath02.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.2,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS0206/MSS0206_adeath03.sca',
+                Animation = '/mods/MCP/units/mss0206/mss0206_adeath03.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.2,
                 Weight = 100,
@@ -156,7 +156,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MSS0206_name>Zthuzene',
+        UnitName = '<LOC mss0206_name>Zthuzene',
         UnitWeight = 1,
     },
     Intel = {
@@ -165,7 +165,7 @@ UnitBlueprint {
         WaterVisionRadius = 30,
     },
     Interface = {
-        HelpText = '<LOC MSS0206_help>Bombardment Ship',
+        HelpText = '<LOC mss0206_help>Bombardment Ship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.9,

@@ -81,10 +81,10 @@ UnitBlueprint {
             '<LOC ability_aquatic>Aquatic',
             '<LOC ability_engineeringsuite>Engineering Suite',
         },
-        AnimationOpen = '/mods/MCP/units/MAB0304/MAB0304_aopen.sca',
+        AnimationOpen = '/mods/MCP/units/mab0304/mab0304_aopen.sca',
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAB0304/MAB0304_Adeath.sca',
+                Animation = '/mods/MCP/units/mab0304/mab0304_Adeath.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 1,
@@ -117,7 +117,7 @@ UnitBlueprint {
         BuildRate = 25,
         BuildTime = 2100,
         MaxBuildDistance = 20,
-        RebuildBonusIds = {'MAB0304'},
+        RebuildBonusIds = {'mab0304'},
     },
     Footprint = {
         SizeX = 1,
@@ -160,7 +160,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC MAB0304_name>Pearl',
+        UnitName = '<LOC mab0304_name>Pearl',
         UnitWeight = 1,
     },
     Intel = {

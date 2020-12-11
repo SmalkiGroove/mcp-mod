@@ -167,7 +167,6 @@ BuilderGroup {
     Builder {
         BuilderName = 'T1 Hydrocarbon Engineer',
         PlatoonTemplate = 'EcoEngineerBuilder',
-        #DUNCAN - Changed from 850
         Priority = 980,
         BuilderConditions = {
                 { UCBC, 'HaveLessThanUnitsWithCategory', { 3, 'HYDROCARBON'}},

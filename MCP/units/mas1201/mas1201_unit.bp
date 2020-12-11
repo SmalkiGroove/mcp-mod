@@ -100,15 +100,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAS1201/MAS1201_adeath01.sca',
+                Animation = '/mods/MCP/units/mas1201/mas1201_adeath01.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MAS1201/MAS1201_adeath02.sca',
+                Animation = '/mods/MCP/units/mas1201/mas1201_adeath02.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MAS1201/MAS1201_adeath03.sca',
+                Animation = '/mods/MCP/units/mas1201/mas1201_adeath03.sca',
                 Weight = 100,
             },
         },
@@ -138,10 +138,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MAS1201_lod1_albedo.dds',
+                    AlbedoName = 'mas1201_lod1_albedo.dds',
                     LODCutoff = 300,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MAS1201_lod1_specteam.dds',
+                    SpecularName = 'mas1201_lod1_specteam.dds',
                 },
             },
         },

@@ -78,7 +78,7 @@ UnitBlueprint {
          Abilities = {
             '<LOC ability_amphibious>Amphibious',
          },
-		AnimationWalk = '/mods/MCP/units/MSL1301/MSL1301_awalk.sca',
+		AnimationWalk = '/mods/MCP/units/msl1301/msl1301_awalk.sca',
         AnimationWalkRate = 1.3,
 
         Mesh = {

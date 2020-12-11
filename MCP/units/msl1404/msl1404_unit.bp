@@ -214,7 +214,7 @@ UnitBlueprint {
         SpawnRandomRotation = true,
         TransportAnimation = {
             {
-                Animation = '/mods/MCP/units/MSL1404/MSL1404_Afold01.sca',
+                Animation = '/mods/MCP/units/msl1404/msl1404_Afold01.sca',
                 Weight = 100,
             },
         },

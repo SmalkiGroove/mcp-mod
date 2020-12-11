@@ -104,7 +104,7 @@ UnitBlueprint {
         BuildTime = 3000,
         MaintenanceConsumptionPerSecondEnergy = 50,
         RebuildBonusId = {
-            'MAB4205',
+            'mab4205',
         },
     },
     Footprint = {

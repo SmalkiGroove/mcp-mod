@@ -96,25 +96,25 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSB4401/MSB4401_Adeath01.sca',
+                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath01.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 10,
             },
             {
-                Animation = '/mods/MCP/units/MSB4401/MSB4401_Adeath02.sca',
+                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath02.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 10,
             },
             {
-                Animation = '/mods/MCP/units/MSB4401/MSB4401_Adeath03.sca',
+                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath03.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 10,
             },
             {
-                Animation = '/mods/MCP/units/MSB4401/MSB4401_Adeath04.sca',
+                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath04.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 10,
@@ -169,7 +169,7 @@ UnitBlueprint {
         BuildTime = 11475,
         MaintenanceConsumptionPerSecondEnergy = 5000,
         RebuildBonusIds = {
-            'MSB4401',
+            'msb4401',
         },
     },
     Footprint = {

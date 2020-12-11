@@ -87,33 +87,33 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRL0102/MRL0102_Death1.sca',
+                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death1.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MRL0102/MRL0102_Death3.sca',
+                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death3.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MRL0102/MRL0102_Death2.sca',
+                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death2.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MRL0102/MRL0102_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mrl0102/mrl0102_Walk.sca',
         AnimationWalkRate = 5.2,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MRL0102/MRL0102_albedo.dds',
-                    NormalsName = '/mods/MCP/units/MRL0102/MRL0102_NormalsTS.DDS',
-                    SpecularName = '/mods/MCP/units/MRL0102/MRL0102_SpecTeam1.dds',
+                    AlbedoName = '/mods/MCP/units/mrl0102/mrl0102_albedo.dds',
+                    NormalsName = '/mods/MCP/units/mrl0102/mrl0102_NormalsTS.DDS',
+                    SpecularName = '/mods/MCP/units/mrl0102/mrl0102_SpecTeam1.dds',
                     LODCutoff = 170,
                     ShaderName = 'Insect',
                 },

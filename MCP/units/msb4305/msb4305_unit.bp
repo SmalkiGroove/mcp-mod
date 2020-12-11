@@ -106,7 +106,7 @@ UnitBlueprint {
         BuildCostMass = 19000,
         BuildTime = 20000,
         RebuildBonusIds = {
-            'MSB4305',
+            'msb4305',
         },
     },
     Footprint = {

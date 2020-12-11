@@ -69,7 +69,7 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MAB2203/AeonTexture_albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mab2203/AeonTexture_albedo.dds',
                     LODCutoff = 370,
                     ShaderName = 'Unit',
                 },
@@ -101,7 +101,7 @@ UnitBlueprint {
         BuildCostMass = 10000,
         BuildTime = 10000,
         RebuildBonusIds = {
-            'MAB2203',
+            'mab2203',
         },
     },
     Footprint = {

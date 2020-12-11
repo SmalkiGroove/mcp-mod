@@ -65,14 +65,14 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB5102>Air Staging Beacon',
+    Description = '<LOC msb5102>Air Staging Beacon',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSB5102/MSB5102_Adeath.sca',
+                Animation = '/mods/MCP/units/msb5102/msb5102_Adeath.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 1,
@@ -148,11 +148,11 @@ UnitBlueprint {
         },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MSB5102_name>Iathu-uhthe',
+        UnitName = '<LOC msb5102_name>Iathu-uhthe',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MSB5102>Air Staging Beacon',
+        HelpText = '<LOC msb5102>Air Staging Beacon',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = .45,

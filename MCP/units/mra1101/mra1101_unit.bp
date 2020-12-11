@@ -317,7 +317,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 10,
-            WeaponUnpackAnimation = '/mods/MCP/units/MRA1101/MRA1101_deploy.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mra1101/mra1101_deploy.sca',
             WeaponUnpackAnimationRate = 1.5,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,

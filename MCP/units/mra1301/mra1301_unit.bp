@@ -128,7 +128,7 @@ UnitBlueprint {
     },
     Description = 'Spaceship',
     Display = {
-	--AnimationOpen = '/Mods/MCP/units//MRA1301/MRA1301_Aopen.sca',
+	--AnimationOpen = '/Mods/MCP/units//mra1301/mra1301_Aopen.sca',
         Abilities = {
             '<LOC ability_aa>Anti-Air',
         },

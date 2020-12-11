@@ -54,7 +54,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 54,
     },
-    Description = '<LOC MAB2306_desc>Point Defense',
+    Description = '<LOC mab2306_desc>Point Defense',
     Display = {
         Mesh = {
             IconFadeInZoom = 130,
@@ -92,7 +92,7 @@ UnitBlueprint {
         BuildCostMass = 1920,
         BuildTime = 2000,
         RebuildBonusId = {
-            'MAB2306',
+            'mab2306',
         },
     },
     General = {
@@ -116,14 +116,14 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MAB2306_name>Aria',
+        UnitName = '<LOC mab2306_name>Aria',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 28,
     },
     Interface = {
-        HelpText = '<LOC MAB2306_help>Point Defense',
+        HelpText = '<LOC mab2306_help>Point Defense',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.8,

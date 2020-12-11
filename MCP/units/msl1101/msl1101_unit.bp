@@ -94,21 +94,21 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSL1101/MSL1101_Death1.sca',
+                Animation = '/mods/MCP/units/msl1101/msl1101_Death1.sca',
                 AnimationRateMax = 1.97,
                 AnimationRateMin = 1.97,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MSL1101/MSL1101_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/msl1101/msl1101_Walk.sca',
         AnimationWalkRate = 3.1,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
 				{
-					SpecularName = '/mods/MCP/Units/MSL1101/SeraphimTexture_SpecTeam.dds',
-					AlbedoName = '/mods/MCP/Units/MSL1101/SeraphimTexture_Albedo.dds',
-					NormalsName = '/mods/MCP/Units/MSL1101/SeraphimTexture_NormalsTS.dds',
+					SpecularName = '/mods/MCP/Units/msl1101/SeraphimTexture_SpecTeam.dds',
+					AlbedoName = '/mods/MCP/Units/msl1101/SeraphimTexture_Albedo.dds',
+					NormalsName = '/mods/MCP/Units/msl1101/SeraphimTexture_NormalsTS.dds',
                     LODCutoff = 500,
 					LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
 					Scrolling = true,

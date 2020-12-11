@@ -65,7 +65,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB1307_desc>Shielded Mass Fabricator',
+    Description = '<LOC mab1307_desc>Shielded Mass Fabricator',
     Display = {
         Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -219,7 +219,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MAB1307_help>Shielded Mass Fabricator',
+        HelpText = '<LOC mab1307_help>Shielded Mass Fabricator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.95,

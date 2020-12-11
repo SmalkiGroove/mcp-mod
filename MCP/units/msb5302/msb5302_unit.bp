@@ -81,7 +81,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB5302_desc>Advanced Air Staging Beacon',
+    Description = '<LOC msb5302_desc>Advanced Air Staging Beacon',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -129,7 +129,7 @@ UnitBlueprint {
         BuildTime = 5400,
         MaintenanceConsumptionPerSecondEnergy = 1500,
         RebuildBonusIds = {
-            'MSB5302',
+            'msb5302',
         },
     },
     Footprint = {
@@ -170,7 +170,7 @@ UnitBlueprint {
         },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MSB5302_name>Iathuum-Hovathu',
+        UnitName = '<LOC msb5302_name>Iathuum-Hovathu',
         UnitWeight = 1,
     },
     Intel = {
@@ -183,7 +183,7 @@ UnitBlueprint {
         WaterVisionRadius = 30,
     },
     Interface = {
-        HelpText = '<LOC MSB5302_help>Advanced Air Staging Beacon',
+        HelpText = '<LOC msb5302_help>Advanced Air Staging Beacon',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.15,

@@ -98,21 +98,21 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRL1102/MRL1102_Death1.sca',
+                Animation = '/mods/MCP/units/mrl1102/mrl1102_Death1.sca',
                 AnimationRateMax = 1.47,
                 AnimationRateMin = 1.47,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MRL1102/MRL1102_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mrl1102/mrl1102_Walk.sca',
         AnimationWalkRate = 3.2,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MRL1102/CybranTexture_albedo.dds',
-		            NormalsName = '/mods/MCP/units/MRL1102/CybranTexture_NormalsTS.DDS',
-		            SpecularName = '/mods/MCP/units/MRL1102/CybranTexture_SpecTeam1.dds',
+                    AlbedoName = '/mods/MCP/units/mrl1102/CybranTexture_albedo.dds',
+		            NormalsName = '/mods/MCP/units/mrl1102/CybranTexture_NormalsTS.DDS',
+		            SpecularName = '/mods/MCP/units/mrl1102/CybranTexture_SpecTeam1.dds',
                     LODCutoff = 500,
                     ShaderName = 'Insect',
                 },

@@ -71,23 +71,23 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_stun>EMP Weapon',
         },
-        AnimationWalk = '/mods/MCP/units/MRL0307/MRL0307_AWalk01.sca',
+        AnimationWalk = '/mods/MCP/units/mrl0307/mrl0307_AWalk01.sca',
         AnimationWalkRate = 4.4,
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRL0307/MRL0307_ADeath01.sca',
+                Animation = '/mods/MCP/units/mrl0307/mrl0307_ADeath01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 1,
             },
             {
-                Animation = '/mods/MCP/units/MRL0307/MRL0307_ADeath02.sca',
+                Animation = '/mods/MCP/units/mrl0307/mrl0307_ADeath02.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 1,
             },
             {
-                Animation = '/mods/MCP/units/MRL0307/MRL0307_ADeath03.sca',
+                Animation = '/mods/MCP/units/mrl0307/mrl0307_ADeath03.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 1,

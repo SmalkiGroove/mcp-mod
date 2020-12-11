@@ -70,7 +70,7 @@ UnitBlueprint {
             '<LOC ability_aquatic>Aquatic',
             '<LOC ability_personalstealth>Personal Stealth',
         },
-		AnimationSurfaceBis = '/Mods/MCP/units/MEB4205/MEB4205aopen01.sca',
+		AnimationSurfaceBis = '/Mods/MCP/units/meb4205/meb4205aopen01.sca',
 		IdleEffects = {
             Sub = {
                 Effects = {
@@ -141,7 +141,7 @@ UnitBlueprint {
         BuildCostMass = 3000,
         BuildTime = 3000,
         RebuildBonusIds = {
-            'MEB4205',
+            'meb4205',
         },
     },
     Footprint = {
@@ -311,7 +311,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire Naval',
             WeaponRepackTimeout = 2,
-            WeaponUnpackAnimation = '/Mods/MCP/units/MEB4205/MEB4205aopen01.sca',
+            WeaponUnpackAnimation = '/Mods/MCP/units/meb4205/meb4205aopen01.sca',
             WeaponUnpackAnimationRate = 4,
             WeaponUnpackLocksMotion = true,
             WeaponUnpackTimeout = 2,

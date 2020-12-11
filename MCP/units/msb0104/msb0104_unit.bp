@@ -79,7 +79,7 @@ UnitBlueprint {
         MaxHealth = 500,
         RegenRate = 0,
     },
-    Description = '<LOC MSB0104_desc>Engineering Station',
+    Description = '<LOC msb0104_desc>Engineering Station',
     Display = {
         Abilities = {
             '<LOC ability_engineeringsuite>Engineering Suite',
@@ -100,9 +100,9 @@ UnitBlueprint {
                     LODCutoff = 260,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    AlbedoName = '/mods/MCP/units/MSB0304/MSB0304_lod1_albedo.dds',
-                    NormalsName = '/mods/MCP/units/MSB0304/MSB0304_lod1_normalsts.dds',
-                    SpecularName = '/mods/MCP/units/MSB0304/MSB0304_lod1_specteam.dds',
+                    AlbedoName = '/mods/MCP/units/msb0304/msb0304_lod1_albedo.dds',
+                    NormalsName = '/mods/MCP/units/msb0304/msb0304_lod1_normalsts.dds',
+                    SpecularName = '/mods/MCP/units/msb0304/msb0304_lod1_specteam.dds',
                 },
             },
         },
@@ -125,9 +125,9 @@ UnitBlueprint {
         BuildCostMass = 500,
         BuildRate = 15,
         BuildTime = 900,
-        BuildableCategory = {'MSB0204'},
+        BuildableCategory = {'msb0204'},
         MaxBuildDistance = 15,
-        RebuildBonusIds = {'MSB0104'},
+        RebuildBonusIds = {'msb0104'},
     },
     Footprint = {
         SizeX = 1,
@@ -173,15 +173,15 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC MSB0104_name>Iya',
+        UnitName = '<LOC msb0104_name>Iya',
         UnitWeight = 1,
-        UpgradesTo = 'MSB0204',
+        UpgradesTo = 'msb0204',
     },
     Intel = {
         VisionRadius = 15,
     },
     Interface = {
-        HelpText = '<LOC MSB0104_help>Engineering Station',
+        HelpText = '<LOC msb0104_help>Engineering Station',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.5,

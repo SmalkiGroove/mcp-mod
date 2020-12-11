@@ -80,7 +80,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MEB4101_desc>Shield Generator',
+    Description = '<LOC meb4101_desc>Shield Generator',
     Display = {
         Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -121,7 +121,7 @@ UnitBlueprint {
         BuildTime = 500,
         MaintenanceConsumptionPerSecondEnergy = 100,
         RebuildBonusIds = {
-            'MEB4101',
+            'meb4101',
         },
     },
     General = {
@@ -155,10 +155,11 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
+        UnitName = '<LOC meb4101_name>SD - Compact',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MEB4101_help>Shield Generator',
+        HelpText = '<LOC meb4101_help>Shield Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

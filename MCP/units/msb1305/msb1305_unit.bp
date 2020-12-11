@@ -58,7 +58,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB1305_desc>Armored Power Generator',
+    Description = '<LOC msb1305_desc>Armored Power Generator',
     Display = {
         Abilities = {
             '<LOC ability_deathaoe>Volatile',
@@ -199,7 +199,7 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MSB1305_name>Uya-iya',
+        UnitName = '<LOC msb1305_name>Uya-iya',
         UnitWeight = 1,
         UpgradesFrom = 'xsb1301',
     },
@@ -207,7 +207,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MSB1305_help>Armored Power Generator',
+        HelpText = '<LOC msb1305_help>Armored Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2,

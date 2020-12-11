@@ -84,7 +84,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB4101_desc>Shield Generator',
+    Description = '<LOC msb4101_desc>Shield Generator',
     Display = {
         Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -132,11 +132,11 @@ UnitBlueprint {
                     ShaderName = 'Seraphim',
                 },
                 {
-                    AlbedoName = 'MSB4101_lod1_albedo.dds',
+                    AlbedoName = 'msb4101_lod1_albedo.dds',
                     LODCutoff = 215,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    SpecularName = 'MSB4101_lod1_specteam.dds',
+                    SpecularName = 'msb4101_lod1_specteam.dds',
                 },
             },
         },
@@ -197,11 +197,11 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
-        UnitName = '<LOC ded1101_name>Uya-iya',
+        UnitName = '<LOC msb4101_name>Uya-iya',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MSB4101_desc>Power Generator',
+        HelpText = '<LOC msb4101_desc>Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.55,

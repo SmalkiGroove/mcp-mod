@@ -96,11 +96,11 @@ UnitBlueprint {
                     ShaderName = 'Seraphim',
                 },
                 {
-                    AlbedoName = 'MSS0205_lod1_albedo.dds',
+                    AlbedoName = 'mss0205_lod1_albedo.dds',
                     LODCutoff = 180,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    SpecularName = 'MSS0205_lod1_specteam.dds',
+                    SpecularName = 'mss0205_lod1_specteam.dds',
                 },
             },
         },

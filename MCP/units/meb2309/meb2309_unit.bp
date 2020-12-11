@@ -62,7 +62,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
     },
-    Description = '<LOC MEB2309_desc>Anti-Armor Point Defense',
+    Description = '<LOC meb2309_desc>Anti-Armor Point Defense',
     Display = {
         Mesh = {
             IconFadeInZoom = 130,
@@ -109,7 +109,7 @@ UnitBlueprint {
         BuildCostMass = 5825,
         BuildTime = 6000,
         RebuildBonusIds = {
-            'MEB2309',
+            'meb2309',
         },
     },
     Footprint = {
@@ -144,7 +144,7 @@ UnitBlueprint {
         VisionRadius = 50,
     },
     Interface = {
-        HelpText = '<LOC MEB2309_desc>Anti-Armor Point Defense',
+        HelpText = '<LOC meb2309_desc>Anti-Armor Point Defense',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.6,

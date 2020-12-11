@@ -71,7 +71,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAS0106/MAS0106_asink.sca',
+                Animation = '/mods/MCP/units/mas0106/mas0106_asink.sca',
                 AnimationRateMax = 0.8,
                 AnimationRateMin = 0.5,
                 Weight = 100,

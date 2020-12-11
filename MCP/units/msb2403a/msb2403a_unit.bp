@@ -36,7 +36,7 @@ UnitBlueprint {
         SurfaceThreatLevel = 0,
         ThreatLevel = 0,
     },
-    Description = '<LOC MSB2403A_desc>Lambda Emitter',
+    Description = '<LOC msb2403A_desc>Lambda Emitter',
     Display = {
         Mesh = {
             IconFadeInZoom = 130,
@@ -78,11 +78,11 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Basic',
-        UnitName = '<LOC MSB2403A_name>Atha Yue',
+        UnitName = '<LOC msb2403A_name>Atha Yue',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MSB2403A_help>Lamdba Emitter',
+        HelpText = '<LOC msb2403A_help>Lamdba Emitter',
     },
     LifeBarRender = false,
     Physics = {

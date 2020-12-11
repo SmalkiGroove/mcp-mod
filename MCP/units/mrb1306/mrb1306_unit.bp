@@ -48,7 +48,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MRB1306_desc>Cloakable Mass Extractor',
+    Description = '<LOC mrb1306_desc>Cloakable Mass Extractor',
     Display = {    
         Abilities = {
             '<LOC ability_cloak>Cloaking',
@@ -124,7 +124,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MRB1306_desc>Mass Extractor',
+        HelpText = '<LOC mrb1306_desc>Mass Extractor',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.55,

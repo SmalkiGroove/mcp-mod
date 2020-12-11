@@ -76,7 +76,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 150,
     },
-    Description = '<LOC MSS1301_desc>Experimental Cruiser',
+    Description = '<LOC mss1301_desc>Experimental Cruiser',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -85,15 +85,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSS1301/MSS1301_adeath01.sca',
+                Animation = '/mods/MCP/units/mss1301/mss1301_adeath01.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1301/MSS1301_adeath02.sca',
+                Animation = '/mods/MCP/units/mss1301/mss1301_adeath02.sca',
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1301/MSS1301_adeath03.sca',
+                Animation = '/mods/MCP/units/mss1301/mss1301_adeath03.sca',
                 Weight = 100,
             },
         },
@@ -124,11 +124,11 @@ UnitBlueprint {
                     ShaderName = 'Seraphim',
                 },
                 {
-                    AlbedoName = 'MSS1301_lod1_albedo.dds',
+                    AlbedoName = 'mss1301_lod1_albedo.dds',
                     LODCutoff = 300,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    SpecularName = 'MSS1301_lod1_specteam.dds',
+                    SpecularName = 'mss1301_lod1_specteam.dds',
                 },
             },
         },
@@ -167,7 +167,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MSS1301_name>Vergra',
+        UnitName = '<LOC mss1301_name>Vergra',
         UnitWeight = 1,
     },
     Intel = {
@@ -177,7 +177,7 @@ UnitBlueprint {
         WaterVisionRadius = 80,
     },
     Interface = {
-        HelpText = '<LOC MSS1301_help>Experimental Cruiser',
+        HelpText = '<LOC mss1301_help>Experimental Cruiser',
     },
     LifeBarHeight = 0.25,
     LifeBarOffset = 9,

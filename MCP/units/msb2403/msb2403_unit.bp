@@ -94,7 +94,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSB2403/MSB2403_ADeath.sca',
+                Animation = '/mods/MCP/units/msb2403/msb2403_ADeath.sca',
                 AnimationRateMax = 1,
                 AnimationRateMin = 1,
                 Weight = 100,
@@ -186,7 +186,7 @@ UnitBlueprint {
         BuildTime = 67000,
         MaintenanceConsumptionPerSecondEnergy = 2500,
         RebuildBonusIds = {
-            'MSB2403',
+            'msb2403',
         },
     },
     Footprint = {

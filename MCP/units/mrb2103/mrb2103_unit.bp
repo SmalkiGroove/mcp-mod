@@ -100,7 +100,7 @@ UnitBlueprint {
         BuildCostMass = 900,
         BuildTime = 1250,
         RebuildBonusIds = {
-            'MRB2103',
+            'mrb2103',
         },
     },
     Footprint = {

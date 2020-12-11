@@ -127,7 +127,7 @@ UnitBlueprint {
             '<LOC ability_aa>Anti-Air',
              '<LOC ability_deployable>Deployable',
         },
-		AnimationTransform = '/mods/MCP/units/MEL1302/MEL1302_aactivate.sca',
+		AnimationTransform = '/mods/MCP/units/mel1302/mel1302_aactivate.sca',
         IdleEffects = {
             Land = {
                 Effects = {

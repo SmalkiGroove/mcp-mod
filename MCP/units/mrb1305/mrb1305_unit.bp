@@ -64,7 +64,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MRB1305_desc>Cloakable Power Generator',
+    Description = '<LOC mrb1305_desc>Cloakable Power Generator',
     Display = {
         Abilities = {
             '<LOC ability_cloak>Cloaking',
@@ -148,7 +148,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_CloakToggle = true,
         },
-        UnitName = '<LOC MRB1305_name>Faraday Reactor',
+        UnitName = '<LOC mrb1305_name>Faraday Reactor',
         UnitWeight = 1,
         UpgradesFrom = 'urb1301',
     },
@@ -157,7 +157,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC  MRB1305_desc>Cloakable Power Generator',
+        HelpText = '<LOC  mrb1305_desc>Cloakable Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.25,

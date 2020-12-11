@@ -89,15 +89,15 @@ UnitBlueprint {
         }, 
         AnimationDeath = { 
             { 
-                Animation = '/mods/MCP/units/MEL1401/MEL1401_death01.sca', 
+                Animation = '/mods/MCP/units/mel1401/mel1401_death01.sca', 
                 Weight = 50, 
             }, 
             { 
-                Animation = '/mods/MCP/units/MEL1401/MEL1401_death02.sca', 
+                Animation = '/mods/MCP/units/mel1401/mel1401_death02.sca', 
                 Weight = 50, 
             }, 
         }, 
-        AnimationWalk = '/mods/MCP/units/MEL1401/MEL1401_awalk.sca', 
+        AnimationWalk = '/mods/MCP/units/mel1401/mel1401_awalk.sca', 
         AnimationWalkRate = 0.50,
         Mesh = { 
             IconFadeInZoom = 140, 
@@ -819,7 +819,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Anti Air', 
             WeaponRepackTimeout = 2, 
-			WeaponUnpackAnimation = '/mods/MCP/units/MEL1401/MEL1401_CenterMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_CenterMissileUnpack.sca', 
             WeaponUnpackAnimationRate = 0.5, 
 			WeaponUnpacks = true, 
         }, 
@@ -914,7 +914,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Missile', 
             WeaponRepackTimeout = 3, # original: 2 
-			WeaponUnpackAnimation = '/mods/MCP/units/MEL1401/MEL1401_LeftMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_LeftMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 
@@ -1011,7 +1011,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Missile', 
             WeaponRepackTimeout = 3, # original: 2 
-			WeaponUnpackAnimation = '/mods/MCP/units/MEL1401/MEL1401_RightMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_RightMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 

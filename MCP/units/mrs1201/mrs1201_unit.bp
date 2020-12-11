@@ -333,7 +333,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Missile',
             WeaponRepackTimeout = 0.5,
-            WeaponUnpackAnimation = '/mods/MCP/units/MRS1201/MRS1201_Aopen.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mrs1201/mrs1201_Aopen.sca',
             WeaponUnpackAnimationRate = 1,
             WeaponUnpacks = true,
         },

@@ -96,11 +96,11 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAL1301/MAL1301_Death.sca',
+                Animation = '/mods/MCP/units/mal1301/mal1301_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MAL1301/MAL1301_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mal1301/mal1301_Walk.sca',
         AnimationWalkRate = 2,
         Mesh = {
             IconFadeInZoom = 130,

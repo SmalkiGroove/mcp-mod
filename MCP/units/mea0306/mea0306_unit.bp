@@ -124,7 +124,7 @@ UnitBlueprint {
             '<LOC ability_sonar>Sonar',
             '<LOC ability_torpedo>Torpedoes',
         },
-        AnimationLand = '/mods/MCP/units/MEA0306/MEA0306_Aunfold.sca',
+        AnimationLand = '/mods/MCP/units/mea0306/mea0306_Aunfold.sca',
         LayerChangeEffects = {
             AirLand = {
                 Effects = {

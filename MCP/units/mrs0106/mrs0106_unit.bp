@@ -95,7 +95,7 @@ UnitBlueprint {
         },
 		AnimationDeath = {
             {
-                Animation =  '/mods/MCP/units/MRS0106/MRS0106_aLandDeath.sca',
+                Animation =  '/mods/MCP/units/mrs0106/mrs0106_aLandDeath.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.5,
                 Weight = 100,
@@ -147,7 +147,7 @@ UnitBlueprint {
         UniformScale = 0.09,
 		WaterAnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS0106/MRS0106_asink.sca',
+                Animation = '/mods/MCP/units/mrs0106/mrs0106_asink.sca',
                 AnimationRateMax = 0.8,
                 AnimationRateMin = 0.5,
                 Weight = 100,

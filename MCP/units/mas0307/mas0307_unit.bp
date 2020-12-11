@@ -114,11 +114,11 @@ UnitBlueprint {
         },
        AnimationDeath = {
             {
-                Animation = '/Mods/MCP/units/MAS0307/MAS0307_adeath01.sca',
+                Animation = '/Mods/MCP/units/mas0307/mas0307_adeath01.sca',
                 Weight = 100,
             },
         },
-        AnimationSurface = '/Mods/MCP/units/MAS0307/MAS0307_aopen01.sca',
+        AnimationSurface = '/Mods/MCP/units/mas0307/mas0307_aopen01.sca',
         IdleEffects = {
             Sub = {
                 Effects = {
@@ -150,10 +150,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = '/mods/MCP/units/MAS0307/MAS0307_lod1_Albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mas0307/mas0307_lod1_Albedo.dds',
                     LODCutoff = 600,
                     ShaderName = 'Aeon',
-                    SpecularName = '/mods/MCP/units/MAS0307/MAS0307_lod1_SpecTeam.dds',
+                    SpecularName = '/mods/MCP/units/mas0307/mas0307_lod1_SpecTeam.dds',
                 },
             },
         },

@@ -53,7 +53,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MSB1306_desc>Armored Mass Extractor',
+    Description = '<LOC msb1306_desc>Armored Mass Extractor',
     Display = {
         AnimationActivate = '/units/XSB1302/XSB1302_Apump.sca',
         AnimationDeath = {
@@ -145,7 +145,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ProductionToggle = true,
         },
-        UnitName = '<LOC MSB1306_name>Hyalatoh',
+        UnitName = '<LOC msb1306_name>Hyalatoh',
         UnitWeight = 1,
         UpgradesFrom = 'xsb1302',
     },
@@ -153,7 +153,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MSB1306_help>Armored Mass Extractor',
+        HelpText = '<LOC msb1306_help>Armored Mass Extractor',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

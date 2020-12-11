@@ -86,19 +86,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS1301/MRS1301_Asink01.sca',
+                Animation = '/mods/MCP/units/mrs1301/mrs1301_Asink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MRS1301/MRS1301_Asink02.sca',
+                Animation = '/mods/MCP/units/mrs1301/mrs1301_Asink02.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MRS1301/MRS1301_Asink03.sca',
+                Animation = '/mods/MCP/units/mrs1301/mrs1301_Asink03.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,

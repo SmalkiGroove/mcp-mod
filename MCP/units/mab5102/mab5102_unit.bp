@@ -55,7 +55,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB5102>Air Staging Facility',
+    Description = '<LOC mab5102>Air Staging Facility',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -102,7 +102,7 @@ UnitBlueprint {
         BuildCostMass = 50,
         BuildTime = 200,
         RebuildBonusId = {
-            'MAB5102',
+            'mab5102',
         },
     },
     General = {
@@ -132,11 +132,11 @@ UnitBlueprint {
         },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MAB5102_name>Pedestal',
+        UnitName = '<LOC mab5102_name>Pedestal',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MAB5102>Air Staging Facility',
+        HelpText = '<LOC mab5102>Air Staging Facility',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = .65,

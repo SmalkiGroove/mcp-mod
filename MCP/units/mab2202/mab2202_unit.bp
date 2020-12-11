@@ -59,7 +59,7 @@ UnitBlueprint {
     },
     Description = 'Heavy Point Defense',
     Display = {
-        AnimationPermOpen = '/mods/MCP/units/MAB2202/MAB2202_open.sca',
+        AnimationPermOpen = '/mods/MCP/units/mab2202/mab2202_open.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -69,10 +69,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MAB2202_lod1_albedo.dds',
+                    AlbedoName = 'mab2202_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MAB2202_lod1_specteam.dds',
+                    SpecularName = 'mab2202_lod1_specteam.dds',
                 },
             },
         },
@@ -102,7 +102,7 @@ UnitBlueprint {
         BuildCostMass = 3000,
         BuildTime = 4000,
         RebuildBonusIds = {
-            'MAB2202',
+            'mab2202',
         },
     },
     General = {
@@ -133,7 +133,7 @@ UnitBlueprint {
         VisionRadius = 35,
     },
     Interface = {
-        HelpText = '<LOC MAB2202_help>Heavy Point Defense',
+        HelpText = '<LOC mab2202_help>Heavy Point Defense',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.8,

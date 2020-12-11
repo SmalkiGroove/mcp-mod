@@ -77,7 +77,7 @@ UnitBlueprint {
             LODs = {
                 {
                     AlbedoName = '/Units/xsl0103/xsl0103_Albedo.dds',
-		            MeshName = '/mods/MCP/units/MSL0204/MSL0204_lod0.scm',
+		            MeshName = '/mods/MCP/units/msl0204/msl0204_lod0.scm',
 		            NormalsName = '/Units/xsl0103/xsl0103_NormalsTS.DDS',
                     LODCutoff = 100,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',				

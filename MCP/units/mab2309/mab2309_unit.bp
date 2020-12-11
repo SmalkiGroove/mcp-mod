@@ -60,9 +60,9 @@ UnitBlueprint {
         SubThreatLevel = 81,
         SurfaceThreatLevel = 225,
     },
-    Description = '<LOC MAB2309_desc>Anti-Armor Point Defence',
+    Description = '<LOC mab2309_desc>Anti-Armor Point Defence',
     Display = {
-        AnimationPermOpen = '/mods/MCP/units/MAB2309/MAB2309_aopen01.sca',
+        AnimationPermOpen = '/mods/MCP/units/mab2309/mab2309_aopen01.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -108,7 +108,7 @@ UnitBlueprint {
         BuildCostMass = 6000,
         BuildTime = 6000,
         RebuildBonusId = {
-            'MAB2309',
+            'mab2309',
         },
     },
     Footprint = {
@@ -136,7 +136,7 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MAB2309_name>Nihiloid',
+        UnitName = '<LOC mab2309_name>Nihiloid',
         UnitWeight = 1,
     },
     Intel = {
@@ -144,7 +144,7 @@ UnitBlueprint {
         WaterVisionRadius = 50,
     },
     Interface = {
-        HelpText = '<LOC MAB2309_desc>Anti-Armor Point Defence',
+        HelpText = '<LOC mab2309_desc>Anti-Armor Point Defence',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.4,

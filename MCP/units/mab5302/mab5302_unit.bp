@@ -57,7 +57,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB5302_desc>Advanced Air Staging Facility',
+    Description = '<LOC mab5302_desc>Advanced Air Staging Facility',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -101,7 +101,7 @@ UnitBlueprint {
         BuildTime = 5400,
         MaintenanceConsumptionPerSecondEnergy = 1000,
         RebuildBonusId = {
-            'MAB5302',
+            'mab5302',
         },
         BuildRate = 90,
         BuildableCategory = {
@@ -146,7 +146,7 @@ UnitBlueprint {
             RULEUTC_IntelToggle = true,
         },
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MAB5302_name>Sanctuary',
+        UnitName = '<LOC mab5302_name>Sanctuary',
         UnitWeight = 1,
     },
     Intel = {
@@ -158,7 +158,7 @@ UnitBlueprint {
         WaterVisionRadius = 25,
     },
     Interface = {
-        HelpText = '<LOC MAB5302_help>Advanced Air Staging Facility',
+        HelpText = '<LOC mab5302_help>Advanced Air Staging Facility',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.15,

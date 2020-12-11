@@ -90,13 +90,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAS0205/MAS0205_ASink01.sca',
+                Animation = '/mods/MCP/units/mas0205/mas0205_ASink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MAS0205/MAS0205_ASink02.sca',
+                Animation = '/mods/MCP/units/mas0205/mas0205_ASink02.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,
@@ -122,10 +122,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MAS0205_lod1_albedo.dds',
+                    AlbedoName = 'mas0205_lod1_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MAS0205_lod1_specteam.dds',
+                    SpecularName = 'mas0205_lod1_specteam.dds',
                 },
             },
         },

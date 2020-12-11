@@ -71,7 +71,7 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MRB2203/CybranTexture_albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mrb2203/CybranTexture_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Unit',
                 },
@@ -103,7 +103,7 @@ UnitBlueprint {
         BuildCostMass = 9800,
         BuildTime = 10000,
         RebuildBonusIds = {
-            'MRB2203',
+            'mrb2203',
         },
     },
     Footprint = {

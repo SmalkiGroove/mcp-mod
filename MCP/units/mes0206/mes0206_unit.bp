@@ -87,13 +87,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MES0206/MES0206_death.sca',
+                Animation = '/mods/MCP/units/mes0206/mes0206_death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
             },
             {
-                Animation = '/mods/MCP/units/MES0206/MES0206_death2.sca',
+                Animation = '/mods/MCP/units/mes0206/mes0206_death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,

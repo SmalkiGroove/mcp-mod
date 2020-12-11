@@ -74,7 +74,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB1305_desc>Shielded Power Generator',
+    Description = '<LOC mab1305_desc>Shielded Power Generator',
     Display = {
         Abilities = {           
             '<LOC ability_shielddome>Shield Dome',
@@ -226,7 +226,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
-        UnitName = '<LOC MAB1305_name>Von Mayer Reactor',
+        UnitName = '<LOC mab1305_name>Von Mayer Reactor',
         UnitWeight = 1,
         UpgradesFrom = 'uab1301',
     },
@@ -234,7 +234,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MAB1305_help>Shielded Power Generator',
+        HelpText = '<LOC mab1305_help>Shielded Power Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2,

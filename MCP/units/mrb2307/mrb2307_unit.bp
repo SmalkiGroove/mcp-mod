@@ -60,7 +60,7 @@ UnitBlueprint {
          Abilities = {
              'Point Defense',
          },
-	---AnimationPermOpen = '/units/MRB2307/MRB2307_Aopen.sca',
+	---AnimationPermOpen = '/units/mrb2307/mrb2307_Aopen.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -99,7 +99,7 @@ UnitBlueprint {
         BuildCostMass = 17775,
         BuildTime = 16000,
         RebuildBonusId = {
-            'MRB2307',
+            'mrb2307',
         },
 	},
     General = {

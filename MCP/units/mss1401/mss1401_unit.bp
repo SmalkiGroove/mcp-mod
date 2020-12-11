@@ -83,7 +83,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
     },
-    Description = '<LOC MSS1401_desc>Experimental Dreadnought',
+    Description = '<LOC mss1401_desc>Experimental Dreadnought',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -93,19 +93,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSS1401/MSS1401_ADeath01.sca',
+                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath01.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1401/MSS1401_ADeath02.sca',
+                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath02.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1401/MSS1401_ADeath03.sca',
+                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath03.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
@@ -191,7 +191,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC MSS1401_name>Hovatha-Hauthu',
+        UnitName = '<LOC mss1401_name>Hovatha-Hauthu',
         UnitWeight = 1,
     },
     Intel = {
@@ -200,7 +200,7 @@ UnitBlueprint {
         WaterVisionRadius = 50,
     },
     Interface = {
-        HelpText = '<LOC MSS1401_help>Experimental Dreadnought',
+        HelpText = '<LOC mss1401_help>Experimental Dreadnought',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 7.5,

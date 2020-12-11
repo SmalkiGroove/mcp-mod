@@ -91,19 +91,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSL1401/MSL1401_aDeath01.sca',
+                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath01.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSL1401/MSL1401_aDeath02.sca',
+                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath02.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSL1401/MSL1401_aDeath03.sca',
+                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath03.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
@@ -213,31 +213,31 @@ UnitBlueprint {
     DroneData = {
         Drone1 = {
             Attachpoint = 'AttachSpecial01',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone2 = {
             Attachpoint = 'AttachSpecial02',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone3 = {
             Attachpoint = 'AttachSpecial03',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone4 = {
             Attachpoint = 'AttachSpecial04',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone5 = {
             Attachpoint = 'AttachSpecial05',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone6 = {
             Attachpoint = 'AttachSpecial06',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
         Drone7 = {
             Attachpoint = 'AttachSpecial07',
-            UnitID = 'MSL1401A',
+            UnitID = 'msl1401A',
         },
     },
     Economy = {
@@ -266,7 +266,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'amph',
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC MSL1401_name>Yenzotha',
+        UnitName = '<LOC msl1401_name>Yenzotha',
         UnitWeight = 1,
         ToggleCaps = {
             RULEUTC_SpecialToggle = true,

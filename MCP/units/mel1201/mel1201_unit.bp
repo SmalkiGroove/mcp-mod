@@ -108,17 +108,17 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MEL1201/MEL1201_Death.sca',
+                Animation = '/mods/MCP/units/mel1201/mel1201_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MEL1201/MEL1201_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mel1201/mel1201_Walk.sca',
         AnimationWalkRate = 2.1,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MEL1201/MEL1201_albedo2.dds',
+                    AlbedoName = '/mods/MCP/units/mel1201/mel1201_albedo2.dds',
                     LODCutoff = 500,
                     ShaderName = 'Unit',
                 },

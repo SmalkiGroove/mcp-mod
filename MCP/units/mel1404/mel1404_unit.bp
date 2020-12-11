@@ -398,7 +398,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Missile',
             WeaponRepackTimeout = 0,
-            WeaponUnpackAnimation = '/mods/MCP/units/MEL1404/MEL1404_Deploy.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mel1404/mel1404_Deploy.sca',
             WeaponUnpackAnimationRate = 1,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,

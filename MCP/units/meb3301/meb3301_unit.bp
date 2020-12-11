@@ -132,7 +132,7 @@ UnitBlueprint {
             'BUILTBYTIER3SPACEPORT UEF SATELLITE',
         },
         MaintenanceConsumptionPerSecondEnergy = 2500,
-        RebuildBonusIds = {'MEB3301'},
+        RebuildBonusIds = {'meb3301'},
     },
     Footprint = {
         SizeX = 5,

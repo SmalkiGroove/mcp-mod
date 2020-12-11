@@ -63,7 +63,7 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSB2306/MSB2306_adeath.sca',
+                Animation = '/mods/MCP/units/msb2306/msb2306_adeath.sca',
                 AnimationRateMax = 1,
                 AnimationRateMin = 1,
                 Weight = 100,
@@ -116,7 +116,7 @@ UnitBlueprint {
         BuildCostMass = 2000,
         BuildTime = 2000,
         RebuildBonusIds = {
-            'MSB2306',
+            'msb2306',
         },
     },
     Footprint = {
@@ -144,7 +144,7 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MSB2306_name>Othuushala',
+        UnitName = '<LOC msb2306_name>Othuushala',
 #Uttaushala
         UnitWeight = 1,
     },

@@ -107,10 +107,10 @@ UnitBlueprint {
             '<LOC ability_torpedo>Torpedoes',
             '<LOC ability_torpturn>Torpedo Redirection System',
         },
-        CannonOpenAnimation = '/mods/MCP/units/MRS0301/MRS0301_AOpen.sca',
+        CannonOpenAnimation = '/mods/MCP/units/mrs0301/mrs0301_AOpen.sca',
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS0301/MRS0301_ADeath01.sca',
+                Animation = '/mods/MCP/units/mrs0301/mrs0301_ADeath01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,

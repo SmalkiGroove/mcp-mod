@@ -81,19 +81,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSS1101/MSS1101_ADeath01.sca',
+                Animation = '/mods/MCP/units/mss1101/mss1101_ADeath01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.5,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1101/MSS1101_ADeath02.sca',
+                Animation = '/mods/MCP/units/mss1101/mss1101_ADeath02.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.5,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS1101/MSS1101_ADeath03.sca',
+                Animation = '/mods/MCP/units/mss1101/mss1101_ADeath03.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.5,
                 Weight = 100,
@@ -122,11 +122,11 @@ UnitBlueprint {
                     ShaderName = 'Seraphim',
                 },
                 {
-                    AlbedoName = 'MSS1101_lod1_albedo.dds',
+                    AlbedoName = 'mss1101_lod1_albedo.dds',
                     LODCutoff = 600,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    SpecularName = 'MSS1101_lod1_specteam.dds',
+                    SpecularName = 'mss1101_lod1_specteam.dds',
                 },
             },
         },

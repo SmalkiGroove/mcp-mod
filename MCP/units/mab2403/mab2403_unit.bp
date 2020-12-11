@@ -94,10 +94,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MAB2403_lod1_albedo.dds',
+                    AlbedoName = 'mab2403_lod1_albedo.dds',
                     LODCutoff = 320,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MAB2403_lod1_specteam.dds',
+                    SpecularName = 'mab2403_lod1_specteam.dds',
                 },
             },
         },
@@ -127,7 +127,7 @@ UnitBlueprint {
         BuildCostMass = 46000,
         BuildTime = 64000,
         RebuildBonusId = {
-            'MAB2403',
+            'mab2403',
         },
     },
     Footprint = {

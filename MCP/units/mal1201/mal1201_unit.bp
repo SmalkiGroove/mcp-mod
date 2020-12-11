@@ -92,17 +92,17 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MAL1201/MAL1201_Death.sca',
+                Animation = '/mods/MCP/units/mal1201/mal1201_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MAL1201/MAL1201_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mal1201/mal1201_Walk.sca',
         AnimationWalkRate = 2.6,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MAL1201/AeonTexture_albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mal1201/AeonTexture_albedo.dds',
                     LODCutoff = 500,
                     ShaderName = 'Aeon',
                 },

@@ -84,7 +84,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MAB4101_desc>Shield Generator',
+    Description = '<LOC mab4101_desc>Shield Generator',
     Display = {
         Abilities = {
             '<LOC ability_shielddome>Shield Dome',
@@ -123,10 +123,10 @@ UnitBlueprint {
                     ShaderName = 'Aeon',
                 },
                 {
-                    AlbedoName = 'MAB4101_lod1_albedo.dds',
+                    AlbedoName = 'mab4101_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'Aeon',
-                    SpecularName = 'MAB4101_lod1_specteam.dds',
+                    SpecularName = 'mab4101_lod1_specteam.dds',
                 },
             },
         },
@@ -156,7 +156,7 @@ UnitBlueprint {
         BuildTime = 500,
         MaintenanceConsumptionPerSecondEnergy = 100,
         RebuildBonusId = {
-            'MAB4101',
+            'mab4101',
         },
     },
     General = {
@@ -190,11 +190,11 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
-        UnitName = '<LOC MAB4101_name>Shield of Light',
+        UnitName = '<LOC mab4101_name>Room',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MAB4101_help>Shield Generator',
+        HelpText = '<LOC mab4101_help>Shield Generator',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

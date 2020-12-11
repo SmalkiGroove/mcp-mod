@@ -97,7 +97,7 @@ UnitBlueprint {
         RegenRate = 2,
         Shield = {
             ImpactEffects = 'SeraphimShieldHit01',
-            OwnerShieldMesh = '/mods/MCP/units/MSS1201/MSS1201_personalshield_mesh',
+            OwnerShieldMesh = '/mods/MCP/units/mss1201/mss1201_personalshield_mesh',
             PersonalShield = true,
             RegenAssistMult = 60,
             ShieldEnergyDrainRechargeTime = 5,
@@ -123,7 +123,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/Mods/MCP/units/MSS1201/MSS1201_adeath01.sca',
+                Animation = '/Mods/MCP/units/mss1201/mss1201_adeath01.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 100,

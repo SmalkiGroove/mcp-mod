@@ -111,15 +111,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRL1402/MRL1402_ADeath01.sca',
+                Animation = '/mods/MCP/units/mrl1402/mrl1402_ADeath01.sca',
                 AnimationRateMax = 0.4,
                 AnimationRateMin = 0.4,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MRL1402/MRL1402_AWalk01.sca',
-        AnimationDeploy = '/mods/MCP/units/MRL1402/MRL1402_Deploy.sca',
-        AnimationPackUp = '/mods/MCP/units/MRL1402/MRL1402_PackUp.sca',
+        AnimationWalk = '/mods/MCP/units/mrl1402/mrl1402_AWalk01.sca',
+        AnimationDeploy = '/mods/MCP/units/mrl1402/mrl1402_Deploy.sca',
+        AnimationPackUp = '/mods/MCP/units/mrl1402/mrl1402_PackUp.sca',
         AnimationWalkRate = 0.75,
         Mesh = {
             IconFadeInZoom = 130,

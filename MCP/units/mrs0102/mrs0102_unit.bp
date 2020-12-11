@@ -88,7 +88,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS0102/MRS0102_asink01.sca',
+                Animation = '/mods/MCP/units/mrs0102/mrs0102_asink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 100,
@@ -96,7 +96,7 @@ UnitBlueprint {
         },
 		LandAnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS0102/MRS0102_adeath01.sca',
+                Animation = '/mods/MCP/units/mrs0102/mrs0102_adeath01.sca',
 				AnimationRateMax = 0.8,
                 AnimationRateMin = 0.5,
                 Weight = 100,
@@ -104,16 +104,16 @@ UnitBlueprint {
         },
 		WaterAnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRS0102/MRS0102_asink01.sca',
+                Animation = '/mods/MCP/units/mrs0102/mrs0102_asink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 100,
             },
         },
-        AnimationTransform = '/mods/MCP/units/MRS0102/MRS0102_transform.sca',
-        AnimationWalk = '/mods/MCP/units/MRS0102/MRS0102_awalk.sca',
+        AnimationTransform = '/mods/MCP/units/mrs0102/mrs0102_transform.sca',
+        AnimationWalk = '/mods/MCP/units/mrs0102/mrs0102_awalk.sca',
         AnimationWalkRate = 1.8,
-		--AnimationHailfireDeploy = '/mods/MCP/units/MRS0102/MRS0102_AHailfireDeploy.sca',
+		--AnimationHailfireDeploy = '/mods/MCP/units/mrs0102/mrs0102_AHailfireDeploy.sca',
         IdleEffects = {
             Water = {
                 Effects = {
@@ -134,10 +134,10 @@ UnitBlueprint {
                     ShaderName = 'Insect',
                 },
                 {
-                    AlbedoName = 'MRS0102_lod1_albedo.dds',
+                    AlbedoName = 'mrs0102_lod1_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Insect',
-                    SpecularName = 'MRS0102_lod1_specteam.dds',
+                    SpecularName = 'mrs0102_lod1_specteam.dds',
                 },
             },
         },

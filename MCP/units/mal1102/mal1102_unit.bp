@@ -104,7 +104,7 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/MAL1102/AeonTexture_albedo.dds',
+                    AlbedoName = '/mods/MCP/units/mal1102/AeonTexture_albedo.dds',
                     LODCutoff = 500,
                     Scrolling = true,
                     ShaderName = 'Aeon',
@@ -344,7 +344,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 6,
-            WeaponUnpackAnimation = '/mods/MCP/units/MAL1102/MAL1102_Deploy.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mal1102/mal1102_Deploy.sca',
             WeaponUnpackAnimationRate = 1.15,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
@@ -440,7 +440,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 6,
-            WeaponUnpackAnimation = '/mods/MCP/units/MAL1102/MAL1102_Deploy2.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mal1102/mal1102_Deploy2.sca',
             WeaponUnpackAnimationRate = 1.15,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,

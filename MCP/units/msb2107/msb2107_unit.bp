@@ -63,7 +63,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 25,
     },
-    Description = '<LOC MSB2107>Light Artillery Installation',
+    Description = '<LOC msb2107>Light Artillery Installation',
     Display = {
         AnimationDeath = {
             {
@@ -105,7 +105,7 @@ UnitBlueprint {
         BuildCostMass = 440,
         BuildTime = 500,
         RebuildBonusIds = {
-            'MSB2107',
+            'msb2107',
         },
     },
     General = {
@@ -129,14 +129,14 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Basic',
-        UnitName = '<LOC MSB2107_name>Thaam-atha',
+        UnitName = '<LOC msb2107_name>Thaam-atha',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 24,
     },
     Interface = {
-        HelpText = '<LOC MSB2107>Light Artillery Installation',
+        HelpText = '<LOC msb2107>Light Artillery Installation',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

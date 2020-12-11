@@ -69,7 +69,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 45,
     },
-    Description = '<LOC MSS0307_desc>Battlecruiser',
+    Description = '<LOC mss0307_desc>Battlecruiser',
     Display = {
         Abilities = {
             '<LOC ability_omni>Omni Sensor',
@@ -80,19 +80,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MSS0307/MSS0307_ADeath01.sca',
+                Animation = '/mods/MCP/units/mss0307/mss0307_ADeath01.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.3,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS0307/MSS0307_ADeath02.sca',
+                Animation = '/mods/MCP/units/mss0307/mss0307_ADeath02.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.3,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/MSS0307/MSS0307_ADeath03.sca',
+                Animation = '/mods/MCP/units/mss0307/mss0307_ADeath03.sca',
                 AnimationRateMax = 1.2,
                 AnimationRateMin = 0.3,
                 Weight = 100,
@@ -168,7 +168,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'sea',
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MSS0307_name>Ithaluthe-Esel',
+        UnitName = '<LOC mss0307_name>Ithaluthe-Esel',
         UnitWeight = 1,
     },
     Intel = {
@@ -179,7 +179,7 @@ UnitBlueprint {
         WaterVisionRadius = 35,
     },
     Interface = {
-        HelpText = '<LOC MSS0307_help>Battlecruiser',
+        HelpText = '<LOC mss0307_help>Battlecruiser',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2,

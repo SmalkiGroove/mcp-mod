@@ -87,25 +87,25 @@ UnitBlueprint {
         },
         AnimationDeath = {
 			{
-                Animation = '/mods/MCP/units/MRL0308/MRL0308_ADeath01.sca',
+                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath01.sca',
                 AnimationRateMax = 1.00,
                 AnimationRateMin = 0.30,
                 Weight = 1,
             },
             {
-                Animation = '/mods/MCP/units/MRL0308/MRL0308_ADeath02.sca',
+                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath02.sca',
                 AnimationRateMax = 1.00,
                 AnimationRateMin = 0.30,
                 Weight = 1,
             },
             {
-                Animation = '/mods/MCP/units/MRL0308/MRL0308_ADeath03.sca',
+                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath03.sca',
                 AnimationRateMax = 1.30,
                 AnimationRateMin = 0.70,
                 Weight = 1,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MRL0308/MRL0308_A001.sca',
+        AnimationWalk = '/mods/MCP/units/mrl0308/mrl0308_A001.sca',
         AnimationWalkRate = 2,
         Mesh = {
             IconFadeInZoom = 130,

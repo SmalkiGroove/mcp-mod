@@ -143,4 +143,29 @@ BuilderGroup {
             }
         }
     },
+
+    Builder {
+        BuilderName = 'T4PD',
+        PlatoonTemplate = 'T3FieldEngineerBuilder',
+        Priority = 1050,
+        InstanceCount = 2,
+        BuilderConditions = {
+            {UCBC, 'UnitsLessAtLocation', {'LocationType', 1, 'DEFENSE EXPERIMENTAL STRUCTURE'}},
+            {EBC, 'GreaterThanEconEfficiencyOverTime', {0.9, 1.2}},
+            {UCBC, 'LocationEngineersBuildingLess', {'LocationType', 1, 'EXPERIMENTAL'} },
+            {UCBC, 'UnitCapCheckLess', {0.95} },
+        },
+        BuilderType = 'Any',
+        BuilderData = {
+            Construction = {
+                BuildClose = true,
+                DesiresAssist = true,
+                NumAssistees = 4,
+                BuildStructures = {
+                    'T4Defense',
+                },
+                Location = 'LocationType',
+            }
+        }
+    },
 }

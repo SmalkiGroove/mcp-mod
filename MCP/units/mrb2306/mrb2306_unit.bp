@@ -55,7 +55,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 54,
     },
-    Description = '<LOC MRB2306_desc>Heavy Point Defense',
+    Description = '<LOC mrb2306_desc>Heavy Point Defense',
     Display = {
         Abilities = {
             '<LOC ability_stun>Stuns ennemy units',
@@ -95,7 +95,7 @@ UnitBlueprint {
         BuildCostMass = 2275,
         BuildTime = 2000,
         RebuildBonusIds = {
-            'MRB2306',
+            'mrb2306',
         },
     },
     Footprint = {
@@ -123,14 +123,14 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC MRB2306_name>Manticore',
+        UnitName = '<LOC mrb2306_name>Manticore',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC MRB2306_help>Heavy Point Defense',
+        HelpText = '<LOC mrb2306_help>Heavy Point Defense',
     },
     LifeBarHeight = 0.09,
     LifeBarOffset = 0.55,

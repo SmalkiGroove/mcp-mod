@@ -57,7 +57,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC MRB5102>Air Staging Facility',
+    Description = '<LOC mrb5102>Air Staging Facility',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -106,7 +106,7 @@ UnitBlueprint {
         BuildCostMass = 50,
         BuildTime = 200,
         RebuildBonusIds = {
-            'MRB5102',
+            'mrb5102',
         },
     },
     General = {
@@ -136,11 +136,11 @@ UnitBlueprint {
         },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
-        UnitName = '<LOC MRB5102_name>Hive Top',
+        UnitName = '<LOC mrb5102_name>Hive Top',
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC MRB5102>Air Staging Facility',
+        HelpText = '<LOC mrb5102>Air Staging Facility',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 1.7*.5,

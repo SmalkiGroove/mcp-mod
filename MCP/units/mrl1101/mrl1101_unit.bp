@@ -102,13 +102,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/MRL1101/MRL1101_Death1.sca',
+                Animation = '/mods/MCP/units/mrl1101/mrl1101_Death1.sca',
                 AnimationRateMax = 1.47,
                 AnimationRateMin = 1.47,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/MRL1101/MRL1101_Walk.sca',
+        AnimationWalk = '/mods/MCP/units/mrl1101/mrl1101_Walk.sca',
         AnimationWalkRate = 3.15,
         Mesh = {
             IconFadeInZoom = 130,
