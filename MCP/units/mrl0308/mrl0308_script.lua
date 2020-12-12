@@ -27,7 +27,7 @@ MRL0308 = Class(CWalkingLandUnit) {
 	OnStopBeingBuilt = function(self, builder, layer)
         CWalkingLandUnit.OnStopBeingBuilt(self, builder, layer)
         
-        #These start enabled, so before going to InvisState, disabled them.. they'll be reenabled shortly
+        --These start enabled, so before going to InvisState, disabled them.. they'll be reenabled shortly
 		self:DisableUnitIntel('Cloak')
 		self.Cloaked = false
         ChangeState( self, self.InvisState ) # If spawned in we want the unit to be invis, normally the unit will immediately start moving
