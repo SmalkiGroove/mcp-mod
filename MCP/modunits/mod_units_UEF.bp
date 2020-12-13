@@ -56,3 +56,13 @@ UnitBlueprint {
         OmniRadius = 2,			--Added
     },
 }
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="uel0304",      --Demolisher
+    Weapon = {
+        {
+            MaxRadius = 100,
+        },
+    },
+}

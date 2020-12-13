@@ -28,8 +28,8 @@ for i in cybranTemplates do
     end
 end
 for i in seraphimTemplates do
-    if seraphimTemplates[i][1] == 'T4LandExperimental2' then
-        seraphimTemplates[i][2] = 'msl1402'
+    if seraphimTemplates[i][1] == 'T4LandExperimental1' then
+        seraphimTemplates[i][2] = 'msl1401'
     elseif seraphimTemplates[i][1] == 'T4SeaExperimental1' then
         seraphimTemplates[i][2] = 'mss1401'
     end

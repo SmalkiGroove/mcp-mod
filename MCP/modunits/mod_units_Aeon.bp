@@ -54,4 +54,14 @@ UnitBlueprint {
     },
 }
 
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="ual0304",      ##Serenity
+    Weapon = {
+        {
+            MaxRadius = 100,
+        },
+    },
+}
+
 #Aeon Aircrafts	----------------------------------#

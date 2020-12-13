@@ -55,3 +55,13 @@ UnitBlueprint {
         },
     },
 }
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="xsl0304",      --Suthanus
+    Weapon = {
+        {
+            MaxRadius = 100,
+        },
+    },
+}

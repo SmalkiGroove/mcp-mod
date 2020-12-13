@@ -1,12 +1,24 @@
-local SSeaUnit = XSS0302
+local SSeaUnit = import('/lua/seraphimunits.lua').SSeaUnit
+local SeraphimWeapons = import('/lua/seraphimweapons.lua')
+local SDFHeavyQuarnonCannon = SeraphimWeapons.SDFHeavyQuarnonCannon
+local SAMElectrumMissileDefense = SeraphimWeapons.SAMElectrumMissileDefense
+local SAAOlarisCannonWeapon = SeraphimWeapons.SAAOlarisCannonWeapon
+local SLaanseMissileWeapon = SeraphimWeapons.SLaanseMissileWeapon
 
 XSS0302 = Class(SSeaUnit) {
-    OnCreate = function(self)
-        SSeaUnit.OnCreate(self)
-        if type(ScenarioInfo.Options.RestrictedCategories) == 'table' and table.find(ScenarioInfo.Options.RestrictedCategories, 'NUKE') then
-            self:SetWeaponEnabledByLabel('InainoMissiles', false)
-        end
-    end,
+    FxDamageScale = 2,
+    DestructionTicks = 400,
+
+    Weapons = {
+        BackTurret = Class(SDFHeavyQuarnonCannon) {},
+        FrontTurret = Class(SDFHeavyQuarnonCannon) {},
+        MidTurret = Class(SDFHeavyQuarnonCannon) {},
+        AntiMissileLeft = Class(SAMElectrumMissileDefense) {},
+        AntiMissileRight = Class(SAMElectrumMissileDefense) {},
+        AntiAirLeft = Class(SAAOlarisCannonWeapon) {},
+        AntiAirRight = Class(SAAOlarisCannonWeapon) {},
+        CruiseMissile = Class(SLaanseMissileWeapon) {},
+    },
 }
 
 TypeClass = XSS0302
