@@ -3,7 +3,6 @@ UnitBlueprint {
         BankFactor = 0.1,
         BankForward = false,
         CanFly = true,
-
         KLift = 0.4,
         KLiftDamping = 2.5,
         KMove = 1,

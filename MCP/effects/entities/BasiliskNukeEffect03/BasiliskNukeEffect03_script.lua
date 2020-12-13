@@ -1,5 +1,5 @@
 local NullShell = import('/lua/sim/defaultprojectiles.lua').NullShell
-local BlackOpsBalanceEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
+local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
 BasiliskNukeEffect03 = Class(NullShell) {
     
@@ -10,12 +10,12 @@ BasiliskNukeEffect03 = Class(NullShell) {
     
     EffectThread = function(self)
         local army = self:GetArmy()
-        for k, v in BlackOpsBalanceEffectTemplate.BasiliskNukeHeadEffects03 do
+        for k, v in MCPEffectTemplate.BasiliskNukeHeadEffects03 do
             CreateAttachedEmitter(self, -1, army, v) 
         end            
     
         WaitSeconds(6)
-        for k, v in BlackOpsBalanceEffectTemplate.BasiliskNukeHeadEffects02 do
+        for k, v in MCPEffectTemplate.BasiliskNukeHeadEffects02 do
             CreateAttachedEmitter(self, -1, army, v) 
         end    
     end,      

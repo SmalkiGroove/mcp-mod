@@ -1,9 +1,9 @@
 local Entity = import('/lua/sim/Entity.lua').Entity
-local BlackOpsEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
+local ModEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
 SeraLambdaFieldDestroyer = Class(Entity) {
     EndPointEffects = {'/effects/emitters/particle_cannon_end_01_emit.bp',},
-    LambdaEffects = BlackOpsEffectTemplate.LambdaDestroyer,
+    LambdaEffects = ModEffectTemplate.LambdaDestroyer,
 
     OnCreate = function(self, spec)
         Entity.OnCreate(self, spec)

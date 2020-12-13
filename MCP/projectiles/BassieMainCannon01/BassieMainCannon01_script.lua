@@ -1,25 +1,18 @@
--------------------------------------------------------------------------------
--- File     :  /data/projectiles/CDFProtonCannon05/CDFProtonCannon05_script.lua
--- Author(s):  Gordon Duclos, Matt Vainio
--- Summary  :  Cybran Proton Artillery projectile script, XRL0403
--- Copyright � 2007 Gas Powered Games, Inc.  All rights reserved.
--------------------------------------------------------------------------------
-
 local CDFHvyProtonCannonProjectile = import('/lua/cybranprojectiles.lua').CDFHvyProtonCannonProjectile
-local BlackOpsEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
+local ModEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
 CDFProtonCannon05 = Class(CDFHvyProtonCannonProjectile) {
     PolyTrails = {
-        BlackOpsEffectTemplate.BassieCannonPolyTrail,
+        ModEffectTemplate.BassieCannonPolyTrail,
         '/mods/MCP/effects/emitters/bassie_cannon_trail_01_emit.bp',
     },
 
-    FxTrails = BlackOpsEffectTemplate.BassieCannonFxTrail,
-    FxImpactUnit = BlackOpsEffectTemplate.BassieCannonHitUnit,
-    FxImpactProp = BlackOpsEffectTemplate.BassieCannonHitUnit,
-    FxImpactLand = BlackOpsEffectTemplate.BassieCannonHitLand,
-    FxImpactUnderWater = BlackOpsEffectTemplate.BassieCannonHit01,
-    FxImpactWater = BlackOpsEffectTemplate.BassieCannonHit01,
+    FxTrails = ModEffectTemplate.BassieCannonFxTrail,
+    FxImpactUnit = ModEffectTemplate.BassieCannonHitUnit,
+    FxImpactProp = ModEffectTemplate.BassieCannonHitUnit,
+    FxImpactLand = ModEffectTemplate.BassieCannonHitLand,
+    FxImpactUnderWater = ModEffectTemplate.BassieCannonHit01,
+    FxImpactWater = ModEffectTemplate.BassieCannonHit01,
     FxUnitHitScale = 1.5,
     FxPropHitScale = 1.5,
     FxLandHitScale = 1.5,

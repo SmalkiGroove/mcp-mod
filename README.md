@@ -9,7 +9,8 @@
 
 ## Update to the latest version
 
-- Open th git bash inside the mcp-mod folder
+- Delete the previous MCP folder in your mods
+- Open the git bash inside the mcp-mod folder
 - `git pull`
 - Copy the MCP folder to the right location
 
@@ -46,7 +47,7 @@ Each faction has the following items, buildable by there tier respective field e
 - T2 heavy point defense : high range and health, but expensive
 - T2 experiental point defense : high damages, range and health
 - T2 anti-navy turret : high range and damages, only attacks boats
-- T3 point defense (UEF aleady has one fro te base game) : medium health, pretty good damages and range
+- T3 point defense (UEF aleady has one from te base game) : medium health, pretty good damages and range
 - T3 heavy point defense : very high health and range, good damages
 - T3 anti-navy bunker : very high helth, damage and range, but very expensive and only attacks boats
 - T3 anti-armor point defense : works like a T2 artillery without power consumption and better range and damage.
@@ -84,7 +85,7 @@ __T3 assassin bot__ : sniper bot with better fire rate.
 
 ### Seraphim
 
-__T1 assault bot__ : equivalent to Mantis (cybran tech 1 assault bot from the base game).  
+__T1 assault bot__ : between light assault bots and medium tanks.  
 __T2 EMP artillery__ : good range and EMP aoe but weak at close range.  
 __T3 assault bot__ : assalt bot with a directional shield.  
 __T3 siege ram__ : huge damage at very short range.
@@ -132,18 +133,25 @@ __T3 cruiser__ : heavy anti-air cruiser.
 ### Aeon
 
 __T1 artillery ship__ : long range but slow projectiles.  
-__T1 destroyer__ : anti-navy ship.  
 __T2 artillery ship__ : long range but slow projectiles.  
-__T2 battlecruiser__ :  
+__T2 battlecruiser__ : polyvalent combat ship but weaker than a destroyer.  
 __T3 submersible destroyer__ : heavy anti-navy destroyer with submersble ability.
 
 ### Cybran
 
 __T1 artillery ship__ : long range but slow projectiles.  
-__T2 frigate__ : intelligence and combat ship, weaker and cheaper than a destroyer.  
+__T1 destroyer__ : amphibious anti-navy ship.  
+__T2 artillery ship__ : long range but slow projectiles.  
 __T3 battlecruiser__ : good anti-air and global battle performances.  
 __T3 combat sub__ : strong anti-navy sub.
 
+### Seraphim
+
+__T1 artillery ship__ : long range but slow projectiles.  
+__T2 scout submarine__ : invisible sub with intel, weak in battles.  
+__T2 artillery ship__ : long range but slow projectiles.  
+__T2 regen field boat__ : heals units around, cannot fight.  
+__T3 battlecruiser__ : polyvalent combat ship.
 
 ## Additionnal buildings
 
@@ -180,14 +188,14 @@ __T3 optics facility__ : gives vision on an ennemy unit and follows it when it m
 
 Experimentals are sorted by macro categories :
 
-- Fast land assault (Monkeylord)
-- Heavy land assault (Colossus, Ythotha)
-- Land siege (Fatboy, Megalith)
-- Land ultimate
-- Air (CZAR, Soul Ripper, Ahwassa)
-- Naval battleship (Tempest)
-- Strategic weapon (Mavor, Scathis, Salvation, Yolona)
-- Point defense
+- __Fast land assault__ : Cheapest experimental and good move speed but can be stopped with some defenses and bombers (*Monkeylord*)
+- __Heavy land assault__ : Medium cost, medium strength, medium speed, can handle a good amount of defenses (*Colossus*, *Ythotha*)
+- __Land siege__ : Can use its range to counter defenses (*Fatboy*, *Megalith*)
+- __Land ultimate__ : Very expensive and stupidly strong unit, game ender
+- __Air__ : Massive air unit that can be fatal when ennemies have not enough air defense (*CZAR*, *Soul Ripper*, *Ahwassa*)
+- __Naval battleship__ : Ensure water domination with huge range and tankyness (*Tempest*)
+- __Strategic weapon__ : game ender building (*Mavor, Scathis, Salvation, Yolona*)
+- __Point defense__ : Point defense so strong that it can fight other experimentals if not outranged
 
 To fill the gaps in the list above, I added one experimental for each category and each faction that doesn't have one in the category already.  
 There is no faction that has 2 experimentals in a same category.

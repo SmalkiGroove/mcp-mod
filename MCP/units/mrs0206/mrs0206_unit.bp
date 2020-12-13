@@ -267,7 +267,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_HighArc',
             CollideFriendly = false,
             Damage = 475,
-            DamageRadius = 4,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Unstable Proton Artillery',
             FireTargetLayerCapsTable = {
@@ -351,7 +351,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_HighArc',
             CollideFriendly = false,
             Damage = 475,
-            DamageRadius = 4,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Unstable Proton Artillery',
             FireTargetLayerCapsTable = {

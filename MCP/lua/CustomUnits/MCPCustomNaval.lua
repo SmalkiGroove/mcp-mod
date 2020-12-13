@@ -12,10 +12,7 @@ UnitList = {
     },
 
     T2SubKiller = {
-        Aeon =      {'mas0307', 20},
-        Cybran =    {'mrs0301', 40},
-        UEF =       {'mes0301', 40},
-        Seraphim =  {'mss0204', 20},
+        Seraphim =  {'mss0204', 25},
     },
 
     T2SeaCruiser = {
@@ -30,14 +27,14 @@ UnitList = {
     },
 
     T3Battlecruiser = {
-        Aeon =      {'mas0307', 60},
-        Cybran =    {'mrs0307', 60},
-        Seraphim =  {'mss0307', 60},
+        Aeon =      {'mas0307', 100},
+        Cybran =    {'mrs0307', 100},
+        Seraphim =  {'mss0307', 100},
     },
 
     T3SubKiller = {
-        Aeon =      {'mas0307', 60},
-        Cybran =    {'mrs0301', 60},
-        UEF =       {'mes0301', 60},
+        Aeon =      {'mas0307', 100},
+        Cybran =    {'mrs0301', 100},
+        UEF =       {'mes0301', 100},
     },
 }

@@ -13,6 +13,10 @@ UnitList = {
         Seraphim =  {'msa0105', 100},
     },
 
+    T2FighterBomber = {
+        Aeon =      {'maa0205', 100},
+    },
+
     T3AirFighter = {
         UEF =       {'mea0201', 20},
         Cybran =    {'mra0201', 20},

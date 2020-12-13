@@ -185,7 +185,7 @@ BuilderGroup {
         BuilderName = 'T3XGUNSHIP',
         PlatoonTemplate = 'T3EngineerBuilder',
         Priority = 880,
-        InstanceCount = 5,
+        InstanceCount = 1,
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 6.0, 500.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },

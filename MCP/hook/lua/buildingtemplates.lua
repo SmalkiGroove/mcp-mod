@@ -5,33 +5,33 @@ local seraphimTemplates = BuildingTemplates[4]
 
 -- Replacements
 for i in uefTemplates do
-    if uefTemplates[i][0] == 'T4LandExperimental1' then
-        uefTemplates[i][1] = 'mel1401'
-    elseif uefTemplates[i][0] == 'T4LandExperimental2' then
-        uefTemplates[i][1] = 'mel1402'
-    elseif uefTemplates[i][0] == 'T4AirExperimental1' then
-        uefTemplates[i][1] = 'mea1401'
-    elseif uefTemplates[i][0] == 'T4SeaExperimental1' then
-        uefTemplates[i][1] = 'mes1401'
+    if uefTemplates[i][1] == 'T4LandExperimental1' then
+        uefTemplates[i][2] = 'mel1401'
+    elseif uefTemplates[i][1] == 'T4LandExperimental2' then
+        uefTemplates[i][2] = 'mel1402'
+    elseif uefTemplates[i][1] == 'T4AirExperimental1' then
+        uefTemplates[i][2] = 'mea1401'
+    elseif uefTemplates[i][1] == 'T4SeaExperimental1' then
+        uefTemplates[i][2] = 'mes1401'
     end
 end
 for i in aeonTemplates do
-    if aeonTemplates[i][0] == 'T4LandExperimental1' then
-        aeonTemplates[i][1] = 'mal1401'
+    if aeonTemplates[i][1] == 'T4LandExperimental1' then
+        aeonTemplates[i][2] = 'mal1401'
     end
 end
 for i in cybranTemplates do
-    if cybranTemplates[i][0] == 'T4LandExperimental2' then
-        cybranTemplates[i][1] = 'mrl1402'
-    elseif cybranTemplates[i][0] == 'T4SeaExperimental1' then
-        cybranTemplates[i][1] = 'mrs1401'
+    if cybranTemplates[i][1] == 'T4LandExperimental2' then
+        cybranTemplates[i][2] = 'mrl1402'
+    elseif cybranTemplates[i][1] == 'T4SeaExperimental1' then
+        cybranTemplates[i][2] = 'mrs1401'
     end
 end
 for i in seraphimTemplates do
-    if seraphimTemplates[i][0] == 'T4LandExperimental2' then
-        seraphimTemplates[i][1] = 'msl1402'
-    elseif seraphimTemplates[i][0] == 'T4SeaExperimental1' then
-        seraphimTemplates[i][1] = 'mss1401'
+    if seraphimTemplates[i][1] == 'T4LandExperimental2' then
+        seraphimTemplates[i][2] = 'msl1402'
+    elseif seraphimTemplates[i][1] == 'T4SeaExperimental1' then
+        seraphimTemplates[i][2] = 'mss1401'
     end
 end
 
