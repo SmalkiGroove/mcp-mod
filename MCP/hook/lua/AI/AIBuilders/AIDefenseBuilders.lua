@@ -1187,7 +1187,7 @@ BuilderGroup {
         BuilderData = {
             NumAssistees = 1,
             Construction = {
-                AdjacencyCategory = 'ENERGYPRODUCTION EXPERIMENTAL, ENERGYPRODUCTION TECH3, FACTORY TECH3, FACTORY TECH2, ENERGYPRODUCTION TECH2, FACTORY',
+                AdjacencyCategory = 'ENERGYPRODUCTION STRUCTURE, DEFENSE STRUCTURE, FACTORY STRUCTURE',
                 AdjacencyDistance = 60,
                 BuildClose = false,
                 AvoidCategory = 'SHIELD',

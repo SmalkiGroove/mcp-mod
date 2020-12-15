@@ -167,6 +167,12 @@ table.insert(aeonTemplates, { 'T3ShipDefense', 'mab4305'} ) -- Aeon
 table.insert(cybranTemplates, { 'T3ShipDefense', 'mrb4305'} ) -- Cybran
 table.insert(seraphimTemplates, { 'T3ShipDefense', 'msb4305'} ) -- Seraphim
 
+--T3 Anti Armor
+table.insert(uefTemplates, { 'T3AntiArmor', 'meb2309'} ) -- UEF
+table.insert(aeonTemplates, { 'T3AntiArmor', 'mab2309'} ) -- Aeon
+table.insert(cybranTemplates, { 'T3AntiArmor', 'mrb2309'} ) -- Cybran
+table.insert(seraphimTemplates, { 'T3AntiArmor', 'msb2309'} ) -- Seraphim
+
 
 -- T3 Engi Station
 table.insert(uefTemplates, { 'T3EngineerSupport', 'xeb0204'} ) -- UEF

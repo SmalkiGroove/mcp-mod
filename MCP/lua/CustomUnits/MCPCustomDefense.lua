@@ -7,24 +7,10 @@ UnitList = {
         UEF =		{'meb2107', 25},
     },
 
-    T2Artillery = {
-        Aeon = 		{'mab2309', 15},
-        Seraphim =	{'msb2309', 15},
-        Cybran =	{'mrb2309', 15},
-        UEF =		{'meb2309', 15},
-    },
-
-    T3LandArtillery = {
-        Aeon = 		{'mab2309', 15},
-        Seraphim =	{'msb2309', 15},
-        Cybran =	{'mrb2309', 15},
-        UEF =		{'meb2309', 15},
-    },
-    
     T3GroundDefense = {
-        Cybran =	{'mrb2306', 90},
-        Aeon =	    {'mab2306', 90},
-        Seraphim =	{'msb2306', 90},
+        Cybran =	{'mrb2306', 100},
+        Aeon =	    {'mab2306', 100},
+        Seraphim =	{'msb2306', 100},
     },
 
 }

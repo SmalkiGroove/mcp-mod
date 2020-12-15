@@ -1043,16 +1043,12 @@ UnitBlueprint {
             WeaponUnpacks = false,
             NotExclusive = true,
         },
-	
-	----								----
-	----			CrashWeapon			----
-	----								----
-	
+
         {
             AboveWaterTargetsOnly = true,
-            Damage = 5000,
+            Damage = 2500,
             DamageFriendly = true,
-            DamageRadius = 12,
+            DamageRadius = 4,
             DamageType = 'Normal',
             DisplayName = 'Air Crash',
             DummyWeapon = true,

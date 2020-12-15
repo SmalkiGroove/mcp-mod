@@ -679,7 +679,9 @@ function StrategicIcons(all_bps)
         urb4207 = 'icon_structure3_shield',--Cybran T3b Shield
     }
     for unitid, icon in IconChanges do
-        all_bps[unitid].StrategicIconName = icon
+        if all_bps[unitid] then
+            all_bps[unitid].StrategicIconName = icon
+        end
     end
 end
 

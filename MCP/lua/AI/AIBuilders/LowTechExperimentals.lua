@@ -289,6 +289,7 @@ BuilderGroup {
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 9, categories.MOBILE * categories.AIR - categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
@@ -303,6 +304,7 @@ BuilderGroup {
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 18, categories.MOBILE * categories.AIR - categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsWithCategory', { 4, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.AIR * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
@@ -318,6 +320,7 @@ BuilderGroup {
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 3.0, 200.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 6, categories.MOBILE * categories.NAVAL - categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
@@ -332,7 +335,8 @@ BuilderGroup {
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 4.0, 300.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 12, categories.MOBILE * categories.NAVAL - categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 2, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },
@@ -346,7 +350,8 @@ BuilderGroup {
         BuilderConditions = {
             { EBC, 'GreaterThanEconIncome', { 5.0, 400.0 } },
             { EBC, 'GreaterThanEconStorageRatio', { 0.5, 0.9 } },
-            { UCBC, 'HaveLessThanUnitsWithCategory', { 3, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
+            { UCBC, 'HaveGreaterThanUnitsWithCategory', { 18, categories.MOBILE * categories.NAVAL - categories.TECHEXP }},
+            { UCBC, 'HaveLessThanUnitsWithCategory', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'HaveLessThanUnitsInCategoryBeingBuilt', { 1, categories.MOBILE * categories.NAVAL * categories.TECHEXP }},
             { UCBC, 'UnitCapCheckLess', { 0.99 } },
         },

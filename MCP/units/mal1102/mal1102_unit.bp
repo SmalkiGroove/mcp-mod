@@ -219,7 +219,7 @@ UnitBlueprint {
         MotionType = 'RULEUMT_Land',
         RotateOnSpot = false,
         RotateOnSpotThreshold = 0.1,
-        SkirtOffsetX = -0.5,
+        SkirtOffsetX = -1,
         SkirtOffsetZ = -0.5,
         SkirtSizeX = 4,
         SkirtSizeZ = 4,

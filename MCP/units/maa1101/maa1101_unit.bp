@@ -263,7 +263,7 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
-                Air = 'AirLand|Water|Seabed',
+                Air = 'Land|Water|Seabed',
             },
             FiringRandomness = 0.1,
             AutoInitiateAttackCommand = true,
@@ -312,7 +312,7 @@ UnitBlueprint {
                 'SPECIALLOWPRI',
                 'ALLUNITS',
             },
-            TargetRestrictDisallow = 'HIGHALTAIR, UNTARGETABLE',
+            TargetRestrictDisallow = 'UNTARGETABLE',
             TrackingRadius = 1.35,
             TurretBoneMuzzle = 'Dummy01',
             TurretBonePitch = 'Object11',

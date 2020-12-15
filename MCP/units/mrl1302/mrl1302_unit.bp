@@ -318,7 +318,7 @@ UnitBlueprint {
         MaxSpeedReverse = 1,
         MaxSteerForce = 10,
         SkirtOffsetX = -1.5,
-        SkirtOffsetZ = -1.5,
+        SkirtOffsetZ = -1.8,
         SkirtSizeX = 5,
         SkirtSizeZ = 5,
         MeshExtentsX = 3.1,

@@ -387,7 +387,7 @@ UnitBlueprint {
             TurretBoneDualPitch = 'Left_Gun_Pivot',
             TurretBoneMuzzle = 'R_Turret_Muzzle',
             TurretBonePitch = 'Right_Gun_Pivot',
-            TurretBoneYaw = 'bal0310',
+            TurretBoneYaw = 'BAL0310',
             TurretDualManipulators = true,
             TurretPitch = 0,
             TurretPitchRange = 50,

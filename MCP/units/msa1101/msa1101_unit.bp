@@ -262,7 +262,7 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Thau Cannon',
             FireTargetLayerCapsTable = {
-                Air = 'Air|Land|Water|Seabed',
+                Air = 'Land|Water|Seabed',
             },
             FiringTolerance = 2,
             Label = 'MainTurret',
@@ -301,7 +301,7 @@ UnitBlueprint {
                 'SPECIALLOWPRI',
                 'ALLUNITS',
             },
-            TargetRestrictDisallow = 'HIGHALTAIR, UNTARGETABLE',
+            TargetRestrictDisallow = 'UNTARGETABLE',
             TrackingRadius = 1.0,
             TurretBoneMuzzle = 'Muzzle',
             TurretBonePitch = 'Muzzle',

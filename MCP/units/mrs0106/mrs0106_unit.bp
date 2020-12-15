@@ -317,7 +317,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 22,
-            MuzzleVelocityReduceDistance = 85,			
+            MuzzleVelocityReduceDistance = 85,		
             ProjectileId = '/projectiles/CIFMolecularResonanceShell01/CIFMolecularResonanceShell01_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
