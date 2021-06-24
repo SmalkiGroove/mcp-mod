@@ -188,7 +188,7 @@ UnitBlueprint {
     SizeX = 0.5,
     SizeY = 0.2,
     SizeZ = 0.5,
-    StrategicIconName = 'icon_fighter1_directfire',
+    StrategicIconName = 'icon_fighter1_bomb',
     StrategicIconSize = 1,
     StrategicIconSortPriority = 105,
     Transport = {

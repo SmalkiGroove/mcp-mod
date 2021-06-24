@@ -245,7 +245,7 @@ UnitBlueprint {
     SizeX = 5.5,
     SizeY = 3,
     SizeZ = 25,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'icon_experimental_antinavy',
     StrategicIconSortPriority = 145,
     Veteran = {
         Level1 = 32,

@@ -267,7 +267,7 @@ UnitBlueprint {
     SizeX = 4,
     SizeY = 12,
     SizeZ = 4,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'icon_experimental_directfire',
     StrategicIconSortPriority = 240,
     Weapon = {
         {
@@ -297,7 +297,7 @@ UnitBlueprint {
             BeamLifetime = 0,
             ContinuousBeam = true,
             CollideFriendly = false,
-            Damage = 260,
+            Damage = 248,
             DamageRadius = 1,
             DamageType = 'Normal',
             DisplayName = 'Experimental Phason Beam Generator',
@@ -383,7 +383,7 @@ UnitBlueprint {
             BeamLifetime = 0,
             ContinuousBeam = true,
             CollideFriendly = false,
-            Damage = 260,
+            Damage = 248,
             DamageRadius = 1,
             DamageType = 'Normal',
             DisplayName = 'Experimental Phason Beam Generator',

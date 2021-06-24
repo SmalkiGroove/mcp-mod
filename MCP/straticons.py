@@ -4,16 +4,16 @@ import os
 # ---------------
 
 # If set to 'False', it will use default strategic icons available in FAF, if set to 'True', it will use custom strategic icons from this mod.
-expand_strategic_icons = False 
+expand_strategic_icons = True 
 
 # Data table
 # ----------
 data = [
     # T1 Poly PD
-    # ['meb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    # ['mrb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    # ['mab2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
-    # ['msb2103', 'icon_structure1_directfire', 'icon_structure1_antiartillery'],
+    # ['meb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
+    # ['mrb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
+    # ['mab2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
+    # ['msb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
     # T1 Heavy PD
     ['meb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
     ['mrb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
@@ -52,6 +52,30 @@ data = [
     # Drones
     ['msl1401a', 'icon_fighter1_directfire', 'icon_fighter1_bomb'],
     ['mss1101a', 'icon_fighter1_directfire', 'icon_fighter1_antinavy'],
+    # Air experimentals
+    ['mea1401', 'icon_experimental_generic', 'icon_experimental_antiair'],
+    # Naval experimentals
+    ['mes1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+    ['mrs1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+    ['mss1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+    # Defense experimentals
+    ['mab2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
+    ['meb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
+    ['mrb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
+    ['msb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
+    # Strategic experimentals
+    ['mrb2401', 'icon_experimental_generic', 'icon_experimental_artillery'],
+    # Other experimentals
+    ['msb4401', 'icon_experimental_generic', 'icon_experimental_shield'],
+]
+
+hookdata = [
+    # Hooked unit blueprints
+    ['uas0401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+]
+
+filedata = [
+    ['modunits/mod_straticons.bp.bak', 'modunits/mod_straticons.bp'],
 ]
 
 # Renaming functions
@@ -60,6 +84,8 @@ modpath = os.path.dirname(os.path.abspath(__file__))
 
 # DOC : replace all occurences of 'fromstr' by 'tostr' in file located at 'filepath'. Overwrites file.
 def replace_in_file(filepath, fromstr, tostr):
+    if not os.path.exists(filepath):
+        return
     file_r = open(filepath, 'r')
     content = file_r.read()
     file_r.close()
@@ -76,7 +102,7 @@ def replace_in_file(filepath, fromstr, tostr):
 # Main script
 # -----------
 print("##########################################")
-print("Setting expanded strategic icons to false.".format(expand_strategic_icons))
+print("Setting expanded strategic icons to {}.".format(expand_strategic_icons))
 print("##########################################")
 
 for d in data:
@@ -86,5 +112,21 @@ for d in data:
     unit_file_path = os.path.join(modpath, "units/{}/{}_unit.bp".format(unit_name, unit_name))
     print("Replace '{}' by '{}' in file {}".format(current_straticon_name, target_straticon_name, unit_file_path))
     replace_in_file(unit_file_path, current_straticon_name, target_straticon_name)
+for d in hookdata:
+    unit_name = d[0]
+    current_straticon_name = d[1] if expand_strategic_icons else d[2]
+    target_straticon_name = d[2] if expand_strategic_icons else d[1]
+    unit_file_path = os.path.join(modpath, "hook/units/{}/{}_unit.bp".format(unit_name, unit_name))
+    print("Replace '{}' by '{}' in file {}".format(current_straticon_name, target_straticon_name, unit_file_path))
+    replace_in_file(unit_file_path, current_straticon_name, target_straticon_name)
+for d in filedata:
+    current_file_name = d[0] if expand_strategic_icons else d[1]
+    target_file_name = d[1] if expand_strategic_icons else d[0]
+    current_file = os.path.join(modpath, current_file_name)
+    target_file = os.path.join(modpath, target_file_name)
+    print("Rename '{}' to '{}'".format(current_file, target_file))
+    if os.path.exists(current_file):
+        os.rename(current_file, target_file)
+        print("Renamed file '{}' successfully.".format(target_file))
 
 print("Done !")

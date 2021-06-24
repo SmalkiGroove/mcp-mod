@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+-- Experimentals
+--------------------------------------------------------------------------------
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uaa0310",
+    StrategicIconName = 'icon_experimental_antiair',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ura0401",
+    StrategicIconName = 'icon_experimental_antiair',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xsa0402",
+    StrategicIconName = 'icon_experimental_antiair',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xab2307",
+    StrategicIconName = 'icon_experimental_artillery',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb2401",
+    StrategicIconName = 'icon_experimental_artillery',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xsb2401",
+    StrategicIconName = 'icon_experimental_artillery',
+}

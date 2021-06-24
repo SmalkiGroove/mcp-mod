@@ -157,7 +157,7 @@ UnitBlueprint {
     SizeX = 3,
     SizeY = 7,
     SizeZ = 4.1,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'icon_experimental_directfire',
     StrategicIconSortPriority = 200,
     Weapon = {
         {
@@ -191,7 +191,7 @@ UnitBlueprint {
             BeamLifetime = 0,
             ContinuousBeam = true,
             CollideFriendly = false,
-            Damage = 666,
+            Damage = 369,
             DamageType = 'Normal',
             DisplayName = 'Microwave Laser',
             EnergyDrainPerSecond = 500,

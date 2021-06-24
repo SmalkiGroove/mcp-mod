@@ -196,7 +196,7 @@ UnitBlueprint {
     SizeX = 0.6,
     SizeY = 1.1,
     SizeZ = 4.3,
-    StrategicIconName = 'icon_ship1_missile',
+    StrategicIconName = 'icon_ship1_artillery',
     StrategicIconSortPriority = 165,
     Veteran = {
         Level1 = 8,
@@ -254,7 +254,7 @@ UnitBlueprint {
 			MuzzleVelocityReduceDistance = 85,
             ProjectileId = '/projectiles/AIFMiasmaShell01/AIFMiasmaShell01_proj.bp',
             ProjectilesPerOnFire = 1,
-            RackBones = {			
+            RackBones = {
                 {
                     MuzzleBones = {
                         'Muzzle01',
@@ -266,7 +266,7 @@ UnitBlueprint {
                         'Muzzle02',
                     },
                     RackBone = 'Cannon02',
-                },				
+                },
             },
             RackFireTogether = false,
             RackRecoilDistance = -6,

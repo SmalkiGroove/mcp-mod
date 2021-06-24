@@ -207,7 +207,7 @@ UnitBlueprint {
             BeamLifetime = 0.2,
             CollideFriendly = false,
             ContinuousBeam = true,
-            Damage = 22,
+            Damage = 46,
             DamageFriendly = false,
             DamageType = 'Normal',
             DamageRadius = 0.5,
@@ -251,7 +251,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 1.6,
+            RateOfFire = 1.62,
             ReTargetOnMiss = true,
             TargetCheckInterval = 0.5,
             TargetPriorities = {

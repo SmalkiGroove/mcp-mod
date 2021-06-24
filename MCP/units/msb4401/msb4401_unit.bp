@@ -44,6 +44,7 @@ UnitBlueprint {
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
+        'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3FIELD',
         'BUILTBYTIER3COMMANDER',
         'SERAPHIM',
@@ -247,7 +248,7 @@ UnitBlueprint {
     SizeX = 3.5,
     SizeY = 4.5,
     SizeZ = 3.5,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'icon_experimental_shield',
     StrategicIconSortPriority = 100,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',

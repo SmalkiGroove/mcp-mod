@@ -1,7 +1,9 @@
 UnitList = {
 
     T1SeaFrigate = {
+        UEF =       {'mes0102', 35},
         Cybran =    {'mrs0102', 25},
+        Seraphim =  {'mss0102', 35},
     },
 
     T1SeaAntiAir = {
@@ -13,6 +15,10 @@ UnitList = {
 
     T2SubKiller = {
         Seraphim =  {'mss0204', 25},
+    },
+
+    T2SeaDestroyer = {
+        Aeon =      {'mas0205', 35},
     },
 
     T2SeaCruiser = {
