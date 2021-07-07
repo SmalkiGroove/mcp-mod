@@ -58,8 +58,8 @@ UnitBlueprint {
         AirThreatLevel = 1,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 720,
-        MaxHealth = 720,
+        Health = 825,
+        MaxHealth = 825,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 9,
@@ -131,9 +131,9 @@ UnitBlueprint {
         UniformScale = 0.06,
     },
     Economy = {
-        BuildCostEnergy = 2000,
-        BuildCostMass = 180,
-        BuildTime = 750,
+        BuildCostEnergy = 1180,
+        BuildCostMass = 124,
+        BuildTime = 650,
     },
     Footprint = {
         SizeX = 2,
