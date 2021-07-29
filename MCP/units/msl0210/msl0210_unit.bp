@@ -130,7 +130,7 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXL0001',
         SpawnRandomRotation = true,
-        UniformScale = 0.063*1.1,
+        UniformScale = 0.07,
     },
     Economy = {
         BuildCostEnergy = 1000,
@@ -230,11 +230,11 @@ UnitBlueprint {
         TransportClass = 2,
     },
     Veteran = {
-        Level1 = 3*2,
-        Level2 = 6*2,
-        Level3 = 9*2,
-        Level4 = 12*2,
-        Level5 = 15*2,
+        Level1 = 6,
+        Level2 = 12,
+        Level3 = 18,
+        Level4 = 24,
+        Level5 = 30,
     },
     Weapon = {
         {

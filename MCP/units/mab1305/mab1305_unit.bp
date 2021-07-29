@@ -54,8 +54,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 56,
-        Health = 9720*1.5,
-        MaxHealth = 9720*1.5,      
+        Health = 14580,
+        MaxHealth = 14580,      
         Shield = {
             ImpactEffects = 'AeonShieldHit01',
             ImpactMesh = '/effects/entities/ShieldSection01/ShieldSection01_mesh',
@@ -181,9 +181,9 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentStructureEnergyMod = -5,
-        BuildCostEnergy = 57600*1.25,
-        BuildCostMass = 3240*1.25,
-        BuildTime = 5400*1.25,  
+        BuildCostEnergy = 72000,
+        BuildCostMass = 4050,
+        BuildTime = 6750,  
         HalfPriceUpgradeFromID = 'uab1301',                  
         MaintenanceConsumptionPerSecondEnergy = 375,
         ProductionPerSecondEnergy = 2500,
@@ -275,7 +275,7 @@ UnitBlueprint {
         {
             Damage = 8000,
             DamageFriendly = true,
-            DamageRadius = 10*.666666,
+            DamageRadius = 7,
             DamageType = 'Normal',
             DisplayName = 'Death Weapon',
             DummyWeapon = true,

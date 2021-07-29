@@ -276,7 +276,7 @@ UnitBlueprint {
             AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 375*3,
+            Damage = 1125,
             DamageType = 'Normal',
             DisplayName = 'Heavy Cavitation Cluster Torpedo Launcher',
             EffectiveRadius = 19,

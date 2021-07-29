@@ -216,11 +216,11 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 6000*.25,
+            Damage = 1500,
             DamageRadius = 2.5,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',           
-            EnergyDrainPerSecond = 2500/2,
+            EnergyDrainPerSecond = 1250,
             EnergyRequired = 2500,
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',

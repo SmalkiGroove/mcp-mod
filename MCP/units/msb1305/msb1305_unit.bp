@@ -52,8 +52,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 56,
-        Health = 9720*2.5,
-        MaxHealth = 9720*2.5,
+        Health = 24300,
+        MaxHealth = 24300,
         RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -164,9 +164,9 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentStructureEnergyMod = -5,
-        BuildCostEnergy = 57600*1.25,
-        BuildCostMass = 3240*1.25,
-        BuildTime = 5400*1.25,
+        BuildCostEnergy = 72000,
+        BuildCostMass = 4050,
+        BuildTime = 6750,
         HalfPriceUpgradeFromID = 'xsb1301', 
         ProductionPerSecondEnergy = 2500,
         RebuildBonusIds = {
@@ -248,7 +248,7 @@ UnitBlueprint {
         {
             Damage = 8000,
             DamageFriendly = true,
-            DamageRadius = 10*.666666666,
+            DamageRadius = 7,
             DamageType = 'Normal',
             DisplayName = 'Death Weapon',
             DummyWeapon = true,

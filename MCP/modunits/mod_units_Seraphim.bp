@@ -39,7 +39,6 @@ UnitBlueprint {
         MaxSpeedReverse = 2.5,
         TurnRate = 60,
     },
-    StrategicIconName = 'icon_bot3_armored',
     Weapon = {
         {
             MaxRadius = 30,

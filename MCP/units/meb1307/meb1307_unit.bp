@@ -92,8 +92,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 39,
-        Health = 6000*1.5,
-        MaxHealth = 6000*1.5,
+        Health = 9000,
+        MaxHealth = 9000,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -173,9 +173,9 @@ UnitBlueprint {
         UniformScale = 0.35,
     },
     Economy = {
-        BuildCostEnergy = 65000*1.25,
-        BuildCostMass = 3000*1.25,
-        BuildTime = 3750*1.25,  
+        BuildCostEnergy = 81250,
+        BuildCostMass = 3750,
+        BuildTime = 4690,
         BuildRate = 15,                             
         BuildableCategory = {
             'BUILTBYTIER1FIELD DEFENSE DIRECTFIRE UEF',
@@ -278,7 +278,7 @@ UnitBlueprint {
     StrategicIconSortPriority = 240,
     Weapon = {
         {
-            Damage = 5000*.666666,
+            Damage = 3333,
             DamageFriendly = true,
             DamageRadius = 14,
             DamageType = 'Normal',

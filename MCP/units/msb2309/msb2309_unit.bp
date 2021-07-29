@@ -201,7 +201,7 @@ UnitBlueprint {
             DamageRadius = 2.5,
             DamageType = 'Normal',
             DisplayName = 'Heavy Sinn Unthe Cannon',       
-            EnergyDrainPerSecond = 2250/2,
+            EnergyDrainPerSecond = 1125,
             EnergyRequired = 2250,
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',

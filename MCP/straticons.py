@@ -9,11 +9,10 @@ expand_strategic_icons = True
 # Data table
 # ----------
 data = [
-    # T1 Poly PD
-    # ['meb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
-    # ['mrb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
-    # ['mab2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
-    # ['msb2103', 'icon_structure1_antiartillery', 'icon_structure1_antiartillery'],
+    # T2 EMP Tank
+    ['msl0204', 'icon_land2_bomb', 'icon_land2_stunner'],
+    # T3 Armored Tank
+    ['mal0306', 'icon_land3_directfire', 'icon_land3_armored'],
     # T1 Heavy PD
     ['meb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
     ['mrb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
@@ -26,9 +25,8 @@ data = [
     ['msb2202', 'icon_structure2_land', 'icon_structure2_bomb'],
     # T3 Heavy PD
     ['meb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
-    ['meb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
-    ['meb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
-    ['meb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
+    ['mrb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
+    ['mab2307', 'icon_structure3_land', 'icon_structure3_bomb'],
     # T2 Anti Navy PD
     ['meb4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],
     ['mrb4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],

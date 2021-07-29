@@ -281,7 +281,7 @@ UnitBlueprint {
             AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 375*2,
+            Damage = 750,
             DamageType = 'Normal',
             DisplayName = 'Angler Torpedo',
             FireTargetLayerCapsTable = {

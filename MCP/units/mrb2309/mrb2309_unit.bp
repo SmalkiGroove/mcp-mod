@@ -259,7 +259,7 @@ UnitBlueprint {
             RackSalvoSize = 3,
             RackSlavedToTurret = true,
             RangeCategory = 'UWRC_IndirectFire',
-            RateOfFire = 0.25*.65,
+            RateOfFire = 0.165,
             TargetCheckInterval = 2,
             TargetPriorities = {
                 'SPECIALHIGHPRI',

@@ -31,3 +31,8 @@ UnitBlueprint {
 	BlueprintId="xsb2401",
     StrategicIconName = 'icon_experimental_artillery',
 }
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xsl0303",
+    StrategicIconName = 'icon_land3_armored',
+}
