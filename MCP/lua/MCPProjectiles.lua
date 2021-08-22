@@ -10,7 +10,6 @@ local NullShell = DefaultProjectileFile.NullShell
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 local util = import('/lua/utilities.lua')
-local NukeProjectile = DefaultProjectileFile.NukeProjectile
 
 -- Null Shell
 EXNullShell = Class(Projectile) {}
@@ -591,25 +590,6 @@ NapalmProjectile02 = Class(EmitterProjectile) {
     FxNoneHitScale = 0.5,
 }
 
--- ARTEMIS CANNON PROJECTILES
-ArtemisCannonProjectile = Class(SinglePolyTrailProjectile) {
-    PolyTrail = MCPEffectTemplate.ArtemisPolytrail01,
-    FxTrails = MCPEffectTemplate.ArtemisFXTrail,
-
-    FxImpactUnit = EffectTemplate.AReactonCannonHitUnit01,
-    FxImpactProp = EffectTemplate.AReactonCannonHitUnit01,
-    FxImpactLand = EffectTemplate.AReactonCannonHitLand01,
-}
-
-DummyArtemisCannonProjectile = Class(MultiPolyTrailProjectile) {
-    PolyTrail = MCPEffectTemplate.DummyArtemisPolytrail01,
-    FxTrails = MCPEffectTemplate.DummyArtemisFXTrail,
-
-    FxImpactUnit = EffectTemplate.AReactonCannonHitUnit01,
-    FxImpactProp = EffectTemplate.AReactonCannonHitUnit01,
-    FxImpactLand = EffectTemplate.AReactonCannonHitLand01,
-}
-
 -- AEON ABOVE WATER LAUNCHED TORPEDO
 AMTorpedoShipProjectile = Class(OnWaterEntryEmitterProjectile) {
     FxInitial = {},
@@ -973,72 +953,6 @@ NovaStunProjectile = Class(NullShell) {
             local blanketX = math.sin(i*blanketAngle)
             local blanketZ = math.cos(i*blanketAngle)
             self:CreateProjectile('/effects/entities/EffectProtonAmbient01/EffectProtonAmbient01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
-                :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
-        end
-
-        EmitterProjectile.OnImpact(self, targetType, targetEntity)
-    end,
-}
-
-GLaserProjectile = Class(MultiPolyTrailProjectile) {
-    FxTrails = MCPEffectTemplate.GoldenTurboLaserShot01FXTrail,  
-    PolyTrails = MCPEffectTemplate.GoldenTurboLaserShot01,
-}
-
--- Garg Weapons
-RedTurbolaserProjectile = Class(MultiPolyTrailProjectile) {
-    FxTrails = {},  
-    PolyTrails = MCPEffectTemplate.RedTurboLaser01,
-    
-    -- Hit Effects
-    FxImpactUnit = EffectTemplate.TLandGaussCannonHit01,
-    FxUnitHitScale = 2,
-    FxImpactProp = EffectTemplate.TLandGaussCannonHit01,
-    FxPropHitScale = 2,
-    FxImpactAirUnit = EffectTemplate.TLandGaussCannonHit01,
-    FxAirUnitHitScale = 2,
-    FxImpactLand = EffectTemplate.TLandGaussCannonHit01,
-    FxLandHitScale = 2,
-    FxImpactUnderWater = {},
-}
-
-GargEMPWarheadProjectile = Class(NukeProjectile, SingleBeamProjectile) {
-    BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
-    FxTrailOffset = -0.5,
-
-    -- LAUNCH TRAILS
-    FxLaunchTrails = {},
-
-    -- TRAILS
-    FxTrails = {'/effects/emitters/missile_cruise_munition_trail_01_emit.bp',},
-
-    -- Hit Effects
-    
-    FxImpactUnit = MCPEffectTemplate.GargWarheadHitUnit,
-    FxImpactProp = MCPEffectTemplate.GargWarheadHitUnit,
-    FxImpactLand = MCPEffectTemplate.GargWarheadHitUnit,
-    FxImpactUnderWater = MCPEffectTemplate.GargWarheadHitUnit,
-    FxImpactWater = MCPEffectTemplate.GargWarheadHitUnit,
-    FxImpactShield = MCPEffectTemplate.GargWarheadHitUnit,
-    FxLandHitScale = 3,
-    FxPropHitScale = 3,
-    FxUnitHitScale = 3,
-    FxShieldHitScale = 3,
-    FxImpactUnderWater = {},
-    
-    OnImpact = function(self, targetType, targetEntity)
-        local army = self:GetArmy()
-
-        local blanketSides = 12
-        local blanketAngle = (2*math.pi) / blanketSides
-        local blanketStrength = 1
-        local blanketVelocity = 2
-        CreateLightParticle(self, -1, -1, 80, 200, 'flare_lens_add_02', 'ramp_red_10')
-
-        for i = 0, (blanketSides-1) do
-            local blanketX = math.sin(i*blanketAngle)
-            local blanketZ = math.cos(i*blanketAngle)
-            self:CreateProjectile('/mods/MCP/effects/entities/EffectEMPAmbient01/EffectEMPAmbient01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
                 :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
         end
 

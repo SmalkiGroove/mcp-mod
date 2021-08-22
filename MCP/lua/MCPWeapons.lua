@@ -389,13 +389,6 @@ LambdaWeapon = Class(DefaultProjectileWeapon) {
     FxChargeMuzzleFlash = EffectTemplate.SDFExperimentalPhasonProjChargeMuzzleFlash,
 }
 
-ArtemisWeapon = Class(DefaultProjectileWeapon) {
-    FxMuzzleFlash = MCPEffectTemplate.ArtemisMuzzleFlash,
-    FxChargeMuzzleFlash = MCPEffectTemplate.ArtemisMuzzleChargeFlash,
-    FxMuzzleFlashScale = 2,
-    FxChargeMuzzleFlashScale = 2,
-}
-
 TDFGoliathShoulderBeam = Class(DefaultBeamWeapon) {
     BeamType = MCPCollisionBeamFile.TDFGoliathCollisionBeam,
     FxMuzzleFlash = {},
@@ -421,138 +414,13 @@ HawkGaussCannonWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = EffectTemplate.TGaussCannonFlash,
 }
 
-UEFNavyMineWeapon = Class(KamikazeWeapon){
-    FxDeath = MCPEffectTemplate.NavalMineHit01,
-
-    OnFire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end
-        KamikazeWeapon.OnFire(self)
-    end,
-}
-
-UEFNavyMineDeathWeapon = Class(BareBonesWeapon) {
-    FxDeath = MCPEffectTemplate.NavalMineHit01,
-    
-    OnCreate = function(self)
-        BareBonesWeapon.OnCreate(self)
-        self:SetWeaponEnabled(false)   
-    end,
-
-    OnFire = function(self)
-    end,
-    
-    Fire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end
-        local myBlueprint = self:GetBlueprint()
-        DamageArea(self.unit, self.unit:GetPosition(), myBlueprint.DamageRadius, myBlueprint.Damage, myBlueprint.DamageType or 'Normal', myBlueprint.DamageFriendly or false)
-    end,    
-}
-
-AeonMineDeathWeapon = Class(DefaultProjectileWeapon) {
-    FxMuzzleFlash = {
-        '/effects/emitters/default_muzzle_flash_01_emit.bp',
-        '/effects/emitters/default_muzzle_flash_02_emit.bp',
-        '/effects/emitters/torpedo_underwater_launch_01_emit.bp',
-    },
-    OnWeaponFired = function(self)
-        self.unit:Kill()
-    end,
-}
-
-SeraNavyMineWeapon = Class(KamikazeWeapon){
-    FxDeath = MCPEffectTemplate.SDFExperimentalPhasonProjHit01,
-
-    OnFire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end
-        KamikazeWeapon.OnFire(self)
-    end,
-}
-
-SeraNavyMineDeathWeapon = Class(BareBonesWeapon) {
-    FxDeath = MCPEffectTemplate.MineExplosion01,
-    
-    OnCreate = function(self)
-        BareBonesWeapon.OnCreate(self)
-        self:SetWeaponEnabled(false)   
-    end,
-    
-
-    OnFire = function(self)
-    end,
-    
-    Fire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end 
-        local myBlueprint = self:GetBlueprint()
-        DamageArea(self.unit, self.unit:GetPosition(), myBlueprint.DamageRadius, myBlueprint.Damage, myBlueprint.DamageType or 'Normal', myBlueprint.DamageFriendly or false)
-    end,
-}
-
-SeraMineDeathExplosion = Class(BareBonesWeapon) {
-    FxDeath = MCPEffectTemplate.MineExplosion01,
-    
-    OnCreate = function(self)
-        BareBonesWeapon.OnCreate(self)
-        self:SetWeaponEnabled(false)   
-    end,
-    
-
-    OnFire = function(self)
-    end,
-    
-    Fire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end
-        local myBlueprint = self:GetBlueprint()
-        DamageArea(self.unit, self.unit:GetPosition(), myBlueprint.DamageRadius, myBlueprint.Damage, myBlueprint.DamageType or 'Normal', myBlueprint.DamageFriendly or false)
-    end,    
-}
-
-SeraMineExplosion = Class(KamikazeWeapon){
-    FxDeath = MCPEffectTemplate.MineExplosion01,
-
-    OnFire = function(self)
-        local army = self.unit:GetArmy()
-        for k, v in self.FxDeath do
-            CreateEmitterAtBone(self.unit,-2,army,v)
-        end
-        KamikazeWeapon.OnFire(self)
-    end,
-}
-
 MGAALaserWeapon = Class(DefaultBeamWeapon) {
     BeamType = MCPCollisionBeamFile.MGAALaserCollisionBeam,
     FxMuzzleFlash = {'/effects/emitters/particle_cannon_muzzle_01_emit.bp'},
 }
 
-GoldenLaserGenerator = Class(DefaultBeamWeapon) {
-    BeamType = MCPCollisionBeamFile.GoldenLaserCollisionBeam01,
-    FxMuzzleFlash = {},
-    FxChargeMuzzleFlash = {},
-}
-
 RedHeavyTurboLaserWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = MCPEffectTemplate.RedLaserMuzzleFlash01,
-}
-
-ArtemisLaserGenerator = Class(DefaultBeamWeapon) {
-    BeamType = MCPCollisionBeamFile.GoldenLaserCollisionBeam01,
-    FxMuzzleFlash = MCPEffectTemplate.ArtemisMuzzleFlash,
-    FxMuzzleFlashEffectScale = 0.5,
-    FxChargeMuzzleFlash = {},
 }
 
 BOHellstormGun = Class(DefaultProjectileWeapon) {

@@ -158,7 +158,7 @@ UnitBlueprint {
             RULEUTC_IntelToggle = true,
         },
         TechLevel = 'RULEUTL_Secret',
-        UnitName = '<LOC mrb5302_name>Naval Staging yard',
+        UnitName = '<LOC mrb5302_name>Mirage',
         UnitWeight = 1,
     },
     Intel = {

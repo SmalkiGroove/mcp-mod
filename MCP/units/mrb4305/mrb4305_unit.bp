@@ -129,7 +129,7 @@ UnitBlueprint {
         Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
-        UnitName = 'Naval Cannon',
+        UnitName = 'Boulder',
         UnitWeight = 1,
     },
     Intel = {
