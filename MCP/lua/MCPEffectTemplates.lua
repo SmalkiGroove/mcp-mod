@@ -2181,3 +2181,21 @@ CybranT3AdvancedBattleBotDeath01 = {
     EmtBpPath .. 'antimatter_hit_09_emit.bp',	##	base smoke
     EmtBpPath .. 'antimatter_hit_07_emit.bp',	##	base dark 
 }
+
+MadCatDeath01 = {
+	EmtBpPathAlt .. 'cybran_t2beetle_01_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_02_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_03_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_04_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_05_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_06_emit.bp',
+	EmtBpPathAlt .. 'cybran_t2beetle_07_emit.bp',
+    EmtBpPathAlt .. 'bigdistort_emit.bp',
+    EmtBpPathAlt .. 'bm2rockethit_12_emit.bp', ## white glow
+	EmtBpPathAlt .. 'bm2rockethit_08_emit.bp', ## Yellow Afterglow
+    EmtBpPathAlt .. 'tmcybrant2battletankhit_01_emita.bp', ## Exploding flames
+    EmtBpPathAlt .. 'bm2rockethit_11_emitaa.bp', ## Cool exploding flames!!!
+    EmtBpPathAlt .. 'comedred_darkfire_emit.bp',	##	
+    EmtBpPathAlt .. 'comedred_fire_emit.bp',	##
+    EmtBpPathAlt .. 'comedred_smoke_emit.bp',	##	
+}
