@@ -64,7 +64,7 @@ UnitBlueprint {
         --'MOBILE',
         'AIR',
         --'DEFENSE',
-        --'EXPERIMENTAL',
+        'EXPERIMENTAL',
         'SHIELD',
         --'SIZE16',
         'VISIBLETORECON',

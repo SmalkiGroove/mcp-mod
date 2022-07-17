@@ -165,7 +165,7 @@ UnitBlueprint {
             RULEUCC_Stop = true,
             RULEUCC_Transport = false,
         },
-        FactionName = 'UEF',
+        FactionName = 'Aeon',
         Icon = 'air',
         SelectionPriority = 6,
         TechLevel = 'RULEUTL_Basic',
