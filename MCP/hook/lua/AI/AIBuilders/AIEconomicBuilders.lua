@@ -228,25 +228,25 @@ BuilderGroup {
         },
         BuilderType = 'Any',
     },
-    Builder {
-        BuilderName = 'T1 Engineer Find Unfinished',
-        PlatoonTemplate = 'EngineerBuilder',
-        PlatoonAIPlan = 'ManagerEngineerFindUnfinished',
-        Priority = 1800,
-        InstanceCount = 1,
-        BuilderConditions = {
-                { UCBC, 'UnfinishedUnits', { 'LocationType', categories.STRUCTURE}},
-            },
-        BuilderData = {
-            Assist = {
-                AssistLocation = 'LocationType',
-                AssisteeType = 'Engineer',
-                BeingBuiltCategories = {'STRUCTURE STRATEGIC, STRUCTURE ECONOMIC, STRUCTURE'},
-                Time = 20,
-            },
-        },
-        BuilderType = 'Any',
-    },
+    -- Builder {
+    --     BuilderName = 'T1 Engineer Find Unfinished',
+    --     PlatoonTemplate = 'EngineerBuilder',
+    --     PlatoonAIPlan = 'ManagerEngineerFindUnfinished',
+    --     Priority = 1800,
+    --     InstanceCount = 1,
+    --     BuilderConditions = {
+    --             { UCBC, 'UnfinishedUnits', { 'LocationType', categories.STRUCTURE}},
+    --         },
+    --     BuilderData = {
+    --         Assist = {
+    --             AssistLocation = 'LocationType',
+    --             AssisteeType = 'Engineer',
+    --             BeingBuiltCategories = {'STRUCTURE STRATEGIC, STRUCTURE ECONOMIC, STRUCTURE'},
+    --             Time = 20,
+    --         },
+    --     },
+    --     BuilderType = 'Any',
+    -- },
     Builder {
         BuilderName = 'T1 Engineer Repair',
         PlatoonTemplate = 'EngineerBuilder',
