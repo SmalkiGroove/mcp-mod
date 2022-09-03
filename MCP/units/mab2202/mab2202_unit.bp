@@ -168,7 +168,7 @@ UnitBlueprint {
     SizeX = 1.5,
     SizeY = 1.8,
     SizeZ = 1.5,
-    StrategicIconName = 'icon_structure2_bomb',
+    StrategicIconName = 'icon_structure2_land',
     StrategicIconSortPriority = 180,
     Veteran = {
         Level1 = 10,

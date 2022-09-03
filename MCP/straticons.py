@@ -4,7 +4,7 @@ import os
 # ---------------
 
 # If set to 'False', it will use default strategic icons available in FAF, if set to 'True', it will use custom strategic icons from this mod.
-expand_strategic_icons = True 
+expand_strategic_icons = False 
 
 # Data table
 # ----------

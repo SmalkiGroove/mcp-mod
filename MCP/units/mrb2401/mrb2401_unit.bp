@@ -210,7 +210,7 @@ UnitBlueprint {
     SizeX = 7,
     SizeY = 2,
     SizeZ = 7,
-    StrategicIconName = 'icon_experimental_artillery',
+    StrategicIconName = 'icon_experimental_generic',
     StrategicIconSortPriority = 175,
     Veteran = {
         Level1 = 50,

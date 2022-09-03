@@ -180,7 +180,7 @@ UnitBlueprint {
     SizeX = 1.2,
     SizeY = 1.6,
     SizeZ = 1.2,
-    StrategicIconName = 'icon_structure2_antiship',
+    StrategicIconName = 'icon_structure2_antinavy',
     StrategicIconSortPriority = 180,
     Veteran = {
         Level1 = 9,

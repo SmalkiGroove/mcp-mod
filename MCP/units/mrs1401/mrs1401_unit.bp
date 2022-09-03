@@ -270,7 +270,7 @@ UnitBlueprint {
     SizeX = 10,
     SizeY = 3,
     SizeZ = 20,
-    StrategicIconName = 'icon_experimental_antinavy',
+    StrategicIconName = 'icon_experimental_generic',
     StrategicIconSortPriority = 145,
     SplitDamage = {
         DamageAmount = 16,

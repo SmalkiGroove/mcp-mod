@@ -225,7 +225,7 @@ UnitBlueprint {
     SizeX = 1.5,
     SizeY = 0.8,
     SizeZ = 2.8,
-    StrategicIconName = 'icon_land3_armored',
+    StrategicIconName = 'icon_land3_directfire',
     StrategicIconSortPriority = 115,
     Transport = {
         CanFireFromTransport = false,
