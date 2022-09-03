@@ -7,6 +7,13 @@
 - `git clone https://github.com/SmalkiGroove/mcp-mod.git`
 - Copy the MCP folder in Documents\My Games\Gas Powered Games\Supreme Commander Forged Alliance\mods
 
+## For SCFA Gog and Steam players
+
+- Open the git bash inside the mcp-mod folder
+- `git fetch`
+- `git checkout gog/steam`
+- Copy the MCP folder to the right location
+
 ## Update to the latest version
 
 - Delete the previous MCP folder in your mods
