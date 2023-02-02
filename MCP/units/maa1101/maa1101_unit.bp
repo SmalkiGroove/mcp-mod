@@ -151,6 +151,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TotalMayhem/units/broat1exgs/broat1exgs_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/broat1exgs/broat1exgs_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/broat1exgs/broat1exgs_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/broat1exgs/broat1exgs_specteam.dds',
                 },
             },
         },
@@ -327,7 +331,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 3,
-            WeaponUnpackAnimation = '/mods/MCP/units/maa1101/maa1101_deploy.sca',
+            WeaponUnpackAnimation = '/mods/TotalMayhem/units/BROAT1EXGS/BROAT1EXGS_deploy.sca',
             WeaponUnpackAnimationRate = 5.0,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
@@ -487,7 +491,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 2,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT2EXBMproj/BROT2EXBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonRocket/AeonRocket_proj.bp',
             ProjectileLifetimeUsesMultiplier = 15.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -575,7 +579,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 2,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT2EXBMproj/BROT2EXBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonRocket/AeonRocket_proj.bp',
             ProjectileLifetimeUsesMultiplier = 15.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -663,7 +667,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 2,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT2EXBMproj/BROT2EXBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonRocket/AeonRocket_proj.bp',
             ProjectileLifetimeUsesMultiplier = 15.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -751,7 +755,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 2,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT2EXBMproj/BROT2EXBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonRocket/AeonRocket_proj.bp',
             ProjectileLifetimeUsesMultiplier = 15.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

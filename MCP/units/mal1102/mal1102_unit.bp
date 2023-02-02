@@ -104,10 +104,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/mal1102/AeonTexture_albedo.dds',
                     LODCutoff = 500,
                     Scrolling = true,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TotalMayhem/units/BROT1EXTANK/BROT1EXTANK_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/AeonTexture/AeonTexture_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/BROT1EXTANK/BROT1EXTANK_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/BROT1EXTANK/BROT1EXTANK_specteam.dds',
                 },
             },
         },
@@ -293,7 +296,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/MCP/projectiles/BROT2HTproj/BROT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonOblivion1/AeonOblivion1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -344,7 +347,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 6,
-            WeaponUnpackAnimation = '/mods/MCP/units/mal1102/mal1102_Deploy.sca',
+            WeaponUnpackAnimation = '/mods/TotalMayhem/units/BROT1EXTANK/BROT1EXTANK_Deploy.sca',
             WeaponUnpackAnimationRate = 1.15,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
@@ -395,7 +398,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 55,
-            ProjectileId = '/mods/MCP/projectiles/BROT3SHPD2proj/BROT3SHPD2proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonOblivion2/AeonOblivion2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -440,7 +443,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 6,
-            WeaponUnpackAnimation = '/mods/MCP/units/mal1102/mal1102_Deploy2.sca',
+            WeaponUnpackAnimation = '/mods/TotalMayhem/units/BROT1EXTANK/BROT1EXTANK_Deploy2.sca',
             WeaponUnpackAnimationRate = 1.15,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
@@ -471,7 +474,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -544,7 +547,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -617,7 +620,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -690,7 +693,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -763,7 +766,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -836,7 +839,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 6,
             ProjectilesPerOnFire = 1,
             RackBones = {

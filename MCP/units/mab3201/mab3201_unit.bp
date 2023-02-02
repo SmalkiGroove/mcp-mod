@@ -57,7 +57,7 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mab3201/mab3201_death.sca',
+                Animation = '/mods/TotalMayhem/units/BROBT1PERI/BROBT1PERI_death.sca',
                 AnimationRateMax = 1.77,
                 AnimationRateMin = 1.77,
                 Weight = 160,
@@ -67,11 +67,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 300,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brobt1peri/brobt1peri_lod0.scm',
 					AlbedoName = '/Units/uab0302/uab0302_Albedo.dds',
 					NormalsName = '/Units/uab0302/uab0302_NormalsTS.DDS',
 					SpecularName = '/Units/uab0302/uab0302_SpecTeam.dds',
-                    LODCutoff = 300,
-                    ShaderName = 'Insect',
                 },
             },
         },

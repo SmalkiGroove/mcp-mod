@@ -122,6 +122,7 @@ UnitBlueprint {
             '<LOC ability_aa>Anti-Air',
             '<LOC ability_radar>Radar',
         },
+        AnimationPermOpen = '/mods/TotalMayhem/units/BROAT1EXGS/BROAT2EXGS_deploy.sca',
         IdleEffects = {
             Air = {
                 Effects = {
@@ -162,6 +163,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TotalMayhem/units/broat2exgs/broat2exgs_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/broat2exgs/broat2exgs_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/broat2exgs/broat2exgs_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/broat2exgs/broat2exgs_specteam.dds',
                 },
             },
         },
@@ -696,7 +701,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 15,
-            ProjectileId = '/mods/MCP/projectiles/BROT3BTBOTproj/BROT3BTBOTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonFragArt/AeonFragArt_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {

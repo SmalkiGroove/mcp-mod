@@ -137,9 +137,10 @@ UnitBlueprint {
                     LODCutoff = 120,
                     Scrolling = true,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BrewLAN/units/sel0119/sel0119_lod0.scm',
                     AlbedoName = '/units/xel0209/xel0209_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/sel0119/sel0119_normalsTS.dds',
                     SpecularName = '/units/xel0209/xel0209_specteam.dds',
-                    --NormalsName = '/units/xel0209/xel0209_normalsts.dds',
                 },
                 {
                     LODCutoff = 215,
