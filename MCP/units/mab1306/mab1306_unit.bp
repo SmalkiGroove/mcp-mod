@@ -76,7 +76,7 @@ UnitBlueprint {
                     LODCutoff = 120,
                     Scrolling = true,
                     ShaderName = 'Aeon',
-                    --MeshName = '/units/UAB1302/UAB1302_lod0.scm',
+                    MeshName = '/mods/BrewLAN/units/sab1312/sab1312_lod0.scm',
                     AlbedoName = '/units/UAB1302/UAB1302_albedo.dds',
                     SpecularName = '/units/UAB1302/UAB1302_specteam.dds',
                     NormalsName = '/units/UaB1302/UAB1302_normalsTS.dds',

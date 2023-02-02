@@ -70,6 +70,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 200,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BrewLAN/units/seb2311/seb2311_lod0.scm',
                     AlbedoName = '/units/UES0302/UES0302_albedo.dds', 
                     NormalsName = '/units/UES0302/UES0302_normalsts.dds', 
                     SpecularName = '/units/UES0302/UES0302_specteam.dds', 
@@ -77,6 +78,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 415,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BrewLAN/units/seb2311/seb2311_lod1.scm',
                     AlbedoName = '/units/UES0302/UES0302_lod1_albedo.dds', 
                     NormalsName = '/units/UES0302/UES0302_lod1_normalsTS.dds', 
                     SpecularName = '/units/UES0302/UES0302_lod1_specteam.dds', 
@@ -87,11 +89,11 @@ UnitBlueprint {
         SpawnRandomRotation = true,
         Tarmacs = {
             {
-                Albedo = '/mods/MCP/env/Common/decals/Tarmacs/Tar7x_01_albedo.dds',
+                Albedo = '/mods/BrewLAN/env/Common/decals/Tarmacs/Tar7x_01_albedo.dds',
                 DeathLifetime = 300,
                 FadeOut = 150,
                 Length = 6.4,
-                Normal = '/mods/MCP/env/Common/decals/Tarmacs/Tar7x_01_normals.dds',
+                Normal = '/mods/BrewLAN/env/Common/decals/Tarmacs/Tar7x_01_normals.dds',
                 Orientations = {
                     0,
                     90,

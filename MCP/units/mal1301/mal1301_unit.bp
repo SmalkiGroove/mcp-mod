@@ -96,11 +96,11 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mal1301/mal1301_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mal1301/mal1301_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_Walk.sca',
         AnimationWalkRate = 2,
         Mesh = {
             IconFadeInZoom = 130,
@@ -109,6 +109,10 @@ UnitBlueprint {
                     LODCutoff = 500,
                     Scrolling = true,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/BROT3SHBM/BROT3SHBM_specteam.dds',
                 },
             },
         },
@@ -270,7 +274,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 65,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT3SHBMproj/BROT3SHBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonHeavyPlasmaGatling/AeonHeavyPlasmaGatling_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -452,7 +456,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 95,
 			PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BROT3SHBMEMPproj/BROT3SHBMEMPproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonEMPBurst/AeonEMPBurst_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             ProjectilesPerOnFire = 1,
             RackBones = {

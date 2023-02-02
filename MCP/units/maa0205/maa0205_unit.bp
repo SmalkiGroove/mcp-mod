@@ -125,9 +125,14 @@ UnitBlueprint {
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
-                {LODCutoff = 65, ShaderName = 'Aeon'},
-                {LODCutoff = 130, ShaderName = 'Aeon'},
-                {LODCutoff = 260, ShaderName = 'Aeon'},
+                {
+                    LODCutoff = 260,
+                    ShaderName = 'Aeon',
+                    MeshName = '/mods/BrewLAN/units/saa0211/saa0211_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/saa0211/saa0211_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/saa0211/saa0211_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/saa0211/saa0211_specteam.dds',
+                },
             },
         },
         MovementEffects = {

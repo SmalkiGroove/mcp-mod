@@ -69,6 +69,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 270,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/BROT1EXPD/BROT1EXPD_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/BROT1EXPD/BROT1EXPD_Albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/BROT1EXPD/BROT1EXPD_NormalsTS.DDS',
+                    SpecularName = '/mods/TotalMayhem/units/BROT1EXPD/BROT1EXPD_SpecTeam.dds',
                 },
             },
         },

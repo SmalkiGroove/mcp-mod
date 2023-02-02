@@ -182,10 +182,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 200,
                     ShaderName = 'Unit',
-                    --MeshName = '/units/ueb1301/ueb1301_lod0.scm',
-                    --AlbedoName = '/units/ueb1301/ueb1301_albedo.dds',
-                    --SpecularName = '/units/ueb1301/ueb1301_specteam.dds',
-                    --NormalsName = '/units/ueb1301/ueb1301_normalsTS.dds',
+                    MeshName = '/mods/BrewLAN/units/seb1311/seb1311_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/seb1311/seb1311_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/seb1311/seb1311_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/seb1311/seb1311_specteam.dds',
                 },
                 {
                     LODCutoff = 300,

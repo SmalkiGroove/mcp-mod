@@ -69,6 +69,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 270,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brot1hpd/brot1hpd_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brot1hpd/brot1hpd_albedo.dds',
+		            NormalsName = '/mods/TotalMayhem/units/brot1hpd/brot1hpd_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brot1hpd/brot1hpd_specteam.dds',
                 },
             },
         },
@@ -220,7 +224,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BROT1EXM1proj/BROT1EXM1proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonProton1/AeonProton1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

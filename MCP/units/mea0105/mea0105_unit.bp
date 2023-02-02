@@ -143,8 +143,22 @@ UnitBlueprint {
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
-                {LODCutoff = 128, ShaderName = 'Unit'},
-                {LODCutoff = 256, ShaderName = 'Unit'},
+                {
+                    LODCutoff = 130,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/BrewLAN/units/sea0105/sea0105_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/sea0105/sea0105_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/sea0105/sea0105_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/sea0105/sea0105_specteam.dds',
+                },
+                {
+                    LODCutoff = 260,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/BrewLAN/units/sea0105/sea0105_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/sea0105/sea0105_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/sea0105/sea0105_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/sea0105/sea0105_specteam.dds',
+                },
             },
         },
         MovementEffects = {

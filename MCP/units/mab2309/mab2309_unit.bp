@@ -62,13 +62,14 @@ UnitBlueprint {
     },
     Description = '<LOC mab2309_desc>Anti-Armor Point Defence',
     Display = {
-        AnimationPermOpen = '/mods/MCP/units/mab2309/mab2309_aopen01.sca',
+        AnimationPermOpen = '/mods/BrewLAN/units/sab2311/sab2311_aopen01.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
                     LODCutoff = 200,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/BrewLAN/units/sab2311/sab2311_lod0.scm',
                     AlbedoName = '/units/UAS0401/UAS0401_albedo.dds', 
                     NormalsName = '/units/UAS0401/UAS0401_normalsTS.dds', 
                     SpecularName = '/units/UAS0401/UAS0401_specteam.dds', 
@@ -76,6 +77,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/BrewLAN/units/sab2311/sab2311_lod1.scm',
                     AlbedoName = '/units/UAS0401/UAS0401_lod1_albedo.dds', 
                     NormalsName = '/units/UAS0401/UAS0401_lod1_normalsTS.dds', 
                     SpecularName = '/units/UAS0401/UAS0401_lod1_specteam.dds', 
