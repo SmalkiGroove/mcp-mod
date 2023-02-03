@@ -1167,76 +1167,6 @@ UEFCruiseMissile01Projectile = Class(SingleBeamProjectile) {
     end,
 }
 
-AeonBROT3HADES2proj = Class(EmitterProjectile) {
-    
-    FxImpactUnit = MCPEffectTemplate.ValiantHit,
-    FxUnitHitScale = 2.55,
-    FxImpactProp = MCPEffectTemplate.ValiantHit,
-    FxPropHitScale = 2.55,
-    FxImpactLand = MCPEffectTemplate.ValiantHit,
-    FxLandHitScale = 2.55,
-    FxImpactUnderWater = MCPEffectTemplate.ValiantHit,
-    FxImpactWater = MCPEffectTemplate.ValiantHit,
-    FxWaterHitScale = 2.55,
-    FxTrails = EffectTemplate.SZthuthaamArtilleryProjectileFXTrails,
-    PolyTrails = EffectTemplate.SZthuthaamArtilleryProjectilePolyTrails, 
-    PolyTrailOffset = {0,0},
-
-    OnImpact = function(self, TargetType, TargetEntity)
-        local army = self:GetArmy()
-
-        if TargetType == 'Terrain' then
-            CreateSplat( self:GetPosition(), 0, 'scorch_002_albedo', 28, 28, 250, 200, army )
-
-            #local blanketSides = 12
-            #local blanketAngle = (2*math.pi) / blanketSides
-            #local blanketStrength = 1
-            #local blanketVelocity = 2.25
-
-            #for i = 0, (blanketSides-1) do
-            #    local blanketX = math.sin(i*blanketAngle)
-            #    local blanketZ = math.cos(i*blanketAngle)
-            #    local Blanketparts = self:CreateProjectile('/effects/entities/DestructionDust01/DestructionDust01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
-            #        :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
-            #end
-        end
-        EmitterProjectile.OnImpact( self, TargetType, TargetEntity )
-    end,
-}
-
-AeonBROT3HADESproj = Class(EmitterProjectile) {
-    FxTrails = {'/effects/emitters/oblivion_cannon_munition_01_emit.bp'},
-    FxImpactUnit = MCPEffectTemplate.HadesHit01,
-    FxUnitHitScale = 2.4,
-    FxImpactProp = MCPEffectTemplate.HadesHit01,
-    FxPropHitScale = 2.4,
-    FxImpactLand = MCPEffectTemplate.HadesHit01,
-    FxLandHitScale = 2.4,
-    FxTrailOffset = 0,
-    FxImpactUnderWater = {},
-
-    OnImpact = function(self, TargetType, TargetEntity)
-        local army = self:GetArmy()
-
-        if TargetType == 'Terrain' then
-            CreateSplat( self:GetPosition(), 0, 'scorch_001_albedo', 6, 6, 250, 200, army )
-
-            #local blanketSides = 12
-            #local blanketAngle = (2*math.pi) / blanketSides
-            #local blanketStrength = 1
-            #local blanketVelocity = 2.25
-
-            #for i = 0, (blanketSides-1) do
-            #    local blanketX = math.sin(i*blanketAngle)
-            #    local blanketZ = math.cos(i*blanketAngle)
-            #    local Blanketparts = self:CreateProjectile('/effects/entities/DestructionDust01/DestructionDust01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
-            #        :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
-            #end
-        end
-        EmitterProjectile.OnImpact( self, TargetType, TargetEntity )
-    end,
-}
-
 CybBRMAT2ADVBOMBERproj = Class(EmitterProjectile) {
     
     FxImpactUnit = MCPEffectTemplate.AvalancheRocketHit,
@@ -1272,7 +1202,7 @@ CybBRMAT2ADVBOMBERproj = Class(EmitterProjectile) {
     end,
 }
 
-CybBRMT3AVARLproj = Class(SingleBeamProjectile) {
+CybMissile = Class(SingleBeamProjectile) {
     BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
     FxTrails = EffectTemplate.TMissileExhaust03,
     FxImpactUnit = MCPEffectTemplate.AvalancheRocketHit,
@@ -1308,7 +1238,7 @@ CybBRMT3AVARLproj = Class(SingleBeamProjectile) {
     end,
 }
 
-UefBRNT1ADVBOTproj = Class(EmitterProjectile) {
+UefLaserGreen = Class(EmitterProjectile) {
     FxTrails = MCPEffectTemplate.BRNT1ADVBOTFXTrails01,
     FxImpactUnit = MCPEffectTemplate.UEFT1ADVBOThit1,
     FxUnitHitScale = 0.5,
@@ -1320,7 +1250,7 @@ UefBRNT1ADVBOTproj = Class(EmitterProjectile) {
     FxImpactUnderWater = {},
 }
 
-SerBRPT3SHBMproj = Class(EmitterProjectile) {
+SerSinnUnthe = Class(EmitterProjectile) {
     FxTrails = EffectTemplate.SDFSinnutheWeaponFXTrails01,
     FxImpactUnit = MCPEffectTemplate.SerT3SHBMHit01,
     FxUnitHitScale = 1.6,
@@ -1332,7 +1262,7 @@ SerBRPT3SHBMproj = Class(EmitterProjectile) {
     FxImpactUnderWater = {},
 }
 
-SerBRPT1EXTANK2proj = Class(MultiPolyTrailProjectile) {
+SerQuarnonBig = Class(MultiPolyTrailProjectile) {
 	FxImpactTrajectoryAligned = false,
     FxTrails = EffectTemplate.SChronotronCannonProjectileFxTrails,
     PolyTrails = EffectTemplate.SChronotronCannonProjectileTrails,
@@ -1362,36 +1292,6 @@ AeonIonizedPlasma = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
-AeonBROT1EXMOBARTproj = Class(MultiPolyTrailProjectile) {
-	FxImpactTrajectoryAligned = false,
-    FxTrails = EffectTemplate.TIonizedPlasmaGatlingCannonFxTrails,
-    PolyTrails = {},
-    PolyTrailOffset = {0,0},
-    FxImpactUnit = EffectTemplate.TIonizedPlasmaGatlingCannonHit01,
-    FxUnitHitScale = 7,
-    FxImpactProp = EffectTemplate.TIonizedPlasmaGatlingCannonHit01,
-    FxPropHitScale = 7,
-    FxImpactLand = EffectTemplate.TIonizedPlasmaGatlingCannonHit01,
-    FxLandHitScale = 7,
-    FxTrailOffset = 0,
-    FxImpactUnderWater = {},
-}
-
-AeonBROT1EXMOBART2proj = Class(MultiPolyTrailProjectile) {
-	FxImpactTrajectoryAligned = false,
-    FxTrails = EffectTemplate.TIonizedPlasmaGatlingCannonFxTrails,
-    PolyTrails = {},
-    PolyTrailOffset = {0,0},
-    FxImpactUnit = MCPEffectTemplate.AeonExpT1ArtilleryHit,
-    FxUnitHitScale = 1,
-    FxImpactProp = MCPEffectTemplate.AeonExpT1ArtilleryHit,
-    FxPropHitScale = 1,
-    FxImpactLand = MCPEffectTemplate.AeonExpT1ArtilleryHit,
-    FxLandHitScale = 1,
-    FxTrailOffset = 0,
-    FxImpactUnderWater = {},
-}
-
 AeonBROT3PDROproj = Class(EmitterProjectile) {
     
     FxTrails = EffectTemplate.AOblivionCannonFXTrails02,
@@ -1405,42 +1305,7 @@ AeonBROT3PDROproj = Class(EmitterProjectile) {
     FxImpactUnderWater = {},
 }
 
-AeonBROST2ADVBATTLESHIPproj = Class(EmitterProjectile) {
-    
-    FxTrails = MCPEffectTemplate.BROST2ADVBATTLESHIPTRAILS,
-    FxImpactUnit = MCPEffectTemplate.BROST2ADVBATTLESHIPHIT,
-    FxUnitHitScale = 2,
-    FxImpactProp = MCPEffectTemplate.BROST2ADVBATTLESHIPHIT,
-    FxPropHitScale = 2,
-    FxImpactLand = MCPEffectTemplate.BROST2ADVBATTLESHIPHIT,
-    FxLandHitScale = 2,
-    FxTrailOffset = 0,
-    FxImpactWater = EffectTemplate.TNapalmHvyCarpetBombHitWater01,
-    FxWaterHitScale = 2,
-    FxImpactUnderWater = {},
-    OnImpact = function(self, TargetType, TargetEntity)
-        local army = self:GetArmy()
-
-        if TargetType == 'Terrain' then
-            CreateSplat( self:GetPosition(), 0, 'scorch_004_albedo', 11, 11, 250, 200, army )
-
-            #local blanketSides = 12
-            #local blanketAngle = (2*math.pi) / blanketSides
-            #local blanketStrength = 1
-            #local blanketVelocity = 2.25
-
-            #for i = 0, (blanketSides-1) do
-            #    local blanketX = math.sin(i*blanketAngle)
-            #    local blanketZ = math.cos(i*blanketAngle)
-            #    local Blanketparts = self:CreateProjectile('/effects/entities/DestructionDust01/DestructionDust01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
-            #        :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
-            #end
-        end
-        MultiPolyTrailProjectile.OnImpact( self, TargetType, TargetEntity )
-    end,
-}
-
-UefBRNST2ADVBATTLESHIPproj = Class(MultiPolyTrailProjectile) {
+UefExplosiveShell = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -1621,7 +1486,7 @@ CybranBMRocketProjectile = Class(SingleCompositeEmitterProjectile) {
     FxImpactUnderWater = {},
 }
 
-CybBRMT1BTRLproj = Class(MultiPolyTrailProjectile) {
+CybRocket3 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
 		'/effects/emitters/electron_bolter_trail_02_emit.bp',
 		'/effects/emitters/default_polytrail_01_emit.bp',
@@ -1654,7 +1519,7 @@ CybBRMT3RAPproj = Class(MultiPolyTrailProjectile) {
 
 }
 
-uefBRNT3ARGUSMINIproj = Class(MultiPolyTrailProjectile) {
+UefPlasmaGatling = Class(MultiPolyTrailProjectile) {
 	PolyTrailOffset = {0.05,0.05,0.05},  
     PolyTrailOffset = EffectTemplate.TPlasmaGatlingCannonPolyTrailsOffsets,
 
@@ -1668,7 +1533,7 @@ uefBRNT3ARGUSMINIproj = Class(MultiPolyTrailProjectile) {
 
 }
 
-uefBRNT3ARGUSLASERproj = Class(MultiPolyTrailProjectile) {
+UefPlasmaGatling2 = Class(MultiPolyTrailProjectile) {
 	PolyTrailOffset = {0.05,0.05,0.05},  
     PolyTrailOffset = EffectTemplate.TPlasmaGatlingCannonPolyTrailsOffsets,
 
@@ -1703,7 +1568,7 @@ CybBRMT2BEETLEproj = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-CybBRMT2EPDproj = Class(MultiPolyTrailProjectile) {
+CybNegatron = Class(MultiPolyTrailProjectile) {
     PolyTrails = MCPEffectTemplate.HeavyLaserPolyTrail,
     FxImpactUnit = EffectTemplate.CDisintegratorHitUnit01,
     FxImpactAirUnit = EffectTemplate.CDisintegratorHitAirUnit01,
@@ -1744,7 +1609,7 @@ AeonFragArt2 = Class(SinglePolyTrailProjectile) {
     FxWaterHitScale = 0.55,
 }
 
-CybBRMT3BM2TLproj = Class(MultiPolyTrailProjectile) {
+CybRocket4 = Class(MultiPolyTrailProjectile) {
 	FxTrails  = {
             '/mods/MCP/effects/emitters/w_u_gau03_p_03_brightglow_emit.bp',
             '/mods/MCP/effects/emitters/w_u_gau03_p_04_smoke_emit.bp',
@@ -1767,7 +1632,7 @@ CybBRMT3BM2TLproj = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-CybBRMT1ADVBOTRLproj = Class(SingleBeamProjectile) {
+CybRocket1 = Class(SingleBeamProjectile) {
     BeamName = '/effects/emitters/missile_loa_munition_exhaust_beam_01_emit.bp',
     FxTrails = {'/effects/emitters/missile_cruise_munition_trail_01_emit.bp',},
     FxTrailOffset = -0.5,
@@ -1783,7 +1648,7 @@ CybBRMT1ADVBOTRLproj = Class(SingleBeamProjectile) {
     FxWaterHitScale = 1.1,
 }
 
-CybBRMT3AVAproj = Class(MultiPolyTrailProjectile) {
+CybProton4 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
 		'/effects/emitters/disintegrator_polytrail_04_emit.bp',
 		'/effects/emitters/disintegrator_polytrail_05_emit.bp',
@@ -1802,7 +1667,7 @@ CybBRMT3AVAproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.Beetleprojectilehit01,
 }
 
-UefBRNT3BTproj = Class(MultiPolyTrailProjectile) {
+UefGauss3 = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -1816,7 +1681,7 @@ UefBRNT3BTproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.UefT3BattletankHit,
 }
 
-UefBRNT2HTproj = Class(MultiPolyTrailProjectile) {
+UefLightPlasma = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -1830,7 +1695,7 @@ UefBRNT2HTproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = EffectTemplate.TNapalmHvyCarpetBombHitWater01,
 }
 
-UefBRNT2EXLMproj = Class(MultiPolyTrailProjectile) {
+UefPlasmaBall = Class(MultiPolyTrailProjectile) {
     FxTrails = MCPEffectTemplate.UEFArmoredBattleBotTrails,
     PolyTrailOffset = {0,0},    
     PolyTrails = MCPEffectTemplate.UEFArmoredBattleBotPolyTrails,
@@ -1843,7 +1708,7 @@ UefBRNT2EXLMproj = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = MCPEffectTemplate.BRNT2EXLMHit1,
 }
 
-UefBRNT3BTRLproj = Class(SingleBeamProjectile) {
+UefRocket = Class(SingleBeamProjectile) {
     FxTrails = EffectTemplate.TMissileExhaust02,
     FxTrailOffset = -1,
     BeamName = '/effects/emitters/missile_munition_exhaust_beam_01_emit.bp',
@@ -1857,7 +1722,7 @@ UefBRNT3BTRLproj = Class(SingleBeamProjectile) {
     FxImpactWater = MCPEffectTemplate.UefT3BattletankRocketHit,
 }
 
-UefBRNT3DOOMSGUNproj = Class(MultiPolyTrailProjectile) {
+UefGauss4 = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -1871,7 +1736,7 @@ UefBRNT3DOOMSGUNproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.UEFDeath02,
 }
 
-UefBRNT3DOOMSDAYproj = Class(SingleBeamProjectile) {
+UefCruiseMissile = Class(SingleBeamProjectile) {
     FxTrailOffset = -0.8,
     FxTrails = EffectTemplate.TMissileExhaust03,
     FxImpactUnit = MCPEffectTemplate.UEFmayhemRocketHit,
@@ -1884,21 +1749,7 @@ UefBRNT3DOOMSDAYproj = Class(SingleBeamProjectile) {
     FxImpactWater = MCPEffectTemplate.UEFmayhemRocketHit,
 }
 
-UefBRNT1EXM1proj = Class(MultiPolyTrailProjectile) {
-    FxTrails = {},
-    PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
-    PolyTrailOffset = {0,0},
-    FxImpactUnit = MCPEffectTemplate.UEFHighExplosiveShellHit01,	
-    FxUnitHitScale = 1.5,
-    FxImpactProp = MCPEffectTemplate.UEFHighExplosiveShellHit01,
-    FxPropHitScale = 1.5,
-    FxImpactLand = MCPEffectTemplate.UEFHighExplosiveShellHit01,
-    FxLandHitScale = 1.5,
-    FxImpactUnderWater = MCPEffectTemplate.UEFHighExplosiveShellHit01,
-    FxImpactWater = MCPEffectTemplate.UEFHighExplosiveShellHit01,
-}
-
-UefBRNT2EPDproj = Class(MultiPolyTrailProjectile) {
+UefIonizedPlasma = Class(MultiPolyTrailProjectile) {
     FxTrails = EffectTemplate.TPlasmaCannonHeavyMunition,
     RandomPolyTrails = 1,
     PolyTrailOffset = {0,0,0},
@@ -1913,7 +1764,7 @@ UefBRNT2EPDproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.UefT2EPDPlasmaHit01,
 }
 
-UefBRNT3SHPDproj = Class(MultiPolyTrailProjectile) {
+UefIonizedGauss = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -1945,35 +1796,6 @@ UefBRNT3MOBproj = Class(MultiPolyTrailProjectile) {
     FxLandHitScale = 1.5,
     FxImpactUnderWater = MCPEffectTemplate.UefMobileFortressGunhit,
     FxImpactWater = MCPEffectTemplate.UefMobileFortressGunhit,
-}
-
-UefBRNT2HTRLproj = Class(MultiPolyTrailProjectile) {
-    FxTrails = {'/effects/emitters/missile_munition_trail_01_emit.bp',},
-    FxTrailOffset = -1,
-    BeamName = '/effects/emitters/missile_munition_exhaust_beam_01_emit.bp',
-    FxImpactUnit = EffectTemplate.TNapalmHvyCarpetBombHitLand01,
-    FxUnitHitScale = 0.45,
-    FxImpactProp = EffectTemplate.TNapalmHvyCarpetBombHitLand01,
-    FxPropHitScale = 0.45,
-    FxImpactLand = EffectTemplate.TNapalmHvyCarpetBombHitLand01,
-    FxLandHitScale = 0.45,
-    FxImpactUnderWater = EffectTemplate.TShipGaussCannonHit02,
-    FxImpactWater = EffectTemplate.TNapalmHvyCarpetBombHitWater01,
-}
-
-UefBRNT3PDROproj = Class(SingleBeamProjectile) {
-    FxTrails = {'/effects/emitters/missile_munition_trail_01_emit.bp',},
-    FxTrailOffset = -1,
-    BeamName = '/effects/emitters/missile_munition_exhaust_beam_01_emit.bp',
-    FxImpactUnit = MCPEffectTemplate.UEFHEAVYROCKET02,
-    FxUnitHitScale = 2.2,
-    FxImpactProp = MCPEffectTemplate.UEFHEAVYROCKET02,
-    FxPropHitScale = 2.2,
-    FxImpactLand = MCPEffectTemplate.UEFHEAVYROCKET02,
-    FxLandHitScale = 2.2,
-    FxImpactUnderWater = MCPEffectTemplate.UEFHEAVYROCKET02,
-    FxImpactWater = MCPEffectTemplate.UEFHEAVYROCKET02,
-    FxWaterHitScale = 2.2,
 }
 
 UefBRNT3FFARproj = Class(MultiPolyTrailProjectile) {
@@ -2021,7 +1843,7 @@ UefBRNT2EXARTproj = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
-UefBRNT2BTproj = Class(MultiPolyTrailProjectile) {
+UefGauss2 = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -2062,7 +1884,7 @@ TArtilleryAntiMatterSmallProjectile = Class(SinglePolyTrailProjectile) {
     end,
 }
 
-CybBRMT3PDproj = Class(MultiPolyTrailProjectile) {
+CybProton1 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
         MCPEffectTemplate.CybProtonCannonPolyTrail,
         '/effects/emitters/default_polytrail_01_emit.bp',
@@ -2083,7 +1905,7 @@ CybBRMT3PDproj = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-CybBRMT1HVYproj = Class(MultiPolyTrailProjectile) {
+CybProton2 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
         MCPEffectTemplate.CybProtonCannonPolyTrail,
     },
@@ -2102,7 +1924,7 @@ CybBRMT1HVYproj = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-UefBRNT1BTproj = Class(MultiPolyTrailProjectile) {
+UefGauss1 = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -2159,7 +1981,7 @@ AeonProton1 = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
-CybBRMT1EXM1proj = Class(MultiPolyTrailProjectile) {
+CybAutoProton = Class(MultiPolyTrailProjectile) {
     PolyTrails = MCPEffectTemplate.HeavyLaserPolyTrail,
     FxImpactUnit = MCPEffectTemplate.CLaserBotHit01,
     FxUnitHitScale = 1.13,
@@ -2172,7 +1994,7 @@ CybBRMT1EXM1proj = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-UefBRNAT2FIGHTERproj = Class(SingleBeamProjectile) {
+UefAAMissile = Class(SingleBeamProjectile) {
     FxTrails = EffectTemplate.TMissileExhaust02,
     FxTrailOffset = -0.5,
     BeamName = '/effects/emitters/missile_munition_exhaust_beam_01_emit.bp',
@@ -2231,33 +2053,7 @@ UefBRNT3SHBM2EMPproj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.UEFMayhemMK4hit1,
 }
 
-UefBRNT3SHBMNEWRLAproj = Class(SingleBeamProjectile) {
-    FxTrailOffset = -0.8,
-    FxTrails = EffectTemplate.TMissileExhaust03,
-    FxImpactUnit = MCPEffectTemplate.UEFmayhemRocketHit,
-    FxUnitHitScale = 1.2,
-    FxImpactProp = MCPEffectTemplate.UEFmayhemRocketHit,
-    FxPropHitScale = 1.2,
-    FxImpactLand = MCPEffectTemplate.UEFmayhemRocketHit,
-    FxLandHitScale = 1.2,
-    FxImpactUnderWater = MCPEffectTemplate.UEFmayhemRocketHit,
-    FxImpactWater = MCPEffectTemplate.UEFmayhemRocketHit,
-}
-
-UefBRNT3SHBMNEWRLAproj = Class(SingleBeamProjectile) {
-    FxTrailOffset = -0.8,
-    FxTrails = EffectTemplate.TMissileExhaust03,
-    FxImpactUnit = MCPEffectTemplate.UEFmayhemRocketHitA,
-    FxUnitHitScale = 1.2,
-    FxImpactProp = MCPEffectTemplate.UEFmayhemRocketHitA,
-    FxPropHitScale = 1.2,
-    FxImpactLand = MCPEffectTemplate.UEFmayhemRocketHitA,
-    FxLandHitScale = 1.2,
-    FxImpactUnderWater = MCPEffectTemplate.UEFmayhemRocketHitA,
-    FxImpactWater = MCPEffectTemplate.UEFmayhemRocketHitA,
-}
-
-UefBRNT3SHBMNEWRL2Aproj = Class(SingleBeamProjectile) {
+UefDefenseMissile = Class(SingleBeamProjectile) {
     FxTrails = EffectTemplate.TMissileExhaust02,
     FxTrailOffset = -0.5,
     BeamName = '/effects/emitters/missile_munition_exhaust_beam_01_emit.bp',
@@ -2271,7 +2067,7 @@ UefBRNT3SHBMNEWRL2Aproj = Class(SingleBeamProjectile) {
     FxImpactWater = MCPEffectTemplate.UEFmayhemRocketHit2A,
 }
 
-CybBRMT1EXTANKproj = Class(MultiPolyTrailProjectile) {
+CybProton3 = Class(MultiPolyTrailProjectile) {
     PolyTrails = MCPEffectTemplate.BRMT1EXTANKTRAILS,
 	PolyTrailOffset = {0.05,0.05,0.05},  
     PolyTrailOffset = EffectTemplate.TPlasmaGatlingCannonPolyTrailsOffsets,
@@ -2425,7 +2221,7 @@ SDFSinnuntheWeaponProjectile = Class(EmitterProjectile) {
     FxImpactNone = EffectTemplate.SDFSinnutheWeaponHit,
 }
 
-CybBRMT3BTproj = Class(MultiPolyTrailProjectile) {
+CybBolter2 = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
         MCPEffectTemplate.CybProtonCannonPolyTrail,
         '/effects/emitters/default_polytrail_01_emit.bp',
@@ -2442,22 +2238,6 @@ CybBRMT3BTproj = Class(MultiPolyTrailProjectile) {
     FxLandHitScale = 0.8,
     FxImpactUnderWater = MCPEffectTemplate.CybranT3BattleTankHit,
     FxImpactWater = MCPEffectTemplate.CybranT3BattleTankHit,
-    FxTrailOffset = 0,
-}
-
-CybBRMT3BTRLproj = Class(SingleCompositeEmitterProjectile) {
-    FxTrails = {},
-	PolyTrail = '/effects/emitters/cybran_iridium_missile_polytrail_01_emit.bp',    
-    BeamName = '/effects/emitters/rocket_iridium_exhaust_beam_01_emit.bp',
-    FxImpactUnit = MCPEffectTemplate.CybranT3BattleTankRocketHit,
-    FxUnitHitScale = 0.85,
-    FxImpactProp = MCPEffectTemplate.CybranT3BattleTankRocketHit,
-    FxPropHitScale = 0.85,
-    FxImpactLand = MCPEffectTemplate.CybranT3BattleTankRocketHit,
-    FxLandHitScale = 0.85,
-    FxImpactUnderWater = MCPEffectTemplate.CybranT3BattleTankRocketHit,
-    FxImpactWater = MCPEffectTemplate.CybranT3BattleTankRocketHit,
-    FxWaterHitScale = 0.85,
     FxTrailOffset = 0,
 }
 
@@ -2491,7 +2271,7 @@ AeonOblivion1 = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
-UefBRNT3WKproj = Class(MultiPolyTrailProjectile) {
+UefUnstableGauss = Class(MultiPolyTrailProjectile) {
     FxTrails = EffectTemplate.TPlasmaCannonHeavyMunition,
     RandomPolyTrails = 1,
     PolyTrailOffset = {0,0,0},
@@ -2507,22 +2287,7 @@ UefBRNT3WKproj = Class(MultiPolyTrailProjectile) {
     FxWaterHitScale = 1.0,
 }
 
-UefBRNT3WKRLproj = Class(MultiPolyTrailProjectile) {
-    FxInitial = {},
-    TrailDelay = 1,
-    FxTrails = {'/effects/emitters/missile_sam_munition_trail_01_emit.bp',},
-    FxTrailOffset = -0.5,
-    FxImpactUnit = EffectTemplate.TShipGaussCannonHit02,
-    FxUnitHitScale = 1.8,
-    FxImpactProp = EffectTemplate.TShipGaussCannonHit02,
-    FxPropHitScale = 1.8,
-    FxImpactLand = EffectTemplate.TShipGaussCannonHit02,
-    FxLandHitScale = 1.8,
-    FxImpactUnderWater = EffectTemplate.TShipGaussCannonHit02,
-    FxImpactWater = EffectTemplate.TShipGaussCannonHit02,
-}
-
-UefBRNT1MTproj = Class(MultiPolyTrailProjectile) {
+UefAutoGauss = Class(MultiPolyTrailProjectile) {
     FxTrails = {},
     PolyTrails = EffectTemplate.TGaussCannonPolyTrail,
     PolyTrailOffset = {0,0},
@@ -2551,7 +2316,7 @@ AeonPlasmaGatling = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
-CybBRMT2HVY2proj = Class(MultiPolyTrailProjectile) {
+CybResonnanceShell = Class(MultiPolyTrailProjectile) {
     PolyTrails = {
         MCPEffectTemplate.CybProtonCannonPolyTrail,
         '/effects/emitters/default_polytrail_01_emit.bp',
@@ -2569,45 +2334,6 @@ CybBRMT2HVY2proj = Class(MultiPolyTrailProjectile) {
     FxImpactWater = MCPEffectTemplate.CybranT2BattleTankHit,
     FxWaterHitScale = 0.55,
     FxTrailOffset = 0,
-}
-
-CybBRMT2HVYproj = Class(MultiPolyTrailProjectile) {
-    PolyTrails = {
-        MCPEffectTemplate.CybProtonCannonPolyTrail,
-        '/effects/emitters/default_polytrail_01_emit.bp',
-    },
-    PolyTrailOffset = {0,0}, 
-
-    FxTrails = MCPEffectTemplate.CybProtonCannonFXTrail01,
-    #PolyTrail = EffectTemplate.CHvyProtonCannonPolyTrail,
-    #PolyTrail = EffectTemplate.CHvyProtonCannonPolyTrail,
-    FxImpactUnit = MCPEffectTemplate.CybranT1BattleTankHit,
-    FxUnitHitScale = 1.1,
-    FxImpactProp = MCPEffectTemplate.CybranT1BattleTankHit,
-    FxPropHitScale = 1.1,
-    FxImpactLand = MCPEffectTemplate.CybranT1BattleTankHit,
-    FxLandHitScale = 1.1,
-    FxImpactUnderWater = MCPEffectTemplate.CybranT1BattleTankHit,
-    FxImpactWater = MCPEffectTemplate.CybranT1BattleTankHit,
-    FxTrailOffset = 0,
-}
-
-AeonBROT3EXM1proj = Class(MultiPolyTrailProjectile) {
-    FxTrails = {
-        '/effects/emitters/quantum_cannon_munition_03_emit.bp',
-        '/effects/emitters/quantum_cannon_munition_04_emit.bp',
-    },
-    PolyTrail = '/effects/emitters/quantum_cannon_polytrail_01_emit.bp',
-	PolyTrailOffset = {0,0},
-
-    # Hit Effects
-    FxImpactUnit = MCPEffectTemplate.AeonGraniteHit01,
-    FxImpactProp = MCPEffectTemplate.AeonGraniteHit01,
-    FxImpactLand = MCPEffectTemplate.AeonGraniteHit01,
-    FxUnitHitScale = 1,
-    FxLandHitScale = 1,
-    FxPropHitScale = 1,
-    FxImpactUnderWater = {},
 }
 
 NapalmMissile = Class(SingleCompositeEmitterProjectile) {
@@ -2637,7 +2363,7 @@ NapalmMissile = Class(SingleCompositeEmitterProjectile) {
 	FxImpactWaterScale = 2,
 }
 
-CybBRMT3MCM4RLproj = Class(MultiPolyTrailProjectile) {
+CybRocket2 = Class(MultiPolyTrailProjectile) {
 	FxTrails  = {
             '/mods/MCP/effects/emitters/w_u_gau03_p_03_brightglow_emit.bp',
             '/mods/MCP/effects/emitters/w_u_gau03_p_04_smoke_emit.bp',
@@ -2729,7 +2455,7 @@ SC2SinglePolyTrailProjectile = Class(EmitterProjectile) {
     end,
 }
 
-CybBRMT1BMproj = Class(MultiPolyTrailProjectile) {
+CybBolter1 = Class(MultiPolyTrailProjectile) {
     PolyTrails = MCPEffectTemplate.LightLaserPolyTrail,
     FxImpactUnit = EffectTemplate.TPlasmaGatlingCannonUnitHit,
     FxUnitHitScale = 0.6,
@@ -2791,7 +2517,7 @@ TArtilleryAntiMatterProjectile05 = Class(SinglePolyTrailProjectile) {
     end,
 }
 
-CybBRMT3ADVBTBOTproj = Class(MultiPolyTrailProjectile) {
+CybDistorsion = Class(MultiPolyTrailProjectile) {
 
 	PolyTrails  = {
         '/mods/MCP/effects/emitters/BRMT3ADVBTBOT_polytrails_emit.bp',

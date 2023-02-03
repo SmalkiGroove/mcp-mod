@@ -88,6 +88,10 @@ UnitBlueprint {
                     LODCutoff = 500,
                     Scrolling = true,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnt1exmob/brnt1exmob_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnt1exmob/brnt1exmob_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnt1exmob/brnt1exmob_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnt1exmob/brnt1exmob_specteam.dds',
                 },
             },
         },
@@ -279,7 +283,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2EPDproj/BRNT2EPDproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefIonizedPlasma/UefIonizedPlasma_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -358,7 +362,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1BTproj/BRNT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss1/UefGauss1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -431,7 +435,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1BTproj/BRNT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss1/UefGauss1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -504,7 +508,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1BTproj/BRNT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss1/UefGauss1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -577,7 +581,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1BTproj/BRNT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss1/UefGauss1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

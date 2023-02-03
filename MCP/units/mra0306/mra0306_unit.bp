@@ -135,9 +135,22 @@ UnitBlueprint {
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
-                {LODCutoff = 128, ShaderName = 'Insect'},
-                {LODCutoff = 256, ShaderName = 'Insect'},
-                {LODCutoff = 512, ShaderName = 'Insect'},
+                {
+                    LODCutoff = 140,
+                    ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/sra0307/sra0307_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/sra0307/sra0307_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/sra0307/sra0307_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/sra0307/sra0307_specteam.dds',
+                },
+                {
+                    LODCutoff = 215,
+                    ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/sra0307/sra0307_lod1.scm',
+                    AlbedoName = '/units/ura0204/ura0204_lod1_albedo.dds',
+                    NormalsName = '/units/ura0204/ura0204_lod1_normalsTS.dds',
+                    SpecularName = '/units/ura0204/ura0204_lod1_specteam.dds',
+                },
             },
         },
         MovementEffects = {

@@ -72,7 +72,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/msb5102/msb5102_Adeath.sca',
+                Animation = '/mods/brewlan/units/ssb5104/ssb5104_Adeath.sca',
                 AnimationRateMax = 2.25,
                 AnimationRateMin = 1.75,
                 Weight = 1,
@@ -85,11 +85,16 @@ UnitBlueprint {
                     LODCutoff = 120,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssb5104/ssb5104_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/ssb5104/ssb5104_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/ssb5104/ssb5104_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/ssb5104/ssb5104_specteam.dds',
                 },
                 {
                     LODCutoff = 300,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssb5104/ssb5104_lod1.scm',
                     AlbedoName = '/units/xsb5202/xsb5202_lod1_albedo.dds',
                     NormalsName = '/units/xsb5202/xsb5202_lod1_normalsTS.dds',
                     SpecularName = '/units/xsb5202/xsb5202_lod1_specteam.dds',

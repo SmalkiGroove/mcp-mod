@@ -88,6 +88,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 670,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnt3perses/brnt3perses_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnt3perses/brnt3perses_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnt3perses/brnt3perses_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnt3perses/brnt3perses_specteam.dds',
                 },
             },
         },

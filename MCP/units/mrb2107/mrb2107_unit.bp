@@ -67,6 +67,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 220,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmt1advart/brmt1advart_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmt1advart/brmt1advart_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmt1advart/brmt1advart_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmt1advart/brmt1advart_specteam.dds',
                 },
             },
         },
@@ -225,7 +229,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRMT2HVY2proj/BRMT2HVY2proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybResonnanceShell/CybResonnanceShell_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 2,
             RackBones = {

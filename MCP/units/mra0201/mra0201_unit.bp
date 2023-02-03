@@ -150,6 +150,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 250,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmat2fig1/brmat2fig1_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmat2fig1/brmat2fig1_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmat2fig1/brmat2fig1_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmat2fig1/brmat2fig1_specteam.dds',
                 },
             },
         },
@@ -282,7 +286,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 90,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1EXM1proj/BRMT1EXM1proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybAutoProton/CybAutoProton_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3.25,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -359,7 +363,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 90,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1EXM1proj/BRMT1EXM1proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybAutoProton/CybAutoProton_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3.25,
             ProjectilesPerOnFire = 2,
             RackBones = {

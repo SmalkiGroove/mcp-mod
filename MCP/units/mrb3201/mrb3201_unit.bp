@@ -59,11 +59,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 300,
+                    ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmbt1peri/brmbt1peri_lod0.scm',
 					AlbedoName = '/Units/urb0201/urb0201_Albedo.dds',
 					NormalsName = '/Units/urb0201/urb0201_NormalsTS.DDS',
 					SpecularName = '/Units/urb0201/urb0201_SpecTeam.dds',
-                    LODCutoff = 300,
-                    ShaderName = 'Insect',
                 },
             },
         },

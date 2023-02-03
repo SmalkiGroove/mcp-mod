@@ -101,24 +101,25 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/msl1403/msl1403_Death1.sca',
+                Animation = '/mods/TotalMayhem/units/BRPT3SHBM/BRPT3SHBM_Death1.sca',
                 AnimationRateMax = 1.27,
                 AnimationRateMin = 1.27,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/msl1403/msl1403_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRPT3SHBM/BRPT3SHBM_Walk.sca',
         AnimationWalkRate = 1.35,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
 				{
-					AlbedoName = '/Units/xsl0001/xsl0001_Albedo.dds',
-					NormalsName = '/Units/xsl0001/xsl0001_NormalsTS.DDS',
-                    LODCutoff = 500,
 					LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
+                    LODCutoff = 500,
 					Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/TotalMayhem/units/brpt3shbm/brpt3shbm_lod0.scm',
+					AlbedoName = '/Units/xsl0001/xsl0001_Albedo.dds',
+					NormalsName = '/Units/xsl0001/xsl0001_NormalsTS.DDS',
 					SpecularName = '/Units/xsl0001/xsl0001_SpecTeam.dds',
                 },
             },
@@ -408,7 +409,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 50,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BRPT3SHBMproj/BRPT3SHBMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/SerSinnUnthe/SerSinnUnthe_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             RackBones = {
                 {

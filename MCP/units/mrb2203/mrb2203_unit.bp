@@ -71,9 +71,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/mrb2203/CybranTexture_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brmt2epd/brmt2epd_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/CybranTexture/CybranTexture_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmt2epd/brmt2epd_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmt2epd/brmt2epd_specteam.dds',
                 },
             },
         },
@@ -213,7 +216,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 150,
             NoPause = true,
-            ProjectileId = '/mods/MCP/projectiles/BRMT2EPDproj/BRMT2EPDproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybNegatron/CybNegatron_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             ProjectilesPerOnFire = 1,
             RackBones = {

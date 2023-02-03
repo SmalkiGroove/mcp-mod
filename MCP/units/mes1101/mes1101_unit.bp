@@ -91,13 +91,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mes1101/mes1101_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BRNST1BATTLESHIP/BRNST1BATTLESHIP_Death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
             },
             {
-                Animation = '/mods/MCP/units/mes1101/mes1101_Death2.sca',
+                Animation = '/mods/TotalMayhem/units/BRNST1BATTLESHIP/BRNST1BATTLESHIP_Death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
@@ -128,6 +128,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 500,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnst1battleship/brnst1battleship_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnst1battleship/brnst1battleship_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnst1battleship/brnst1battleship_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnst1battleship/brnst1battleship_specteam.dds',
                 },
             },
         },
@@ -285,7 +289,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 26,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2HTproj/BRNT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefLightPlasma/UefLightPlasma_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -371,7 +375,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 26,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2HTproj/BRNT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefLightPlasma/UefLightPlasma_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -457,7 +461,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 26,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2HTproj/BRNT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefLightPlasma/UefLightPlasma_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -543,7 +547,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 26,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2HTproj/BRNT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefLightPlasma/UefLightPlasma_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -791,7 +795,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -869,7 +873,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -947,7 +951,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1025,7 +1029,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1103,7 +1107,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1181,7 +1185,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1259,7 +1263,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1337,7 +1341,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/MCP/projectiles/BRNT1MTproj/BRNT1MTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAutoGauss/UefAutoGauss_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {

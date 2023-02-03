@@ -150,11 +150,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',               
-					AlbedoName = '/Units/xsa0102/xsa0102_Albedo.dds',
-					NormalsName = '/Units/xsa0102/xsa0102_NormalsTS.DDS',
+                    LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     LODCutoff = 600,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/TotalMayhem/units/brpat1exgunship/brpat1exgunship_lod0.scm',
+					AlbedoName = '/Units/xsa0102/xsa0102_Albedo.dds',
+					NormalsName = '/Units/xsa0102/xsa0102_NormalsTS.DDS',
 					SpecularName = '/Units/xsa0102/xsa0102_SpecTeam.dds',
                 },
             },

@@ -59,11 +59,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 300,
+                    ShaderName = 'Seraphim',
+                    MeshName = '/mods/TotalMayhem/units/brpbt1peri/brpbt1peri_lod0.scm',
 					AlbedoName = '/Units/xsc1301/xsc1301_Albedo.dds',
 					NormalsName = '/Units/xsc1301/xsc1301_NormalsTS.DDS',
 					SpecularName = '/Units/xsc1301/xsc1301_SpecTeam.dds',
-                    LODCutoff = 300,
-                    ShaderName = 'Seraphim',
                 },
             },
         },

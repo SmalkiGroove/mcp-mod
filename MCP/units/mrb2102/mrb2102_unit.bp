@@ -68,6 +68,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 220,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brmt1pd/brmt1pd_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmt1pd/brmt1pd_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmt1pd/brmt1pd_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmt1pd/brmt1pd_specteam.dds',
                 },
             },
         },
@@ -214,7 +218,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1EXM1proj/BRMT1EXM1proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybAutoProton/CybAutoProton_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.5,
             ProjectilesPerOnFire = 1,
             RackBones = {

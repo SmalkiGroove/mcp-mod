@@ -106,11 +106,11 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mel1301/mel1301_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BRNT3ARGUS/BRNT3ARGUS_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mel1301/mel1301_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRNT3ARGUS/BRNT3ARGUS_Walk.sca',
         AnimationWalkRate = 2.3,
         Mesh = {
             IconFadeInZoom = 130,
@@ -118,6 +118,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 500,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnt3argus/brnt3argus_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnt3argus/brnt3argus_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnt3argus/brnt3argus_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnt3argus/brnt3argus_specteam.dds',
                 },
             },
         },
@@ -293,7 +297,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT3ARGUSMINIproj/BRNT3ARGUSMINIproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefPlasmaGatling/UefPlasmaGatling_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -381,7 +385,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
 
-            ProjectileId = '/mods/MCP/projectiles/BRNT3WKproj/BRNT3WKproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefUnstableGauss/UefUnstableGauss_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -476,7 +480,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
 
-            ProjectileId = '/mods/MCP/projectiles/BRNT3BTproj/BRNT3BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss3/UefGauss3_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -570,7 +574,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2HTproj/BRNT2HTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefLightPlasma/UefLightPlasma_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -667,7 +671,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT3ARGUSLASERproj/BRNT3ARGUSLASERproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefPlasmaGatling2/UefPlasmaGatling2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -752,7 +756,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT3ARGUSLASERproj/BRNT3ARGUSLASERproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefPlasmaGatling2/UefPlasmaGatling2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -837,7 +841,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/MCP/projectiles/BRNT3ARGUSLASERproj/BRNT3ARGUSLASERproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefPlasmaGatling2/UefPlasmaGatling2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4,
             ProjectilesPerOnFire = 2,
             RackBones = {

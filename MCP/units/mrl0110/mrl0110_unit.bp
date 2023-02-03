@@ -135,6 +135,7 @@ UnitBlueprint {
                     LODCutoff = 120,
                     Scrolling = true,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/srl0119/srl0119_lod0.scm',
                     AlbedoName = '/mods/MCP/units/mrl0210/mrl0210_albedo.dds', 
                     NormalsName = '/mods/MCP/units/mrl0210/mrl0210_normalsTS.dds', 
                     SpecularName = '/mods/MCP/units/mrl0210/mrl0210_specteam.dds', 

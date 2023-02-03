@@ -156,6 +156,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmat2gunship/brmat2gunship_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmat2gunship/brmat2gunship_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmat2gunship/brmat2gunship_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmat2gunship/brmat2gunship_specteam.dds',
                 },
             },
         },

@@ -88,13 +88,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs0206/mrs0206_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BRMST1DESTR/BRMST1DESTR_Death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 40,
             },
             {
-                Animation = '/mods/MCP/units/mrs0206/mrs0206_Death2.sca',
+                Animation = '/mods/TotalMayhem/units/BRMST1DESTR/BRMST1DESTR_Death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 40,
@@ -122,11 +122,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					SpecularName = '/Units/urs0302/urs0302_SpecTeam.dds',
-					AlbedoName = '/Units/urs0302/urs0302_Albedo.dds',
-					NormalsName = '/Units/urs0302/urs0302_NormalsTS.DDS',
                     LODCutoff = 440,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmst1destr/brmst1destr_lod0.scm',
+					AlbedoName = '/Units/urs0302/urs0302_Albedo.dds',
+					NormalsName = '/Units/urs0302/urs0302_NormalsTS.DDS',
+					SpecularName = '/Units/urs0302/urs0302_SpecTeam.dds',
                 },
             },
         },
@@ -282,7 +283,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
             MuzzleVelocityReduceDistance = 85,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetime = 20,
             RackBones = {
                 {
@@ -366,7 +367,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
             MuzzleVelocityReduceDistance = 85,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetime = 20,
             RackBones = {
                 {

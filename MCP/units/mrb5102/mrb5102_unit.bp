@@ -68,12 +68,15 @@ UnitBlueprint {
                 {
                     LODCutoff = 120,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/srb5104/srb5104_lod0.scm',
                     AlbedoName = '/units/urb5202/urb5202_albedo.dds', 
+                    NormalsName = '/mods/BrewLAN/units/srb5104/srb5104_normalsTS.dds',
                     SpecularName = '/units/urb5202/urb5202_specteam.dds', 
                 },
                 {
                     LODCutoff = 300,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/srb5104/srb5104_lod1.scm',
                     AlbedoName = '/units/urb5202/urb5202_lod1_albedo.dds',
                     NormalsName = '/units/urb5202/urb5202_lod1_normalsts.dds',
                     SpecularName = '/units/urb5202/urb5202_lod1_specteam.dds',

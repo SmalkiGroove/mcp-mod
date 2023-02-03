@@ -68,6 +68,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 300,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnt2pd2/brnt2pd2_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnt2pd2/brnt2pd2_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnt2pd2/brnt2pd2_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnt2pd2/brnt2pd2_specteam.dds',
                 },
             },
         },
@@ -219,7 +223,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 26,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2BTproj/BRNT2BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss2/UefGauss2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 4.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

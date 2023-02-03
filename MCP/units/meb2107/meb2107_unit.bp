@@ -66,10 +66,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/ueb2301/ueb2301_Albedo.dds',
-					NormalsName = '/Units/ueb2301/ueb2301_NormalsTS.DDS',
                     LODCutoff = 300,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnbt1hart/brnbt1hart_lod0.scm',
+					AlbedoName = '/Units/ueb2301/ueb2301_Albedo.dds',
+					NormalsName = '/Units/ueb2301/ueb2301_NormalsTS.DDS',
 					SpecularName = '/Units/ueb2301/ueb2301_SpecTeam.dds',
                 },
             },

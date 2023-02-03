@@ -81,12 +81,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/Units/xsl0201/xsl0201_Albedo.dds',
-					NormalsName = '/Units/xsl0201/xsl0201_NormalsTS.DDS',
-                    LODCutoff = 500,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
+                    LODCutoff = 500,
                     Scrolling = true,					
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/TotalMayhem/units/brpt1extank2/brpt1extank2_lod0.scm',
+                    AlbedoName = '/Units/xsl0201/xsl0201_Albedo.dds',
+					NormalsName = '/Units/xsl0201/xsl0201_NormalsTS.DDS',
 					SpecularName = '/Units/xsl0201/xsl0201_SpecTeam.dds',
                 },
             },
@@ -295,7 +296,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BRPT1EXTANK2proj/BRPT1EXTANK2proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/SerQuarnonBig/SerQuarnonBig_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
