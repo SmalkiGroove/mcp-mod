@@ -94,24 +94,25 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/msl1202/msl1202_Death1.sca',
+                Animation = '/mods/TotalMayhem/units/BRPT1EXPBOT/BRPT1EXPBOT_Death1.sca',
                 AnimationRateMax = 1.97,
                 AnimationRateMin = 1.97,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/msl1202/msl1202_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRPT1EXPBOT/BRPT1EXPBOT_Walk.sca',
         AnimationWalkRate = 3.2,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
 				{
-					AlbedoName = '/Units/xsl0001/xsl0001_Albedo.dds',
-					NormalsName = '/Units/xsl0001/xsl0001_NormalsTS.DDS',
-                    LODCutoff = 500,
 					LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
+                    LODCutoff = 500,
 					Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/TotalMayhem/units/brpt1expbot/brpt1expbot_lod0.scm',
+					AlbedoName = '/Units/xsl0001/xsl0001_Albedo.dds',
+					NormalsName = '/Units/xsl0001/xsl0001_NormalsTS.DDS',
 					SpecularName = '/Units/xsl0001/xsl0001_SpecTeam.dds',
                 },
             },

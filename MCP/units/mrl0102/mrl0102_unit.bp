@@ -87,35 +87,36 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death1.sca',
+                Animation = '/mods/TotalMayhem/units/BRMT1BM/BRMT1BM_Death1.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death3.sca',
+                Animation = '/mods/TotalMayhem/units/BRMT1BM/BRMT1BM_Death3.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/mrl0102/mrl0102_Death2.sca',
+                Animation = '/mods/TotalMayhem/units/BRMT1BM/BRMT1BM_Death2.sca',
                 AnimationRateMax = 2.77,
                 AnimationRateMin = 2.77,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mrl0102/mrl0102_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRMT1BM/BRMT1BM_Walk.sca',
         AnimationWalkRate = 5.2,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/mrl0102/mrl0102_albedo.dds',
-                    NormalsName = '/mods/MCP/units/mrl0102/mrl0102_NormalsTS.DDS',
-                    SpecularName = '/mods/MCP/units/mrl0102/mrl0102_SpecTeam1.dds',
                     LODCutoff = 170,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmt1bm/brmt1bm_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/CybranTexture/CybranTexture_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/CybranTexture/CybranTexture_NormalsTS.DDS',
+                    SpecularName = '/mods/TotalMayhem/units/CybranTexture/CybranTexture_SpecTeam1.dds',
                 },
             },
         },
@@ -246,7 +247,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 50,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1BMproj/BRMT1BMproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybBolter1/CybBolter1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 5,
             ProjectilesPerOnFire = 1,
             RackBones = {

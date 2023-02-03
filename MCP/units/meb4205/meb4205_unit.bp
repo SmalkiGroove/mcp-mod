@@ -98,10 +98,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/Units/ueb2303/ueb2303_Albedo.dds',
-					NormalsName = '/Units/ueb2303/ueb2303_NormalsTS.DDS',
                     LODCutoff = 250,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnt1advnavygun/brnt1advnavygun_lod0.scm',
+                    AlbedoName = '/Units/ueb2303/ueb2303_Albedo.dds',
+					NormalsName = '/Units/ueb2303/ueb2303_NormalsTS.DDS',
 					SpecularName = '/Units/ueb2303/ueb2303_SpecTeam.dds',
                 },
             },
@@ -271,7 +272,7 @@ UnitBlueprint {
 			MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRNT2BTproj/BRNT2BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefGauss2/UefGauss2_proj.bp',
             ProjectilesPerOnFire = 2,
             RackBones = {
                 {
@@ -311,7 +312,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire Naval',
             WeaponRepackTimeout = 2,
-            WeaponUnpackAnimation = '/Mods/MCP/units/meb4205/meb4205aopen01.sca',
+            WeaponUnpackAnimation = '/Mods/TotalMayhem/units/BRNT1ADVNAVYGUN/BRNT1ADVNAVYGUNaopen01.sca',
             WeaponUnpackAnimationRate = 4,
             WeaponUnpackLocksMotion = true,
             WeaponUnpackTimeout = 2,

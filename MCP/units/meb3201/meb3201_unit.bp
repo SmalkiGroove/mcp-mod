@@ -59,11 +59,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 300,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnbt1peri/brnbt1peri_lod0.scm',
 					AlbedoName = '/Units/xec1401/xec1401_Albedo.dds',
 					NormalsName = '/Units/xec1401/xec1401_NormalsTS.DDS',
 					SpecularName = '/Units/xec1401/xec1401_SpecTeam.dds',
-                    LODCutoff = 300,
-                    ShaderName = 'Unit',
                 },
             },
         },

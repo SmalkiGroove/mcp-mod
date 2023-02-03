@@ -87,13 +87,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mas0206/mas0206_death.sca',
+                Animation = '/mods/TotalMayhem/units/BROST1DESTR/BROST1DESTR_death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
             },
             {
-                Animation = '/mods/MCP/units/mas0206/mas0206_death2.sca',
+                Animation = '/mods/TotalMayhem/units/BROST1DESTR/BROST1DESTR_death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
@@ -121,9 +121,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/mas0206/AeonTexture_albedo.dds',
                     LODCutoff = 440,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TotalMayhem/units/brost1destr/brost1destr_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/AeonTexture/AeonTexture_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brost1destr/brost1destr_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brost1destr/brost1destr_specteam.dds',
                 },
             },
         },

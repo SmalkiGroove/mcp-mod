@@ -81,6 +81,7 @@ UnitBlueprint {
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssb2103/ssb2103_lod0.scm',
                     AlbedoName = '/units/xsb2303/xsb2303_albedo.dds', 
                     NormalsName = '/units/xsb2303/xsb2303_normalsts.dds', 
                     SpecularName = '/units/xsb2303/xsb2303_specteam.dds',  

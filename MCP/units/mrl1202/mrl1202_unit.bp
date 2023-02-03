@@ -101,11 +101,11 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrl1202/mrl1202_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BRMT2MEDM/BRMT2MEDM_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mrl1202/mrl1202_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRMT2MEDM/BRMT2MEDM_Walk.sca',
         AnimationWalkRate = 5.75,
         Mesh = {
             IconFadeInZoom = 130,
@@ -113,6 +113,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 500,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmt2medm/brmt2medm_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmt2medm/brmt2medm_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmt2medm/brmt2medm_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmt2medm/brmt2medm_specteam.dds',
                 },
             },
         },
@@ -392,7 +396,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRMT2HVY2proj/BRMT2HVY2proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybResonnanceShell/CybResonnanceShell_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {
@@ -480,7 +484,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRMT2HVY2proj/BRMT2HVY2proj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybResonnanceShell/CybResonnanceShell_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {
@@ -558,7 +562,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.15,
             MuzzleSalvoSize = 7,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1BTRLproj/BRMT1BTRLproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybRocket3/CybRocket3_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {
@@ -628,7 +632,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.15,
             MuzzleSalvoSize = 9,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1BTRLproj/BRMT1BTRLproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybRocket3/CybRocket3_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {

@@ -96,19 +96,22 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrl1301/mrl1301_Death.sca',
+                Animation = '/mods/TotalMayhem/units/BRMT3VUL/BRMT3VUL_Death.sca',
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mrl1301/mrl1301_Walk.sca',
+        AnimationWalk = '/mods/TotalMayhem/units/BRMT3VUL/BRMT3VUL_Walk.sca',
         AnimationWalkRate = 2.65,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    AlbedoName = '/mods/MCP/units/mrl1301/CybranTexture_albedo.dds',
                     LODCutoff = 500,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmt3vul/brmt3vul_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/CybranTexture/CybranTexture_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmt3vul/brmt3vul_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmt3vul/brmt3vul_specteam.dds',
                 },
             },
         },
@@ -307,7 +310,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 15,
             MuzzleVelocity = 50,
             MuzzleVelocityRandomness = 0.5,
-            ProjectileId = '/mods/MCP/projectiles/BRMT3BM2TLproj/BRMT3BM2TLproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybRocket4/CybRocket4_proj.bp',
             ProjectileLifetimeUsesMultiplier = 15.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

@@ -85,6 +85,7 @@ UnitBlueprint {
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssl0319/ssl0319_lod0.scm',
                     AlbedoName = '/units/XSL0201/XSL0201_albedo.dds', 
                     NormalsName = '/units/XSL0201/XSL0201_normalsts.dds', 
                     SpecularName = '/units/XSL0201/XSL0201_specteam.dds', 
@@ -92,6 +93,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 215,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssl0319/ssl0319_lod1.scm',
                     AlbedoName = '/units/XSL0201/XSL0201_lod1_albedo.dds', 
                     NormalsName = '/units/XSL0201/XSL0201_lod1_normalsts.dds', 
                     SpecularName = '/units/XSL0201/XSL0201_lod1_specteam.dds', 

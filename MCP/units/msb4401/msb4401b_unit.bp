@@ -106,26 +106,6 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_shielddome>Shield Dome',
         },
-        --[[AnimationDeath = {
-            {
-                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath01.sca',
-                AnimationRateMax = 2.25,
-                AnimationRateMin = 1.75,
-                Weight = 10,
-            },
-            {
-                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath02.sca',
-                AnimationRateMax = 2.25,
-                AnimationRateMin = 1.75,
-                Weight = 10,
-            },
-            {
-                Animation = '/mods/MCP/units/msb4401/msb4401_Adeath03.sca',
-                AnimationRateMax = 2.25,
-                AnimationRateMin = 1.75,
-                Weight = 10,
-            },
-        },]]--
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -133,7 +113,7 @@ UnitBlueprint {
                     LODCutoff = 200,
                     ShaderName = 'Seraphim',
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
-                    --MeshName = '/units/xsb4301/xsb4301_lod0.scm',
+                    MeshName = '/mods/brewlan_units/brewshields/units/ssb4401/ssb4401_large_lod0.scm',
                     AlbedoName = '/units/xsb4301/xsb4301_albedo.dds',
                     SpecularName = '/units/xsb4301/xsb4301_specteam.dds',
                     NormalsName = '/units/xsb4301/xsb4301_normalsts.dds',

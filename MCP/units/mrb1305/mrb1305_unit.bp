@@ -76,10 +76,15 @@ UnitBlueprint {
                 {
                     LODCutoff = 200,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/srb1311/srb1311_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/srb1311/srb1311_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/srb1311/srb1311_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/srb1311/srb1311_specteam.dds',
                 },
                 {
                     LODCutoff = 300,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BrewLAN/units/srb1311/srb1311_lod1.scm',
                     AlbedoName = '/units/URB1301/URB1301_lod1_albedo.dds',
                     SpecularName = '/units/URB1301/URB1301_lod1_specteam.dds',
                     NormalsName = '/units/URB1301/URB1301_lod1_normalsTS.dds',
@@ -88,23 +93,6 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXB0023',
         SpawnRandomRotation = true,
-#        Tarmacs = {
-#            {
-#                Albedo = 'Tarmacs/Tar12x_cybran_01_albedo',
-#                DeathLifetime = 300,
-#                FadeOut = 150,
-#                Length = 12.8,
-#                Normal = 'Tarmacs/Tar12x_cybran_01_normals',
-#                Orientations = {
-#                    0,
-#                    90,
-#                    180,
-#                    270,
-#                },
-#                RemoveWhenDead = false,
-#                Width = 12.8,
-#            },
-#        }, 
         UniformScale = 0.09,
     },
     Economy = {

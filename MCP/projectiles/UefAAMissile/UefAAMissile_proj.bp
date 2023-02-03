@@ -1,0 +1,71 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BRMT1BTEXPLODE1',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'TM_EXPLOSIONS',
+            Cue = 'BRMT1BTEXPLODE1',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_CYBRAN',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'CYBRAN',
+        'PROJECTILE',
+        'ANTIAIR',
+        'MISSILE',
+    },
+    Display = {
+        Mesh = {
+            LODs = {
+                {
+                    LODCutoff = 150,
+                    MeshName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fightermissile_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_specteam.dds',
+                    ShaderName = 'TMeshAlpha',
+                },
+            },
+        },
+        StrategicIconSize = 1,
+        UniformScale = 0.006,
+    },
+    General = {
+        Category = 'Anti Air',
+        EntityCategory = {
+            'CYBRAN',
+            'PROJECTILE',
+            'ANTIAIR',
+            'MISSILE',
+        },
+        Faction = 'Cybran',
+        TechLevel = 3,
+        Weapon = 'Nanite Missile System',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 5,
+        DestroyOnWater = true,
+        InitialSpeed = 20,
+        LeadTarget = false,
+        Lifetime = 3,
+        MaxSpeed = 35,
+        MaxZigZag = 5,
+        OnLostTargetLifetime = 0.7,
+        TrackTarget = true,
+        TurnRate = 200,
+        UseGravity = false,
+        VelocityAlign = true,
+        ZigZagFrequency = 0.5,
+    },
+}

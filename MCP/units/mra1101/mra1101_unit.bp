@@ -144,6 +144,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TotalMayhem/units/brmat1exgs/brmat1exgs_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brmat1exgs/brmat1exgs_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brmat1exgs/brmat1exgs_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brmat1exgs/brmat1exgs_specteam.dds',
                 },
             },
         },
@@ -316,7 +320,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 10,
-            WeaponUnpackAnimation = '/mods/MCP/units/mra1101/mra1101_deploy.sca',
+            WeaponUnpackAnimation = '/mods/TotalMayhem/units/BRMAT1EXGS/BRMAT1EXGS_deploy.sca',
             WeaponUnpackAnimationRate = 1.5,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
@@ -345,7 +349,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -415,7 +419,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -485,7 +489,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -555,7 +559,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
-            ProjectileId = '/mods/MCP/projectiles/BRMT1HVYproj/BRMT1HVYproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/CybProton2/CybProton2_proj.bp',
             ProjectileLifetimeUsesMultiplier = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {

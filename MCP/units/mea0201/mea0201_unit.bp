@@ -147,6 +147,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 170,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_lod0.scm',
+                    AlbedoName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_albedo.dds',
+                    NormalsName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_normalsTS.dds',
+                    SpecularName = '/mods/TotalMayhem/units/brnat2fighter/brnat2fighter_specteam.dds',
                 },
             },
         },
@@ -295,7 +299,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 20,
-            ProjectileId = '/mods/MCP/projectiles/BRNAT2FIGHTERproj/BRNAT2FIGHTERproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAAMissile/UefAAMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 10.85,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -418,7 +422,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 40,
-            ProjectileId = '/mods/MCP/projectiles/BRNAT2FIGHTERproj/BRNAT2FIGHTERproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/UefAAMissile/UefAAMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 10.85,
             ProjectilesPerOnFire = 1,
             RackBones = {
