@@ -12,4 +12,15 @@ exclusive = false
 ui_only = false
 special_thanks = "Uveso, Balthazar"
 conflicts = {}
-requiresNames = {["62e2j64a-TOMA-3652-01360-146as555a8u3"] = "Total Mayhem"}
+requiresNames = {
+    ["62e2j64a-TOMA-3652-01360-146as555a8u3"] = "Total Mayhem",
+    ["25D57D85-7D84-27HT-A501-BR3WL4N000084"] = "BrewLAN",
+    ["190261d0-4bb0-11e2-bcSC-BLNEWUNITS02"] = "BrewLAN Units",
+    ["9e8ea941-c306-aaaf-b367-u00000020000"] = "Blackops Unleashed",
+    ["9e8ee941-c406-4751-b367-e10000020000"] = "Blackops ExUnits",
+    ["1b6a5b64-3afe-3652-0137-8e64894b16f8"] = "Orbital Wars",
+    [] = "",
+    [] = "",
+    [] = "",
+    [] = "",
+}

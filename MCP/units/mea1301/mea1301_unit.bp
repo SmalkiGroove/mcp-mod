@@ -117,10 +117,11 @@ UnitBlueprint {
             LODs = {
 			
                 {
-					AlbedoName = '/Units/xes0307/xes0307_Albedo.dds',
-					NormalsName = '/Units/xes0307/xes0307_NormalsTS.DDS',
                     LODCutoff = 700,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/OrbitalWarsMod/units/modunitsftu/orbital/ueow1102/ueow1102_lod0.scm',
+					AlbedoName = '/Units/xes0307/xes0307_Albedo.dds',
+					NormalsName = '/Units/xes0307/xes0307_NormalsTS.DDS',
 					SpecularName = '/Units/xes0307/xes0307_SpecTeam.dds',
                 },
             },

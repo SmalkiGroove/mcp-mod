@@ -127,7 +127,7 @@ UnitBlueprint {
     },
     Description = 'Spaceship',
     Display = {
-	--AnimationOpen = '/Mods/MCP/units//mra1301/mra1301_Aopen.sca',
+	    AnimationOpen = '/Mods/OrbitalWarsMod/units/ModUnitsCybran/OrbitalsUnitsCybran/UROW1101/UROW1101_Aopen.sca',
         Abilities = {
             '<LOC ability_aa>Anti-Air',
         },
@@ -136,10 +136,11 @@ UnitBlueprint {
             LODs = {
 			
                 {
-					AlbedoName = '/Units/urs0201/urs0201_Albedo.dds',
-					NormalsName = '/Units/urs0201/urs0201_NormalsTS.DDS',
                     LODCutoff = 700,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/OrbitalWarsMod/units/modunitscybran/orbitalsunitscybran/ueow1102/ueow1102_lod0.scm',
+					AlbedoName = '/Units/urs0201/urs0201_Albedo.dds',
+					NormalsName = '/Units/urs0201/urs0201_NormalsTS.DDS',
 					SpecularName = '/Units/urs0201/urs0201_SpecTeam.dds',
                 },
             },
