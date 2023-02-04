@@ -106,10 +106,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/uas0103/uas0103_Albedo.dds',
-					NormalsName = '/Units/uas0103/uas0103_NormalsTS.DDS',
                     LODCutoff = 700,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/OrbitalWarsMod/units/modunitsaeons/orbitalunitsaeon/uaow1103/uaow1103_lod0.scm',
+					AlbedoName = '/Units/uas0103/uas0103_Albedo.dds',
+					NormalsName = '/Units/uas0103/uas0103_NormalsTS.DDS',
 					SpecularName = '/Units/uas0103/uas0103_SpecTeam.dds',
                 },
             },
