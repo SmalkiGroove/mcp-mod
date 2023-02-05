@@ -63,16 +63,16 @@ UnitBlueprint {
         Abilities = {
             'Naval',
         },
-        AnimationActivate = '/mods/MCP/units/mab1309/mab1309_apump.sca',
+        AnimationActivate = '/Mods/ExpWars_v2_8/units/structuresnavales/uab1208/uab1208_apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 320,
+                    ShaderName = 'Aeon',
+                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/uab1208/uab1208_lod0.scm',
 					AlbedoName = '/Units/uab1303/uab1303_Albedo.dds',
 					NormalsName = '/Units/uab1303/uab1303_NormalsTS.DDS',
-                    LODCutoff = 320,
-                   -- MeshName = '/Units/uab1103/uab1103_LOD0.scm',
-                    ShaderName = 'Aeon',
 					SpecularName = '/Units/uab1303/uab1303_SpecTeam.dds',
                 },
             },

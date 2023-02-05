@@ -114,11 +114,11 @@ UnitBlueprint {
         },
        AnimationDeath = {
             {
-                Animation = '/Mods/MCP/units/mas0307/mas0307_adeath01.sca',
+                Animation = '/Mods/ExpWars_v2_8/units/uas0301/uas0301_adeath01.sca',
                 Weight = 100,
             },
         },
-        AnimationSurface = '/Mods/MCP/units/mas0307/mas0307_aopen01.sca',
+        AnimationSurface = '/Mods/ExpWars_v2_8/units/uas0301/uas0301_aopen01.sca',
         IdleEffects = {
             Sub = {
                 Effects = {

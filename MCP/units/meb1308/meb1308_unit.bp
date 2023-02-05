@@ -65,12 +65,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 320,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/ueb1207/ueb1207_lod0.scm',
+					SpecularName = '/Units/ueb1102/ueb1102_SpecTeam.dds',
 					AlbedoName = '/Units/ueb1102/ueb1102_Albedo.dds',
 					NormalsName = '/Units/ueb1102/ueb1102_NormalsTS.DDS',
-                    LODCutoff = 320,
-                    #MeshName = '/Units/ueb1102/ueb1102_LOD0.scm',
-                    ShaderName = 'Unit',
-					SpecularName = '/Units/ueb1102/ueb1102_SpecTeam.dds',
                 },
             },
         },

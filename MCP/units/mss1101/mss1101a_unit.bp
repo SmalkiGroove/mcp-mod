@@ -153,6 +153,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 140,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/expcruiser/units/tcas0201/tcas0201_lod0.scm',
+                    AlbedoName = '/mods/expcruiser/units/tcas0201/tcas0201_albedo.dds',
+                    NormalsName = '/mods/expcruiser/units/tcas0201/tcas0201_normalsTS.dds',
+                    SpecularName = '/mods/expcruiser/units/tcas0201/tcas0201_specteam.dds',
                 },
             },
         },
