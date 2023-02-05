@@ -64,16 +64,16 @@ UnitBlueprint {
             '<LOC ability_aquatic>Aquatic',
             '<LOC ability_upgradable>Upgradeable',
         },
-        AnimationOpen = '/mods/MCP/units/meb1208/meb1208_Apump.sca',
+        AnimationOpen = '/Mods/ExpWars_v2_8/units/StructuresNavales/ueb1107/ueb1107_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 320,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/ueb1107/ueb1107_lod0.scm',
 					AlbedoName = '/Units/ueb1102/ueb1102_Albedo.dds',
 					NormalsName = '/Units/ueb1102/ueb1102_NormalsTS.DDS',
-                    LODCutoff = 320,
-                    #MeshName = '/Units/ueb1102/ueb1102_LOD0.scm',
-                    ShaderName = 'Unit',
 					SpecularName = '/Units/ueb1102/ueb1102_SpecTeam.dds',
                 },
             },

@@ -58,17 +58,17 @@ UnitBlueprint {
         Abilities = {
             'Naval',
         },
-       AnimationOpen = '/mods/MCP/units/mrb1309/mrb1309_Apump.sca',
-        --AnimationUpgrade = '/units/urb1103/urb1103_Aupgrade.sca',
+       AnimationOpen = '/Mods/ExpWars_v2_8/units/StructuresNavales/urb1208/urb1208_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/urc1301/urc1301_Albedo.dds',
-					NormalsName = '/Units/urc1301/urc1301_NormalsTS.DDS',
                     LODCutoff = 320,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/urb1208/urb1208_lod0.scm',
 					SpecularName = '/Units/urc1301/urc1301_SpecTeam.dds',
+					AlbedoName = '/Units/urc1301/urc1301_Albedo.dds',
+					NormalsName = '/Units/urc1301/urc1301_NormalsTS.DDS',
                 },
             },
         },

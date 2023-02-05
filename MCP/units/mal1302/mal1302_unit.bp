@@ -29,11 +29,11 @@ UnitBlueprint {
     },
     Buffs = {
         Regen = {
-            Level1 = 16,
-            Level2 = 24,
-            Level3 = 32,
-            Level4 = 40,
-            Level5 = 48,
+            Level1 = 40,
+            Level2 = 80,
+            Level3 = 120,
+            Level4 = 160,
+            Level5 = 200,
         },
     },
     BuildIconSortPriority = 998,
@@ -65,7 +65,7 @@ UnitBlueprint {
         EconomyThreatLevel = 0,
         Health = 50000,
         MaxHealth = 50000,
-        RegenRate = 8,
+        RegenRate = 20,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 1,
     },
@@ -95,10 +95,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/xac2101/xac2101_Albedo.dds',
-					NormalsName = '/Units/xac2101/xac2101_NormalsTS.DDS',
                     LODCutoff = 500,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/expwars_v2_8/units/ualew0002/ualew0002_lod0.scm',
+					AlbedoName = '/Units/xac2101/xac2101_Albedo.dds',
+					NormalsName = '/Units/xac2101/xac2101_NormalsTS.DDS',
 					SpecularName = '/Units/xac2101/xac2101_SpecTeam.dds',
                 },
 			},	
@@ -301,7 +302,7 @@ UnitBlueprint {
             WeaponCategory = 'Experimental',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
-        },		
+        },
     },
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',

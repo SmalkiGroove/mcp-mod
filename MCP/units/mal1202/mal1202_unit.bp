@@ -93,12 +93,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/ual0401/ual0401_Albedo.dds',
-					NormalsName = '/Units/ual0401/ual0401_NormalsTS.DDS',
-					SecondaryName = '/units/uaa0310/uaa0310_secondary.dds',
 					Scrolling = true,
                     LODCutoff = 500,
                     ShaderName = 'AeonCZAR',
+                    MeshName = '/mods/expwars_v2_8/units/ualew0003/ualew0003_lod0.scm',
+					AlbedoName = '/Units/ual0401/ual0401_Albedo.dds',
+					NormalsName = '/Units/ual0401/ual0401_NormalsTS.DDS',
+					SecondaryName = '/units/uaa0310/uaa0310_secondary.dds',
 					SpecularName = '/Units/ual0401/ual0401_SpecTeam.dds',
                 },
 			},

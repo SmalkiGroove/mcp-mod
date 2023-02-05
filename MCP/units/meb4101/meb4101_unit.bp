@@ -89,8 +89,20 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 120,
+                    ShaderName = 'Unit',
+                    MeshName = '/mods/T1_Shield/units/ded1101/ded1101_lod0.scm',
+                    AlbedoName = '/mods/T1_Shield/units/ded1101/ded1101_albedo.dds',
+                    NormalsName = '/mods/T1_Shield/units/ded1101/ded1101_normalsTS.dds',
+                    SpecularName = '/mods/T1_Shield/units/ded1101/ded1101_specteam.dds',
+                },
+                {
                     LODCutoff = 215,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/T1_Shield/units/ded1101/ded1101_lod1.scm',
+                    AlbedoName = '/mods/T1_Shield/units/ded1101/ded1101_albedo.dds',
+                    NormalsName = '/mods/T1_Shield/units/ded1101/ded1101_normalsTS.dds',
+                    SpecularName = '/mods/T1_Shield/units/ded1101/ded1101_specteam.dds',
                 },
             },
         },
