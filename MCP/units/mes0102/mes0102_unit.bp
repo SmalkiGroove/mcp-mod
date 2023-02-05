@@ -89,12 +89,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 120,
+					Scrolling = true,
+                    ShaderName = 'Unit',
+                    MeshName = '/Mods/ExpWars_v2_8/units/t1units/ues0106/ues0106_LOD0.scm',
 					AlbedoName = '/Units/ues0103/ues0103_Albedo.dds',
 					NormalsName = '/Units/ues0103/ues0103_NormalsTS.DDS',
-                    LODCutoff = 100,
-                    MeshName = '/Mods/MCP/units/mes0102/mes0102_LOD0.scm',
-					--Scrolling = true,
-                    ShaderName = 'Unit',
 					SpecularName = '/Units/ues0103/ues0103_SpecTeam.dds',
                 },
             },

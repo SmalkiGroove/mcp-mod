@@ -102,13 +102,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/xss0103/xss0103_Albedo.dds',
-					NormalsName = '/Units/xss0103/xss0103_NormalsTS.DDS',
                     LODCutoff = 320,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
-                    Scrolling = true,					
-					--MeshName = '/Units/xss0103/xss0103_LOD0.scm',
+                    Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/expwars_v2_8/units/t1units/xss0106/xss0106_lod0.scm',
+					AlbedoName = '/Units/xss0103/xss0103_Albedo.dds',
+					NormalsName = '/Units/xss0103/xss0103_NormalsTS.DDS',
 					SpecularName = '/Units/xss0103/xss0103_SpecTeam.dds',
                 },
             },

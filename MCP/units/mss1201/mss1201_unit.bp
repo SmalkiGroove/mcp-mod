@@ -123,7 +123,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/Mods/MCP/units/mss1201/mss1201_adeath01.sca',
+                Animation = '/Mods/#Marlos mods compilation/units/KSS0301/KSS0301_adeath01.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 100,
@@ -149,6 +149,10 @@ UnitBlueprint {
                     LODCutoff = 540,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/#Marlos mods compilation/units/kss0301/kss0301_lod0.scm',
+                    AlbedoName = '/mods/#Marlos mods compilation/units/kss0301/kss0301_albedo.dds',
+                    NormalsName = '/mods/#Marlos mods compilation/units/kss0301/kss0301_normalsTS.dds',
+                    SpecularName = '/mods/#Marlos mods compilation/units/kss0301/kss0301_specteam.dds',
                 },
             },
         },

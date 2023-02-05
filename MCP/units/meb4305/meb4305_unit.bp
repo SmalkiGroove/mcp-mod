@@ -72,6 +72,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 400,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/#Marlos mods compilation/units/keb2301/keb2301_lod0.scm',
+                    AlbedoName = '/mods/#Marlos mods compilation/units/keb2301/keb2301_albedo.dds',
+                    NormalsName = '/mods/#Marlos mods compilation/units/keb2301/keb2301_normalsTS.dds',
+                    SpecularName = '/mods/#Marlos mods compilation/units/keb2301/keb2301_specteam.dds',
                 },
             },
         },

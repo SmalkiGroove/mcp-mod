@@ -22,6 +22,6 @@ requiresNames = {
     ["2ECD8EC4-6675-11DD-8C83-853456D89593"] = "Deep Blue Naval Pack",
     ["e403c941-1faa-42a5-bcce-4762af26140a"] = "Experimental Wars",
     ["dc38db7c-419f-4b16-add1-2d4d5fa5339c"] = "Extreme T1 Shields",
-    [] = "",
-    [] = "",
+    ["55D5A55I-55R5-5432-2345-555YF555A55R5"] = "The Dairy Farm",
+    ["e3huey1115-1FAF2-2296-1111-15555c1s23FA"] = "Marlo's mod Compilation",
 }
