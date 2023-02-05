@@ -146,14 +146,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 200,
+                    LODCutoff = 300,
                     ShaderName = 'Aeon',
-                },
-                {
-                    AlbedoName = '/mods/MCP/units/mas0307/mas0307_lod1_Albedo.dds',
-                    LODCutoff = 600,
-                    ShaderName = 'Aeon',
-                    SpecularName = '/mods/MCP/units/mas0307/mas0307_lod1_SpecTeam.dds',
+                    MeshName = '/mods/expwars_v2_8/units/uas0301/uas0301_lod0.scm',
+					AlbedoName = '/Units/uas0202/uas0202_Albedo.dds',
+					NormalsName = '/Units/uas0202/uas0202_NormalsTS.DDS',
+					SpecularName = '/Units/uas0202/uas0202_SpecTeam.dds',
                 },
             },
         },

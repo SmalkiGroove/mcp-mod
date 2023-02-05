@@ -85,35 +85,38 @@ UnitBlueprint {
             '<LOC ability_radar>Radar',
             '<LOC ability_personalstealth>Personal Stealth',
         },
+        AnimationOpen = '/mods/TheDairyFarm/units/DCL301/DCL301_Aopen.sca',
+        AnimationClose = '/mods/TheDairyFarm/units/DCL301/DCL301_Aclose.sca',
         AnimationDeath = {
 			{
-                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath01.sca',
-                AnimationRateMax = 1.00,
-                AnimationRateMin = 0.30,
-                Weight = 1,
-            },
-            {
-                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath02.sca',
-                AnimationRateMax = 1.00,
-                AnimationRateMin = 0.30,
-                Weight = 1,
-            },
-            {
-                Animation = '/mods/MCP/units/mrl0308/mrl0308_ADeath03.sca',
-                AnimationRateMax = 1.30,
-                AnimationRateMin = 0.70,
+                Animation = '/mods/TheDairyFarm/units/DCL301/DCL301_Adeath01.sca',
+                AnimationRateMax = 1.5,
+                AnimationRateMin = 0.75,
                 Weight = 1,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mrl0308/mrl0308_A001.sca',
+        AnimationWalk = '/mods/TheDairyFarm/units/DCL301/DCL301_awalk.sca',
         AnimationWalkRate = 2,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
+                    LODCutoff = 120,
+                    Scrolling = true,
+                    ShaderName = 'Insect',
+                    MeshName = '/mods/TheDairyFarm/units/dcl301/dcl301_lod0.scm',
+                    AlbedoName = '/mods/TheDairyFarm/units/dcl301/dcl301_albedo.dds',
+                    NormalsName = '/mods/TheDairyFarm/units/dcl301/dcl301_normalsTS.dds',
+                    SpecularName = '/mods/TheDairyFarm/units/dcl301/dcl301_specteam.dds',
+                },
+                {
                     LODCutoff = 200,
                     Scrolling = true,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/TheDairyFarm/units/dcl301/dcl301_lod1.scm',
+                    AlbedoName = '/mods/TheDairyFarm/units/dcl301/dcl301_lod1_albedo.dds',
+                    NormalsName = '/mods/TheDairyFarm/units/dcl301/dcl301_lod1_normalsTS.dds',
+                    SpecularName = '/mods/TheDairyFarm/units/dcl301/dcl301_lod1_specteam.dds',
                 },
             },
         },
@@ -135,8 +138,12 @@ UnitBlueprint {
         PlaceholderMeshName = 'UXB0000',
         SpawnRandomRotation = true,
         TransportAnimation = {
+            {
+                Animation = '/mods/TheDairyFarm/units/DCL301/DCL301_Afold01.sca',
+                Weight = 100,
+            },
         },
-        UniformScale = 0.02,
+        UniformScale = 0.035,
     },
     Economy = {
         BuildCostEnergy = 9500,

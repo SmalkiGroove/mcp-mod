@@ -59,7 +59,7 @@ UnitBlueprint {
     },
     Description = 'Heavy Point Defense',
     Display = {
-        AnimationPermOpen = '/mods/MCP/units/mab2202/mab2202_open.sca',
+        AnimationPermOpen = '/mods/TheDairyFarm/units/DAB201/DAB201_open.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -67,12 +67,18 @@ UnitBlueprint {
                     LODCutoff = 120,
                     Scrolling = true,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/TheDairyFarm/units/dab201/dab201_lod0.scm',
+                    AlbedoName = '/mods/TheDairyFarm/units/dab201/dab201_albedo.dds',
+                    NormalsName = '/mods/TheDairyFarm/units/dab201/dab201_normalsTS.dds',
+                    SpecularName = '/mods/TheDairyFarm/units/dab201/dab201_specteam.dds',
                 },
                 {
-                    AlbedoName = 'mab2202_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'Aeon',
-                    SpecularName = 'mab2202_lod1_specteam.dds',
+                    MeshName = '/mods/TheDairyFarm/units/dab201/dab201_lod1.scm',
+                    AlbedoName = '/mods/TheDairyFarm/units/dab201/dab201_lod1_albedo.dds',
+                    NormalsName = '/mods/TheDairyFarm/units/dab201/dab201_lod1_normalsTS.dds',
+                    SpecularName = '/mods/TheDairyFarm/units/dab201/dab201_lod1_specteam.dds',
                 },
             },
         },

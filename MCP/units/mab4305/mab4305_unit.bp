@@ -67,6 +67,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 400,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/#Marlos mods compilation/units/kab2301/kab2301_lod0.scm',
+                    AlbedoName = '/mods/#Marlos mods compilation/units/kab2301/kab2301_albedo.dds',
+                    NormalsName = '/mods/#Marlos mods compilation/units/kab2301/kab2301_normalsTS.dds',
+                    SpecularName = '/mods/#Marlos mods compilation/units/kab2301/kab2301_specteam.dds',
                 },
             },
         },

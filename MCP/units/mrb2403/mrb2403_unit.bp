@@ -54,10 +54,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-					AlbedoName = '/Units/xrb3301/xrb3301_Albedo.dds',
-					NormalsName = '/Units/xrb3301/xrb3301_NormalsTS.DDS',
                     LODCutoff = 320,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/expwars_v2_8/units/urb4401/urb4401_lod0.scm',
+					AlbedoName = '/Units/xrb3301/xrb3301_Albedo.dds',
+					NormalsName = '/Units/xrb3301/xrb3301_NormalsTS.DDS',
 					SpecularName = '/Units/xrb3301/xrb3301_SpecTeam.dds',
                 },
             },

@@ -72,6 +72,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 400,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/#Marlos mods compilation/units/krb2301/krb2301_lod0.scm',
+                    AlbedoName = '/mods/#Marlos mods compilation/units/krb2301/krb2301_albedo.dds',
+                    NormalsName = '/mods/#Marlos mods compilation/units/krb2301/krb2301_normalsTS.dds',
+                    SpecularName = '/mods/#Marlos mods compilation/units/krb2301/krb2301_specteam.dds',
                 },
             },
         },
