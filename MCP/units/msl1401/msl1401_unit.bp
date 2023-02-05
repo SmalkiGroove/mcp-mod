@@ -91,19 +91,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSL0401/BSL0401_aDeath01.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath02.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSL0401/BSL0401_aDeath02.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/msl1401/msl1401_aDeath03.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSL0401/BSL0401_aDeath03.sca',
                 AnimationRateMax = 4.0,
                 AnimationRateMin = 4.0,
                 Weight = 100,
@@ -163,6 +163,10 @@ UnitBlueprint {
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bsl0401/bsl0401_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bsl0401/bsl0401_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bsl0401/bsl0401_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bsl0401/bsl0401_specteam.dds',
                 },
             },
         },
@@ -213,31 +217,31 @@ UnitBlueprint {
     DroneData = {
         Drone1 = {
             Attachpoint = 'AttachSpecial01',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone2 = {
             Attachpoint = 'AttachSpecial02',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone3 = {
             Attachpoint = 'AttachSpecial03',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone4 = {
             Attachpoint = 'AttachSpecial04',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone5 = {
             Attachpoint = 'AttachSpecial05',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone6 = {
             Attachpoint = 'AttachSpecial06',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
         Drone7 = {
             Attachpoint = 'AttachSpecial07',
-            UnitID = 'msl1401A',
+            UnitID = 'msl1401a',
         },
     },
     Economy = {

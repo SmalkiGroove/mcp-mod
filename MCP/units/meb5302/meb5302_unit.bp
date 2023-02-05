@@ -99,7 +99,7 @@ UnitBlueprint {
             '<LOC ability_torpedo>Torpedoes',
             '<LOC ability_aquatic>Aquatic',
         },
-        AnimationOpen = '/mods/MCP/units/meb5302/meb5302_aopen.sca',
+        AnimationOpen = '/mods/BlackOpsFAF-Unleashed/units/beb5205/BEB5205_aopen.sca',
         IdleEffects = {
             Water = {
                 Effects = {
@@ -123,6 +123,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 300,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/beb5205/beb5205_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/beb5205/beb5205_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/beb5205/beb5205_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/beb5205/beb5205_specteam.dds',
                 },
             },
         },

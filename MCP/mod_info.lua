@@ -19,6 +19,7 @@ requiresNames = {
     ["9e8ea941-c306-aaaf-b367-u00000020000"] = "Blackops Unleashed",
     ["9e8ee941-c406-4751-b367-e10000020000"] = "Blackops ExUnits",
     ["1b6a5b64-3afe-3652-0137-8e64894b16f8"] = "Orbital Wars",
+    ["2ECD8EC4-6675-11DD-8C83-853456D89593"] = "Deep Blue Naval Pack",
     [] = "",
     [] = "",
     [] = "",

@@ -101,6 +101,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bal0402/bal0402_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bal0402/bal0402_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bal0402/bal0402_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bal0402/bal0402_specteam.dds',
                 },
             },
         },

@@ -64,6 +64,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 300,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/beb1202/beb1202_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/beb1202/beb1202_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/beb1202/beb1202_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/beb1202/beb1202_specteam.dds',
                 },
             },
         },

@@ -93,19 +93,19 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSS0401/BSS0401_ADeath01.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath02.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSS0401/BSS0401_ADeath02.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/mss1401/mss1401_ADeath03.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BSS0401/BSS0401_ADeath03.sca',
                 AnimationRateMax = 0.2,
                 AnimationRateMin = 0.1,
                 Weight = 100,
@@ -136,6 +136,10 @@ UnitBlueprint {
                     LODCutoff = 600,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bss0401/bss0401_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bss0401/bss0401_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bss0401/bss0401_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bss0401/bss0401_specteam.dds',
                 },
             },
         },

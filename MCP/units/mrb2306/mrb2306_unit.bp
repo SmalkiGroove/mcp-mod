@@ -66,6 +66,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 215,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/brb2306/brb2306_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/brb2306/brb2306_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/brb2306/brb2306_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/brb2306/brb2306_specteam.dds',
                 },
             },
         },

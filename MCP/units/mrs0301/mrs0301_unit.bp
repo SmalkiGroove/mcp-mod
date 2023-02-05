@@ -107,10 +107,10 @@ UnitBlueprint {
             '<LOC ability_torpedo>Torpedoes',
             '<LOC ability_torpturn>Torpedo Redirection System',
         },
-        CannonOpenAnimation = '/mods/MCP/units/mrs0301/mrs0301_AOpen.sca',
+        CannonOpenAnimation = '/mods/BlackOpsFAF-Unleashed/units/BRS0305/BRS0305_AOpen.sca',
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs0301/mrs0301_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BRS0305/BRS0305_ADeath01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.9,
                 Weight = 100,
@@ -147,6 +147,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 215,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/brs0305/brs0305_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/brs0305/brs0305_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/brs0305/brs0305_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/brs0305/brs0305_specteam.dds',
                 },
             },
         },

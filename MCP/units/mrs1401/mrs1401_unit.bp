@@ -108,13 +108,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs1401/mrs1401_ASink01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BRS0402/BRS0402_ASink01.sca',
                 AnimationRateMax = 0.5,
                 AnimationRateMin = 0.5,
                 Weight = 40,
             },
             {
-                Animation = '/mods/MCP/units/mrs1401/mrs1401_ASink02.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BRS0402/BRS0402_ASink02.sca',
                 AnimationRateMax = 0.5,
                 AnimationRateMin = 0.5,
                 Weight = 60,
@@ -148,6 +148,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/brs0402/brs0402_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/brs0402/brs0402_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/brs0402/brs0402_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/brs0402/brs0402_specteam.dds',
                 },
             },
         },

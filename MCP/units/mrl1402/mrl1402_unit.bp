@@ -111,15 +111,15 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrl1402/mrl1402_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BRL0401/BRL0401_ADeath01.sca',
                 AnimationRateMax = 0.4,
                 AnimationRateMin = 0.4,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mrl1402/mrl1402_AWalk01.sca',
-        AnimationDeploy = '/mods/MCP/units/mrl1402/mrl1402_Deploy.sca',
-        AnimationPackUp = '/mods/MCP/units/mrl1402/mrl1402_PackUp.sca',
+        AnimationWalk = '/mods/BlackOpsFAF-Unleashed/units/BRL0401/BRL0401_AWalk01.sca',
+        AnimationDeploy = '/mods/BlackOpsFAF-Unleashed/units/BRL0401/BRL0401_Deploy.sca',
+        AnimationPackUp = '/mods/BlackOpsFAF-Unleashed/units/BRL0401/BRL0401_PackUp.sca',
         AnimationWalkRate = 0.75,
         Mesh = {
             IconFadeInZoom = 130,
@@ -127,6 +127,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 300,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/brl0401/brl0401_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/brl0401/brl0401_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/brl0401/brl0401_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/brl0401/brl0401_specteam.dds',
                 },
             },
         },
@@ -152,7 +156,7 @@ UnitBlueprint {
                             StraightLegs = false,
                             Tread = {
                                 TreadLifeTime = 60,
-                                TreadMarks = '/mods/MCP/env/common/splats/Basilisk_Foot_albedo.dds',
+                                TreadMarks = '/mods/BlackOpsFAF-Unleashed/env/common/splats/Basilisk_Foot_albedo.dds',
                                 TreadMarksSizeX = 2.3,
                                 TreadMarksSizeZ = 2.1,
                                 TreadOffset = {
@@ -170,7 +174,7 @@ UnitBlueprint {
                             StraightLegs = false,
                             Tread = {
                                 TreadLifeTime = 60,
-                                TreadMarks = '/mods/MCP/env/common/splats/Basilisk_Foot_albedo.dds',
+                                TreadMarks = '/mods/BlackOpsFAF-Unleashed/env/common/splats/Basilisk_Foot_albedo.dds',
                                 TreadMarksSizeX = 2.3,
                                 TreadMarksSizeZ = 2.1,
                                 TreadOffset = {
