@@ -105,13 +105,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mes0301/mes0301_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/ees0301/ees0301_ADeath01.sca',
                 AnimationRateMax = 2.0,
                 AnimationRateMin = 0.75,
                 Weight = 100,
             },
         },
-        AnimationSurface = '/mods/MCP/units/mes0301/mes0301_aopen.sca',
+        AnimationSurface = '/mods/BlackOpsFAF-EXUnits/units/ees0301/ees0301_aopen.sca',
         IdleEffects = {
             Sub = {
                 Effects = {
@@ -144,12 +144,18 @@ UnitBlueprint {
                 {
                     LODCutoff = 100,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_specteam.dds',
                 },
                 {
-                    AlbedoName = 'mes0301_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'Unit',
-                    SpecularName = 'mes0301_lod1_specteam.dds',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_lod1.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_lod1_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_lod1_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ees0301/ees0301_lod1_specteam.dds',
                 },
             },
         },

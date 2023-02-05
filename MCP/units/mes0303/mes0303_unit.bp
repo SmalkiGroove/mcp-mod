@@ -91,7 +91,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mes0303/mes0303_ADeath01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/EES0302/EES0302_ADeath01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 100,
@@ -115,12 +115,18 @@ UnitBlueprint {
                 {
                     LODCutoff = 140,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_specteam.dds',
                 },
                 {
-                    AlbedoName = 'mes0303_lod1_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Unit',
-                    SpecularName = 'mes0303_lod1_specteam.dds',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_lod1.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_lod1_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_lod1_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ees0302/ees0302_lod1_specteam.dds',
                 },
             },
         },
@@ -324,7 +330,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Missile',
             WeaponRepackTimeout = 0,
-            WeaponUnpackAnimation = '/mods/MCP/units/mes0303/mes0303_MissileDeploy.sca',
+            WeaponUnpackAnimation = '/mods/BlackOpsFAF-EXUnits/units/EES0302/EES0302_MissileDeploy.sca',
             WeaponUnpackAnimationRate = 0.5,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,

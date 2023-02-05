@@ -96,13 +96,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mes1401/mes1401_ASink01.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BES0402/BES0402_ASink01.sca',
                 AnimationRateMax = 1,
                 AnimationRateMin = 0.8,
                 Weight = 100,
             },
             {
-                Animation = '/mods/MCP/units/mes1401/mes1401_ASink02.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BES0402/BES0402_ASink02.sca',
                 AnimationRateMax = 1,
                 AnimationRateMin = 0.8,
                 Weight = 100,
@@ -127,6 +127,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 600,
                     ShaderName = 'Unit',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bes0402/bes0402_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bes0402/bes0402_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bes0402/bes0402_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bes0402/bes0402_specteam.dds',
                 },
             },
         },

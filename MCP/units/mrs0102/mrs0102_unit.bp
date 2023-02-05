@@ -88,7 +88,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs0102/mrs0102_asink01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_asink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 100,
@@ -96,7 +96,7 @@ UnitBlueprint {
         },
 		LandAnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs0102/mrs0102_adeath01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_adeath01.sca',
 				AnimationRateMax = 0.8,
                 AnimationRateMin = 0.5,
                 Weight = 100,
@@ -104,16 +104,16 @@ UnitBlueprint {
         },
 		WaterAnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mrs0102/mrs0102_asink01.sca',
+                Animation = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_asink01.sca',
                 AnimationRateMax = 1.5,
                 AnimationRateMin = 0.75,
                 Weight = 100,
             },
         },
-        AnimationTransform = '/mods/MCP/units/mrs0102/mrs0102_transform.sca',
-        AnimationWalk = '/mods/MCP/units/mrs0102/mrs0102_awalk.sca',
+        AnimationTransform = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_transform.sca',
+        AnimationWalk = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_awalk.sca',
         AnimationWalkRate = 1.8,
-		--AnimationHailfireDeploy = '/mods/MCP/units/mrs0102/mrs0102_AHailfireDeploy.sca',
+        AnimationHailfireDeploy = '/mods/BlackOpsFAF-EXUnits/units/ERS0302/ERS0302_AHailfireDeploy.sca',
         IdleEffects = {
             Water = {
                 Effects = {
@@ -132,12 +132,18 @@ UnitBlueprint {
                 {
                     LODCutoff = 140,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_specteam.dds',
                 },
                 {
-                    AlbedoName = 'mrs0102_lod1_albedo.dds',
                     LODCutoff = 250,
                     ShaderName = 'Insect',
-                    SpecularName = 'mrs0102_lod1_specteam.dds',
+                    MeshName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_lod1.scm',
+                    AlbedoName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_lod1_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_lod1_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-ExUnits/units/ers0302/ers0302_lod1_specteam.dds',
                 },
             },
         },

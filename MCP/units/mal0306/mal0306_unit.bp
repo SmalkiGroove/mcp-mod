@@ -69,7 +69,7 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_hover>Hover',
         },
-        AnimationOpen = '/mods/MCP/units/mal0306/mal0306_Aopen.sca',
+        AnimationOpen = '/mods/BlackOpsFAF-Unleashed/units/BAL0310/BAL0310_Aopen.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -77,6 +77,10 @@ UnitBlueprint {
                     LODCutoff = 215,
                     Scrolling = true,
                     ShaderName = 'Aeon',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bal0310/bal0310_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bal0310/bal0310_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bal0310/bal0310_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bal0310/bal0310_specteam.dds',
                 },
             },
         },
@@ -398,7 +402,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 1,
-            WeaponUnpackAnimation = '/mods/MCP/units/mal0306/mal0306_Aopen.sca',
+            WeaponUnpackAnimation = '/mods/BlackOpsFAF-Unleashed/units/BAL0310/BAL0310_Aopen.sca',
             WeaponUnpackAnimationRate = 1,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
