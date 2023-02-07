@@ -23,6 +23,8 @@
 
 # Mod content
 
+WIP wiki here : https://github.com/SmalkiGroove/mcp-mod/wiki
+
 ## Engineers and field engineers
 
 In this mod, the 2 typs of engineers have their specific buildset.  
