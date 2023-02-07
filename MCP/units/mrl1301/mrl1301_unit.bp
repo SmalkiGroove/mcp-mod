@@ -766,7 +766,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire Experimental',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
- 	   },
+ 	    },
         {
             CollideFriendly = false,
             Damage = 10000,

@@ -172,7 +172,7 @@ UnitBlueprint {
     SizeX = 4,
     SizeY = 2,
     SizeZ = 4,
-    StrategicIconName = 'icon_structure3_antiship',
+    StrategicIconName = 'mcp/icon_structure3_antiship',
     StrategicIconSortPriority = 175,
     Veteran = {
         Level1 = 30,

@@ -269,7 +269,7 @@ UnitBlueprint {
     SizeX = 14,
     SizeY = 4.5,
     SizeZ = 26,
-    StrategicIconName = 'icon_experimental_antiair',
+    StrategicIconName = 'mcp/icon_experimental_antiair',
     StrategicIconSortPriority = 45,
     Transport = {
         Class1AttachSize = 1,

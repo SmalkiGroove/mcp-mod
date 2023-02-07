@@ -157,7 +157,7 @@ UnitBlueprint {
     SizeX = 3,
     SizeY = 7,
     SizeZ = 4.1,
-    StrategicIconName = 'icon_experimental_directfire',
+    StrategicIconName = 'mcp/icon_experimental_directfire',
     StrategicIconSortPriority = 200,
     Weapon = {
         {

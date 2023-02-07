@@ -204,7 +204,7 @@ UnitBlueprint {
     SizeX = 0.6,
     SizeY = 1.1,
     SizeZ = 4.3,
-    StrategicIconName = 'icon_ship1_artillery',
+    StrategicIconName = 'mcp/icon_ship1_artillery',
     StrategicIconSortPriority = 165,
     Veteran = {
         Level1 = 8,

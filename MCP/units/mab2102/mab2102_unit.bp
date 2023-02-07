@@ -168,7 +168,7 @@ UnitBlueprint {
     SizeX = 1,
     SizeY = 0.9,
     SizeZ = 1,
-    StrategicIconName = 'icon_structure1_bomb',
+    StrategicIconName = 'mcp/icon_structure1_bomb',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 5,

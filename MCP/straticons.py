@@ -10,66 +10,66 @@ expand_strategic_icons = True
 # ----------
 data = [
     # T2 EMP Tank
-    ['msl0204', 'icon_land2_bomb', 'icon_land2_stunner'],
+    ['msl0204', 'icon_land2_bomb', 'mcp/icon_land2_stunner'],
     # T3 Armored Tank
-    ['mal0306', 'icon_land3_directfire', 'icon_land3_armored'],
+    ['mal0306', 'icon_land3_directfire', 'mcp/icon_land3_armored'],
     # T1 Heavy PD
-    ['meb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
-    ['mrb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
-    ['mab2102', 'icon_structure1_land', 'icon_structure1_bomb'],
-    ['msb2102', 'icon_structure1_land', 'icon_structure1_bomb'],
+    ['meb2102', 'icon_structure1_land', 'mcp/icon_structure1_bomb'],
+    ['mrb2102', 'icon_structure1_land', 'mcp/icon_structure1_bomb'],
+    ['mab2102', 'icon_structure1_land', 'mcp/icon_structure1_bomb'],
+    ['msb2102', 'icon_structure1_land', 'mcp/icon_structure1_bomb'],
     # T2 Heavy PD
-    ['meb2202', 'icon_structure2_land', 'icon_structure2_bomb'],
-    ['mrb2202', 'icon_structure2_land', 'icon_structure2_bomb'],
-    ['mab2202', 'icon_structure2_land', 'icon_structure2_bomb'],
-    ['msb2202', 'icon_structure2_land', 'icon_structure2_bomb'],
+    ['meb2202', 'icon_structure2_land', 'mcp/icon_structure2_bomb'],
+    ['mrb2202', 'icon_structure2_land', 'mcp/icon_structure2_bomb'],
+    ['mab2202', 'icon_structure2_land', 'mcp/icon_structure2_bomb'],
+    ['msb2202', 'icon_structure2_land', 'mcp/icon_structure2_bomb'],
     # T3 Heavy PD
-    ['meb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
-    ['mrb2307', 'icon_structure3_land', 'icon_structure3_bomb'],
-    ['mab2307', 'icon_structure3_land', 'icon_structure3_bomb'],
+    ['meb2307', 'icon_structure3_land', 'mcp/icon_structure3_bomb'],
+    ['mrb2307', 'icon_structure3_land', 'mcp/icon_structure3_bomb'],
+    ['mab2307', 'icon_structure3_land', 'mcp/icon_structure3_bomb'],
     # T2 Anti Navy PD
-    ['meb4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],
-    ['mrb4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],
-    ['mab4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],
-    ['msb4205', 'icon_structure2_antinavy', 'icon_structure2_antiship'],
+    ['meb4205', 'icon_structure2_antinavy', 'mcp/icon_structure2_antiship'],
+    ['mrb4205', 'icon_structure2_antinavy', 'mcp/icon_structure2_antiship'],
+    ['mab4205', 'icon_structure2_antinavy', 'mcp/icon_structure2_antiship'],
+    ['msb4205', 'icon_structure2_antinavy', 'mcp/icon_structure2_antiship'],
     # T3 Anti Navy PD
-    ['meb4305', 'icon_structure3_antinavy', 'icon_structure3_antiship'],
-    ['mrb4305', 'icon_structure3_antinavy', 'icon_structure3_antiship'],
-    ['mab4305', 'icon_structure3_antinavy', 'icon_structure3_antiship'],
-    ['msb4305', 'icon_structure3_antinavy', 'icon_structure3_antiship'],
+    ['meb4305', 'icon_structure3_antinavy', 'mcp/icon_structure3_antiship'],
+    ['mrb4305', 'icon_structure3_antinavy', 'mcp/icon_structure3_antiship'],
+    ['mab4305', 'icon_structure3_antinavy', 'mcp/icon_structure3_antiship'],
+    ['msb4305', 'icon_structure3_antinavy', 'mcp/icon_structure3_antiship'],
     # T1 Artillery Ship
-    ['mes0106', 'icon_ship1_missile', 'icon_ship1_artillery'],
-    ['mrs0106', 'icon_ship1_missile', 'icon_ship1_artillery'],
-    ['mas0106', 'icon_ship1_missile', 'icon_ship1_artillery'],
-    ['mss0106', 'icon_ship1_missile', 'icon_ship1_artillery'],
+    ['mes0106', 'icon_ship1_missile', 'mcp/icon_ship1_artillery'],
+    ['mrs0106', 'icon_ship1_missile', 'mcp/icon_ship1_artillery'],
+    ['mas0106', 'icon_ship1_missile', 'mcp/icon_ship1_artillery'],
+    ['mss0106', 'icon_ship1_missile', 'mcp/icon_ship1_artillery'],
     # T2 Artillery Ship
-    ['mes0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
-    ['mrs0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
-    ['mas0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
-    ['mss0206', 'icon_ship2_missile', 'icon_ship2_artillery'],
+    ['mes0206', 'icon_ship2_missile', 'mcp/icon_ship2_artillery'],
+    ['mrs0206', 'icon_ship2_missile', 'mcp/icon_ship2_artillery'],
+    ['mas0206', 'icon_ship2_missile', 'mcp/icon_ship2_artillery'],
+    ['mss0206', 'icon_ship2_missile', 'mcp/icon_ship2_artillery'],
     # Drones
-    ['msl1401a', 'icon_fighter1_directfire', 'icon_fighter1_bomb'],
-    ['mss1101a', 'icon_fighter1_directfire', 'icon_fighter1_antinavy'],
+    ['msl1401a', 'icon_fighter1_directfire', 'mcp/icon_fighter1_bomb'],
+    ['mss1101a', 'icon_fighter1_directfire', 'mcp/icon_fighter1_antinavy'],
     # Air experimentals
-    ['mea1401', 'icon_experimental_generic', 'icon_experimental_antiair'],
+    ['mea1401', 'icon_experimental_generic', 'mcp/icon_experimental_antiair'],
     # Naval experimentals
-    ['mes1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
-    ['mrs1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
-    ['mss1401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+    ['mes1401', 'icon_experimental_generic', 'mcp/icon_experimental_antinavy'],
+    ['mrs1401', 'icon_experimental_generic', 'mcp/icon_experimental_antinavy'],
+    ['mss1401', 'icon_experimental_generic', 'mcp/icon_experimental_antinavy'],
     # Defense experimentals
-    ['mab2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
-    ['meb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
-    ['mrb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
-    ['msb2403', 'icon_experimental_generic', 'icon_experimental_directfire'],
+    ['mab2403', 'icon_experimental_generic', 'mcp/icon_experimental_directfire'],
+    ['meb2403', 'icon_experimental_generic', 'mcp/icon_experimental_directfire'],
+    ['mrb2403', 'icon_experimental_generic', 'mcp/icon_experimental_directfire'],
+    ['msb2403', 'icon_experimental_generic', 'mcp/icon_experimental_directfire'],
     # Strategic experimentals
-    ['mrb2401', 'icon_experimental_generic', 'icon_experimental_artillery'],
+    ['mrb2401', 'icon_experimental_generic', 'mcp/icon_experimental_artillery'],
     # Other experimentals
-    ['msb4401', 'icon_experimental_generic', 'icon_experimental_shield'],
+    ['msb4401', 'icon_experimental_generic', 'mcp/icon_experimental_shield'],
 ]
 
 hookdata = [
     # Hooked unit blueprints
-    ['uas0401', 'icon_experimental_generic', 'icon_experimental_antinavy'],
+    ['uas0401', 'icon_experimental_generic', 'mcp/icon_experimental_antinavy'],
 ]
 
 filedata = [

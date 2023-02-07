@@ -239,7 +239,7 @@ UnitBlueprint {
     SizeX = 0.55,
     SizeY = 0.35,
     SizeZ = 0.6,
-    StrategicIconName = 'icon_land2_stunner',
+    StrategicIconName = 'mcp/icon_land2_stunner',
     StrategicIconSortPriority = 135,
     Transport = {
         CanFireFromTransport = false,
