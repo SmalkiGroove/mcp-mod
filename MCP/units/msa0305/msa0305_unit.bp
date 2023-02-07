@@ -144,14 +144,17 @@ UnitBlueprint {
                     LODCutoff = 140,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
+                    MeshName = '/mods/BrewLAN/units/ssa0305/ssa0305_lod0.scm',
+                    AlbedoName = '/mods/BrewLAN/units/ssa0305/ssa0305_albedo.dds',
+                    NormalsName = '/mods/BrewLAN/units/ssa0305/ssa0305_normalsTS.dds',
+                    SpecularName = '/mods/BrewLAN/units/ssa0305/ssa0305_specteam.dds',
                 },
                 {
                     LODCutoff = 215,
                     ShaderName = 'Seraphim',
-                  #  MeshName = '/units/xsa0203/xsa0203_lod1.scm', #needs a custom Lod1 mesh
-                    AlbedoName = '/units/xsa0203/xsa0203_lod1_albedo.dds', 
-                  #  NormalsName = '/units/xsa0203/xsa0203_lod1_normalsTS.dds', #seemed fine without before
-                    SpecularName = '/units/xsa0203/xsa0203_lod1_specteam.dds', 
+                    MeshName = '/mods/BrewLAN/units/ssa0305/ssa0305_lod1.scm',
+                    AlbedoName = '/units/xsa0203/xsa0203_lod1_albedo.dds',
+                    SpecularName = '/units/xsa0203/xsa0203_lod1_specteam.dds',
                 },
             },
         },
