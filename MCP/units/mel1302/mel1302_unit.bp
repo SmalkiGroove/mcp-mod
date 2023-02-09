@@ -127,7 +127,7 @@ UnitBlueprint {
             '<LOC ability_aa>Anti-Air',
              '<LOC ability_deployable>Deployable',
         },
-		AnimationTransform = '/Mods/ExpWars_v2_8/units/uelew0003/uelew0003_aactivate.sca',
+		AnimationTransform = '/Mods/XtremWars/units/uef/tech2exp/uelew0003/uelew0003_aactivate.sca',
         IdleEffects = {
             Land = {
                 Effects = {
@@ -147,7 +147,7 @@ UnitBlueprint {
                     LODCutoff = 500,
 					Scrolling = true,
                     ShaderName = 'Unit',
-                    MeshName = '/mods/expwars_v2_8/units/uelew0003/uelew0003_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/uef/tech2exp/uelew0003/uelew0003_lod0.scm',
 					AlbedoName = '/Units/uel0401/uel0401_Albedo.dds',
 					NormalsName = '/Units/uel0401/uel0401_NormalsTS.DDS',
 					SpecularName = '/Units/uel0401/uel0401_SpecTeam.dds',

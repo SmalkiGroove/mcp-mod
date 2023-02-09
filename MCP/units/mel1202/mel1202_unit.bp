@@ -87,7 +87,7 @@ UnitBlueprint {
                     LODCutoff = 500,
 					Scrolling = true,
                     ShaderName = 'Unit',
-                    MeshName = '/mods/expwars_v2_8/units/uelew0001/uelew0001_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/uef/tech1exp/uelew0001/uelew0001_lod0.scm',
 					AlbedoName = '/Units/uel0201/uel0201_Albedo.dds',
 					NormalsName = '/Units/uel0201/uel0201_NormalsTS.DDS',
 					SpecularName = '/Units/uel0201/uel0201_SpecTeam.dds',

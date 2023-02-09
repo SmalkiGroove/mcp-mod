@@ -78,7 +78,7 @@ UnitBlueprint {
          Abilities = {
             '<LOC ability_amphibious>Amphibious',
          },
-		AnimationWalk = '/Mods/ExpWars_v2_8/units/xslew0001/xslew0001_awalk.sca',
+		AnimationWalk = '/Mods/XtremWars/units/seraphims/tech2exp/xslew0001/xslew0001_awalk.sca',
         AnimationWalkRate = 1.3,
 
         Mesh = {
@@ -88,7 +88,7 @@ UnitBlueprint {
                     LODCutoff = 500,
 					LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     ShaderName = 'Seraphim',
-                    MeshName = '/mods/expwars_v2_8/units/xslew0001/xslew0001_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/seraphims/tech2exp/xslew0001/xslew0001_lod0.scm',
 					AlbedoName = '/Units/xsb2302/xsb2302_Albedo.dds',
 					NormalsName = '/Units/xsb2302/xsb2302_NormalsTS.DDS',
 					SpecularName = '/Units/xsb2302/xsb2302_SpecTeam.dds',

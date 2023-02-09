@@ -59,14 +59,14 @@ UnitBlueprint {
         Abilities = {
             'Naval',
         },
-        AnimationOpen = '/Mods/ExpWars_v2_8/units/StructuresNavales/urb1108/urb1108_Apump.sca',
+        AnimationOpen = '/mods/XtremWars/units/cybran/tech1structure/urb1108/urb1108_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Insect',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/urb1108/urb1108_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/cybran/tech1structure/urb1108/urb1108_lod0.scm',
 					AlbedoName = '/Units/urb1103/urb1103_Albedo.dds',
 					NormalsName = '/Units/urb1103/urb1103_NormalsTS.DDS',
 					SpecularName = '/Units/urb1103/urb1103_SpecTeam.dds',

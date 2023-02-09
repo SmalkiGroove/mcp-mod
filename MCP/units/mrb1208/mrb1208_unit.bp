@@ -64,14 +64,14 @@ UnitBlueprint {
             '<LOC ability_aquatic>Aquatic',
             '<LOC ability_upgradable>Upgradeable',
         },
-	AnimationOpen = '/Mods/ExpWars_v2_8/units/StructuresNavales/urb1107/urb1107_Apump.sca',
+	AnimationOpen = '/mods/XtremWars/units/cybran/tech1structure/urb1107/urb1107_Apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Insect',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/urb1107/urb1107_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/cybran/tech1structure/urb1107/urb1107_lod0.scm',
 					AlbedoName = '/Units/urb1102/urb1102_Albedo.dds',
 					NormalsName = '/Units/urb1102/urb1102_NormalsTS.DDS',
 					SpecularName = '/Units/urb1102/urb1102_SpecTeam.dds',

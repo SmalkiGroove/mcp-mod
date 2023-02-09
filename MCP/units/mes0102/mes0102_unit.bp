@@ -92,7 +92,7 @@ UnitBlueprint {
                     LODCutoff = 120,
 					Scrolling = true,
                     ShaderName = 'Unit',
-                    MeshName = '/Mods/ExpWars_v2_8/units/t1units/ues0106/ues0106_LOD0.scm',
+                    MeshName = '/mods/SoftLastAsdruMod/units/vousjvousaime/ues0106_LOD0.scm',
 					AlbedoName = '/Units/ues0103/ues0103_Albedo.dds',
 					NormalsName = '/Units/ues0103/ues0103_NormalsTS.DDS',
 					SpecularName = '/Units/ues0103/ues0103_SpecTeam.dds',

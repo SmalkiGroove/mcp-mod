@@ -69,7 +69,7 @@ UnitBlueprint {
 		Abilities = {
             'Naval',
         },
-        AnimationActivate = '/Mods/ExpWars_v2_8/units/StructuresNavales/XSB1208/XSB1208_apump.sca',
+        AnimationActivate = '/mods/XtremWars/units/seraphims/tech2structure/XSB1208/XSB1208_apump.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -78,7 +78,7 @@ UnitBlueprint {
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/xsb1208/xsb1208_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/seraphims/tech2structure/xsb1208/xsb1208_lod0.scm',
                     AlbedoName = '/Units/xsb1301/xsb1301_Albedo.dds',
                     NormalsName = '/Units/xsb1301/xsb1301_NormalsTS.DDS',
 					SpecularName = '/Units/xsb1301/xsb1301_SpecTeam.dds',

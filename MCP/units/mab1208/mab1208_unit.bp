@@ -72,7 +72,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Aeon',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/uab1107/uab1107_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/aeon/tech1structure/uab1107/uab1107_lod0.scm',
 					AlbedoName = '/Units/uab1102/uab1102_Albedo.dds',
 					NormalsName = '/Units/uab1102/uab1102_NormalsTS.DDS',
 					SpecularName = '/Units/uab1102/uab1102_SpecTeam.dds',

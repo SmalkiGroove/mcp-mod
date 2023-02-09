@@ -131,7 +131,7 @@ UnitBlueprint {
 					LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
 					Scrolling = true,
                     ShaderName = 'Seraphim',
-                    MeshName = '/mods/expwars_v2_8/units/xsl0405/xsl0405_lod0.scm',
+                    MeshName = '/mods/SoftLastAsdruMod/units/lespasbeaux/xsl0405/xsl0405_lod0.scm',
 					AlbedoName = '/Units/xsl0401/xsl0401_Albedo.dds',
 					NormalsName = '/Units/xsl0401/xsl0401_NormalsTS.DDS',
 					SpecularName = '/Units/xsl0401/xsl0401_SpecTeam.dds',

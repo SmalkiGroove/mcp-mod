@@ -60,14 +60,13 @@ UnitBlueprint {
          Abilities = {
              'Point Defense',
          },
-	---AnimationPermOpen = '/Mods/ExpWars_v2_8/units/URBEW0001/URBEW0001_Aopen.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Insect',
-                    MeshName = '/mods/expwars_v2_8/units/urbew0001/urbew0001_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/cybran/tech2exp/urbew0001/urbew0001_lod0.scm',
 					AlbedoName = '/Units/urs0202/urs0202_Albedo.dds',
 					NormalsName = '/Units/urs0202/urs0202_NormalsTS.DDS',
 					SpecularName = '/Units/urs0202/urs0202_SpecTeam.dds',

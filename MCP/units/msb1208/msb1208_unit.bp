@@ -80,7 +80,7 @@ UnitBlueprint {
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/xsb1107/xsb1107_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/seraphims/tech1structure/xsb1107/xsb1107_lod0.scm',
                     AlbedoName = '/Units/xsb1102/xsb1102_Albedo.dds',
                    NormalsName = '/Units/xsb1102/xsb1102_NormalsTS.DDS',
 					SpecularName = '/Units/xsb1102/xsb1102_SpecTeam.dds',

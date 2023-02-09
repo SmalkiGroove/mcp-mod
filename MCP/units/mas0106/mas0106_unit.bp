@@ -68,7 +68,7 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/Mods/ExpWars_v2_8/units/t1units/uas0104/uas0104_asink.sca',
+                Animation = '/mods/SoftLastAsdruMod/units/lessecteux/uas0104_asink.sca',
                 AnimationRateMax = 0.8,
                 AnimationRateMin = 0.5,
                 Weight = 100,
@@ -93,7 +93,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Aeon',
-                    MeshName = '/mods/expwars_v2_8/units/t1units/uas0104/uas0104_lod0.scm',
+                    MeshName = '/mods/SoftLastAsdruMod/units/lessecteux/uas0104_lod0.scm',
 					AlbedoName = '/Units/uas0201/uas0201_Albedo.dds',
 					NormalsName = '/Units/uas0103/uas0201_NormalsTS.DDS',
 					SpecularName = '/Units/uas0201/uas0201_SpecTeam.dds',

@@ -1,0 +1,15 @@
+WARNING: Overriding the size of the collision sphere of unit ( mea0201 ), it should be atleast 10 percent ( 1.8000000715256 ) of the maximum speed ( 18 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the x axis of collision box of unit ( mss0102 ), it should be atleast 10 percent ( 0.69999998807907 ) of the maximum speed ( 7 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( msl1401a ), it should be atleast 10 percent ( 1 ) of the maximum speed ( 10 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( mss1101a ), it should be atleast 10 percent ( 2.2000000476837 ) of the maximum speed ( 22 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the x axis of collision box of unit ( mss0204 ), it should be atleast 10 percent ( 0.60000002384186 ) of the maximum speed ( 6 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( msa0201 ), it should be atleast 10 percent ( 1.8000000715256 ) of the maximum speed ( 18 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( msa0105 ), it should be atleast 10 percent ( 1.2000000476837 ) of the maximum speed ( 12 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( mra0201 ), it should be atleast 10 percent ( 1.8000000715256 ) of the maximum speed ( 18 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the x axis of collision box of unit ( mes0303 ), it should be atleast 10 percent ( 0.68000000715256 ) of the maximum speed ( 6.8000001907349 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( mea0105 ), it should be atleast 10 percent ( 1.2000000476837 ) of the maximum speed ( 12 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( maa0205 ), it should be atleast 10 percent ( 1.5 ) of the maximum speed ( 15 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( maa0105 ), it should be atleast 10 percent ( 1.2000000476837 ) of the maximum speed ( 12 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the size of the collision sphere of unit ( msb5302a ), it should be atleast 10 percent ( 1.2000000476837 ) of the maximum speed ( 12 ) to guarantee proper functioning beam weapons
+WARNING: Overriding the x axis of collision box of unit ( mes0102 ), it should be atleast 10 percent ( 0.69999998807907 ) of the maximum speed ( 7 ) to guarantee proper functioning beam weapons
+WARNING:  NUM PROPS = 24932
