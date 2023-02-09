@@ -90,7 +90,7 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/TotalMayhem/units/BRMST1BATTLECRUISER/BRMST1BATTLECRUISER_Death.sca'',
+                Animation = '/mods/TotalMayhem/units/BRMST1BATTLECRUISER/BRMST1BATTLECRUISER_Death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 40,

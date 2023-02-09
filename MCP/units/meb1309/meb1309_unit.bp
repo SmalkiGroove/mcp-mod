@@ -65,7 +65,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Unit',
-                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/uab1107/uab1107_lod0.scm',
+                    MeshName = '/mods/expwars_v2_8/units/structuresnavales/ueb1208/ueb1208_lod0.scm',
 					AlbedoName = '/Units/uec1201/uec1201_Albedo.dds',
 					NormalsName = '/Units/uec1201/uec1201_NormalsTS.DDS',
 					SpecularName = '/Units/uec1201/uec1201_SpecTeam.dds',

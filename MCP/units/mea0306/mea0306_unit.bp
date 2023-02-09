@@ -107,15 +107,17 @@ UnitBlueprint {
         'RECLAIMABLE',
         'OVERLAYSONAR',
     },
-    CollisionOffsetY = -0.1,
-    --CollisionOffsetZ = -0.1,
+    CollisionOffsetY = -0.2,
+    CollisionOffsetZ = -0.1,
     Defense = {
         AirThreatLevel = 5,
         ArmorType = 'Light',
+        EconomyThreatLevel = 0,
         Health = 3950,
         MaxHealth = 3950,
         RegenRate = 0,
         SubThreatLevel = 38,
+        SurfaceThreatLevel = 0,
     },
     Description = 'Torpedo Bomber',
     Display = {
@@ -124,27 +126,21 @@ UnitBlueprint {
             '<LOC ability_sonar>Sonar',
             '<LOC ability_torpedo>Torpedoes',
         },
-        AnimationLand = '/mods/MCP/units/mea0306/mea0306_Aunfold.sca',
         LayerChangeEffects = {
             AirLand = {
                 Effects = {
-                    {Bones = {0}, Type = 'Landing01'},
+                    {
+                        Bones = {0},
+                        Type = 'Landing01',
+                    },
                 },
             },
             LandAir = {
                 Effects = {
-                    {Bones = {0}, Type = 'TakeOff01'},
-                },
-            },
-            AirWater = {
-                Effects = {
-                    {Bones = {0}, Type = 'Surface01'},
-                },
-            },
-            WaterAir = {
-                Effects = {
-                    {Bones = {0}, Type = 'Surface01'},
-                    {Bones = {0}, Type = 'TakeOff01'},
+                    {
+                        Bones = {0},
+                        Type = 'TakeOff01',
+                    },
                 },
             },
         },
@@ -173,16 +169,16 @@ UnitBlueprint {
             Air = {
                 Contrails = {
                     Bones = {
-                        'Contrail_L',
-                        'Contrail_R',
+                        'Contrail_Left',
+                        'Contrail_Right',
                     },
                     ZOffset = 0,
                 },
                 Effects = {
                     {
                         Bones = {
-                    	    'Engine_L',
-                    	    'Engine_R',
+                    	    'Exhaust_Left',
+                    	    'Exhaust_Right',
                         },
                         Type = 'AirExhaust01',
                     },
@@ -190,14 +186,16 @@ UnitBlueprint {
             },
             BeamExhaust = {
                 Bones = {
-                    'Engine_L',
-                    'Engine_R',
+                    'Exhaust_Left',
+                    'Exhaust_Right',
                 },
                 Cruise = true,
                 Idle = true,
             },
         },
-        UniformScale = 0.01225,
+        PlaceholderMeshName = 'UXA0008',
+        SpawnRandomRotation = false,
+        UniformScale = 0.035,
     },
     Economy = {
         BuildCostEnergy = 55000,
@@ -263,13 +261,13 @@ UnitBlueprint {
         MeshExtentsZ = 2,
         MotionType = 'RULEUMT_Air',
     },
-    SelectionSizeX = 0.7,
-    SelectionSizeZ = 1.1,
+    SelectionSizeX = 1.2,
+    SelectionSizeZ = 1,
     SelectionThickness = 0.38,
     SizeSphere = 2,
-    SizeX = 1,
-    SizeY = 0.6,
-    SizeZ = 1.7,
+    SizeX = 2,
+    SizeY = 0.5,
+    SizeZ = 1.6,
     StrategicIconName = 'icon_bomber3_antinavy',
     StrategicIconSortPriority = 65,
     Transport = {
@@ -318,10 +316,10 @@ UnitBlueprint {
             RackBones = {
                 {
                     MuzzleBones = {
-                        'Bomb',
-                        'Bomb',
+                        'Projectile',
+                        'Projectile',
                     },
-                    RackBone = 'Bomb',
+                    RackBone = 'Projectile',
                 },
             },
             RackFireTogether = false,
@@ -377,8 +375,10 @@ UnitBlueprint {
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
-                    MuzzleBones = {'Muzzle_L'},
-                    RackBone = 'Barrel_L',
+                    MuzzleBones = {
+                        'Left_Muzzle_AA',
+                    },
+                    RackBone = 'Left_Barrel_AA',
                 },
             },
             RackFireTogether = false,
@@ -393,16 +393,17 @@ UnitBlueprint {
             TargetCheckInterval = 0.16,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
-                'AIR',
+                'AIR MOBILE',
+                'AIR MOBILE -INTELLIGENCE',
                 'SPECIALLOWPRI',
                 'ALLUNITS',
             },
-            TargetRestrictDisallow = 'UNTARGETABLE,STRUCTURE',
+            TargetRestrictDisallow = 'UNTARGETABLE,LAND,STRUCTURE,NAVAL',
             TargetRestrictOnlyAllow = 'AIR',
             TrackingRadius = 1.4,
-            TurretBoneMuzzle = 'Muzzle_L',
-            TurretBonePitch = 'Barrel_L',
-            TurretBoneYaw = 'Turret_L',
+            TurretBoneMuzzle = 'Left_Muzzle_AA',
+            TurretBonePitch = 'Left_Barrel_AA',
+            TurretBoneYaw = 'Left_Barrel_AA',
             TurretDualManipulators = false,
             TurretPitch = 0,
             TurretPitchRange = 40,
@@ -445,8 +446,10 @@ UnitBlueprint {
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
-                    MuzzleBones = {'Muzzle_R'},
-                    RackBone = 'Barrel_R',
+                    MuzzleBones = {
+                        'Right_Muzzle_AA',
+                    },
+                    RackBone = 'Right_Barrel_AA',
                 },
             },
             RackFireTogether = false,
@@ -469,9 +472,9 @@ UnitBlueprint {
             TargetRestrictDisallow = 'UNTARGETABLE,LAND,STRUCTURE,NAVAL',
             TargetRestrictOnlyAllow = 'AIR',
             TrackingRadius = 1.4,
-            TurretBoneMuzzle = 'Muzzle_R',
-            TurretBonePitch = 'Barrel_R',
-            TurretBoneYaw = 'Turret_R',
+            TurretBoneMuzzle = 'Right_Muzzle_AA',
+            TurretBonePitch = 'Right_Barrel_AA',
+            TurretBoneYaw = 'Right_Barrel_AA',
             TurretDualManipulators = false,
             TurretPitch = 0,
             TurretPitchRange = 40,
