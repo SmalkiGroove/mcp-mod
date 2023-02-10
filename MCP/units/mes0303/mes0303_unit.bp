@@ -235,7 +235,7 @@ UnitBlueprint {
     SelectionSizeX = 0.6,
     SelectionSizeZ = 4,
     SelectionThickness = 0.2,
-    SizeX = 0.6,
+    SizeX = 0.68,
     SizeY = 1.6,
     SizeZ = 5.8,
     StrategicIconName = 'icon_ship3_antiair',

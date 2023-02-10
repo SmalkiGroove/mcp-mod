@@ -201,7 +201,7 @@ UnitBlueprint {
     SelectionSizeX = 0.30,
     SelectionSizeZ = 1.25,
     SelectionThickness = 0.25,
-    SizeX = 0.6,
+    SizeX = 0.7,
     SizeY = 1.1,
     SizeZ = 4.3,
     StrategicIconName = 'icon_ship1_directfire',
