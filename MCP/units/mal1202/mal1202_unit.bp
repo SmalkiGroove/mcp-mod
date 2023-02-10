@@ -96,7 +96,7 @@ UnitBlueprint {
 					Scrolling = true,
                     LODCutoff = 500,
                     ShaderName = 'AeonCZAR',
-                    MeshName = '/mods/XtremWars/units/aeon/tech3exp/ualew0003/ualew0003_lod0.scm',
+                    MeshName = '/mods/XtremWars/units/aeon/tech2exp/ualew0003/ualew0003_lod0.scm',
 					AlbedoName = '/Units/ual0401/ual0401_Albedo.dds',
 					NormalsName = '/Units/ual0401/ual0401_NormalsTS.DDS',
 					SecondaryName = '/units/uaa0310/uaa0310_secondary.dds',
@@ -585,7 +585,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -675,7 +675,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/MCP/projectiles/BROT1BTproj/BROT1BTproj_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/AeonDisruptor1/AeonDisruptor1_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {

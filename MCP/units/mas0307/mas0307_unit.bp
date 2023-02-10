@@ -114,11 +114,11 @@ UnitBlueprint {
         },
        AnimationDeath = {
             {
-                Animation = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301_adeath01.sca',
+                Animation = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301/uas0301_adeath01.sca',
                 Weight = 100,
             },
         },
-        AnimationSurface = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301_aopen01.sca',
+        AnimationSurface = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301/uas0301_aopen01.sca',
         IdleEffects = {
             Sub = {
                 Effects = {
@@ -148,7 +148,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 300,
                     ShaderName = 'Aeon',
-                    MeshName = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301_lod0.scm',
+                    MeshName = '/mods/SoftLastAsdruMod/units/lessecteux/uas0301/uas0301_lod0.scm',
 					AlbedoName = '/Units/uas0202/uas0202_Albedo.dds',
 					NormalsName = '/Units/uas0202/uas0202_NormalsTS.DDS',
 					SpecularName = '/Units/uas0202/uas0202_SpecTeam.dds',
