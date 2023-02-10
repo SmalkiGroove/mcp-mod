@@ -252,11 +252,11 @@ UnitBlueprint {
             MaxRadius = 75,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 48,
+            MuzzleVelocity = 60,
             NotExclusive = true,
             ProjectileId = '/projectiles/CDFBolter02/CDFBolter02_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
-            ProjectilesPerOnFire = 1,
+            ProjectilesPerOnFire = 2,
             RackBones = {
                 {
                     MuzzleBones = {
@@ -266,7 +266,7 @@ UnitBlueprint {
                     RackBone = 'RackLaser',
                 },
             },
-            RackFireTogether = false,
+            RackFireTogether = true,
             RackRecoilDistance = 0,
             RackReloadTimeout = 0,
             RackSalvoChargeTime = 0,

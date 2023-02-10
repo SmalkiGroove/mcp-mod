@@ -1,6 +1,6 @@
 UnitBlueprint {
     AI = {
-        AttackAngle = 50,
+        AttackAngle = 30,
         GuardReturnRadius = 100,
         GuardScanRadius = 300,
         RefuelingMultiplier = 50,
