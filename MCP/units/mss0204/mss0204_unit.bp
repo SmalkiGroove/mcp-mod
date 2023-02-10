@@ -296,7 +296,7 @@ UnitBlueprint {
     SelectionSizeX = 0.2,
     SelectionSizeZ = 0.8,
     SelectionThickness = 0.31,
-    SizeX = 0.25,
+    SizeX = 0.6,
     SizeY = 0.5,
     SizeZ = 1.2,
     StrategicIconName = 'icon_sub2_intel',
