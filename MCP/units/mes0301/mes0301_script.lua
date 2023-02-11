@@ -49,11 +49,9 @@ MES0301 = Class(TSubUnit) {
         if layer == 'Water' then
             self:SetWeaponEnabledByLabel('GatlingCannon', true)
             self:SetWeaponEnabledByLabel('SAMLauncher', true)
-            self:AddCommandCap('RULEUCC_Tactical')
         else
             self:SetWeaponEnabledByLabel('GatlingCannon', false)
             self:SetWeaponEnabledByLabel('SAMLauncher', false)
-            self:RemoveCommandCap('RULEUCC_Tactical')
         end
     end,
 
@@ -62,11 +60,9 @@ MES0301 = Class(TSubUnit) {
         if new == 'Water' then
             self:SetWeaponEnabledByLabel('GatlingCannon', true)
             self:SetWeaponEnabledByLabel('SAMLauncher', true)
-            self:AddCommandCap('RULEUCC_Tactical')
         elseif new == 'Sub' then
             self:SetWeaponEnabledByLabel('GatlingCannon', false)
             self:SetWeaponEnabledByLabel('SAMLauncher', false)
-            self:RemoveCommandCap('RULEUCC_Tactical')
         end
     end,
 }
