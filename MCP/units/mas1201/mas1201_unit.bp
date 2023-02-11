@@ -137,12 +137,6 @@ UnitBlueprint {
                     LODCutoff = 140,
                     ShaderName = 'Aeon',
                 },
-                {
-                    AlbedoName = 'mas1201_lod1_albedo.dds',
-                    LODCutoff = 300,
-                    ShaderName = 'Aeon',
-                    SpecularName = 'mas1201_lod1_specteam.dds',
-                },
             },
         },
         SpawnRandomRotation = true,
