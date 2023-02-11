@@ -9,19 +9,15 @@ MEL1302 = Class(TLandUnit) {
 	IsWaiting = false,
 	
     Weapons = {
-		####Armes Non Deploy�es###
         PlasmaCannon01 = Class(TDFIonizedPlasmaCannon) {},
 		DroiteAAGun = Class(TAALinkedRailgun) {},
 		GaucheAAGun = Class(TAALinkedRailgun) {}, 
 		ArriereGaucheAAGun = Class(TAALinkedRailgun) {},
 		ArriereDroitAAGun = Class(TAALinkedRailgun) {},
-		####/fin Armes Non Deploy�es###
-		####Armes A Deployer###
 		TourelleAvantDroite = Class(TDFGaussCannonWeapon) {},
 		TourelleAvantGauche = Class(TDFGaussCannonWeapon) {},
 		TourelleArriereDroite = Class(TDFGaussCannonWeapon) {},
 		TourelleArriereGauche = Class(TDFGaussCannonWeapon) {},
-		####/fin Armes A Deployer###
 		
     },	
 	

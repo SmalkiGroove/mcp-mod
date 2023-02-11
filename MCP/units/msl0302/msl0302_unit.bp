@@ -78,7 +78,7 @@ UnitBlueprint {
         RegenRate = 0,
         Shield = {
             ImpactEffects = 'SeraphimShieldHit01',
-            OwnerShieldMesh = '/mods/MCP/units/mss1201/mss1201_personalshield_mesh',
+            OwnerShieldMesh = '/mods/MCP/units/msl0302/msl0302_personalshield_mesh',
             PersonalShield = true,
             AttachBone = 'Shield', 
             CustomShield = 1,
