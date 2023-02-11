@@ -35,7 +35,7 @@ UnitBlueprint {
             Level5 = 5,
         },
     },
-    BuildIconSortPriority = 40,
+    BuildIconSortPriority = 90,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
