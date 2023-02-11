@@ -3,6 +3,21 @@
 --------------------------------------------------------------------------------
 UnitBlueprint {
 	Merge = true,
+	BlueprintId="ual0106",
+    StrategicIconName = 'mcp/icon_bot1_x',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uel0106",
+    StrategicIconName = 'mcp/icon_bot1_x',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="url0106",
+    StrategicIconName = 'mcp/icon_bot1_x',
+}
+UnitBlueprint {
+	Merge = true,
 	BlueprintId="uaa0310",
     StrategicIconName = 'mcp/icon_experimental_antiair',
 }
@@ -33,6 +48,31 @@ UnitBlueprint {
 }
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xsl0303",
-    StrategicIconName = 'mcp/icon_land3_armored',
+	BlueprintId="uas0201",
+    StrategicIconName = 'icon_ship2_directfire',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="urs0201",
+    StrategicIconName = 'icon_ship2_directfire',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uab5202",
+    StrategicIconName = 'icon_structure2_air',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb5202",
+    StrategicIconName = 'icon_structure2_air',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="urb5202",
+    StrategicIconName = 'icon_structure2_air',
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xsb5202",
+    StrategicIconName = 'icon_structure2_air',
 }

@@ -35,7 +35,7 @@ UnitBlueprint {
             Level5 = 5,
         },
     },
-    BuildIconSortPriority = 40,
+    BuildIconSortPriority = 90,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -102,13 +102,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 320,
-                    LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
-                    Scrolling = true,
-                    ShaderName = 'Seraphim',
-                    MeshName = '/mods/SoftLastAsdruMod/units/lespasbeaux/xss0104/xss0104_lod0.scm',
 					AlbedoName = '/Units/xss0103/xss0103_Albedo.dds',
 					NormalsName = '/Units/xss0103/xss0103_NormalsTS.DDS',
+                    LODCutoff = 320,
+                    LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
+                    Scrolling = true,					
+					--MeshName = '/Units/xss0103/xss0103_LOD0.scm',
+                    ShaderName = 'Seraphim',
 					SpecularName = '/Units/xss0103/xss0103_SpecTeam.dds',
                 },
             },

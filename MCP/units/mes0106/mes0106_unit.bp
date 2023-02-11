@@ -41,7 +41,7 @@ UnitBlueprint {
             Level5 = 5,
         },
     },
-    BuildIconSortPriority = 40,
+    BuildIconSortPriority = 90,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -102,12 +102,12 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 120,
-					Scrolling = true,
-                    ShaderName = 'Unit',
-                    MeshName = '/mods/SoftLastAsdruMod/units/vousjvousaime/ues0104/ues0104_LOD0.scm',
 					AlbedoName = '/Units/ues0103/ues0103_Albedo.dds',
 					NormalsName = '/Units/ues0103/ues0103_NormalsTS.DDS',
+                    LODCutoff = 100,
+                    MeshName = '/Mods/MCP/units/mes0106/mes0106_LOD0.scm',
+					Scrolling = true,
+                    ShaderName = 'Unit',
 					SpecularName = '/Units/ues0103/ues0103_SpecTeam.dds',
                 },
             },

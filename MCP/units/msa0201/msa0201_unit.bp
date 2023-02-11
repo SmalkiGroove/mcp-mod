@@ -90,7 +90,7 @@ UnitBlueprint {
         },
     },
          
-    BuildIconSortPriority = 15,
+    BuildIconSortPriority = 5,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',

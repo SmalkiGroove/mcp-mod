@@ -45,7 +45,7 @@ UnitBlueprint {
             Level5 = 15,
         },
     },
-    BuildIconSortPriority = 35,
+    BuildIconSortPriority = 80,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -73,8 +73,8 @@ UnitBlueprint {
         AirThreatLevel = 14,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 5800,
-        MaxHealth = 5800,
+        Health = 4050,
+        MaxHealth = 4050,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 45,
@@ -87,13 +87,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/mods/TotalMayhem/units/BRNST1ARTILLERY/BRNST1ARTILLERY_death.sca',
+                Animation = '/mods/MCP/units/mes0206/mes0206_death.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
             },
             {
-                Animation = '/mods/TotalMayhem/units/BRNST1ARTILLERY/BRNST1ARTILLERY_death2.sca',
+                Animation = '/mods/MCP/units/mes0206/mes0206_death2.sca',
                 AnimationRateMax = 0.1,
                 AnimationRateMin = 0.1,
                 Weight = 30,
@@ -123,10 +123,6 @@ UnitBlueprint {
                 {
                     LODCutoff = 440,
                     ShaderName = 'Unit',
-                    MeshName = '/mods/TotalMayhem/units/brnst1artillery/brnst1artillery_lod0.scm',
-                    AlbedoName = '/mods/TotalMayhem/units/brnst1artillery/brnst1artillery_albedo.dds',
-                    NormalsName = '/mods/TotalMayhem/units/brnst1artillery/brnst1artillery_normalsTS.dds',
-                    SpecularName = '/mods/TotalMayhem/units/brnst1artillery/brnst1artillery_specteam.dds',
                 },
             },
         },
@@ -548,7 +544,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 32,
-            ProjectileId = '/mods/MCP/projectiles/UefGauss2/UefGauss2_proj.bp',
+            ProjectileId = '/mods/MCP/projectiles/BRNT2BTproj/BRNT2BTproj_proj.bp',
             ProjectilesPerOnFire = 2,
             RackBones = {
                 {

@@ -41,7 +41,7 @@ UnitBlueprint {
             Level5 = 5,
         },
     },
-    BuildIconSortPriority = 40,
+    BuildIconSortPriority = 90,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
@@ -108,11 +108,11 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 320,
-                    ShaderName = 'Insect',
-                    MeshName = '/mods/SoftLastAsdruMod/units/grillespain/urs0104/urs0104_lod0.scm',
 					AlbedoName = '/Units/urs0103/urs0103_Albedo.dds',
 					NormalsName = '/Units/urs0103/urs0103_NormalsTS.DDS',
+                    LODCutoff = 320,
+                    #MeshName = '/Units/urs0103/urs0103_LOD0.scm',
+                    ShaderName = 'Insect',
 					SpecularName = '/Units/urs0103/urs0103_SpecTeam.dds',
                 },
             },

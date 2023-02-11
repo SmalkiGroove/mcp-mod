@@ -141,6 +141,24 @@ UnitBlueprint {
     BuildIconSortPriority = 200,
 }
 --------------------------------------------------------------------------------
+-- T3 Aircraft Carriers
+--------------------------------------------------------------------------------
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uas0303",
+    BuildIconSortPriority = 90,
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="urs0303",
+    BuildIconSortPriority = 90,
+}
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xss0303",
+    BuildIconSortPriority = 90,
+}
+--------------------------------------------------------------------------------
 -- T4 Experimentals
 --------------------------------------------------------------------------------
 UnitBlueprint {
