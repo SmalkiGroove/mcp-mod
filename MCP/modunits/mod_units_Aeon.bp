@@ -1,8 +1,19 @@
-#Aeon Buildings	----------------------------------#
+--------------------------------------------------------------------------------
+-- Buildings
+--------------------------------------------------------------------------------
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xab3301",		##T3 Quantum Optics
+	BlueprintId="uab2101", --Erupter, T1 light pd
+    Description = 'Light Point Defense',
+    Interface = {
+        HelpText = 'Light Point Defense',
+    },
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xab3301", --T3 Quantum Optics
     Footprint = {
         SizeX = 3,
         SizeZ = 3,
@@ -15,11 +26,13 @@ UnitBlueprint {
     },
 }
 
-#Aeon Units	----------------------------------#
+--------------------------------------------------------------------------------
+-- Units
+--------------------------------------------------------------------------------
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ual0101",		##spirit
+	BlueprintId="ual0101", --Spirit
     Intel = {
         OmniRadius = 2,
     },
@@ -27,7 +40,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ual0303",		##Harbinger
+	BlueprintId="ual0303", --Harbinger
     Defense = {
         Health = 2125,
         MaxHealth = 2125,
@@ -56,12 +69,10 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="ual0304",      ##Serenity
+    BlueprintId="ual0304", --Serenity
     Weapon = {
         {
             MaxRadius = 100,
         },
     },
 }
-
-#Aeon Aircrafts	----------------------------------#

@@ -2,12 +2,22 @@
 -- Buildings
 --------------------------------------------------------------------------------
 
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xsb2101", --Uttaus, T1 light pd
+    Description = 'Light Point Defense',
+    Interface = {
+        HelpText = 'Light Point Defense',
+    },
+}
+
 --------------------------------------------------------------------------------
 -- Units
 --------------------------------------------------------------------------------
+
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xsl0101",--selen, T1 land scout
+	BlueprintId="xsl0101", --Selen, T1 land scout
     Intel = {
         OmniRadius = 2,
     },
@@ -15,7 +25,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xsl0303",--T3 Siege tank
+	BlueprintId="xsl0303", --T3 Siege tank
     Defense = {
         Health = 9000,
         MaxHealth = 9000,
@@ -57,7 +67,7 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="xsl0304",      --Suthanus
+    BlueprintId="xsl0304", --Suthanus
     Weapon = {
         {
             MaxRadius = 100,

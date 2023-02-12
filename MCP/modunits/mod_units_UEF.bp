@@ -4,7 +4,16 @@
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ueb4301",		--HSD - Pulse
+	BlueprintId="ueb2101", --DM1, T1 light pd
+    Description = 'Light Point Defense',
+    Interface = {
+        HelpText = 'Light Point Defense',
+    },
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ueb4301", --HSD - Pulse
     Display = {
         Tarmacs = {
             {
@@ -19,7 +28,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ueb4202",		--SD - Pulse
+	BlueprintId="ueb4202", --SD - Pulse
     Display = {
         Tarmacs = {
             {
@@ -34,7 +43,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xeb0204",		--The Kennel
+	BlueprintId="xeb0204", --The Kennel
     Economy = {
         BuildCostEnergy = 2500*2,
         BuildCostMass = 500*2,
@@ -51,15 +60,15 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="uel0101",		--snoop
+	BlueprintId="uel0101", --Snoop
     Intel = {
-        OmniRadius = 2,			--Added
+        OmniRadius = 2,
     },
 }
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="uel0304",      --Demolisher
+    BlueprintId="uel0304", --Demolisher
     Weapon = {
         {
             MaxRadius = 100,

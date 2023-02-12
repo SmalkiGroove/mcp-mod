@@ -4,7 +4,16 @@
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xrb0304",		--Hive 3 
+	BlueprintId="urb2101", --Auto Gun, T1 light pd
+    Description = 'Light Point Defense',
+    Interface = {
+        HelpText = 'Light Point Defense',
+    },
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="xrb0304", --Hive 3 
     Economy = {
         BuildCostEnergy = 1600*4,
         BuildCostMass = 240*4,
@@ -22,15 +31,15 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="url0101",		--Mole
+	BlueprintId="url0101", --Mole
     Intel = {
-        OmniRadius = 2,			--Added
+        OmniRadius = 2,
     },
 }
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="xra0105",      --Jester
+    BlueprintId="xra0105", --Jester
     Economy = {
         BuildCostEnergy = 3300,
         BuildCostMass = 170,
@@ -40,7 +49,7 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="url0304",      --Trebuchet
+    BlueprintId="url0304", --Trebuchet
     Weapon = {
         {
             MaxRadius = 100,
