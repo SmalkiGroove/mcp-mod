@@ -56,23 +56,3 @@ UnitBlueprint {
 	BlueprintId="urs0201",
     StrategicIconName = 'icon_ship2_directfire',
 }
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="uab5202",
-    StrategicIconName = 'icon_structure2_air',
-}
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="ueb5202",
-    StrategicIconName = 'icon_structure2_air',
-}
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="urb5202",
-    StrategicIconName = 'icon_structure2_air',
-}
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="xsb5202",
-    StrategicIconName = 'icon_structure2_air',
-}

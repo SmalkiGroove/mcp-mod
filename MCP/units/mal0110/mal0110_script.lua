@@ -1,4 +1,4 @@
-local AConstructionUnit = import(import( '/lua/game.lua' ).Path() .. '/units/mal0310/mal0310_script.lua').MAL0310
+local AConstructionUnit = import('/mods/MCP/units/mal0310/mal0310_script.lua').MAL0310
 
 MAL0110 = Class(AConstructionUnit) { 
     OnCreate = function( self ) 
