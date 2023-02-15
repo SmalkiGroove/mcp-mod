@@ -452,7 +452,7 @@ UnitBlueprint {
             DoTPulses = 10,
             DoTTime = 5,
             DamageFriendly = true,
-            DamageRadius = 2.5,
+            DamageRadius = 3,
             DamageType = 'Fire',
             DisplayName = 'Napalm Artillery',
             FireTargetLayerCapsTable = {

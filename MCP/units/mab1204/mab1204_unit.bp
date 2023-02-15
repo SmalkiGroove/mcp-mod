@@ -102,14 +102,14 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentStructureEnergyMod = -4,
-        BuildCostEnergy = 24750,
-        BuildCostMass = 1000,
-        BuildTime = 3750,
+        BuildCostEnergy = 15000,
+        BuildCostMass = 1750,
+        BuildTime = 3250,
         BuildRate = 15,
         BuildableCategory = {
             'mab1304',
         },
-        ProductionPerSecondEnergy = 750,
+        ProductionPerSecondEnergy = 1000,
         RebuildBonusIds = {
             'mab1204',
             'mab1304',
@@ -134,7 +134,7 @@ UnitBlueprint {
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
-            RULEUCC_Stop = false,
+            RULEUCC_Stop = true,
             RULEUCC_Transport = false,
         },
         FactionName = 'Aeon',

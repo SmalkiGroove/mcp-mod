@@ -82,7 +82,7 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
-    BuildIconSortPriority = 5,
+    BuildIconSortPriority = 16,
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',

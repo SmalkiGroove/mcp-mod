@@ -83,17 +83,17 @@ UnitBlueprint {
         UniformScale = 0.15,
     },
     Economy = {
-        BuildCostEnergy = 5000,
-        BuildCostMass = 800,
-        BuildTime = 880,
-        MaintenanceConsumptionPerSecondEnergy = 26,
-        ProductionPerSecondMass = 2,
+        BuildCostEnergy = 5250,
+        BuildCostMass = 650,
+        BuildTime = 1000,
+        MaintenanceConsumptionPerSecondEnergy = 20,
+        ProductionPerSecondMass = 1,
         RebuildBonusIds = {
             'mab1209',
         },
     },
     Footprint = {
-        MinWaterDepth = 3.5,		
+        MinWaterDepth = 4,		
     },	
     General = {
         Category = 'Economy',

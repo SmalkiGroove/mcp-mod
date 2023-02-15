@@ -82,11 +82,11 @@ UnitBlueprint {
         UniformScale = 0.025,
     },
     Economy = {
-        BuildCostEnergy = 60000,
-        BuildCostMass = 4200,
+        BuildCostEnergy = 50000,
+        BuildCostMass = 4750,
         BuildTime = 5000,
-        MaintenanceConsumptionPerSecondEnergy = 260,
-        ProductionPerSecondMass = 20,
+        MaintenanceConsumptionPerSecondEnergy = 350,
+        ProductionPerSecondMass = 15,
         RebuildBonusIds = {
             'mab1309',
         },

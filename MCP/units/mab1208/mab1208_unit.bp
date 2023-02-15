@@ -102,10 +102,10 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentStructureEnergyMod = -4,
-        BuildCostEnergy = 12000,
-        BuildCostMass = 2000,
-        BuildTime = 2600,
-        ProductionPerSecondEnergy = 500,
+        BuildCostEnergy = 10000,
+        BuildCostMass = 1500,
+        BuildTime = 2750,
+        ProductionPerSecondEnergy = 350,
         BuildRate = 15,
         BuildableCategory = {
             'mab1308',

@@ -272,6 +272,7 @@ UnitBlueprint {
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
             RateOfFire = 0.2,
+            RenderFireClock = true,
             SlavedToBody = false,
             TargetCheckInterval = 4,
             TargetPriorities = {

@@ -3,7 +3,6 @@ local ASeaUnit = import('/lua/aeonunits.lua').ASeaUnit
 local WeaponFile = import('/lua/terranweapons.lua')
 local ADFCannonOblivionWeapon = AeonWeapons.ADFCannonOblivionWeapon
 local TDFGaussCannonWeapon = WeaponFile.TDFGaussCannonWeapon
-local AANChronoTorpedoWeapon = AeonWeapons.AANChronoTorpedoWeapon
 local AAASonicPulseBatteryWeapon = AeonWeapons.AAASonicPulseBatteryWeapon
 
 MAS0206 = Class(ASeaUnit) {
@@ -16,7 +15,6 @@ MAS0206 = Class(ASeaUnit) {
         },
         FrontTurret = Class(ADFCannonOblivionWeapon) {},
         FrontTurret2 = Class(ADFCannonOblivionWeapon) {},
-        torp01 = Class(AANChronoTorpedoWeapon) {},
     },
 
     BackWakeEffect = {},

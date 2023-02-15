@@ -84,14 +84,14 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentStructureEnergyMod = -4,
-        BuildCostEnergy = 12000,
-        BuildCostMass = 2000,
-        BuildTime = 2600,
+        BuildCostEnergy = 10000,
+        BuildCostMass = 1500,
+        BuildTime = 2750,
         BuildRate = 15,
         BuildableCategory = {
             'meb1308',
         },
-        ProductionPerSecondEnergy = 500,
+        ProductionPerSecondEnergy = 350,
         RebuildBonusIds = {
             'meb1208',
             'meb1308',
