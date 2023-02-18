@@ -34,7 +34,6 @@ UnitBlueprint {
     Categories = {
         'PRODUCTMCP',
         'SELECTABLE',
-        'BUILTBYTIER3COMMANDER',
         'BUILTBYTIER3FIELD',
         'AEON',
         'STRUCTURE',

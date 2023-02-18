@@ -6,9 +6,6 @@ local SAAOlarisCannonWeapon = SeraphimWeapons.SAAOlarisCannonWeapon
 local SLaanseMissileWeapon = SeraphimWeapons.SLaanseMissileWeapon
 
 XSS0302 = Class(SSeaUnit) {
-    FxDamageScale = 2,
-    DestructionTicks = 400,
-
     Weapons = {
         BackTurret = Class(SDFHeavyQuarnonCannon) {},
         FrontTurret = Class(SDFHeavyQuarnonCannon) {},

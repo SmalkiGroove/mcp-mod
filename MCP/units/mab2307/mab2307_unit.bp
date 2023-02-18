@@ -30,7 +30,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FIELD',
-        'BUILTBYTIER3COMMANDER',
         'AEON',
         'STRUCTURE',
         'DEFENSE',

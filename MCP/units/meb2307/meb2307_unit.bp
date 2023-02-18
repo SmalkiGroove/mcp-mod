@@ -35,7 +35,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FIELD',
-        'BUILTBYTIER3COMMANDER',
         'UEF',
         'STRUCTURE',
         'DEFENSE',

@@ -30,7 +30,6 @@ UnitBlueprint {
         'PRODUCTMCP',
         'SELECTABLE',
         'BUILTBYTIER3FIELD',
-        'BUILTBYTIER3COMMANDER',
         'CYBRAN',
         'TECH3',
         'STRUCTURE',

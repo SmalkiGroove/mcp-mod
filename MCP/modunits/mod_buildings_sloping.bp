@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
 -- Walls
 --------------------------------------------------------------------------------
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="uab5101",	--Aeon--
@@ -8,6 +9,7 @@ UnitBlueprint {
         SlopeToTerrain = true,
     },
 }
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="xsb5101",	--Seraphim--
@@ -20,6 +22,7 @@ UnitBlueprint {
         },
     },
 }
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="ueb5101",	--UEF--
@@ -27,6 +30,7 @@ UnitBlueprint {
         SlopeToTerrain = true,
     },
 }
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="urb5101",	--Cybran--

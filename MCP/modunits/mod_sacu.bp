@@ -1,0 +1,189 @@
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="ual0301", --Aeon
+    Economy = {
+        BuildableCategory = {
+            'BUILTBYCOMMANDER AEON',
+            'BUILTBYTIER3COMMANDER AEON',
+            'BUILTBYTIER3ENGINEER AEON',
+            'BUILTBYTIER3FIELD AEON',
+        },
+    },
+    Enhancements = {
+        ResourceAllocation = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exles3',
+            Name = 'Economy Engineering',
+            ProductionPerSecondEnergy = 180,
+            ProductionPerSecondMass = 4,
+        },
+        ResourceAllocationRemove = {
+            Icon = 'exles3',
+            Name = 'Remove Economy Engineering',
+        },
+        StabilitySuppressant = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exlce3',
+            Name = 'Field Engineering',
+            NewHealth = 3000,
+            NewDamageMod = 200,
+        },
+        StabilitySuppressantRemove = {
+            Icon = 'exlce3',
+            Name = 'Remove Field Engineering',
+        },
+    },
+    EnhancementPresets = {
+
+    },
+}
+
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="uel0301", --UEF
+    Economy = {
+        BuildableCategory = {
+            'BUILTBYCOMMANDER UEF',
+            'BUILTBYTIER3COMMANDER UEF',
+            'BUILTBYTIER3ENGINEER UEF',
+            'BUILTBYTIER3FIELD UEF',
+        },
+    },
+    Enhancements = {
+        ResourceAllocation = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exles3',
+            Name = 'Economy Engineering',
+            ProductionPerSecondEnergy = 180,
+            ProductionPerSecondMass = 4,
+        },
+        ResourceAllocationRemove = {
+            Icon = 'exles3',
+            Name = 'Remove Economy Engineering',
+        },
+        HighExplosiveOrdnance = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exlce3',
+            Name = 'Field Engineering',
+            NewHealth = 3000,
+            NewDamageMod = 200,
+        },
+        HighExplosiveOrdnanceRemove = {
+            Icon = 'exlce3',
+            Name = 'Remove Field Engineering',
+        },
+    },
+    EnhancementPresets = {
+        
+    },
+}
+
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId="url0301", --Cybran
+    Economy = {
+        BuildableCategory = {
+            'BUILTBYCOMMANDER CYBRAN',
+            'BUILTBYTIER3COMMANDER CYBRAN',
+            'BUILTBYTIER3ENGINEER CYBRAN',
+            'BUILTBYTIER3FIELD CYBRAN',
+        },
+    },
+    Enhancements = {
+        ResourceAllocation = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exles3',
+            Name = 'Economy Engineering',
+            ProductionPerSecondEnergy = 180,
+            ProductionPerSecondMass = 4,
+        },
+        ResourceAllocationRemove = {
+            Icon = 'exles3',
+            Name = 'Remove Economy Engineering',
+        },
+        FocusConvertor = {
+            BuildCostEnergy = 20000,
+            BuildCostMass = 2000,
+            BuildTime = 3600,
+            Icon = 'exlce3',
+            Name = 'Field Engineering',
+            NewHealth = 3000,
+            NewDamageMod = 200,
+        },
+        FocusConvertorRemove = {
+            Icon = 'exlce3',
+            Name = 'Remove Field Engineering',
+        },
+    },
+    EnhancementPresets = {
+        
+    },
+}
+
+
+-- UnitBlueprint {
+-- 	Merge = true,
+-- 	BlueprintId="xsl0301", --Seraphim
+--     Economy = {
+--         BuildableCategory = {
+--             'BUILTBYTIER3COMMANDER SERAPHIM',
+--         },
+--         ProductionPerSecondEnergy = 20,
+--         ProductionPerSecondMass = 1,
+--     },
+--     Enhancements = {
+--         ResourceAllocation = {
+--             BuildCostEnergy = 20000,
+--             BuildCostMass = 2000,
+--             BuildTime = 3600,
+--             Icon = 'exles3',
+--             Name = 'Economy Engineering',
+--             ProductionPerSecondEnergy = 180,
+--             ProductionPerSecondMass = 4,
+--         },
+--         ResourceAllocationRemove = {
+--             Icon = 'exles3',
+--             Name = 'Remove Economy Engineering',
+--         },
+--         Overcharge = {
+--             BuildCostEnergy = 20000,
+--             BuildCostMass = 2000,
+--             BuildTime = 3600,
+--             Icon = 'exlce3',
+--             Name = 'Field Engineering',
+--             NewHealth = 14000,
+--             NewDamageMod = 200,
+--             NewDamageRadiusMod = 3.5,
+--             NewMaxRadius = 40,
+--         },
+--         OverchargeRemove = {
+--             Icon = 'exlce3',
+--             Name = 'Remove Field Engineering',
+--         },
+--         Teleporter = {
+--             Slot = 'Back',
+--             UpgradeEffectBones = {
+--                 'Back_Upgrade',
+--             },
+--         },
+--         TeleporterRemove = {
+--             Slot = 'Back',
+--         },
+--     },
+--     EnhancementPresets = {
+        
+--     },
+-- }

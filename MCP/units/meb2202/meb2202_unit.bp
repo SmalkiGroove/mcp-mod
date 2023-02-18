@@ -31,8 +31,6 @@ UnitBlueprint {
         'SELECTABLE',
         'BUILTBYTIER2FIELD',
         'BUILTBYTIER3FIELD',
-        'BUILTBYTIER2COMMANDER',
-        'BUILTBYTIER3COMMANDER',
         'UEF',
         'STRUCTURE',
         'HEAVYDEFENSE',

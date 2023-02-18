@@ -176,3 +176,33 @@ function RemoteViewing(SuperClass)
         end,
     }
 end
+
+function SACUEngineeringSpe(SuperClass, ecoEnhancement, fieldEnhancement)
+    return Class(SuperClass) {
+        OnCreate = function(self)
+            SuperClass.OnCreate(self)
+            self:InitBuildRestrictions()
+        end,
+
+        CreateEnhancement = function(self, enh)
+            SuperClass.CreateEnhancement(self, enh)
+            local bp = self:GetBlueprint().Enhancements[enh]
+            if not bp then return end
+            
+            if enh == ecoEnhancement then
+                self:RemoveBuildRestriction(categories.BUILTBYTIER3ENGINEER)
+            elseif enh == ecoEnhancement..'Remove' then
+                self:InitBuildRestrictions()
+            elseif enh == fieldEnhancement then
+                self:RemoveBuildRestriction(categories.BUILTBYTIER3FIELD)
+            elseif enh == fieldEnhancement..'Remove' then
+                self:InitBuildRestrictions()
+            end
+        end,
+
+        InitBuildRestrictions = function(self)
+            self:RestoreBuildRestrictions()
+            self:AddBuildRestriction(categories.BUILTBYTIER3ENGINEER + categories.BUILTBYTIER3FIELD)
+        end
+    }
+end

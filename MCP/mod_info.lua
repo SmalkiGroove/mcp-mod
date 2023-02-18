@@ -1,17 +1,21 @@
 name = "Mixed Combat Pack"
-version = 104
-uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv104"
+version = 105
+uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv105"
 icon = "/mods/MCP/mod_icon.png"
 author = "CSI"
 copyright = "CSI"
 special_thanks = "Uveso, Balthazar"
 url = "https://github.com/SmalkiGroove/mcp-mod"
 description = [[
-Nicely packaged unit pack using content from other mods. Full AI support and balanced (needs more feedback tho).
-Check the required mods and download them all, otherwise it won't work.
+=== MCP ===
+
+/!\ READ THIS /!\
+AT THE END OF THIS DESCRIPTION THERE IS THE LIST OF THE OTHER MODS YOU NEED TO DOWNLOAD BEFORE PLAYING MCP
+
+Nicely packaged unit pack using content from other mods. Full AI support and balanced (needs your feedback tho).
 Each faction has the same content quantity and quality.
--
-What is included :
+
+WHAT IS INCLUDED :
 * split between eco engineers and field engineers => it may be disturbing not to be able to make defenses with regular engis at first but it brings clarity and organization to the large content of the mod
 * early game experimentals => T1 T2 T3 exp assault bot, siege unit, gunship and battleship for every faction
 * many defenses => T1 T2 T3 heavy PD (high hp and range), T1 bivalent PD (anti ground and air), T2 T4 exp PD (very high dps) but watch out for the expensive costs
@@ -19,11 +23,26 @@ What is included :
 * more navy => T1 T2 artillery ships, more battlecruisers, anti-navy defenses, and more
 * resource structures => T2 T3 hydros, evolved T3 mex mfab and pgen, T2 T3 water pgen and naval rig
 * custom strategic icons for all new unit categories
--
-How to host ?
-Create a game with this mod and all its dependencies (see mod_info.lua) so people who join can download them automatically.
+
+HOW TO HOST ON FAF ?
+Create a game with this mod and all its dependencies (see the list below) so people who join can download them automatically.
 Then when the game is full, disable all dependencies before starting the game.
--
+
+LIST OF DEPENDENCIES (exact name) :
+* Total Mayhem
+* BrewLAN
+* BrewLAN: Additional unit mods
+* BlackOps FAF: Unleashed
+* BlackOps FAF: EXUnits
+* Orbital Wars
+* Extreme Wars
+* Experimental Wars 1.96
+* Deep Blue Naval Pack
+* The Dairy Farm
+* Marlo's mod Compilation
+* Extreme T1 Shields
+You only need to download them, but they are not required when you start the game.
+
 Have fun !
 ]]
 

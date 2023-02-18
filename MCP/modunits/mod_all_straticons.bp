@@ -1,6 +1,8 @@
+
 --------------------------------------------------------------------------------
--- Experimentals
+-- LAB
 --------------------------------------------------------------------------------
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="ual0106",
@@ -16,6 +18,11 @@ UnitBlueprint {
 	BlueprintId="url0106",
     StrategicIconName = 'mcp/icon_bot1_x',
 }
+
+--------------------------------------------------------------------------------
+-- Experimentals
+--------------------------------------------------------------------------------
+
 UnitBlueprint {
 	Merge = true,
 	BlueprintId="uaa0310",
@@ -45,14 +52,4 @@ UnitBlueprint {
 	Merge = true,
 	BlueprintId="xsb2401",
     StrategicIconName = 'mcp/icon_experimental_artillery',
-}
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="uas0201",
-    StrategicIconName = 'icon_ship2_directfire',
-}
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="urs0201",
-    StrategicIconName = 'icon_ship2_directfire',
 }

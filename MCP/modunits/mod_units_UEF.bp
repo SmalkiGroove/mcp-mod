@@ -67,6 +67,16 @@ UnitBlueprint {
 }
 
 UnitBlueprint {
+	Merge = true,
+	BlueprintId="xel0209", --Sparky
+    Economy = {
+        BuildableCategory = {
+            'BUILTBYTIER2FIELD UEF',
+        },
+    }
+}
+
+UnitBlueprint {
     Merge = true,
     BlueprintId="uel0304", --Demolisher
     Weapon = {
