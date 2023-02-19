@@ -127,6 +127,12 @@ UnitBlueprint {
             Icon = 'exlce3',
             Name = 'Remove Field Engineering',
         },
+        NaniteMissileSystem = {
+            Slot = 'LCH',
+        },
+        NaniteMissileSystemRemove = {
+            Slot = 'LCH',
+        },
     },
 }
 
@@ -179,6 +185,25 @@ UnitBlueprint {
         },
         TeleporterRemove = {
             Slot = 'Back',
+        },
+    },
+}
+
+
+
+
+
+
+BuffBlueprint {
+    Name = 'SACUFieldBuff',
+    DisplayName = 'SACUFieldBuff',
+    BuffType = 'SCUUPGRADEDMG',
+    Stacks = 'ALWAYS',
+    Duration = -1,
+    Affects = {
+        MaxHealth = {
+            Add = 3000,
+            Mult = 1.0,
         },
     },
 }

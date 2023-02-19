@@ -1,4 +1,5 @@
 local VizMarker = import('/lua/sim/VizMarker.lua').VizMarker
+local Buff = import("/lua/sim/buff.lua")
 
 function RemoteViewing(SuperClass)
     return Class(SuperClass) {
@@ -185,18 +186,33 @@ function SACUEngineeringSpe(SuperClass, ecoEnhancement, fieldEnhancement)
         end,
 
         CreateEnhancement = function(self, enh)
-            SuperClass.CreateEnhancement(self, enh)
             local bp = self:GetBlueprint().Enhancements[enh]
             if not bp then return end
-            
+
             if enh == ecoEnhancement then
+                CommandUnit.CreateEnhancement(self, enh)
                 self:RemoveBuildRestriction(categories.BUILTBYTIER3ENGINEER)
+                local bpEcon = self:GetBlueprint().Economy
+                self:SetProductionPerSecondEnergy((bp.ProductionPerSecondEnergy + bpEcon.ProductionPerSecondEnergy) or 0)
+                self:SetProductionPerSecondMass((bp.ProductionPerSecondMass + bpEcon.ProductionPerSecondMass) or 0)
             elseif enh == ecoEnhancement..'Remove' then
+                CommandUnit.CreateEnhancement(self, enh)
                 self:InitBuildRestrictions()
+                local bpEcon = self:GetBlueprint().Economy
+                self:SetProductionPerSecondEnergy(bpEcon.ProductionPerSecondEnergy or 0)
+                self:SetProductionPerSecondMass(bpEcon.ProductionPerSecondMass or 0)
             elseif enh == fieldEnhancement then
+                CommandUnit.CreateEnhancement(self, enh)
                 self:RemoveBuildRestriction(categories.BUILTBYTIER3FIELD)
+                self:GetWeapon(1):AddDamageMod(bp.NewDamageMod or 0)
+                Buff.ApplyBuff(self, 'SACUFieldBuff')
             elseif enh == fieldEnhancement..'Remove' then
+                CommandUnit.CreateEnhancement(self, enh)
                 self:InitBuildRestrictions()
+                self:GetWeapon(1):AddDamageMod(bp.NewDamageMod or 0)
+                Buff.RemoveBuff(self, 'SACUFieldBuff')
+            else
+                SuperClass.CreateEnhancement(self, enh)
             end
         end,
 
