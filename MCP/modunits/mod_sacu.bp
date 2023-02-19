@@ -189,21 +189,3 @@ UnitBlueprint {
     },
 }
 
-
-
-
-
-
-BuffBlueprint {
-    Name = 'SACUFieldBuff',
-    DisplayName = 'SACUFieldBuff',
-    BuffType = 'SCUUPGRADEDMG',
-    Stacks = 'ALWAYS',
-    Duration = -1,
-    Affects = {
-        MaxHealth = {
-            Add = 3000,
-            Mult = 1.0,
-        },
-    },
-}

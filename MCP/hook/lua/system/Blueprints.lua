@@ -733,7 +733,7 @@ function ReplaceSACUsPresets(all_bps)
             local eco_engi = {
                 BuildIconSortPriority = 10,
                 UnitName = 'SACU (Eco preset)',
-                Description = 'SACU with Economic engineering.',
+                Description = 'SACU (Eco preset)',
                 Enhancements = { v[1] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -741,7 +741,7 @@ function ReplaceSACUsPresets(all_bps)
             local field_engi = {
                 BuildIconSortPriority = 15,
                 UnitName = 'SACU (Field preset)',
-                Description = 'SACU with Field engineering.',
+                Description = 'SACU (Field preset)',
                 Enhancements = { v[2] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the field engineering enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -749,7 +749,7 @@ function ReplaceSACUsPresets(all_bps)
             local builder = {
                 BuildIconSortPriority = 20,
                 UnitName = 'SACU (Builder preset)',
-                Description = 'SACU with Rapid Fabricator.',
+                Description = 'SACU (Builder preset)',
                 Enhancements = { v[3] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -757,7 +757,7 @@ function ReplaceSACUsPresets(all_bps)
             local special = {
                 BuildIconSortPriority = 25,
                 UnitName = 'SACU (Special preset)',
-                Description = 'SACU with combat upgrades.',
+                Description = 'SACU (Special preset)',
                 Enhancements = { v[6] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -765,7 +765,7 @@ function ReplaceSACUsPresets(all_bps)
             local full_eco = {
                 BuildIconSortPriority = 30,
                 UnitName = 'SACU (Full Eco preset)',
-                Description = 'SACU with Economic engineering, Rapid Fabricator and self protection.',
+                Description = 'SACU (Full Eco preset)',
                 Enhancements = { v[1], v[3], v[4] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
                 SortCategory = 'SORTOTHER',
@@ -773,8 +773,8 @@ function ReplaceSACUsPresets(all_bps)
             local full_field = {
                 BuildIconSortPriority = 35,
                 UnitName = 'SACU (Full Field preset)',
-                Description = 'SACU with Field engineering, .',
-                Enhancements = { v[2], v[3] },
+                Description = 'SACU (Full Field preset)',
+                Enhancements = { v[2], v[4], v[5] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
                 SortCategory = 'SORTOTHER',
             }

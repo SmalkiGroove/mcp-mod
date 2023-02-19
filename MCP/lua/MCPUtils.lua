@@ -1,4 +1,6 @@
 local VizMarker = import('/lua/sim/VizMarker.lua').VizMarker
+
+local CommandUnit = import("/lua/defaultunits.lua").CommandUnit
 local Buff = import("/lua/sim/buff.lua")
 
 function RemoteViewing(SuperClass)
@@ -205,12 +207,29 @@ function SACUEngineeringSpe(SuperClass, ecoEnhancement, fieldEnhancement)
                 CommandUnit.CreateEnhancement(self, enh)
                 self:RemoveBuildRestriction(categories.BUILTBYTIER3FIELD)
                 self:GetWeapon(1):AddDamageMod(bp.NewDamageMod or 0)
+                if not Buffs['SACUFieldBuff'] then
+                    BuffBlueprint {
+                        Name = 'SACUFieldBuff',
+                        DisplayName = 'SACUFieldBuff',
+                        BuffType = 'SCUUPGRADEDMG',
+                        Stacks = 'ALWAYS',
+                        Duration = -1,
+                        Affects = {
+                            MaxHealth = {
+                                Add = bp.NewHealth,
+                                Mult = 1.0,
+                            },
+                        },
+                    }
+                end
                 Buff.ApplyBuff(self, 'SACUFieldBuff')
             elseif enh == fieldEnhancement..'Remove' then
                 CommandUnit.CreateEnhancement(self, enh)
                 self:InitBuildRestrictions()
                 self:GetWeapon(1):AddDamageMod(bp.NewDamageMod or 0)
-                Buff.RemoveBuff(self, 'SACUFieldBuff')
+                if Buff.HasBuff(self, 'SACUFieldBuff') then
+                    Buff.RemoveBuff(self, 'SACUFieldBuff')
+                end
             else
                 SuperClass.CreateEnhancement(self, enh)
             end
