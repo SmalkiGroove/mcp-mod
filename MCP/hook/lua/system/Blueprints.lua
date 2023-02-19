@@ -7,6 +7,8 @@ function ModBlueprints(all_blueprints)
     CategoryChanges(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
     StrategicIcons(all_blueprints.Unit)
+    BuildSortPriority(all_blueprints.Unit)
+    ReplaceSACUsPresets(all_blueprints.Unit)
 end
 
 --------------------------------------------------------------------------------
@@ -638,5 +640,156 @@ function StrategicIcons(all_bps)
 end
 
 
+--------------------------------------------------------------------------------
+-- Specifying units which sort priority has to be changed
+--------------------------------------------------------------------------------
+
+function BuildSortPriority(all_bps)
+    local SortChanges = {
+        uab5101 = 150, -- Aeon T1 wall
+        ueb5101 = 150, -- UEF T1 wall
+        urb5101 = 150, -- Cybran T1 wall
+        xsb5101 = 150, -- Seraphim T1 wall
+        uab0304 = 100, -- Aeon T3 Quantum Gate
+        ueb0304 = 100, -- UEF T3 Quantum Gate
+        urb0304 = 100, -- Cybran T3 Quantum Gate
+        xsb0304 = 100, -- Seraphim T3 Quantum Gate
+        ual0303 = 15, -- Aeon T3 Assault Bot
+        uel0303 = 15, -- UEF T3 Assault Bot
+        url0303 = 15, -- Cybran T3 Assault Bot
+        xel0305 = 20, -- UEF T3 Armored
+        xrl0305 = 20, -- Cybran T3 Armored
+        xsl0303 = 20, -- Seraphim T3 Armored
+        ual0304 = 25, -- Aeon T3 Mobile Artillery
+        uel0304 = 25, -- UEF T3 Mobile Artillery
+        url0304 = 25, -- Cybran T3 Mobile Artillery
+        xsl0304 = 25, -- Seraphim T3 Mobile Artillery
+        xal0305 = 30, -- Aeon T3 Sniper
+        xsl0305 = 30, -- Seraphim T3 Sniper
+        xaa0306 = 45, -- Aeon T3 Torpedo Bomber
+        xra0105 = 45, -- Cybran T1 Gunship
+        xrb2308 = 200, -- Cybran T3 Torpedo Defense
+        uas0303 = 90, -- Aeon T3 Aircraft Carrier
+        urs0303 = 90, -- Cybran T3 Aircraft Carrier
+        xss0303 = 90, -- Seraphim T3 Aircraft Carrier
+        ual0401 = 40, -- Aeon Experimental Asault Bot
+        xsl0401 = 40, -- Seraphim Experimental Asault Bot
+        url0402 = 10, -- Cybran Experimental Spiderbot
+        xrl0403 = 50, -- Cybran Experimental Megabot
+        uaa0310 = 10, -- Aeon Experimental Aircraft
+        ura0401 = 10, -- Cybran Experimental Aircraft
+        xsa0402 = 10, -- Seraphim Experimental Aircraft
+    }
+    for unitid, priority in SortChanges do
+        if all_bps[unitid] then
+            all_bps[unitid].BuildIconSortPriority = priority
+        end
+    end
+end
+
+
+--------------------------------------------------------------------------------
+-- Specifying enhancements to make in SACU presets
+--------------------------------------------------------------------------------
+
+function ReplaceSACUsPresets(all_bps)
+    local enhancements = {
+        ual0301 = {
+            'ResourceAllocation',           -- eco (R)
+            'StabilitySuppressant',         -- field (R)
+            'EngineeringFocusingModule',    -- buildrate (L)
+            'Shield',                       -- protection (Back)
+            'SystemIntegrityCompensator',   -- combat (L)
+            'Teleporter',                   -- special (Back)
+        },
+        uel0301 = {
+            'ResourceAllocation',           -- eco (R)
+            'HighExplosiveOrdnance',        -- field (R)
+            'Pod',                          -- buildrate (L)
+            'Shield',                       -- protection (Back)
+            'AdvancedCoolingUpgrade',       -- combat (L)
+            'RadarJammer',                  -- special (Back)
+        },
+        url0301 = {
+            'ResourceAllocation',           -- eco (R)
+            'FocusConvertor',               -- field (R)
+            'Switchback',                   -- buildrate (L)
+            'SelfRepairSystem',             -- protection (Back)
+            'EMPCharge ',                   -- combat (L)
+            'CloakingGenerator',            -- special (Back)
+        },
+        xsl0301 = {
+            'EnhancedSensors',              -- eco (R)
+            'Overcharge',                   -- field (R)
+            'EngineeringThroughput',        -- buildrate (L)
+            'Shield',                       -- protection (Back)
+            'DamageStabilization',          -- combat (L)
+            'Teleporter',                   -- special (Back)
+        },
+    }
+    for k, v in enhancements do
+        if all_bps[k] then
+
+            local eco_engi = {
+                BuildIconSortPriority = 10,
+                UnitName = 'SACU (Eco preset)',
+                Description = 'SACU with Economic engineering.',
+                Enhancements = { v[1] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering enhancement.',
+                SortCategory = 'SORTOTHER',
+            }
+            local field_engi = {
+                BuildIconSortPriority = 15,
+                UnitName = 'SACU (Field preset)',
+                Description = 'SACU with Field engineering.',
+                Enhancements = { v[2] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the field engineering enhancement.',
+                SortCategory = 'SORTOTHER',
+            }
+            local builder = {
+                BuildIconSortPriority = 20,
+                UnitName = 'SACU (Builder preset)',
+                Description = 'SACU with Rapid Fabricator.',
+                Enhancements = { v[3] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
+                SortCategory = 'SORTOTHER',
+            }
+            local special = {
+                BuildIconSortPriority = 25,
+                UnitName = 'SACU (Special preset)',
+                Description = 'SACU with combat upgrades.',
+                Enhancements = { v[6] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
+                SortCategory = 'SORTOTHER',
+            }
+            local full_eco = {
+                BuildIconSortPriority = 30,
+                UnitName = 'SACU (Full Eco preset)',
+                Description = 'SACU with Economic engineering, Rapid Fabricator and self protection.',
+                Enhancements = { v[1], v[3], v[4] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
+                SortCategory = 'SORTOTHER',
+            }
+            local full_field = {
+                BuildIconSortPriority = 35,
+                UnitName = 'SACU (Full Field preset)',
+                Description = 'SACU with Field engineering, .',
+                Enhancements = { v[2], v[3] },
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
+                SortCategory = 'SORTOTHER',
+            }
+
+            all_bps[k].EnhancementPresets = {
+                EcoEngi = eco_engi,
+                FieldEngi = field_engi,
+                Builder = builder,
+                Special = special,
+                FullEco = full_eco,
+                FullField = full_field,
+            }
+
+        end
+    end
+end
 
 end

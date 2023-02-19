@@ -203,6 +203,8 @@ function SACUEngineeringSpe(SuperClass, ecoEnhancement, fieldEnhancement)
         InitBuildRestrictions = function(self)
             self:RestoreBuildRestrictions()
             self:AddBuildRestriction(categories.BUILTBYTIER3ENGINEER + categories.BUILTBYTIER3FIELD)
+            self:RemoveBuildRestriction(categories.BUILTBYCOMMANDER + categories.BUILTBYTIER3COMMANDER)
         end
+
     }
 end
