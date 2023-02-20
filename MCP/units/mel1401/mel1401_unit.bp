@@ -235,9 +235,9 @@ UnitBlueprint {
         UniformScale = 0.23, 
     }, 
     Economy = { 
-        BuildCostEnergy = 240000, 
-        BuildCostMass = 24000, 
-        BuildTime = 27500,
+        BuildCostEnergy = 220000, 
+        BuildCostMass = 20000, 
+        BuildTime = 27000,
     }, 
     General = { 
         Category = 'Experimental',    

@@ -181,7 +181,7 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXB0000',
         SpawnRandomRotation = true,
-        UniformScale = 0.15,
+        UniformScale = 0.18,
     },
     Economy = {
         BuildCostEnergy = 100000,
@@ -190,8 +190,8 @@ UnitBlueprint {
     },
     Footprint = {
         MaxSlope = 0.25,
-        SizeX = 6,
-        SizeZ = 6,
+        SizeX = 5,
+        SizeZ = 5,
     },
     General = {
         Category = 'Gunship',
@@ -657,9 +657,6 @@ UnitBlueprint {
             WeaponUnpacks = false,
             NotExclusive = true,
         },
-
-
-		
         {
             AlwaysRecheckTarget = true,
             Audio = {

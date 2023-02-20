@@ -227,7 +227,7 @@ UnitBlueprint {
             LAYER_Sub = false,
             LAYER_Water = false,
         },
-        Elevation = 12,
+        Elevation = 13,
         GroundCollisionOffset = 1.6,
         MaxSpeed = 0.5,
         MeshExtentsX = 1.75,
