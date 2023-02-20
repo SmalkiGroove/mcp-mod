@@ -69,8 +69,8 @@ UnitBlueprint {
         AirThreatLevel = 14,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 26000,
-        MaxHealth = 26000,
+        Health = 20000,
+        MaxHealth = 20000,
         RegenRate = 0,
         Shield = {
             ImpactEffects = 'AeonShieldHit01',
@@ -79,13 +79,13 @@ UnitBlueprint {
             MeshZ = '/effects/entities/Shield01/Shield01z_mesh',
             RegenAssistMult = 60,
             ShieldEnergyDrainRechargeTime = 5,
-            ShieldMaxHealth = 6000,
+            ShieldMaxHealth = 15000,
             ShieldRechargeTime = 100,
             ShieldRegenRate = 100,
             ShieldRegenStartTime = 1,
-            ShieldSize = 13,
+            ShieldSize = 33,
             ShieldSpillOverDamageMod = 0,
-            ShieldVerticalOffset = -2,
+            ShieldVerticalOffset = -6,
         },
         SubThreatLevel = 0,
         SurfaceThreatLevel = 225,
@@ -95,8 +95,6 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
             '<LOC ability_shielddome>Shield Dome',
-            '<LOC ability_radar>Radar',
-            '<LOC ability_sonar>Sonar',
         },
         AnimationDeath = {
             {
@@ -186,8 +184,6 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 50,
-        SonarRadius = 40,
         VisionRadius = 50,
         WaterVisionRadius = 50,
     },

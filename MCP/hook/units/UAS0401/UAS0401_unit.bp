@@ -124,7 +124,7 @@ UnitBlueprint {
         SubThreatLevel = 81,
         SurfaceThreatLevel = 300,
     },
-    Description = '<LOC uas0401_desc>Experimental Battleship',
+    Description = 'Experimental Water Fortress',
     Display = {
         Abilities = {
             '<LOC ability_factory>Factory',
@@ -255,7 +255,7 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXB0000',
         SpawnRandomRotation = false,
-        UniformScale = 0.1,
+        UniformScale = 0.12,
     },
     DroneData = {
         Drone1 = {
@@ -286,7 +286,7 @@ UnitBlueprint {
     Economy = {
         BuildCostEnergy = 530000,
         BuildCostMass = 46000,
-        BuildRate = 240,
+        BuildRate = 300,
         BuildTime = 80000,
         BuildableCategory = {
             'BUILTBYTIER2FACTORY AEON MOBILE NAVAL',
@@ -339,7 +339,7 @@ UnitBlueprint {
         WaterVisionRadius = 100,
     },
     Interface = {
-        HelpText = '<LOC uas0401_help>Experimental Battleship',
+        HelpText = 'Experimental Water Fortress',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 7.5,
@@ -419,8 +419,8 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 6000,
-            DamageRadius = 5,
+            Damage = 8000,
+            DamageRadius = 6,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
@@ -430,7 +430,8 @@ UnitBlueprint {
             FiringRandomness = 0.3,
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 150,
+            MinRadius = 20,
+            MaxRadius = 200,
             MuzzleChargeDelay = 2.5,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
@@ -454,8 +455,9 @@ UnitBlueprint {
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
-            RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 0.1,
+            RangeCategory = 'UWRC_IndirectFire',
+            RateOfFire = 0.11,
+            RenderFireClock = true,
             SlavedToBody = false,
             TargetCheckInterval = 5,
             TargetPriorities = {

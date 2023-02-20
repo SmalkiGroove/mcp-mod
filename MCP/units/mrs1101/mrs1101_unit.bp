@@ -82,7 +82,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 29,
     },
-    Description = 'Experimental Cruiser',
+    Description = 'Experimental Battlecruiser',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -190,7 +190,7 @@ UnitBlueprint {
         WaterVisionRadius = 25,
     },
     Interface = {
-        HelpText = 'Experimental Cruiser',
+        HelpText = 'Experimental Battlecruiser',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 2.4,

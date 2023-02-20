@@ -741,7 +741,7 @@ function ReplaceSACUsPresets(all_bps)
             'FocusConvertor',               -- field (R)
             'Switchback',                   -- buildrate (L)
             'SelfRepairSystem',             -- protection (Back)
-            'EMPCharge ',                   -- combat (L)
+            'EMPCharge',                   -- combat (L)
             'CloakingGenerator',            -- special (Back)
         },
         xsl0301 = {

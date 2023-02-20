@@ -76,7 +76,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 150,
     },
-    Description = '<LOC mss1301_desc>Experimental Cruiser',
+    Description = '<LOC mss1301_desc>Experimental Battlecruiser',
     Display = {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
@@ -183,7 +183,7 @@ UnitBlueprint {
         WaterVisionRadius = 80,
     },
     Interface = {
-        HelpText = '<LOC mss1301_help>Experimental Cruiser',
+        HelpText = '<LOC mss1301_help>Experimental Battlecruiser',
     },
     LifeBarHeight = 0.25,
     LifeBarOffset = 9,
@@ -263,7 +263,7 @@ UnitBlueprint {
 			FiringRandomness = 0,
 			DamageRadius = 2,
             Label = 'GroundGun',
-            MaxRadius = 84,
+            MaxRadius = 88,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             RackBones = {
@@ -327,7 +327,7 @@ UnitBlueprint {
 			FiringRandomness = 0,
 			DamageRadius = 4,
             Label = 'Missile',
-            MaxRadius = 84,
+            MaxRadius = 88,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 10,
@@ -393,7 +393,7 @@ UnitBlueprint {
             FiringRandomness = 0.6,
             FiringTolerance = 2,
             Label = 'LeftAAGun',
-            MaxRadius = 95,
+            MaxRadius = 92,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 80,
@@ -466,7 +466,7 @@ UnitBlueprint {
             FiringRandomness = 0.1,
             FiringTolerance = 1,
             Label = 'RightAAGun',
-            MaxRadius = 75,
+            MaxRadius = 74,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 120,

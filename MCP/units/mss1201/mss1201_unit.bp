@@ -115,7 +115,6 @@ UnitBlueprint {
     Description = 'Experimental Destroyer',
     Display = {
         Abilities = {
-            '<LOC ability_radar>Radar',
             '<LOC ability_sonar>Sonar',
             '<LOC ability_submersible>Submersible',
             '<LOC ability_personalshield>Personal Shield',
@@ -216,10 +215,9 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 80,
-        SonarRadius = 100,
+        SonarRadius = 80,
         VisionRadius = 40,
-        WaterVisionRadius = 40,
+        WaterVisionRadius = 60,
     },
     Interface = {
         HelpText = 'Experimental Destroyer',
@@ -634,7 +632,7 @@ UnitBlueprint {
             FiringRandomness = 1,
             FiringTolerance = 2,
             Label = 'Torpedo1',
-            MaxRadius = 50,
+            MaxRadius = 85,
             MuzzleSalvoDelay = 0.8,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 5,

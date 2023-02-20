@@ -1,7 +1,16 @@
 
+--------------------------------------------------------------------------------
+-- ACUs
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-- SACUs
+--------------------------------------------------------------------------------
+
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ual0301", --Aeon
+	BlueprintId="ual0301", -- Aeon SACU
     Economy = {
         BuildableCategory = {
             'BUILTBYTIER3ENGINEER AEON',
@@ -47,7 +56,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="uel0301", --UEF
+	BlueprintId="uel0301", -- UEF SACU
     Economy = {
         BuildableCategory = {
             'BUILTBYTIER3ENGINEER UEF',
@@ -93,7 +102,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="url0301", --Cybran
+	BlueprintId="url0301", -- Cybran SACU
     Economy = {
         BuildableCategory = {
             'BUILTBYTIER3ENGINEER CYBRAN',
@@ -139,7 +148,7 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xsl0301", --Seraphim
+	BlueprintId="xsl0301", -- Seraphim SACU
     Economy = {
         BuildableCategory = {
             'BUILTBYTIER3ENGINEER SERAPHIM',

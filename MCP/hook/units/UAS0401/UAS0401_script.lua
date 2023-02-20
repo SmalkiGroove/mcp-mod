@@ -28,6 +28,7 @@ UAS0401 = Class(BaseTransport, ASeaUnit, AirDroneCarrier) {
         ASeaUnit.OnStopBeingBuilt(self,builder,layer)
         if layer == 'Water' then
             self:RestoreBuildRestrictions()
+            self:AddBuildRestriction(categories.TECHEXP)
             self:RequestRefreshUI()
         else
             self:AddBuildRestriction(categories.ALLUNITS)
