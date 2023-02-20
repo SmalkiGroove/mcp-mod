@@ -55,7 +55,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 54,
     },
-    Description = '<LOC mrb2306_desc>Heavy Point Defense',
+    Description = '<LOC mrb2306_desc>Point Defense',
     Display = {
         Abilities = {
             '<LOC ability_stun>Stuns ennemy units',
@@ -134,7 +134,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC mrb2306_help>Heavy Point Defense',
+        HelpText = '<LOC mrb2306_help>Point Defense',
     },
     LifeBarHeight = 0.09,
     LifeBarOffset = 0.55,
@@ -214,7 +214,7 @@ UnitBlueprint {
             FiringTolerance = 1.5,
             Label = 'Turret01',
             LeadTarget = false,
-            MaxRadius = 66,
+            MaxRadius = 60,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

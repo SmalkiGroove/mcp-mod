@@ -227,10 +227,10 @@ UnitBlueprint {
         UniformScale = 0.07,
     },
     Economy = {
-        BuildCostEnergy = 265,
+        BuildCostEnergy = 280,
         BuildCostMass = 60,
         BuildRate = 5,
-        BuildTime = 265,
+        BuildTime = 280,
         BuildableCategory = {
             'BUILTBYTIER1FIELD AEON',
         },
@@ -238,7 +238,6 @@ UnitBlueprint {
         NeedToFaceTargetToBuild = false,
         SacrificeEnergyMult = 0.6,
         SacrificeMassMult = 0.6,
-        StorageEnergy = 100,
         StorageMass = 10,
         TeleportEnergyMod = 0.15,
         TeleportMassMod = 1,

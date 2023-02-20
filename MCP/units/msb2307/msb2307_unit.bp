@@ -55,7 +55,7 @@ UnitBlueprint {
         EconomyThreatLevel = 7,
         Health = 12500,
         MaxHealth = 12500,
-        RegenRate = 0,
+        RegenRate = 1,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
@@ -109,9 +109,9 @@ UnitBlueprint {
         UniformScale = 0.07,
     },
     Economy = {
-        BuildCostEnergy = 185000,
-        BuildCostMass = 15000,
-        BuildTime = 16000,
+        BuildCostEnergy = 165000,
+        BuildCostMass = 13500,
+        BuildTime = 11500,
         RebuildBonusIds = {
             'msb2307',
         },
@@ -183,7 +183,7 @@ UnitBlueprint {
     SizeX = 4,
     SizeY = 1.8,
     SizeZ = 4,
-    StrategicIconName = 'icon_structure3_antiair',
+    StrategicIconName = 'icon_structure3_antiartillery',
     StrategicIconSortPriority = 200,
     Veteran = {
         Level1 = 10,
@@ -216,13 +216,13 @@ UnitBlueprint {
             FiringRandomness = 0,
             FiringTolerance = 0.5,
             Label = 'AAGun1',
-            MaxRadius = 70,
+            MaxRadius = 75,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 200,
             ProjectileId = '/projectiles/SAALosaareAutoCannon04/SAALosaareAutoCannon04_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
-            ProjectilesPerOnFire = 1,
+            ProjectilesPerOnFire = 2,
             RackBones = {
                 {
                     MuzzleBones = {
@@ -245,7 +245,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_AntiAir',
-            RateOfFire = 3.5,
+            RateOfFire = 2.5,
             TargetCheckInterval = 0.3,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -297,13 +297,13 @@ UnitBlueprint {
             FiringRandomness = 0,
             FiringTolerance = 0.5,
             Label = 'AAGun2',
-            MaxRadius = 70,
+            MaxRadius = 75,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 200,
             ProjectileId = '/projectiles/SAALosaareAutoCannon04/SAALosaareAutoCannon04_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
-            ProjectilesPerOnFire = 1,
+            ProjectilesPerOnFire = 2,
             RackBones = {
                 {
                     MuzzleBones = {
@@ -326,7 +326,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_AntiAir',
-            RateOfFire = 3.5,
+            RateOfFire = 2.5,
             TargetCheckInterval = 0.3,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -378,13 +378,13 @@ UnitBlueprint {
             FiringRandomness = 0,
             FiringTolerance = 0.5,
             Label = 'AAGun3',
-            MaxRadius = 70,
+            MaxRadius = 75,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 200,
             ProjectileId = '/projectiles/SAALosaareAutoCannon04/SAALosaareAutoCannon04_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
-            ProjectilesPerOnFire = 1,
+            ProjectilesPerOnFire = 2,
             RackBones = {
                 {
                     MuzzleBones = {
@@ -407,7 +407,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_AntiAir',
-            RateOfFire = 3.5,
+            RateOfFire = 2.5,
             TargetCheckInterval = 0.3,
             TargetPriorities = {
                 'SPECIALHIGHPRI',

@@ -1,10 +1,7 @@
 local TAirUnit = import('/lua/terranunits.lua').TAirUnit
 local WeaponsFile = import('/lua/terranweapons.lua')
-local TWeapons = import('/lua/terranweapons.lua')
-local TIFFragLauncherWeapon = TWeapons.TDFFragmentationGrenadeLauncherWeapon
-local TDFHeavyPlasmaCannonWeapon = import('/lua/terranweapons.lua').TDFHeavyPlasmaGatlingCannonWeapon
-local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
-local TANTorpedoAngler = import('/lua/terranweapons.lua').TANTorpedoAngler
+local TDFHeavyPlasmaCannonWeapon = WeaponsFile.TDFHeavyPlasmaGatlingCannonWeapon
+local TSAMLauncher = WeaponsFile.TSAMLauncher
 local TDFGaussCannonWeapon = WeaponsFile.TDFLandGaussCannonWeapon
 
 local EffectTemplate = import('/lua/EffectTemplates.lua')
@@ -15,19 +12,11 @@ local EffectUtil = import('/lua/EffectUtilities.lua')
 MEA1201 = Class(TAirUnit) {
     EngineRotateBones = {'Jet_Front', 'Jet_Back',},
 	
-Weapons = {
+    Weapons = {
         MissileRack01 = Class(TSAMLauncher) {},
-        
         MainGun = Class(TDFHeavyPlasmaCannonWeapon) {},
-		
         RightTurret01 = Class(TDFGaussCannonWeapon) {},
         LeftTurret01 = Class(TDFGaussCannonWeapon) {},
-		
-        Grenade = Class(TIFFragLauncherWeapon) {},
-        Grenade2 = Class(TIFFragLauncherWeapon) {},
-		
-        Torpedo = Class(TANTorpedoAngler) {},
-	
 	},
 	
 

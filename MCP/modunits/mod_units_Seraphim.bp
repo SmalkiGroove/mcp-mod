@@ -2,26 +2,9 @@
 -- Buildings
 --------------------------------------------------------------------------------
 
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="xsb2101", --Uttaus, T1 light pd
-    Description = 'Light Point Defense',
-    Interface = {
-        HelpText = 'Light Point Defense',
-    },
-}
-
 --------------------------------------------------------------------------------
 -- Units
 --------------------------------------------------------------------------------
-
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="xsl0101", --Selen, T1 land scout
-    Intel = {
-        OmniRadius = 2,
-    },
-}
 
 UnitBlueprint {
 	Merge = true,

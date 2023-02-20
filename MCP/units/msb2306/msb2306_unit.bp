@@ -225,7 +225,7 @@ UnitBlueprint {
             MaxRadius = 67,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 30,
+            MuzzleVelocity = 35,
             NoPause = true,
             ProjectileId = '/projectiles/SDFAireauWeapon01/SDFAireauWeapon01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,

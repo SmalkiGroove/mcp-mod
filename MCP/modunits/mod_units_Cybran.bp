@@ -4,15 +4,6 @@
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="urb2101", --Auto Gun, T1 light pd
-    Description = 'Light Point Defense',
-    Interface = {
-        HelpText = 'Light Point Defense',
-    },
-}
-
-UnitBlueprint {
-	Merge = true,
 	BlueprintId="xrb0304", --Hive 3 
     Economy = {
         BuildCostEnergy = 1600*4,
@@ -28,14 +19,6 @@ UnitBlueprint {
 --------------------------------------------------------------------------------
 -- Units
 --------------------------------------------------------------------------------
-
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="url0101", --Mole
-    Intel = {
-        OmniRadius = 2,
-    },
-}
 
 UnitBlueprint {
     Merge = true,

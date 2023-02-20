@@ -4,15 +4,6 @@
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ueb2101", --DM1, T1 light pd
-    Description = 'Light Point Defense',
-    Interface = {
-        HelpText = 'Light Point Defense',
-    },
-}
-
-UnitBlueprint {
-	Merge = true,
 	BlueprintId="ueb4301", --HSD - Pulse
     Display = {
         Tarmacs = {
@@ -60,19 +51,18 @@ UnitBlueprint {
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="uel0101", --Snoop
-    Intel = {
-        OmniRadius = 2,
-    },
-}
-
-UnitBlueprint {
-	Merge = true,
 	BlueprintId="xel0209", --Sparky
     Economy = {
+        BuildCostEnergy = 800,
+        BuildCostMass = 180,
+        BuildRate = 12.5,
+        BuildTime = 800,
         BuildableCategory = {
             'BUILTBYTIER2FIELD UEF',
         },
+        MaintenanceConsumptionPerSecondEnergy = 5,
+        StorageEnergy = 0,
+        StorageMass = 20,
     }
 }
 

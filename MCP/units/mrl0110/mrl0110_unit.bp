@@ -212,15 +212,14 @@ UnitBlueprint {
         UniformScale = 0.088,
     },
     Economy = {
-        BuildCostEnergy = 265,
+        BuildCostEnergy = 280,
         BuildCostMass = 60,
         BuildRate = 5,
-        BuildTime = 265,
+        BuildTime = 280,
         BuildableCategory = {
             'BUILTBYTIER1FIELD CYBRAN',
         },
         MaintenanceConsumptionPerSecondEnergy = 5,
-        StorageEnergy = 100,
         StorageMass = 10,
         TeleportEnergyMod = 0.15,
         TeleportMassMod = 1,

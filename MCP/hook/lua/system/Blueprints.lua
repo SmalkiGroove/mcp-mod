@@ -6,6 +6,7 @@ function ModBlueprints(all_blueprints)
     OldModBlueprints(all_blueprints)
     CategoryChanges(all_blueprints.Unit)
     UpgradeableVanilla(all_blueprints.Unit)
+    Descriptions(all_blueprints.Unit)
     StrategicIcons(all_blueprints.Unit)
     BuildSortPriority(all_blueprints.Unit)
     ReplaceSACUsPresets(all_blueprints.Unit)
@@ -615,6 +616,31 @@ end
 
 
 --------------------------------------------------------------------------------
+-- Specifying units which description has to be changed
+--------------------------------------------------------------------------------
+
+function Descriptions(all_bps)
+    local TextChanges = {
+        uab2101 = 'Light Point Defense', -- Aeon T1 PD
+        ueb2101 = 'Light Point Defense', -- UEF T1 PD
+        urb2101 = 'Light Point Defense', -- Cybran T1 PD
+        xsb2101 = 'Light Point Defense', -- Seraphim T1 PD
+        uab2104 = 'Light Anti-Air Turret', -- Aeon T1 AA
+        ueb2104 = 'Light Anti-Air Turret', -- UEF T1 AA
+        urb2104 = 'Light Anti-Air Turret', -- Cybran T1 AA
+        xsb2104 = 'Light Anti-Air Turret', -- Seraphim T1 AA
+        xeb2306 = 'Point Defense', -- UEF T3 PD
+    }
+    for unitid, text in TextChanges do
+        if all_bps[unitid] then
+            all_bps[unitid].Description = text
+            all_bps[unitid].Interface.HelpText = text
+        end
+    end
+end
+
+
+--------------------------------------------------------------------------------
 -- Specifying units which icon has to be changed
 --------------------------------------------------------------------------------
 
@@ -733,7 +759,7 @@ function ReplaceSACUsPresets(all_bps)
             local eco_engi = {
                 BuildIconSortPriority = 10,
                 UnitName = 'SACU (Eco preset)',
-                Description = 'SACU (Eco preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[1] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -741,7 +767,7 @@ function ReplaceSACUsPresets(all_bps)
             local field_engi = {
                 BuildIconSortPriority = 15,
                 UnitName = 'SACU (Field preset)',
-                Description = 'SACU (Field preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[2] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the field engineering enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -749,7 +775,7 @@ function ReplaceSACUsPresets(all_bps)
             local builder = {
                 BuildIconSortPriority = 20,
                 UnitName = 'SACU (Builder preset)',
-                Description = 'SACU (Builder preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[3] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -757,7 +783,7 @@ function ReplaceSACUsPresets(all_bps)
             local special = {
                 BuildIconSortPriority = 25,
                 UnitName = 'SACU (Special preset)',
-                Description = 'SACU (Special preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[6] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the rapid fabricator enhancement.',
                 SortCategory = 'SORTOTHER',
@@ -765,7 +791,7 @@ function ReplaceSACUsPresets(all_bps)
             local full_eco = {
                 BuildIconSortPriority = 30,
                 UnitName = 'SACU (Full Eco preset)',
-                Description = 'SACU (Full Eco preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[1], v[3], v[4] },
                 HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
                 SortCategory = 'SORTOTHER',
@@ -773,9 +799,9 @@ function ReplaceSACUsPresets(all_bps)
             local full_field = {
                 BuildIconSortPriority = 35,
                 UnitName = 'SACU (Full Field preset)',
-                Description = 'SACU (Full Field preset)',
+                Description = 'Support Armored Command Unit',
                 Enhancements = { v[2], v[4], v[5] },
-                HelpText = 'Support Armored Command Unit. Enhanced during construction with the economic engineering, rapid fabricator and self protection enhancements.',
+                HelpText = 'Support Armored Command Unit. Enhanced during construction with the field engineering, self protection and combat enhancements.',
                 SortCategory = 'SORTOTHER',
             }
 
