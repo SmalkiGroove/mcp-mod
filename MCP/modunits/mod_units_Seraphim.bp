@@ -8,49 +8,41 @@
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xsl0303", --T3 Siege tank
+	BlueprintId="xsl0303", -- T3 Siege tank
     Defense = {
-        Health = 9000,
-        MaxHealth = 9000,
-        SubThreatLevel = 9,
-        SurfaceThreatLevel = 27,
+        Health = 8000,
+        MaxHealth = 8000,
     },
     Economy = {
         BuildCostEnergy = 14000,
         BuildCostMass = 1280,
         BuildTime = 4800,
     },
-    Intel = {
-        VisionRadius = 26,
-        WaterVisionRadius = 26,
-    },
     Physics = {
         StandUpright = false,
-        MaxAcceleration = 2,
-        MaxBrake = 2,
-        MaxSpeed = 2,
-        MaxSpeedReverse = 2.5,
+        MaxAcceleration = 1.9,
+        MaxBrake = 1.9,
+        MaxSpeed = 1.9,
+        MaxSpeedReverse = 1.9,
         TurnRate = 60,
     },
     Weapon = {
         {
-            MaxRadius = 30,
+            MaxRadius = 33,
         },
         {
-            Damage = 12
+            MaxRadius = 33,
         },
         {
-            MaxRadius = 30,
+            MaxRadius = 37,
         },
-        {
-            MaxRadius = 30,
-        },
+        {},
     },
 }
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="xsl0304", --Suthanus
+    BlueprintId="xsl0304", -- Suthanus, T3 Mobile Artilleey
     Weapon = {
         {
             MaxRadius = 100,
@@ -60,7 +52,7 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="xss0302", --Hauthuum, T3 Battleship
+    BlueprintId="xss0302", -- Hauthuum, T3 Battleship
     Economy = {
         BuildRate = 360,
     },

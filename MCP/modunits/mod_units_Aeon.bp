@@ -2,57 +2,42 @@
 -- Buildings
 --------------------------------------------------------------------------------
 
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="xab3301", --T3 Quantum Optics
-    Footprint = {
-        SizeX = 3,
-        SizeZ = 3,
-    },
-    Physics = {
-        SkirtOffsetX = -2.5,
-        SkirtOffsetZ = -2.5,
-        SkirtSizeX = 8,
-        SkirtSizeZ = 8,
-    },
-}
-
 --------------------------------------------------------------------------------
 -- Units
 --------------------------------------------------------------------------------
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="ual0303", --Harbinger
+	BlueprintId="ual0303", -- Harbinger
     Defense = {
-        Health = 2125,
-        MaxHealth = 2125,
+        Health = 1950,
+        MaxHealth = 1950,
         Shield = {
-            ShieldMaxHealth = 1200,
+            ShieldMaxHealth = 975,
         },
-        SurfaceThreatLevel = 9,
     },
     Economy = {
-        BuildCostEnergy = 5400,
+        BuildCostEnergy = 5250,
         BuildCostMass = 480,
         BuildTime = 2400,
     },
     Physics = {
-        MaxAcceleration = 4,
-        MaxBrake = 4,
-        MaxSpeed = 4,
+        MaxAcceleration = 4.2,
+        MaxBrake = 3.8,
+        MaxSpeed = 3.8,
     },
     Weapon = {
         {
-            Damage = 80,
-            MaxRadius = 24,
+            Damage = 90,
+            MaxRadius = 25,
+            RateOfFire = 1.9,
         },
     },
 }
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="ual0304", --Serenity
+    BlueprintId="ual0304", -- Serenity
     Weapon = {
         {
             MaxRadius = 100,

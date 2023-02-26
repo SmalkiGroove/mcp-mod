@@ -657,6 +657,15 @@ function StrategicIcons(all_bps)
         urb4207 = 'icon_structure3_shield',--Cybran T3b Shield
         uas0201 = 'icon_ship2_directfire', --Aeon T2 Destroyer
         urs0201 = 'icon_ship2_directfire', --Cybran T2 Destroyer
+        ual0106 = 'mcp/icon_bot1_x', --Aeon T1 LAB
+        uel0106 = 'mcp/icon_bot1_x', --UEF T1 LAB
+        url0106 = 'mcp/icon_bot1_x', --Cybran T1 LAB
+        uaa0310 = 'mcp/icon_experimental_antiair', -- CZAR
+        ura0401 = 'mcp/icon_experimental_antiair', -- Soul Ripper
+        xsa0402 = 'mcp/icon_experimental_antiair', -- Ahwassa
+        xab2307 = 'mcp/icon_experimental_artillery', -- Salvation
+        ueb2401 = 'mcp/icon_experimental_artillery', -- Mavor
+        xsb2401 = 'mcp/icon_experimental_artillery', -- Yolona Oss
     }
     for unitid, icon in IconChanges do
         if all_bps[unitid] then
@@ -741,7 +750,7 @@ function ReplaceSACUsPresets(all_bps)
             'FocusConvertor',               -- field (R)
             'Switchback',                   -- buildrate (L)
             'SelfRepairSystem',             -- protection (Back)
-            'EMPCharge',                   -- combat (L)
+            'EMPCharge',                    -- combat (L)
             'CloakingGenerator',            -- special (Back)
         },
         xsl0301 = {

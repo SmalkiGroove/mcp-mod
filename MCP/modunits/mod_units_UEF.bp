@@ -2,56 +2,13 @@
 -- Buildings
 --------------------------------------------------------------------------------
 
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="ueb4301", --HSD - Pulse
-    Display = {
-        Tarmacs = {
-            {
-                Albedo = '/env/Common/decals/Tarmacs/Tar8x_01_albedo.dds',
-                Normal = '/env/Common/decals/Tarmacs/Tar8x_01_normals.dds',
-                Length = 12.8,
-                Width = 12.8,
-            },
-        },
-    },
-}
-
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="ueb4202", --SD - Pulse
-    Display = {
-        Tarmacs = {
-            {
-                Albedo = '/env/Common/decals/Tarmacs/Tar8x_01_albedo.dds',
-                Normal = '/env/Common/decals/Tarmacs/Tar8x_01_normals.dds',
-                Length = 12.8,
-                Width = 12.8,
-            },
-        },
-    },
-}
-
-UnitBlueprint {
-	Merge = true,
-	BlueprintId="xeb0204", --The Kennel
-    Economy = {
-        BuildCostEnergy = 2500*2,
-        BuildCostMass = 500*2,
-        HalfPriceUpgradeFromID = 'xeb0104',
-        RebuildBonusIds = {
-            'xeb0204',
-        },
-    },
-}
-
 --------------------------------------------------------------------------------
 -- Units
 --------------------------------------------------------------------------------
 
 UnitBlueprint {
 	Merge = true,
-	BlueprintId="xel0209", --Sparky
+	BlueprintId="xel0209", -- Sparky
     Economy = {
         BuildCostEnergy = 800,
         BuildCostMass = 180,
@@ -68,7 +25,7 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="uel0304", --Demolisher
+    BlueprintId="uel0304", -- Demolisher
     Weapon = {
         {
             MaxRadius = 100,
