@@ -1,6 +1,6 @@
 name = "Mixed Combat Pack"
-version = 106
-uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv106"
+version = 107
+uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv107"
 icon = "/mods/MCP/mod_icon.png"
 author = "CSI"
 copyright = "CSI"
@@ -20,7 +20,7 @@ WHAT IS INCLUDED :
 * early game experimentals => T1 T2 T3 exp assault bot, siege unit, gunship and battleship for every faction
 * many defenses => T1 T2 T3 heavy PD (high hp and range), T1 bivalent PD (anti ground and air), T2 T4 exp PD (very high dps) but watch out for the expensive costs
 * ultimate experimentals => huge experimentals that can obliterate a whole base, 1 per faction
-* more navy => T1 T2 artillery ships, more battlecruisers, anti-navy defenses, and more
+* extended navy => T1 T2 artillery ships, more battlecruisers, anti-navy defenses, and more
 * resource structures => T2 T3 hydros, evolved T3 mex mfab and pgen, T2 T3 water pgen and naval rig
 * custom strategic icons for all new unit categories
 
