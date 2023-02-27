@@ -39,6 +39,8 @@ ProjectileBlueprint {
                 {
                     LODCutoff = 150,
                     ShaderName = 'TMeshNoLighting',
+                    MeshName = '/mods/BlackOpsFAF-Unleashed/projectiles/CIFMissileTactical04/CIFMissileTactical04_lod0.scm',
+                    AlbedoName = '/mods/BlackOpsFAF-Unleashed/projectiles/CIFMissileTactical04/CIFMissileTactical04_albedo.dds',
                 },
             },
         },

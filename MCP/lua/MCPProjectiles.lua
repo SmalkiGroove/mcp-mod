@@ -1505,20 +1505,6 @@ CybRocket3 = Class(MultiPolyTrailProjectile) {
     FxTrailOffset = 0,
 }
 
-CybBRMT3RAPproj = Class(MultiPolyTrailProjectile) {
-	PolyTrailOffset = {0.05,0.05,0.05},  
-    PolyTrailOffset = EffectTemplate.TPlasmaGatlingCannonPolyTrailsOffsets,
-
-    FxImpactNone = EffectTemplate.TPlasmaGatlingCannonUnitHit,
-    FxImpactUnit = EffectTemplate.TPlasmaGatlingCannonUnitHit,
-    FxImpactProp = EffectTemplate.TPlasmaGatlingCannonUnitHit,
-    FxImpactLand = EffectTemplate.TPlasmaGatlingCannonHit,
-    FxImpactWater= EffectTemplate.TPlasmaGatlingCannonHit,
-    RandomPolyTrails = 1,
-    PolyTrails = MCPEffectTemplate.RedGatlingCannonPolyTrails,
-
-}
-
 UefPlasmaGatling = Class(MultiPolyTrailProjectile) {
 	PolyTrailOffset = {0.05,0.05,0.05},  
     PolyTrailOffset = EffectTemplate.TPlasmaGatlingCannonPolyTrailsOffsets,
@@ -1823,22 +1809,6 @@ AeonOblivion2 = Class(MultiPolyTrailProjectile) {
     FxPropHitScale = 1.25,
     FxImpactLand = MCPEffectTemplate.AeonT2ExperimentalTankHunterHit01,
     FxLandHitScale = 1.25,
-    FxTrailOffset = 0,
-    FxImpactUnderWater = {},
-}
-
-UefBRNT2EXARTproj = Class(MultiPolyTrailProjectile) {
-    PolyTrailOffset = {0.05,0.05,0.05},  
-    PolyTrails  = {
-            '/mods/MCP/effects/emitters/UEFT2EXART_polytrails_emit.bp',
-            '/mods/MCP/effects/emitters/w_u_gau03_p_01_polytrails_emit.bp',
-    },
-    FxImpactUnit = MCPEffectTemplate.UEFT2EXARTHit02,
-    FxUnitHitScale = 1.0,
-    FxImpactProp = MCPEffectTemplate.UEFT2EXARTHit02,
-    FxPropHitScale = 1.0,
-    FxImpactLand = MCPEffectTemplate.UEFT2EXARTHit02,
-    FxLandHitScale = 1.0,
     FxTrailOffset = 0,
     FxImpactUnderWater = {},
 }

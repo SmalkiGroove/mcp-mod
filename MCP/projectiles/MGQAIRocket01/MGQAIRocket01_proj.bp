@@ -36,6 +36,8 @@ ProjectileBlueprint {
                 {
                     LODCutoff = 150,
                     ShaderName = 'NormalMappedAlpha',
+                    MeshName = '/mods/BlackOpsFAF-Unleashed/projectiles/MGQAIRocket01/MGQAIRocket01_lod0.scm',
+                    AlbedoName = '/mods/BlackOpsFAF-Unleashed/projectiles/MGQAIRocket01/MGQAIRocket01_albedo.dds',
                 },
             },
         },

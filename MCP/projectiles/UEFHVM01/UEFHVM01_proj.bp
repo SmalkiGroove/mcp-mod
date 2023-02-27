@@ -27,6 +27,8 @@ ProjectileBlueprint {
             LODs = {
                 {
                     ShaderName = 'NormalMappedAlpha',
+                    MeshName = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFHVM01/UEFHVM01_lod0.scm',
+                    AlbedoName = '/mods/BlackOpsFAF-EXUnits/projectiles/UEFHVM01/UEFHVM01_albedo.dds',
                 },
             },
         },

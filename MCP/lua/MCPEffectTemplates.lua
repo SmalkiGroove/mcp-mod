@@ -719,19 +719,6 @@ JuggPlasmaGatlingCannonShells = {
     EmtBpPathAlt .. 'jugg_gattler_shells_01_emit.bp',
 }
 
--- BASILISK NUKE EFFECTS
-BasiliskNukePlumeFxTrails01 = {
-    EmtBpPathAlt .. 'basilisk_nuke_plume_fxtrails_07_emit.bp',
-    EmtBpPathAlt .. 'basilisk_nuke_plume_fxtrails_08_emit.bp', 
-}
-
-BasiliskNukeHeadEffects02 = { 
-    EmtBpPathAlt .. 'basilisk_nuke_head_smoke_03_emit.bp',
-    EmtBpPathAlt .. 'basilisk_nuke_head_smoke_04_emit.bp',
-}
-
-BasiliskNukeHeadEffects03 = {EmtBpPathAlt .. 'basilisk_nuke_head_fire_01_emit.bp',}
-
 DamageBlueFire = {
     EmtBpPathAlt .. 'destruction_damaged_blue_fire_01_emit.bp',
     EmtBpPathAlt .. 'destruction_damaged_blue_fire_02_emit.bp',
@@ -815,22 +802,6 @@ CitadelHVM01Trails = {
     EmtBpPath .. 'nuke_munition_launch_trail_04_emit.bp',
     EmtBpPath .. 'missile_munition_trail_01_emit.bp',
     EmtBpPath .. 'missile_munition_trail_02_emit.bp',
-}
-
-SonicDisruptorWaveMuzzle = 
-{
-    EmtBpPathAlt .. 'exsonicdisruptor_muzzle_01_emit.bp', 
-    EmtBpPathAlt .. 'exsonicdisruptor_muzzle_02_emit.bp', 
-    EmtBpPathAlt .. 'exsonicdisruptor_muzzle_03_emit.bp', 
-    EmtBpPathAlt .. 'exsonicdisruptor_muzzle_04_emit.bp',
-}
-
-SonicDisruptorWaveHit = {
-    EmtBpPath .. 'microwave_laser_end_03_emit.bp',
-}
-
-SonicDisruptorWaveBeam01 = {
-	EmtBpPathAlt .. 'exsonicdisruptor_beam_01_emit.bp',
 }
 
 UEFACUHeavyPlasmaGatlingCannonMuzzleFlash = {
@@ -1246,12 +1217,6 @@ UEFDeathSML01 = {
     EmtBpPathAlt .. 'cosml_darkfire_emit.bp',	##
     EmtBpPathAlt .. 'cosml_fire_emit.bp',	##	
 	EmtBpPathAlt .. 'bm2rockethit_09_emit.bp', ## Red glow explosion with smoke
-}
-
-RedGatlingCannonPolyTrails = {
-    EmtBpPathAlt .. 'red_gatling_plasma_cannon_polytrail_01_emit.bp',
-    EmtBpPathAlt .. 'red_gatling_plasma_cannon_polytrail_02_emit.bp',
-    EmtBpPathAlt .. 'red_gatling_plasma_cannon_polytrail_03_emit.bp',
 }
 
 GreenGatlingCannonPolyTrails = {
@@ -2095,21 +2060,6 @@ CybranT2BattleTankHit = {
 	EmtBpPathAlt .. 'tmcybrant2battletankhit_07_emit.bp', ## black dots on ground
 	EmtBpPathAlt .. 'tmcybrant2battletankhit_08_emit.bp', ## white exploding glow in middle
 	EmtBpPathAlt .. 'tmcybrant2battletankhit_09_emit.bp', ## black exploding dots in middle
-}
-
-AeonGraniteDeath = {
-    EmtBpPathAlt .. 'aeongranite_01_emit.bp',
-    EmtBpPathAlt .. 'aeongranite_02_emit.bp',
-    EmtBpPathAlt .. 'aeongranite_08_emit.bp',
-    EmtBpPathAlt .. 'comed_smoke_emit.bp',
-    EmtBpPathAlt .. 'comedaeon_fire_emit.bp',
-    EmtBpPathAlt .. 'co_darkfire_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_02_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_03_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_04_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_05_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_06_emit.bp',
-	EmtBpPathAlt .. 'AeonT2TankHunter_hit_07_emit.bp',
 }
 
 AeonGraniteHit01 = {

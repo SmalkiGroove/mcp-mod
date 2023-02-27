@@ -31,8 +31,8 @@ ProjectileBlueprint {
             LODs = {
                 {
                     ShaderName = 'TMeshNoNormals',
-                    AlbedoName = '/Mods/MCP/projectiles/TIFAntiMatterShells05/TIFAntiMatterShells05_albedo.dds',
-                    MeshName = '/Mods/MCP/projectiles/TIFAntiMatterShells05/TIFAntiMatterShells05_lod0.scm',
+                    AlbedoName = '/Mods/#Marlos mods compilation/projectiles/TIFAntiMatterShells05/TIFAntiMatterShells05_albedo.dds',
+                    MeshName = '/Mods/#Marlos mods compilation/projectiles/TIFAntiMatterShells05/TIFAntiMatterShells05_lod0.scm',
                 },
             },
         },

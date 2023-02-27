@@ -6,7 +6,6 @@ local SuperQuantumBeamGeneratorCollisionBeam = MCPCollisionBeamFile.SuperQuantum
 local HawkTractorClawCollisionBeam = MCPCollisionBeamFile.HawkTractorClawCollisionBeam
 local MiniPhasonLaserCollisionBeam = MCPCollisionBeamFile.MiniPhasonLaserCollisionBeam
 local YenaothaExperimentalLaserCollisionBeam = MCPCollisionBeamFile.YenaothaExperimentalLaserCollisionBeam
-local TDFGoliathCollisionBeam = MCPCollisionBeamFile.TDFGoliathCollisionBeam
 local JuggLaserCollisionBeam = MCPCollisionBeamFile.JuggLaserCollisionBeam
 local MartyrMicrowaveLaserCollisionBeam01 = MCPCollisionBeamFile.MartyrMicrowaveLaserCollisionBeam01
 local GoldenLaserCollisionBeam01 = MCPCollisionBeamFile.GoldenLaserCollisionBeam01
@@ -389,27 +388,6 @@ LambdaWeapon = Class(DefaultProjectileWeapon) {
     FxChargeMuzzleFlash = EffectTemplate.SDFExperimentalPhasonProjChargeMuzzleFlash,
 }
 
-TDFGoliathShoulderBeam = Class(DefaultBeamWeapon) {
-    BeamType = MCPCollisionBeamFile.TDFGoliathCollisionBeam,
-    FxMuzzleFlash = {},
-    FxChargeMuzzleFlash = {},
-    FxUpackingChargeEffects = {},
-    FxUpackingChargeEffectScale = 1,
-
-    PlayFxWeaponUnpackSequence = function( self )
-        if not self.ContBeamOn then
-            local army = self.unit:GetArmy()
-            local bp = self:GetBlueprint()
-            for k, v in self.FxUpackingChargeEffects do
-                for ek, ev in bp.RackBones[self.CurrentRackSalvoNumber].MuzzleBones do
-                    CreateAttachedEmitter(self.unit, ev, army, v):ScaleEmitter(self.FxUpackingChargeEffectScale)
-                end
-            end
-            DefaultBeamWeapon.PlayFxWeaponUnpackSequence(self)
-        end
-    end,
-}
-
 HawkGaussCannonWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = EffectTemplate.TGaussCannonFlash,
 }
@@ -608,27 +586,6 @@ CitadelPlasmaGatlingCannonWeapon = Class(DefaultProjectileWeapon) {
         DefaultProjectileWeapon.PlayFxMuzzleSequence(self, muzzle)
         for k, v in self.FxShellEject do
             CreateAttachedEmitter(self.unit, 'Gat_Shells', self.unit:GetArmy(), v):ScaleEmitter(0.5)
-        end
-    end,
-}
-
-SonicDisruptorWave = Class(DefaultBeamWeapon) {
-    BeamType = MCPCollisionBeamFile.SonicDisruptorWaveCBeam,
-    FxMuzzleFlash = {},
-    FxChargeMuzzleFlash = {},
-    FxUpackingChargeEffects = {},
-    FxUpackingChargeEffectScale = 1,
-
-    PlayFxWeaponUnpackSequence = function( self )
-        if not self.ContBeamOn then
-            local army = self.unit:GetArmy()
-            local bp = self:GetBlueprint()
-            for k, v in self.FxUpackingChargeEffects do
-                for ek, ev in bp.RackBones[self.CurrentRackSalvoNumber].MuzzleBones do
-                    CreateAttachedEmitter(self.unit, ev, army, v):ScaleEmitter(self.FxUpackingChargeEffectScale)
-                end
-            end
-            DefaultBeamWeapon.PlayFxWeaponUnpackSequence(self)
         end
     end,
 }

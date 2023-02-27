@@ -453,74 +453,6 @@ EMCHPRFDisruptorBeam = Class(HawkCollisionBeam) {
     end, 
 }
 
--- HIRO LASER COLLISION BEAM
-TDFGoliathCollisionBeam = Class(HawkCollisionBeam) {
-    TerrainImpactType = 'LargeBeam01',
-    TerrainImpactScale = 1,
-    FxBeamEndPoint = {
-        '/mods/MCP/effects/emitters/goliath_death_laser_end_01_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_end_02_emit.bp',
-        '/effects/emitters/uef_orbital_death_laser_end_03_emit.bp',
-        '/effects/emitters/uef_orbital_death_laser_end_04_emit.bp',
-        '/effects/emitters/uef_orbital_death_laser_end_05_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_end_06_emit.bp',
-        '/effects/emitters/uef_orbital_death_laser_end_07_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_end_08_emit.bp',
-        '/effects/emitters/uef_orbital_death_laser_end_distort_emit.bp',
-    },
-    FxBeamStartPointScale = 1,
-    FxBeam = {'/mods/MCP/effects/emitters/goliath_death_laser_beam_01_emit.bp'},
-    FxBeamStartPoint = {
-        '/mods/MCP/effects/emitters/goliath_death_laser_muzzle_01_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_muzzle_02_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_muzzle_03_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_muzzle_04_emit.bp',
-        '/mods/MCP/effects/emitters/goliath_death_laser_muzzle_05_emit.bp',
-    },
-    FxBeamEndPointScale = 1,
-    SplatTexture = 'czar_mark01_albedo',
-    ScorchSplatDropTime = 0.25,
-
-    OnImpact = function(self, impactType, targetEntity)
-        if impactType == 'Terrain' then
-            if self.Scorching == nil then
-                self.Scorching = self:ForkThread( self.ScorchThread )   
-            end
-        elseif not impactType == 'Unit' then
-            KillThread(self.Scorching)
-            self.Scorching = nil
-        end
-        CollisionBeam.OnImpact(self, impactType, targetEntity)
-    end,
-    
-    OnDisable = function( self )
-        CollisionBeam.OnDisable(self)
-        KillThread(self.Scorching)
-        self.Scorching = nil   
-    end,
-
-    ScorchThread = function(self)
-        local army = self:GetArmy()
-        local size = 0.75 + (Random() * 0.75) 
-        local CurrentPosition = self:GetPosition(1)
-        local LastPosition = Vector(0,0,0)
-        local skipCount = 1
-        while true do
-            if Util.GetDistanceBetweenTwoVectors( CurrentPosition, LastPosition ) > 0.25 or skipCount > 100 then
-                CreateSplat( CurrentPosition, Util.GetRandomFloat(0,2*math.pi), self.SplatTexture, size, size, 100, 100, army )
-                LastPosition = CurrentPosition
-                skipCount = 1
-            else
-                skipCount = skipCount + self.ScorchSplatDropTime
-            end
-                
-            WaitSeconds( self.ScorchSplatDropTime )
-            size = 1.2 + (Random() * 1.5)
-            CurrentPosition = self:GetPosition(1)
-        end
-    end,
-}
-
 -- MGAALaser CANNON COLLISION BEAM
 MGAALaserCollisionBeam = Class(HawkCollisionBeam) {
     FxBeam = {
@@ -665,23 +597,6 @@ SCCollisionBeam = Class(CollisionBeam) {
     FxImpactProp = {},
     FxImpactShield = {},    
     FxImpactNone = {},
-}
-
-SonicDisruptorWaveCBeam = Class(MCPCollisionBeam) {
-	FxBeam = {},
-
-    TerrainImpactType = 'LargeBeam02',
-    
-    FxBeamStartPoint = MCPEffectTemplate.SonicDisruptorWaveMuzzle,
-    FxBeam = MCPEffectTemplate.SonicDisruptorWaveBeam01,
-    FxBeamEndPoint = MCPEffectTemplate.SonicDisruptorWaveHit,
-	
-	FxBeamStartPointScale = 0.5,
-	FxBeamEndPointScale = 0.5,
-	TerrainImpactScale = 0.2,
-	
-    SplatTexture = 'czar_mark01_albedo',
-    ScorchSplatDropTime = 0.25,
 }
 
 CybranBeamWeapons = Class(SCCollisionBeam) {

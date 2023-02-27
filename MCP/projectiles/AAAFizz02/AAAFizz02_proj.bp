@@ -22,6 +22,15 @@ ProjectileBlueprint {
         'ANTIAIR',
     },
     Display = {
+        Mesh = {
+            LODs = {
+                {
+                    AlbedoName = '/projectiles/AAAZealotMissile01/AAAZealotMissile01_albedo.dds',
+                    MeshName = '/projectiles/AAAZealotMissile01/AAAZealotMissile01_lod0.scm',
+                    ShaderName = 'TMeshGlow',
+                },
+            },
+        },
         StrategicIconSize = 1,
     },
     General = {

@@ -30,6 +30,8 @@ ProjectileBlueprint {
             LODs = {
                 {
                     ShaderName = 'TMeshGlow',
+                    MeshName = '/mods/BlackOpsFAF-Unleashed/projectiles/CybranHailfire01child/CybranHailfire01child_lod0.scm',
+                    AlbedoName = '/mods/BlackOpsFAF-Unleashed/projectiles/CybranHailfire01child/CybranHailfire01child_albedo.dds',
                 },
             },
         },

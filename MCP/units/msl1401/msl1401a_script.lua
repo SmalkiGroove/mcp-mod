@@ -1,6 +1,5 @@
 local SAirUnit = import('/lua/seraphimunits.lua').SAirUnit
 local WeaponsFile = import('/mods/MCP/lua/MCPWeapons.lua')
-local TDFGoliathShoulderBeam = WeaponsFile.TDFGoliathShoulderBeam
 local TIFArtilleryWeapon = import('/lua/terranweapons.lua').TIFArtilleryWeapon
 local YenzothaExperimentalLaser02 = WeaponsFile.YenzothaExperimentalLaser02
 

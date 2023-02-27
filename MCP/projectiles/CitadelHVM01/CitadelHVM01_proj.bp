@@ -27,6 +27,8 @@ ProjectileBlueprint {
             LODs = {
                 {
                     ShaderName = 'NormalMappedAlpha',
+                    MeshName = '/mods/BlackOpsFAF-Unleashed/projectiles/CitadelHVM01/CitadelHVM01_lod0.scm',
+                    AlbedoName = '/mods/BlackOpsFAF-Unleashed/projectiles/CitadelHVM01/CitadelHVM01_albedo.dds',
                 },
             },
         },
