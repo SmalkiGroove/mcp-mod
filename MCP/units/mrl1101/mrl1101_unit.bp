@@ -298,7 +298,7 @@ UnitBlueprint {
             DamageRadius = 3,
             DamageType = 'Normal',
             DamageFriendly = false,
-            DisplayName = 'Gauss Cannon',
+            DisplayName = 'Rocket Pack',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
             },

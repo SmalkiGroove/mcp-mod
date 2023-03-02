@@ -1,26 +1,35 @@
-local AHoverLandUnit = import('/lua/aeonunits.lua').AHoverLandUnit
-local WeaponsFile = import ('/mods/MCP/lua/MCPweapons.lua')
-local ADFTractorClaw02 = WeaponsFile.ADFTractorClaw02
-local FxAmbient = import('/lua/effecttemplates.lua').AT2PowerAmbient
 
+local AWalkingLandUnit = import('/lua/aeonunits.lua').AWalkingLandUnit
+local WeaponsFile = import('/lua/aeonweapons.lua')
+local MCPWeaponsFile = import('/mods/MCP/lua/MCPWeapons.lua')
+local EffectUtils = import('/lua/EffectUtilities.lua')
+local Effects = import('/lua/effecttemplates.lua')
+local TMAmizurabluelaserweapon = MCPWeaponsFile.TMAmizurabluelaserweapon
+local AAAZealotMissileWeapon = WeaponsFile.AAAZealotMissileWeapon
+local HatchMissileWeapon = WeaponsFile.AIFMissileTacticalSerpentine02Weapon
 
-MAL1302 = Class( AHoverLandUnit ) {
-    Weapons = {
-		ArmTractor01 = Class( ADFTractorClaw02 ) {},
-    },
-	
-    OnStopBeingBuilt = function(self,builder,layer)
-        AHoverLandUnit.OnStopBeingBuilt(self,builder,layer)
-        self.Trash:Add(CreateRotator(self, 'Object07', 'z', nil, 180, 0, 180))
-		self.Trash:Add(CreateRotator(self, 'Object01', 'y', nil, 360, 0, 180))
-		self.Trash:Add(CreateRotator(self, 'Object02', 'x', nil, 360, 0, 180))
-    	
-		for k, v in FxAmbient do
-			self.Trash:Add(CreateAttachedEmitter( self, 'Object02', self:GetArmy(), v ))
-		end
-	
-	end,	
-	
-}
+mal1302 = Class(AWalkingLandUnit) { 
 
-TypeClass = MAL1302
+   Weapons = {
+        HatchMissile = Class(HatchMissileWeapon) {
+
+            OnWeaponFired = function(self)
+                HatchMissileWeapon.OnWeaponFired(self)
+                ### Hides the missile bones after the unit has fired
+                self.unit:HideBone('LargeSAM', false)
+            end, 
+
+            PlayFxRackSalvoReloadSequence = function(self)
+                self.ExhaustEffects = EffectUtils.CreateBoneEffects( self.unit, 'LargeSAM', self.unit:GetArmy(), Effects.WeaponSteam01 )
+                ### Unhides the missile bones so the player can see the missile reload
+                self.unit:ShowBone('LargeSAM', false)
+                HatchMissileWeapon.PlayFxRackSalvoChargeSequence(self)
+            end,
+        },
+        Laserblue = Class(TMAmizurabluelaserweapon) {FxMuzzleFlashScale = 1.4,},
+        MissileSideLeft = Class(AAAZealotMissileWeapon) {},
+        MissileSideRight = Class(AAAZealotMissileWeapon) {},
+   },
+} 
+
+TypeClass = mal1302
