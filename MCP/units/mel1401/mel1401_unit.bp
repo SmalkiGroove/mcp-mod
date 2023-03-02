@@ -89,15 +89,15 @@ UnitBlueprint {
         }, 
         AnimationDeath = { 
             { 
-                Animation = '/mods/MCP/units/mel1401/mel1401_death01.sca', 
+                Animation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_death01.sca', 
                 Weight = 50, 
             }, 
             { 
-                Animation = '/mods/MCP/units/mel1401/mel1401_death02.sca', 
+                Animation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_death02.sca', 
                 Weight = 50, 
             }, 
         }, 
-        AnimationWalk = '/mods/MCP/units/mel1401/mel1401_awalk.sca', 
+        AnimationWalk = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_awalk.sca', 
         AnimationWalkRate = 0.50,
         Mesh = { 
             IconFadeInZoom = 140, 
@@ -106,6 +106,10 @@ UnitBlueprint {
                     LODCutoff = 500, 
                     Scrolling = true, 
                     ShaderName = 'Unit',
+                    MeshName = '/mods/4th_Dimension_211/units/uel0403/uel0403_lod0.scm',
+                    AlbedoName = '/mods/4th_Dimension_211/units/uel0403/uel0403_albedo.dds',
+                    NormalsName = '/mods/4th_Dimension_211/units/uel0403/uel0403_normalsTS.dds',
+                    SpecularName = '/mods/4th_Dimension_211/units/uel0403/uel0403_specteam.dds',
                 }, 
             }, 
         }, 
@@ -126,40 +130,40 @@ UnitBlueprint {
                     Bones = { 
                         { 
                             FootBone = 'LFrontFootDummyToe', 
-                            MaxFootFall = 0.25, # original = -0.25 
+                            MaxFootFall = 0.25,
                             Offset = { 
                                 z = 0, 
                             }, 
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/MCP/env/Common/splats/balrog_foot_left.dds', 
+                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_left.dds', 
                                 TreadMarksSizeX = 1.1, 
                                 TreadMarksSizeZ = 1.1, 
                                 TreadOffset = { 
-                                    1.5, # last value = -0.15 
-                                    0, 
-                                    3.4,   # last value = 4.0 
+                                    1.5,
+                                    0,
+                                    3.4,
                                 }, 
                             }, 
                             Type = 'FootFall01', 
                         }, 
                         { 
                             FootBone = 'LRearFootDummyToe', 
-                            MaxFootFall = 0, # original = -0.25, last value = 0.95 
+                            MaxFootFall = 0,
                             Offset = { 
-                                z = 0, # last value = 10 
+                                z = 0,
                             }, 
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/MCP/env/Common/splats/balrog_foot_left.dds', 
+                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_left.dds', 
                                 TreadMarksSizeX = 1.1, 
                                 TreadMarksSizeZ = 1.1, 
                                 TreadOffset = { 
-                                    1.5, # last value = 1.6 
+                                    1.5,
                                     0, 
-                                    -0.50, # last value = 0.0 
+                                    -0.50,
                                 }, 
                             }, 
                             Type = 'FootFall01', 
@@ -173,7 +177,7 @@ UnitBlueprint {
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/MCP/env/Common/splats/balrog_foot_right.dds', 
+                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_right.dds', 
                                 TreadMarksSizeX = 1.3, 
                                 TreadMarksSizeZ = 1.3, 
                                 TreadOffset = { 
@@ -186,14 +190,14 @@ UnitBlueprint {
                         }, 
                         { 
                             FootBone = 'RRearFootDummyToe', 
-                            MaxFootFall = 0, # previous value = -.25
+                            MaxFootFall = 0,
                             Offset = { 
-                                z = 0, # previous value = 10 
+                                z = 0,
                             }, 
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/MCP/env/Common/splats/balrog_foot_right.dds', 
+                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_right.dds', 
                                 TreadMarksSizeX = 1.3, 
                                 TreadMarksSizeZ = 1.3, 
                                 TreadOffset = { 
@@ -403,7 +407,7 @@ UnitBlueprint {
             TurretYawRange = 90, 
             TurretYawSpeed = 40, 
             Turreted = true, 
-            UseFiringSolutionInsteadOfAimBone = false,  ###### true
+            UseFiringSolutionInsteadOfAimBone = false,
             WeaponCategory = 'Direct Fire', 
             WeaponRepackTimeout = 0, 
             WeaponUnpacks = false, 
@@ -578,13 +582,13 @@ UnitBlueprint {
         { 
 #------------------------------------ 
 # Left Side Cannon 
-# -----------------------------------          
+#------------------------------------          
             AboveWaterTargetsOnly = true, 
             AimsStraightOnDisable = false, 
             Audio = { 
                 Fire = Sound { 
                     Bank = 'UELWeapon', 
-                    Cue = 'UEL0202_Cannon_Dbl', # From Pillar Tank 
+                    Cue = 'UEL0202_Cannon_Dbl',
                     LodCutoff = 'Weapon_LodCutoff', 
                 }, 
             }, 
@@ -601,8 +605,8 @@ UnitBlueprint {
                 Water = 'Land|Water|Seabed', 
             }, 
             FiringRandomness = 0.4, 
-            FiringTolerance = 10, # previous value: 1.0 
-            HeadingArcCenter = 100, # tells gun to only target things on side of unit 
+            FiringTolerance = 10,
+            HeadingArcCenter = 100,
             HeadingArcRange = 55, 
             Label = 'PlasmaCannon_L', 
             MaxRadius = 34, 
@@ -668,7 +672,7 @@ UnitBlueprint {
             Audio = { 
                 Fire = Sound { 
                     Bank = 'UELWeapon', 
-                    Cue = 'UEL0202_Cannon_Dbl', # From Pillar Tank 
+                    Cue = 'UEL0202_Cannon_Dbl',
                     LodCutoff = 'Weapon_LodCutoff', 
                 }, 
             }, 
@@ -685,8 +689,8 @@ UnitBlueprint {
                 Water = 'Land|Water|Seabed', 
             }, 
             FiringRandomness = 0.4, 
-            FiringTolerance = 10, # previous value: 1.0 
-            HeadingArcCenter = -100, # tells gun to only target things on side of unit 
+            FiringTolerance = 10,
+            HeadingArcCenter = -100,
             HeadingArcRange = 55, 
             Label = 'PlasmaCannon_R', 
             MaxRadius = 34, 
@@ -789,7 +793,7 @@ UnitBlueprint {
             RackSalvoChargeTime = 0, 
             RackSalvoReloadTime = 0, 
             RackSalvoSize = 4, 
-            RackSlavedToTurret = true, # -- original: false 
+            RackSlavedToTurret = true,
             RangeCategory = 'UWRC_AntiAir', 
             RateOfFire = 0.15, 
             TargetCheckInterval = 0.3, 
@@ -805,21 +809,11 @@ UnitBlueprint {
                 'ALLUNITS', 
             }, 
             TargetRestrictDisallow = 'UNTARGETABLE', 
-            TrackingRadius = 1.4, 
-            -- TurretBoneMuzzle = 'CenterMissileMuzzle_Left', 
-            -- TurretBonePitch = 'CenterMissileHatch', 
-            -- TurretBoneYaw = 'CenterMissileHatch', 
-            -- TurretDualManipulators = false, 
-            -- TurretPitch = 0, 
-            -- TurretPitchRange = 0, 
-            -- TurretPitchSpeed = 0, 
-            -- TurretYaw = 0, 
-            -- TurretYawRange = 0, 
-            -- TurretYawSpeed = 0, 
+            TrackingRadius = 1.4,
             Turreted = false, 
             WeaponCategory = 'Anti Air', 
             WeaponRepackTimeout = 2, 
-			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_CenterMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_CenterMissileUnpack.sca', 
             WeaponUnpackAnimationRate = 0.5, 
 			WeaponUnpacks = true, 
         }, 
@@ -847,7 +841,7 @@ UnitBlueprint {
                 Water = 'Land|Water|Seabed', 
             Land = 'Land|Water|Seabed', 
             }, 
-            FiringTolerance = 5, # original: 2 
+            FiringTolerance = 5,
             HeadingArcCenter = 90, 
             HeadingArcRange = 200, 
             Label = 'CruiseMissile_L', 
@@ -856,38 +850,36 @@ UnitBlueprint {
             MuzzleChargeDelay = 1, 
             MuzzleSalvoDelay = .1, 
             MuzzleSalvoSize = 2, 
-            MuzzleVelocity = 20, # original: 5 
+            MuzzleVelocity = 20,
 			NotExclusive = true, 
             ProjectileId = '/projectiles/TIFMissileCruise04/TIFMissileCruise04_proj.bp', 
             ProjectileLifetime = 20, 
-         -- ProjectilesPerOnFire = 2, # -- Deprecated? 
+         -- ProjectilesPerOnFire = 2, -- Deprecated? 
             RackBones = { 
                 { 
                     MuzzleBones = { 
-                        'LeftMissileMuzzle_A', 
-                  -- 'LeftMissileMuzzle_B', 
+                        'LeftMissileMuzzle_A',
                     }, 
-                    RackBone = 'LeftMissileMuzzle_A', #--'LeftMissileHousing', 
+                    RackBone = 'LeftMissileMuzzle_A',
                 }, 
-             { 
+                { 
                     MuzzleBones = { 
-                        -- 'LeftMissileMuzzle_A', 
-                  'LeftMissileMuzzle_B', 
+                        'LeftMissileMuzzle_B', 
                     }, 
-                    RackBone = 'LeftMissileMuzzle_B', #--'LeftMissileHousing', 
+                    RackBone = 'LeftMissileMuzzle_B',
                 },            
             }, 
             RackFireTogether = false, 
             RackRecoilDistance = 0, 
             RackReloadTimeout = 5, 
             RackSalvoChargeTime = 0, 
-            RackSalvoReloadTime = 5, # original: 0 
+            RackSalvoReloadTime = 5,
             RackSalvoSize = 2, 
             RackSlavedToTurret = true, 
             RangeCategory = 'UWRC_IndirectFire', 
             RateOfFire = 0.1, 
             RenderFireClock = true, 
-            TargetCheckInterval = 3, # original: 3 
+            TargetCheckInterval = 3,
             TargetPriorities = { 
             'STRUCTURE DEFENSE', 
             'TECH3 STRUCTURE', 
@@ -913,8 +905,8 @@ UnitBlueprint {
             TurretYawSpeed = 0, 
             Turreted = false, 
             WeaponCategory = 'Missile', 
-            WeaponRepackTimeout = 3, # original: 2 
-			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_LeftMissileUnpack.sca', 
+            WeaponRepackTimeout = 3,
+			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_LeftMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 
@@ -945,7 +937,7 @@ UnitBlueprint {
                 Water = 'Land|Water|Seabed', 
             Land = 'Land|Water|Seabed', 
             }, 
-            FiringTolerance = 5, # original: 2 
+            FiringTolerance = 5,
             HeadingArcCenter = -90, 
             HeadingArcRange = 200, 
             Label = 'CruiseMissile_R', 
@@ -954,10 +946,10 @@ UnitBlueprint {
             MuzzleChargeDelay = 1, 
             MuzzleSalvoDelay = .1, 
             MuzzleSalvoSize = 2, 
-            MuzzleVelocity = 5, # original: 5 
+            MuzzleVelocity = 5,
             ProjectileId = '/projectiles/TIFMissileCruise04/TIFMissileCruise04_proj.bp', 
             ProjectileLifetime = 20, 
-         -- ProjectilesPerOnFire = 2, # -- Deprecated? 
+         -- ProjectilesPerOnFire = 2, -- Deprecated? 
             RackBones = { 
             { 
                     MuzzleBones = { 
@@ -978,13 +970,13 @@ UnitBlueprint {
             RackRecoilDistance = 0, 
             RackReloadTimeout = 5, 
             RackSalvoChargeTime = 0, 
-            RackSalvoReloadTime = 5, # original: 0 
+            RackSalvoReloadTime = 5,
             RackSalvoSize = 2, 
             RackSlavedToTurret = true, 
             RangeCategory = 'UWRC_IndirectFire', 
             RateOfFire = 0.1, 
             RenderFireClock = true, 
-            TargetCheckInterval = 3, # original: 3 
+            TargetCheckInterval = 3,
             TargetPriorities = { 
             'STRUCTURE DEFENSE', 
             'TECH3 STRUCTURE', 
@@ -1010,8 +1002,8 @@ UnitBlueprint {
             TurretYawSpeed = 0, 
             Turreted = false, 
             WeaponCategory = 'Missile', 
-            WeaponRepackTimeout = 3, # original: 2 
-			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_RightMissileUnpack.sca', 
+            WeaponRepackTimeout = 3,
+			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_RightMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 
@@ -1052,12 +1044,12 @@ UnitBlueprint {
             WeaponCategory = 'Death', 
         },    
     }, 
-    Wreckage = { 
-        Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp', 
+    Wreckage = {
+        Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
         EnergyMult = 0, 
         HealthMult = 0.9, 
         MassMult = 0.9, 
-        ReclaimTimeMultiplier = 1, 
+        ReclaimTimeMultiplier = 1,
         WreckageLayers = { 
             Air = false, 
             Land = true, 

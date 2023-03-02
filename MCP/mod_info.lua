@@ -1,6 +1,6 @@
 name = "Mixed Combat Pack"
-version = 107
-uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv107"
+version = 110
+uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv110"
 icon = "/mods/MCP/mod_icon.png"
 author = "CSI"
 copyright = "CSI"
@@ -40,6 +40,7 @@ LIST OF DEPENDENCIES (exact name) :
 * Deep Blue Naval Pack
 * The Dairy Farm
 * Marlo's mod Compilation
+* 4th Dimension 2.11
 * Extreme T1 Shields
 You only need to download them, but they are not required when you start the game.
 
@@ -64,4 +65,5 @@ requiresNames = {
     ["dc38db7c-419f-4b16-add1-2d4d5fa5339c"] = "Extreme T1 Shields",
     ["55D5A55I-55R5-5432-2345-555YF555A55R5"] = "The Dairy Farm",
     ["e3huey1115-1FAF2-2296-1111-15555c1s23FA"] = "Marlo's mod Compilation",
+    ["c9b309cc-0bed-4352-b9b9-ffdf81d8f37b"] = "4th Dimension",
 }
