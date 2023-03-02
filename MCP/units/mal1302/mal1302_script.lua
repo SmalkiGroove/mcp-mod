@@ -26,7 +26,7 @@ mal1302 = Class(AWalkingLandUnit) {
                 HatchMissileWeapon.PlayFxRackSalvoChargeSequence(self)
             end,
         },
-        Laserblue = Class(TMAmizurabluelaserweapon) {FxMuzzleFlashScale = 1.4,},
+        Laserblue = Class(TMAmizurabluelaserweapon) {FxMuzzleFlashScale = 1.8,},
         MissileSideLeft = Class(AAAZealotMissileWeapon) {},
         MissileSideRight = Class(AAAZealotMissileWeapon) {},
    },
