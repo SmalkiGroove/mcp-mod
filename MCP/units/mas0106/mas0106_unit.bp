@@ -68,9 +68,15 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/SoftLastAsdruMod/units/lessecteux/uas0104/uas0104_asink.sca',
-                AnimationRateMax = 0.8,
-                AnimationRateMin = 0.5,
+                Animation = '/units/uas0201/uas0201_adeath01.sca',
+                Weight = 100,
+            },
+            {
+                Animation = '/units/uas0201/uas0201_adeath02.sca',
+                Weight = 100,
+            },
+            {
+                Animation = '/units/uas0201/uas0201_adeath03.sca',
                 Weight = 100,
             },
         },

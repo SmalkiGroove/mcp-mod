@@ -65,13 +65,13 @@ UnitBlueprint {
     Display = {
         AnimationDeath = {
             {
-                Animation = '/mods/MCP/units/mel0308/mel0308_ADeath.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BEL0308/BEL0308_ADeath.sca',
                 AnimationRateMax = 2.5,
                 AnimationRateMin = 1.5,
                 Weight = 100,
             },
         },
-        AnimationWalk = '/mods/MCP/units/mel0308/mel0308_Awalk.sca',
+        AnimationWalk = '/mods/BlackOpsFAF-Unleashed/units/BEL0308/BEL0308_Awalk.sca',
         AnimationWalkRate = 3,
         AttackReticuleSize = 3,
         Mesh = {
@@ -80,6 +80,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 215,
                     ShaderName = 'Insect',
+                    MeshName = '/mods/BlackopsFAF-Unleashed/units/bel0308/bel0308_lod0.scm',
+                    AlbedoName = '/mods/BlackopsFAF-Unleashed/units/bel0308/bel0308_albedo.dds',
+                    NormalsName = '/mods/BlackopsFAF-Unleashed/units/bel0308/bel0308_normalsTS.dds',
+                    SpecularName = '/mods/BlackopsFAF-Unleashed/units/bel0308/bel0308_specteam.dds',
                 },
             },
         },
@@ -102,13 +106,13 @@ UnitBlueprint {
         SpawnRandomRotation = true,
         TransportAnimation = {
             {
-                Animation = '/mods/MCP/units/mel0308/mel0308_Afold.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BEL0308/BEL0308_Afold.sca',
                 Weight = 100,
             },
         },
         TransportDropAnimation = {
             {
-                Animation = '/mods/MCP/units/mel0308/mel0308_AUnfold.sca',
+                Animation = '/mods/BlackOpsFAF-Unleashed/units/BEL0308/BEL0308_AUnfold.sca',
                 Weight = 100,
             },
         },

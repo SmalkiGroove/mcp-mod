@@ -18,6 +18,121 @@ end
 
 function CategoryChanges(all_bps)
     local Units = {
+
+        uab0101 = { -- Aeon T1 Land Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9501 = { -- Aeon T2 Land Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9601 = { -- Aeon T3 Land Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        uab0102 = { -- Aeon T1 Air Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9502 = { -- Aeon T2 Air Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9602 = { -- Aeon T3 Air Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        uab0103 = { -- Aeon T1 Naval Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9503 = { -- Aeon T2 Naval Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zab9603 = { -- Aeon T3 Naval Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+
+        ueb0101 = { -- UEF T1 Land Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9501 = { -- UEF T2 Land Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9601 = { -- UEF T3 Land Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        ueb0102 = { -- UEF T1 Air Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9502 = { -- UEF T2 Air Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9602 = { -- UEF T3 Air Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        ueb0103 = { -- UEF T1 Naval Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9503 = { -- UEF T2 Naval Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zeb9603 = { -- UEF T3 Naval Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+
+        urb0101 = { -- Cybran T1 Land Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9501 = { -- Cybran T2 Land Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9601 = { -- Cybran T3 Land Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        urb0102 = { -- Cybran T1 Air Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9502 = { -- Cybran T2 Air Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9602 = { -- Cybran T3 Air Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        urb0103 = { -- Cybran T1 Naval Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9503 = { -- Cybran T2 Naval Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zrb9603 = { -- Cybran T3 Naval Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+
+        xsb0101 = { -- Seraphim T1 Land Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9501 = { -- Seraphim T2 Land Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9601 = { -- Seraphim T3 Land Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        xsb0102 = { -- Seraphim T1 Air Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9502 = { -- Seraphim T2 Air Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9602 = { -- Seraphim T3 Air Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+        xsb0103 = { -- Seraphim T1 Naval Factory
+            'BUILTBYTIER1FIELD', 'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9503 = { -- Seraphim T2 Naval Support Factory
+            'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD'
+        },
+        zsb9603 = { -- Seraphim T3 Naval Support Factory
+            'BUILTBYTIER3FIELD'
+        },
+
+        ----------------------------------------------------------------------------------------------
+
         xeb0104 = { -- UEF T2 Engi station
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
