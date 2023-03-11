@@ -42,59 +42,12 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="xsl0304", -- Suthanus, T3 Mobile Artilleey
-    Weapon = {
-        {
-            MaxRadius = 100,
-        },
-    },
-}
-
-UnitBlueprint {
-    Merge = true,
     BlueprintId="xss0302", -- Hauthuum, T3 Battleship
-    Economy = {
-        BuildRate = 360,
-    },
     General = {
         CommandCaps = {
             RULEUCC_Nuke = false,
             RULEUCC_SiloBuildNuke = false,
-            RULEUCC_Tactical = true,
-            RULEUCC_SiloBuildTactical = true,
         },
     },
-    Weapon = {
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {
-            Audio = {
-                Fire = Sound {
-                    Bank = 'XSB_Weapon',
-                    Cue = 'XSB2108_Laanse_Missile',
-                    LodCutoff = 'Weapon_LodCutoff',
-                },
-            },
-            Damage = 6000,
-            DamageFriendly = false,
-            DamageRadius = 2,
-            DamageType = 'Normal',
-            DisplayName = 'Laanse Tactical Missile Launcher',
-            Label = 'CruiseMissile',
-            MaxProjectileStorage = 20,
-            MaxRadius = 256,
-            MinRadius = 16,
-            MuzzleChargeDelay = 1.5,
-            MuzzleSalvoDelay = 0,
-            MuzzleSalvoSize = 1,
-            MuzzleVelocity = 10,
-            ProjectileId = '/projectiles/SIFLaanseTacticalMissile04/SIFLaanseTacticalMissile04_proj.bp',
-            ProjectileLifetime = 30,
-        },
     },
 }

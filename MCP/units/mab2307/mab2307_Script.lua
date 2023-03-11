@@ -1,10 +1,8 @@
 local TStructureUnit = import('/lua/terranunits.lua').TStructureUnit
-local SWeapons = import ('/lua/seraphimweapons.lua')
-local AWeapons = import('/lua/aeonweapons.lua')
 local SCUDeathWeapon = import('/lua/sim/defaultweapons.lua').SCUDeathWeapon
+local AAAZealotMissileWeapon = import('/lua/aeonweapons.lua').AAAZealotMissileWeapon
+local SDFChronotronCannonWeapon = import('/lua/seraphimweapons.lua').SDFChronotronCannonWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
-local AAAZealotMissileWeapon = AWeapons.AAAZealotMissileWeapon
-local SDFChronotronCannonWeapon = SWeapons.SDFChronotronCannonWeapon
 
 MAB2307 = Class(TStructureUnit) {
 
@@ -12,11 +10,11 @@ MAB2307 = Class(TStructureUnit) {
         cannonweapon = Class(SDFChronotronCannonWeapon) {
             FxMuzzleFlashScale = 4.85,
             FxMuzzleFlash = EffectTemplate.ASDisruptorCannonMuzzle01,
-	},
+	    },
         DeathWeapon = Class(SCUDeathWeapon) {
         },
         AntiAirMissiles = Class(AAAZealotMissileWeapon) {
-	},
+	    },
     },
 }
 

@@ -59,7 +59,7 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 18,
     },
-    Description = '<LOC xeb2306_desc>Point Defense',
+    Description = 'Point Defense',
     Display = {
         AnimationDeath = {
             {
@@ -147,14 +147,13 @@ UnitBlueprint {
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Advanced',
         UnitName = '<LOC msb2306_name>Othuushala',
-#Uttaushala
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 24,
     },
     Interface = {
-        HelpText = '<LOC xeb2306_help>Point Defense',
+        HelpText = 'Point Defense',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.75,

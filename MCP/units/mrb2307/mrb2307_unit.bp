@@ -215,8 +215,8 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 77,
-            MinRadius = 13,
+            MaxRadius = 84,
+            MinRadius = 12,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 4,
             RackBones = {

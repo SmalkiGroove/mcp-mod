@@ -7,9 +7,9 @@ MRB2202 = Class(TStructureUnit) {
 
     Weapons = {
         MainGun = Class(TDFGaussCannonWeapon) {
-			            FxMuzzleFlashScale = 2.0, 
+			FxMuzzleFlashScale = 2.0, 
             FxMuzzleFlash = EffectTemplate.CElectronBolterMuzzleFlash01,
-	},
+	    },
     },
 }
 

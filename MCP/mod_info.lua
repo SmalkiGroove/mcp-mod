@@ -1,6 +1,6 @@
 name = "Mixed Combat Pack"
-version = 111
-uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv111"
+version = 112
+uid = "b117ef40-2b6b-4596-96c5-xCSIxMCPv112"
 icon = "/mods/MCP/mod_icon.png"
 author = "CSI"
 copyright = "CSI"

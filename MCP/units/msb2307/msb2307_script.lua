@@ -1,19 +1,18 @@
+-----------------------------------------------------------------
+-- File     :  /cdimage/units/UAB2301/UAB2301_script.lua
+-- Author(s):  Greg Kohne
+-- Summary  :  Aeon Heavy Gun Tower Script
+-- Copyright © 2007 Gas Powered Games, Inc.  All rights reserved.
+-----------------------------------------------------------------
+
 local SStructureUnit = import('/lua/seraphimunits.lua').SStructureUnit
-local SAALosaareAutoCannonWeapon = import('/lua/seraphimweapons.lua').SAALosaareAutoCannonWeapon
-local EffectUtil = import('/lua/EffectUtilities.lua')
+local SeraphimWeapons = import('/lua/seraphimweapons.lua')
+local SDFHeavyQuarnonCannon = SeraphimWeapons.SDFHeavyQuarnonCannon
 
-MSB2307 = Class(SStructureUnit) {
-
+BSB2306 = Class(SStructureUnit) {
     Weapons = {
-        AAGun1 = Class(SAALosaareAutoCannonWeapon) { FxMuzzleScale = 1.25, },
-		AAGun2 = Class(SAALosaareAutoCannonWeapon) { FxMuzzleScale = 1.25, },
-		AAGun3 = Class(SAALosaareAutoCannonWeapon) { FxMuzzleScale = 1.25, },
+        Turret = Class(SDFHeavyQuarnonCannon) {},
     },
-	
-	StartBeingBuiltEffects = function(self, builder, layer)
-		SStructureUnit.StartBeingBuiltEffects(self, builder, layer)
-		self:ForkThread( EffectUtil.CreateSeraphimExperimentalBuildBaseThread, builder, self.OnBeingBuiltEffectsBag )
-    end,  
 }
 
-TypeClass = MSB2307
+TypeClass = BSB2306

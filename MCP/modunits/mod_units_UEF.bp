@@ -22,13 +22,3 @@ UnitBlueprint {
         StorageMass = 20,
     }
 }
-
-UnitBlueprint {
-    Merge = true,
-    BlueprintId="uel0304", -- Demolisher
-    Weapon = {
-        {
-            MaxRadius = 100,
-        },
-    },
-}

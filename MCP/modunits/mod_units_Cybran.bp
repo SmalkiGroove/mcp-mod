@@ -15,13 +15,3 @@ UnitBlueprint {
         BuildTime = 920,
     },
 }
-
-UnitBlueprint {
-    Merge = true,
-    BlueprintId="url0304", -- Trebuchet
-    Weapon = {
-        {
-            MaxRadius = 100,
-        },
-    },
-}

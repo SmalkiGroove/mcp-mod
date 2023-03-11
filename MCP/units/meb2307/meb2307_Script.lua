@@ -10,15 +10,15 @@ MEB2307 = Class(TStructureUnit) {
     Weapons = {
         Gauss01 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlash = EffectTemplate.TPlasmaGatlingCannonMuzzleFlash,
-			            FxMuzzleFlashScale = 3.75, 
-        },     
+			FxMuzzleFlashScale = 3.75, 
+        },
         DeathWeapon = Class(SCUDeathWeapon) {
         },
         MissileRack01 = Class(TSAMLauncher) {
-	},
+	    },
         missile01 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlash = EffectTemplate.TPlasmaGatlingCannonMuzzleFlash,
-			            FxMuzzleFlashScale = 0.0, 
+			FxMuzzleFlashScale = 0.0,
         },  
     },
 

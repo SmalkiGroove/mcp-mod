@@ -209,7 +209,7 @@ UnitBlueprint {
             DamageRadius = 2,
             DamageType = 'Normal',
             DamageFriendly = false,
-            DisplayName = 'Gauss Cannon',
+            DisplayName = 'Proton Cannon',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
