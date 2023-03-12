@@ -49,5 +49,4 @@ UnitBlueprint {
             RULEUCC_SiloBuildNuke = false,
         },
     },
-    },
 }
