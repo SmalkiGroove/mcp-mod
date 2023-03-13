@@ -223,7 +223,7 @@ UnitBlueprint {
     SizeY = 1.8,
     SizeZ = 8,
     CollisionOffsetZ = -1,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'mcp/icon_experimental_assault',
     StrategicIconSortPriority = 145,
     Veteran = { 
         Level1 = 50, 

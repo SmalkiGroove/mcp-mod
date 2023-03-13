@@ -298,7 +298,7 @@ UnitBlueprint {
     SizeX = 6,
     SizeY = 3.5,
     SizeZ = 14,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'mcp/icon_experimental_ultim',
     StrategicIconSortPriority = 125,
     Veteran = {
         Level1 = 150,

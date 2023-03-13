@@ -269,7 +269,7 @@ UnitBlueprint {
     SizeX = 4.5,
     SizeY = 6,
     SizeZ = 3.5,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'mcp/icon_experimental_bot',
     StrategicIconSortPriority = 45,
     Transport = {
         TransportClass = 10,

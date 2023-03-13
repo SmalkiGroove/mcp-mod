@@ -481,7 +481,7 @@ UnitBlueprint {
     SizeX = 5.5,
     SizeY = 1.5,
     SizeZ = 8,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'mcp/icon_experimental_siege',
     StrategicIconSortPriority = 45,
     Veteran = {
         Level1 = 40,

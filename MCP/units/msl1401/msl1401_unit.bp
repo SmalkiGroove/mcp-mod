@@ -337,7 +337,7 @@ UnitBlueprint {
     SizeX = 4.0,
     SizeY = 2.5,
     SizeZ = 8.0,
-    StrategicIconName = 'icon_experimental_generic',
+    StrategicIconName = 'mcp/icon_experimental_assault',
     StrategicIconSortPriority = 115,
     Transport = {
         TransportClass = 4,

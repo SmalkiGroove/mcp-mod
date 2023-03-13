@@ -221,7 +221,7 @@ function CategoryChanges(all_bps)
 
         uaa0310 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Aeon T4 UFO
         ual0401 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Aeon T4 Colossus
-        xab1401 = {NoBuild = true}, -- Aeon T4 Resource Generator
+        xab1401 = {'SORTOTHER'}, -- Aeon T4 Resource Generator
         xab2307 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Aeon T4 Rapidfire Arti
         ueb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- UEF T4 Arti
         xeb2402 = {NoBuild = true}, -- UEF T4 Satellite
@@ -776,10 +776,15 @@ function StrategicIcons(all_bps)
         uel0106 = 'mcp/icon_bot1_x', --UEF T1 LAB
         url0106 = 'mcp/icon_bot1_x', --Cybran T1 LAB
         uaa0310 = 'mcp/icon_experimental_antiair', -- CZAR
-        ura0401 = 'mcp/icon_experimental_antiair', -- Soul Ripper
-        xsa0402 = 'mcp/icon_experimental_antiair', -- Ahwassa
+        ual0401 = 'mcp/icon_experimental_bot', -- Galactic Colossus
+        xab1401 = 'mcp/icon_experimental_antishield', -- Paragon
         xab2307 = 'mcp/icon_experimental_artillery', -- Salvation
         ueb2401 = 'mcp/icon_experimental_artillery', -- Mavor
+        ura0401 = 'mcp/icon_experimental_antiair', -- Soul Ripper
+        url0402 = 'mcp/icon_experimental_assault', -- Monkeylord
+        xrl0403 = 'mcp/icon_experimental_siege', -- Megalith
+        xsa0402 = 'mcp/icon_experimental_antiair', -- Ahwassa
+        xsl0401 = 'mcp/icon_experimental_bot', -- Ythotha
         xsb2401 = 'mcp/icon_experimental_artillery', -- Yolona Oss
     }
     for unitid, icon in IconChanges do

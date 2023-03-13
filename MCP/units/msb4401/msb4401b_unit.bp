@@ -200,7 +200,6 @@ UnitBlueprint {
     SizeY = 2,
     SizeZ = 2,
     StrategicIconName = 'icon_null',
-    StrategicIconNameEIOOverride = 'icon_experimental_gunship_shield',
     StrategicIconSortPriority = 100,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
