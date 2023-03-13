@@ -104,21 +104,13 @@ UnitBlueprint {
             '<LOC ability_deathaoe>Volatile',
             '<LOC ability_shielddome>Shield Dome',
         },
-        -- AnimationDeath = {
-            -- {
-                -- Animation = '/Mods/#Marlos mods compilation/units/KAL0402/KAL0402_ADeath.sca',
-                -- AnimationRateMax = 0.4,
-                -- AnimationRateMin = 0.3,
-                -- Weight = 1,
-            -- },
-        -- },
         AnimationWalk = '/Mods/#Marlos mods compilation/units/KAL0402/KAL0402_AWalk.sca',
         AnimationWalkRate = 1,
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 550,
+                    LODCutoff = 600,
                     Scrolling = true,
                     ShaderName = 'Aeon',
                     MeshName = '/mods/#Marlos mods compilation/units/kal0402/kal0402_lod0.scm',
@@ -189,7 +181,7 @@ UnitBlueprint {
             },
         },
         SpawnRandomRotation = true,
-        UniformScale = 0.1,
+        UniformScale = 0.125,
     },
     Economy = {
         BuildCostEnergy = 3000000,
@@ -321,7 +313,7 @@ UnitBlueprint {
             BeamLifetime = 0,
             CollideFriendly = false,
             ContinuousBeam = true,
-            Damage = 300,
+            Damage = 333,
             DamageRadius = 3,
             DamageType = 'Normal',
             DisplayName = 'Phason Laser',
@@ -332,8 +324,8 @@ UnitBlueprint {
             },
             FiringTolerance = 0,
             Label = 'EyeWeapon',
-            MaxRadius = 75,
-            MinRadius = 5,
+            MaxRadius = 80,
+            MinRadius = 10,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,

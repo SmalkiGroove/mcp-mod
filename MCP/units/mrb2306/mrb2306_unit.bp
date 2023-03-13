@@ -308,7 +308,7 @@ UnitBlueprint {
             FiringTolerance = 0,
             Label = 'StunWeapon',
             LeadTarget = false,
-            MaxRadius = 66,
+            MaxRadius = 60,
             MuzzleChargeDelay = 1.5,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
