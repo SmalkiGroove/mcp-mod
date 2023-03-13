@@ -101,7 +101,7 @@ UnitBlueprint {
         BuildCostMass = 4050,
         BuildTime = 6750,
         HalfPriceUpgradeFromID = 'urb1301', 
-        MaintenanceConsumptionPerSecondEnergy = 500,
+        MaintenanceConsumptionPerSecondEnergy = 250,
         ProductionPerSecondEnergy = 2500,
         RebuildBonusIds = {
             'urb1301',

@@ -225,10 +225,7 @@ UnitBlueprint {
         BuildRate = 15,
         BuildTime = 6750,      
         BuildableCategory = {
-            'BUILTBYTIER1FIELD DEFENSE DIRECTFIRE UEF',
-            'BUILTBYTIER1FIELD DEFENSE ANTIAIR UEF', 
-            'BUILTBYTIER1FIELD DEFENSE ANTINAVY UEF',
-            'BUILTBYTIER1ENGINEER DEFENSE SHIELD UEF',
+            'BUILTBYCOMMANDER DEFENSE UEF',
             'BUILTBYTIER1ENGINEER ENERGYSTORAGE UEF',
         },  
         HalfPriceUpgradeFromID = 'ueb1301',
