@@ -780,7 +780,6 @@ function StrategicIcons(all_bps)
         xab1401 = 'mcp/icon_experimental_antishield', -- Paragon
         xab2307 = 'mcp/icon_experimental_artillery', -- Salvation
         ueb2401 = 'mcp/icon_experimental_artillery', -- Mavor
-        ura0401 = 'mcp/icon_experimental_antiair', -- Soul Ripper
         url0402 = 'mcp/icon_experimental_assault', -- Monkeylord
         xrl0403 = 'mcp/icon_experimental_siege', -- Megalith
         xsa0402 = 'mcp/icon_experimental_antiair', -- Ahwassa
@@ -832,7 +831,6 @@ function BuildSortPriority(all_bps)
         url0402 = 10, -- Cybran Experimental Spiderbot
         xrl0403 = 50, -- Cybran Experimental Megabot
         uaa0310 = 10, -- Aeon Experimental Aircraft
-        ura0401 = 10, -- Cybran Experimental Aircraft
         xsa0402 = 10, -- Seraphim Experimental Aircraft
     }
     for unitid, priority in SortChanges do
