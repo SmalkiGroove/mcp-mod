@@ -228,7 +228,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 80,
         RadarRadius = 100,
         FreeIntel = true,
     },

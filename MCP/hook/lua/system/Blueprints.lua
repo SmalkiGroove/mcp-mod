@@ -230,7 +230,7 @@ function CategoryChanges(all_bps)
         url0401 = {NoBuild = true}, -- Cybran T4 Rapidfire Arti
         url0402 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Cybran T4 Spiderbot
         xrl0403 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Cybran T4 Megabot
-        ura0401 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Cybran T4 Gunship
+        ura0401 = {NoBuild = true}, -- Cybran T4 Gunship
         xsa0402 = {'BUILTBYTIER3FIELD', 'SORTECONOMY'}, -- Seraphim T4 Bomber
         xsb2401 = {'BUILTBYTIER3FIELD', 'SORTSTRATEGIC'}, -- Seraphim T4 Nuke
         xsl0401 = {'BUILTBYTIER3FIELD', 'SORTCONSTRUCTION'}, -- Seraphim T4 Bot
