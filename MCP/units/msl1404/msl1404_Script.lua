@@ -25,10 +25,10 @@ MSL1404 = Class( SWalkingLandUnit ) {
             FxMuzzleFlashScale = 1.4,
         },
         aa1 = Class(SDFUltraChromaticBeamGenerator) {
-            FxMuzzleFlashScale = 2.4,
+            FxMuzzleFlashScale = 2.2,
         },
         aa2 = Class(SDFUltraChromaticBeamGenerator) {
-            FxMuzzleFlashScale = 2.4,
+            FxMuzzleFlashScale = 2.2,
         },
     },
 

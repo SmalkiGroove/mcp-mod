@@ -1,15 +1,10 @@
 local AHoverLandUnit = import('/lua/aeonunits.lua').AHoverLandUnit
-local ADFQuantumAutogunWeapon = import('/lua/aeonweapons.lua').ADFQuantumAutogunWeapon
 local AeonWeapons = import('/lua/aeonweapons.lua')
-local AANDepthChargeBombWeapon = AeonWeapons.AANDepthChargeBombWeapon
+local ADFQuantumAutogunWeapon = AeonWeapons.ADFQuantumAutogunWeapon
 local AANChronoTorpedoWeapon = AeonWeapons.AANChronoTorpedoWeapon
-local AIFQuasarAntiTorpedoWeapon = AeonWeapons.AIFQuasarAntiTorpedoWeapon
-local AAMWillOWisp = import('/lua/aeonweapons.lua').AAMWillOWisp
-local ADFDisruptorCannonWeapon = import('/lua/aeonweapons.lua').ADFDisruptorWeapon
-
-
---Custom files
-local NavalCannonOblivionWeapon = import('/lua/aeon_naval_weapons.lua').ADFCannonOblivionNaval
+local AAMWillOWisp = AeonWeapons.AAMWillOWisp
+local ADFDisruptorCannonWeapon = AeonWeapons.ADFDisruptorWeapon
+local NavalCannonOblivionWeapon = AeonWeapons.ADFCannonOblivionNaval
 
 MAL1403 = Class(AHoverLandUnit) {
 

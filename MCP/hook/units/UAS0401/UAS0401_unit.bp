@@ -383,7 +383,7 @@ UnitBlueprint {
     SizeX = 12,
     SizeY = 4,
     SizeZ = 12,
-    StrategicIconName = 'mcp/icon_experimental_antinavy',
+    StrategicIconName = 'mcp/icon_experimental_ship',
     StrategicIconSortPriority = 45,
     Veteran = {
         Level1 = 30,

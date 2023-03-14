@@ -92,7 +92,6 @@ UnitBlueprint {
         'OVERLAYMISC',
         'BUBBLESHIELDSPILLOVERCHECK',
         'SNIPEMODE',
-        'LOWSELECTPRIO',
         'SORTCONSTRUCTION',
     },
     CollisionOffsetZ = 0,
