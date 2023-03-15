@@ -42,7 +42,7 @@ OnKilled = function(self, instigator, damagetype, overkillRatio)
 CreatTheEffects = function(self)
 	local army =  self:GetArmy()
 	for k, v in EffectTemplate['CSoothSayerAmbient'] do
-		self.Trash:Add(CreateAttachedEmitter(self, 'perimetereff', army, v):OffsetEmitter(0,0.25,-0.5):ScaleEmitter(0.25))
+		self.Trash:Add(CreateAttachedEmitter(self, 'perimetereff', army, v):OffsetEmitter(0,0.25,-1.25):ScaleEmitter(0.25))
 	end
 end,
 
