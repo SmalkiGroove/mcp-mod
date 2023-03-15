@@ -1,6 +1,8 @@
 local SShieldStructureUnit = import('/lua/seraphimunits.lua').SShieldStructureUnit
 local LDNo = 6
 local sdNo = 12
+local LDBP = __blueprints.msb4401a
+local sdBP = __blueprints.msb4401b
 
 MSB4401 = Class(SShieldStructureUnit) {
 
@@ -14,6 +16,7 @@ MSB4401 = Class(SShieldStructureUnit) {
 
     OnStopBeingBuilt = function(self,builder,layer)
         SShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
+        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldEnabled = function(self)
@@ -48,13 +51,16 @@ MSB4401 = Class(SShieldStructureUnit) {
                 end
             end
         end
+        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldDisabled = function(self)
-        local maxShieldhealth = LDNo * 24000 + sdNo * 12000 + self:GetBlueprint().Defense.Shield.ShieldMaxHealth
+        local maxShieldhealth = LDNo * LDBP.Defense.Shield.ShieldMaxHealth + sdNo * sdBP.Defense.Shield.ShieldMaxHealth + self:GetBlueprint().Defense.Shield.ShieldMaxHealth
         local Shieldhealth = 0
         for i, drone in self.ShieldDroneBag do
-            Shieldhealth = Shieldhealth + drone.MyShield:GetHealth()
+            if drone.MyShield then
+                Shieldhealth = Shieldhealth + drone.MyShield:GetHealth()
+            end
         end
         Shieldhealth = Shieldhealth + self.MyShield:GetHealth()
         self.MyShield:SetHealth(self, self:GetBlueprint().Defense.Shield.ShieldMaxHealth * (Shieldhealth / maxShieldhealth))
@@ -67,9 +73,9 @@ MSB4401 = Class(SShieldStructureUnit) {
         SShieldStructureUnit.OnKilled(self, instigator, type, overkillRatio)
     end,
 
-    OnDestroyed = function(self)
+    OnDestroy = function(self)
         self:CleanUp(true)
-        SShieldStructureUnit.OnDestroyed(self)
+        SShieldStructureUnit.OnDestroy(self)
     end,
 
     CleanUp = function(self, deathcleanup)
