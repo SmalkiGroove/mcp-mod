@@ -99,9 +99,9 @@ UnitBlueprint {
         UniformScale = 0.50,
     },
     Economy = {
-        BuildCostEnergy = 160000,
-        BuildCostMass = 14200,
-        BuildTime = 9000,
+        BuildCostEnergy = 120000,
+        BuildCostMass = 12200,
+        BuildTime = 8000,
         RebuildBonusIds = {
             'meb2308',
         },

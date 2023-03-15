@@ -2,8 +2,6 @@ local TStructureUnit = import('/lua/terranunits.lua').TStructureUnit
 local TDFGaussCannonWeapon = import('/lua/terranweapons.lua').TDFGaussCannonWeapon
 local WeaponsFile = import('/lua/terranweapons.lua')
 local EffectTemplate = import('/lua/EffectTemplates.lua')
-local SCUDeathWeapon = import('/lua/sim/defaultweapons.lua').SCUDeathWeapon
-local TSAMLauncher = WeaponsFile.TSAMLauncher
 local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
 
 MEB2307 = Class(TStructureUnit) {
@@ -12,10 +10,6 @@ MEB2307 = Class(TStructureUnit) {
             FxMuzzleFlash = EffectTemplate.TPlasmaGatlingCannonMuzzleFlash,
 			FxMuzzleFlashScale = 3.75, 
         },
-        DeathWeapon = Class(SCUDeathWeapon) {
-        },
-        MissileRack01 = Class(TSAMLauncher) {
-	    },
         missile01 = Class(TDFGaussCannonWeapon) {
             FxMuzzleFlash = EffectTemplate.TPlasmaGatlingCannonMuzzleFlash,
 			FxMuzzleFlashScale = 0.0,

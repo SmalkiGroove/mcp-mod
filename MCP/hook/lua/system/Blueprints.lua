@@ -775,6 +775,10 @@ function StrategicIcons(all_bps)
         ual0106 = 'mcp/icon_bot1_x', --Aeon T1 LAB
         uel0106 = 'mcp/icon_bot1_x', --UEF T1 LAB
         url0106 = 'mcp/icon_bot1_x', --Cybran T1 LAB
+        uab2302 = 'mcp/icon_structure3_longrange', -- Aeon T3 Heavy Artillery
+        ueb2302 = 'mcp/icon_structure3_longrange', -- UEF T3 Heavy Artillery
+        urb2302 = 'mcp/icon_structure3_longrange', -- Cybran T3 Heavy Artillery
+        xsb2302 = 'mcp/icon_structure3_longrange', -- Seraphim T3 Heavy Artillery
         uaa0310 = 'mcp/icon_experimental_antiair', -- CZAR
         ual0401 = 'mcp/icon_experimental_bot', -- Galactic Colossus
         xab1401 = 'mcp/icon_experimental_antishield', -- Paragon

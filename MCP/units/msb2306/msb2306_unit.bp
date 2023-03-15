@@ -210,7 +210,7 @@ UnitBlueprint {
             AutoInitiateAttackCommand = false,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 52,
+            Damage = 41,
             DamageType = 'Normal',
             DisplayName = 'Gatling Plasma Cannon',
             FireTargetLayerCapsTable = {

@@ -171,6 +171,9 @@ UnitBlueprint {
         BuildCostMass = 180,
         BuildTime = 500,
         MaintenanceConsumptionPerSecondEnergy = 100,
+        RebuildBonusId = {
+            'msb4101',
+        },
     },
     General = {
         Category = 'Defense',

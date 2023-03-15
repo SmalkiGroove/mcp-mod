@@ -97,9 +97,9 @@ UnitBlueprint {
         UniformScale = 0.12,
     },
     Economy = {
-        BuildCostEnergy = 142500,
-        BuildCostMass = 16900,
-        BuildTime = 16000,
+        BuildCostEnergy = 140000,
+        BuildCostMass = 12000,
+        BuildTime = 12600,
         RebuildBonusId = {
             'msb2307',
         },
@@ -202,8 +202,8 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 900,
-            DamageRadius = 3.3,
+            Damage = 2120,
+            DamageRadius = 3.2,
             DamageType = 'Normal',
             DisplayName = 'Heavy Quarnon Cannon',
             FireTargetLayerCapsTable = {
@@ -212,7 +212,7 @@ UnitBlueprint {
             FiringRandomness = 0.8,
             FiringTolerance = 2,
             Label = 'Turret',
-            MaxRadius = 93,
+            MaxRadius = 96,
             MinRadius = 16,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0,

@@ -63,9 +63,6 @@ UnitBlueprint {
     },
     Description = 'Heavy Point Defense',
     Display = {
-        Abilities = {
-            '<LOC ability_deathaoe>Volatile',
-        },
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -101,9 +98,9 @@ UnitBlueprint {
         UniformScale = 0.045,
     },
     Economy = {
-        BuildCostEnergy = 149000,
-        BuildCostMass = 18500,
-        BuildTime = 16000,
+        BuildCostEnergy = 125000,
+        BuildCostMass = 12500,
+        BuildTime = 12600,
         RebuildBonusId = {
             'meb2307',
         },
@@ -212,7 +209,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 1250,
+            Damage = 1750,
             DamageRadius = 3,
             DamageFriendly = false,
             DamageType = 'Normal',
@@ -225,7 +222,7 @@ UnitBlueprint {
             FiringTolerance = 2,
             FiringRandomness = 0.25,
             Label = 'Gauss01',
-            MaxRadius = 90,
+            MaxRadius = 95,
             MinRadius = 10,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
@@ -357,7 +354,6 @@ UnitBlueprint {
             RackSalvoChargeTime = 0,
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
-	    RenderFireClock = true,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
             RateOfFire = 0.08,
@@ -383,36 +379,5 @@ UnitBlueprint {
             WeaponUnpackTimeout = 2,
             WeaponUnpacks = true,
  	   },
-        {
-            CollideFriendly = false,
-            Damage = 3000,
-            DamageFriendly = true,
-            DamageRadius = 7,
-            DamageType = 'Normal',
-            DisplayName = 'Death Nuke',
-            FireOnDeath = true,
-            FiringTolerance = 2,
-            Label = 'DeathWeapon',
-            MaxRadius = 1,
-            MuzzleSalvoDelay = 0,
-            MuzzleSalvoSize = 1,
-            MuzzleVelocity = 0,
-            ProjectileId = '/effects/Entities/SCUDeath01/SCUDeath01_proj.bp',
-            RackBones = {
-                {
-                    MuzzleBones = {
-                        0,
-                    },
-                    RackBone = 0,
-                },
-            },
-            RackRecoilDistance = 0,
-            RateOfFire = 1,
-            TargetCheckInterval = 9999999,
-            TargetRestrictDisallow = 'UNTARGETABLE',
-            Turreted = false,
-            WeaponCategory = 'Death',
-			CannotAttackGround = true,
-        },
     },
 }
