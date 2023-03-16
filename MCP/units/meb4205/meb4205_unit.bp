@@ -40,7 +40,6 @@ UnitBlueprint {
         'UEF',
         'STRUCTURE',
         'DEFENSE',
-		'NEEDMOBILEBUILD',
         'TECH2',
         'ANTINAVY',
         'DRAGBUILD',

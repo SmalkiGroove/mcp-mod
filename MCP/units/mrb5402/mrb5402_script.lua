@@ -14,7 +14,7 @@ MRB5402 = Class(CRadarJammerUnit) {
             OnFire = function(self)
                 local aiBrain = self.unit:GetAIBrain()
                 local Mypos = self.unit:GetPosition()
-                local Range = self:GetWeaponByLabel('PulseWeapon').MaxRadius or 500
+                local Range = self:GetWeaponByLabel('PulseWeapon').MaxRadius
                 local LocalUnits = {}
                 for i, unit in AIUtils.GetOwnUnitsAroundPoint(aiBrain, categories.ALLUNITS, Mypos, Range) do
                     table.insert(LocalUnits, unit)
@@ -57,7 +57,7 @@ MRB5402 = Class(CRadarJammerUnit) {
                         Affects = {
                             MoveMult = {
                                 Add = 0,
-                                Mult = 10,
+                                Mult = 3,
                             },
                         },
                     }
