@@ -224,7 +224,7 @@ UnitBlueprint {
             },
             DisplayName = 'Overdrive Pulse',
             Label = 'PulseWeapon',
-            MaxRadius = 100,
+            MaxRadius = 1000,
             RangeCategory = 'UWRC_IndirectFire',
             WeaponCategory = 'Defense',
         },

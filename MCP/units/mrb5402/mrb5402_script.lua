@@ -63,7 +63,7 @@ MRB5402 = Class(CRadarJammerUnit) {
                     }
                 end
                 for k, v in LocalUnits do
-                    if EntityCategoryContains(categories.MOBILE * categories.LAND * categories.BUILTBYTIER3FACTORY, v) then
+                    if EntityCategoryContains(categories.CYBRAN * categories.MOBILE * categories.LAND * categories.BUILTBYTIER3FACTORY, v) then
                         Buff.ApplyBuff(v, 'MagnetronMoveMult')
                     end
                 end

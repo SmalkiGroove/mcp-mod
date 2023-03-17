@@ -98,10 +98,10 @@ UnitBlueprint {
         SubThreatLevel = 0,
         SurfaceThreatLevel = 300,
     },
-    Description = 'Factory Ship',
+    Description = 'Construction Ship',
     Display = {
         Abilities = {
-            '<LOC ability_factory>Factory',
+            -- '<LOC ability_factory>Factory',
             '<LOC ability_notcap>Not Capturable',
 			-- 'Orbital Drop',
         },
@@ -141,10 +141,11 @@ UnitBlueprint {
         BuildCostEnergy = 350000,
         BuildCostMass = 24000,
         BuildTime = 20000,
-        BuildRate = 600,
+        BuildRate = 500,
         BuildableCategory = {
 			'UEF BUILTBYTIER3FIELD',
         },
+        MaxBuildDistance = 5,
 		StorageEnergy = 5000,
         StorageMass = 1000,
     },
@@ -152,7 +153,8 @@ UnitBlueprint {
     General = {
         BuildBones = {
             BuildEffectBones = {
-                'Build_Muzzle_01',
+                'UEOW1105',
+                'Build_Bone_01',
             },
         },
         Category = 'Fighter',
@@ -183,14 +185,14 @@ UnitBlueprint {
             },
         },
         TechLevel = 'RULEUTL_Basic',
-        UnitName = 'EFOF-X',
+        UnitName = 'Colonizer',
         UnitWeight = 1,
     },
     Intel = {
         VisionRadius = 40,
     },
     Interface = {
-        HelpText = 'Factory ship',
+        HelpText = 'Construction Ship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 5.2,
@@ -215,7 +217,7 @@ UnitBlueprint {
     SelectionSizeX = 5,
     SelectionSizeZ = 11,
     SelectionThickness = 0.2,
-    SizeX = 5.0,
+    SizeX = 5,
     SizeY = 3,
     SizeZ = 11,
     StrategicIconName = 'mcp/icon_experimental_engineer',

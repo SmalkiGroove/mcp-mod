@@ -143,7 +143,7 @@ UnitBlueprint {
         },
 		ConstructionBar = true,
         FactionName = 'UEF',
-        Icon = 'air',
+        Icon = 'land',
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
         UnitWeight = 1,
