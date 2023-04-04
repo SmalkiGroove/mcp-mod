@@ -52,7 +52,7 @@ MRB5402 = Class(CRadarJammerUnit) {
                         Name = 'MagnetronMoveMult',
                         DisplayName = 'Speed Boost',
                         BuffType = 'MoveMult',
-                        Duration = 20,
+                        Duration = 30,
                         Stacks = 'REPLACE',
                         Affects = {
                             MoveMult = {
@@ -108,7 +108,7 @@ MRB5402 = Class(CRadarJammerUnit) {
             if self.Intel then
                 WaitSeconds(5)
                 self:GetWeaponByLabel('PulseWeapon'):FireWeapon()
-                WaitSeconds(25)
+                WaitSeconds(50)
             else
                 WaitSeconds(1)
             end

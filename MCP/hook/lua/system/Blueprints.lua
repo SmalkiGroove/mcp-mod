@@ -160,9 +160,11 @@ function CategoryChanges(all_bps)
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         uab1105 = { -- Aeon T1 Energy storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         uab1106 = { -- Aeon T1 Mass storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         uab1303 = { -- Aeon T3 Mass fabricator
@@ -176,9 +178,11 @@ function CategoryChanges(all_bps)
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         ueb1105 = { -- UEF T1 Energy storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         ueb1106 = { -- UEF T1 Mass storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         ueb1303 = { -- UEF T3 Mass fabricator
@@ -192,9 +196,11 @@ function CategoryChanges(all_bps)
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         urb1105 = { -- Cybran T1 Energy storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         urb1106 = { -- Cybran T1 Mass storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         urb1303 = { -- Cybran T3 Mass fabricator
@@ -208,9 +214,11 @@ function CategoryChanges(all_bps)
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         xsb1105 = { -- Seraphim T1 Energy storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         xsb1106 = { -- Seraphim T1 Mass storage
+            'BUILTBYCOMMANDER',
             r = {'BUILTBYTIER2COMMANDER', 'BUILTBYTIER3COMMANDER'}
         },
         xsb1303 = { -- Seraphim T3 Mass fabricator
@@ -399,7 +407,7 @@ function CategoryChanges(all_bps)
             'BUILTBYTIER2FIELD', 'BUILTBYTIER3FIELD',
         },
         ueb4207 = { -- Cybran T3 Shield
-            'BUILTBYTIER3FIELD', 'TECH3',
+            'BUILTBYTIER3COMMANDER', 'BUILTBYTIER3ENGINEER', 'BUILTBYTIER3FIELD', 'TECH3',
             r = {'TECH2'}
         },
         xrb2308 = { -- Cybran T3 Torpedo launcher

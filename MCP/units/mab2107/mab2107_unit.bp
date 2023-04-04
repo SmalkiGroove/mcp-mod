@@ -203,7 +203,8 @@ UnitBlueprint {
             MinRadius = 10,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
-            MuzzleVelocity = 16,
+            MuzzleVelocity = 18,
+            MuzzleVelocityReduceDistance = 60,
             ProjectileId = '/projectiles/AIFMiasmaShell01/AIFMiasmaShell01_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {

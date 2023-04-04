@@ -1,14 +1,14 @@
 local ASeaUnit = import('/lua/aeonunits.lua').ASeaUnit
 local WeaponsFile = import('/lua/aeonweapons.lua')
 local AAAZealotMissileWeapon = WeaponsFile.AAAZealotMissileWeapon
-local NavalCannonOblivionWeapon = import('/lua/aeon_naval_weapons.lua').ADFCannonOblivionNaval
+local ADFCannonOblivionNaval = WeaponsFile.ADFCannonOblivionNaval
 local DreadnoughtLaser = import('/mods/MCP/lua/MCPWeapons.lua').DreadnoughtLaser
 local AAMWillOWisp = import('/lua/aeonweapons.lua').AAMWillOWisp
 
 MAS1301 = Class(ASeaUnit) {
     BackWakeEffect = {},
 	Weapons = {
-        FrontTurret01 = Class(NavalCannonOblivionWeapon) {
+        FrontTurret01 = Class(ADFCannonOblivionNaval) {
 			FxMuzzleFlash = {
 				'/effects/emitters/oblivion_cannon_flash_04_emit.bp',
 				'/effects/emitters/oblivion_cannon_flash_05_emit.bp',				
@@ -16,7 +16,7 @@ MAS1301 = Class(ASeaUnit) {
 			},        
         },
 
-        FrontTurret02 = Class(NavalCannonOblivionWeapon) {
+        FrontTurret02 = Class(ADFCannonOblivionNaval) {
 			FxMuzzleFlash = {
 				'/effects/emitters/oblivion_cannon_flash_04_emit.bp',
 				'/effects/emitters/oblivion_cannon_flash_05_emit.bp',				
@@ -24,7 +24,7 @@ MAS1301 = Class(ASeaUnit) {
 			},        
         },
 
-        BackTurret01 = Class(NavalCannonOblivionWeapon) {
+        BackTurret01 = Class(ADFCannonOblivionNaval) {
 			FxMuzzleFlash = {
 				'/effects/emitters/oblivion_cannon_flash_04_emit.bp',
 				'/effects/emitters/oblivion_cannon_flash_05_emit.bp',				
@@ -32,7 +32,7 @@ MAS1301 = Class(ASeaUnit) {
 			},        
         },
 
-        BackTurret02 = Class(NavalCannonOblivionWeapon) {
+        BackTurret02 = Class(ADFCannonOblivionNaval) {
 			FxMuzzleFlash = {
 				'/effects/emitters/oblivion_cannon_flash_04_emit.bp',
 				'/effects/emitters/oblivion_cannon_flash_05_emit.bp',				
