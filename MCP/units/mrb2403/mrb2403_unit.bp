@@ -188,7 +188,7 @@ UnitBlueprint {
             },
             AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_None',
-            BeamCollisionDelay = 0.1,
+            BeamCollisionDelay = 0,
             BeamLifetime = 0,
             ContinuousBeam = true,
             CollideFriendly = false,

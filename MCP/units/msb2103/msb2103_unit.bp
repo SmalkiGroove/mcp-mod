@@ -194,7 +194,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 23,
+            Damage = 27,
             DamageRadius = 1,
             DamageType = 'Normal',
             DisplayName = 'Aire-au Bolter',

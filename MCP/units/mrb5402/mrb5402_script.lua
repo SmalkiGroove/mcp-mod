@@ -108,7 +108,7 @@ MRB5402 = Class(CRadarJammerUnit) {
             if self.Intel then
                 WaitSeconds(5)
                 self:GetWeaponByLabel('PulseWeapon'):FireWeapon()
-                WaitSeconds(50)
+                WaitSeconds(55)
             else
                 WaitSeconds(1)
             end

@@ -205,7 +205,7 @@ UnitBlueprint {
                 },
             },
             BallisticArc = 'RULEUBA_None',
-            BeamCollisionDelay = 0.1,
+            BeamCollisionDelay = 0,
             BeamLifetime = 1.4,
             CollideFriendly = false,
             ContinuousBeam = true,

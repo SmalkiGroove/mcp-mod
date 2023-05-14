@@ -19,9 +19,9 @@ UnitBlueprint {
     },
     Enhancements = {
         ResourceAllocation = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exles3',
             Name = 'Economy Engineering',
             ProductionPerSecondEnergy = 180,
@@ -32,12 +32,12 @@ UnitBlueprint {
             Name = 'Remove Economy Engineering',
         },
         StabilitySuppressant = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exlce3',
             Name = 'Field Engineering',
-            NewHealth = 3000,
+            NewHealth = 7000,
             NewDamageMod = 200,
         },
         StabilitySuppressantRemove = {
@@ -65,9 +65,9 @@ UnitBlueprint {
     },
     Enhancements = {
         ResourceAllocation = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exles3',
             Name = 'Economy Engineering',
             ProductionPerSecondEnergy = 180,
@@ -78,12 +78,12 @@ UnitBlueprint {
             Name = 'Remove Economy Engineering',
         },
         HighExplosiveOrdnance = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exlce3',
             Name = 'Field Engineering',
-            NewHealth = 3000,
+            NewHealth = 7000,
             NewDamageMod = 200,
         },
         HighExplosiveOrdnanceRemove = {
@@ -111,9 +111,9 @@ UnitBlueprint {
     },
     Enhancements = {
         ResourceAllocation = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exles3',
             Name = 'Economy Engineering',
             ProductionPerSecondEnergy = 180,
@@ -124,12 +124,12 @@ UnitBlueprint {
             Name = 'Remove Economy Engineering',
         },
         FocusConvertor = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exlce3',
             Name = 'Field Engineering',
-            NewHealth = 3000,
+            NewHealth = 7000,
             NewDamageMod = 200,
         },
         FocusConvertorRemove = {
@@ -159,9 +159,9 @@ UnitBlueprint {
     },
     Enhancements = {
         EnhancedSensors = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exles3',
             Name = 'Economy Engineering',
             ProductionPerSecondEnergy = 180,
@@ -174,12 +174,12 @@ UnitBlueprint {
             Slot = 'RCH',
         },
         Overcharge = {
-            BuildCostEnergy = 20000,
-            BuildCostMass = 2000,
-            BuildTime = 3600,
+            BuildCostEnergy = 8000,
+            BuildCostMass = 960,
+            BuildTime = 1200,
             Icon = 'exlce3',
             Name = 'Field Engineering',
-            NewHealth = 3000,
+            NewHealth = 5500,
             NewDamageMod = 200,
         },
         OverchargeRemove = {

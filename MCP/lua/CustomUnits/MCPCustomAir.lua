@@ -36,7 +36,7 @@ UnitList = {
 
     T4AirExperimental1 = {
         Cybran =    {'mra1401', 100},
-    }
+    },
 
     T4SatelliteExperimental = {
         UEF =       {'mea1401', 100},
