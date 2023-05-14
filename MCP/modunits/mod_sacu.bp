@@ -179,7 +179,7 @@ UnitBlueprint {
             BuildTime = 1200,
             Icon = 'exlce3',
             Name = 'Field Engineering',
-            NewHealth = 5500,
+            NewHealth = 7000,
             NewDamageMod = 200,
         },
         OverchargeRemove = {
