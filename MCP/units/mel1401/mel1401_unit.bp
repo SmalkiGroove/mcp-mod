@@ -89,15 +89,15 @@ UnitBlueprint {
         }, 
         AnimationDeath = { 
             { 
-                Animation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_death01.sca', 
+                Animation = '/mods/MCP/units/mel1401/mel1401_death01.sca', 
                 Weight = 50, 
             }, 
             { 
-                Animation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_death02.sca', 
+                Animation = '/mods/MCP/units/mel1401/mel1401_death02.sca', 
                 Weight = 50, 
             }, 
         }, 
-        AnimationWalk = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_awalk.sca', 
+        AnimationWalk = '/mods/MCP/units/mel1401/mel1401_awalk.sca', 
         AnimationWalkRate = 0.50,
         Mesh = { 
             IconFadeInZoom = 140, 
@@ -106,10 +106,10 @@ UnitBlueprint {
                     LODCutoff = 500, 
                     Scrolling = true, 
                     ShaderName = 'Unit',
-                    MeshName = '/mods/4th_Dimension_211/units/uel0403/uel0403_lod0.scm',
-                    AlbedoName = '/mods/4th_Dimension_211/units/uel0403/uel0403_albedo.dds',
-                    NormalsName = '/mods/4th_Dimension_211/units/uel0403/uel0403_normalsTS.dds',
-                    SpecularName = '/mods/4th_Dimension_211/units/uel0403/uel0403_specteam.dds',
+                    MeshName = '/mods/MCP/units/mel1401/mel1401_lod0.scm',
+                    AlbedoName = '/mods/MCP/units/mel1401/mel1401_albedo.dds',
+                    NormalsName = '/mods/MCP/units/mel1401/mel1401_normalsTS.dds',
+                    SpecularName = '/mods/MCP/units/mel1401/mel1401_specteam.dds',
                 }, 
             }, 
         }, 
@@ -137,7 +137,7 @@ UnitBlueprint {
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_left.dds', 
+                                TreadMarks = '/mods/MCP/units/mel1401/mel1401_foot_left.dds', 
                                 TreadMarksSizeX = 1.1, 
                                 TreadMarksSizeZ = 1.1, 
                                 TreadOffset = { 
@@ -157,7 +157,7 @@ UnitBlueprint {
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_left.dds', 
+                                TreadMarks = '/mods/MCP/units/mel1401/mel1401_foot_left.dds', 
                                 TreadMarksSizeX = 1.1, 
                                 TreadMarksSizeZ = 1.1, 
                                 TreadOffset = { 
@@ -177,7 +177,7 @@ UnitBlueprint {
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_right.dds', 
+                                TreadMarks = '/mods/MCP/units/mel1401/mel1401_foot_right.dds', 
                                 TreadMarksSizeX = 1.3, 
                                 TreadMarksSizeZ = 1.3, 
                                 TreadOffset = { 
@@ -197,7 +197,7 @@ UnitBlueprint {
                             -- StraightLegs = false, 
                             Tread = { 
                                 TreadLifeTime = 75, 
-                                TreadMarks = '/mods/4th_Dimension_211/hook/env/Common/splats/balrog_foot_right.dds', 
+                                TreadMarks = '/mods/MCP/units/mel1401/mel1401_foot_right.dds', 
                                 TreadMarksSizeX = 1.3, 
                                 TreadMarksSizeZ = 1.3, 
                                 TreadOffset = { 
@@ -813,7 +813,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Anti Air', 
             WeaponRepackTimeout = 2, 
-			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_CenterMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_CenterMissileUnpack.sca', 
             WeaponUnpackAnimationRate = 0.5, 
 			WeaponUnpacks = true, 
         }, 
@@ -906,7 +906,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Missile', 
             WeaponRepackTimeout = 3,
-			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_LeftMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_LeftMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 
@@ -1003,7 +1003,7 @@ UnitBlueprint {
             Turreted = false, 
             WeaponCategory = 'Missile', 
             WeaponRepackTimeout = 3,
-			WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/UEL0403/UEL0403_RightMissileUnpack.sca', 
+			WeaponUnpackAnimation = '/mods/MCP/units/mel1401/mel1401_RightMissileUnpack.sca', 
 			WeaponUnpackAnimationRate = 0.4, 
          -- WeaponUnpackAnimatorPrecedence = 0, 
          -- WeaponUnpackLocksMotion = false, 

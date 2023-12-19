@@ -104,20 +104,20 @@ UnitBlueprint {
         AnimationDeath = {
            {
            -- Knocked back and falls forward...one leg lingers then falls
-               Animation = '/mods/4th_Dimension_211/units/ual0310/ual0310_Adeath01.sca',
+               Animation = '/mods/MCP/units/mal1302/mal1302_Adeath01.sca',
                AnimationRateMax = 0.75,
                AnimationRateMin = 0.55,
                Weight = 40,
            },
            {
            -- Falls forward, face plants.
-               Animation = '/mods/4th_Dimension_211/units/ual0310/ual0310_Adeath03.sca',
+               Animation = '/mods/MCP/units/mal1302/mal1302_Adeath03.sca',
                AnimationRateMax = 0.75,
                AnimationRateMin = 0.55,
                Weight = 60,
            },
        },
-       AnimationWalk = '/mods/4th_Dimension_211/units/ual0310/ual0310_walk.sca',
+       AnimationWalk = '/mods/MCP/units/mal1302/mal1302_walk.sca',
        AnimationWalkRate = 0.66,
        Mesh = {
            IconFadeInZoom = 130,
@@ -125,10 +125,10 @@ UnitBlueprint {
                {
                    LODCutoff = 300,
                    ShaderName = 'Aeon',
-                   MeshName = '/mods/4th_Dimension_211/units/ual0310/ual0310_lod0.scm',
-                   AlbedoName = '/mods/4th_Dimension_211/units/ual0310/ual0310_albedo.dds',
-                   NormalsName = '/mods/4th_Dimension_211/units/ual0310/ual0310_normalsTS.dds',
-                   SpecularName = '/mods/4th_Dimension_211/units/ual0310/ual0310_specteam.dds',
+                   MeshName = '/mods/MCP/units/mal1302/mal1302_lod0.scm',
+                   AlbedoName = '/mods/MCP/units/mal1302/mal1302_albedo.dds',
+                   NormalsName = '/mods/MCP/units/mal1302/mal1302_normalsTS.dds',
+                   SpecularName = '/mods/MCP/units/mal1302/mal1302_specteam.dds',
                },
            },
        },
@@ -322,7 +322,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 3,
-            WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/ual0310/UAL0310_rearHatchOpen.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mal1302/mal1302_rearHatchOpen.sca',
             WeaponUnpackAnimationRate = 0.5,
             WeaponUnpackAnimatorPrecedence = 0,
             WeaponUnpackLocksMotion = false,
@@ -420,7 +420,7 @@ UnitBlueprint {
             Turreted = true,
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 2,
-            WeaponUnpackAnimation = '/mods/4th_Dimension_211/units/ual0310/ual0310_topGunOpen.sca',
+            WeaponUnpackAnimation = '/mods/MCP/units/mal1302/mal1302_topGunOpen.sca',
             WeaponUnpackAnimationRate = 2,
             WeaponUnpackAnimatorPrecedence = 0,
             WeaponUnpackLocksMotion = false,

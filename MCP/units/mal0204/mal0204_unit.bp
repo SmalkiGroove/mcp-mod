@@ -71,28 +71,28 @@ UnitBlueprint {
         AnimationDeath = {
             {
             -- Knocked back and falls forward
-                Animation = '/mods/4th_Dimension_211/units/ual0108/ual0108_Adeath01.sca',
+                Animation = '/mods/MCP/units/mal0204/mal0204_Adeath01.sca',
                 AnimationRateMax = 1.75,
                 AnimationRateMin = 1.15,
                 Weight = 30,
             },
             {
             -- Knocked into the air and lands on head
-                Animation = '/mods/4th_Dimension_211/units/ual0108/ual0108_Adeath02.sca',
+                Animation = '/mods/MCP/units/mal0204/mal0204_Adeath02.sca',
                 AnimationRateMax = 1.25,
                 AnimationRateMin = 0.75,
                 Weight = 20,
             },
             {
             -- Collapses in a heap
-                Animation = '/mods/4th_Dimension_211/units/ual0108/ual0108_Adeath03.sca',
+                Animation = '/mods/MCP/units/mal0204/mal0204_Adeath03.sca',
                 AnimationRateMax = 1.15,
                 AnimationRateMin = 0.75,
                 Weight = 40,
             },
             {
             -- Head knocked into the air and lands on unit.
-                Animation = '/mods/4th_Dimension_211/units/ual0108/ual0108_Adeath04.sca',
+                Animation = '/mods/MCP/units/mal0204/mal0204_Adeath04.sca',
                 AnimationRateMax = 1.45,
                 AnimationRateMin = 1.35,
                 Weight = 10,
@@ -100,7 +100,7 @@ UnitBlueprint {
         },
 
 
-        AnimationWalk = '/mods/4th_Dimension_211/units/ual0108/ual0108_awalk01.sca',
+        AnimationWalk = '/mods/MCP/units/mal0204/mal0204_awalk01.sca',
         AnimationWalkRate = 1.3,
         Mesh = {
             IconFadeInZoom = 130,
@@ -108,10 +108,10 @@ UnitBlueprint {
                 {
                     LODCutoff = 215,
                     ShaderName = 'Aeon',
-                    MeshName = '/mods/4th_Dimension_211/units/ual0108/ual0108_lod0.scm',
-                    AlbedoName = '/mods/4th_Dimension_211/units/ual0108/ual0108_albedo.dds',
-                    NormalsName = '/mods/4th_Dimension_211/units/ual0108/ual0108_normalsTS.dds',
-                    SpecularName = '/mods/4th_Dimension_211/units/ual0108/ual0108_specteam.dds',
+                    MeshName = '/mods/MCP/units/mal0204/mal0204_lod0.scm',
+                    AlbedoName = '/mods/MCP/units/mal0204/mal0204_albedo.dds',
+                    NormalsName = '/mods/MCP/units/mal0204/mal0204_normalsTS.dds',
+                    SpecularName = '/mods/MCP/units/mal0204/mal0204_specteam.dds',
                 },
             },
         },
