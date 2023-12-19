@@ -757,7 +757,6 @@ function Descriptions(all_bps)
     for unitid, text in TextChanges do
         if all_bps[unitid] then
             all_bps[unitid].Description = text
-            all_bps[unitid].Interface.HelpText = text
         end
     end
 end

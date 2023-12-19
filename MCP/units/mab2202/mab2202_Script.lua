@@ -4,15 +4,7 @@ local ADFDisruptorWeapon = import('/lua/aeonweapons.lua').ADFDisruptorWeapon
 MAB2202 = Class(AStructureUnit) {
 
     Weapons = {
-        MainGun = Class(ADFDisruptorWeapon) {
-            CreateProjectileAtMuzzle = function(self, muzzle)
-                local proj = ADFDisruptorWeapon.CreateProjectileAtMuzzle(self, muzzle)
-                local data = self:GetBlueprint().DamageToShields
-                if proj and not proj:BeenDestroyed() then
-                    proj:PassData(data)
-                end
-            end,
-        },
+        MainGun = Class(ADFDisruptorWeapon) {},
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
@@ -22,12 +14,11 @@ MAB2202 = Class(AStructureUnit) {
 
     HingeState = State{ 
         Main = function(self)
-            WaitSeconds(2) #unpacking of the unit, you can ignore this
+            WaitSeconds(2)
             
-            #Set up joints 1 and 2 
-            self.J1 = CreateRotator(self, 'joint1', 'x') #the two bones ill be manipulating later
+            self.J1 = CreateRotator(self, 'joint1', 'x')
             self.J2 = CreateRotator(self, 'joint2', 'x')
-            self.Trash:Add(self.J1) #these things that are just required for whatever reason? 
+            self.Trash:Add(self.J1)
             self.Trash:Add(self.J2)
 
             local rotateold = {}
@@ -40,7 +31,7 @@ MAB2202 = Class(AStructureUnit) {
                 tune.heading, tune.pitch = self:GetWeaponManipulatorByLabel('MainGun'):GetHeadingPitch()
 
                 local rotate = {}
-                rotate = MATH_IRound((180/3.14159)*tune.pitch)
+                rotate = MATH_IRound(57.3*tune.pitch)
 
                 if rotateold ~= rotate then
 

@@ -4,13 +4,13 @@ local Util = import('/lua/utilities.lua')
 local RandomFloat = Util.GetRandomFloat
 
 EXCTorpEffectController01 = Class(NullShell) {
-    NukeOuterRingDamage = 0,
-    NukeOuterRingRadius = 0,
+    NukeOuterRingDamage = 10,
+    NukeOuterRingRadius = 6,
     NukeOuterRingTicks = 0,
     NukeOuterRingTotalTime = 0,
 
-    NukeInnerRingDamage = 0,
-    NukeInnerRingRadius = 0,
+    NukeInnerRingDamage = 100,
+    NukeInnerRingRadius = 3,
     NukeInnerRingTicks = 0,
     NukeInnerRingTotalTime = 0,
    

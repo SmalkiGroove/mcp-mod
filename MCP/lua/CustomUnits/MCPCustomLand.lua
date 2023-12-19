@@ -12,10 +12,6 @@ UnitList = {
         Aeon =      {'mal0306', 100},
     },
 
-    T3ArmoredAssaultSorian = {
-        Aeon =      {'mal0306', 100},
-    },
-
     T3SniperBots = {
         Cybran =    {'mrl0308', 100},
         UEF =       {'mel0308', 100},
