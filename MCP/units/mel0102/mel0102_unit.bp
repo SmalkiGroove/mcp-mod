@@ -68,7 +68,7 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_deployable>Deployable',
         },
-		AnimationActivate = '/Mods/SoftLastAsdruMod/units/vousjvousaime/UEL0108/UEL0108_aactivate.sca',
+		AnimationActivate = '/mods/MCP/units/mel0102/mel0102_aactivate.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -76,7 +76,7 @@ UnitBlueprint {
                     LODCutoff = 320,
                     Scrolling = true,
                     ShaderName = 'Unit',
-                    MeshName = '/mods/SoftLastAsdruMod/units/vousjvousaime/uel0108/uel0108_lod0.scm',
+                    MeshName = '/mods/MCP/units/mel0102/mel0102_lod0.scm',
 					AlbedoName = '/Units/uel0201/uel0201_Albedo.dds',
 					NormalsName = '/Units/uel0201/uel0201_NormalsTS.DDS',
 					SpecularName = '/Units/uel0201/uel0201_SpecTeam.dds',

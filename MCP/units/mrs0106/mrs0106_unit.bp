@@ -110,7 +110,7 @@ UnitBlueprint {
                 {
                     LODCutoff = 320,
                     ShaderName = 'Insect',
-                    MeshName = '/mods/SoftLastAsdruMod/units/grillespain/urs0104/urs0104_lod0.scm',
+                    MeshName = '/mods/MCP/units/mrs0106/mrs0106_lod0.scm',
 					AlbedoName = '/Units/urs0103/urs0103_Albedo.dds',
 					NormalsName = '/Units/urs0103/urs0103_NormalsTS.DDS',
 					SpecularName = '/Units/urs0103/urs0103_SpecTeam.dds',
