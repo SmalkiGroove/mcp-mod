@@ -705,6 +705,7 @@ function UpgradeableVanilla(all_bps)
 
             if not all_bps[unitid].Economy.BuildRate then all_bps[unitid].Economy.BuildRate = 15 end
 
+            all_bps[unitid].General.CommandCaps = all_bps[unitid].General.CommandCaps or {}
             all_bps[unitid].General.CommandCaps.RULEUCC_Pause = true
         end
     end

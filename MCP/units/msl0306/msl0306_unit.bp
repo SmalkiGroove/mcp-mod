@@ -201,7 +201,7 @@ UnitBlueprint {
     SelectionSizeZ = 1.2,
     SelectionThickness = 0.4,
     SizeX = 0.7,
-    SizeY = 0.3,
+    SizeY = 0.5,
     SizeZ = 1.8,
     StrategicIconName = 'icon_land3_missile',
     StrategicIconSortPriority = 115,
