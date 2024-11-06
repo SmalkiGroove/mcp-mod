@@ -655,7 +655,7 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Gauss Cannon',
             FireTargetLayerCapsTable = {
-                Air = 'Air|Land|Water|Seabed',
+                Air = 'Land|Water|Seabed',
             },
             FiringTolerance = 2,
             FiringRandomness = 0.5,

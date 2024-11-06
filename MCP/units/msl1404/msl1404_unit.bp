@@ -311,7 +311,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 55,
+        VisionRadius = 54,
     },
     Interface = {
         HelpText = 'Experimental Giant Bot',

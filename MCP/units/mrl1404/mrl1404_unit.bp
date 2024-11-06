@@ -307,8 +307,8 @@ UnitBlueprint {
     },
     Intel = {
         RadarRadius = 200,
-        OmniRadius = 50,
-        VisionRadius = 65,
+        OmniRadius = 48,
+        VisionRadius = 64,
     },
     Interface = {
         HelpText = 'Experimental Destruction BeetleBot',

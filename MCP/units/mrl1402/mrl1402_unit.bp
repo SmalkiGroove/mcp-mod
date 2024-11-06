@@ -247,7 +247,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 35,
+        VisionRadius = 46,
     },
     Interface = {
         HelpText = 'Experiental Assault Mech',
@@ -404,8 +404,8 @@ UnitBlueprint {
                     BuffType = 'STUN',
                     Duration = 1,
                     Radius = 4,
-                    TargetAllow = 'ALLUNITS',
-                    TargetDisallow = 'EXPERIMENTAL,COMMAND',
+                    TargetAllow = 'MOBILE',
+                    TargetDisallow = 'EXPERIMENTAL,COMMAND,SUBCOMMANDER,TECHEXP',
                 },
             },
             DamageType = 'Normal',

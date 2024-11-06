@@ -160,8 +160,8 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 65,
-        WaterVisionRadius = 45,
+        VisionRadius = 66,
+        WaterVisionRadius = 48,
     },
     Interface = {
         HelpText = 'Spaceship',
@@ -181,7 +181,7 @@ UnitBlueprint {
             LAYER_Water = false,
         },
         Elevation = 16,
-        MaxSpeed = 3,
+        MaxSpeed = 4,
 		MaxSpeedReverse = 0,
         MaxSteerForce = 5,
         MeshExtentsX = 7.5,

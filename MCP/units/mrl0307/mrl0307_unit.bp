@@ -273,7 +273,7 @@ UnitBlueprint {
                     Duration = 0.2,
                     Radius = 3,
                     TargetAllow = 'MOBILE',
-                    TargetDisallow = 'EXPERIMENTAL,COMMAND,SUBCOMMANDER',
+                    TargetDisallow = 'EXPERIMENTAL,COMMAND,SUBCOMMANDER,TECHEXP',
                 },
             },
             BallisticArc = 'RULEUBA_LowArc',

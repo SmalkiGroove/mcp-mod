@@ -197,9 +197,9 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 50,
+        RadarRadius = 64,
         VisionRadius = 40,
-        WaterVisionRadius = 30,
+        WaterVisionRadius = 32,
     },
     Interface = {
         HelpText = 'Artilleryship',

@@ -264,8 +264,8 @@ UnitBlueprint {
     },
     Intel = {
         SonarRadius = 60,
-        VisionRadius = 45,
-        WaterVisionRadius = 45,
+        VisionRadius = 44,
+        WaterVisionRadius = 44,
     },
     Interface = {
         HelpText = 'Attack Submarine',

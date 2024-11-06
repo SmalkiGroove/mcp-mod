@@ -217,7 +217,7 @@ UnitBlueprint {
     },
     Intel = {
         VisionRadius = 44,
-        RadarRadius = 45,
+        RadarRadius = 44,
     },
     Interface = {
         HelpText = 'Experimental Battle Bot',

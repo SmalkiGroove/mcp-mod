@@ -263,7 +263,7 @@ UnitBlueprint {
     },
     Intel = {
         VisionRadius = 20,
-        RadarRadius = 30,
+        RadarRadius = 28,
     },
     Interface = {
         HelpText = '<LOC sal0209_desc>Field Engineer',

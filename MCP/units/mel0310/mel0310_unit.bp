@@ -261,7 +261,7 @@ UnitBlueprint {
             Min = 12,
         },
         JammerBlips = 5,
-        RadarRadius = 30,
+        RadarRadius = 28,
         VisionRadius = 20,
     },
     Interface = {

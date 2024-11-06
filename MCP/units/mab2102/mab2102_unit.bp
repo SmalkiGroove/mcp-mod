@@ -133,7 +133,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 25,
+        VisionRadius = 24,
     },
     Interface = {
         HelpText = 'Heavy Point Defense',
