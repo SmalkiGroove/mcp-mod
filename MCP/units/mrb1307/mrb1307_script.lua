@@ -10,12 +10,12 @@ MRB1307 = Class(CMassFabricationUnit) {
         self.Trash:Add(self.Rotator)
         self:SetScriptBit('RULEUTC_CloakToggle', false)
         self.Prodon = true
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
-        self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+        self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
+        self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
         self:SetMaintenanceConsumptionActive()
         CMassFabricationUnit.OnStopBeingBuilt(self,builder,layer)
         --Force update of the cloak effect if there is a cloak mesh. For FAF graphics
-        if self:GetBlueprint().Display.CloakMeshBlueprint then
+        if self.Blueprint.Display.CloakMeshBlueprint then
             self:ForkThread(
                 function()
                     WaitTicks(1)
@@ -31,12 +31,12 @@ MRB1307 = Class(CMassFabricationUnit) {
         self.Prodon = true
 
         if self:IsIntelEnabled('Cloak') then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()
         else
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()
         end
     end,
@@ -47,7 +47,7 @@ MRB1307 = Class(CMassFabricationUnit) {
         self.Prodon = false
 
         if self:IsIntelEnabled('Cloak') then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyCloak or 875)
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyCloak or 875)
             self:SetProductionPerSecondMass(0)
             self:SetMaintenanceConsumptionActive()
         else
@@ -63,11 +63,11 @@ MRB1307 = Class(CMassFabricationUnit) {
             self.IntelFxOn = true
         end
         if self.Prodon then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyCloak or 3500)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()
         else
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyCloak or 875)
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyCloak or 875)
             self:SetProductionPerSecondMass(0)
             self:SetMaintenanceConsumptionActive()
         end
@@ -78,8 +78,8 @@ MRB1307 = Class(CMassFabricationUnit) {
         EffectUtil.CleanupEffectBag(self,'IntelEffectsBag')
         self.IntelFxOn = false
         if self.Prodon then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()
         else
             self:SetEnergyMaintenanceConsumptionOverride(0)

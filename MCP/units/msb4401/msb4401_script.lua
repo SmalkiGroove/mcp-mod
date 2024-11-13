@@ -16,7 +16,7 @@ MSB4401 = Class(SShieldStructureUnit) {
 
     OnStopBeingBuilt = function(self,builder,layer)
         SShieldStructureUnit.OnStopBeingBuilt(self,builder,layer)
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
+        self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldEnabled = function(self)
@@ -41,7 +41,7 @@ MSB4401 = Class(SShieldStructureUnit) {
                 )
                 dude.Parent = self
                 table.insert(self.ShieldDroneBag, dude)
-                dude.MyShield:SetHealth(self, dude.MyShield:GetHealth() * self.MyShield:GetHealth() / self:GetBlueprint().Defense.Shield.ShieldMaxHealth)
+                dude.MyShield:SetHealth(self, dude.MyShield:GetHealth() * self.MyShield:GetHealth() / self.Blueprint.Defense.Shield.ShieldMaxHealth)
                 IssueMove({dude}, {pos[1] + (radius * (math.sin((math.pi * 2/drones)*i))), pos[2], pos[3] + (radius * (math.cos((math.pi * 2/drones)*i)))})
                 for i2 = 1, patrolnodes do
                     local xpos = pos[1] + (radius * (math.sin((math.pi * 2/drones)*(i) + ((math.pi * 2/patrolnodes)*i2))))
@@ -51,11 +51,11 @@ MSB4401 = Class(SShieldStructureUnit) {
                 end
             end
         end
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
+        self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergy - LDNo * LDBP.Economy.MaintenanceConsumptionPerSecondEnergy - sdNo * sdBP.Economy.MaintenanceConsumptionPerSecondEnergy)
     end,
 
     OnShieldDisabled = function(self)
-        local maxShieldhealth = LDNo * LDBP.Defense.Shield.ShieldMaxHealth + sdNo * sdBP.Defense.Shield.ShieldMaxHealth + self:GetBlueprint().Defense.Shield.ShieldMaxHealth
+        local maxShieldhealth = LDNo * LDBP.Defense.Shield.ShieldMaxHealth + sdNo * sdBP.Defense.Shield.ShieldMaxHealth + self.Blueprint.Defense.Shield.ShieldMaxHealth
         local Shieldhealth = 0
         for i, drone in self.ShieldDroneBag do
             if drone.MyShield then
@@ -63,7 +63,7 @@ MSB4401 = Class(SShieldStructureUnit) {
             end
         end
         Shieldhealth = Shieldhealth + self.MyShield:GetHealth()
-        self.MyShield:SetHealth(self, self:GetBlueprint().Defense.Shield.ShieldMaxHealth * (Shieldhealth / maxShieldhealth))
+        self.MyShield:SetHealth(self, self.Blueprint.Defense.Shield.ShieldMaxHealth * (Shieldhealth / maxShieldhealth))
         self:CleanUp()
         SShieldStructureUnit.OnShieldDisabled(self)
     end,

@@ -21,7 +21,7 @@ MAL1403 = Class(AHoverLandUnit) {
         MainGun_01 = Class(ADFDisruptorCannonWeapon) {
             CreateProjectileAtMuzzle = function(self, muzzle)
                 local proj = ADFDisruptorCannonWeapon.CreateProjectileAtMuzzle(self, muzzle)
-                local data = self:GetBlueprint().DamageToShields
+                local data = self.Blueprint.DamageToShields
                 if proj and not proj:BeenDestroyed() then
                     proj:PassData(data)
                 end
@@ -30,7 +30,7 @@ MAL1403 = Class(AHoverLandUnit) {
         MainGun_02 = Class(ADFDisruptorCannonWeapon) {
             CreateProjectileAtMuzzle = function(self, muzzle)
                 local proj = ADFDisruptorCannonWeapon.CreateProjectileAtMuzzle(self, muzzle)
-                local data = self:GetBlueprint().DamageToShields
+                local data = self.Blueprint.DamageToShields
                 if proj and not proj:BeenDestroyed() then
                     proj:PassData(data)
                 end

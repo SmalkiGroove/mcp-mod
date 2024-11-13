@@ -316,18 +316,15 @@ UnitBlueprint {
     SizeZ = 6.0, 
     StrategicIconName = 'mcp/icon_experimental_assault', 
     StrategicIconSortPriority = 45, 
-    Veteran = { 
-        Level1 = 50, 
-        Level2 = 100, 
-        Level3 = 150, 
-        Level4 = 200, 
-        Level5 = 250, 
-    }, 
+    Veteran = {
+        Level1 = 45,
+        Level2 = 90,
+        Level3 = 135,
+        Level4 = 180,
+        Level5 = 225,
+    },
     Weapon = { 
-        { 
-#------------------------------------ 
-# Main Gun: Belchfire Magma Cannon 
-#------------------------------------                    
+        {               
             AboveWaterFireOnly = true, 
             AboveWaterTargetsOnly = true, 
             Audio = { 
@@ -411,10 +408,7 @@ UnitBlueprint {
             WeaponRepackTimeout = 0, 
             WeaponUnpacks = false, 
         }, 
-        {    
-#------------------------------------ 
-#  Left Shoulder Chain Gun 
-#------------------------------------ 
+        {
             AboveWaterTargetsOnly = true, 
             AimsStraightOnDisable = false, 
             Audio = { 
@@ -495,10 +489,7 @@ UnitBlueprint {
             WeaponRepackTimeout = 0,            
             WeaponUnpacks = true, 
         }, 
-        { 
-#------------------------------------ 
-# Right Shoulder Chain Gun 
-#------------------------------------           
+        {      
             AboveWaterTargetsOnly = true, 
             AimsStraightOnDisable = true, 
             Audio = { 
@@ -578,10 +569,7 @@ UnitBlueprint {
             WeaponRepackTimeout = 0,            
             WeaponUnpacks = true,        
         },        
-        { 
-#------------------------------------ 
-# Left Side Cannon 
-#------------------------------------          
+        {   
             AboveWaterTargetsOnly = true, 
             AimsStraightOnDisable = false, 
             Audio = { 
@@ -662,10 +650,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire', 
             WeaponUnpacks = false, 
         }, 
-        { 
-#------------------------------------ 
-# Right Side Cannon 
-#------------------------------------  
+        {
             AboveWaterTargetsOnly = true, 
             AimsStraightOnDisable = false, 
             Audio = { 
@@ -746,10 +731,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire', 
             WeaponUnpacks = false,
         }, 
-        { 
-#------------------------------------ 
-# Top Middle Flayer SAM 
-#------------------------------------            
+        {         
             AlwaysRecheckTarget = true, 
             Audio = { 
                 Fire = Sound { 
@@ -816,10 +798,7 @@ UnitBlueprint {
             WeaponUnpackAnimationRate = 0.5, 
 			WeaponUnpacks = true, 
         }, 
-        { 
-#------------------------------------ 
-# Left-Back Cruise Missile Launchers 
-#------------------------------------        
+        {    
             AboveWaterTargetsOnly = true, 
             Audio = { 
                 Fire = Sound { 
@@ -876,8 +855,7 @@ UnitBlueprint {
             RackSalvoSize = 2, 
             RackSlavedToTurret = true, 
             RangeCategory = 'UWRC_IndirectFire', 
-            RateOfFire = 0.1, 
-            RenderFireClock = true, 
+            RateOfFire = 0.1,
             TargetCheckInterval = 3,
             TargetPriorities = { 
             'STRUCTURE DEFENSE', 
@@ -912,10 +890,7 @@ UnitBlueprint {
          -- WeaponUnpackTimeout = 0.5, 
             WeaponUnpacks = true, 
         }, 
-        { 
-#------------------------------------ 
-# Right-Back Cruise Missile Launchers 
-#------------------------------------    
+        {
             AboveWaterTargetsOnly = true, 
             Audio = { 
                 Fire = Sound { 
@@ -973,8 +948,7 @@ UnitBlueprint {
             RackSalvoSize = 2, 
             RackSlavedToTurret = true, 
             RangeCategory = 'UWRC_IndirectFire', 
-            RateOfFire = 0.1, 
-            RenderFireClock = true, 
+            RateOfFire = 0.1,
             TargetCheckInterval = 3,
             TargetPriorities = { 
             'STRUCTURE DEFENSE', 
@@ -1009,10 +983,7 @@ UnitBlueprint {
          -- WeaponUnpackTimeout = 0.5, 
             WeaponUnpacks = true, 
         }, 
-        { 
-#------------------------------------ 
-# Death Weapon 
-#------------------------------------            
+        {        
             CollideFriendly = false, 
             Damage = 12000, 
             DamageFriendly = true, 

@@ -43,7 +43,7 @@ SeraHeavyLightningCannonChild01 = Class(SeraHeavyLightningCannonChildProjectile)
                         -- Set the beam damage equal to a fraction of the projectiles avalible DMG pool
                         local beamDmgAmt = self.DamageData.DamageAmount * 0.025
                         -- Reduce the projectiles DamageAmount by what the beam amount did
-                        self:PlaySound(self:GetBlueprint().Audio['Arc'])
+                        self:PlaySound(self.Blueprint.Audio['Arc'])
                         for k, v in availableTargets do
                             Damage(self:GetLauncher(), target:GetPosition(), target, beamDmgAmt, 'Normal')
                             -- Attach beam to the target
@@ -61,7 +61,7 @@ SeraHeavyLightningCannonChild01 = Class(SeraHeavyLightningCannonChildProjectile)
                         -- Set the beam damage equal to a fraction of the projectiles avalible DMG pool
                         local beamDmgAmt = self.DamageData.DamageAmount * 0.025
                         -- Reduce the projectiles DamageAmount by what the beam amount did
-                        self:PlaySound(self:GetBlueprint().Audio['Arc'])
+                        self:PlaySound(self.Blueprint.Audio['Arc'])
                         for k, v in availableTargets do
                             Damage(self:GetLauncher(), target:GetPosition(), target, beamDmgAmt, 'Normal')
                             -- Attach beam to the target

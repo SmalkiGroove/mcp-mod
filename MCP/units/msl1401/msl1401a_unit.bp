@@ -87,7 +87,7 @@ UnitBlueprint {
             Level4 = 160,
             Level5 = 200,
         },
-    }, 
+    },
     Categories = {
         'UNSELECTABLE',
         'SERAPHIM',
@@ -188,7 +188,7 @@ UnitBlueprint {
     SelectionSizeX = 0.3,
     SelectionSizeZ = 0.3,
     SelectionThickness = 1.2,
-    SizeSphere = 1,
+    SizeSphere = 1.0,
     SizeX = 0.5,
     SizeY = 0.2,
     SizeZ = 0.5,
@@ -197,7 +197,7 @@ UnitBlueprint {
     StrategicIconSortPriority = 105,
     Transport = {
         AirClass = true,
-        TransportClass = 5,
+        TransportClass = 3,
     },
     Veteran = {
         Level1 = 5,
@@ -205,7 +205,7 @@ UnitBlueprint {
         Level3 = 15,
         Level4 = 20,
         Level5 = 25,
-    }, 
+    },
     Weapon = {
         {
             Audio = {
@@ -236,7 +236,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             DoNotCollideList = {
                 'TORPEDO',
-                'MISSILE',    
+                'MISSILE',
             },
             RackBones = {
                 {
@@ -284,6 +284,17 @@ UnitBlueprint {
             Turreted = true,
             UseFiringSolutionInsteadOfAimBone = true,
             WeaponCategory = 'Anti Air',
+        },
+        {
+            Damage = 40,
+            DamageFriendly = true,
+            DamageRadius = 0.3,
+            DamageType = 'Normal',
+            DisplayName = 'Air Crash',
+            DummyWeapon = true,
+            FiringTolerance = 2,
+            Label = 'DeathImpact',
+            WeaponCategory = 'Death',
         },
     },
     Wreckage = {

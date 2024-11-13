@@ -9,7 +9,7 @@ MRL0308 = Class(CWalkingLandUnit) {
     },
     
     OnCreate = function(self)
-        if self:GetBlueprint().General.BuildBones then
+        if self.Blueprint.General.BuildBones then
             self:SetupBuildBones()
         end
         CWalkingLandUnit.OnCreate(self)
@@ -17,7 +17,7 @@ MRL0308 = Class(CWalkingLandUnit) {
 
     CreateBuildEffects = function(self, unitBeingBuilt, order)
        EffectUtil.SpawnBuildBots(self, unitBeingBuilt, 10, self.BuildEffectsBag)
-       EffectUtil.CreateCybranBuildBeams(self, unitBeingBuilt, self:GetBlueprint().General.BuildBones.BuildEffectBones, self.BuildEffectsBag)
+       EffectUtil.CreateCybranBuildBeams(self, unitBeingBuilt, self.Blueprint.General.BuildBones.BuildEffectBones, self.BuildEffectsBag)
     end,
 
     OnStartBuild = function(self, unitBeingBuilt, order)
@@ -27,7 +27,7 @@ MRL0308 = Class(CWalkingLandUnit) {
             self.AnimationManipulator = CreateAnimator(self)
             self.Trash:Add(self.AnimationManipulator)
         end
-        self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationOpen, false):SetRate(1.5)
+        self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationOpen, false):SetRate(1.5)
         
         self.UnitBeingBuilt = unitBeingBuilt
         self.UnitBuildOrder = order
@@ -40,7 +40,7 @@ MRL0308 = Class(CWalkingLandUnit) {
             self.AnimationManipulator = CreateAnimator(self)
             self.Trash:Add(self.AnimationManipulator)
         end
-        self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationClose, false):SetRate(1)
+        self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationClose, false):SetRate(1)
     end,
 }
 

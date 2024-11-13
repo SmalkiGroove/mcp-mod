@@ -302,7 +302,7 @@ MRA1301 = Class(CAirUnit) {
         --    self.OpenAnimManip = CreateAnimator(self)
 		--	self.Trash:Add(self.OpenAnimManip)
         --end
-		--self.OpenAnimManip:PlayAnim(self:GetBlueprint().Display.AnimationOpen, false)
+		--self.OpenAnimManip:PlayAnim(self.Blueprint.Display.AnimationOpen, false)
     end,
 
 

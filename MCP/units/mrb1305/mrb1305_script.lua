@@ -8,7 +8,7 @@ MRB1305 = Class(CEnergyCreationUnit) {
         self:SetScriptBit('RULEUTC_CloakToggle', false)
         CEnergyCreationUnit.OnStopBeingBuilt(self, builder, layer)
         --Force update of the cloak effect if there is a cloak mesh. For FAF graphics
-        if self:GetBlueprint().Display.CloakMeshBlueprint then
+        if self.Blueprint.Display.CloakMeshBlueprint then
             self:ForkThread(
                 function()
                     WaitTicks(1)

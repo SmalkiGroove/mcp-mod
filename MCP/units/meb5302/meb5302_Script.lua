@@ -49,7 +49,7 @@ MEB5302 = Class(TAirStagingPlatformUnit) {
                 self:SetWeaponEnabledByLabel('TorpedoTurret04', true)
             end
         end
-        self.OpenAnim:PlayAnim(self:GetBlueprint().Display.AnimationOpen, false):SetRate(0.4)
+        self.OpenAnim:PlayAnim(self.Blueprint.Display.AnimationOpen, false):SetRate(0.4)
     end,
     
     InitialDroneSpawn = function(self)

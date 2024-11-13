@@ -22,11 +22,11 @@ TEngineeringResourceStructureUnit = Class(TConstructionStructureUnit) {
     OnDamage = function(self, instigator, amount, vector, damageType)
         TConstructionStructureUnit.OnDamage(self, instigator, amount, vector, damageType)
 
-        self:PlaySound(self:GetBlueprint().Audio.PanicLoop)
+        self:PlaySound(self.Blueprint.Audio.PanicLoop)
         if instigator then
             if instigator and IsUnit(instigator) then
                 local layer = instigator:GetCurrentLayer()
-                local bp = self:GetBlueprint()
+                local bp = self.Blueprint
                 local distance = util.GetDistanceBetweenTwoEntities(self, instigator)
                 if distance > bp.Intel.VisionRadius * 3 then
                     --LOG("Shit that's far: ".. distance)
@@ -56,7 +56,7 @@ TEngineeringResourceStructureUnit = Class(TConstructionStructureUnit) {
             local pos = self:GetPosition()
             local aiBrain = self:GetAIBrain()
 
-            local bp = self:GetBlueprint()
+            local bp = self.Blueprint
             local x = bp.Physics.SkirtSizeX / 2 + 1
             local z = bp.Physics.SkirtSizeZ / 2 + 1
             local sign = -1 + 2 * math.random(0, 1)
@@ -69,7 +69,6 @@ TEngineeringResourceStructureUnit = Class(TConstructionStructureUnit) {
                 self.BuildGoalZ = sign * z
             end
 
-            LOG( "Help, help, I'm being repressed!" )
             aiBrain:BuildStructure(self, self.BuildThis or 'ueb2101', {pos[1]+self.BuildGoalX, pos[3]+self.BuildGoalZ, 0})
         end,
 

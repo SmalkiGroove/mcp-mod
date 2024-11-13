@@ -270,7 +270,7 @@ UnitBlueprint {
         FactionName = 'Seraphim',
         Icon = 'amph',
         TechLevel = 'RULEUTL_Experimental',
-        UnitName = '<LOC msl1401_name>Yenzotha',
+        UnitName = 'Yenzotha',
         UnitWeight = 1,
         ToggleCaps = {
             RULEUTC_SpecialToggle = true,
@@ -342,13 +342,14 @@ UnitBlueprint {
     Transport = {
         TransportClass = 4,
     },
-    Veteran = { 
-        Level1 = 50, 
-        Level2 = 100, 
-        Level3 = 150, 
-        Level4 = 200, 
-        Level5 = 250, 
-    }, 
+    Veteran = {
+        Level1 = 45,
+        Level2 = 90,
+        Level3 = 135,
+        Level4 = 180,
+        Level5 = 225,
+    },
+    VeteranMassMult = 0.5,
     Weapon = {
         {
             AboveWaterFireOnly = true,
@@ -583,7 +584,7 @@ UnitBlueprint {
             BeamLifetime = 0,
             CollideFriendly = false,
             ContinuousBeam = true,
-            Damage = 250,
+            Damage = 230,
             DamageRadius = 3.5,
             DamageType = 'Normal',
             DisplayName = 'Experimental Phason Beam Generator',
@@ -817,9 +818,9 @@ UnitBlueprint {
         },
         {
             AboveWaterTargetsOnly = true,
-            Damage = 12000,
+            Damage = 10000,
             DamageFriendly = true,
-            DamageRadius = 12,
+            DamageRadius = 8,
             DamageType = 'Normal',
             DisplayName = 'Collossus Death',
             DummyWeapon = true,

@@ -77,7 +77,7 @@ MEB3301A = Class(TAirUnit) {
 
     CreateVisEntity = function(self)
         local pos = self:GetPosition()
-        local bp = self:GetBlueprint().Intel
+        local bp = self.Blueprint.Intel
         self.VisEntity = VizMarker({
             X = pos[1],
             Z = pos[3],
@@ -97,7 +97,7 @@ MEB3301A = Class(TAirUnit) {
 
     OnRunOutOfFuel = function(self)
         TAirUnit.OnRunOutOfFuel(self)
-        self:SetSpeedMult(self:GetBlueprint().Physics.NoFuelSpeedMult)
+        self:SetSpeedMult(self.Blueprint.Physics.NoFuelSpeedMult)
         self:SetAccMult(1)
         self:SetTurnMult(1)
     end,

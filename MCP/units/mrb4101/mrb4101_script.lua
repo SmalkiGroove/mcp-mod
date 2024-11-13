@@ -36,8 +36,8 @@ MRB4101 = Class(CShieldStructureUnit) {
 
     OpeningState = State {
         Main = function(self)
-            if self:GetBlueprint().Audio.Activate then
-                self:PlaySound(self:GetBlueprint().Audio.Activate)
+            if self.Blueprint.Audio.Activate then
+                self:PlaySound(self.Blueprint.Audio.Activate)
             end
 
             self.Sliders.Slider1:SetGoal(0,12,0)

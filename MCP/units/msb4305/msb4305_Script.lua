@@ -6,7 +6,7 @@ MSB4305 = Class(SStructureUnit) {
         MainGun = Class(SIFSuthanusArtilleryCannon) {
             CreateProjectileAtMuzzle = function(self, muzzle)
                 local proj = SIFSuthanusArtilleryCannon.CreateProjectileAtMuzzle(self, muzzle)
-                local data = self:GetBlueprint().ShieldDamage
+                local data = self.Blueprint.ShieldDamage
                 if proj and not proj:BeenDestroyed() then
                     proj:PassData(data)
                 end

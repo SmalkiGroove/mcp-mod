@@ -8,7 +8,7 @@ MRB5302A = Class(CConstructionStructureUnit) {
             self.AnimationManipulator = CreateAnimator(self)
             self.Trash:Add(self.AnimationManipulator)
         end
-        self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationOpen, false):SetRate(1)
+        self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationOpen, false):SetRate(1)
     end,
     
     OnStopBuild = function(self, unitBeingBuilt)

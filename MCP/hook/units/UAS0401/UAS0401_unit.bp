@@ -136,13 +136,13 @@ UnitBlueprint {
         },
         AnimationDeath = {
             {
-                Animation = '/Mods/MCP/hook/units/uas0401/uas0401_adeath01.sca',
+                Animation = '/Mods/BlackOpsFAF-Unleashed/hook/units/uas0401/uas0401_adeath01.sca',
                 AnimationRateMax = 0.7,
                 AnimationRateMin = 0.5,
                 Weight = 100,
             },
         },
-        AnimationSurface = '/Mods/MCP/hook/units/uas0401/uas0401_Aopen01.sca',
+        AnimationSurface = '/Mods/BlackOpsFAF-Unleashed/hook/units/uas0401/uas0401_Aopen01.sca',
         IdleEffects = {
             Sub = {
                 Effects = {
@@ -255,7 +255,7 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'UXB0000',
         SpawnRandomRotation = false,
-        UniformScale = 0.12,
+        UniformScale = 0.1,
     },
     DroneData = {
         Drone1 = {
@@ -370,10 +370,10 @@ UnitBlueprint {
         MotionType = 'RULEUMT_SurfacingSub',
         RotateOnSpot = true,
         RotateOnSpotThreshold = 0.1,
-        SkirtOffsetX = -2.5,
-        SkirtOffsetZ = -2.5,
-        SkirtSizeX = 17,
-        SkirtSizeZ = 17,
+        SkirtOffsetX = -1.5,
+        SkirtOffsetZ = -1.5,
+        SkirtSizeX = 16,
+        SkirtSizeZ = 16,
         TurnRadius = 40,
         TurnRate = 30,
     },
@@ -392,6 +392,7 @@ UnitBlueprint {
         Level4 = 120,
         Level5 = 150,
     },
+    VeteranMassMult = 0.5,
     Weapon = {
         {
             AboveWaterTargetsOnly = true,

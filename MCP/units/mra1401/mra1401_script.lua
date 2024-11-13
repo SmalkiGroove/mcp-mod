@@ -174,7 +174,7 @@ MRA1401 = Class(CAirUnit) {
 	HideUnit = function(self)
 		if not self.Dead and self:GetFractionComplete() == 1 and self.Sync.LowPriority then
 			self.WaitingForCloak = true
-			WaitSeconds(self:GetBlueprint().Intel.StealthWaitTime)
+			WaitSeconds(self.Blueprint.Intel.StealthWaitTime)
 
 			if self:IsUnitState("Attacking") then
 				self.WaitingForCloak = false

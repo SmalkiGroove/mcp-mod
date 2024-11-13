@@ -32,7 +32,7 @@ EXCTorpEffectController01 = Class(NullShell) {
     end,
 
     CreateNuclearExplosion = function(self)
-        local myBlueprint = self:GetBlueprint()
+        local myBlueprint = self.Blueprint
     
     # Create Damage Threads
         self:ForkThread(self.InnerRingDamage)

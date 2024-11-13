@@ -1,11 +1,12 @@
 
 ConstructionStructureUnit = Class(StructureUnit) {
+
     OnCreate = function(self)
         -- Structure stuff
         StructureUnit.OnCreate(self)
 
         --Construction stuff
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         self.EffectsBag = {}
         if bp.General.BuildBones then
             self:SetupBuildBones()
@@ -104,7 +105,7 @@ ConstructionStructureUnit = Class(StructureUnit) {
         StructureUnit.OnPrepareArmToBuild(self)
 
         if self.BuildingOpenAnimManip then
-            self.BuildingOpenAnimManip:SetRate(self:GetBlueprint().Display.AnimationBuildRate or 1)
+            self.BuildingOpenAnimManip:SetRate(self.Blueprint.Display.AnimationBuildRate or 1)
             if self.BuildArmManipulator then
                 self.StoppedBuilding = nil
                 ForkThread( self.WaitForBuildAnimation, self, true )
@@ -118,7 +119,7 @@ ConstructionStructureUnit = Class(StructureUnit) {
         if self.StoppedBuilding then
             self.StoppedBuilding = nil
             self.BuildArmManipulator:Disable()
-            self.BuildingOpenAnimManip:SetRate(-(self:GetBlueprint().Display.AnimationBuildRate or 1))
+            self.BuildingOpenAnimManip:SetRate(-(self.Blueprint.Display.AnimationBuildRate or 1))
         end
     end,
 
@@ -127,7 +128,7 @@ ConstructionStructureUnit = Class(StructureUnit) {
     end,
 
     CreateReclaimEffects = function( self, target )
-		EffectUtil.PlayReclaimEffects( self, target, self:GetBlueprint().General.BuildBones.BuildEffectBones or {0,}, self.ReclaimEffectsBag )
+		EffectUtil.PlayReclaimEffects( self, target, self.Blueprint.General.BuildBones.BuildEffectBones or {0,}, self.ReclaimEffectsBag )
     end,
 
     CreateReclaimEndEffects = function( self, target )
@@ -135,7 +136,7 @@ ConstructionStructureUnit = Class(StructureUnit) {
     end,
 
     CreateCaptureEffects = function( self, target )
-		EffectUtil.PlayCaptureEffects( self, target, self:GetBlueprint().General.BuildBones.BuildEffectBones or {0,}, self.CaptureEffectsBag )
+		EffectUtil.PlayCaptureEffects( self, target, self.Blueprint.General.BuildBones.BuildEffectBones or {0,}, self.CaptureEffectsBag )
     end,
 }
 

@@ -1,29 +1,29 @@
 local CSeaUnit = import('/lua/cybranunits.lua').CSeaUnit
 local CybranWeaponsFile = import('/lua/cybranweapons.lua')
-local CybranWeaponsFile2 = import('/mods/MCP/lua/MCPWeapons.lua')
+local CybranWeaponsFile2 = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsWeapons.lua')
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
 local XCannonWeapon01 = CybranWeaponsFile2.XCannonWeapon01
 local CANNaniteTorpedoWeapon = CybranWeaponsFile.CANNaniteTorpedoWeapon
 local CAMZapperWeapon = CybranWeaponsFile.CAMZapperWeapon
 local MGAALaserWeapon = CybranWeaponsFile2.MGAALaserWeapon
 local HailfireLauncherWeapon = CybranWeaponsFile2.HailfireLauncherWeapon
-   
-MRS1401 = Class(CSeaUnit) {
+
+MRS1401= Class(CSeaUnit) {
     MuzzleFlashEffects01 = {
-        '/mods/MCP/effects/emitters/xcannon_cannon_muzzle_01_emit.bp',
-        '/mods/MCP/effects/emitters/x_cannon_fire_test_01_emit.bp',
-        '/mods/MCP/effects/emitters/xcannon_cannon_muzzle_07_emit.bp',
-        '/mods/MCP/effects/emitters/xcannon_cannon_muzzle_08_emit.bp',
+        '/mods/BlackOpsFAF-Unleashed/effects/emitters/xcannon_cannon_muzzle_01_emit.bp',
+        '/mods/BlackOpsFAF-Unleashed/effects/emitters/x_cannon_fire_test_01_emit.bp',
+        '/mods/BlackOpsFAF-Unleashed/effects/emitters/xcannon_cannon_muzzle_07_emit.bp',
+        '/mods/BlackOpsFAF-Unleashed/effects/emitters/xcannon_cannon_muzzle_08_emit.bp',
     },
-    
+
     MuzzleFlashEffects02 = {
-        '/effects/emitters/dirty_exhaust_sparks_02_emit.bp',    
+        '/effects/emitters/dirty_exhaust_sparks_02_emit.bp',
     },
-    
+
     MuzzleChargeEffects = {
         '/mods/MCP/effects/emitters/x_cannon_charge_test_01_emit.bp',
     },
-    
+
     Weapons = {
         MainCannon01 = Class(XCannonWeapon01) {
             OnWeaponFired = function(self)
@@ -37,7 +37,7 @@ MRS1401 = Class(CSeaUnit) {
                 for k, v in self.unit.MuzzleFlashEffects01 do
                     table.insert(self.unit.MuzzleFlashWep1Effects01Bag, CreateAttachedEmitter(self.unit, 'Left_Railgun_Muzzle', self.unit:GetArmy(), v):ScaleEmitter(1.2))
                 end
-                
+
                 if self.unit.MuzzleFlashWep1Effects02Bag then
                     for k, v in self.unit.MuzzleFlashWep1Effects02Bag do
                         v:Destroy()
@@ -51,7 +51,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
                 self:ForkThread(self.MuzzleFlashEffectsWep1CleanUp)
             end,
-                
+
             MuzzleFlashEffectsWep1CleanUp = function(self)
                 WaitTicks(30)
                 if self.unit.MuzzleFlashWep1Effects01Bag then
@@ -67,9 +67,9 @@ MRS1401 = Class(CSeaUnit) {
                     self.unit.MuzzleFlashWep1Effects02Bag = {}
                 end
             end,
-            
+
             PlayFxRackSalvoChargeSequence = function(self, muzzle)
-                XCannonWeapon01.PlayFxRackSalvoChargeSequence(self, muzzle) 
+                XCannonWeapon01.PlayFxRackSalvoChargeSequence(self, muzzle)
                 local wep = self.unit:GetWeaponByLabel('MainCannon01')
                 local bp = wep:GetBlueprint()
                 if bp.Audio.RackSalvoCharge then
@@ -87,7 +87,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
                 self:ForkThread(self.MuzzleChargeEffectsWep1CleanUp)
             end,
-            
+
             MuzzleChargeEffectsWep1CleanUp = function(self)
                 WaitTicks(100)
                 if self.unit.MuzzleChargeEffectsWep1Bag then
@@ -98,7 +98,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
             end,
         },
-        
+
         MainCannon02 = Class(XCannonWeapon01) {
             OnWeaponFired = function(self)
                 XCannonWeapon01.OnWeaponFired(self)
@@ -111,7 +111,7 @@ MRS1401 = Class(CSeaUnit) {
                 for k, v in self.unit.MuzzleFlashEffects01 do
                     table.insert(self.unit.MuzzleFlashWep2Effects01Bag, CreateAttachedEmitter(self.unit, 'Right_Railgun_Muzzle', self.unit:GetArmy(), v):ScaleEmitter(1.2))
                 end
-                
+
                 if self.unit.MuzzleFlashWep2Effects02Bag then
                     for k, v in self.unit.MuzzleFlashWep2Effects02Bag do
                         v:Destroy()
@@ -125,7 +125,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
                 self:ForkThread(self.MuzzleFlashEffectsWep2CleanUp)
             end,
-                
+
             MuzzleFlashEffectsWep2CleanUp = function(self)
                 WaitTicks(30)
                 if self.unit.MuzzleFlashWep2Effects01Bag then
@@ -141,9 +141,9 @@ MRS1401 = Class(CSeaUnit) {
                     self.unit.MuzzleFlashWep2Effects02Bag = {}
                 end
             end,
-            
+
             PlayFxRackSalvoChargeSequence = function(self, muzzle)
-                XCannonWeapon01.PlayFxRackSalvoChargeSequence(self, muzzle) 
+                XCannonWeapon01.PlayFxRackSalvoChargeSequence(self, muzzle)
                 local wep2 = self.unit:GetWeaponByLabel('MainCannon02')
                 local bp = wep2:GetBlueprint()
                 if bp.Audio.RackSalvoCharge then
@@ -161,7 +161,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
                 self:ForkThread(self.MuzzleChargeEffectsWep2CleanUp)
             end,
-            
+
             MuzzleChargeEffectsWep2CleanUp = function(self)
                 WaitTicks(100)
                 if self.unit.MuzzleChargeEffectsWep2Bag then
@@ -172,7 +172,7 @@ MRS1401 = Class(CSeaUnit) {
                 end
             end,
         },
-        
+
         Cannon01 = Class(CDFProtonCannonWeapon) {},
         Cannon02 = Class(CDFProtonCannonWeapon) {},
         Cannon03 = Class(CDFProtonCannonWeapon) {},
@@ -189,7 +189,7 @@ MRS1401 = Class(CSeaUnit) {
         AALaserMiddleLeft = Class(MGAALaserWeapon) {},
         HailfireRocket = Class(HailfireLauncherWeapon) {},
     },
-    
+
     OnStopBeingBuilt = function(self,builder,layer)
         CSeaUnit.OnStopBeingBuilt(self,builder,layer)
         self.MuzzleFlashWep1Effects01Bag = {}

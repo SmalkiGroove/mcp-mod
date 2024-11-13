@@ -1,27 +1,28 @@
+
 local TSeaUnit = import('/lua/terranunits.lua').TSeaUnit
 local WeaponsFile = import('/lua/terranweapons.lua')
-local WeaponsFile2 = import('/mods/MCP/lua/MCPWeapons.lua')
+local WeaponsFile2 = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsWeapons.lua')
 local TAALinkedRailgun = WeaponsFile.TAALinkedRailgun
 local ZCannonWeapon = WeaponsFile2.ZCannonWeapon
 local TDFShipGaussCannonWeapon = WeaponsFile.TDFShipGaussCannonWeapon
-local MCPEffectTemplate = import('/mods/MCP/lua/MCPEffectTemplates.lua')
+local BlackOpsEffectTemplate = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsEffectTemplates.lua')
 
 MES1401 = Class(TSeaUnit) {
-    SteamEffects = MCPEffectTemplate.WeaponSteam02,
+    SteamEffects = BlackOpsEffectTemplate.WeaponSteam02,
 
     Weapons = {
         FrontAMCCannon01 = Class(ZCannonWeapon) {
             Cannon = 1,
         },
-        
+
         FrontAMCCannon02 = Class(ZCannonWeapon) {
             Cannon = 2,
         },
-        
+
         BackAMCCannon = Class(ZCannonWeapon) {
             Cannon = 3,
         },
-        
+
         AAGunLeft01 = Class(TAALinkedRailgun) {},
         AAGunLeft02 = Class(TAALinkedRailgun) {},
         AAGunLeft03 = Class(TAALinkedRailgun) {},

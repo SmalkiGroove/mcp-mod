@@ -5,10 +5,10 @@ MRB1306 = Class(CMassCollectionUnit) {
     OnStopBeingBuilt = function(self,builder,layer)
         self.AnimationManipulator = CreateAnimator(self)
         self.Trash:Add(self.AnimationManipulator)
-        self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationOpen, true)
+        self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationOpen, true)
         CMassCollectionUnit.OnStopBeingBuilt(self,builder,layer)
         --Force update of the cloak effect if there is a cloak mesh. For FAF graphics
-        if self:GetBlueprint().Display.CloakMeshBlueprint then
+        if self.Blueprint.Display.CloakMeshBlueprint then
             self:ForkThread(
                 function()
                     WaitTicks(1)

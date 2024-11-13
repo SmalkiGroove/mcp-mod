@@ -39,10 +39,10 @@ MSL0306 = Class(SLandUnit) {
     		if not self.AnimationManipulator then
     			self.AnimationManipulator = CreateAnimator(self)
     			self.Trash:Add(self.AnimationManipulator)
-    			self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationOpen)
+    			self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationOpen)
     		end
     		self.AnimationManipulator:SetRate(0.5)
-    		local bp  self:GetBlueprint()
+    		local bp  self.Blueprint
     		self:SetWeaponEnabledByLabel('GattlingGun',true)
     		local gungun = self:GetWeaponByLabel('GattlingGun')
     		gungun:ChangeMaxRadius(30)
@@ -62,7 +62,7 @@ MSL0306 = Class(SLandUnit) {
     		if self.AnimationManipulator then
     			self.AnimationManipulator:SetRate(-0.5)
     		end
-    		local bp = self:GetBlueprint()
+    		local bp = self.Blueprint
     		self:SetWeaponEnabledByLabel('GattlingGun',false)
     		local gungun = self:GetWeaponByLabel('GattlingGun')
     		gungun:ChangeMaxRadius(0)

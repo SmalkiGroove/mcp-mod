@@ -1,6 +1,4 @@
--- Tempest Drone
-
-local AirDroneUnit = import('/mods/MCP/lua/MCPUnits.lua').AirDroneUnit
+local AirDroneUnit = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsunits.lua').AirDroneUnit
 local WeaponsFile = import('/lua/aeonweapons.lua')
 local ADFCannonOblivionWeapon = WeaponsFile.ADFCannonOblivionWeapon02
 local AANDepthChargeBombWeapon = WeaponsFile.AANDepthChargeBombWeapon

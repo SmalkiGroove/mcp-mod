@@ -1,6 +1,6 @@
 local CSeaUnit = import('/lua/cybranunits.lua').CSeaUnit
 local CybranWeaponsFile = import('/lua/cybranweapons.lua')
-local WeaponsFile = import('/mods/MCP/lua/MCPWeapons.lua')
+local WeaponsFile = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsWeapons.lua')
 local CDFProtonCannonWeapon = CybranWeaponsFile.CDFProtonCannonWeapon
 local CAANanoDartWeapon = CybranWeaponsFile.CAANanoDartWeapon
 local CAMZapperWeapon02 = CybranWeaponsFile.CAMZapperWeapon02
@@ -21,15 +21,15 @@ MRS0307 = Class(CSeaUnit) {
         Torpedo = Class(CANNaniteTorpedoWeapon) {},
         AntiTorpedo = Class(CIFSmartCharge) {},
     },
-    
+
     OnCreate = function(self)
         CSeaUnit.OnCreate(self)
         self:SetWeaponEnabledByLabel('GroundGun', false)
     end,
-    
+
     OnScriptBitSet = function(self, bit)
         CSeaUnit.OnScriptBitSet(self, bit)
-        if bit == 1 then 
+        if bit == 1 then
             self:SetWeaponEnabledByLabel('GroundGun', true)
             self:SetWeaponEnabledByLabel('AAGun', false)
             self:GetWeaponManipulatorByLabel('GroundGun'):SetHeadingPitch(self:GetWeaponManipulatorByLabel('AAGun'):GetHeadingPitch())
@@ -38,17 +38,17 @@ MRS0307 = Class(CSeaUnit) {
 
     OnScriptBitClear = function(self, bit)
         CSeaUnit.OnScriptBitClear(self, bit)
-        if bit == 1 then 
+        if bit == 1 then
             self:SetWeaponEnabledByLabel('GroundGun', false)
             self:SetWeaponEnabledByLabel('AAGun', true)
             self:GetWeaponManipulatorByLabel('AAGun'):SetHeadingPitch(self:GetWeaponManipulatorByLabel('GroundGun'):GetHeadingPitch())
         end
     end,
-    
-    OnKilled = function(self, inst, type, okr)
+
+    OnKilled = function(self, instigator, damagetype, overkillRatio)
         self.Trash:Destroy()
         self.Trash = TrashBag()
-        CSeaUnit.OnKilled(self, inst, type, okr)
+        CSeaUnit.OnKilled(self, instigator, damagetype, overkillRatio)
     end,
 }
 

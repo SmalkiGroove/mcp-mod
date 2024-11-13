@@ -3,7 +3,7 @@ local WeaponsFile = import('/lua/cybranweapons.lua')
 local CANNaniteTorpedoWeapon = WeaponsFile.CANNaniteTorpedoWeapon
 local CDFElectronBolterWeapon = WeaponsFile.CDFElectronBolterWeapon
 local CKrilTorpedoLauncherWeapon = import('/lua/cybranweapons.lua').CKrilTorpedoLauncherWeapon
-local TorpRedirectField = import('/mods/MCP/lua/MCPDefaultAntiProjectile.lua').TorpRedirectField
+local TorpRedirectField = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsDefaultAntiProjectile.lua').TorpRedirectField
 
 MRS0301 = Class(CSubUnit) {
     DeathThreadDestructionWaitTime = 0,
@@ -21,7 +21,7 @@ MRS0301 = Class(CSubUnit) {
         else
             ChangeState(self, self.ClosedState)
         end
-        local bp = self:GetBlueprint().Defense.TorpRedirectField01
+        local bp = self.Blueprint.Defense.TorpRedirectField01
         local TorpRedirectField01 = TorpRedirectField {
             Owner = self,
             Radius = bp.Radius,
@@ -47,7 +47,7 @@ MRS0301 = Class(CSubUnit) {
                 self.CannonAnim = CreateAnimator(self)
                 self.Trash:Add(self.CannonAnim)
             end
-            local bp2 = self:GetBlueprint()
+            local bp2 = self.Blueprint
             self.CannonAnim:PlayAnim(bp2.Display.CannonOpenAnimation)
             self.CannonAnim:SetRate(bp2.Display.CannonOpenRate or 1)
             WaitFor(self.CannonAnim)
@@ -61,7 +61,7 @@ MRS0301 = Class(CSubUnit) {
             self:SetWeaponEnabledByLabel('FrontGun', false)
             self:SetWeaponEnabledByLabel('BackGun', false)
             if self.CannonAnim then
-                local bp2 = self:GetBlueprint()
+                local bp2 = self.Blueprint
                 self.CannonAnim:SetRate(-1 * (bp2.Display.CannonOpenRate or 1))
                 WaitFor(self.CannonAnim)
             end

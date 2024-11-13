@@ -45,7 +45,7 @@ MSB5302A = Class(SAirUnit) {
             self.MoveToParent = false
             self.Duration = 1
             self.MyWeapon = self:GetWeaponByLabel('AutoCannon1')
-            self.MyMaxSpeed = self:GetBlueprint().Air.MaxAirspeed
+            self.MyMaxSpeed = self.Blueprint.Air.MaxAirspeed
             self.WepRng = self.MyWeapon:GetBlueprint().MaxRadius
             self.DmgMod = false
 

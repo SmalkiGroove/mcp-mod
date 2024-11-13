@@ -60,7 +60,7 @@ MSB2403 = Class(SShieldStructureUnit) {
             WaitTicks(Random(1,3))
         end
         
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         for i, numWeapons in bp.Weapon do
             if(bp.Weapon[i].Label == 'CollossusDeath') then
                 DamageArea(self, self:GetPosition(), bp.Weapon[i].DamageRadius, bp.Weapon[i].Damage, bp.Weapon[i].DamageType, bp.Weapon[i].DamageFriendly)

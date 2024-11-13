@@ -9,7 +9,7 @@ MEB1306 = Class(TEngineeringResourceStructureUnit) {
             self.AnimationManipulator = CreateAnimator(self)
             self.Trash:Add(self.AnimationManipulator)
         end
-        self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationOpen, true)
+        self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationOpen, true)
     end,
 
     OnStartBuild = function(self, unitBeingBuilt, order)

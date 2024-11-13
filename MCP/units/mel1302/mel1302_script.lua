@@ -34,14 +34,14 @@ MEL1302 = Class(TLandUnit) {
         if( not self.AnimManip ) then
             self.AnimManip = CreateAnimator(self)
         end
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         local scale = bp.Display.UniformScale or 1
 
         if( land ) then
 			self:SetImmobile(true)
 			self:SetSpeedMult(0)          
             
-            self.AnimManip:PlayAnim(self:GetBlueprint().Display.AnimationTransform)
+            self.AnimManip:PlayAnim(self.Blueprint.Display.AnimationTransform)
             self.AnimManip:SetRate(1)
             self.IsWaiting = true
             WaitFor(self.AnimManip)
@@ -58,7 +58,7 @@ MEL1302 = Class(TLandUnit) {
 			self:SetWeaponEnabledByLabel('TourelleAvantGauche', false)
 			self:SetWeaponEnabledByLabel('TourelleArriereDroite', false)
 			self:SetWeaponEnabledByLabel('TourelleArriereGauche', false) 
-            self.AnimManip:PlayAnim(self:GetBlueprint().Display.AnimationTransform)
+            self.AnimManip:PlayAnim(self.Blueprint.Display.AnimationTransform)
             self.AnimManip:SetAnimationFraction(1)
             self.AnimManip:SetRate(-1)
             self.IsWaiting = true
@@ -74,7 +74,7 @@ MEL1302 = Class(TLandUnit) {
 	
     OnScriptBitSet = function(self, bit)
         TLandUnit.OnScriptBitSet(self, bit)
-		local bp = self:GetBlueprint()
+		local bp = self.Blueprint
         if bit == 1 then 
 			self.AT1 = self:ForkThread(self.TransformThread, true)
         end

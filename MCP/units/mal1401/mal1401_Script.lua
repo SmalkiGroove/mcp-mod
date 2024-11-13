@@ -8,7 +8,7 @@ local Weapon = import('/lua/sim/Weapon.lua').Weapon
 
 local GenesisMaelstromWeapon = Class(Weapon) {
     OnFire = function(self)
-        local blueprint = self:GetBlueprint()
+        local blueprint = self.Blueprint
         DamageArea(self.unit, self.unit:GetPosition(), blueprint.DamageRadius,
             blueprint.Damage, blueprint.DamageType, blueprint.DamageFriendly)
     end,
@@ -109,7 +109,7 @@ MAL1401 = Class(AHoverLandUnit) {
             WaitFor(self.DeathAnimManip)
         end
     
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         for i, numWeapons in bp.Weapon do
             if(bp.Weapon[i].Label == 'CollossusDeath') then
                 DamageArea(self, self:GetPosition(), bp.Weapon[i].DamageRadius, bp.Weapon[i].Damage, bp.Weapon[i].DamageType, bp.Weapon[i].DamageFriendly)

@@ -1,7 +1,7 @@
 
 local ASeaUnit = import('/lua/aeonunits.lua').ASeaUnit
 local BaseTransport = import('/lua/defaultunits.lua').BaseTransport
-local AirDroneCarrier = import('/mods/MCP/lua/MCPUnits.lua').AirDroneCarrier
+local AirDroneCarrier = import('/mods/BlackOpsFAF-Unleashed/lua/BlackOpsunits.lua').AirDroneCarrier
 local WeaponsFile = import('/lua/aeonweapons.lua')
 local ADFCannonOblivionWeapon = WeaponsFile.ADFCannonOblivionWeapon02
 local AANChronoTorpedoWeapon = WeaponsFile.AANChronoTorpedoWeapon
@@ -139,20 +139,46 @@ UAS0401 = Class(BaseTransport, ASeaUnit, AirDroneCarrier) {
 
     --Handles drone docking
     OnTransportAttach = function(self, attachBone, unit)
+        BaseTransport.OnTransportAttach(self, attachBone, unit)
+        ASeaUnit.OnTransportAttach(self, attachBone, unit)
+
         self.DroneData[unit.Name].Docked = attachBone
         unit:SetDoNotTarget(true)
-        BaseTransport.OnTransportAttach(self, attachBone, unit)
     end,
 
     --Handles drone undocking, also called when docked drones die
     OnTransportDetach = function(self, attachBone, unit)
+        BaseTransport.OnTransportDetach(self, attachBone, unit)
+        ASeaUnit.OnTransportDetach(self, attachBone, unit)
+
         self.DroneData[unit.Name].Docked = false
         unit:SetDoNotTarget(false)
         if unit.Name == self.BuildingDrone then
             self:CleanupDroneMaintenance(self.BuildingDrone)
         end
-        BaseTransport.OnTransportDetach(self, attachBone, unit)
     end,
+
+    OnAttachedKilled = function(self, attached)
+        BaseTransport.OnAttachedKilled(self, attached)
+        ASeaUnit.OnAttachedKilled(self, attached)
+    end,
+
+    OnStartTransportLoading = function(self)
+        BaseTransport.OnStartTransportLoading(self)
+        ASeaUnit.OnStartTransportLoading(self)
+    end,
+
+    OnStopTransportLoading = function(self)
+        BaseTransport.OnStopTransportLoading(self)
+        ASeaUnit.OnStopTransportLoading(self)
+    end,
+
+    DestroyedOnTransport = function(self)
+        BaseTransport.DestroyedOnTransport(self)
+        ASeaUnit.DestroyedOnTransport(self)
+    end,
+
+
     --Cleans up threads and drones on death
     OnKilled = function(self, instigator, type, overkillRatio)
         --Kill our heartbeat thread
@@ -162,7 +188,7 @@ UAS0401 = Class(BaseTransport, ASeaUnit, AirDroneCarrier) {
         --Immediately kill existing drones
         self:KillAllDrones()
         local nrofBones = self:GetBoneCount() -1
-        local watchBone = self:GetBlueprint().WatchBone or 0
+        local watchBone = self.Blueprint.WatchBone or 0
 
          self:ForkThread(function()
             local pos = self:GetPosition()

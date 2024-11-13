@@ -8,7 +8,7 @@ MSB1306 = Class(SMassCollectionUnit) {
     end,
 
     OnStopBeingBuilt = function(self,builder,layer)
-        self.ExtractionAnimManip:PlayAnim(self:GetBlueprint().Display.AnimationActivate):SetRate(1)
+        self.ExtractionAnimManip:PlayAnim(self.Blueprint.Display.AnimationActivate):SetRate(1)
         self.Trash:Add(self.ExtractionAnimManip)
         SMassCollectionUnit.OnStopBeingBuilt(self,builder,layer)
         ChangeState(self, self.ActiveState)
@@ -19,7 +19,7 @@ MSB1306 = Class(SMassCollectionUnit) {
             WaitFor(self.ExtractionAnimManip)
             while not self:IsDead() do
                 
-                self.ExtractionAnimManip:PlayAnim(self:GetBlueprint().Display.AnimationActivate):SetRate(1)
+                self.ExtractionAnimManip:PlayAnim(self.Blueprint.Display.AnimationActivate):SetRate(1)
                 WaitFor(self.ExtractionAnimManip)
             end
         end,

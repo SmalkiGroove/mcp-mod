@@ -57,7 +57,7 @@ MEL1401 = Class(TWalkingLandUnit) {
         CruiseMissile_L = Class(TIFCruiseMissileLauncher) { 
             CurrentRack_L = 1, 
             CreateProjectileAtMuzzle = function(self, muzzle) 
-                muzzle = self:GetBlueprint().RackBones[self.CurrentRack_L].MuzzleBones[1] 
+                muzzle = self.Blueprint.RackBones[self.CurrentRack_L].MuzzleBones[1] 
                 if self.CurrentRack_L >= 2 then 
                     self.CurrentRack_L = 1 
                 else 
@@ -69,7 +69,7 @@ MEL1401 = Class(TWalkingLandUnit) {
         CruiseMissile_R = Class(TIFCruiseMissileLauncher) { 
             CurrentRack_R = 1, 
             CreateProjectileAtMuzzle = function(self, muzzle) 
-                muzzle = self:GetBlueprint().RackBones[self.CurrentRack_R].MuzzleBones[1] 
+                muzzle = self.Blueprint.RackBones[self.CurrentRack_R].MuzzleBones[1] 
                 if self.CurrentRack_R >= 2 then 
                     self.CurrentRack_R = 1 
                 else 

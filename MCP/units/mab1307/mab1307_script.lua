@@ -14,8 +14,8 @@ MAB1307 = Class(AMassFabricationUnit) {
         AMassFabricationUnit.OnStopBeingBuilt(self, builder, layer)  
         self.Prodon = true
         self.Shield = true  
-        self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
-        self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+        self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
+        self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
         #B04 = parent, B03 = ball, B01/2 = rings
         #CreateRotator(unit, bone, axis, [goal], [speed], [accel], [goalspeed])
         local num = self:GetRandomDir()
@@ -48,7 +48,7 @@ MAB1307 = Class(AMassFabricationUnit) {
         self.ParentManip3:SetSpinDown(true)
         self.ParentManip3:SetTargetSpeed(80 + Random(0, 20) * num)    
         if self.Shield then
-          	self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyShield or 375)
+          	self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyShield or 375)
           	self:SetProductionPerSecondMass(0)
           	self:SetMaintenanceConsumptionActive()
         else
@@ -67,12 +67,12 @@ MAB1307 = Class(AMassFabricationUnit) {
         self.ParentManip2:SetSpinDown(false)
         self.ParentManip3:SetSpinDown(false) 
 		if self.Shield then
-			self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
-			self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+			self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
+			self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
 			self:SetMaintenanceConsumptionActive()  
 		else
-			self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
-			self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+			self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
+			self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
 			self:SetMaintenanceConsumptionActive()  
 		end
     end,
@@ -90,11 +90,11 @@ MAB1307 = Class(AMassFabricationUnit) {
             table.insert( self.ShieldEffectsBag, CreateAttachedEmitter( self, 0, self:GetArmy(), v ):ScaleEmitter(0.4) )
         end
         if self.Prodon then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab + self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab + self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyShield or 3000)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()  
         else
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyShield or 375)
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyShield or 375)
             self:SetProductionPerSecondMass(0)
             self:SetMaintenanceConsumptionActive()  
         end
@@ -110,8 +110,8 @@ MAB1307 = Class(AMassFabricationUnit) {
             self.ShieldEffectsBag = {}
         end
         if self.Prodon then
-            self:SetEnergyMaintenanceConsumptionOverride(self:GetBlueprint().Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
-            self:SetProductionPerSecondMass((self:GetBlueprint().Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
+            self:SetEnergyMaintenanceConsumptionOverride(self.Blueprint.Economy.MaintenanceConsumptionPerSecondEnergyFab or 2625)
+            self:SetProductionPerSecondMass((self.Blueprint.Economy.ProductionPerSecondMass or 0) * (self.MassProdAdjMod or 1))
             self:SetMaintenanceConsumptionActive()  
         else
             self:SetEnergyMaintenanceConsumptionOverride(0) 

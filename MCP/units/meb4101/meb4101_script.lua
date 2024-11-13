@@ -48,8 +48,8 @@ MEB4101 = Class(TShieldStructureUnit) {
 
     OpeningState = State {
         Main = function(self)
-            if self:GetBlueprint().Audio.Activate then
-                self:PlaySound(self:GetBlueprint().Audio.Activate)
+            if self.Blueprint.Audio.Activate then
+                self:PlaySound(self.Blueprint.Audio.Activate)
             end
 
             self.Sliders.Slider11:SetGoal(0,0,-10)

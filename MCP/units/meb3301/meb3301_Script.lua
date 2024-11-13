@@ -14,7 +14,7 @@ MEB3301 = Class(TStructureUnit) {
     FinishBuildThread = function(self, unitBeingBuilt, order )
         self:SetBusy(true)
         self:SetBlockCommandQueue(true)
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         local army = self:GetArmy()
         if unitBeingBuilt and not unitBeingBuilt:IsDead() then
             unitBeingBuilt:PreLaunchSetup(self)

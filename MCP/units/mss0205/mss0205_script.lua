@@ -14,7 +14,7 @@ MSS0205 = Class(SSeaUnit) {
     RegenBuffThread = function(self)
         while self:GetScriptBit('RULEUTC_ShieldToggle') and not self:IsDead() do
             -- Get friendly units in the area (including self)
-            local units = AIUtils.GetOwnUnitsAroundPoint(self:GetAIBrain(), categories.ALLUNITS, self:GetPosition(), self:GetBlueprint().RegenAura.RegenRadius)
+            local units = AIUtils.GetOwnUnitsAroundPoint(self:GetAIBrain(), categories.ALLUNITS, self:GetPosition(), self.Blueprint.RegenAura.RegenRadius)
 
             -- Give them a 5 second regen buff
             for _,unit in units do
@@ -62,7 +62,7 @@ MSS0205 = Class(SSeaUnit) {
             self.ShieldEffectsBag = {}
         end
 
-        local bpRA = self:GetBlueprint().RegenAura
+        local bpRA = self.Blueprint.RegenAura
 
         if not Buffs['SeraphimRegenFieldMoo'] then
             BuffBlueprint {

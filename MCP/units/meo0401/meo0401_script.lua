@@ -22,7 +22,7 @@ MEO0401 = Class(TAirUnit) {
     end,
 
     CreateBuildEffects = function( self, unitBeingBuilt, order )
-        EffectUtil.CreateUEFBuildSliceBeams( self, unitBeingBuilt, self:GetBlueprint().General.BuildBones.BuildEffectBones, self.BuildEffectsBag )
+        EffectUtil.CreateUEFBuildSliceBeams( self, unitBeingBuilt, self.Blueprint.General.BuildBones.BuildEffectBones, self.BuildEffectsBag )
     end,
 
     OnFailedToBuild = function(self)

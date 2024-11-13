@@ -5,7 +5,7 @@ MEB1305 = Class(TEngineeringResourceStructureUnit) {
     ActiveState = State {
         Main = function(self)
             # Play the "activate" sound
-            local myBlueprint = self:GetBlueprint()
+            local myBlueprint = self.Blueprint
             if myBlueprint.Audio.Activate then
                 self:PlaySound(myBlueprint.Audio.ActiveLoop)
             end
@@ -14,7 +14,7 @@ MEB1305 = Class(TEngineeringResourceStructureUnit) {
 
     SetupBuildBones = function(self)       
         TEngineeringResourceStructureUnit.SetupBuildBones(self) 
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         self.BuildArmManipulator2 = CreateBuilderArmController(self, bp.General.BuildBones2.YawBone or 0 , bp.General.BuildBones2.PitchBone or 0, bp.General.BuildBones2.AimBone or 0)
         self.BuildArmManipulator3 = CreateBuilderArmController(self, bp.General.BuildBones3.YawBone or 0 , bp.General.BuildBones3.PitchBone or 0, bp.General.BuildBones3.AimBone or 0)
         self.BuildArmManipulator4 = CreateBuilderArmController(self, bp.General.BuildBones4.YawBone or 0 , bp.General.BuildBones4.PitchBone or 0, bp.General.BuildBones4.AimBone or 0)

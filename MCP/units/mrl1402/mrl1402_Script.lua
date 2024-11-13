@@ -11,9 +11,6 @@ local SCUDeathWeapon = import('/lua/sim/defaultweapons.lua').SCUDeathWeapon
 local CIFMissileLoaWeapon = import('/lua/cybranweapons.lua').CIFMissileLoaWeapon
 local CDFElectronBolterWeapon = cWeapons.CDFElectronBolterWeapon
 
-local BasiliskNukeEffect04 = '/mods/MCP/projectiles/MGQAIPlasmaArty01/MGQAIPlasmaArty01_proj.bp' 
-local BasiliskNukeEffect05 = '/mods/MCP/effects/Entities/BasiliskNukeEffect05/BasiliskNukeEffect05_proj.bp'
-
 local RandomFloat = import('/lua/utilities.lua').GetRandomFloat
 local Util = import('/lua/utilities.lua')
 local EffectTemplate = import('/lua/EffectTemplates.lua')
@@ -164,7 +161,7 @@ MRL1402 = Class(CWalkingLandUnit) {
             if not self.AnimationManipulator then
                 self.AnimationManipulator = CreateAnimator(self)
                 self.Trash:Add(self.AnimationManipulator)
-                self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationDeploy)
+                self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationDeploy)
             end
             self.AnimationManipulator:SetRate(1.5)
             

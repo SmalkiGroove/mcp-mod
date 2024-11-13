@@ -15,7 +15,7 @@ MSL0302 = Class(SWalkingLandUnit) {
 
 		self.blink = CreateAnimator(self)
 		self.Trash:Add(self.blink)
-		self.blink:PlayAnim(self:GetBlueprint().Display.AnimationIdle,true):SetRate(1)
+		self.blink:PlayAnim(self.Blueprint.Display.AnimationIdle,true):SetRate(1)
 
 
     end,

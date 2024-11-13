@@ -33,8 +33,8 @@ MSB4101 = Class(SShieldStructureUnit) {
 
     OpeningState = State {
         Main = function(self)
-            if self:GetBlueprint().Audio.Activate then
-                self:PlaySound(self:GetBlueprint().Audio.Activate)
+            if self.Blueprint.Audio.Activate then
+                self:PlaySound(self.Blueprint.Audio.Activate)
             end
 
             #for k, v in self.Spinners do

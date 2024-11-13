@@ -29,7 +29,7 @@ MEL0102 = Class(TLandUnit) {
 	
 	
     OnCreate = function(self)
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
 		
         TLandUnit.OnCreate(self)
 		

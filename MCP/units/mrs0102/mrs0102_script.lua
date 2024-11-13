@@ -36,7 +36,7 @@ MRS0102 = Class(CSeaUnit) {
                 if( old == 'Stopped' ) then
                     if( self.SwitchAnims ) then
                         self.SwitchAnims = false
-                        self.AnimManip:PlayAnim(self:GetBlueprint().Display.AnimationWalk, true):SetRate(self:GetBlueprint().Display.AnimationWalkRate or 1.1)
+                        self.AnimManip:PlayAnim(self.Blueprint.Display.AnimationWalk, true):SetRate(self.Blueprint.Display.AnimationWalkRate or 1.1)
                     else
                         self.AnimManip:SetRate(1.8)
                     end
@@ -54,7 +54,7 @@ MRS0102 = Class(CSeaUnit) {
                 self.AT1:Destroy()
                 self.AT1 = nil
             end
-            local myBlueprint = self:GetBlueprint()
+            local myBlueprint = self.Blueprint
             if( new == 'Land' ) then
                 self.AT1 = self:ForkThread(self.TransformThread, true)
             elseif( new == 'Water' ) then
@@ -67,7 +67,7 @@ MRS0102 = Class(CSeaUnit) {
         if( not self.AnimManip ) then
             self.AnimManip = CreateAnimator(self)
         end
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         local scale = bp.Display.UniformScale or 1
 
         if( land ) then
@@ -77,7 +77,7 @@ MRS0102 = Class(CSeaUnit) {
 		    self:SetWeaponEnabledByLabel('TorpedoL', false)
 		    --self:SetWeaponEnabledByLabel('Zapper01', false)
 		    --self:SetWeaponEnabledByLabel('Zapper02', false)
-            self.AnimManip:PlayAnim(self:GetBlueprint().Display.AnimationTransform)
+            self.AnimManip:PlayAnim(self.Blueprint.Display.AnimationTransform)
             self.AnimManip:SetRate(0.62)
             self.IsWaiting = true
             WaitFor(self.AnimManip)
@@ -90,7 +90,7 @@ MRS0102 = Class(CSeaUnit) {
         else
             self:SetImmobile(true)
             self:SetSpeedMult(1)
-            self.AnimManip:PlayAnim(self:GetBlueprint().Display.AnimationTransform)
+            self.AnimManip:PlayAnim(self.Blueprint.Display.AnimationTransform)
             self.AnimManip:SetAnimationFraction(1)
             self.AnimManip:SetRate(-0.62)
             self.IsWaiting = true
@@ -112,9 +112,9 @@ MRS0102 = Class(CSeaUnit) {
         self.Trash:Destroy()
         self.Trash = TrashBag()
         if(self:GetCurrentLayer() != 'Water') then
-            self:GetBlueprint().Display.AnimationDeath = self:GetBlueprint().Display.LandAnimationDeath
+            self.Blueprint.Display.AnimationDeath = self.Blueprint.Display.LandAnimationDeath
         else
-            self:GetBlueprint().Display.AnimationDeath = self:GetBlueprint().Display.WaterAnimationDeath
+            self.Blueprint.Display.AnimationDeath = self.Blueprint.Display.WaterAnimationDeath
         end
         CSeaUnit.OnKilled(self, instigator, type, overkillRatio)
     end,

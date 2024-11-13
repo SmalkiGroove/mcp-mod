@@ -225,13 +225,13 @@ UnitBlueprint {
     CollisionOffsetZ = -1,
     StrategicIconName = 'mcp/icon_experimental_assault',
     StrategicIconSortPriority = 145,
-    Veteran = { 
-        Level1 = 50, 
-        Level2 = 100, 
-        Level3 = 150, 
-        Level4 = 200, 
-        Level5 = 250, 
-    }, 
+    Veteran = {
+        Level1 = 45,
+        Level2 = 90,
+        Level3 = 135,
+        Level4 = 180,
+        Level5 = 225,
+    },
     Weapon = {
         {
             AboveWaterTargetsOnly = true,

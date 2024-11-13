@@ -190,10 +190,10 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 65,
-        SonarRadius = 55,
-        VisionRadius = 45,
-        WaterVisionRadius = 30,
+        RadarRadius = 64,
+        SonarRadius = 56,
+        VisionRadius = 46,
+        WaterVisionRadius = 32,
     },
     Interface = {
         HelpText = 'Experimental Drone Carrier',

@@ -14,7 +14,7 @@ function RemoteViewing(SuperClass)
         end,
 
         OnStopBeingBuilt = function(self,builder,layer)
-            self.Sync.Abilities = self:GetBlueprint().Abilities
+            self.Sync.Abilities = self.Blueprint.Abilities
             self:SetMaintenanceConsumptionInactive()
             SuperClass.OnStopBeingBuilt(self,builder,layer)
         end,
@@ -29,13 +29,13 @@ function RemoteViewing(SuperClass)
         end,
 
         DisableRemoteViewingButtons = function(self)
-            self.Sync.Abilities = self:GetBlueprint().Abilities
+            self.Sync.Abilities = self.Blueprint.Abilities
             self.Sync.Abilities.TargetLocation.Active = false
             self:RemoveToggleCap('RULEUTC_IntelToggle')
         end,
 
         EnableRemoteViewingButtons = function(self)
-            self.Sync.Abilities = self:GetBlueprint().Abilities
+            self.Sync.Abilities = self.Blueprint.Abilities
             self.Sync.Abilities.TargetLocation.Active = true
             self:AddToggleCap('RULEUTC_IntelToggle')
         end,
@@ -64,7 +64,7 @@ function RemoteViewing(SuperClass)
         end,
 
         CreateVisibleEntity = function(self, location, targetunit)
-            local bp = self:GetBlueprint()
+            local bp = self.Blueprint
             local aiBrain = self:GetAIBrain()
             local have = aiBrain:GetEconomyStored('ENERGY')
             local need = bp.Economy.InitialRemoteViewingEnergyDrain
@@ -172,7 +172,7 @@ function RemoteViewing(SuperClass)
         end,
 
         EnableResourceMonitor = function(self)
-            local recharge = self:GetBlueprint().Intel.ReactivateTime or 10
+            local recharge = self.Blueprint.Intel.ReactivateTime or 10
             WaitSeconds(recharge)
             self.RemoteViewingData.DisableCounter = self.RemoteViewingData.DisableCounter - 1
             self:CreateVisibleEntity()
@@ -188,19 +188,19 @@ function SACUEngineeringSpe(SuperClass, ecoEnhancement, fieldEnhancement)
         end,
 
         CreateEnhancement = function(self, enh)
-            local bp = self:GetBlueprint().Enhancements[enh]
+            local bp = self.Blueprint.Enhancements[enh]
             if not bp then return end
 
             if enh == ecoEnhancement then
                 CommandUnit.CreateEnhancement(self, enh)
                 self:RemoveBuildRestriction(categories.BUILTBYTIER3ENGINEER)
-                local bpEcon = self:GetBlueprint().Economy
+                local bpEcon = self.Blueprint.Economy
                 self:SetProductionPerSecondEnergy((bp.ProductionPerSecondEnergy + bpEcon.ProductionPerSecondEnergy) or 0)
                 self:SetProductionPerSecondMass((bp.ProductionPerSecondMass + bpEcon.ProductionPerSecondMass) or 0)
             elseif enh == ecoEnhancement..'Remove' then
                 CommandUnit.CreateEnhancement(self, enh)
                 self:InitBuildRestrictions()
-                local bpEcon = self:GetBlueprint().Economy
+                local bpEcon = self.Blueprint.Economy
                 self:SetProductionPerSecondEnergy(bpEcon.ProductionPerSecondEnergy or 0)
                 self:SetProductionPerSecondMass(bpEcon.ProductionPerSecondMass or 0)
             elseif enh == fieldEnhancement then

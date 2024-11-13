@@ -11,7 +11,7 @@ MEA0306 = Class(TAirUnit) {
 
     OnStopBeingBuilt = function(self,builder,layer)
         TAirUnit.OnStopBeingBuilt(self,builder,layer)
-        self.LandingAnimManip = CreateAnimator(self):SetPrecedence(0):PlayAnim(self:GetBlueprint().Display.AnimationLand):SetRate(1)
+        self.LandingAnimManip = CreateAnimator(self):SetPrecedence(0):PlayAnim(self.Blueprint.Display.AnimationLand):SetRate(1)
     end,
 
     OnMotionVertEventChange = function(self, new, old)

@@ -60,8 +60,8 @@ MAB4101 = Class(AShieldStructureUnit) {
 
     OpeningState = State {
         Main = function(self)
-            if self:GetBlueprint().Audio.Activate then
-                self:PlaySound(self:GetBlueprint().Audio.Activate)
+            if self.Blueprint.Audio.Activate then
+                self:PlaySound(self.Blueprint.Audio.Activate)
             end
 
             self.Sliders.Slider1:SetGoal(0,20,0)
@@ -256,7 +256,7 @@ MAB4101 = Class(AShieldStructureUnit) {
 
 
     OnShieldEnabled = function(self)
-        local bp = self:GetBlueprint()
+        local bp = self.Blueprint
         if not self.Rotator then
             self.Rotator = CreateRotator(self, 'Sphere', 'z', nil, 0, 50, 0)
             self.Trash:Add(self.Rotator)

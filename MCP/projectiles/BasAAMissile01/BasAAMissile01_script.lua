@@ -47,7 +47,7 @@ BaaMissile01 = Class(CAANanoDartProjectile) {
                     self.OKCData.dontOKCheck = true
                 end
                 
-                self:PlaySound(self:GetBlueprint().Audio['Arc'])           
+                self:PlaySound(self.Blueprint.Audio['Arc'])           
                 -- Just in case there's lots of stuff in FxBeam, we'll loop through it.
                 for id, fx in self.FxBeam do
                     local effectEnt = AttachBeamEntityToEntity(currentTarget, -1, self, -1, self:GetArmy(), fx)    --    the -2 is worrying.

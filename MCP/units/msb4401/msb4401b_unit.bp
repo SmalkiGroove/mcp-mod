@@ -199,7 +199,7 @@ UnitBlueprint {
     SizeX = 2,
     SizeY = 2,
     SizeZ = 2,
-    StrategicIconName = 'icon_null',
+    StrategicIconName = 'mcp/icon_null',
     StrategicIconSortPriority = 100,
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
